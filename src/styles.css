@@ -156,35 +156,42 @@ body {
     flex: 1;
     overflow: hidden;
     background: white;
+    margin: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e8f0;
 }
 
 .table-scroll-container {
     height: 100%;
     overflow: auto;
-    border-right: 1px solid #e2e8f0;
+    border-radius: 12px;
+    position: relative;
 }
 
 .data-table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
-    min-width: 1200px; /* Ensures horizontal scrolling */
+    min-width: 1400px;
+    background: white;
 }
 
 .data-table thead {
     position: sticky;
     top: 0;
     z-index: 10;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .data-table th {
-    background: #f8f9fa;
-    border-bottom: 2px solid #e2e8f0;
-    border-right: 1px solid #e2e8f0;
+    background: transparent;
+    border-bottom: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
     padding: 0;
     font-weight: 600;
-    font-size: 12px;
-    color: #4a5568;
+    font-size: 13px;
+    color: white;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     user-select: none;
@@ -194,51 +201,69 @@ body {
     border-right: none;
 }
 
+.data-table th:first-child {
+    border-top-left-radius: 12px;
+}
+
+.data-table th:last-child {
+    border-top-right-radius: 12px;
+}
+
 .th-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 16px;
-    height: 44px;
+    padding: 16px;
+    height: 52px;
     cursor: pointer;
     transition: background-color 0.2s;
 }
 
 .sortable .th-content:hover {
-    background: #edf2f7;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .th-text {
     flex: 1;
     text-align: left;
+    font-weight: 600;
 }
 
 .sort-icon {
-    opacity: 0.4;
-    font-size: 10px;
+    opacity: 0.7;
+    font-size: 12px;
     margin-left: 8px;
     transition: opacity 0.2s;
 }
 
 .sortable:hover .sort-icon {
-    opacity: 0.7;
+    opacity: 1;
 }
 
 .data-table tbody tr {
     border-bottom: 1px solid #f1f5f9;
-    transition: background-color 0.2s;
+    transition: all 0.2s;
+    background: white;
 }
 
 .data-table tbody tr:hover {
     background: #f8fafc;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.data-table tbody tr:last-child {
+    border-bottom: none;
 }
 
 .data-table td {
-    padding: 12px 16px;
+    padding: 16px;
     border-right: 1px solid #f1f5f9;
     font-size: 14px;
     vertical-align: top;
-    max-width: 0; /* Enable text truncation */
+    word-wrap: break-word;
+    white-space: normal;
+    line-height: 1.5;
 }
 
 .data-table td:last-child {
@@ -246,13 +271,13 @@ body {
 }
 
 /* Column Widths */
-.col-school { width: 140px; }
-.col-team { width: 280px; }
-.col-tournament { width: 200px; }
-.col-round { width: 100px; }
-.col-side { width: 80px; }
-.col-opponent { width: 180px; }
-.col-judge { width: 160px; }
+.col-school { width: 160px; min-width: 160px; }
+.col-team { width: 300px; min-width: 300px; }
+.col-tournament { width: 220px; min-width: 220px; }
+.col-round { width: 120px; min-width: 120px; }
+.col-side { width: 100px; min-width: 100px; }
+.col-opponent { width: 200px; min-width: 200px; }
+.col-judge { width: 180px; min-width: 180px; }
 .col-report { width: 400px; min-width: 400px; }
 
 /* Cell Content Styling */
@@ -263,16 +288,14 @@ body {
 
 .team-cell {
     color: #4a5568;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    word-wrap: break-word;
+    white-space: normal;
 }
 
 .tournament-cell {
     color: #4a5568;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    word-wrap: break-word;
+    white-space: normal;
 }
 
 .round-cell {
@@ -302,24 +325,21 @@ body {
 
 .opponent-cell {
     color: #4a5568;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    word-wrap: break-word;
+    white-space: normal;
 }
 
 .judge-cell {
     color: #4a5568;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    word-wrap: break-word;
+    white-space: normal;
 }
 
 .report-cell {
     color: #4a5568;
-    line-height: 1.4;
-    max-height: 60px;
-    overflow: hidden;
-    position: relative;
+    line-height: 1.5;
+    word-wrap: break-word;
+    white-space: normal;
 }
 
 .report-cell.expanded {
@@ -351,8 +371,30 @@ body {
 }
 
 .pagination-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
     font-size: 13px;
     color: #718096;
+}
+
+.items-per-page {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.items-per-page label {
+    font-size: 13px;
+    color: #718096;
+}
+
+.items-per-page select {
+    padding: 4px 8px;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    font-size: 13px;
+    background: white;
 }
 
 .pagination-controls {

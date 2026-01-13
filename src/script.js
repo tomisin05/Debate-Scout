@@ -195,6 +195,35 @@ class DebateScout {
             this.groupBy = e.target.value;
             this.renderTable();
         });
+
+        // Items per page
+        document.getElementById('itemsPerPageSelect').addEventListener('change', (e) => {
+            if (e.target.value === 'custom') {
+                document.getElementById('customItemsInput').style.display = 'inline-block';
+                document.getElementById('customItemsInput').focus();
+            } else {
+                document.getElementById('customItemsInput').style.display = 'none';
+                this.itemsPerPage = parseInt(e.target.value);
+                this.currentPage = 1;
+                this.renderTable();
+            }
+        });
+
+        // Custom items input
+        document.getElementById('customItemsInput').addEventListener('change', (e) => {
+            const value = parseInt(e.target.value);
+            if (value && value > 0 && value <= 10000) {
+                this.itemsPerPage = value;
+                this.currentPage = 1;
+                this.renderTable();
+            }
+        });
+
+        document.getElementById('customItemsInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                e.target.blur();
+            }
+        });
     }
 
     populateFilters() {

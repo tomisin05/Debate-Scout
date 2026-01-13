@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Debate Scout</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -146,6 +147,18 @@
         <div class="app-footer">
             <div class="pagination-info">
                 <span id="paginationInfo">Showing 1-50 of 0</span>
+                <div class="items-per-page">
+                    <label>Items per page:</label>
+                    <select id="itemsPerPageSelect">
+                        <option value="25">25</option>
+                        <option value="50" selected>50</option>
+                        <option value="100">100</option>
+                        <option value="250">250</option>
+                        <option value="500">500</option>
+                        <option value="custom">Custom</option>
+                    </select>
+                    <input type="number" id="customItemsInput" placeholder="Enter number" min="1" max="10000" style="display: none; width: 100px; margin-left: 8px; padding: 4px; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
             </div>
             <div class="pagination-controls">
                 <button id="prevPage" class="pagination-btn" disabled>
