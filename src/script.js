@@ -224,6 +224,9 @@ class DebateScout {
                 e.target.blur();
             }
         });
+
+        // Column resizing
+        this.setupColumnResizing();
     }
 
     populateFilters() {
@@ -434,6 +437,41 @@ class DebateScout {
         
         const totalHidden = hiddenRows.length;
         button.textContent = isExpanded ? `Show ${totalHidden} more records` : 'Show less';
+    }
+
+    setupColumnResizing() {
+        const resizeHandles = document.querySelectorAll('.resize-handle');
+        let isResizing = false;
+        let currentColumn = null;
+        let startX = 0;
+        let startWidth = 0;
+
+        resizeHandles.forEach(handle => {
+            handle.addEventListener('mousedown', (e) => {
+                isResizing = true;
+                currentColumn = handle.parentElement;
+                startX = e.clientX;
+                startWidth = currentColumn.offsetWidth;
+                document.body.style.cursor = 'col-resize';
+                e.preventDefault();
+            });
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (!isResizing) return;
+            const diff = e.clientX - startX;
+            const newWidth = Math.max(50, startWidth + diff);
+            currentColumn.style.width = newWidth + 'px';
+            currentColumn.style.minWidth = newWidth + 'px';
+        });
+
+        document.addEventListener('mouseup', () => {
+            if (isResizing) {
+                isResizing = false;
+                currentColumn = null;
+                document.body.style.cursor = 'default';
+            }
+        });
     }
 }
 

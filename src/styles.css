@@ -195,6 +195,24 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     user-select: none;
+    position: relative;
+    resize: horizontal;
+    overflow: hidden;
+}
+
+.data-table th .resize-handle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    cursor: col-resize;
+    background: transparent;
+    z-index: 20;
+}
+
+.data-table th .resize-handle:hover {
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .data-table th:last-child {
