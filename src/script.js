@@ -309,9 +309,13 @@ class DebateScout {
 
     renderGroupedData(grouped) {
         return Object.entries(grouped).map(([group, items]) => {
+            const groupId = group.replace(/\s+/g, '-').toLowerCase();
+            const showingCount = Math.min(10, items.length);
+            const hasMore = items.length > 10;
+            
             const groupHeader = `<tr class="group-header"><td colspan="8"><strong>${group} (${items.length} records)</strong></td></tr>`;
             const groupRows = items.slice(0, 10).map(row => `
-                <tr>
+                <tr class="group-row-${groupId}">
                     <td class="school-cell">${this.escapeHtml(row.school)}</td>
                     <td class="team-cell" title="${this.escapeHtml(row.team)}">${this.escapeHtml(row.team)}</td>
                     <td class="tournament-cell" title="${this.escapeHtml(row.tournament)}">${this.escapeHtml(row.tournament)}</td>
@@ -322,7 +326,23 @@ class DebateScout {
                     <td class="report-cell" title="${this.escapeHtml(row.roundReport)}">${this.escapeHtml(row.roundReport)}</td>
                 </tr>
             `).join('');
-            return groupHeader + groupRows;
+            
+            const hiddenRows = items.slice(10).map(row => `
+                <tr class="group-row-${groupId} hidden-row" style="display: none;">
+                    <td class="school-cell">${this.escapeHtml(row.school)}</td>
+                    <td class="team-cell" title="${this.escapeHtml(row.team)}">${this.escapeHtml(row.team)}</td>
+                    <td class="tournament-cell" title="${this.escapeHtml(row.tournament)}">${this.escapeHtml(row.tournament)}</td>
+                    <td class="round-cell">${this.escapeHtml(row.round)}</td>
+                    <td><span class="side-cell side-${row.side.toLowerCase()}">${this.escapeHtml(row.side)}</span></td>
+                    <td class="opponent-cell" title="${this.escapeHtml(row.opponent)}">${this.escapeHtml(row.opponent)}</td>
+                    <td class="judge-cell" title="${this.escapeHtml(row.judge)}">${this.escapeHtml(row.judge)}</td>
+                    <td class="report-cell" title="${this.escapeHtml(row.roundReport)}">${this.escapeHtml(row.roundReport)}</td>
+                </tr>
+            `).join('');
+            
+            const expandButton = hasMore ? `<tr><td colspan="8" style="text-align: center; padding: 10px;"><button class="expand-btn" onclick="debateScout.toggleGroup('${groupId}')" style="background: #667eea; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Show ${items.length - 10} more records</button></td></tr>` : '';
+            
+            return groupHeader + groupRows + hiddenRows + expandButton;
         }).join('');
     }
 
@@ -373,9 +393,23 @@ class DebateScout {
         document.body.removeChild(a);
         window.URL.revokeObjectURL(url);
     }
+
+    toggleGroup(groupId) {
+        const hiddenRows = document.querySelectorAll(`.group-row-${groupId}.hidden-row`);
+        const button = event.target;
+        const isExpanded = hiddenRows[0].style.display !== 'none';
+        
+        hiddenRows.forEach(row => {
+            row.style.display = isExpanded ? 'none' : 'table-row';
+        });
+        
+        const totalHidden = hiddenRows.length;
+        button.textContent = isExpanded ? `Show ${totalHidden} more records` : 'Show less';
+    }
 }
 
 // Initialize the application when DOM is loaded
+let debateScout;
 document.addEventListener('DOMContentLoaded', () => {
-    new DebateScout();
+    debateScout = new DebateScout();
 });
