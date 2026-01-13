@@ -158,6 +158,11 @@ class DebateScout {
                 this.renderTable();
             }
         });
+
+        // Export CSV
+        document.getElementById('exportBtn').addEventListener('click', () => {
+            this.exportToCSV();
+        });
     }
 
     populateFilters() {
@@ -274,6 +279,32 @@ class DebateScout {
     updateRecordCount() {
         const totalRecords = this.filteredData.length;
         document.getElementById('recordCount').textContent = `${totalRecords.toLocaleString()} records`;
+    }
+
+    exportToCSV() {
+        const headers = ['school', 'team', 'tournament', 'round', 'side', 'opponent', 'judge', 'roundReport'];
+        const csvContent = [
+            headers.join(','),
+            ...this.filteredData.map(row => 
+                headers.map(header => {
+                    const value = row[header] || '';
+                    if (value.includes(',') || value.includes('"') || value.includes('\n')) {
+                        return `"${value.replace(/"/g, '""')}"`;
+                    }
+                    return value;
+                }).join(',')
+            )
+        ].join('\n');
+        
+        const blob = new Blob([csvContent], { type: 'text/csv' });
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `debate-scout-data-${new Date().toISOString().split('T')[0]}.csv`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        window.URL.revokeObjectURL(url);
     }
 }
 
