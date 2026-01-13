@@ -1,0 +1,283 @@
+// Load CSV data from file
+let csvData = '';
+
+// Function to load data
+async function loadCSVData() {
+    try {
+        // Load JSON data
+        const response = await fetch('data.json');
+        if (!response.ok) {
+            throw new Error('Failed to load JSON file');
+        }
+        return await response.json();
+    } catch (error) {
+        console.error('Error loading data:', error);
+        // Minimal fallback data
+        return [
+            {
+                school: 'Arizona State',
+                team: 'Arizona State SaSm',
+                tournament: 'Owen L. Coon',
+                round: 'Round 1',
+                side: 'Aff',
+                opponent: 'Kansas LS',
+                judge: 'Solomon Watson',
+                roundReport: '1AC - Sklavenmoral v1 1NC - Imperialism K, Case 2NR - Imperialism K, Case'
+            }
+        ];
+    }
+}
+
+class DebateScout {
+    constructor() {
+        this.data = [];
+        this.filteredData = [];
+        this.currentPage = 1;
+        this.itemsPerPage = 50;
+        this.sortColumn = 'school';
+        this.sortDirection = 'asc';
+        
+        this.init();
+    }
+
+    async init() {
+        await this.loadData();
+        this.setupEventListeners();
+        this.populateFilters();
+        this.updateRecordCount();
+        this.renderTable();
+    }
+
+    async loadData() {
+        const data = await loadCSVData();
+        // Data is already parsed as JavaScript objects from JSON
+        this.data = data;
+        this.filteredData = [...this.data];
+    }
+
+    parseCSV(csvText) {
+        const lines = csvText.split('\n');
+        const headers = lines[0].split(',').map(h => h.trim());
+        const data = [];
+
+        for (let i = 1; i < lines.length; i++) {
+            if (lines[i].trim()) {
+                const values = this.parseCSVLine(lines[i]);
+                if (values.length >= 7) { // Ensure we have at least the basic columns
+                    const row = {};
+                    row.school = values[0] ? values[0].trim() : '';
+                    row.team = values[1] ? values[1].trim() : '';
+                    row.tournament = values[2] ? values[2].trim() : '';
+                    row.round = values[3] ? values[3].trim() : '';
+                    row.side = values[4] ? values[4].trim() : '';
+                    row.opponent = values[5] ? values[5].trim() : '';
+                    row.judge = values[6] ? values[6].trim() : '';
+                    // Find the roundReport column (it might be in different positions)
+                    row.roundReport = '';
+                    for (let j = 7; j < values.length; j++) {
+                        if (values[j] && values[j].trim()) {
+                            row.roundReport = values[j].trim();
+                            break;
+                        }
+                    }
+                    data.push(row);
+                }
+            }
+        }
+        return data;
+    }
+
+    parseCSVLine(line) {
+        const result = [];
+        let current = '';
+        let inQuotes = false;
+        
+        for (let i = 0; i < line.length; i++) {
+            const char = line[i];
+            
+            if (char === '"') {
+                if (inQuotes && line[i + 1] === '"') {
+                    current += '"';
+                    i++;
+                } else {
+                    inQuotes = !inQuotes;
+                }
+            } else if (char === ',' && !inQuotes) {
+                result.push(current);
+                current = '';
+            } else {
+                current += char;
+            }
+        }
+        result.push(current);
+        return result;
+    }
+
+    setupEventListeners() {
+        // Search
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            this.filterData();
+        });
+
+        // Filters
+        ['schoolFilter', 'tournamentFilter', 'sideFilter'].forEach(id => {
+            document.getElementById(id).addEventListener('change', () => {
+                this.filterData();
+            });
+        });
+
+
+
+        // Table headers
+        document.querySelectorAll('th[data-sort]').forEach(th => {
+            th.addEventListener('click', () => {
+                const column = th.dataset.sort;
+                if (this.sortColumn === column) {
+                    this.sortDirection = this.sortDirection === 'asc' ? 'desc' : 'asc';
+                } else {
+                    this.sortColumn = column;
+                    this.sortDirection = 'asc';
+                }
+                this.sortData();
+                this.renderTable();
+            });
+        });
+
+        // Pagination
+        document.getElementById('prevPage').addEventListener('click', () => {
+            if (this.currentPage > 1) {
+                this.currentPage--;
+                this.renderTable();
+            }
+        });
+
+        document.getElementById('nextPage').addEventListener('click', () => {
+            const totalPages = Math.ceil(this.filteredData.length / this.itemsPerPage);
+            if (this.currentPage < totalPages) {
+                this.currentPage++;
+                this.renderTable();
+            }
+        });
+    }
+
+    populateFilters() {
+        const schools = [...new Set(this.data.map(row => row.school))].sort();
+        const tournaments = [...new Set(this.data.map(row => row.tournament))].sort();
+
+        const schoolFilter = document.getElementById('schoolFilter');
+        schools.forEach(school => {
+            const option = document.createElement('option');
+            option.value = school;
+            option.textContent = school;
+            schoolFilter.appendChild(option);
+        });
+
+        const tournamentFilter = document.getElementById('tournamentFilter');
+        tournaments.forEach(tournament => {
+            const option = document.createElement('option');
+            option.value = tournament;
+            option.textContent = tournament;
+            tournamentFilter.appendChild(option);
+        });
+    }
+
+    filterData() {
+        const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+        const schoolFilter = document.getElementById('schoolFilter').value;
+        const tournamentFilter = document.getElementById('tournamentFilter').value;
+        const sideFilter = document.getElementById('sideFilter').value;
+
+        this.filteredData = this.data.filter(row => {
+            const matchesSearch = !searchTerm || 
+                Object.values(row).some(value => 
+                    value.toLowerCase().includes(searchTerm)
+                );
+            
+            const matchesSchool = !schoolFilter || row.school === schoolFilter;
+            const matchesTournament = !tournamentFilter || row.tournament === tournamentFilter;
+            const matchesSide = !sideFilter || row.side === sideFilter;
+
+            return matchesSearch && matchesSchool && matchesTournament && matchesSide;
+        });
+
+        this.currentPage = 1;
+        this.sortData();
+        this.renderTable();
+        this.updateRecordCount();
+    }
+
+    sortData() {
+        this.filteredData.sort((a, b) => {
+            let aVal = a[this.sortColumn] || '';
+            let bVal = b[this.sortColumn] || '';
+            
+            // Handle numeric sorting for rounds
+            if (this.sortColumn === 'round') {
+                const aNum = parseInt(aVal.replace(/\D/g, '')) || 0;
+                const bNum = parseInt(bVal.replace(/\D/g, '')) || 0;
+                return this.sortDirection === 'asc' ? aNum - bNum : bNum - aNum;
+            }
+            
+            aVal = aVal.toLowerCase();
+            bVal = bVal.toLowerCase();
+            
+            if (aVal < bVal) return this.sortDirection === 'asc' ? -1 : 1;
+            if (aVal > bVal) return this.sortDirection === 'asc' ? 1 : -1;
+            return 0;
+        });
+    }
+
+    renderTable() {
+        const tbody = document.getElementById('tableBody');
+        const startIndex = (this.currentPage - 1) * this.itemsPerPage;
+        const endIndex = startIndex + this.itemsPerPage;
+        const pageData = this.filteredData.slice(startIndex, endIndex);
+
+        if (pageData.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="8" class="empty-state"><i class="fas fa-search"></i><div>No results found</div></td></tr>';
+            return;
+        }
+
+        tbody.innerHTML = pageData.map(row => `
+            <tr>
+                <td class="school-cell">${this.escapeHtml(row.school)}</td>
+                <td class="team-cell" title="${this.escapeHtml(row.team)}">${this.escapeHtml(row.team)}</td>
+                <td class="tournament-cell" title="${this.escapeHtml(row.tournament)}">${this.escapeHtml(row.tournament)}</td>
+                <td class="round-cell">${this.escapeHtml(row.round)}</td>
+                <td><span class="side-cell side-${row.side.toLowerCase()}">${this.escapeHtml(row.side)}</span></td>
+                <td class="opponent-cell" title="${this.escapeHtml(row.opponent)}">${this.escapeHtml(row.opponent)}</td>
+                <td class="judge-cell" title="${this.escapeHtml(row.judge)}">${this.escapeHtml(row.judge)}</td>
+                <td class="report-cell" title="${this.escapeHtml(row.roundReport)}">${this.escapeHtml(row.roundReport)}</td>
+            </tr>
+        `).join('');
+
+        this.updatePagination();
+    }
+
+    escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+
+    updatePagination() {
+        const totalPages = Math.ceil(this.filteredData.length / this.itemsPerPage);
+        const startRecord = (this.currentPage - 1) * this.itemsPerPage + 1;
+        const endRecord = Math.min(this.currentPage * this.itemsPerPage, this.filteredData.length);
+        
+        document.getElementById('prevPage').disabled = this.currentPage === 1;
+        document.getElementById('nextPage').disabled = this.currentPage === totalPages || totalPages === 0;
+        document.getElementById('paginationInfo').textContent = 
+            `Showing ${startRecord}-${endRecord} of ${this.filteredData.length.toLocaleString()}`;
+    }
+
+    updateRecordCount() {
+        const totalRecords = this.filteredData.length;
+        document.getElementById('recordCount').textContent = `${totalRecords.toLocaleString()} records`;
+    }
+}
+
+// Initialize the application when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    new DebateScout();
+});

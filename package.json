@@ -1,0 +1,19 @@
+{
+  "name": "debate-scout",
+  "version": "1.0.0",
+  "description": "Debate tournament data viewer",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "scrape": "node src/scrape-to-json.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "puppeteer": "^21.0.0"
+  },
+  "devDependencies": {},
+  "keywords": ["debate", "tournament", "data"],
+  "author": "",
+  "license": "MIT"
+}

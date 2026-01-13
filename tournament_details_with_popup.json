@@ -1,0 +1,77 @@
+[
+  {
+    "tournament": "West Point Debate Tournament",
+    "data": [
+      [
+        "Round",
+        "Div",
+        "Side",
+        "Opponent",
+        "Judge",
+        "Decision",
+        "Lucas McLaughlin",
+        "Darwin Bryen"
+      ],
+      [
+        "1",
+        "Jv",
+        "Aff",
+        "Liberty EY",
+        "Fuchs, Jay",
+        "L",
+        "28.9",
+        "28.8"
+      ],
+      [
+        "2",
+        "Jv",
+        "Neg",
+        "Cornell MT",
+        "McGovern, Ryan",
+        "L",
+        "27.1",
+        "27"
+      ],
+      [
+        "3",
+        "Jv",
+        "BYE",
+        "",
+        "",
+        "W",
+        "",
+        ""
+      ],
+      [
+        "4",
+        "Jv",
+        "Aff",
+        "Rochester JS",
+        "Hulsether, Lucia",
+        "L",
+        "28.1",
+        "28"
+      ],
+      [
+        "5",
+        "Jv",
+        "Aff",
+        "Rochester BM",
+        "Reddy, Pav",
+        "L",
+        "28.1",
+        "28.2"
+      ],
+      [
+        "6",
+        "Jv",
+        "Neg",
+        "George Mason AP",
+        "Lee, Adam",
+        "W",
+        "27.9",
+        "28.2"
+      ]
+    ]
+  }
+]

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debate Scout</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <div class="app-header">
+            <div class="header-left">
+                <div class="app-title">
+                    <i class="fas fa-table"></i>
+                    <span>Debate Scout</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search all records...">
+                </div>
+                <button class="btn-secondary">
+                    <i class="fas fa-filter"></i>
+                    Filter
+                </button>
+                <button class="btn-secondary">
+                    <i class="fas fa-sort"></i>
+                    Sort
+                </button>
+            </div>
+        </div>
+
+        <!-- Filters Bar -->
+        <div class="filters-bar">
+            <div class="filter-group">
+                <select id="schoolFilter" class="filter-select">
+                    <option value="">All Schools</option>
+                </select>
+                <select id="tournamentFilter" class="filter-select">
+                    <option value="">All Tournaments</option>
+                </select>
+                <select id="sideFilter" class="filter-select">
+                    <option value="">All Sides</option>
+                    <option value="Aff">Affirmative</option>
+                    <option value="Neg">Negative</option>
+                </select>
+            </div>
+            <div class="records-info">
+                <span id="recordCount">0 records</span>
+            </div>
+        </div>
+
+        <!-- Main Table Area -->
+        <div class="table-area">
+            <div class="table-scroll-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th data-sort="school" class="col-school sortable">
+                                <div class="th-content">
+                                    <span class="th-text">School</span>
+                                    <i class="fas fa-sort sort-icon"></i>
+                                </div>
+                            </th>
+                            <th data-sort="team" class="col-team sortable">
+                                <div class="th-content">
+                                    <span class="th-text">Team</span>
+                                    <i class="fas fa-sort sort-icon"></i>
+                                </div>
+                            </th>
+                            <th data-sort="tournament" class="col-tournament sortable">
+                                <div class="th-content">
+                                    <span class="th-text">Tournament</span>
+                                    <i class="fas fa-sort sort-icon"></i>
+                                </div>
+                            </th>
+                            <th data-sort="round" class="col-round sortable">
+                                <div class="th-content">
+                                    <span class="th-text">Round</span>
+                                    <i class="fas fa-sort sort-icon"></i>
+                                </div>
+                            </th>
+                            <th data-sort="side" class="col-side sortable">
+                                <div class="th-content">
+                                    <span class="th-text">Side</span>
+                                    <i class="fas fa-sort sort-icon"></i>
+                                </div>
+                            </th>
+                            <th data-sort="opponent" class="col-opponent sortable">
+                                <div class="th-content">
+                                    <span class="th-text">Opponent</span>
+                                    <i class="fas fa-sort sort-icon"></i>
+                                </div>
+                            </th>
+                            <th data-sort="judge" class="col-judge sortable">
+                                <div class="th-content">
+                                    <span class="th-text">Judge</span>
+                                    <i class="fas fa-sort sort-icon"></i>
+                                </div>
+                            </th>
+                            <th class="col-report">
+                                <div class="th-content">
+                                    <span class="th-text">Round Report</span>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <!-- Data rows will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Footer with Pagination -->
+        <div class="app-footer">
+            <div class="pagination-info">
+                <span id="paginationInfo">Showing 1-50 of 0</span>
+            </div>
+            <div class="pagination-controls">
+                <button id="prevPage" class="pagination-btn" disabled>
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <span class="page-numbers" id="pageNumbers"></span>
+                <button id="nextPage" class="pagination-btn" disabled>
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
