@@ -36,6 +36,7 @@ class DebateScout {
         this.itemsPerPage = 50;
         this.sortColumn = 'school';
         this.sortDirection = 'asc';
+        this.groupBy = '';
         
         this.init();
     }
@@ -163,6 +164,37 @@ class DebateScout {
         document.getElementById('exportBtn').addEventListener('click', () => {
             this.exportToCSV();
         });
+
+        // Filter button
+        document.getElementById('filterBtn').addEventListener('click', () => {
+            const filterGroup = document.querySelector('.filter-group');
+            filterGroup.style.display = filterGroup.style.display === 'none' ? 'flex' : 'none';
+        });
+
+        // Sort button
+        document.getElementById('sortBtn').addEventListener('click', () => {
+            const sortSelect = document.getElementById('sortSelect');
+            sortSelect.style.display = sortSelect.style.display === 'none' ? 'block' : 'none';
+        });
+
+        // Group button
+        document.getElementById('groupBtn').addEventListener('click', () => {
+            const groupSelect = document.getElementById('groupSelect');
+            groupSelect.style.display = groupSelect.style.display === 'none' ? 'block' : 'none';
+        });
+
+        // Sort select
+        document.getElementById('sortSelect').addEventListener('change', (e) => {
+            this.sortColumn = e.target.value;
+            this.sortData();
+            this.renderTable();
+        });
+
+        // Group select
+        document.getElementById('groupSelect').addEventListener('change', (e) => {
+            this.groupBy = e.target.value;
+            this.renderTable();
+        });
     }
 
     populateFilters() {
@@ -236,27 +268,62 @@ class DebateScout {
         const tbody = document.getElementById('tableBody');
         const startIndex = (this.currentPage - 1) * this.itemsPerPage;
         const endIndex = startIndex + this.itemsPerPage;
-        const pageData = this.filteredData.slice(startIndex, endIndex);
-
-        if (pageData.length === 0) {
-            tbody.innerHTML = '<tr><td colspan="8" class="empty-state"><i class="fas fa-search"></i><div>No results found</div></td></tr>';
-            return;
+        
+        let dataToRender = this.filteredData;
+        
+        // Group data if groupBy is selected
+        if (this.groupBy) {
+            const grouped = this.groupData(dataToRender, this.groupBy);
+            tbody.innerHTML = this.renderGroupedData(grouped);
+        } else {
+            const pageData = dataToRender.slice(startIndex, endIndex);
+            if (pageData.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="8" class="empty-state"><i class="fas fa-search"></i><div>No results found</div></td></tr>';
+                return;
+            }
+            tbody.innerHTML = pageData.map(row => `
+                <tr>
+                    <td class="school-cell">${this.escapeHtml(row.school)}</td>
+                    <td class="team-cell" title="${this.escapeHtml(row.team)}">${this.escapeHtml(row.team)}</td>
+                    <td class="tournament-cell" title="${this.escapeHtml(row.tournament)}">${this.escapeHtml(row.tournament)}</td>
+                    <td class="round-cell">${this.escapeHtml(row.round)}</td>
+                    <td><span class="side-cell side-${row.side.toLowerCase()}">${this.escapeHtml(row.side)}</span></td>
+                    <td class="opponent-cell" title="${this.escapeHtml(row.opponent)}">${this.escapeHtml(row.opponent)}</td>
+                    <td class="judge-cell" title="${this.escapeHtml(row.judge)}">${this.escapeHtml(row.judge)}</td>
+                    <td class="report-cell" title="${this.escapeHtml(row.roundReport)}">${this.escapeHtml(row.roundReport)}</td>
+                </tr>
+            `).join('');
         }
-
-        tbody.innerHTML = pageData.map(row => `
-            <tr>
-                <td class="school-cell">${this.escapeHtml(row.school)}</td>
-                <td class="team-cell" title="${this.escapeHtml(row.team)}">${this.escapeHtml(row.team)}</td>
-                <td class="tournament-cell" title="${this.escapeHtml(row.tournament)}">${this.escapeHtml(row.tournament)}</td>
-                <td class="round-cell">${this.escapeHtml(row.round)}</td>
-                <td><span class="side-cell side-${row.side.toLowerCase()}">${this.escapeHtml(row.side)}</span></td>
-                <td class="opponent-cell" title="${this.escapeHtml(row.opponent)}">${this.escapeHtml(row.opponent)}</td>
-                <td class="judge-cell" title="${this.escapeHtml(row.judge)}">${this.escapeHtml(row.judge)}</td>
-                <td class="report-cell" title="${this.escapeHtml(row.roundReport)}">${this.escapeHtml(row.roundReport)}</td>
-            </tr>
-        `).join('');
-
+        
         this.updatePagination();
+    }
+
+    groupData(data, groupBy) {
+        return data.reduce((groups, item) => {
+            const key = item[groupBy] || 'Unknown';
+            if (!groups[key]) groups[key] = [];
+            groups[key].push(item);
+            return groups;
+        }, {});
+    }
+
+    renderGroupedData(grouped) {
+        return Object.entries(grouped).map(([group, items]) => {
+            const groupHeader = `<tr class="group-header"><td colspan="8"><strong>${group} (${items.length} records)</strong></td></tr>`;
+            const groupRows = items.slice(0, 10).map(row => `
+                <tr>
+                    <td class="school-cell">${this.escapeHtml(row.school)}</td>
+                    <td class="team-cell" title="${this.escapeHtml(row.team)}">${this.escapeHtml(row.team)}</td>
+                    <td class="tournament-cell" title="${this.escapeHtml(row.tournament)}">${this.escapeHtml(row.tournament)}</td>
+                    <td class="round-cell">${this.escapeHtml(row.round)}</td>
+                    <td><span class="side-cell side-${row.side.toLowerCase()}">${this.escapeHtml(row.side)}</span></td>
+                    <td class="opponent-cell" title="${this.escapeHtml(row.opponent)}">${this.escapeHtml(row.opponent)}</td>
+                    <td class="judge-cell" title="${this.escapeHtml(row.judge)}">${this.escapeHtml(row.judge)}</td>
+                    <td class="report-cell" title="${this.escapeHtml(row.roundReport)}">${this.escapeHtml(row.roundReport)}</td>
+                </tr>
+            `).join('');
+            return groupHeader + groupRows;
+        }).join('');
     }
 
     escapeHtml(text) {
