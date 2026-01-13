@@ -52,8 +52,25 @@ app.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, 'src', 'login.html'));
 });
 
-// Serve static files from src directory
-app.use(express.static(path.join(__dirname, 'src')));
+// Serve static files from src directory (except data.json)
+app.use('/src', express.static(path.join(__dirname, 'src'), {
+    index: false,
+    setHeaders: (res, path) => {
+        if (path.endsWith('data.json')) {
+            res.status(403).send('Forbidden');
+        }
+    }
+}));
+
+// Protect data.json endpoint
+app.get('/data.json', requireAuth, (req, res) => {
+    res.sendFile(path.join(__dirname, 'src', 'data.json'));
+});
+
+// Serve other static files
+app.use(express.static(path.join(__dirname, 'src'), {
+    index: false
+}));
 
 // Protect main app
 app.get('/', requireAuth, (req, res) => {
