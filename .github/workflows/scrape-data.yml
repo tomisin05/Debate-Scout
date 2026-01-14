@@ -1,0 +1,67 @@
+name: Scrape Debate Data
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+    
+    - name: Install dependencies
+      run: npm install puppeteer
+    
+    - name: Check current data size
+      id: current-size
+      run: |
+        if [ -f "public/data.json" ]; then
+          CURRENT_SIZE=$(jq length public/data.json)
+          echo "current_size=$CURRENT_SIZE" >> $GITHUB_OUTPUT
+        else
+          echo "current_size=0" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: Scrape new data
+      run: node scrape_all_schools_to_json.js
+      env:
+        OPENCASELIST_USERNAME: ${{ secrets.OPENCASELIST_USERNAME }}
+        OPENCASELIST_PASSWORD: ${{ secrets.OPENCASELIST_PASSWORD }}
+    
+    - name: Move data to public folder
+      run: |
+        mkdir -p public
+        mv data.json public/data.json
+    
+    - name: Check new data size
+      id: new-size
+      run: |
+        NEW_SIZE=$(jq length public/data.json)
+        echo "new_size=$NEW_SIZE" >> $GITHUB_OUTPUT
+    
+    - name: Compare and commit
+      run: |
+        CURRENT_SIZE=${{ steps.current-size.outputs.current_size }}
+        NEW_SIZE=${{ steps.new-size.outputs.new_size }}
+        
+        echo "Current size: $CURRENT_SIZE"
+        echo "New size: $NEW_SIZE"
+        
+        if [ "$NEW_SIZE" -gt "$CURRENT_SIZE" ]; then
+          echo "New data has more records. Committing..."
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add public/data.json
+          git commit -m "Update debate data: $NEW_SIZE records"
+          git push
+        else
+          echo "No new data. Skipping commit."
+        fi

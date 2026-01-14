@@ -1,22 +1,24 @@
 {
-  "name": "debate-scout",
+  "name": "scout",
   "version": "1.0.0",
-  "description": "Debate tournament data viewer",
-  "main": "server.js",
+  "description": "",
+  "type": "commonjs",
   "scripts": {
-    "start": "node server.js",
-    "scrape": "node src/scrape-to-json.js",
-    "dev": "node server.js"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "dependencies": {
-    "express": "^4.18.2",
-    "puppeteer": "^21.0.0",
-    "express-session": "^1.17.3",
-    "passport": "^0.6.0",
-    "passport-google-oauth20": "^2.0.0"
-  },
-  "devDependencies": {},
-  "keywords": ["debate", "tournament", "data"],
+  "keywords": [],
   "author": "",
-  "license": "MIT"
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^12.7.0",
+    "puppeteer": "^24.35.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
+    "vite": "^7.3.1"
+  }
 }
