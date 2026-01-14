@@ -191,7 +191,7 @@ function App() {
     if (!resizingRef.current) return;
     const { column, startX, startWidth } = resizingRef.current;
     const diff = e.clientX - startX;
-    const newWidth = Math.max(50, startWidth + diff);
+    const newWidth = Math.max(35, startWidth + diff);
     setColumnWidths((prev) => ({ ...prev, [column]: newWidth }));
   };
 
@@ -584,12 +584,19 @@ function App() {
                                     toggleAllColumnFilterValues(col)
                                   }
                                 />
-                                <span style={{color: '#000'}}>Select All</span>
+                                <span>Select All</span>
                               </label>
                               <hr />
                               <div className="column-filter-list">
                                 {getUniqueValues(col).map((value) => (
-                                  <label key={value} className="column-option" style={{color: '#000', backgroundColor: '#fff'}}>
+                                  <label
+                                    key={value}
+                                    className="column-option"
+                                    style={{
+                                      color: "#000",
+                                      backgroundColor: "#fff",
+                                    }}
+                                  >
                                     <input
                                       type="checkbox"
                                       checked={(
@@ -599,7 +606,16 @@ function App() {
                                         toggleColumnFilterValue(col, value)
                                       }
                                     />
-                                    <span style={{color: '#000', fontSize: '14px', opacity: 1, visibility: 'visible'}}>{value}</span>
+                                    <span
+                                      style={{
+                                        color: "#000",
+                                        fontSize: "14px",
+                                        opacity: 1,
+                                        visibility: "visible",
+                                      }}
+                                    >
+                                      {value}
+                                    </span>
                                   </label>
                                 ))}
                               </div>

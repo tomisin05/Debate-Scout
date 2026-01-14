@@ -367,6 +367,7 @@ body {
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
+  padding-right: 55px;
 }
 
 .resize-handle {
@@ -394,7 +395,8 @@ body {
   border-bottom: 1px solid #f0f0f0;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 .data-table tbody tr:hover {
