@@ -584,12 +584,12 @@ function App() {
                                     toggleAllColumnFilterValues(col)
                                   }
                                 />
-                                <span>Select All</span>
+                                <span style={{color: '#000'}}>Select All</span>
                               </label>
                               <hr />
                               <div className="column-filter-list">
                                 {getUniqueValues(col).map((value) => (
-                                  <label key={value} className="column-option">
+                                  <label key={value} className="column-option" style={{color: '#000', backgroundColor: '#fff'}}>
                                     <input
                                       type="checkbox"
                                       checked={(
@@ -599,7 +599,7 @@ function App() {
                                         toggleColumnFilterValue(col, value)
                                       }
                                     />
-                                    <span>{value}</span>
+                                    <span style={{color: '#000', fontSize: '14px', opacity: 1, visibility: 'visible'}}>{value}</span>
                                   </label>
                                 ))}
                               </div>
