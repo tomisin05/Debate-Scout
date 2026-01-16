@@ -32,31 +32,11 @@
     "error": "No teams found"
   },
   {
-    "school": "Macalester College",
-    "error": "No teams found"
-  },
-  {
-    "school": "Marian",
-    "error": "No teams found"
-  },
-  {
     "school": "Pines",
     "error": "No teams found"
   },
   {
-    "school": "Rochester",
-    "error": "No teams found"
-  },
-  {
-    "school": "Samford",
-    "error": "No teams found"
-  },
-  {
     "school": "South Anchorage",
-    "error": "No teams found"
-  },
-  {
-    "school": "Southern California",
     "error": "No teams found"
   },
   {
@@ -73,10 +53,6 @@
   },
   {
     "school": "Vanderbilt",
-    "error": "No teams found"
-  },
-  {
-    "school": "Wyoming",
     "error": "No teams found"
   }
 ]
