@@ -4561,6 +4561,16 @@
   },
   {
     "school": "Dartmouth College",
+    "team": "Dartmouth College CaGo (Nora Cai - Leah Goldberg)",
+    "tournament": "6 - Dartmouth Round Robin",
+    "round": "Round 7",
+    "side": "Aff",
+    "opponent": "Kansas LS",
+    "judge": "Viveth Karthikeyan",
+    "roundReport": "1AC - Agriculture 1NC - T - Substantial - T - Should - K - Capitalism - K - Psychoanalysis - K - Capitalism 2NR - T - Should"
+  },
+  {
+    "school": "Dartmouth College",
     "team": "Dartmouth College GuMo (Saturn Guo - Katharine Morley)",
     "tournament": "1 - NUSO",
     "round": "Round 1",
@@ -11301,6 +11311,116 @@
   },
   {
     "school": "George Mason",
+    "team": "George Mason OCNe (Autumn OConnor - Emebet Neale)",
+    "tournament": "00---Contact Info",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "---",
+    "judge": "---",
+    "roundReport": "2A - Autumn | alocon389@gmail.com 2N - Emebet (she/her) | emebet.neale@gmail.com Please also add mason-debate@googlegroups.com"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason OCNe (Autumn OConnor - Emebet Neale)",
+    "tournament": "01---Navy",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Southern Nazarene JL",
+    "judge": "Jesse Smith",
+    "roundReport": "1AC---Gig Workers 2NR---Pess"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason OCNe (Autumn OConnor - Emebet Neale)",
+    "tournament": "01---Navy",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Binghampton BM",
+    "judge": "Kenny Delph",
+    "roundReport": "1AC---Fed Workers 1NC---New Affs, T-Subsets, Fourth Branch CP, Nietzsche K, Spark (Case) 2NR---Fourth Branch CP, Spark"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason OCNe (Autumn OConnor - Emebet Neale)",
+    "tournament": "01---Navy",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Southern Nazarene CD",
+    "judge": "KJ Reese",
+    "roundReport": "1AC---Fed Workers 1NC---T-Scope, China AI DA, Midterms DA, NLRB DA 2NR---Midterms DA"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason OCNe (Autumn OConnor - Emebet Neale)",
+    "tournament": "01---Navy",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Navy HK",
+    "judge": "Solomon Watson",
+    "roundReport": "1AC---Starbucks v. McKinney 2NR---Pess"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason OCNe (Autumn OConnor - Emebet Neale)",
+    "tournament": "01---Navy",
+    "round": "Round 5",
+    "side": "Aff",
+    "opponent": "Emory TW",
+    "judge": "Ellen Baker",
+    "roundReport": "1AC---Fed Workers 1NC---T-Subsets, Petitions CP, Article II CP, Exec Flex DA, Telework DA 2NR---Telework DA"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason OCNe (Autumn OConnor - Emebet Neale)",
+    "tournament": "01---Navy",
+    "round": "Round 6",
+    "side": "Neg",
+    "opponent": "NYU KK",
+    "judge": "Nigel Taylor-Ward",
+    "roundReport": "1AC---Syndicalism 2NR---Pess"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason OCNe (Autumn OConnor - Emebet Neale)",
+    "tournament": "01---Navy",
+    "round": "Round 7",
+    "side": "Aff",
+    "opponent": "Georgia GR",
+    "judge": "Kumail Zaidi",
+    "roundReport": "1AC---Fed Workers 1NC---Midterms DA, Takings Clause CP, Article II DA 2NR---Midterms DA"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason OCNe (Autumn OConnor - Emebet Neale)",
+    "tournament": "01---Navy",
+    "round": "Round 8",
+    "side": "Neg",
+    "opponent": "Kentucky RS",
+    "judge": "Will Baker",
+    "roundReport": "1AC---Sectoral Bargaining 2NR---Pess"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason OCNe (Autumn OConnor - Emebet Neale)",
+    "tournament": "01---Navy",
+    "round": "Finals",
+    "side": "Aff",
+    "opponent": "Kentucky RS",
+    "judge": "Baker, Johnson, Torres",
+    "roundReport": "1AC---Fed Workers 1NC---T-Substantial, NASA DA, UCF CP, ICE PIC, Disability K, Circumvention DA (Case) 2NR---T-Substantial"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason OCNe (Autumn OConnor - Emebet Neale)",
+    "tournament": "All Tournaments",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": ""
+  },
+  {
+    "school": "George Mason",
     "team": "George Mason PoNe (Izzy Poteet - Emebet Neale)",
     "tournament": "00---Contact Info",
     "round": "All",
@@ -15398,6 +15518,16 @@
     "opponent": "Southern Nazarene JL",
     "judge": "Matt Granstrom",
     "roundReport": "1AC - Fed Workers 2NR - Midterms DA"
+  },
+  {
+    "school": "Georgia",
+    "team": "Georgia GlRe (Alexander Glover - Alex Reed)",
+    "tournament": "Navy",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Binghamton BM",
+    "judge": "Nick Loew",
+    "roundReport": "1AC - Cap K 2NR - Cap Good"
   },
   {
     "school": "Georgia",
@@ -27202,6 +27332,76 @@
   {
     "school": "Kentucky",
     "team": "Kentucky GaSl (Ariel Gabay - Regan Slish)",
+    "tournament": "Navy",
+    "round": "Round 6",
+    "side": "Aff",
+    "opponent": "Minnesota HU",
+    "judge": "Ben Biggs",
+    "roundReport": "1AC: Sectoral Bargaining 1NC: Cap K, T Strengthen, States CP, Midterms DA, CISA DA, Worker Boards CP, Heg Bad, Case 2NC: CISA DA, Heg Bad, Case 1NR: Cap K 2NR: CISA DA, Case"
+  },
+  {
+    "school": "Kentucky",
+    "team": "Kentucky GaSl (Ariel Gabay - Regan Slish)",
+    "tournament": "Navy",
+    "round": "Round 7",
+    "side": "Neg",
+    "opponent": "James Madison OM",
+    "judge": "Shannon Howley",
+    "roundReport": "1AC: Life Strike 1NC: Cap K, T, Case 2NC: T, Case 1NR: Cap K 2NR: T, Case"
+  },
+  {
+    "school": "Kentucky",
+    "team": "Kentucky GaSl (Ariel Gabay - Regan Slish)",
+    "tournament": "Navy",
+    "round": "Round 8",
+    "side": "Aff",
+    "opponent": "Michigan CS",
+    "judge": "Josiah Ferguson",
+    "roundReport": "1AC: Sectoral Bargaining 1NC: Set Col K, Rates DA, Consolidation DA, EU CP, Midterms DA, States CP, Case 2NC: EU CP, Case 1NR: Rates DA 2NR: Rates DA, Case"
+  },
+  {
+    "school": "Kentucky",
+    "team": "Kentucky GaSl (Ariel Gabay - Regan Slish)",
+    "tournament": "Navy",
+    "round": "Finals",
+    "side": "Neg",
+    "opponent": "Michigan CS",
+    "judge": "Jenny Vazquez-Torres, Will Repko, Roy Rinehart",
+    "roundReport": "1AC: Fed Workers 1NC: Rates DA, Midterms DA, Advantage CP, CBR PIC, Disability K, T No Fed Workers, T Subsets, Bargaining Bad Turn, Case 2NC: T No Fed Workers, Case 1NR: Rates DA 2NR: Rates DA, Case"
+  },
+  {
+    "school": "Kentucky",
+    "team": "Kentucky GaSl (Ariel Gabay - Regan Slish)",
+    "tournament": "Navy",
+    "round": "Octas",
+    "side": "Aff",
+    "opponent": "Wake Forest PS",
+    "judge": "John Nagy, Aaron Fernando, Ben Biggs",
+    "roundReport": "1AC: Sectoral Bargaining 1NC: K, Case 2NC: K 1NR: K, Case 2NR: K, Case"
+  },
+  {
+    "school": "Kentucky",
+    "team": "Kentucky GaSl (Ariel Gabay - Regan Slish)",
+    "tournament": "Navy",
+    "round": "Quarters",
+    "side": "Neg",
+    "opponent": "George Mason DE",
+    "judge": "Jenny Vazquez-Torres, Terrell Taylor, Samantha Godbey",
+    "roundReport": "1AC: Black Note 1NC: Cap K, Disability K, T, Case 2NC: T, Case 1NR: Disability K 2NR: T, Case"
+  },
+  {
+    "school": "Kentucky",
+    "team": "Kentucky GaSl (Ariel Gabay - Regan Slish)",
+    "tournament": "Navy",
+    "round": "Semis",
+    "side": "Aff",
+    "opponent": "Dartmouth JR",
+    "judge": "Will Repko, John Nagy, Roy Rinehart",
+    "roundReport": "1AC: Sectoral Bargaining 1NC: Counter-Cyclical CP, LPE K, Wynter K, Innovation Turn, Case 2NC: LPE K, Innovation Turn, Case 1NR: Counter-Cyclical CP 2NR: LPE K, Case"
+  },
+  {
+    "school": "Kentucky",
+    "team": "Kentucky GaSl (Ariel Gabay - Regan Slish)",
     "tournament": "Northwestern",
     "round": "Round 1",
     "side": "Neg",
@@ -34433,6 +34633,16 @@
     "school": "Michigan State",
     "team": "Michigan State GeSh (Arielle Gearring - Hina Shehzad)",
     "tournament": "USNA Crowe Warken Debates",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "James Madison OM",
+    "judge": "Reza Husain",
+    "roundReport": "2NR---K"
+  },
+  {
+    "school": "Michigan State",
+    "team": "Michigan State GeSh (Arielle Gearring - Hina Shehzad)",
+    "tournament": "USNA Crowe Warken Debates",
     "round": "Round 4",
     "side": "Aff",
     "opponent": "Binghamton PT",
@@ -34443,11 +34653,41 @@
     "school": "Michigan State",
     "team": "Michigan State GeSh (Arielle Gearring - Hina Shehzad)",
     "tournament": "USNA Crowe Warken Debates",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "Michigan CS",
+    "judge": "Howley",
+    "roundReport": "2NR---K"
+  },
+  {
+    "school": "Michigan State",
+    "team": "Michigan State GeSh (Arielle Gearring - Hina Shehzad)",
+    "tournament": "USNA Crowe Warken Debates",
     "round": "Round 7",
     "side": "Aff",
     "opponent": "Michigan AO",
     "judge": "Reed",
     "roundReport": "1AC - Esther Brown 2NR - Topicality"
+  },
+  {
+    "school": "Michigan State",
+    "team": "Michigan State GeSh (Arielle Gearring - Hina Shehzad)",
+    "tournament": "USNA Crowe Warken Debates",
+    "round": "Round 8",
+    "side": "Neg",
+    "opponent": "Emory CR",
+    "judge": "Biggs",
+    "roundReport": "2NR---K"
+  },
+  {
+    "school": "Michigan State",
+    "team": "Michigan State GeSh (Arielle Gearring - Hina Shehzad)",
+    "tournament": "USNA Crowe Warken Debates",
+    "round": "Octas",
+    "side": "Neg",
+    "opponent": "Wake Forest AB",
+    "judge": "Reza Husain,Smith,Zaidi",
+    "roundReport": "2NR---K"
   },
   {
     "school": "Michigan State",
@@ -48907,7 +49147,7 @@
     "side": "Aff",
     "opponent": "Emory OP",
     "judge": "Di",
-    "roundReport": "1AC---Data Economy V1 2NR---Death K"
+    "roundReport": "1AC---Data Workers V1 2NR---Death K"
   },
   {
     "school": "UC Berkeley",
@@ -48917,7 +49157,7 @@
     "side": "Aff",
     "opponent": "Wake Forest SL",
     "judge": "Reeves",
-    "roundReport": "1AC---Data Economy V2 2NR---K"
+    "roundReport": "1AC---Data Workers V2 2NR---K"
   },
   {
     "school": "UC Berkeley",
@@ -48947,7 +49187,7 @@
     "side": "Aff",
     "opponent": "Emory LY",
     "judge": "Freehan",
-    "roundReport": "1AC---Data Economy V1 2NR---T Workers"
+    "roundReport": "1AC---Data Workers V1 2NR---T Workers"
   },
   {
     "school": "UC Berkeley",
@@ -48967,7 +49207,7 @@
     "side": "Aff",
     "opponent": "Iowa BS",
     "judge": "Lasseter",
-    "roundReport": "1AC---Data Economy V2 2NR---Crip Negativity K"
+    "roundReport": "1AC---Data Workers V2 2NR---Crip Negativity K"
   },
   {
     "school": "UC Berkeley",
@@ -48987,7 +49227,7 @@
     "side": "Aff",
     "opponent": "Michigan BP",
     "judge": "Waldinger",
-    "roundReport": "1AC---Data Economy V3 2NR---T Workers"
+    "roundReport": "1AC---Data Workers V3 2NR---T Workers"
   },
   {
     "school": "UC Berkeley",
@@ -49007,7 +49247,7 @@
     "side": "Aff",
     "opponent": "Harvard CS",
     "judge": "Ramsey",
-    "roundReport": "1AC---Data Economy V3 2NR---Work K"
+    "roundReport": "1AC---Data Workers V3 2NR---Work K"
   },
   {
     "school": "UC Berkeley",
@@ -49017,7 +49257,7 @@
     "side": "Aff",
     "opponent": "Kansas OW",
     "judge": "Conway",
-    "roundReport": "1AC---Data Economy V3 2NR---AI DA"
+    "roundReport": "1AC---Data Workers V3 2NR---AI DA"
   },
   {
     "school": "UC Berkeley",
@@ -49047,7 +49287,7 @@
     "side": "Aff",
     "opponent": "Arizona State SS",
     "judge": "Spiers",
-    "roundReport": "1AC---Data Economy V3 2NR---K"
+    "roundReport": "1AC---Data Workers V3 2NR---K"
   },
   {
     "school": "UC Berkeley",
@@ -49067,7 +49307,7 @@
     "side": "Aff",
     "opponent": "Harvard AB",
     "judge": "Kuffour",
-    "roundReport": "1AC---Data Economy V3 2NR---K"
+    "roundReport": "1AC---Data Workers V3 2NR---K"
   },
   {
     "school": "UC Berkeley",
@@ -49087,7 +49327,7 @@
     "side": "Aff",
     "opponent": "CSU Long Beach OM",
     "judge": "McGraw",
-    "roundReport": "1AC---Data Economy V4 2NR---K"
+    "roundReport": "1AC---Data Workers V4 2NR---K"
   },
   {
     "school": "UC Berkeley",
@@ -49117,7 +49357,7 @@
     "side": "Aff",
     "opponent": "UTD DD",
     "judge": "Williams",
-    "roundReport": "1AC---Data Economy V4 2NR---Afropessimism K"
+    "roundReport": "1AC---Data Workers V4 2NR---Afropessimism K"
   },
   {
     "school": "UC Berkeley",
@@ -49137,7 +49377,7 @@
     "side": "Aff",
     "opponent": "George Mason RT",
     "judge": "Ban",
-    "roundReport": "1AC---Data Economy V5 2NR---T Workers"
+    "roundReport": "1AC---Data Workers V5 2NR---T Workers"
   },
   {
     "school": "UC Berkeley",
@@ -49157,7 +49397,7 @@
     "side": "Aff",
     "opponent": "Northwestern AT",
     "judge": "Rock",
-    "roundReport": "1AC---Data Economy V6 2NR---AI DA"
+    "roundReport": "1AC---Data Workers V6 2NR---AI DA"
   },
   {
     "school": "UC Berkeley",
@@ -49187,7 +49427,7 @@
     "side": "Aff",
     "opponent": "Michigan ES",
     "judge": "Babcock",
-    "roundReport": "1AC---Data Economy V7 2NR---Midterms DA"
+    "roundReport": "1AC---Data Workers V7 2NR---Midterms DA"
   },
   {
     "school": "UC Berkeley",
