@@ -17601,6 +17601,16 @@
   },
   {
     "school": "Houston",
+    "team": "Houston HeMa (Anderson Hendrix - Patrick Macasaet)",
+    "tournament": "0---Contact",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": "Please put these emails on the chain: patrickmacasaet711@gmail.com andersonthendrix@gmail.com uhoustondebate@gmail.com Anderson (2A) - he/they Patrick (2N) - he/him Feel free to let us know if you have any accessibility concerns or trigger warnings you would like us to be aware of before the debate."
+  },
+  {
+    "school": "Houston",
     "team": "Houston HeSh (Anderson Hendrix - Yousef Shehata)",
     "tournament": "0---Contact Info",
     "round": "All",
@@ -19588,6 +19598,56 @@
     "opponent": "Northwestern PS",
     "judge": "Delph, Green, T. Louis",
     "roundReport": "1AC -- ISR 2NR -- Warren"
+  },
+  {
+    "school": "Iowa",
+    "team": "Iowa PaAn (Grey Parfenoff - Spencer Anderson McElligott)",
+    "tournament": "Rutgers University Newark Brick City Round Robin",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Bing CK",
+    "judge": "Butler",
+    "roundReport": "1AC -- Black Sapphics 2NR -- Case"
+  },
+  {
+    "school": "Iowa",
+    "team": "Iowa PaAn (Grey Parfenoff - Spencer Anderson McElligott)",
+    "tournament": "Rutgers University Newark Brick City Round Robin",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Texas FL",
+    "judge": "Wilkus",
+    "roundReport": "1AC -- Abolish Transness 2NR -- T"
+  },
+  {
+    "school": "Iowa",
+    "team": "Iowa PaAn (Grey Parfenoff - Spencer Anderson McElligott)",
+    "tournament": "Rutgers University Newark Brick City Round Robin",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Emory YR",
+    "judge": "Wash",
+    "roundReport": "1AC -- Fed Workers 2NR -- Infrastructures K"
+  },
+  {
+    "school": "Iowa",
+    "team": "Iowa PaAn (Grey Parfenoff - Spencer Anderson McElligott)",
+    "tournament": "Rutgers University Newark Brick City Round Robin",
+    "round": "Round 5",
+    "side": "Aff",
+    "opponent": "Kansas OW",
+    "judge": "Bankey",
+    "roundReport": "1AC -- Abolish Transness 2NR -- T"
+  },
+  {
+    "school": "Iowa",
+    "team": "Iowa PaAn (Grey Parfenoff - Spencer Anderson McElligott)",
+    "tournament": "Rutgers University Newark Brick City Round Robin",
+    "round": "Semis",
+    "side": "Aff",
+    "opponent": "Emory YR",
+    "judge": "Bankey,Butler,Murphy",
+    "roundReport": "1AC -- Abolish Transness 2NR -- T"
   },
   {
     "school": "Iowa",
@@ -23187,7 +23247,7 @@
     "side": "Aff",
     "opponent": "Navy CR",
     "judge": "Ethan Greer",
-    "roundReport": "Round 1 - UNiDOS"
+    "roundReport": "1AC --- UNiDOS"
   },
   {
     "school": "Kansas",
@@ -26881,6 +26941,26 @@
   },
   {
     "school": "Kentucky",
+    "team": "Kentucky Novices",
+    "tournament": "Navy",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Indiana PT",
+    "judge": "Tom O’Gorman",
+    "roundReport": "1AC - Sectoral Bargaining (Manufacturing & Monopsony Advantages) 2NR - K"
+  },
+  {
+    "school": "Kentucky",
+    "team": "Kentucky Novices",
+    "tournament": "Navy",
+    "round": "Round 8",
+    "side": "Neg",
+    "opponent": "George Mason GS",
+    "judge": "Reza Husain, Irshad",
+    "roundReport": "1AC - Right to Strike 1NC - Rates DA, Uncooperative Federalism CP, Midterms DA, Case 2NR- Rates DA, Case"
+  },
+  {
+    "school": "Kentucky",
     "team": "Kentucky BiSc (Hana Bisevac - Haddie Schedler)",
     "tournament": "Kentucky",
     "round": "Round 1",
@@ -28008,6 +28088,26 @@
     "opponent": "NYU KK",
     "judge": "Abhis Sedhai, Maitiu O Earcain, Solomon Watson",
     "roundReport": "1AC: Fractured Promises 1NC: T-CBR, Disclosure, Midterms DA, Disability K, States CP 2NC: Disability K 1NR: T-CBR 2NR: T-CBR"
+  },
+  {
+    "school": "Kentucky",
+    "team": "Kentucky ScRi (Haddie Schedler - Jeremiah Rimpson)",
+    "tournament": "Brick City Round Robin",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Liberty CL",
+    "judge": "Piekut, Bella",
+    "roundReport": "1AC-Black Breath 1NC- Nommo, Disability-K, T 2NC-K 1NR-T 2NR-Disability K"
+  },
+  {
+    "school": "Kentucky",
+    "team": "Kentucky ScRi (Haddie Schedler - Jeremiah Rimpson)",
+    "tournament": "Brick City Round Robin",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Wake Forest LW",
+    "judge": "Snelling, Tyler",
+    "roundReport": "1AC- Codename Whiteness 1NC- T, Cap K, King K, Refuse Refusal, Nommo 2NC- King K 1NR- T 2NR- King"
   },
   {
     "school": "Kentucky",
@@ -29928,6 +30028,66 @@
     "opponent": "Binghamton PT",
     "judge": "Reed",
     "roundReport": "1AC - Crip Time 2NR - Topicality"
+  },
+  {
+    "school": "Michigan",
+    "team": "Michigan BaPa (Eleanor Barrett - Jiyoon Park)",
+    "tournament": "Dartmouth",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Dartmouth CG",
+    "judge": "Dallas Perkins",
+    "roundReport": "1AC Federal Workers 2NR Bargaining PIC Deference DA"
+  },
+  {
+    "school": "Michigan",
+    "team": "Michigan BaPa (Eleanor Barrett - Jiyoon Park)",
+    "tournament": "Dartmouth",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Kansas LS",
+    "judge": "Chris Callahan",
+    "roundReport": "1AC The Weigh of Beautiful Things 2NR Framework"
+  },
+  {
+    "school": "Michigan",
+    "team": "Michigan BaPa (Eleanor Barrett - Jiyoon Park)",
+    "tournament": "Dartmouth",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Northwestern LR",
+    "judge": "Ryan Cavanaugh",
+    "roundReport": "1AC Federal Workers 2NR Buddhism K"
+  },
+  {
+    "school": "Michigan",
+    "team": "Michigan BaPa (Eleanor Barrett - Jiyoon Park)",
+    "tournament": "Dartmouth",
+    "round": "Round 5",
+    "side": "Aff",
+    "opponent": "Emory GS",
+    "judge": "Jasmine Stidham",
+    "roundReport": "1AC NEW Bankruptcy 2NR Security K"
+  },
+  {
+    "school": "Michigan",
+    "team": "Michigan BaPa (Eleanor Barrett - Jiyoon Park)",
+    "tournament": "Dartmouth",
+    "round": "Round 6",
+    "side": "Neg",
+    "opponent": "MSU GL",
+    "judge": "Viveth Karthikeyan",
+    "roundReport": "1AC Foreign Service 2NR Buddhism K"
+  },
+  {
+    "school": "Michigan",
+    "team": "Michigan BaPa (Eleanor Barrett - Jiyoon Park)",
+    "tournament": "Dartmouth",
+    "round": "Round 7",
+    "side": "Aff",
+    "opponent": "Georgetown AC",
+    "judge": "Jeff Buntin",
+    "roundReport": "1AC Bankruptcy 2NR Humprey's DA"
   },
   {
     "school": "Michigan",
