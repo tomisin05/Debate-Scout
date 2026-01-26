@@ -2741,6 +2741,56 @@
   },
   {
     "school": "CSU Long Beach",
+    "team": "CSU Long Beach EsMe (Alessandra Escobar - Daniel Medina)",
+    "tournament": "ASU College Tournament",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "USC HS",
+    "judge": "DSRB",
+    "roundReport": "1AC - Prison Labor 1NC - Abolition K, Case 2NR - Abolition K, Case"
+  },
+  {
+    "school": "CSU Long Beach",
+    "team": "CSU Long Beach EsMe (Alessandra Escobar - Daniel Medina)",
+    "tournament": "ASU College Tournament",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "USC TM",
+    "judge": "Nick Fleming",
+    "roundReport": "1AC - *NEW* Puta Life 1NC - T, Racial Cap K, Case 2NR - T"
+  },
+  {
+    "school": "CSU Long Beach",
+    "team": "CSU Long Beach EsMe (Alessandra Escobar - Daniel Medina)",
+    "tournament": "ASU College Tournament",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "USC BR",
+    "judge": "Morgan Copeland",
+    "roundReport": "1AC - Crip Time 1NC - Racial Cap K, Case 2NR - Racial Cap K"
+  },
+  {
+    "school": "CSU Long Beach",
+    "team": "CSU Long Beach EsMe (Alessandra Escobar - Daniel Medina)",
+    "tournament": "ASU College Tournament",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "USC BM",
+    "judge": "DSRB",
+    "roundReport": "1AC - Puta Life 1NC - T, Case (CBR Counter-advocacy) 2NR - Case"
+  },
+  {
+    "school": "CSU Long Beach",
+    "team": "CSU Long Beach EsMe (Alessandra Escobar - Daniel Medina)",
+    "tournament": "ASU College Tournament",
+    "round": "Round 5",
+    "side": "Aff",
+    "opponent": "CSU Fullerton MN",
+    "judge": "Tommy Jordan",
+    "roundReport": "1AC - Puta Life 1NC - Anti-Blackness, Case 2NR - Anti-Blackness, Case"
+  },
+  {
+    "school": "CSU Long Beach",
     "team": "CSU Long Beach EsSa (Aless Escobar - Martin Saenz)",
     "tournament": "any",
     "round": "All",
@@ -4808,6 +4858,26 @@
     "opponent": "North Texas BV",
     "judge": "Aneka Fish",
     "roundReport": "1AC - Green SB 1NC - Borders, Police PIC 2NR - borders"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College HaGo (Alex Hant - Jared Gonzalez)",
+    "tournament": "03. Indiana",
+    "round": "Round 5",
+    "side": "Aff",
+    "opponent": "MoState CH",
+    "judge": "Hunter McCullough",
+    "roundReport": "1AC - Green SB 1NC - Cap, Midterms, CSR, Codetermination, Major Questions 2NR - all"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College HaGo (Alex Hant - Jared Gonzalez)",
+    "tournament": "03. Indiana",
+    "round": "Round 6",
+    "side": "Neg",
+    "opponent": "Oklahoma DF",
+    "judge": "Justin Kirk",
+    "roundReport": "1AC - Nuclear Regulatory Commission 1NC - LPE, BRAC CP, T 2NR - LPE 2AR - Condo"
   },
   {
     "school": "Dartmouth College",
@@ -13333,21 +13403,21 @@
     "school": "Georgetown",
     "team": "Georgetown AgCo (Arnav Aggarwal - Connelly Cowan)",
     "tournament": "06 - Georgetown",
-    "round": "Round 4",
-    "side": "Aff",
-    "opponent": "Emory LY",
-    "judge": "Spiers",
-    "roundReport": "1AC Fed Workers 2NR Cap K"
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Berkeley UB",
+    "judge": "Trufanov",
+    "roundReport": "1AC Data Workers 2NR States CP, Midterms DA"
   },
   {
     "school": "Georgetown",
     "team": "Georgetown AgCo (Arnav Aggarwal - Connelly Cowan)",
     "tournament": "06 - Georgetown",
     "round": "Round 4",
-    "side": "Neg",
-    "opponent": "Berkeley UB",
-    "judge": "Trufanov",
-    "roundReport": "1AC Data Workers 2NR States CP, Midterms DA"
+    "side": "Aff",
+    "opponent": "Emory LY",
+    "judge": "Spiers",
+    "roundReport": "1AC Fed Workers 2NR Cap K"
   },
   {
     "school": "Georgetown",
@@ -27072,6 +27142,46 @@
   {
     "school": "Kentucky",
     "team": "Kentucky ErRu (Wheezy Ervin - Jonn Rushing)",
+    "tournament": "HIT",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "Oklahoma BW",
+    "judge": "Nikola Stamenkovic Diez",
+    "roundReport": "1AC: Secondary strikes 1NC: Real Housewives K of Bloomington 2NR: Real Housewives K of Bloomington"
+  },
+  {
+    "school": "Kentucky",
+    "team": "Kentucky ErRu (Wheezy Ervin - Jonn Rushing)",
+    "tournament": "HIT",
+    "round": "Round 6",
+    "side": "Aff",
+    "opponent": "Western Georgia KM",
+    "judge": "Jim Schultz",
+    "roundReport": "1AC: Sectoral Bargaining(Cut ADV) 1NC: Cap K 2NR: Cap K"
+  },
+  {
+    "school": "Kentucky",
+    "team": "Kentucky ErRu (Wheezy Ervin - Jonn Rushing)",
+    "tournament": "HIT",
+    "round": "Octas",
+    "side": "Neg",
+    "opponent": "North Texas BV",
+    "judge": "David Rooney, Lindsey Shook, Nikola Stamenkovich Diez",
+    "roundReport": "1AC: Cybracero 1NC: Black Madness K 2NR: Black Madness K"
+  },
+  {
+    "school": "Kentucky",
+    "team": "Kentucky ErRu (Wheezy Ervin - Jonn Rushing)",
+    "tournament": "HIT",
+    "round": "Quarters",
+    "side": "Aff",
+    "opponent": "Mo State NN",
+    "judge": "John Turner, Niko Sims, Geoff Lundeen",
+    "roundReport": "1AC: Sectoral Bargaining 1NC: T-Tripartite, Ermo K, Russia CP, Degrowth CP, Midterms DA, OLRC CP, Growth Turn 2NC: Degrowth CP, Russia CP 1NR: Growth Turn 2NR: Degrowth Cp"
+  },
+  {
+    "school": "Kentucky",
+    "team": "Kentucky ErRu (Wheezy Ervin - Jonn Rushing)",
     "tournament": "Patterson",
     "round": "Round 1",
     "side": "Aff",
@@ -29578,196 +29688,6 @@
     "opponent": "Missouri State LD",
     "judge": "Specker",
     "roundReport": "1ac: sectoral bargining 1nc: advp cp, states cp, millitancy da, rates da, midterms da 2nr: millitancy da adv cp"
-  },
-  {
-    "school": "Macalester College",
-    "team": "Macalester College RoXu (Lewis Robinson - Fiona Xue)",
-    "tournament": "Minnesota Tournament",
-    "round": "Round 1",
-    "side": "Aff",
-    "opponent": "Oklahoma BW",
-    "judge": "Fernando, Aaron",
-    "roundReport": "Broad-Based Bargaining"
-  },
-  {
-    "school": "Macalester College",
-    "team": "Macalester College WiCo (Noah Winters - Maggie Costello)",
-    "tournament": "Contact Info!!",
-    "round": "All",
-    "side": "Aff",
-    "opponent": "",
-    "judge": "",
-    "roundReport": "Maggie Costello - the8thearlgrey@gmail.com Noah Winters - noahwintersftw@gmail.com Please add: Beau Larsen - beau.a.larsen@gmail.com Kwudjwa Osei - kwudjwachains@gmail.com"
-  },
-  {
-    "school": "Macalester College",
-    "team": "Macalester College WiCo (Noah Winters - Maggie Costello)",
-    "tournament": "Shirley",
-    "round": "Round 1",
-    "side": "Aff",
-    "opponent": "Wake LW",
-    "judge": "Emily Bosch",
-    "roundReport": "1AC - Neoliberalism 1NC - K, case 2AC - all 2NC - all 1NR - all 1AR - procedural, k, case 2NR - all 2AR - procedural, case"
-  },
-  {
-    "school": "Macalester College",
-    "team": "Macalester College WiCo (Noah Winters - Maggie Costello)",
-    "tournament": "Shirley",
-    "round": "Round 2",
-    "side": "Neg",
-    "opponent": "Missouri State BK",
-    "judge": "Dallas Perkins",
-    "roundReport": "1AC - sectoral bargaining (automation, ai, stagnation) 1NC - rates, midterms, militancy, T, case 2AC - all 1NC - midterms, case 1NR - militancy 1AR - all 2NR - midterms, case 2AR - all"
-  },
-  {
-    "school": "Macalester College",
-    "team": "Macalester College WiCo (Noah Winters - Maggie Costello)",
-    "tournament": "Shirley",
-    "round": "Round 3",
-    "side": "Aff",
-    "opponent": "Michigan State FM",
-    "judge": "Nate Martin",
-    "roundReport": "1AC - Sectoral bargaining 1NC - adv cp, adv cp 2, states, weird politics DA, regs DA 2AC - all, condo, 50 state fiat 2NC - states, case 1NR - politics 1AR - case, states, politics 2NR - all 2AR - all"
-  },
-  {
-    "school": "Macalester College",
-    "team": "Macalester College WiCo (Noah Winters - Maggie Costello)",
-    "tournament": "Shirley",
-    "round": "Round 4",
-    "side": "Neg",
-    "opponent": "Georgetown VP",
-    "judge": "Ian Dill",
-    "roundReport": "1AC - Au Pairs aff 1NC - T, militancy, states, rates, cap"
-  },
-  {
-    "school": "Macalester College",
-    "team": "Macalester College WiCo (Noah Winters - Maggie Costello)",
-    "tournament": "Shirley",
-    "round": "Round 5",
-    "side": "Aff",
-    "opponent": "George Mason CS",
-    "judge": "Julian Kuffour",
-    "roundReport": "1AC - Neolib 1NC - T, democracy K, afropess/Black horizons, states 2AC - all 2NC - afropess, case 1NR - case, perm + alt 1AR - all 2NR - K (FW) 2AR - case, fw"
-  },
-  {
-    "school": "Macalester College",
-    "team": "Macalester College WiKo (Noah Winters - Will Kochel)",
-    "tournament": "01 - Georgetown",
-    "round": "Round 1",
-    "side": "Neg",
-    "opponent": "Kansas HP",
-    "judge": "Joe Schatz",
-    "roundReport": "1AC - Politics of Surround 1NC - T USFG, Levine, Case 2NR - Levine"
-  },
-  {
-    "school": "Macalester College",
-    "team": "Macalester College WiKo (Noah Winters - Will Kochel)",
-    "tournament": "01 - Georgetown",
-    "round": "Round 2",
-    "side": "Aff",
-    "opponent": "Harvard CS",
-    "judge": "David Michael Woodward",
-    "roundReport": "1AC - Broad Based Bargaining 1NC - Post Work K, Linguistics CP, Case 2NR - Post Work K"
-  },
-  {
-    "school": "Macalester College",
-    "team": "Macalester College WiKo (Noah Winters - Will Kochel)",
-    "tournament": "01 - Georgetown",
-    "round": "Round 3",
-    "side": "Aff",
-    "opponent": "Emory GS",
-    "judge": "Brandon Kelly",
-    "roundReport": "1AC - Prosocial Bargaining 1NC - T CBR, ADV CP, Ban the Plan CIL CP, States CP, Cap K, Midterms DA, First Amendment DA, China Competition DA, Case 2NR - Cap K"
-  },
-  {
-    "school": "Macalester College",
-    "team": "Macalester College WiKo (Noah Winters - Will Kochel)",
-    "tournament": "01 - Georgetown",
-    "round": "Round 4",
-    "side": "Neg",
-    "opponent": "Dartmouth GH",
-    "judge": "Nathan Fleming",
-    "roundReport": "1AC - Sectoral Bargaining 1NC - NLRB tradeoff DA, States, Midterms, T Scope 2NR - Midterms, States"
-  },
-  {
-    "school": "Macalester College",
-    "team": "Macalester College WiKo (Noah Winters - Will Kochel)",
-    "tournament": "01 - Georgetown",
-    "round": "Round 5",
-    "side": "Aff",
-    "opponent": "UC Berkeley GS",
-    "judge": "KJ Reese",
-    "roundReport": "1AC - Prosocial Bargaining 1NC - Capk, Shutdown, States 2NR - Capk"
-  },
-  {
-    "school": "Macalester College",
-    "team": "Macalester College WiKo (Noah Winters - Will Kochel)",
-    "tournament": "01 - Georgetown",
-    "round": "Round 6",
-    "side": "Neg",
-    "opponent": "CSU Long Beach OM",
-    "judge": "Flynn Makuch",
-    "roundReport": "1AC - Black Holes 1NC - Levine K, Case 2NR - Academy K on case"
-  },
-  {
-    "school": "Macalester College",
-    "team": "Macalester College WiKo (Noah Winters - Will Kochel)",
-    "tournament": "01 - Georgetown",
-    "round": "Round 7",
-    "side": "Neg",
-    "opponent": "Dartmouth JR",
-    "judge": "Ryan Cavanaugh",
-    "roundReport": "1AC - General Strike 1NC - Econ DA, Midterms, States, T-Scope, Reg Analysis CP 2NR - Econ DA"
-  },
-  {
-    "school": "Macalester College",
-    "team": "Macalester College WiKo (Noah Winters - Will Kochel)",
-    "tournament": "01 - Georgetown",
-    "round": "Round 8",
-    "side": "Aff",
-    "opponent": "Iowa EW",
-    "judge": "Jasmine Stidham",
-    "roundReport": "1AC - Neolib 1NC - Afropess 2NR - Afropess (+ new PIK)"
-  },
-  {
-    "school": "Marian",
-    "team": "Marian HiHa (Aaron Hill - Tayjah Harper)",
-    "tournament": "00 -- Hi guys",
-    "round": "All",
-    "side": "Aff",
-    "opponent": "ourselves on some spiritual shi",
-    "judge": "also ourselves but on some critical of ourselves shi",
-    "roundReport": "emails: marianpolicydebate@gmail.com ahilldebate@gmail.com harpertayjah@gmail.com"
-  },
-  {
-    "school": "Marian",
-    "team": "Marian HiRi (Aaron Hill - Armoni Richardson)",
-    "tournament": "hi",
-    "round": "All",
-    "side": "Aff",
-    "opponent": "",
-    "judge": "",
-    "roundReport": "Emails: marianpolicydebate@gmail.com ahilldebate@gmail.com armonicarla@gmail.com"
-  },
-  {
-    "school": "Marian",
-    "team": "Marian MuRi (Evyn Muckerheide - Armoni Richardson)",
-    "tournament": "Kentucky",
-    "round": "Round 2",
-    "side": "Aff",
-    "opponent": "Navy AM",
-    "judge": "Matt Conway",
-    "roundReport": "1AC - Farm Workers (ADA Novice) 1NC - States CP, Federalism DA, Shutdown DA 2NR - Federalism DA, Shutdown DA"
-  },
-  {
-    "school": "Marian",
-    "team": "Marian MuRi (Evyn Muckerheide - Armoni Richardson)",
-    "tournament": "Kentucky",
-    "round": "Round 3",
-    "side": "Aff",
-    "opponent": "Navy NJ",
-    "judge": "Jared Spiers",
-    "roundReport": "1AC - Farm Workers 1NC - States CP, Federalism DA, Shutdown DA 2NR - States CP"
   },
   {
     "school": "Miami",
@@ -33251,6 +33171,36 @@
   },
   {
     "school": "Michigan",
+    "team": "Michigan OuAg (Robert Ou - William Agustin)",
+    "tournament": "8-Hoosier Invitational Tournament HIT",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "Western Kentucky Ney & Fournier",
+    "judge": "Fish",
+    "roundReport": "1AC---Merger Review 1NC---DA Midterms K Cap CP Remand CP Antitrust Bad 2NR---CP Remand"
+  },
+  {
+    "school": "Michigan",
+    "team": "Michigan OuAg (Robert Ou - William Agustin)",
+    "tournament": "8-Hoosier Invitational Tournament HIT",
+    "round": "Round 6",
+    "side": "Aff",
+    "opponent": "Wyoming Widi & Willson",
+    "judge": "Roy",
+    "roundReport": "1AC---Secondary Strikes 1NC---K 2NR---K"
+  },
+  {
+    "school": "Michigan",
+    "team": "Michigan OuAg (Robert Ou - William Agustin)",
+    "tournament": "8-Hoosier Invitational Tournament HIT",
+    "round": "Quarters",
+    "side": "Aff",
+    "opponent": "Michigan Agustin & Ou",
+    "judge": "Callahan,Jasani,Specker",
+    "roundReport": "1AC---Secondary Actions 1NC---CP ILO CP States PIC Boycotts CP Tribes DA Midterms DA Antitrust 2NR---T No Secondary Strikes"
+  },
+  {
+    "school": "Michigan",
     "team": "Michigan ShSh (Avi Shah - Conner Shih)",
     "tournament": "Georgetown",
     "round": "Round 1",
@@ -36667,7 +36617,7 @@
     "side": "Neg",
     "opponent": "Batman",
     "judge": "",
-    "roundReport": "Contact info Avery Bates - 1A/2N - Averyrbates@gmail.com Levi DeAngelis - 2A/1N -levi.deangeli@gmail.com Avery - (She/Her) Levi- (He/Him) Pretty please add debatedocs@googlegroups.com to the email chain"
+    "roundReport": "Contact info Avery Bates - 1A/2N - Averyrbates@gmail.com Levi DeAngelis - 2A/1N -levi.deangeli@gmail.com Avery - (She/Her) Levi- (He/Him) Please add mostatedebate@gmail.com to the email chain"
   },
   {
     "school": "Missouri State",
@@ -37571,6 +37521,16 @@
   },
   {
     "school": "Missouri State",
+    "team": "Missouri State CoHa (Quentin Cooper - Shelby Hahn)",
+    "tournament": "01 Indiana (Fernando <3)",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "Dartmouth GH",
+    "judge": "Hunter McCullough",
+    "roundReport": "1AC Green Sectoral Bargaining 1NC Cap K Major Questions CP Codetermination CP CSR DA Midterms DA 2NR CSR DA"
+  },
+  {
+    "school": "Missouri State",
     "team": "Missouri State CoNe (Gary Cowdrey-Mota - Asher Neal)",
     "tournament": "00---Contact Information",
     "round": "All",
@@ -38138,6 +38098,36 @@
     "opponent": "Western Kentucky CK",
     "judge": "Sims, Niko",
     "roundReport": "1AC: Sectoral Bargaining 1NC: T-CBR, Tribes CP, Disability K, LNG DA, ILO CP, AI PIC 2NR: LNG DA"
+  },
+  {
+    "school": "Missouri State",
+    "team": "Missouri State NeNe (Asher Neal - Nico Neal)",
+    "tournament": "01 Indiana",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "North Texas BV",
+    "judge": "Stockstill, Anna",
+    "roundReport": "1AC: Cybraceros 1NC: Agential Fantasy CA, Immigration Status CP, Cap K, T-USFG 2NR: T-USFG"
+  },
+  {
+    "school": "Missouri State",
+    "team": "Missouri State NeNe (Asher Neal - Nico Neal)",
+    "tournament": "01 Indiana",
+    "round": "Round 6",
+    "side": "Aff",
+    "opponent": "Western Kentucky FN",
+    "judge": "Fifelski",
+    "roundReport": "1AC: Sectoral Bargaining 1NC: T-CBR, ILO CP, Parker CP, Midterms DA, Rates DA, Militant Unionism K 2NR: Rates DA"
+  },
+  {
+    "school": "Missouri State",
+    "team": "Missouri State NeNe (Asher Neal - Nico Neal)",
+    "tournament": "01 Indiana",
+    "round": "Quarters",
+    "side": "Neg",
+    "opponent": "Kentucky ER",
+    "judge": "Turner, Lundeen, Sims",
+    "roundReport": "1AC: Sectoral Bargaining 1NC: Post-ermoism K, Russia CP, T-Tripartite, Degrowth CP, Midterms DA, Code CP 2NR: Degrowth CP"
   },
   {
     "school": "Missouri State",
@@ -39246,7 +39236,7 @@
     "round": "Round 3",
     "side": "Aff",
     "opponent": "Western Kentucky NF",
-    "judge": "Stamenkovic",
+    "judge": "Diez Stamenkovic",
     "roundReport": "1AC- Cybracero 1NC- T USFG, Cap K 2NR- T USFG"
   },
   {
@@ -39258,6 +39248,36 @@
     "opponent": "Dartmouth GH",
     "judge": "Fish",
     "roundReport": "1AC- Green Sectoral Bargaining 1NC- Border Cap K, Police Pic 2NR- Border Cap K"
+  },
+  {
+    "school": "North Texas",
+    "team": "North Texas BoVa (Ronen Bowman - Emanuel Vargas)",
+    "tournament": "4 -- Hoosier Invitational",
+    "round": "Round 5",
+    "side": "Aff",
+    "opponent": "Missouri State NN",
+    "judge": "Stockstill",
+    "roundReport": "1AC- Cybracero 1NC- Agential Fantasy K, Cap K, T USFG, Ag CA 2NR- T USFG"
+  },
+  {
+    "school": "North Texas",
+    "team": "North Texas BoVa (Ronen Bowman - Emanuel Vargas)",
+    "tournament": "4 -- Hoosier Invitational",
+    "round": "Round 6",
+    "side": "Neg",
+    "opponent": "Northwestern LW",
+    "judge": "McBlain",
+    "roundReport": "1AC- Sectoral Bargaining 1NC- Border Cap K 2NR- Border Cap K"
+  },
+  {
+    "school": "North Texas",
+    "team": "North Texas BoVa (Ronen Bowman - Emanuel Vargas)",
+    "tournament": "4 -- Hoosier Invitational",
+    "round": "Octas",
+    "side": "Aff",
+    "opponent": "Kentucky ER",
+    "judge": "Rooney, Shook, Diez Stamenkovic",
+    "roundReport": "1AC- Cybracero 1NC- Mad Blackness K 2NR- Mad Blackness K"
   },
   {
     "school": "North Texas",
@@ -39738,6 +39758,26 @@
     "opponent": "Michigan Agustin & Ou",
     "judge": "Kirk",
     "roundReport": "1AC - Whorearchy 2NR - T, Case"
+  },
+  {
+    "school": "North Texas",
+    "team": "North Texas PaSh (Sumya Paruchuri - Nicholette Sharp)",
+    "tournament": "Hoosier Invitational Tournament HIT",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "West Georgia Kennon & Missell",
+    "judge": "Shook",
+    "roundReport": "1AC - Carceral Workshops 2NR - Psychoanalysis"
+  },
+  {
+    "school": "North Texas",
+    "team": "North Texas PaSh (Sumya Paruchuri - Nicholette Sharp)",
+    "tournament": "Hoosier Invitational Tournament HIT",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "Wyoming Widi & Willson",
+    "judge": "Cherry",
+    "roundReport": "1AC - Queer Labor 2NR - Quare PIK"
   },
   {
     "school": "North Texas",
@@ -40738,6 +40778,26 @@
     "opponent": "Missouri State CH",
     "judge": "Geoff Lundeen",
     "roundReport": "1AC---Sectoral Bargaining 1NC---States CP, Politics DA, Advantage CP, Citizen Juries CP, Return Fire K, Econ Turn 2NR---Econ Turn"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern ArKu (Ari Arceo - Gavin Kung)",
+    "tournament": "5. Indiana",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "West Georgia KM",
+    "judge": "Matthew Wilkinson",
+    "roundReport": "1AC---Carceral Workshops 1NC---Cap K, T-Subsets, Abolition CP, ILO CP, Litigation DA, Queer Anarchism K 2NR---T-Subsets"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern ArKu (Ari Arceo - Gavin Kung)",
+    "tournament": "5. Indiana",
+    "round": "Round 6",
+    "side": "Aff",
+    "opponent": "Indiana FT",
+    "judge": "Conway",
+    "roundReport": "1AC---Federal Workers 1NC---T- NLRA, APSEC, Vagueness, Adv CP, Clean Slate CP, Appointments DA, Movements DA 2NR---Appointments DA"
   },
   {
     "school": "Northwestern",
@@ -41748,6 +41808,36 @@
     "opponent": "Oklahoma BW",
     "judge": "Jasani",
     "roundReport": "1AC: NRC 1NC: Kant DA, T-Substantial, IFF CP, Advantage CP, States CP, Politics DA, Flex DA, Vagueness 2NR: Flex DA 2AR: Conditionality Bad"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern LeWe (Michael Lee - Samuel Weisz)",
+    "tournament": "6---Indiana",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "Western Kentucky CK",
+    "judge": "Shook",
+    "roundReport": "1AC: Merger Review 1NC: States, Politics, Mergers DA, T-CBR, Adv CP, NLRB DA 2NC: Ban CP 2NR: Ban CP, NLRB DA"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern LeWe (Michael Lee - Samuel Weisz)",
+    "tournament": "6---Indiana",
+    "round": "Round 6",
+    "side": "Aff",
+    "opponent": "North Texas BV",
+    "judge": "McBlain",
+    "roundReport": "1AC: Sectoral Bargaining 1NC: Borders K 2NR: Borders K"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern LeWe (Michael Lee - Samuel Weisz)",
+    "tournament": "6---Indiana",
+    "round": "Quarters",
+    "side": "Neg",
+    "opponent": "Wyoming WW",
+    "judge": "Dal Pra, Fish, Morris",
+    "roundReport": "1AC: Queer Ungovernmentality 1NC: T-USFG, Negative Universality, Unions Good 2NR: T-USFG"
   },
   {
     "school": "Northwestern",
@@ -44572,6 +44662,46 @@
   {
     "school": "Oklahoma",
     "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
+    "tournament": "Hoosier Invitational Tournament HIT",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Kentucky Ervin & Rushing",
+    "judge": "Rooney",
+    "roundReport": "1AC- NRC 1NC- King, T- 50, New Affs bad 2NR- King"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
+    "tournament": "Hoosier Invitational Tournament HIT",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Missouri State Neal & Neal",
+    "judge": "McCullough",
+    "roundReport": "1AC- Sectoral 1NC- Midterms, Small Biz 2NR- Case"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
+    "tournament": "Hoosier Invitational Tournament HIT",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Missouri State Cooper & Hahn",
+    "judge": "Fish",
+    "roundReport": "1AC- NRC 1NC- T-no fed, midterms, cap, fascism procedural, MQD CP, Disclosure. 2NR- T-no fed, midterms, MQD, Case"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
+    "tournament": "Hoosier Invitational Tournament HIT",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Wyoming Widi & Willson",
+    "judge": "Lain",
+    "roundReport": "1AC- Queer labor 1NC- Quare pik, T-FW 2NR- Case"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
     "tournament": "Sunflower Swing 2 K State 2026",
     "round": "Round 1",
     "side": "Aff",
@@ -44908,6 +45038,26 @@
     "opponent": "Wyoming Pierson & Hedrick",
     "judge": "Matthew Wilkinson",
     "roundReport": "1AC - rail 1NC - connectivsim K, security K, case 2NR- connectivism K, case"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma Webu1 (Forest Werner - yobani bustos)",
+    "tournament": "1. Hoosier Invitational",
+    "round": "Round 5",
+    "side": "Aff",
+    "opponent": "Kentucky Ervin & Rushing",
+    "judge": "Nikola Stamenkovic Diez",
+    "roundReport": "1AC - Secondary Actions v.3 1NC - black fem K, case 2NR - Black fem K"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma Webu1 (Forest Werner - yobani bustos)",
+    "tournament": "1. Hoosier invitational",
+    "round": "Round 6",
+    "side": "Neg",
+    "opponent": "Missouri State Cooper & Hahn",
+    "judge": "Stockstill, Anna",
+    "roundReport": "1AC - Secondary Actions 1NC - Connectivism K, Security K, case 2NR - connectivism K, case"
   },
   {
     "school": "Oklahoma",
@@ -46078,6 +46228,16 @@
     "opponent": "CSU Fullerton NM",
     "judge": "Revelins",
     "roundReport": "1AC---Abolition 2NR---Case, T"
+  },
+  {
+    "school": "Southern California",
+    "team": "Southern California BhRa (Anish Bhadani - Rayeed Rahman)",
+    "tournament": "4-ASU",
+    "round": "Round 6",
+    "side": "Neg",
+    "opponent": "Fullerton CD",
+    "judge": "Cooper",
+    "roundReport": "1AC---Worker Centers 2NR---Case"
   },
   {
     "school": "Southern California",
@@ -54930,6 +55090,46 @@
     "roundReport": "1AC - Carceral Workshops V2 1NC - T Substantial, T Strengthen, White Supremacists PIC, Cap K 2NR - T Substantial"
   },
   {
+    "school": "West Georgia",
+    "team": "West Georgia KeMi (James Kennon - Bruce Missell)",
+    "tournament": "03 - Indiana",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Marian HR",
+    "judge": "Kaine C.",
+    "roundReport": "1AC - Carceral Workshops 1NC - White Nihilism 2NR - White Nihilism"
+  },
+  {
+    "school": "West Georgia",
+    "team": "West Georgia KeMi (James Kennon - Bruce Missell)",
+    "tournament": "03 - Indiana",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Indiana DJ",
+    "judge": "Diez S.",
+    "roundReport": "1AC - Union AI 1NC - Cap K, Speech Act 1NR - Speech Act"
+  },
+  {
+    "school": "West Georgia",
+    "team": "West Georgia KeMi (James Kennon - Bruce Missell)",
+    "tournament": "03 - Indiana",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Oklahoma bW",
+    "judge": "Niko S.",
+    "roundReport": "1AC - Secondary Actions 1NC - Cap K V1, Midterms 2NR - Cap K V1"
+  },
+  {
+    "school": "West Georgia",
+    "team": "West Georgia KeMi (James Kennon - Bruce Missell)",
+    "tournament": "03 - Indiana",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "North Texas PS",
+    "judge": "Lindsey S.",
+    "roundReport": "1AC - Carceral Workshops 1NC - Psychoanalysis 2NR - Psychoanalysis"
+  },
+  {
     "school": "West Point",
     "team": "West Point Novices",
     "tournament": "All Tournaments",
@@ -55828,6 +56028,36 @@
     "opponent": "Purdue HH",
     "judge": "Peyton Reeves",
     "roundReport": "1AC: Merger Review 2NR: Hegemony Bad"
+  },
+  {
+    "school": "Western Kentucky",
+    "team": "Western Kentucky NeFo (Riley Ney - Rae Fournier)",
+    "tournament": "1. Indiana",
+    "round": "Round 5",
+    "side": "Aff",
+    "opponent": "Michigan AO",
+    "judge": "Anekah Fish",
+    "roundReport": "1AC: Merger Review v.3 2NR: Reliance Interests DA, Advantage CP, Cyberattacks Good"
+  },
+  {
+    "school": "Western Kentucky",
+    "team": "Western Kentucky NeFo (Riley Ney - Rae Fournier)",
+    "tournament": "1. Indiana",
+    "round": "Round 6",
+    "side": "Neg",
+    "opponent": "Missouri State NN",
+    "judge": "Kurt Fifelski",
+    "roundReport": "1AC: Sectoral Bargaining 2NR: Rates DA"
+  },
+  {
+    "school": "Western Kentucky",
+    "team": "Western Kentucky NeFo (Riley Ney - Rae Fournier)",
+    "tournament": "1. Indiana",
+    "round": "Quarters",
+    "side": "Aff",
+    "opponent": "Northwestern AK",
+    "judge": "Kurt Fifelski, Lauren McBlain, Peyton Reeves",
+    "roundReport": "1AC: Merger Review 2NR: NLRB PIC, NLRB Tradeoff DA"
   },
   {
     "school": "Western Kentucky",
@@ -58322,6 +58552,16 @@
   {
     "school": "Wyoming",
     "team": "Wyoming WiWi (Saimaa Widi - Jean-Luc Willson)",
+    "tournament": "5. Hoosier",
+    "round": "Round 5",
+    "side": "Aff",
+    "opponent": "North Texas PS",
+    "judge": "Kaine Cherry",
+    "roundReport": "1AC - Queer Labor 1NC - FW, Cap, Quare PIK 2NR - Quare PIK"
+  },
+  {
+    "school": "Wyoming",
+    "team": "Wyoming WiWi (Saimaa Widi - Jean-Luc Willson)",
     "tournament": "5. Wake",
     "round": "Round 1",
     "side": "Aff",
@@ -58552,6 +58792,16 @@
   {
     "school": "Wyoming",
     "team": "Wyoming WiWi (Saimaa Widi - Jean-Luc Willson)",
+    "tournament": "8 . Hoosier",
+    "round": "Quarters",
+    "side": "Aff",
+    "opponent": "Northwestern LW",
+    "judge": "Sophia Dal Pra, Eric Morris, Anekah Fish",
+    "roundReport": "1AC - Queer Labor 1NC - FW, BBB CP, Negative Universality K 2NR - FW"
+  },
+  {
+    "school": "Wyoming",
+    "team": "Wyoming WiWi (Saimaa Widi - Jean-Luc Willson)",
     "tournament": "8. Hoosier",
     "round": "Round 1",
     "side": "Aff",
@@ -58578,5 +58828,25 @@
     "opponent": "Oklahoma DF",
     "judge": "Brian Lain",
     "roundReport": "1AC - Queer Labor 1NC - Quare PIK, FW, Case 2NR - Case"
+  },
+  {
+    "school": "Wyoming",
+    "team": "Wyoming WiWi (Saimaa Widi - Jean-Luc Willson)",
+    "tournament": "8. Hoosier",
+    "round": "Round 5",
+    "side": "Aff",
+    "opponent": "North Texas PS",
+    "judge": "Kaine Cherry",
+    "roundReport": "1AC - Queer Labor 1NC - FW, Cap K, Quare PIK 2NR - Quare PIK"
+  },
+  {
+    "school": "Wyoming",
+    "team": "Wyoming WiWi (Saimaa Widi - Jean-Luc Willson)",
+    "tournament": "8. Hoosier",
+    "round": "Round 6",
+    "side": "Neg",
+    "opponent": "Michigan AO",
+    "judge": "Anjan Roy",
+    "roundReport": "1AC - Secondary Strikes 1NC - Empire K 2NR - Empire K"
   }
 ]
