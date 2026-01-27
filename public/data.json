@@ -2502,6 +2502,186 @@
   {
     "school": "CSU Fullerton",
     "team": "CSU Fullerton CaDo (Samantha Catapang - Israel Dominguez)",
+    "tournament": "01. Mini-Soda College Debate Tournament",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Northwestern AK",
+    "judge": "Geoff Lundeen",
+    "roundReport": "1AC: Worker Centers 1NC: Disclosure T N-1 PIK Cap K Case"
+  },
+  {
+    "school": "CSU Fullerton",
+    "team": "CSU Fullerton CaDo (Samantha Catapang - Israel Dominguez)",
+    "tournament": "01. Mini-Soda College Debate Tournament",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Minnesota HU",
+    "judge": "Sophia Dal Pra",
+    "roundReport": "1AC: Fed Workers 1NC: T-Tactics Imperialism K Police PIK"
+  },
+  {
+    "school": "CSU Fullerton",
+    "team": "CSU Fullerton CaDo (Samantha Catapang - Israel Dominguez)",
+    "tournament": "01. Mini-Soda College Debate Tournament",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Northwestern LW",
+    "judge": "Nunya",
+    "roundReport": "Nada Paso :( Bye."
+  },
+  {
+    "school": "CSU Fullerton",
+    "team": "CSU Fullerton CaDo (Samantha Catapang - Israel Dominguez)",
+    "tournament": "01. Mini-Soda College Debate Tournament",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "USC RW",
+    "judge": "Ryan Wash",
+    "roundReport": "1AC: Prison Workers 1NC: Pinay Procedural T-Tactics Imperialism K Case"
+  },
+  {
+    "school": "CSU Fullerton",
+    "team": "CSU Fullerton CaDo (Samantha Catapang - Israel Dominguez)",
+    "tournament": "01. Mini-Soda College Debate Tournament",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "Wake Forest HN",
+    "judge": "Kaine Cherry",
+    "roundReport": "1AC: No Tops No Peace 1NC: T-Tactics Capitalism Case"
+  },
+  {
+    "school": "CSU Fullerton",
+    "team": "CSU Fullerton CaDo (Samantha Catapang - Israel Dominguez)",
+    "tournament": "01. Mini-Soda College Debate Tournament",
+    "round": "Round 6",
+    "side": "Aff",
+    "opponent": "Missouri State CN",
+    "judge": "Ronald Poole",
+    "roundReport": "1AC: Worker Centers 1NC: T CBR CP Cap K Agential Fantasy K U.S Code CP Case"
+  },
+  {
+    "school": "CSU Fullerton",
+    "team": "CSU Fullerton CaDo (Samantha Catapang - Israel Dominguez)",
+    "tournament": "02. Wakey Wakey its time for Shirley",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Michigan State FM",
+    "judge": "Dj Williams",
+    "roundReport": "1AC: Worker Centers 1NC: T Unions K CBA's DA Rights-Spec Case"
+  },
+  {
+    "school": "CSU Fullerton",
+    "team": "CSU Fullerton CaDo (Samantha Catapang - Israel Dominguez)",
+    "tournament": "02. Wakey Wakey its time for Shirley",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "George Mason RT",
+    "judge": "Jameson Balda",
+    "roundReport": "1AC: Sectoral Bargaining 1NC: T-Tactics Imperialism K Case"
+  },
+  {
+    "school": "CSU Fullerton",
+    "team": "CSU Fullerton CaDo (Samantha Catapang - Israel Dominguez)",
+    "tournament": "02. Wakey Wakey its time for Shirley",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Emory AS",
+    "judge": "Kumail Zaidi",
+    "roundReport": "1AC: Fed Workers 1NC: Police PIK Disability K Case"
+  },
+  {
+    "school": "CSU Fullerton",
+    "team": "CSU Fullerton CaDo (Samantha Catapang - Israel Dominguez)",
+    "tournament": "02. Wakey Wakey its time for Shirley",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Kansas BP",
+    "judge": "Jason Regnier",
+    "roundReport": "1AC: Worker Centers 1NC: T ADV CP Ballot PIK GND CP"
+  },
+  {
+    "school": "CSU Fullerton",
+    "team": "CSU Fullerton CaDo (Samantha Catapang - Israel Dominguez)",
+    "tournament": "02. Wakey Wakey its time for Shirley",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "UTD HH",
+    "judge": "Jack Moore",
+    "roundReport": "1AC: Data Producers 1NC: Police PIK Disability K Case"
+  },
+  {
+    "school": "CSU Fullerton",
+    "team": "CSU Fullerton CaDo (Samantha Catapang - Israel Dominguez)",
+    "tournament": "02. Wakey Wakey its time for Shirley",
+    "round": "Round 6",
+    "side": "Aff",
+    "opponent": "Okalahoma BS",
+    "judge": "Eli T.Louis",
+    "roundReport": "1AC: Worker Centers 1NC T Case"
+  },
+  {
+    "school": "CSU Fullerton",
+    "team": "CSU Fullerton CaDo (Samantha Catapang - Israel Dominguez)",
+    "tournament": "02. Wakey Wakey its time for Shirley",
+    "round": "Round 7",
+    "side": "Aff",
+    "opponent": "Emory KW",
+    "judge": "Grace McManus",
+    "roundReport": "1AC: Worker Centers 1NC: T Cap K Adv CP Case"
+  },
+  {
+    "school": "CSU Fullerton",
+    "team": "CSU Fullerton CaDo (Samantha Catapang - Israel Dominguez)",
+    "tournament": "03. AyShU College Tournament",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "USC BM",
+    "judge": "Deven Cooper",
+    "roundReport": "1AC: Prison Workers 1NC Abolition K Case"
+  },
+  {
+    "school": "CSU Fullerton",
+    "team": "CSU Fullerton CaDo (Samantha Catapang - Israel Dominguez)",
+    "tournament": "03. AyShU College Tournament",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "UC Berkely BU",
+    "judge": "Nate Martin",
+    "roundReport": "1AC: Worker Centers 1NC: T Cap K Ballot PIK"
+  },
+  {
+    "school": "CSU Fullerton",
+    "team": "CSU Fullerton CaDo (Samantha Catapang - Israel Dominguez)",
+    "tournament": "03. AyShU College Tournament",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "CSU Long Beach GT",
+    "judge": "Nate Martin",
+    "roundReport": "1AC: End Forced Arbitration 1NC T PIK Clandestine K Case"
+  },
+  {
+    "school": "CSU Fullerton",
+    "team": "CSU Fullerton CaDo (Samantha Catapang - Israel Dominguez)",
+    "tournament": "03. AyShU College Tournament",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "USH HS",
+    "judge": "Nick Fleming",
+    "roundReport": "1AC: Worker Centers 1NC: T Case"
+  },
+  {
+    "school": "CSU Fullerton",
+    "team": "CSU Fullerton CaDo (Samantha Catapang - Israel Dominguez)",
+    "tournament": "03. AyShU College Tournament",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "USC MT",
+    "judge": "Nick Fleming",
+    "roundReport": "1AC: Black Sensuality 1NC: Academy K Case"
+  },
+  {
+    "school": "CSU Fullerton",
+    "team": "CSU Fullerton CaDo (Samantha Catapang - Israel Dominguez)",
     "tournament": "1AC: Worker Centers",
     "round": "All",
     "side": "Aff",
@@ -17727,7 +17907,7 @@
     "side": "Aff",
     "opponent": "",
     "judge": "",
-    "roundReport": "Please put these emails on the chain: patrickmacasaet711@gmail.com andersonthendrix@gmail.com uhoustondebate@gmail.com Anderson (2A) - he/they Patrick (2N) - he/him Feel free to let us know if you have any accessibility concerns or trigger warnings you would like us to be aware of before the debate."
+    "roundReport": "2A---Patrick---he/him 2N---Anderson---he/they Please put these emails on the chain: patrickmacasaet711@gmail.com andersonthendrix@gmail.com uhoustondebate@gmail.com Feel free to let us know if you have any accessibility concerns or trigger warnings you would like us to be aware of before the debate."
   },
   {
     "school": "Houston",
@@ -18498,6 +18678,76 @@
     "opponent": "Western Kentucky IS",
     "judge": "Jackson Specker",
     "roundReport": "1AC---Fed Workers 1NC---ASPEC, Movements DA, Clean Slate CP, Set-Col K, Art. 2 DA 2NR---Movements DA"
+  },
+  {
+    "school": "Indiana",
+    "team": "Indiana FiTr (Zander Fish - Maia Truemper)",
+    "tournament": "5. Indiana",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Missouri State NN",
+    "judge": "Jeff Buntin",
+    "roundReport": "1AC---Automation 2NR---Degrowth"
+  },
+  {
+    "school": "Indiana",
+    "team": "Indiana FiTr (Zander Fish - Maia Truemper)",
+    "tournament": "5. Indiana",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Michigan AO",
+    "judge": "Sophia Dal Pra",
+    "roundReport": "1AC---Secondary Actions 2NR---Movements DA"
+  },
+  {
+    "school": "Indiana",
+    "team": "Indiana FiTr (Zander Fish - Maia Truemper)",
+    "tournament": "5. Indiana",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Missouri State DB",
+    "judge": "Jackson Specker",
+    "roundReport": "1AC---Sectoral Bargaining 2NR---Movements DA"
+  },
+  {
+    "school": "Indiana",
+    "team": "Indiana FiTr (Zander Fish - Maia Truemper)",
+    "tournament": "5. Indiana",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Northwestern LO",
+    "judge": "Kaine Cherry",
+    "roundReport": "1AC---Union AI 2NR---Afropess K"
+  },
+  {
+    "school": "Indiana",
+    "team": "Indiana FiTr (Zander Fish - Maia Truemper)",
+    "tournament": "5. Indiana",
+    "round": "Round 5",
+    "side": "Aff",
+    "opponent": "Purdue HH",
+    "judge": "Justin Kirk",
+    "roundReport": "1AC---Automation 2NR---Death Cult K"
+  },
+  {
+    "school": "Indiana",
+    "team": "Indiana FiTr (Zander Fish - Maia Truemper)",
+    "tournament": "5. Indiana",
+    "round": "Round 6",
+    "side": "Neg",
+    "opponent": "Northwestern AK",
+    "judge": "Matt Conway",
+    "roundReport": "1AC---Fed Workers 2NR---Appointments DA"
+  },
+  {
+    "school": "Indiana",
+    "team": "Indiana FiTr (Zander Fish - Maia Truemper)",
+    "tournament": "5. Indiana",
+    "round": "Octas",
+    "side": "Aff",
+    "opponent": "Northwestern AK",
+    "judge": "Lauren McBlain, Kurt Fifelski, John Turner",
+    "roundReport": "1AC---Automation 2NR---Adv CP"
   },
   {
     "school": "Indiana",
@@ -29690,6 +29940,196 @@
     "roundReport": "1ac: sectoral bargining 1nc: advp cp, states cp, millitancy da, rates da, midterms da 2nr: millitancy da adv cp"
   },
   {
+    "school": "Macalester College",
+    "team": "Macalester College RoXu (Lewis Robinson - Fiona Xue)",
+    "tournament": "Minnesota Tournament",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Oklahoma BW",
+    "judge": "Fernando, Aaron",
+    "roundReport": "Broad-Based Bargaining"
+  },
+  {
+    "school": "Macalester College",
+    "team": "Macalester College WiCo (Noah Winters - Maggie Costello)",
+    "tournament": "Contact Info!!",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": "Maggie Costello - the8thearlgrey@gmail.com Noah Winters - noahwintersftw@gmail.com Please add: Beau Larsen - beau.a.larsen@gmail.com Kwudjwa Osei - kwudjwachains@gmail.com"
+  },
+  {
+    "school": "Macalester College",
+    "team": "Macalester College WiCo (Noah Winters - Maggie Costello)",
+    "tournament": "Shirley",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Wake LW",
+    "judge": "Emily Bosch",
+    "roundReport": "1AC - Neoliberalism 1NC - K, case 2AC - all 2NC - all 1NR - all 1AR - procedural, k, case 2NR - all 2AR - procedural, case"
+  },
+  {
+    "school": "Macalester College",
+    "team": "Macalester College WiCo (Noah Winters - Maggie Costello)",
+    "tournament": "Shirley",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Missouri State BK",
+    "judge": "Dallas Perkins",
+    "roundReport": "1AC - sectoral bargaining (automation, ai, stagnation) 1NC - rates, midterms, militancy, T, case 2AC - all 1NC - midterms, case 1NR - militancy 1AR - all 2NR - midterms, case 2AR - all"
+  },
+  {
+    "school": "Macalester College",
+    "team": "Macalester College WiCo (Noah Winters - Maggie Costello)",
+    "tournament": "Shirley",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Michigan State FM",
+    "judge": "Nate Martin",
+    "roundReport": "1AC - Sectoral bargaining 1NC - adv cp, adv cp 2, states, weird politics DA, regs DA 2AC - all, condo, 50 state fiat 2NC - states, case 1NR - politics 1AR - case, states, politics 2NR - all 2AR - all"
+  },
+  {
+    "school": "Macalester College",
+    "team": "Macalester College WiCo (Noah Winters - Maggie Costello)",
+    "tournament": "Shirley",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Georgetown VP",
+    "judge": "Ian Dill",
+    "roundReport": "1AC - Au Pairs aff 1NC - T, militancy, states, rates, cap"
+  },
+  {
+    "school": "Macalester College",
+    "team": "Macalester College WiCo (Noah Winters - Maggie Costello)",
+    "tournament": "Shirley",
+    "round": "Round 5",
+    "side": "Aff",
+    "opponent": "George Mason CS",
+    "judge": "Julian Kuffour",
+    "roundReport": "1AC - Neolib 1NC - T, democracy K, afropess/Black horizons, states 2AC - all 2NC - afropess, case 1NR - case, perm + alt 1AR - all 2NR - K (FW) 2AR - case, fw"
+  },
+  {
+    "school": "Macalester College",
+    "team": "Macalester College WiKo (Noah Winters - Will Kochel)",
+    "tournament": "01 - Georgetown",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Kansas HP",
+    "judge": "Joe Schatz",
+    "roundReport": "1AC - Politics of Surround 1NC - T USFG, Levine, Case 2NR - Levine"
+  },
+  {
+    "school": "Macalester College",
+    "team": "Macalester College WiKo (Noah Winters - Will Kochel)",
+    "tournament": "01 - Georgetown",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Harvard CS",
+    "judge": "David Michael Woodward",
+    "roundReport": "1AC - Broad Based Bargaining 1NC - Post Work K, Linguistics CP, Case 2NR - Post Work K"
+  },
+  {
+    "school": "Macalester College",
+    "team": "Macalester College WiKo (Noah Winters - Will Kochel)",
+    "tournament": "01 - Georgetown",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Emory GS",
+    "judge": "Brandon Kelly",
+    "roundReport": "1AC - Prosocial Bargaining 1NC - T CBR, ADV CP, Ban the Plan CIL CP, States CP, Cap K, Midterms DA, First Amendment DA, China Competition DA, Case 2NR - Cap K"
+  },
+  {
+    "school": "Macalester College",
+    "team": "Macalester College WiKo (Noah Winters - Will Kochel)",
+    "tournament": "01 - Georgetown",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Dartmouth GH",
+    "judge": "Nathan Fleming",
+    "roundReport": "1AC - Sectoral Bargaining 1NC - NLRB tradeoff DA, States, Midterms, T Scope 2NR - Midterms, States"
+  },
+  {
+    "school": "Macalester College",
+    "team": "Macalester College WiKo (Noah Winters - Will Kochel)",
+    "tournament": "01 - Georgetown",
+    "round": "Round 5",
+    "side": "Aff",
+    "opponent": "UC Berkeley GS",
+    "judge": "KJ Reese",
+    "roundReport": "1AC - Prosocial Bargaining 1NC - Capk, Shutdown, States 2NR - Capk"
+  },
+  {
+    "school": "Macalester College",
+    "team": "Macalester College WiKo (Noah Winters - Will Kochel)",
+    "tournament": "01 - Georgetown",
+    "round": "Round 6",
+    "side": "Neg",
+    "opponent": "CSU Long Beach OM",
+    "judge": "Flynn Makuch",
+    "roundReport": "1AC - Black Holes 1NC - Levine K, Case 2NR - Academy K on case"
+  },
+  {
+    "school": "Macalester College",
+    "team": "Macalester College WiKo (Noah Winters - Will Kochel)",
+    "tournament": "01 - Georgetown",
+    "round": "Round 7",
+    "side": "Neg",
+    "opponent": "Dartmouth JR",
+    "judge": "Ryan Cavanaugh",
+    "roundReport": "1AC - General Strike 1NC - Econ DA, Midterms, States, T-Scope, Reg Analysis CP 2NR - Econ DA"
+  },
+  {
+    "school": "Macalester College",
+    "team": "Macalester College WiKo (Noah Winters - Will Kochel)",
+    "tournament": "01 - Georgetown",
+    "round": "Round 8",
+    "side": "Aff",
+    "opponent": "Iowa EW",
+    "judge": "Jasmine Stidham",
+    "roundReport": "1AC - Neolib 1NC - Afropess 2NR - Afropess (+ new PIK)"
+  },
+  {
+    "school": "Marian",
+    "team": "Marian HiHa (Aaron Hill - Tayjah Harper)",
+    "tournament": "00 -- Hi guys",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "ourselves on some spiritual shi",
+    "judge": "also ourselves but on some critical of ourselves shi",
+    "roundReport": "emails: marianpolicydebate@gmail.com ahilldebate@gmail.com harpertayjah@gmail.com"
+  },
+  {
+    "school": "Marian",
+    "team": "Marian HiRi (Aaron Hill - Armoni Richardson)",
+    "tournament": "hi",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": "Emails: marianpolicydebate@gmail.com ahilldebate@gmail.com armonicarla@gmail.com"
+  },
+  {
+    "school": "Marian",
+    "team": "Marian MuRi (Evyn Muckerheide - Armoni Richardson)",
+    "tournament": "Kentucky",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Navy AM",
+    "judge": "Matt Conway",
+    "roundReport": "1AC - Farm Workers (ADA Novice) 1NC - States CP, Federalism DA, Shutdown DA 2NR - Federalism DA, Shutdown DA"
+  },
+  {
+    "school": "Marian",
+    "team": "Marian MuRi (Evyn Muckerheide - Armoni Richardson)",
+    "tournament": "Kentucky",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Navy NJ",
+    "judge": "Jared Spiers",
+    "roundReport": "1AC - Farm Workers 1NC - States CP, Federalism DA, Shutdown DA 2NR - States CP"
+  },
+  {
     "school": "Miami",
     "team": "Miami Novices",
     "tournament": "Wake/ADAFC",
@@ -32617,7 +33057,7 @@
     "side": "Aff",
     "opponent": "Missouri State NS",
     "judge": "McCaffrey",
-    "roundReport": "1AC---Secondary Actions 1NC---T Subsets CP Adv DA Automation DA Rates CP OLRC CP Reentrenchment K Cap CP States 2NR---DA Reentrenchment DA Automation"
+    "roundReport": "1AC---Secondary Strikes 1NC---T Subsets CP Adv DA Automation DA Rates CP OLRC CP Reentrenchment K Cap CP States 2NR---DA Reentrenchment DA Automation"
   },
   {
     "school": "Michigan",
@@ -32687,7 +33127,7 @@
     "side": "Aff",
     "opponent": "Emory AS",
     "judge": "Baker",
-    "roundReport": "1AC---Secondary Actions v2 1NC---DA Econ K Cap T Strengthen T Strikes DA Antitrust CP Worker Centers 2NR---DA Econ"
+    "roundReport": "1AC---Secondary Strikes 1NC---DA Econ K Cap T Strengthen T Strikes DA Antitrust CP Worker Centers 2NR---DA Econ"
   },
   {
     "school": "Michigan",
@@ -32707,7 +33147,7 @@
     "side": "Aff",
     "opponent": "Western Kentucky SS",
     "judge": "Callahan",
-    "roundReport": "1AC---Secondary Actions v2 1NC---K Fiat 2NR---K Fiat"
+    "roundReport": "1AC---Secondary Strikes 1NC---K Fiat 2NR---K Fiat"
   },
   {
     "school": "Michigan",
@@ -32727,7 +33167,7 @@
     "side": "Aff",
     "opponent": "Northwestern PS",
     "judge": "Dal Pra",
-    "roundReport": "1AC---Secondary Action 1NC+2NR---Pess"
+    "roundReport": "1AC---Secondary Strikes 1NC+2NR---Pess"
   },
   {
     "school": "Michigan",
@@ -32947,7 +33387,7 @@
     "side": "Aff",
     "opponent": "Emory LY",
     "judge": "Tarnowski",
-    "roundReport": "1AC---Secondary Strike 1NC---T No Strikes CP States CP Employment Law K Cap DA Midterms DA Ceasefire DA Antitrust 2NR---DA Antitrust"
+    "roundReport": "1AC---Secondary Strikes 1NC---T No Strikes CP States CP Employment Law K Cap DA Midterms DA Ceasefire DA Antitrust 2NR---DA Antitrust"
   },
   {
     "school": "Michigan",
@@ -32997,7 +33437,7 @@
     "side": "Aff",
     "opponent": "George Mason WW",
     "judge": "Shaikh",
-    "roundReport": "1AC---Secondary Actions 1NC---T Subsets T No strikes DA NLRB Tradeoff CP Ban Unions K Capitalism CP UCF CP CP States DA Midterms 2NR---CP Ban Unions"
+    "roundReport": "1AC---Secondary Actions 1NC---T Subsets T No strikes DA NLRB Tradeoff CP Ban Unions K Capitalism CP UCF CP CP States DA Midterms 2NR---CP Ban Unions 2AR---https://hsimpact.wordpress.com/2018/10/30/some-notes-on-conditionality-bad/"
   },
   {
     "school": "Michigan",
@@ -33167,7 +33607,7 @@
     "side": "Aff",
     "opponent": "Kentucky Ervin & Rushing",
     "judge": "Turner",
-    "roundReport": "1AC---Secondary Strikes 1NC---T Strikes K Affropess DA Rates P Vagueness 2NR---K"
+    "roundReport": "1AC---Secondary Actions 1NC---T Strikes K Affropess DA Rates P Vagueness 2NR---K"
   },
   {
     "school": "Michigan",
@@ -33187,7 +33627,17 @@
     "side": "Aff",
     "opponent": "Wyoming Widi & Willson",
     "judge": "Roy",
-    "roundReport": "1AC---Secondary Strikes 1NC---K 2NR---K"
+    "roundReport": "1AC---Secondary Actions 1NC---K 2NR---K"
+  },
+  {
+    "school": "Michigan",
+    "team": "Michigan OuAg (Robert Ou - William Agustin)",
+    "tournament": "8-Hoosier Invitational Tournament HIT",
+    "round": "Finals",
+    "side": "Aff",
+    "opponent": "Northwestern Lee & Weisz",
+    "judge": "DeLong,Jasani,Wilkinson",
+    "roundReport": "1AC---Secondary Actions 1NC---T Strikes CP CRA CP States DA PTX DA Rates 2NR---CP States DA Court PTX"
   },
   {
     "school": "Michigan",
@@ -33195,9 +33645,19 @@
     "tournament": "8-Hoosier Invitational Tournament HIT",
     "round": "Quarters",
     "side": "Aff",
-    "opponent": "Michigan Agustin & Ou",
+    "opponent": "Western Kentucky Kumar & Carter",
     "judge": "Callahan,Jasani,Specker",
-    "roundReport": "1AC---Secondary Actions 1NC---CP ILO CP States PIC Boycotts CP Tribes DA Midterms DA Antitrust 2NR---T No Secondary Strikes"
+    "roundReport": "1AC---Secondary Actions 1NC---T No Secondary Strikes CP ILO CP States PIC Boycotts CP Tribes DA Midterms DA Antitrust 2NR---T No Secondary Strikes"
+  },
+  {
+    "school": "Michigan",
+    "team": "Michigan OuAg (Robert Ou - William Agustin)",
+    "tournament": "8-Hoosier Invitational Tournament HIT",
+    "round": "Semis",
+    "side": "Aff",
+    "opponent": "The Neal Clan",
+    "judge": "Buntin,McCullough,Stamenkovic Diez",
+    "roundReport": "1AC---Secondary Actions 1NC---T Strengthen K Cap P Test Case CP NGA CP Market Power CP States DA CSR 2NR---DA CSR"
   },
   {
     "school": "Michigan",
@@ -41833,11 +42293,31 @@
     "school": "Northwestern",
     "team": "Northwestern LeWe (Michael Lee - Samuel Weisz)",
     "tournament": "6---Indiana",
+    "round": "Finals",
+    "side": "Neg",
+    "opponent": "Michigan AO",
+    "judge": "DeLong, Jasani, Wilkinson",
+    "roundReport": "1AC: Secondary Actions 1NC: T-CBR, CRA CP, Rates DA, Court Politics DA, States CP 2NR: States CP, Court Politics"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern LeWe (Michael Lee - Samuel Weisz)",
+    "tournament": "6---Indiana",
     "round": "Quarters",
     "side": "Neg",
     "opponent": "Wyoming WW",
     "judge": "Dal Pra, Fish, Morris",
     "roundReport": "1AC: Queer Ungovernmentality 1NC: T-USFG, Negative Universality, Unions Good 2NR: T-USFG"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern LeWe (Michael Lee - Samuel Weisz)",
+    "tournament": "6---Indiana",
+    "round": "Semis",
+    "side": "Neg",
+    "opponent": "Western Kentucky NF",
+    "judge": "Morris, Fifelski, Wilkinson",
+    "roundReport": "1AC: Merger Review 1NC: T-CBR, Rates DA, NLRB DA, States CP, Midterms DA 2NR: Midterms DA"
   },
   {
     "school": "Northwestern",
@@ -56037,7 +56517,7 @@
     "side": "Aff",
     "opponent": "Michigan AO",
     "judge": "Anekah Fish",
-    "roundReport": "1AC: Merger Review v.3 2NR: Reliance Interests DA, Advantage CP, Cyberattacks Good"
+    "roundReport": "1AC: Merger Review 2NR: Reliance Interests DA, Advantage CP, Cyberattacks Good"
   },
   {
     "school": "Western Kentucky",
@@ -56058,6 +56538,16 @@
     "opponent": "Northwestern AK",
     "judge": "Kurt Fifelski, Lauren McBlain, Peyton Reeves",
     "roundReport": "1AC: Merger Review 2NR: NLRB PIC, NLRB Tradeoff DA"
+  },
+  {
+    "school": "Western Kentucky",
+    "team": "Western Kentucky NeFo (Riley Ney - Rae Fournier)",
+    "tournament": "1. Indiana",
+    "round": "Semis",
+    "side": "Aff",
+    "opponent": "Northwestern LW",
+    "judge": "Kurt Fifelski, Eric Morris, Matthew Wilkinson",
+    "roundReport": "1AC: Merger Review 2NR: Midterms DA"
   },
   {
     "school": "Western Kentucky",
@@ -57637,7 +58127,7 @@
     "side": "Neg",
     "opponent": "Kansas State SA",
     "judge": "Bonitto, Mia & Rothenbaum, Nathan & Roy, Anjan",
-    "roundReport": "1AC: Productivity 1NC: Debility K (Puar), T-FW 2NR: Link Turns Case, T-FW"
+    "roundReport": "1AC: Productivity 1NC: Debility K (Puar), T-FW 2NR: Case (Puar), T-FW"
   },
   {
     "school": "Wyoming",
