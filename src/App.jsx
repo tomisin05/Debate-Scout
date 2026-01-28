@@ -41,6 +41,7 @@ function App() {
     judge: 150,
     roundReport: 300,
   });
+  const [selectedColumn, setSelectedColumn] = useState(null);
   const resizingRef = useRef(null);
 
   useEffect(() => {
@@ -167,6 +168,21 @@ function App() {
     sortDirection,
   ]);
 
+  const handleColumnClick = (column) => {
+    setSelectedColumn(selectedColumn === column ? null : column);
+  };
+
+  const copyColumnData = () => {
+    if (!selectedColumn) return;
+    
+    const columnData = filteredData.map(row => row[selectedColumn] || '').join('\n');
+    navigator.clipboard.writeText(columnData).then(() => {
+      console.log('Column data copied to clipboard');
+    }).catch(err => {
+      console.error('Failed to copy: ', err);
+    });
+  };
+
   const handleSort = (column) => {
     if (sortColumn === column) {
       setSortDirection(sortDirection === "asc" ? "desc" : "asc");
@@ -257,22 +273,20 @@ function App() {
   };
 
   const exportCSV = () => {
-    const headers = [
-      "school",
-      "team",
-      "tournament",
-      "round",
-      "side",
-      "opponent",
-      "judge",
-      "roundReport",
-    ];
+    const visibleColumnKeys = Object.entries(visibleColumns)
+      .filter(([_, visible]) => visible)
+      .map(([col]) => col);
+    
+    const headers = visibleColumnKeys.map(col => 
+      col.charAt(0).toUpperCase() + col.slice(1).replace(/([A-Z])/g, " $1")
+    );
+    
     const csv = [
       headers.join(","),
       ...filteredData.map((row) =>
-        headers
-          .map((h) => {
-            const v = row[h] || "";
+        visibleColumnKeys
+          .map((col) => {
+            const v = row[col] || "";
             return v.includes(",") || v.includes('"')
               ? `"${v.replace(/"/g, '""')}"`
               : v;
@@ -280,11 +294,12 @@ function App() {
           .join(",")
       ),
     ].join("\n");
+    
     const blob = new Blob([csv], { type: "text/csv" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `debate-scout-${new Date().toISOString().split("T")[0]}.csv`;
+    a.download = `debate-scout-filtered-${new Date().toISOString().split("T")[0]}.csv`;
     a.click();
     URL.revokeObjectURL(url);
   };
@@ -334,8 +349,13 @@ function App() {
             />
           </div>
           <button className="btn-secondary" onClick={exportCSV}>
-            <i className="fas fa-download"></i> Export CSV
+            <i className="fas fa-download"></i> Export Current View
           </button>
+          {selectedColumn && (
+            <button className="btn-secondary" onClick={copyColumnData}>
+              <i className="fas fa-copy"></i> Copy {selectedColumn.charAt(0).toUpperCase() + selectedColumn.slice(1)}
+            </button>
+          )}
           <button className="btn-secondary" onClick={handleLogout}>
             <i className="fas fa-sign-out-alt"></i> Logout
           </button>
@@ -543,11 +563,12 @@ function App() {
                   .map(([col]) => (
                     <th
                       key={col}
-                      className="sortable"
+                      className={`sortable ${selectedColumn === col ? 'selected-column' : ''}`}
                       style={{
                         width: columnWidths[col],
                         minWidth: columnWidths[col],
                       }}
+                      onClick={() => handleColumnClick(col)}
                     >
                       <div
                         className="th-content"
@@ -783,6 +804,7 @@ function App() {
                   <tr key={i}>
                     {visibleColumns.school && (
                       <td
+                        className={selectedColumn === 'school' ? 'selected-column' : ''}
                         style={{
                           width: columnWidths.school,
                           minWidth: columnWidths.school,
@@ -793,6 +815,7 @@ function App() {
                     )}
                     {visibleColumns.team && (
                       <td
+                        className={selectedColumn === 'team' ? 'selected-column' : ''}
                         style={{
                           width: columnWidths.team,
                           minWidth: columnWidths.team,
@@ -803,6 +826,7 @@ function App() {
                     )}
                     {visibleColumns.tournament && (
                       <td
+                        className={selectedColumn === 'tournament' ? 'selected-column' : ''}
                         style={{
                           width: columnWidths.tournament,
                           minWidth: columnWidths.tournament,
@@ -813,6 +837,7 @@ function App() {
                     )}
                     {visibleColumns.round && (
                       <td
+                        className={selectedColumn === 'round' ? 'selected-column' : ''}
                         style={{
                           width: columnWidths.round,
                           minWidth: columnWidths.round,
@@ -823,6 +848,7 @@ function App() {
                     )}
                     {visibleColumns.side && (
                       <td
+                        className={selectedColumn === 'side' ? 'selected-column' : ''}
                         style={{
                           width: columnWidths.side,
                           minWidth: columnWidths.side,
@@ -837,6 +863,7 @@ function App() {
                     )}
                     {visibleColumns.opponent && (
                       <td
+                        className={selectedColumn === 'opponent' ? 'selected-column' : ''}
                         style={{
                           width: columnWidths.opponent,
                           minWidth: columnWidths.opponent,
@@ -847,6 +874,7 @@ function App() {
                     )}
                     {visibleColumns.judge && (
                       <td
+                        className={selectedColumn === 'judge' ? 'selected-column' : ''}
                         style={{
                           width: columnWidths.judge,
                           minWidth: columnWidths.judge,
@@ -857,6 +885,7 @@ function App() {
                     )}
                     {visibleColumns.roundReport && (
                       <td
+                        className={selectedColumn === 'roundReport' ? 'selected-column' : ''}
                         style={{
                           width: columnWidths.roundReport,
                           minWidth: columnWidths.roundReport,

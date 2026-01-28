@@ -313,6 +313,19 @@ body {
   white-space: nowrap;
   user-select: none;
   position: relative;
+  cursor: pointer;
+}
+
+.selected-column {
+  background-color: #e3f2fd !important;
+  border-left: 3px solid #1976d2;
+  border-right: 3px solid #1976d2;
+}
+
+.selected-column td {
+  background-color: #f3f8ff !important;
+  border-left: 3px solid #1976d2;
+  border-right: 3px solid #1976d2;
 }
 
 .column-filter-btn {
