@@ -81,7 +81,7 @@ function App() {
     if (hasWildcard) {
       const escaped = filterValue.replace(/[.+^${}()|[\]\\]/g, "\\$&");
       const regex = new RegExp(
-        "^" + escaped.replace(/\*/g, ".*").replace(/\?/g, ".") + "$"
+        "^" + escaped.replace(/\*/g, ".*").replace(/\?/g, ".") + "$",
       );
       return regex.test(value);
     }
@@ -107,14 +107,14 @@ function App() {
       const matchesSearch =
         !searchTerm ||
         Object.values(row).some((v) =>
-          String(v).toLowerCase().includes(searchTerm.toLowerCase())
+          String(v).toLowerCase().includes(searchTerm.toLowerCase()),
         );
 
       const matchesColumnFilters = Object.entries(columnFilters).every(
         ([col, selected]) => {
           if (!selected || selected.length === 0) return true;
           return selected.includes(row[col]);
-        }
+        },
       );
 
       if (appliedFilters.length === 0)
@@ -123,14 +123,14 @@ function App() {
       let result = matchesFilter(
         row[appliedFilters[0].column],
         appliedFilters[0].type,
-        appliedFilters[0].value
+        appliedFilters[0].value,
       );
 
       for (let i = 1; i < appliedFilters.length; i++) {
         const match = matchesFilter(
           row[appliedFilters[i].column],
           appliedFilters[i].type,
-          appliedFilters[i].value
+          appliedFilters[i].value,
         );
         if (appliedFilters[i].operator === "AND") {
           result = result && match;
@@ -174,13 +174,18 @@ function App() {
 
   const copyColumnData = () => {
     if (!selectedColumn) return;
-    
-    const columnData = filteredData.map(row => row[selectedColumn] || '').join('\n');
-    navigator.clipboard.writeText(columnData).then(() => {
-      console.log('Column data copied to clipboard');
-    }).catch(err => {
-      console.error('Failed to copy: ', err);
-    });
+
+    const columnData = filteredData
+      .map((row) => row[selectedColumn] || "")
+      .join("\n");
+    navigator.clipboard
+      .writeText(columnData)
+      .then(() => {
+        console.log("Column data copied to clipboard");
+      })
+      .catch((err) => {
+        console.error("Failed to copy: ", err);
+      });
   };
 
   const handleSort = (column) => {
@@ -276,11 +281,12 @@ function App() {
     const visibleColumnKeys = Object.entries(visibleColumns)
       .filter(([_, visible]) => visible)
       .map(([col]) => col);
-    
-    const headers = visibleColumnKeys.map(col => 
-      col.charAt(0).toUpperCase() + col.slice(1).replace(/([A-Z])/g, " $1")
+
+    const headers = visibleColumnKeys.map(
+      (col) =>
+        col.charAt(0).toUpperCase() + col.slice(1).replace(/([A-Z])/g, " $1"),
     );
-    
+
     const csv = [
       headers.join(","),
       ...filteredData.map((row) =>
@@ -291,15 +297,15 @@ function App() {
               ? `"${v.replace(/"/g, '""')}"`
               : v;
           })
-          .join(",")
+          .join(","),
       ),
     ].join("\n");
-    
+
     const blob = new Blob([csv], { type: "text/csv" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `debate-scout-filtered-${new Date().toISOString().split("T")[0]}.csv`;
+    a.download = `debate-scout-${new Date().toISOString().split("T")[0]}.csv`;
     a.click();
     URL.revokeObjectURL(url);
   };
@@ -353,7 +359,8 @@ function App() {
           </button>
           {selectedColumn && (
             <button className="btn-secondary" onClick={copyColumnData}>
-              <i className="fas fa-copy"></i> Copy {selectedColumn.charAt(0).toUpperCase() + selectedColumn.slice(1)}
+              <i className="fas fa-copy"></i> Copy{" "}
+              {selectedColumn.charAt(0).toUpperCase() + selectedColumn.slice(1)}
             </button>
           )}
           <button className="btn-secondary" onClick={handleLogout}>
@@ -563,7 +570,9 @@ function App() {
                   .map(([col]) => (
                     <th
                       key={col}
-                      className={`sortable ${selectedColumn === col ? 'selected-column' : ''}`}
+                      className={`sortable ${
+                        selectedColumn === col ? "selected-column" : ""
+                      }`}
                       style={{
                         width: columnWidths[col],
                         minWidth: columnWidths[col],
@@ -804,7 +813,9 @@ function App() {
                   <tr key={i}>
                     {visibleColumns.school && (
                       <td
-                        className={selectedColumn === 'school' ? 'selected-column' : ''}
+                        className={
+                          selectedColumn === "school" ? "selected-column" : ""
+                        }
                         style={{
                           width: columnWidths.school,
                           minWidth: columnWidths.school,
@@ -815,7 +826,9 @@ function App() {
                     )}
                     {visibleColumns.team && (
                       <td
-                        className={selectedColumn === 'team' ? 'selected-column' : ''}
+                        className={
+                          selectedColumn === "team" ? "selected-column" : ""
+                        }
                         style={{
                           width: columnWidths.team,
                           minWidth: columnWidths.team,
@@ -826,7 +839,11 @@ function App() {
                     )}
                     {visibleColumns.tournament && (
                       <td
-                        className={selectedColumn === 'tournament' ? 'selected-column' : ''}
+                        className={
+                          selectedColumn === "tournament"
+                            ? "selected-column"
+                            : ""
+                        }
                         style={{
                           width: columnWidths.tournament,
                           minWidth: columnWidths.tournament,
@@ -837,7 +854,9 @@ function App() {
                     )}
                     {visibleColumns.round && (
                       <td
-                        className={selectedColumn === 'round' ? 'selected-column' : ''}
+                        className={
+                          selectedColumn === "round" ? "selected-column" : ""
+                        }
                         style={{
                           width: columnWidths.round,
                           minWidth: columnWidths.round,
@@ -848,7 +867,9 @@ function App() {
                     )}
                     {visibleColumns.side && (
                       <td
-                        className={selectedColumn === 'side' ? 'selected-column' : ''}
+                        className={
+                          selectedColumn === "side" ? "selected-column" : ""
+                        }
                         style={{
                           width: columnWidths.side,
                           minWidth: columnWidths.side,
@@ -863,7 +884,9 @@ function App() {
                     )}
                     {visibleColumns.opponent && (
                       <td
-                        className={selectedColumn === 'opponent' ? 'selected-column' : ''}
+                        className={
+                          selectedColumn === "opponent" ? "selected-column" : ""
+                        }
                         style={{
                           width: columnWidths.opponent,
                           minWidth: columnWidths.opponent,
@@ -874,7 +897,9 @@ function App() {
                     )}
                     {visibleColumns.judge && (
                       <td
-                        className={selectedColumn === 'judge' ? 'selected-column' : ''}
+                        className={
+                          selectedColumn === "judge" ? "selected-column" : ""
+                        }
                         style={{
                           width: columnWidths.judge,
                           minWidth: columnWidths.judge,
@@ -885,7 +910,11 @@ function App() {
                     )}
                     {visibleColumns.roundReport && (
                       <td
-                        className={selectedColumn === 'roundReport' ? 'selected-column' : ''}
+                        className={
+                          selectedColumn === "roundReport"
+                            ? "selected-column"
+                            : ""
+                        }
                         style={{
                           width: columnWidths.roundReport,
                           minWidth: columnWidths.roundReport,
