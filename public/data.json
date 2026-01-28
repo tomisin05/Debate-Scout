@@ -3657,7 +3657,7 @@
     "side": "Neg",
     "opponent": "Emory GS",
     "judge": "Thomas Reese",
-    "roundReport": "1AC - Federal Unions 1NC - Black Subsumption K, Case 2NR - Black Subsumption K"
+    "roundReport": "1AC - Federal Workers 1NC - Black Subsumption K, Case 2NR - Black Subsumption K"
   },
   {
     "school": "CSU Long Beach",
@@ -9642,6 +9642,16 @@
   {
     "school": "Emory",
     "team": "Emory RuYo (Serena Rupp - Jack Young)",
+    "tournament": "5. Georgetown",
+    "round": "Doubles",
+    "side": "Aff",
+    "opponent": "Emory LY",
+    "judge": "Shirts, Kim, Malsin",
+    "roundReport": "1AC: Derrida Death Penalty 2NR: CP Uncooperative Federalism"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory RuYo (Serena Rupp - Jack Young)",
     "tournament": "6. Brick City RR",
     "round": "Round 1",
     "side": "Neg",
@@ -9658,6 +9668,16 @@
     "opponent": "Binghamton KC",
     "judge": "Snelling",
     "roundReport": "1AC: Binghamton 1NC: Cap K, Black Hole PIK 2NR: Cap K"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory RuYo (Serena Rupp - Jack Young)",
+    "tournament": "6. Brick City RR",
+    "round": "Finals",
+    "side": "Neg",
+    "opponent": "Emory KS",
+    "judge": "Peikut, Navarrete, Wilkus",
+    "roundReport": "1AC: PTD 2NR: T Matanich"
   },
   {
     "school": "Emory",
@@ -11637,7 +11657,7 @@
     "side": "Aff",
     "opponent": "Binghampton BM",
     "judge": "Kenny Delph",
-    "roundReport": "1AC---Fed Workers 1NC---New Affs, T-Subsets, Fourth Branch CP, Nietzsche K, Spark (Case) 2NR---Fourth Branch CP, Spark"
+    "roundReport": "1AC---Fed Workers 1NC---New Affs, T-Subsets, Fourth Branch CP, Nietzsche K, Spark (Case) 2NR---Fourth Branch CP, Spark @Bing the shots might be cheap but they hit the target lol"
   },
   {
     "school": "George Mason",
@@ -11712,6 +11732,16 @@
   {
     "school": "George Mason",
     "team": "George Mason OCNe (Autumn OConnor - Emebet Neale)",
+    "tournament": "All Tournaments",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": ""
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason PoAl (Isabelle Poteet - Alejandro Alegre)",
     "tournament": "All Tournaments",
     "round": "All",
     "side": "Aff",
@@ -12288,6 +12318,76 @@
     "opponent": "Kansas FC",
     "judge": "Lasseter, Nagel, Snider",
     "roundReport": "1AC---NO ESTAN SOLOS 1NC---FW, Cap K 2NR---FW"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason ReSh (Brenda Reyes - Amira Shananier)",
+    "tournament": "06---Wakey, Wakey buenos dias",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "NYU JT",
+    "judge": "Irshad",
+    "roundReport": "1AC---NO ESTAN SOLOS 1NC---T-USFG, Racial Cap K, Univ K, Civil Rights CP"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason ReSh (Brenda Reyes - Amira Shananier)",
+    "tournament": "06---Wakey, Wakey Buenos Dias",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "KSU AS",
+    "judge": "Jesse Smith",
+    "roundReport": "1AC---Productivity 1NC---Debility K, Pali FMWK, 2NR---Debility K"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason ReSh (Brenda Reyes - Amira Shananier)",
+    "tournament": "06---Wakey, Wakey Buenos Dias",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Towson DP",
+    "judge": "Maeve Ella",
+    "roundReport": "1AC---The Undercommons 1NC---Semiocap K 2NR---Semiocap K"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason ReSh (Brenda Reyes - Amira Shananier)",
+    "tournament": "06---Wakey, Wakey Buenos Dias",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "GTown LN",
+    "judge": "Lundeen",
+    "roundReport": "1AC---NO ESTAN SOLOS 1NC---T-USFG, 4 Plank CP idr, Historical Materialism K 2NR---T-USFG"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason ReSh (Brenda Reyes - Amira Shananier)",
+    "tournament": "06---Wakey, Wakey buenos dias",
+    "round": "Round 5",
+    "side": "Aff",
+    "opponent": "Trinity BK",
+    "judge": "Eli T. Louis",
+    "roundReport": "1AC---NO ESTAN SOLOS 1NC---T-USFG, CAP K, Ableism PIK, Academy K 2NR---Academy K"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason ReSh (Brenda Reyes - Amira Shananier)",
+    "tournament": "06---Wakey, Wakey Buenos dias",
+    "round": "Round 6",
+    "side": "Neg",
+    "opponent": "Liberty CL",
+    "judge": "Natalie Yehezkel",
+    "roundReport": "1AC---Ecstatic Breathing 1NC---Semiocap 2NR---Semiocap"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason ReSh (Brenda Reyes - Amira Shananier)",
+    "tournament": "06---Wakey, Wakey Buenos Dias",
+    "round": "Round 7",
+    "side": "Neg",
+    "opponent": "UTSA CG",
+    "judge": "Yahom",
+    "roundReport": "1AC---Brujeria 1NC---Disability K, Latine Pik 2NR---Disability K"
   },
   {
     "school": "George Mason",
@@ -17307,7 +17407,7 @@
     "side": "Aff",
     "opponent": "Northwestern PS",
     "judge": "Mark Kivimaki",
-    "roundReport": "1AC---Physicians 2NR---Afropessimism"
+    "roundReport": "1AC---Physicians 2NR---Afropessimism K"
   },
   {
     "school": "Harvard",
@@ -17327,7 +17427,7 @@
     "side": "Aff",
     "opponent": "Northwestern LO",
     "judge": "Jenny Vazquez Torres",
-    "roundReport": "1AC---Physicians 2NR---Afropessimism"
+    "roundReport": "1AC---Physicians 2NR---Afropessimism K"
   },
   {
     "school": "Harvard",
@@ -17357,7 +17457,27 @@
     "side": "Neg",
     "opponent": "Emory RY",
     "judge": "Nick Loew",
-    "roundReport": "1NC---Federal Workers 2NR---Capitalism K, Advantage CP"
+    "roundReport": "1NC---Federal Workers 2NR---Capitalism K, IFF CP"
+  },
+  {
+    "school": "Harvard",
+    "team": "Harvard DeSr (Niranjan Deshpande - Agastya Sridharan)",
+    "tournament": "4. Georgetown",
+    "round": "Round 8",
+    "side": "Aff",
+    "opponent": "Georgia CK",
+    "judge": "Bella Piekut",
+    "roundReport": "1AC---Physicians 2NR---Compacts CP"
+  },
+  {
+    "school": "Harvard",
+    "team": "Harvard DeSr (Niranjan Deshpande - Agastya Sridharan)",
+    "tournament": "4. Georgetown",
+    "round": "Doubles",
+    "side": "Neg",
+    "opponent": "Kansas MS",
+    "judge": "Nick Fleming, Jordan Di, Kevin Hirn",
+    "roundReport": "1AC---Sectoral Bargaining 2NR---Capitalism K 2AR---Conditionality"
   },
   {
     "school": "Harvard",
@@ -28610,6 +28730,16 @@
     "roundReport": "1AC - Federal Workers 1NC - Greetings, Nommo, Dark Abolition, T-Subs, T-Embodiment 2NC - Dark Abolition K 1NR - T-Subs 2NR - Dark Abolition K"
   },
   {
+    "school": "Kentucky",
+    "team": "Kentucky ScRi (Haddie Schedler - Jeremiah Rimpson)",
+    "tournament": "Georgetown",
+    "round": "Doubles",
+    "side": "Neg",
+    "opponent": "Michigan PB",
+    "judge": "Sendejas, Adrian, Vazquez Torres Jenny, Stamenkovic Diez, Nikola",
+    "roundReport": "1AC - Secondary Strikes 1NC - Nommo, Greetings K, Bad Religion K 2NC - Bad Religion K 1NR - Case 2NR - Bad Religion K"
+  },
+  {
     "school": "Liberty",
     "team": "Liberty Novices",
     "tournament": "All Tournaments",
@@ -39427,7 +39557,7 @@
     "side": "Aff",
     "opponent": "You perhaps",
     "judge": "Winning Perhaps",
-    "roundReport": "bowmanronen@gmail.com (2A/1N) emanvargas7@gmail.com (1A/2N) untdebatedocs@gmail.com"
+    "roundReport": "ronendebates@gmail.com (2A/1N) emanvargas7@gmail.com (1A/2N) untdebatedocs@gmail.com"
   },
   {
     "school": "North Texas",
@@ -56241,6 +56371,76 @@
   },
   {
     "school": "Western Kentucky",
+    "team": "Western Kentucky CaKu (Sage Carter - Vaden Kumar)",
+    "tournament": "1. Indiana",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Oklahoma BW",
+    "judge": "Eric Morris",
+    "roundReport": "1AC - Merger Review 1NR - Failure of Imagination K 2NR - K"
+  },
+  {
+    "school": "Western Kentucky",
+    "team": "Western Kentucky CaKu (Sage Carter - Vaden Kumar)",
+    "tournament": "1. Indiana",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Northwestern OL",
+    "judge": "Christopher Jackson",
+    "roundReport": "1AC - Detroit 1NC - T, Cap K 2NR - Cap K"
+  },
+  {
+    "school": "Western Kentucky",
+    "team": "Western Kentucky CaKu (Sage Carter - Vaden Kumar)",
+    "tournament": "1. Indiana",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Wyoming WW",
+    "judge": "Aryan Jasani",
+    "roundReport": "1AC - BDS 1NC - Empire K 2NR - K"
+  },
+  {
+    "school": "Western Kentucky",
+    "team": "Western Kentucky CaKu (Sage Carter - Vaden Kumar)",
+    "tournament": "1. Indiana",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "MoState NN",
+    "judge": "Niko Sims",
+    "roundReport": "1AC - Sectoral Bargaining 1NC - T-CBR, Tribal Offsets CP, Disability K, LNG DA, ILO CP, AI PIC, Nuke Terror Good 2NC - ILO CP, Nuke Terror Good 1NR - LNG DA 2NR - LNG DA"
+  },
+  {
+    "school": "Western Kentucky",
+    "team": "Western Kentucky CaKu (Sage Carter - Vaden Kumar)",
+    "tournament": "1. Indiana",
+    "round": "Round 5",
+    "side": "Aff",
+    "opponent": "Northwestern LW",
+    "judge": "Lindsey Shook",
+    "roundReport": "1AC - Merger Review 1NC - T-CBR, CP-States, CP-Mergers, DA-Mergers, DA-NLRB Tradeoff, DA-ACA Subsidies 2NC - CP-Mergers, CP-Ban 1NR - DA-NLRB Tradeoff 2NR - CP-Ban, DA-NLRB Tradeoff"
+  },
+  {
+    "school": "Western Kentucky",
+    "team": "Western Kentucky CaKu (Sage Carter - Vaden Kumar)",
+    "tournament": "1. Indiana",
+    "round": "Round 6",
+    "side": "Neg",
+    "opponent": "North Texas PS",
+    "judge": "John Turner",
+    "roundReport": "1AC - Sex Workers 1NC - Cap, T 2NR - T"
+  },
+  {
+    "school": "Western Kentucky",
+    "team": "Western Kentucky CaKu (Sage Carter - Vaden Kumar)",
+    "tournament": "1. Indiana",
+    "round": "Quarters",
+    "side": "Neg",
+    "opponent": "Michigan AO",
+    "judge": "Callahan, Specker, Jasani",
+    "roundReport": "1AC - Secondary Strikes 1NC - Boycotts PIK, T-No Secondary Strikes, States CP, Midterms DA, Antitrust DA, Tribes CP, ILO CP 2NC - T-No Secondary Strikes, States CP 1NR - Antitrust DA 2NR - T-No Secondary Strikes (I forgor the violation💀)"
+  },
+  {
+    "school": "Western Kentucky",
     "team": "Western Kentucky InPu (Kole Ingram - Ameya Puranik)",
     "tournament": "0 --- Contact Info",
     "round": "All",
@@ -58508,6 +58708,56 @@
     "opponent": "NYU KK",
     "judge": "Max Wiessner",
     "roundReport": "1AC – Syndicalism 1NC – Fem K, Empire K 2NC – Fem K"
+  },
+  {
+    "school": "Wyoming",
+    "team": "Wyoming PiHe (Adam Pierson - Aiden Hedrick)",
+    "tournament": "Hoosier Invitational",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Oklahoma Ballinger & Wright",
+    "judge": "Peyton Reeves",
+    "roundReport": "1AC: Secondary Strikes 1NC: Empire K, Case 2NR: Empire K, Case"
+  },
+  {
+    "school": "Wyoming",
+    "team": "Wyoming PiHe (Adam Pierson - Aiden Hedrick)",
+    "tournament": "Hoosier Invitational",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Northwestern Lee & Weisz",
+    "judge": "Geoff Lundeen",
+    "roundReport": "1AC: Fed Workers 1NC: Empire K, T-CBR 2NR: Empire K"
+  },
+  {
+    "school": "Wyoming",
+    "team": "Wyoming PiHe (Adam Pierson - Aiden Hedrick)",
+    "tournament": "Hoosier Invitational",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Oklahoma bustos & Werner",
+    "judge": "Matthew Wilkinson",
+    "roundReport": "1AC: Rail 1NC: Sec K, Collectivism K 2NR: Collectivism K"
+  },
+  {
+    "school": "Wyoming",
+    "team": "Wyoming PiHe (Adam Pierson - Aiden Hedrick)",
+    "tournament": "Hoosier Invitational",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "Indiana Duggal & Jones",
+    "judge": "Anjan Roy",
+    "roundReport": "1AC: AI Bargaining 1NC: Empire, Case 2NR: Empire"
+  },
+  {
+    "school": "Wyoming",
+    "team": "Wyoming PiHe (Adam Pierson - Aiden Hedrick)",
+    "tournament": "Hoosier Invitational",
+    "round": "Round 6",
+    "side": "Aff",
+    "opponent": "Missouri State Bates & DeAngelis",
+    "judge": "Anekah Fish",
+    "roundReport": "1AC: Rail 1NC: Rates, midterms, T subsets, T pre-existing, Code CP, Adv CP 2NR: Adv CP 2AR: Condo, Case -------------------------------------- make sure you're muted when you're yapping post round guys"
   },
   {
     "school": "Wyoming",
