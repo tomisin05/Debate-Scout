@@ -12663,6 +12663,16 @@
     "school": "George Mason",
     "team": "George Mason RiTa (Dean Richter - Reet Taxali)",
     "tournament": "5---Wake",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Liberty KT",
+    "judge": "Williams",
+    "roundReport": "1AC---Sectoral Bargaining v3 1NC---T-Subsets, Midterms DA, Stickup, Police PIC, Cap K 2NR---Stickup"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason RiTa (Dean Richter - Reet Taxali)",
+    "tournament": "5---Wake",
     "round": "Round 4",
     "side": "Neg",
     "opponent": "Kansas HP",
@@ -12673,11 +12683,31 @@
     "school": "George Mason",
     "team": "George Mason RiTa (Dean Richter - Reet Taxali)",
     "tournament": "5---Wake",
+    "round": "Round 5",
+    "side": "Aff",
+    "opponent": "UTD KR",
+    "judge": "Anderson",
+    "roundReport": "1AC---Sectoral Bargaining v3 1NC---Privileges CP, Midterms DA, Set Col K 2NR---Privileges CP"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason RiTa (Dean Richter - Reet Taxali)",
+    "tournament": "5---Wake",
     "round": "Round 6",
     "side": "Neg",
     "opponent": "Georgia CP",
     "judge": "Piekut",
     "roundReport": "1AC---Fed Workers 1NC---Clog DA, Flex DA, States CP, T-Preexisting, Midterms DA 2NR---Midterms DA, T-Preexisting"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason RiTa (Dean Richter - Reet Taxali)",
+    "tournament": "5---Wake",
+    "round": "Round 7",
+    "side": "Aff",
+    "opponent": "Iowa SB",
+    "judge": "Zaidi",
+    "roundReport": "1AC---RTW 1NC---Wynter k 2NR---Wynter k"
   },
   {
     "school": "George Mason",
@@ -12698,6 +12728,16 @@
     "opponent": "JMU MO",
     "judge": "Makuch",
     "roundReport": "1AC---RTW 2.0 1NC--- Disability K 2NR---Disability K"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason RiTa (Dean Richter - Reet Taxali)",
+    "tournament": "6---Navy",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "NYU JT",
+    "judge": "Husain",
+    "roundReport": "1AC---Sectoral Bargaining V3 1NC---Bargaining Spec, Realignment DA, Racial Cap K, Rosseau K, Heg CT 2NR---Racial Cap K"
   },
   {
     "school": "George Mason",
@@ -13858,6 +13898,66 @@
     "opponent": "",
     "judge": "",
     "roundReport": ""
+  },
+  {
+    "school": "Georgetown",
+    "team": "Georgetown CoXi (Jackie Correa - Caroline Xiao)",
+    "tournament": "USNA Crowe Warken Debates",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Michigan CS",
+    "judge": "Reed",
+    "roundReport": "1AC - Gig Workers 2NR - Dedev"
+  },
+  {
+    "school": "Georgetown",
+    "team": "Georgetown CoXi (Jackie Correa - Caroline Xiao)",
+    "tournament": "USNA Crowe Warken Debates",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Dartmouth BG",
+    "judge": "O'Gorman",
+    "roundReport": "1AC - Green Bargaining 2NR - Cap K"
+  },
+  {
+    "school": "Georgetown",
+    "team": "Georgetown CoXi (Jackie Correa - Caroline Xiao)",
+    "tournament": "USNA Crowe Warken Debates",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Georgia CP",
+    "judge": "Ferguson",
+    "roundReport": "1AC - Fed Workers 2NR - Cap K"
+  },
+  {
+    "school": "Georgetown",
+    "team": "Georgetown CoXi (Jackie Correa - Caroline Xiao)",
+    "tournament": "USNA Crowe Warken Debates",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Michigan HM",
+    "judge": "Bald",
+    "roundReport": "1AC - Gig Workers 2NR - Dedev"
+  },
+  {
+    "school": "Georgetown",
+    "team": "Georgetown CoXi (Jackie Correa - Caroline Xiao)",
+    "tournament": "USNA Crowe Warken Debates",
+    "round": "Round 5",
+    "side": "Aff",
+    "opponent": "Wake Forest MS",
+    "judge": "Nagy",
+    "roundReport": "1AC - Gig Workers 2NR - Afropess"
+  },
+  {
+    "school": "Georgetown",
+    "team": "Georgetown CoXi (Jackie Correa - Caroline Xiao)",
+    "tournament": "USNA Crowe Warken Debates",
+    "round": "Round 6",
+    "side": "Neg",
+    "opponent": "Michigan AO",
+    "judge": "Wagner",
+    "roundReport": "1AC - Secondary Strikes 2NR - Cap K"
   },
   {
     "school": "Georgetown",
@@ -20588,6 +20688,56 @@
     "opponent": "George Mason RS",
     "judge": "Chiri,Copeland,Wallenmeyer",
     "roundReport": "1ac - K Aff 2nr - K"
+  },
+  {
+    "school": "James Madison",
+    "team": "James Madison MaOe (Maggie Matzen - Anna Oehler)",
+    "tournament": "USNA Crowe Warken Debates",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "George Mason TR",
+    "judge": "Makuch",
+    "roundReport": "1ac - Right to Work 2nr - K"
+  },
+  {
+    "school": "James Madison",
+    "team": "James Madison MaOe (Maggie Matzen - Anna Oehler)",
+    "tournament": "USNA Crowe Warken Debates",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Emory CR",
+    "judge": "Reed",
+    "roundReport": "1ac - fed workers 2nr - procedural"
+  },
+  {
+    "school": "James Madison",
+    "team": "James Madison MaOe (Maggie Matzen - Anna Oehler)",
+    "tournament": "USNA Crowe Warken Debates",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "Georgetown VZ",
+    "judge": "Tillman",
+    "roundReport": "1ac - KAff 2nr - K"
+  },
+  {
+    "school": "James Madison",
+    "team": "James Madison MaOe (Maggie Matzen - Anna Oehler)",
+    "tournament": "USNA Crowe Warken Debates",
+    "round": "Round 8",
+    "side": "Neg",
+    "opponent": "Michigan State FM",
+    "judge": "Loew",
+    "roundReport": "1ac - fed workers 2nr - K"
+  },
+  {
+    "school": "James Madison",
+    "team": "James Madison MaOe (Maggie Matzen - Anna Oehler)",
+    "tournament": "USNA Crowe Warken Debates",
+    "round": "Octas",
+    "side": "Neg",
+    "opponent": "Minnesota HU",
+    "judge": "Baker,DeLong,Stockstill",
+    "roundReport": "1ac - fed workers 2nr - K"
   },
   {
     "school": "James Madison",
@@ -29201,8 +29351,28 @@
   },
   {
     "school": "Liberty",
+    "team": "Liberty DaSt (Nathan Daley - Olivia Stene)",
+    "tournament": "Navy",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": ""
+  },
+  {
+    "school": "Liberty",
     "team": "Liberty HaHa (Isaiah Hathaway - Isaac Hathaway)",
     "tournament": "All Tournaments",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": ""
+  },
+  {
+    "school": "Liberty",
+    "team": "Liberty HaHa (Isaiah Hathaway - Isaac Hathaway)",
+    "tournament": "Navy",
     "round": "All",
     "side": "Aff",
     "opponent": "",
@@ -29508,6 +29678,16 @@
     "opponent": "George Mason DG",
     "judge": "Joe Schatz",
     "roundReport": "1AC - Blackcrit 1NC - Tactics, Afropess, Semiocap, Taoism K 2NR - Semiocap"
+  },
+  {
+    "school": "Liberty",
+    "team": "Liberty PeRo (Sophia Peters - Ava Ronchetti)",
+    "tournament": "Navy",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": ""
   },
   {
     "school": "Liberty",
@@ -33788,6 +33968,16 @@
     "opponent": "The Neal Clan",
     "judge": "Buntin,McCullough,Stamenkovic Diez",
     "roundReport": "1AC---Secondary Actions 1NC---T Strengthen K Cap P Test Case CP NGA CP Market Power CP States DA CSR 2NR---DA CSR"
+  },
+  {
+    "school": "Michigan",
+    "team": "Michigan OuJo (Robert Ou - John Joyce)",
+    "tournament": "0---Contact Info",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": "johnjoy@umich.edu robertou@umich.edu debatedocs@umich.edu If ok: debatedocs@googlegroups.com"
   },
   {
     "school": "Michigan",
@@ -45312,6 +45502,26 @@
   {
     "school": "Oklahoma",
     "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
+    "tournament": "Hoosier Invitational Tournament HIT",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "Northwestern LippSmith & Olorunsola",
+    "judge": "Dal Pra",
+    "roundReport": "1AC- N******mation 2NR- T-FW"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
+    "tournament": "Hoosier Invitational Tournament HIT",
+    "round": "Round 6",
+    "side": "Aff",
+    "opponent": "Dartmouth Gonzalez Arce & Hant",
+    "judge": "Kirk (woah hes back)",
+    "roundReport": "1AC- NRC 2NR- Labor Militancy K, Advantage CP"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
     "tournament": "Sunflower Swing 2 K State 2026",
     "round": "Round 1",
     "side": "Aff",
@@ -55473,41 +55683,11 @@
     "school": "Wake Forest",
     "team": "Wake Forest WoLe (Cole Wolfe - Eden Leverett)",
     "tournament": "Kentucky",
-    "round": "Round 2",
-    "side": "Aff",
-    "opponent": "Baylor DL",
-    "judge": "Brian Lain",
-    "roundReport": "1AC: Die in Love 1NC: FW, Cap, PIC, Disclosure 2NR: FW"
-  },
-  {
-    "school": "Wake Forest",
-    "team": "Wake Forest WoLe (Cole Wolfe - Eden Leverett)",
-    "tournament": "Kentucky",
     "round": "Round 3",
     "side": "Neg",
     "opponent": "Emory CG",
     "judge": "Ec Powers",
     "roundReport": "1AC: broad based 1NC: Decolonial Love, procedural 2NR: Decolonial Love"
-  },
-  {
-    "school": "Wake Forest",
-    "team": "Wake Forest WoLe (Cole Wolfe - Eden Leverett)",
-    "tournament": "Kentucky",
-    "round": "Round 4",
-    "side": "Aff",
-    "opponent": "Dartmouth BC",
-    "judge": "Tripp Rebrovick",
-    "roundReport": "1AC: Die in Love 1NC: FW, Kornbluh K, Secondary Strikes CP 2NR: Kornbluh K"
-  },
-  {
-    "school": "Wake Forest",
-    "team": "Wake Forest WoLe (Cole Wolfe - Eden Leverett)",
-    "tournament": "Kentucky",
-    "round": "Round 5",
-    "side": "Aff",
-    "opponent": "Kentucky RW",
-    "judge": "Jackie Poapst",
-    "roundReport": "1AC: Die in Love 1NC: Cap, FW, Black Vitalism, Moten & Harney, TVA CP, NoMo, King K 2NR: NoMo, King K, Case"
   },
   {
     "school": "Wake Forest",
@@ -56377,7 +56557,7 @@
     "side": "Aff",
     "opponent": "Oklahoma BW",
     "judge": "Eric Morris",
-    "roundReport": "1AC - Merger Review 1NR - Failure of Imagination K 2NR - K"
+    "roundReport": "1AC - Merger Review 1NC - Failure of Imagination K 2NR - K"
   },
   {
     "school": "Western Kentucky",
