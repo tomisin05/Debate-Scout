@@ -682,6 +682,26 @@
   {
     "school": "Baylor",
     "team": "Baylor KeBe (Anastasia Keeler - Spencer Benton)",
+    "tournament": "Texas Open",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Dartmouth CG",
+    "judge": "Conway",
+    "roundReport": "1AC - ag 2NR - sexton"
+  },
+  {
+    "school": "Baylor",
+    "team": "Baylor KeBe (Anastasia Keeler - Spencer Benton)",
+    "tournament": "Texas Open",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Kansas VL",
+    "judge": "Poapst",
+    "roundReport": "1AC - Black Love v3! 2NR - cap"
+  },
+  {
+    "school": "Baylor",
+    "team": "Baylor KeBe (Anastasia Keeler - Spencer Benton)",
     "tournament": "University of Houston College Debate Tournament",
     "round": "Round 1",
     "side": "Aff",
@@ -1262,6 +1282,46 @@
   {
     "school": "Baylor",
     "team": "Baylor MePh (Jessie Merriwether - Tyler Phillips)",
+    "tournament": "Texas Open",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Oklahoma DF",
+    "judge": "Karthikeyan",
+    "roundReport": "1AC- NRC [NEW ADVs] 2NR- T Workers, Mutliplank w/o Advocates Bad 2AR- T Workers, Multiplank w/o Advocates Bad"
+  },
+  {
+    "school": "Baylor",
+    "team": "Baylor MePh (Jessie Merriwether - Tyler Phillips)",
+    "tournament": "Texas Open",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Michigan BP",
+    "judge": "Beutelspacher",
+    "roundReport": "1AC- Data producers 2NR- EU CP"
+  },
+  {
+    "school": "Baylor",
+    "team": "Baylor MePh (Jessie Merriwether - Tyler Phillips)",
+    "tournament": "Texas Open",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Northwestern LL",
+    "judge": "Phillips",
+    "roundReport": "1AC- Data Producers 2NR- AI Dominance DA"
+  },
+  {
+    "school": "Baylor",
+    "team": "Baylor MePh (Jessie Merriwether - Tyler Phillips)",
+    "tournament": "Texas Open",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Minnesota HU",
+    "judge": "Wang",
+    "roundReport": "1AC- Fed Workers 2NR- T Workers"
+  },
+  {
+    "school": "Baylor",
+    "team": "Baylor MePh (Jessie Merriwether - Tyler Phillips)",
     "tournament": "University of Houston College Debate Tournament",
     "round": "Round 1",
     "side": "Aff",
@@ -1732,22 +1792,22 @@
   {
     "school": "Binghamton",
     "team": "Binghamton BrMc (Darwin Bryen - Lucas McLaughlin)",
-    "tournament": "000-All Tournaments",
-    "round": "All",
-    "side": "Aff",
-    "opponent": "",
-    "judge": "",
-    "roundReport": ""
-  },
-  {
-    "school": "Binghamton",
-    "team": "Binghamton BrMc (Darwin Bryen - Lucas McLaughlin)",
     "tournament": "000-Contact Info",
     "round": "All",
     "side": "Aff",
     "opponent": "You",
     "judge": "Fate",
     "roundReport": "Darwin Bryen - dbryen@binghamton.edu Lucas - lmclaughlin1@binghamton.edu"
+  },
+  {
+    "school": "Binghamton",
+    "team": "Binghamton BrMc (Darwin Bryen - Lucas McLaughlin)",
+    "tournament": "001 - All Tournaments",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": ""
   },
   {
     "school": "Binghamton",
@@ -1876,8 +1936,48 @@
     "round": "Quarters",
     "side": "Aff",
     "opponent": "Kentucky RS",
-    "judge": "Samantha Godbey, Addison Wagner, Samantha Godbey",
+    "judge": "Samantha Godbey, Addison Wagner, Abhis Sedhai",
     "roundReport": "1AC - Debt Strike 1NC - T-FW, Set Col K, Case 2NR - T-FW"
+  },
+  {
+    "school": "Binghamton",
+    "team": "Binghamton BrMc (Darwin Bryen - Lucas McLaughlin)",
+    "tournament": "4-Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Texas AS",
+    "judge": "Abhis Sedhai",
+    "roundReport": "1AC - Antitrust 1NC - T-CBR, Nietzsche K, Case 2NC - T-Should 2NR - Case, T-Should"
+  },
+  {
+    "school": "Binghamton",
+    "team": "Binghamton BrMc (Darwin Bryen - Lucas McLaughlin)",
+    "tournament": "4-Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Liberty EY",
+    "judge": "Subbi Namakula",
+    "roundReport": "1AC - Debt Strike 1NC - Frame Subtraction, T-Tactics, Debt + Unions CP, Case 2NR - I don't even know, Everything, I guess?"
+  },
+  {
+    "school": "Binghamton",
+    "team": "Binghamton BrMc (Darwin Bryen - Lucas McLaughlin)",
+    "tournament": "4-Texas",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "West Point FG",
+    "judge": "Adam Lipton",
+    "roundReport": "1AC - Debt Strike 1NC - T-FW, P-Utopian Fiat, Case (Cap Good) 2NR - T-FW"
+  },
+  {
+    "school": "Binghamton",
+    "team": "Binghamton BrMc (Darwin Bryen - Lucas McLaughlin)",
+    "tournament": "4-Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "George Mason NO",
+    "judge": "Kenny Delph",
+    "roundReport": "1AC - Fed Workers 1NC - T-Subsets, Cap K, Nietzsche K, Automation DA 2NR - Automation DA \"Concede T, we will go back to preschool\" Love the clapback on the caselist Mason"
   },
   {
     "school": "Binghamton",
@@ -1942,6 +2042,26 @@
   {
     "school": "Binghamton",
     "team": "Binghamton TrPa (Amanda Treulich - Nina Patel)",
+    "tournament": "USNA Crowe",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": "Crip Time (USNA Version)"
+  },
+  {
+    "school": "Binghamton",
+    "team": "Binghamton TrPa (Amanda Treulich - Nina Patel)",
+    "tournament": "Wake Forest",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": "Crip Time (Wake Forest Version)"
+  },
+  {
+    "school": "Binghamton",
+    "team": "Binghamton TrPa (Amanda Treulich - Nina Patel)",
     "tournament": "West Point",
     "round": "Round 1",
     "side": "Neg",
@@ -1988,6 +2108,36 @@
     "opponent": "Rochester",
     "judge": "Daniel Baughman",
     "roundReport": ""
+  },
+  {
+    "school": "Central Oklahoma",
+    "team": "Central Oklahoma WaEc (Kensington Walker - Eric Eckard)",
+    "tournament": "Texas Open",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Georgetown GT",
+    "judge": "Shanara Reid-Brinkley",
+    "roundReport": "1AC - Decolonial Anarchy 1NC - Worker PIC, Creolization K, Case 2NR - Creolization K"
+  },
+  {
+    "school": "Central Oklahoma",
+    "team": "Central Oklahoma WaEc (Kensington Walker - Eric Eckard)",
+    "tournament": "Texas Open",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Georgia CK",
+    "judge": "Beau Larsen",
+    "roundReport": "1AC - Trans Negotiations 1NC - Procedural, SetCol, Case 2NR - SetCol"
+  },
+  {
+    "school": "Central Oklahoma",
+    "team": "Central Oklahoma WaEc (Kensington Walker - Eric Eckard)",
+    "tournament": "Texas Open",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "K-State DS",
+    "judge": "Deven Cooper",
+    "roundReport": "1AC - Sectoral Bargaining 1NC - SetCol, Case 2NR - SetCol"
   },
   {
     "school": "Central Oklahoma",
@@ -3900,6 +4050,46 @@
     "roundReport": "1AC - Black Holes 1NC - Capitalism K, T-Parameters, Case 2NR - T-Parameters, Case 2AR - Voter"
   },
   {
+    "school": "CSU Long Beach",
+    "team": "CSU Long Beach OrMe (Curtis Ortega - Daniel Medina)",
+    "tournament": "07 - Operation: Black History Month! (Texas Open)",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Wake Forest DE (besties! <3)",
+    "judge": "Mikaela Malsin",
+    "roundReport": "1AC - Black (History) Holes 1NC - T-USFG, Secondary Strikes CP, Case 2NR - Case, Secondary Strikes CP, T-USFG"
+  },
+  {
+    "school": "CSU Long Beach",
+    "team": "CSU Long Beach OrMe (Curtis Ortega - Daniel Medina)",
+    "tournament": "07 - Operation: Black History Month! (Texas Open)",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Kansas TS",
+    "judge": "William Jensen",
+    "roundReport": "1AC - Federal CBAs 1NC - Black Subsumption K, Case prep time: *causal ludwig zoomies* 2NR - Black Subsumption K"
+  },
+  {
+    "school": "CSU Long Beach",
+    "team": "CSU Long Beach OrMe (Curtis Ortega - Daniel Medina)",
+    "tournament": "07 - Operation: Black History Month! (Texas Open)",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Michigan State GS",
+    "judge": "Max Wiessner",
+    "roundReport": "1AC - Black (History) Holes 1NC - Belly of the World K, Rights PIC, Counter-Narrative, Case 2NR - Belly of the World K"
+  },
+  {
+    "school": "CSU Long Beach",
+    "team": "CSU Long Beach OrMe (Curtis Ortega - Daniel Medina)",
+    "tournament": "07 - Operation: Black History Month! (Texas Open)",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Iowa EW",
+    "judge": "Jameson Balda",
+    "roundReport": "1AC - *NEW* Wake Work 1NC - New Affs Bad, T-Radical Stasis, Enslaved Persons PIK, Abolitionist Unions K, Case 2NR - Abolitionist Unions K"
+  },
+  {
     "school": "CSU Northridge",
     "team": "CSU Northridge ThAg (Ellyana Thornton - Jorge Aguilar)",
     "tournament": "Robert Barbera Invitational",
@@ -4151,6 +4341,36 @@
   },
   {
     "school": "Dartmouth College",
+    "team": "Dartmouth College BeCa (Sheima Ben-Abdallah - Katie Carpenter)",
+    "tournament": "Texas Open",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Utah WV",
+    "judge": "Mojica",
+    "roundReport": "1AC – Sex Workers 1NC – T Trumping Power, States +UBI + Decrim CP, NLRB Tradeoff DA, Court Ptx DA, Hartman K"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College BeCa (Sheima Ben-Abdallah - Katie Carpenter)",
+    "tournament": "Texas Open",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Harvard DS",
+    "judge": "Loew",
+    "roundReport": "1AC - Undocumented Workers 1NC - T-CBR, T-Substantial, Cap K, Adv CP, Innovation DA, Midterms DA, ILO CP, Uncooperative Federalism CP"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College BeCa (Sheima Ben-Abdallah - Katie Carpenter)",
+    "tournament": "Texas Open",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Wake Forest DE",
+    "judge": "Freehan",
+    "roundReport": "1AC – Ag/Migrant Workers 1NC – T subsets, Preemption Waivers CP [Fism], AI Bubble DA, LPE K, Adv CP, Productivity Turn 2NC – Productivity Turn + ADV1 + ADV2 1NR – Preemption Waivers CP"
+  },
+  {
+    "school": "Dartmouth College",
     "team": "Dartmouth College BrGo (Cooper Brody - Saanvi Goyal)",
     "tournament": "1 - Kentucky",
     "round": "Round 1",
@@ -4292,6 +4512,46 @@
   {
     "school": "Dartmouth College",
     "team": "Dartmouth College BrGo (Cooper Brody - Saanvi Goyal)",
+    "tournament": "Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Southern California BR",
+    "judge": "Meadows",
+    "roundReport": "1AC: Green Bargaining 1NC: Advantage CP, DA - Econ, DA - Oil, K - Climatism 2NR: Advantage CP, Econ DA, Oil DA"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College BrGo (Cooper Brody - Saanvi Goyal)",
+    "tournament": "Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Wake Forest PS",
+    "judge": "Nagy",
+    "roundReport": "1AC: Bearing Witness 1NC: C/A - General Strike, BDS CP, Student Workers CP 2NR: General Strike, BDS CP"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College BrGo (Cooper Brody - Saanvi Goyal)",
+    "tournament": "Texas",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Cal State Fullerton MN",
+    "judge": "Di",
+    "roundReport": "1AC: Green Bargaining 1NC: Race War 2NR: Race War"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College BrGo (Cooper Brody - Saanvi Goyal)",
+    "tournament": "Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Emory KS",
+    "judge": "Loew",
+    "roundReport": "1AC: Fed Workers 1NC: BRAC CP, Courts DA, Movements DA, Privatization DA 2NR: Courts DA"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College BrGo (Cooper Brody - Saanvi Goyal)",
     "tournament": "USNA Crowe Warken Debates",
     "round": "Round 1",
     "side": "Neg",
@@ -4338,6 +4598,26 @@
     "opponent": "Georgia CP",
     "judge": "McCullough",
     "roundReport": "1AC: Fed Workers 1NC: Privatization DA, LPE K, Whistleblowers CP, Non-assistance CP, Progressive Federalism DA 2NR: Privatization DA"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College BrGo (Cooper Brody - Saanvi Goyal)",
+    "tournament": "USNA Crowe Warken Debates",
+    "round": "Round 7",
+    "side": "Aff",
+    "opponent": "Wake Forest PS",
+    "judge": "Rinehart",
+    "roundReport": "1AC: Green Bargaining 1NC: Set Col K 2NR: Set Col K"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College BrGo (Cooper Brody - Saanvi Goyal)",
+    "tournament": "USNA Crowe Warken Debates",
+    "round": "Round 8",
+    "side": "Neg",
+    "opponent": "Navy LS",
+    "judge": "Granstrom",
+    "roundReport": "1AC: Starbucks 1NC: NLRB DA, Patents Bad, Abolish States CP, LPE K 2NR: Abolish States"
   },
   {
     "school": "Dartmouth College",
@@ -4811,6 +5091,46 @@
   },
   {
     "school": "Dartmouth College",
+    "team": "Dartmouth College CaGo (Nora Cai - Leah Goldberg)",
+    "tournament": "7 - Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Baylor BK",
+    "judge": "Matt Conway",
+    "roundReport": "1AC - Agriculture 1NC - K - Racial Capitalism - K - Sexton - T - Subsets 2NR - K - Sexton"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College CaGo (Nora Cai - Leah Goldberg)",
+    "tournament": "7 - Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Wyoming HP",
+    "judge": "Brian DeLong",
+    "roundReport": "1AC - Sex Work 1NC - T-Strengthen, LPE K, Unjust Enrichment CP, State Coercion CP 2NR - State Coercion CP"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College CaGo (Nora Cai - Leah Goldberg)",
+    "tournament": "7 - Texas",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Kansas SS",
+    "judge": "Dawn Pierce",
+    "roundReport": "1AC - lalalabor 1NC - T, GND 2NR - GND"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College CaGo (Nora Cai - Leah Goldberg)",
+    "tournament": "7 - Texas",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Kansas AU",
+    "judge": "Gabe Jankovsky",
+    "roundReport": "1AC - Agriculture 1NC - T - Substantial - DA - Midterms - DA - NLRB T/O - CP - Contempt - CP - State Incentives 2NR - CP - Contempt"
+  },
+  {
+    "school": "Dartmouth College",
     "team": "Dartmouth College GuMo (Saturn Guo - Katharine Morley)",
     "tournament": "1 - NUSO",
     "round": "Round 1",
@@ -5067,7 +5387,137 @@
     "side": "Aff",
     "opponent": "Interlake CZ",
     "judge": "Neo Cai",
-    "roundReport": "1ac - speaking to the dead email for aff docs, please!"
+    "roundReport": "1ac - speaking with ghosts email for aff docs, please!"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College HaGu (Eli Hatton - Saturn Guo)",
+    "tournament": "1 - Kentucky",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Northwestern MO",
+    "judge": "Justin Kirk",
+    "roundReport": "1AC - Hartman 1NC - T-USfg, Labor Frame K, General Strike CP, Competition PIC 2NR - General Strike CP"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College HaGu (Eli Hatton - Saturn Guo)",
+    "tournament": "1 - Kentucky",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Michigan ES",
+    "judge": "Patrick Waldinger",
+    "roundReport": "1AC - Secondary Strike 1NC - T-CBR, Waivers CP, Realignment DA, Econ DA, MQD DA 2NR - T-CBR"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College HaGu (Eli Hatton - Saturn Guo)",
+    "tournament": "1 - Kentucky",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "Kansas CF",
+    "judge": "Dustyn Beutelspacher",
+    "roundReport": "1AC - Sectoral Bargaining 1NC - T-Trumping Power, Trans Labor K, Realignment DA, Small Business DA, Small Business PIC, Waivers CP, States CP 2NR - Waivers CP"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College HaGu (Eli Hatton - Saturn Guo)",
+    "tournament": "2 - Wake",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "UTD PR",
+    "judge": "Brandon Kelley",
+    "roundReport": "1AC - Platform Workers 1NC - T-Workers, LPE K, Politics DA, Countercyclical Regulation CP, Preemption Waiver CP 2NR - T-Workers"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College HaGu (Eli Hatton - Saturn Guo)",
+    "tournament": "2 - Wake",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Michigan AO",
+    "judge": "Gene Bressler",
+    "roundReport": "1AC - Secondary Strikes 1NC - T-CBR, SetCol K, Adv CP, Equity CP, AI Bubble DA 2NR - AI Bubble DA, Adv CP"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College HaGu (Eli Hatton - Saturn Guo)",
+    "tournament": "2 - Wake",
+    "round": "Round 6",
+    "side": "Neg",
+    "opponent": "Harvard DS",
+    "judge": "Dimarvin Puerto",
+    "roundReport": "1AC - Physicians 1NC - T-CBR, AI Bubble DA, LPE K, Equity CP, States CP 2NR - LPE K"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College HaGu (Eli Hatton - Saturn Guo)",
+    "tournament": "2 - Wake",
+    "round": "Round 7",
+    "side": "Neg",
+    "opponent": "Kansas State DS",
+    "judge": "Vontrez White",
+    "roundReport": "1AC - Disability 1NC - General Strike CA, Poetics CA"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College HaGu (Eli Hatton - Saturn Guo)",
+    "tournament": "3 - Georgetown",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Kansas BW",
+    "judge": "Brandon Kelley",
+    "roundReport": "1AC - Sectoral Bargaining 1NC - AI Bubble DA, Realignment DA, Codetermination Adv CP, Waiver CP, LPE K 2NR - Codetermination Adv CP + AI Bubble DA"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College HaGu (Eli Hatton - Saturn Guo)",
+    "tournament": "3 - Georgetown",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "MSU GS",
+    "judge": "Maeva Ella",
+    "roundReport": "1AC - Esther Brown 1NC - General Strike CA, Biomythography CA, Immediacy K 2NR - General Strike CA"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College HaPa (Alex Hant - Ethan Park)",
+    "tournament": "Texas Open",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Kansas State DS",
+    "judge": "Mathis, Erik",
+    "roundReport": "1AC - Degrowth JG 1NC - T Negotiation, LPE K, Case 2NR - T"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College HaPa (Alex Hant - Ethan Park)",
+    "tournament": "Texas Open",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Kansas SS",
+    "judge": "McManus, Grace",
+    "roundReport": "1AC - Green Sectoral Bargaining 1NC - Black Fem Fugitivity, Case 2NR - Black Fem Fugivitiy, Case"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College HaPa (Alex Hant - Ethan Park)",
+    "tournament": "Texas Open",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Georgetown LN",
+    "judge": "DeMunbrun, Jared",
+    "roundReport": "1AC - Green Sectoral Bargaining 1NC - Psycho/Cap K, Automation DA, Diceroll, Eco-Managerialism K, Case 2NR - Diceroll, Psycho/Cap K, Case"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College HaPa (Alex Hant - Ethan Park)",
+    "tournament": "Texas Open",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Northwestern AK",
+    "judge": "McIntosh, Valerie",
+    "roundReport": "1AC - Fed Workers 1NC - T Must Be NLRA, BRAC CP, ADV CP, Deferrance DA, Case 2NR - Deference DA, Circumvention, BRAC CP"
   },
   {
     "school": "Dartmouth College",
@@ -5608,6 +6058,46 @@
     "opponent": "Kentucky GS",
     "judge": "Nagy, Repko, Rinehart",
     "roundReport": "1AC - Sectoral Bargaining 1NC - Wynter K, LPE K, Countercyclical CP 2NR - LPE K"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College JoRa (Judah Jones - Sebastian Rao)",
+    "tournament": "6 - Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "UTD PR",
+    "judge": "Walberg",
+    "roundReport": "1AC - Surveillance Capitalism 1NC - T-Workers, T-Negotiation, Afropessimism K 2NR - Afropessimism K"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College JoRa (Judah Jones - Sebastian Rao)",
+    "tournament": "6 - Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Michigan BL",
+    "judge": "Greer",
+    "roundReport": "1AC - General Strike 1NC - Settler Colonialism K, Midterms DA, States CP, Uncooperative Federalism CP, T-Negotiation 2NR - T-Negotiation"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College JoRa (Judah Jones - Sebastian Rao)",
+    "tournament": "6 - Texas",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Kansas ST",
+    "judge": "Mitchell - ONLINE",
+    "roundReport": "1AC - General Strike 1NC - Anthropocentric Humanism K, AFL-CIO CP, Freedoms CP, Impeach Trump + Instate Bernie Adv CP, Techlash DA, Midterms DA, Hemp DA 2NR - Midterms DA"
+  },
+  {
+    "school": "Dartmouth College",
+    "team": "Dartmouth College JoRa (Judah Jones - Sebastian Rao)",
+    "tournament": "6 - Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Southern California DT",
+    "judge": "Gidley",
+    "roundReport": "1AC - Prison Workers 1NC - T-NLRA, LPE K, Perfect Disorder K, Court Politics DA 2NR - Perfect Disorder K"
   },
   {
     "school": "Dartmouth College",
@@ -7721,6 +8211,46 @@
   },
   {
     "school": "Emory",
+    "team": "Emory GaSo (Daniel Gallagher - Ike Song)",
+    "tournament": "8. Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Northwestern LL",
+    "judge": "Rao",
+    "roundReport": "1AC: Federal Workers 1NC: T-Private Sector, Automation DA, Midterms DA, Deregulation DA 2NR: Midterms DA"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory GaSo (Daniel Gallagher - Ike Song)",
+    "tournament": "8. Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "MoState DN",
+    "judge": "Anderson",
+    "roundReport": "1AC: Bankers 1NC: T-Substantial, Growth Bad, Hegemony Bad 2NR: Growth Bad"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory GaSo (Daniel Gallagher - Ike Song)",
+    "tournament": "8. Texas",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Wyoming WW",
+    "judge": "Robinson",
+    "roundReport": "1AC: Queer Labor 1NC: Topicality, Federal Workers CP, Court Clog DA, Neoliberalism Turn 2NR: Neoliberalism Turn, Topicality"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory GaSo (Daniel Gallagher - Ike Song)",
+    "tournament": "8. Texas",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Iowa KS",
+    "judge": "Harris",
+    "roundReport": "1AC: Federal Workers 1NC: Psychopolitics K 2NR: Case"
+  },
+  {
+    "school": "Emory",
     "team": "Emory GeMa (Sanjith Geevarghese - Raleigh Maxwell)",
     "tournament": "Kentucky",
     "round": "Round 1",
@@ -7858,6 +8388,36 @@
     "opponent": "UTD HK",
     "judge": "Swidecki",
     "roundReport": "1AC - BBB 1NC - Workers PIC, Devolution CP, Cap K 2NC, 1NR, 2NR - Cap K"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory GeMa (Sanjith Geevarghese - Raleigh Maxwell)",
+    "tournament": "Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Indiana JD",
+    "judge": "Truf",
+    "roundReport": "1AC – AI 1NC – T CBR, Cap K, Midterms DA, Adv CP, Automation DA 2NC – Cap K, Automation DA 1NR – T, Midterms DA 2NR – Cap K"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory GeMa (Sanjith Geevarghese - Raleigh Maxwell)",
+    "tournament": "Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Michigan SS",
+    "judge": "Vergho",
+    "roundReport": "1AC – BBB 1NC – EU CP, States CP, Rates DA, Capital Flight DA, Competition DA, Midterms DA, Productivity Turn 2NC – States CP, Competition DA 1NR – EU CP, Midterms DA 2NR – States CP, Midterms DA"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory GeMa (Sanjith Geevarghese - Raleigh Maxwell)",
+    "tournament": "Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "UTD KR",
+    "judge": "Kenji Aoki",
+    "roundReport": "1AC - Grounded Normativity 1NC - Cap K, Ballot PIK, Topicality, Automation DA 2NR - Topicality"
   },
   {
     "school": "Emory",
@@ -8148,6 +8708,46 @@
     "opponent": "Georgia CP",
     "judge": "Garrett, Lincoln",
     "roundReport": "1AC - Fed Workers 1NC - Rehire CP, Cap K 2NR - Cap K"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory GrCh (Alyson Granchi - Jason Chen)",
+    "tournament": "5 - Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Kansas ST",
+    "judge": "Freehan, Tim",
+    "roundReport": "1AC - Fed Workers 1NC - P-Disclosure, T-Substantial, T-Pre-Existing, Contempt CP, ADV CP, Midterms DA 2NR - Disclosure, T-Pre-existing"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory GrCh (Alyson Granchi - Jason Chen)",
+    "tournament": "5 - Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Wake DE",
+    "judge": "Wang, Zidao",
+    "roundReport": "1AC - Ag 1NC - T-Substantial, Cap K, PTX DA, States CP, Employment Law CP"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory GrCh (Alyson Granchi - Jason Chen)",
+    "tournament": "5 - Texas",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Wake MS",
+    "judge": "Balda, Jameson",
+    "roundReport": "1AC - Fed Workers 1NC - K 2NR - K"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory GrCh (Alyson Granchi - Jason Chen)",
+    "tournament": "5 - Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Kansas LP",
+    "judge": "Yadagiri, Sripad",
+    "roundReport": "1AC - Fed Workers 1NC - Takings CP, Cap K, Midterms DA, Politics DA"
   },
   {
     "school": "Emory",
@@ -8553,6 +9153,16 @@
     "school": "Emory",
     "team": "Emory KiSh (Aaron Kim - Jared Shirts)",
     "tournament": "05---BCRR",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Kansas HP",
+    "judge": "Devane Murphy",
+    "roundReport": "1AC---Arbitration 1NC---K 2NR---K"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory KiSh (Aaron Kim - Jared Shirts)",
+    "tournament": "05---BCRR",
     "round": "Round 2",
     "side": "Neg",
     "opponent": "Kentucky SR",
@@ -8563,11 +9173,81 @@
     "school": "Emory",
     "team": "Emory KiSh (Aaron Kim - Jared Shirts)",
     "tournament": "05---BCRR",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Liberty CL",
+    "judge": "Jacob Wilkus",
+    "roundReport": "1AC---Federal Workers 1NC---K 2NR---K"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory KiSh (Aaron Kim - Jared Shirts)",
+    "tournament": "05---BCRR",
     "round": "Round 5",
     "side": "Neg",
     "opponent": "Wake LW",
     "judge": "Azja Butler",
     "roundReport": "1AC---White House 1NC---Civil Servants CP, Cap K, Court Clog DA, T-USFG 2NR---Cap K"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory KiSh (Aaron Kim - Jared Shirts)",
+    "tournament": "05---BCRR",
+    "round": "Finals",
+    "side": "Neg",
+    "opponent": "Emory RY",
+    "judge": "Peikut, Navarrete, Wilkus",
+    "roundReport": "1AC---PTD 2NR---T Cessation of Use"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory KiSh (Aaron Kim - Jared Shirts)",
+    "tournament": "05---BCRR",
+    "round": "Semis",
+    "side": "Aff",
+    "opponent": "Wake Forest LW",
+    "judge": "Wilkus,Edwards,Snelling",
+    "roundReport": "1AC---Sectoral Bargaining 1NC---K 2NR---K"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory KiSh (Aaron Kim - Jared Shirts)",
+    "tournament": "06---Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "CSU LB ES",
+    "judge": "EC Powers",
+    "roundReport": "1AC---Federal Workers 1NC---K 2NR---K"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory KiSh (Aaron Kim - Jared Shirts)",
+    "tournament": "06---Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Southern California DT",
+    "judge": "Mojica",
+    "roundReport": "1AC---Prisoners 2NR---Unjust Enrichment"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory KiSh (Aaron Kim - Jared Shirts)",
+    "tournament": "06---Texas",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Michigan BP",
+    "judge": "Miklovis",
+    "roundReport": "1AC---Bankruptcy 2NR---Case Turn"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory KiSh (Aaron Kim - Jared Shirts)",
+    "tournament": "06---Texas",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Dartmouth BG",
+    "judge": "Nick Loew",
+    "roundReport": "1AC---Federal Workers 1NC---BRAC CP TSA DA Court Politics DA LPE K 2NR---BRAC CP Court Politics DA"
   },
   {
     "school": "Emory",
@@ -9028,6 +9708,36 @@
     "opponent": "Georgetown AC",
     "judge": "Carly Wunderlich, Anthony Trufanov, Graham Revare",
     "roundReport": "1AC NEW Arbitration 2NR ILO CP"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory LoYa (Lucas Lobo - Coralynn Yang)",
+    "tournament": "06 - Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Georgia CP",
+    "judge": "Jacob Wilkus",
+    "roundReport": "1AC Federal Unions 2NR Con Con CP Midterms DA"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory LoYa (Lucas Lobo - Coralynn Yang)",
+    "tournament": "06 - Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Kansas State DR",
+    "judge": "Bryce Rao",
+    "roundReport": "1AC NB 2NR Topicality"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory LoYa (Lucas Lobo - Coralynn Yang)",
+    "tournament": "06 - Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Wichita State GM",
+    "judge": "EC Powers",
+    "roundReport": "1AC Contract 2NR Topicality"
   },
   {
     "school": "Emory",
@@ -9673,6 +10383,26 @@
     "school": "Emory",
     "team": "Emory RuYo (Serena Rupp - Jack Young)",
     "tournament": "6. Brick City RR",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Iowa AP",
+    "judge": "Wash",
+    "roundReport": "1AC: Federal Workers 1NC: Debility K 2NR: Debility K"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory RuYo (Serena Rupp - Jack Young)",
+    "tournament": "6. Brick City RR",
+    "round": "Round 5",
+    "side": "Aff",
+    "opponent": "Texas FL",
+    "judge": "Murphy",
+    "roundReport": "1AC: Federal Workers 1NC: T Frankenstein, K Sovereignty, K Cap, PIC FAA 2NR: PIC FAA"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory RuYo (Serena Rupp - Jack Young)",
+    "tournament": "6. Brick City RR",
     "round": "Finals",
     "side": "Neg",
     "opponent": "Emory KS",
@@ -9688,6 +10418,36 @@
     "opponent": "Iowa AP",
     "judge": "Bankey, Butler, Murphy",
     "roundReport": "1AC: Abolish Transness 1NC: Cap K, T 2NR: T"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory RuYo (Serena Rupp - Jack Young)",
+    "tournament": "7. Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Houston IF",
+    "judge": "Spiers",
+    "roundReport": "1AC: Federal Workers 1NC: K Cap, K Disability 2NR: K Cap"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory RuYo (Serena Rupp - Jack Young)",
+    "tournament": "7. Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "UTD HH",
+    "judge": "Tim Freehan",
+    "roundReport": "1AC: Data Production Workers 1NC: T-Mandatory Subjects, T-Substantially, States CP, Cap K, Midterms DA, ICE DA, FTC DA, Strat Stab Turn 2NR: T-Mandatory Subjects, FTC DA 2AR: Condo"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory RuYo (Serena Rupp - Jack Young)",
+    "tournament": "7. Texas",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Kentucky GS",
+    "judge": "Nate Martin",
+    "roundReport": "1AC: Sectoral Bargaining 1NC: T-Strengthen, Cap K, States CP, Employment Law CP, Antitrust DA, Midterms DA 2NR: Antitrust DA"
   },
   {
     "school": "Emory",
@@ -9768,6 +10528,46 @@
     "opponent": "North Texas VH",
     "judge": "Ethan Stern",
     "roundReport": "1AC: Undocumented Workers 2NR: States CP, Shutdown DA"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory SoWa (Eloise So - Micah Wang)",
+    "tournament": "Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Michigan CS",
+    "judge": "Tyler Vergho (YC X25)",
+    "roundReport": "1AC: Sectoral Bargaining 2NR: Cap K"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory SoWa (Eloise So - Micah Wang)",
+    "tournament": "Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Michigan State JS",
+    "judge": "Will Katz",
+    "roundReport": "1AC: USMCA 2NR: Court Politics DA, States CP"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory SoWa (Eloise So - Micah Wang)",
+    "tournament": "Texas",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Trinity BK",
+    "judge": "Temitope Ogundare",
+    "roundReport": "1AC: USMCA 2NR: \"Terror\" Word PIC"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory SoWa (Eloise So - Micah Wang)",
+    "tournament": "Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Oklahoma DT",
+    "judge": "Eric Morris",
+    "roundReport": "1AC: Relationality 2NR: T"
   },
   {
     "school": "Emory",
@@ -10371,6 +11171,36 @@
   },
   {
     "school": "Emory",
+    "team": "Emory WaKi (Tinghan Wang - Samar Kibe)",
+    "tournament": "Texas Open",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Michigan OJ",
+    "judge": "Biggs - ONLINE",
+    "roundReport": "1AC - Fed Workers 1NC - Midterms, Court Pols, Admin Flex, T - subsets (?), EU CP"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory WaKi (Tinghan Wang - Samar Kibe)",
+    "tournament": "Texas Open",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Southern California TM",
+    "judge": "Lepp - ONLINE",
+    "roundReport": "1AC - Black Sensuality 1NC - Cap K, T - USFG 2NR - T"
+  },
+  {
+    "school": "Emory",
+    "team": "Emory WaKi (Tinghan Wang - Samar Kibe)",
+    "tournament": "Texas Open",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "UTD KR",
+    "judge": "Meadows - ONLINE",
+    "roundReport": "1AC - Fed Workers 1NC - ICE PIC, SetCol K 2NR - ICE PIC"
+  },
+  {
+    "school": "Emory",
     "team": "Emory WoTa (Miles Woods - Alva Tang)",
     "tournament": "Gonzaga University Jesuit Debates",
     "round": "Round 1",
@@ -10741,6 +11571,26 @@
   },
   {
     "school": "George Mason",
+    "team": "George Mason BrSu (Jordan Bridgers - Amberly Sun)",
+    "tournament": "Texas",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Boston FF",
+    "judge": "Maverick Edwards",
+    "roundReport": "1AC---Wildcats"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason BrSu (Jordan Bridgers - Amberly Sun)",
+    "tournament": "Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Southern Nazarene BG",
+    "judge": "Copeland",
+    "roundReport": ""
+  },
+  {
+    "school": "George Mason",
     "team": "George Mason DaEs (Austin Davis - Andre Esteves)",
     "tournament": "0---Contact",
     "round": "All",
@@ -10947,7 +11797,7 @@
     "side": "Neg",
     "opponent": "Georgetown GT",
     "judge": "Max Wiessner",
-    "roundReport": "1AC - Zombies 2NR - Redaction K, Case"
+    "roundReport": "Debate was r̶e̶d̶a̶c̶t̶e̶d̶"
   },
   {
     "school": "George Mason",
@@ -10987,7 +11837,7 @@
     "side": "Aff",
     "opponent": "Georgetown GT",
     "judge": "Kenny Delph, David Rooney, TJ Buttgereit",
-    "roundReport": "1AC - Black Note 2NR - K"
+    "roundReport": "Debate was r̶e̶d̶a̶c̶t̶e̶d̶"
   },
   {
     "school": "George Mason",
@@ -10998,6 +11848,46 @@
     "opponent": "Kentucky GS",
     "judge": "Jenny Vazquez Torres, Samantha Godbey, Terrell Taylor",
     "roundReport": "1AC - Black Note 1NC - T-USFG, Disability K, Cap K 2NR - T-USFG"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason DaEs (Austin Davis - Andre Esteves)",
+    "tournament": "4-Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Texas GS",
+    "judge": "Akif Choudhury",
+    "roundReport": "Debate was r̶e̶d̶a̶c̶t̶e̶d̶"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason DaEs (Austin Davis - Andre Esteves)",
+    "tournament": "4-Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Michigan CS",
+    "judge": "Gene Bressler",
+    "roundReport": "1AC - Black Note 1NC - T-USFG, Cap K, Academy K, Affect PIK, Secondary Strikes CP 2NR - Affect PIK, T-USFG, Case"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason DaEs (Austin Davis - Andre Esteves)",
+    "tournament": "4-Texas",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Kansas BP",
+    "judge": "Morgan Copeland",
+    "roundReport": "1AC - Black Note 1NC - T-USFG, Cap K, Archival K, T-Parameters 2NR - Archival K"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason DaEs (Austin Davis - Andre Esteves)",
+    "tournament": "4-Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "UTD PR",
+    "judge": "Scott Phillips",
+    "roundReport": "1AC - Surveillance Capitalism 2NR - Sadism K"
   },
   {
     "school": "George Mason",
@@ -11611,6 +12501,26 @@
   },
   {
     "school": "George Mason",
+    "team": "George Mason FaVa (Riley Fariss - Reanna Vardhanapu)",
+    "tournament": "Texas",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Liberty HH",
+    "judge": "Choudhury",
+    "roundReport": "1AC---Fed Workers"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason FaVa (Riley Fariss - Reanna Vardhanapu)",
+    "tournament": "Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "JMU BH",
+    "judge": "Tarnowski",
+    "roundReport": ""
+  },
+  {
+    "school": "George Mason",
     "team": "George Mason GoNo (Del Gorman - Ches Noye)",
     "tournament": "0---Goodnight Team Info",
     "round": "All",
@@ -11732,6 +12642,26 @@
   {
     "school": "George Mason",
     "team": "George Mason OCNe (Autumn OConnor - Emebet Neale)",
+    "tournament": "02---Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Liberty EY",
+    "judge": "Taylor Brough",
+    "roundReport": "1AC---Dying Better 2NR---Pess"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason OCNe (Autumn OConnor - Emebet Neale)",
+    "tournament": "02---Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Trinity CO",
+    "judge": "Lawson Hudson",
+    "roundReport": "1AC---Fed Workers 1NC---ICE PIC, Socialized Nation K 2NR---Socialized Nation K"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason OCNe (Autumn OConnor - Emebet Neale)",
     "tournament": "All Tournaments",
     "round": "All",
     "side": "Aff",
@@ -11748,6 +12678,16 @@
     "opponent": "",
     "judge": "",
     "roundReport": ""
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason PoAl (Isabelle Poteet - Alejandro Alegre)",
+    "tournament": "Navy",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": "Our emails are Izzypoteet@gmail.com and aalegre2024@gmail.com"
   },
   {
     "school": "George Mason",
@@ -12781,6 +13721,16 @@
   },
   {
     "school": "George Mason",
+    "team": "George Mason RiTa (Dean Richter - Reet Taxali)",
+    "tournament": "7---Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Kansas LS",
+    "judge": "Flemming",
+    "roundReport": "1AC---Weight of the beautiful 1NC---T-USFG, Cap K 2NR---Case"
+  },
+  {
+    "school": "George Mason",
     "team": "George Mason RoBe (Camila Rosa Perez Montes - Denzel Bell)",
     "tournament": "Navy",
     "round": "Round 1",
@@ -12797,6 +13747,26 @@
     "side": "Neg",
     "opponent": "Fairmont State AS",
     "judge": "",
+    "roundReport": ""
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason RoBe (Camila Rosa Perez Montes - Denzel Bell)",
+    "tournament": "Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "West Point DH",
+    "judge": "Maverick Edwards",
+    "roundReport": "1AC---Fed Workers"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason RoBe (Camila Rosa Perez Montes - Denzel Bell)",
+    "tournament": "Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "West Point TW",
+    "judge": "Swidecki",
     "roundReport": ""
   },
   {
@@ -13258,6 +14228,46 @@
     "opponent": "Michigan BL",
     "judge": "Weiss",
     "roundReport": "1AC - Antitrust v4 1NC - UCF CP, Setcol K, Midterms DA, T CBR 2NR - Midterms DA"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason WrWi (Ashley Wright - Ben Witkov)",
+    "tournament": "7---Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Kansas SS",
+    "judge": "Vazquez Torres",
+    "roundReport": "1AC - Acts of Flight 1NC - T, Cap K 2NR - T"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason WrWi (Ashley Wright - Ben Witkov)",
+    "tournament": "7---Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Utah WV",
+    "judge": "Trufanov",
+    "roundReport": "1AC - Antitrust v3 1NC - T CBR, Stanley K, Midterms DA 2NR - T"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason WrWi (Ashley Wright - Ben Witkov)",
+    "tournament": "7---Texas",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Georgetown GT",
+    "judge": "Conway",
+    "roundReport": "1AC - Zombies 1NC - T Worker, T Should, Midterms DA, NLRB DA, Signing Statements CP, Cap K, UCF CP 2NR - UCF CP, Midterms DA"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason WrWi (Ashley Wright - Ben Witkov)",
+    "tournament": "7---Texas",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Kentucky RS",
+    "judge": "DeMunbrun",
+    "roundReport": "1AC - NEW Sectoral Bargaining 1NC - Disclosure, Linguistics CP, K 2NR - K"
   },
   {
     "school": "Georgetown",
@@ -13911,6 +14921,36 @@
   },
   {
     "school": "Georgetown",
+    "team": "Georgetown AgCo (Arnav Aggarwal - Connelly Cowan)",
+    "tournament": "08 - Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "USC TM",
+    "judge": "Ogundare",
+    "roundReport": "1AC Fed Workers 2NR LIO K"
+  },
+  {
+    "school": "Georgetown",
+    "team": "Georgetown AgCo (Arnav Aggarwal - Connelly Cowan)",
+    "tournament": "08 - Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Michigan OJ",
+    "judge": "McCaffrey",
+    "roundReport": "1AC Secondary Strikes 2NR Hollow Hope DA, Advantage CP"
+  },
+  {
+    "school": "Georgetown",
+    "team": "Georgetown AgCo (Arnav Aggarwal - Connelly Cowan)",
+    "tournament": "08 - Texas",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Kentucky RS",
+    "judge": "Larsen",
+    "roundReport": "1AC Blue 2NR Cap K"
+  },
+  {
+    "school": "Georgetown",
     "team": "Georgetown CoXi (Jackie Correa - Caroline Xiao)",
     "tournament": "All Tournaments",
     "round": "All",
@@ -13918,6 +14958,26 @@
     "opponent": "",
     "judge": "",
     "roundReport": ""
+  },
+  {
+    "school": "Georgetown",
+    "team": "Georgetown CoXi (Jackie Correa - Caroline Xiao)",
+    "tournament": "Texas Open",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "UTD KR",
+    "judge": "Lassiter",
+    "roundReport": "1AC - Gig Workers 2NR - Set Col K"
+  },
+  {
+    "school": "Georgetown",
+    "team": "Georgetown CoXi (Jackie Correa - Caroline Xiao)",
+    "tournament": "Texas Open",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Berkeley GS",
+    "judge": "Butin",
+    "roundReport": "1AC - Data Workers 2NR - Midterms DA and States CP"
   },
   {
     "school": "Georgetown",
@@ -15041,6 +16101,36 @@
   },
   {
     "school": "Georgetown",
+    "team": "Georgetown LaNa (Luke Lastelick - Aaly Nanji)",
+    "tournament": "07---Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Harvard CS",
+    "judge": "Azja Butler",
+    "roundReport": "1AC: NEW Cowgirls 1NC: Histo Mat K, T-USFG, Case 2NR: Histo Mat K"
+  },
+  {
+    "school": "Georgetown",
+    "team": "Georgetown LaNa (Luke Lastelick - Aaly Nanji)",
+    "tournament": "07---Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Kansas AU",
+    "judge": "Ian Dill",
+    "roundReport": "1AC: Zombies 1NC: T-Substantial, Cap K, Strikes CP, Midterms DA 2NR: Cap K"
+  },
+  {
+    "school": "Georgetown",
+    "team": "Georgetown LaNa (Luke Lastelick - Aaly Nanji)",
+    "tournament": "07---Texas",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Dartmouth HP",
+    "judge": "Jared DeMunbrun",
+    "roundReport": "1AC: Green Sectoral Bargaining 1NC: Couch and a Dream K, Diceroll!, Automation DA, Case 2NR: Diceroll!, Couch and a Dream K, Case"
+  },
+  {
+    "school": "Georgetown",
     "team": "Georgetown LiVa (Nathan Li - Vikram Valame)",
     "tournament": "Navy",
     "round": "Round 1",
@@ -15881,6 +16971,46 @@
   },
   {
     "school": "Georgia",
+    "team": "Georgia CaPa (Zoe Cannon - Laurel Pack)",
+    "tournament": "07] Texas Open",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Emory LY",
+    "judge": "Wilkus",
+    "roundReport": "1AC - Fed workers 2NR - Con Con, midterms"
+  },
+  {
+    "school": "Georgia",
+    "team": "Georgia CaPa (Zoe Cannon - Laurel Pack)",
+    "tournament": "07] Texas Open",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Kansas FS",
+    "judge": "Vazquez Torres",
+    "roundReport": ""
+  },
+  {
+    "school": "Georgia",
+    "team": "Georgia CaPa (Zoe Cannon - Laurel Pack)",
+    "tournament": "07] Texas Open",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Baylor DL",
+    "judge": "DeLong",
+    "roundReport": "1AC - Internationalist labor organizing 2NR - T, Case"
+  },
+  {
+    "school": "Georgia",
+    "team": "Georgia CaPa (Zoe Cannon - Laurel Pack)",
+    "tournament": "07] Texas Open",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Kansas BB",
+    "judge": "Rinehart - ONLINE",
+    "roundReport": "1AC - Fed Workers 2NR - Cap K"
+  },
+  {
+    "school": "Georgia",
     "team": "Georgia ChLa (Ida Chapman - Caroline Lackey)",
     "tournament": "1] Minnesota College Debate Invitational",
     "round": "Round 1",
@@ -16252,6 +17382,26 @@
   {
     "school": "Georgia",
     "team": "Georgia KaCh (Eshkar Kaidar-Heafetz - Ida Chapman)",
+    "tournament": "3---Gonzaga",
+    "round": "Round 7",
+    "side": "Aff",
+    "opponent": "UC Berkeley UB",
+    "judge": "Kenji Aoki",
+    "roundReport": "1AC - Negotiation 2NR - Framework"
+  },
+  {
+    "school": "Georgia",
+    "team": "Georgia KaCh (Eshkar Kaidar-Heafetz - Ida Chapman)",
+    "tournament": "3---Gonzaga",
+    "round": "Round 8",
+    "side": "Neg",
+    "opponent": "Emory CR",
+    "judge": "David Rooney",
+    "roundReport": "1AC - Federal Workers 2NR - Takings Clause CP"
+  },
+  {
+    "school": "Georgia",
+    "team": "Georgia KaCh (Eshkar Kaidar-Heafetz - Ida Chapman)",
     "tournament": "4---Wake",
     "round": "Round 1",
     "side": "Neg",
@@ -16353,6 +17503,16 @@
     "school": "Georgia",
     "team": "Georgia KaCh (Eshkar Kaidar-Heafetz - Ida Chapman)",
     "tournament": "5---Georgetown",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Rochester OR",
+    "judge": "Jay Fuchs",
+    "roundReport": "1AC - Negotiation 2NR - Cap"
+  },
+  {
+    "school": "Georgia",
+    "team": "Georgia KaCh (Eshkar Kaidar-Heafetz - Ida Chapman)",
+    "tournament": "5---Georgetown",
     "round": "Round 5",
     "side": "Aff",
     "opponent": "Missouri State NS",
@@ -16367,6 +17527,56 @@
     "side": "Neg",
     "opponent": "Michigan State GL",
     "judge": "Scott Phillips",
+    "roundReport": "1AC - Federal Workers 2NR - Imperialism"
+  },
+  {
+    "school": "Georgia",
+    "team": "Georgia KaCh (Eshkar Kaidar-Heafetz - Ida Chapman)",
+    "tournament": "5---Georgetown",
+    "round": "Round 7",
+    "side": "Aff",
+    "opponent": "Michigan State GS",
+    "judge": "Natalie Yehezkel",
+    "roundReport": "1AC - Negotiation 2NR - Antiblackness"
+  },
+  {
+    "school": "Georgia",
+    "team": "Georgia KaCh (Eshkar Kaidar-Heafetz - Ida Chapman)",
+    "tournament": "5---Georgetown",
+    "round": "Round 8",
+    "side": "Neg",
+    "opponent": "Harvard DS",
+    "judge": "Bella Piekut",
+    "roundReport": "1AC - Physicians 2NR - TLROs CP"
+  },
+  {
+    "school": "Georgia",
+    "team": "Georgia KaCh (Eshkar Kaidar-Heafetz - Ida Chapman)",
+    "tournament": "6---Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Iowa EW",
+    "judge": "Lindsey Shook",
+    "roundReport": "1AC - Sha-Clack-Clack 2NR - Imperialism"
+  },
+  {
+    "school": "Georgia",
+    "team": "Georgia KaCh (Eshkar Kaidar-Heafetz - Ida Chapman)",
+    "tournament": "6---Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Central Oklahoma EW",
+    "judge": "Beau Larsen",
+    "roundReport": "1AC - Negotiation 2NR - Settler Colonialism"
+  },
+  {
+    "school": "Georgia",
+    "team": "Georgia KaCh (Eshkar Kaidar-Heafetz - Ida Chapman)",
+    "tournament": "6---Texas",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Emory AS",
+    "judge": "Joe Weideman",
     "roundReport": "1AC - Federal Workers 2NR - Imperialism"
   },
   {
@@ -16488,6 +17698,46 @@
     "opponent": "Wake Forest MN",
     "judge": "Jackson Specker",
     "roundReport": "1AC- Ag 2NR- Midterms"
+  },
+  {
+    "school": "Georgia",
+    "team": "Georgia LaRe (Caroline Lackey - Alex Reed)",
+    "tournament": "01] Texas Open",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Houston AS",
+    "judge": "Loew",
+    "roundReport": "1AC- Domestic Workers 2NR- ConCon and Midterms"
+  },
+  {
+    "school": "Georgia",
+    "team": "Georgia LaRe (Caroline Lackey - Alex Reed)",
+    "tournament": "01] Texas Open",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "West Point AS",
+    "judge": "Woodring",
+    "roundReport": "1AC- Federal Workers 2NR- USAID PIC"
+  },
+  {
+    "school": "Georgia",
+    "team": "Georgia LaRe (Caroline Lackey - Alex Reed)",
+    "tournament": "01] Texas Open",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Utah BB",
+    "judge": "Karthikeyan",
+    "roundReport": "1AC- Impossible Subjects 2NR- T-Framework"
+  },
+  {
+    "school": "Georgia",
+    "team": "Georgia LaRe (Caroline Lackey - Alex Reed)",
+    "tournament": "01] Texas Open",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Texas AS",
+    "judge": "Katsulas",
+    "roundReport": "1AC- Federal Workers 2NR- States CP and Antitrust DA"
   },
   {
     "school": "Gonzaga",
@@ -17271,6 +18521,86 @@
   },
   {
     "school": "Harvard",
+    "team": "Harvard ChSa (Dora Chen - Mirei Saneyoshi)",
+    "tournament": "3. Georgetown",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "Emory CR",
+    "judge": "Renee, Avalyn",
+    "roundReport": "AC: Federal Workers NC: Disability K 2NR: Disability K"
+  },
+  {
+    "school": "Harvard",
+    "team": "Harvard ChSa (Dora Chen - Mirei Saneyoshi)",
+    "tournament": "3. Georgetown",
+    "round": "Round 6",
+    "side": "Aff",
+    "opponent": "Rochester OR",
+    "judge": "Schatz, Joe",
+    "roundReport": "AC: Physicians v2. NC: T-Workers, Disability K, Midterms DA 2NR: Midterms DA"
+  },
+  {
+    "school": "Harvard",
+    "team": "Harvard ChSa (Dora Chen - Mirei Saneyoshi)",
+    "tournament": "3. Georgetown",
+    "round": "Round 7",
+    "side": "Neg",
+    "opponent": "Utah PP",
+    "judge": "Kivimaki, Mark",
+    "roundReport": "AC: Refusal NC: T-Framework, Cap K 2NR: T-Framework"
+  },
+  {
+    "school": "Harvard",
+    "team": "Harvard ChSa (Dora Chen - Mirei Saneyoshi)",
+    "tournament": "3. Georgetown",
+    "round": "Round 8",
+    "side": "Aff",
+    "opponent": "Dartmouth BC",
+    "judge": "Ella, Maeve",
+    "roundReport": "AC: Physicians v2. NC: Cap K, Longtermism K 2NR: Cap K"
+  },
+  {
+    "school": "Harvard",
+    "team": "Harvard ChSa (Dora Chen - Mirei Saneyoshi)",
+    "tournament": "4. Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Georgetown LN",
+    "judge": "Butler, Azja",
+    "roundReport": "AC: Cowgirl NC: T-USFG, Materialism K 2NR: Materialism K"
+  },
+  {
+    "school": "Harvard",
+    "team": "Harvard ChSa (Dora Chen - Mirei Saneyoshi)",
+    "tournament": "4. Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "CSU Long Beach ES",
+    "judge": "Ella, Maeve",
+    "roundReport": "AC: Puta Ensimosas NC: T-USFG, Cap K 2NR: T-USFG"
+  },
+  {
+    "school": "Harvard",
+    "team": "Harvard ChSa (Dora Chen - Mirei Saneyoshi)",
+    "tournament": "4. Texas",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Northwestern PS",
+    "judge": "Michael, Joshua",
+    "roundReport": "AC: Cowgirl NC: Afropessimism 2NR: Afropessimism"
+  },
+  {
+    "school": "Harvard",
+    "team": "Harvard ChSa (Dora Chen - Mirei Saneyoshi)",
+    "tournament": "4. Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Kansas BP",
+    "judge": "Li, Vincent H.",
+    "roundReport": "AC: Logocentrism NC: T-USFG, Cap K, Byrd PIK 2NR: T-USFG"
+  },
+  {
+    "school": "Harvard",
     "team": "Harvard DeSr (Niranjan Deshpande - Agastya Sridharan)",
     "tournament": "1. Northwestern",
     "round": "Round 1",
@@ -17598,6 +18928,46 @@
     "opponent": "Kansas MS",
     "judge": "Nick Fleming, Jordan Di, Kevin Hirn",
     "roundReport": "1AC---Sectoral Bargaining 2NR---Capitalism K 2AR---Conditionality"
+  },
+  {
+    "school": "Harvard",
+    "team": "Harvard DeSr (Niranjan Deshpande - Agastya Sridharan)",
+    "tournament": "5. Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Kansas BW",
+    "judge": "Henry Mitchell",
+    "roundReport": "1AC---Physicians 2NR---T-Substantial"
+  },
+  {
+    "school": "Harvard",
+    "team": "Harvard DeSr (Niranjan Deshpande - Agastya Sridharan)",
+    "tournament": "5. Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Dartmouth BC",
+    "judge": "Nick Loew",
+    "roundReport": "1AC---Undocumented Immigrants 2NR---Capitalism K"
+  },
+  {
+    "school": "Harvard",
+    "team": "Harvard DeSr (Niranjan Deshpande - Agastya Sridharan)",
+    "tournament": "5. Texas",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Kansas State DR",
+    "judge": "Sripad Yadagiri",
+    "roundReport": "1AC---Physicians 2NR---Ableism K"
+  },
+  {
+    "school": "Harvard",
+    "team": "Harvard DeSr (Niranjan Deshpande - Agastya Sridharan)",
+    "tournament": "5. Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Texas FL",
+    "judge": "Graham Revare",
+    "roundReport": "1AC---Antitrust 2NR---Capitalism K"
   },
   {
     "school": "Harvard",
@@ -18086,7 +19456,7 @@
     "round": "Round 2",
     "side": "Neg",
     "opponent": "Kansas LS",
-    "judge": "Subbi Rooney",
+    "judge": "Subbi Namakula",
     "roundReport": "1AC---The weight of beautiful things 1NC/2NR---Cap K"
   },
   {
@@ -18142,12 +19512,52 @@
   {
     "school": "Houston",
     "team": "Houston HeMa (Anderson Hendrix - Patrick Macasaet)",
-    "tournament": "0---Contact",
+    "tournament": "0 --- Contact",
     "round": "All",
     "side": "Aff",
     "opponent": "",
     "judge": "",
-    "roundReport": "2A---Anderson---he/they 2N---Patrick---he/him Please put these emails on the chain: patrickmacasaet711@gmail.com andersonthendrix@gmail.com uhoustondebate@gmail.com Feel free to let us know if you have any accessibility concerns or trigger warnings you would like us to be aware of before the debate."
+    "roundReport": "2A---Anderson---he/they 2N---Patrick---he/him Please put these emails on the chain: patrickmacasaet711@gmail.com andersonthendrix@gmail.com uhoustondebate@gmail.com Feel free to let us know if you have any accessibility concerns or trigger warnings you would like us to be aware of before the debate. Be nice please :("
+  },
+  {
+    "school": "Houston",
+    "team": "Houston HeMa (Anderson Hendrix - Patrick Macasaet)",
+    "tournament": "1 --- Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Northwestern LW",
+    "judge": "Ned Gidley",
+    "roundReport": "1AC Domestic Bargaining 1NC States CP, ACA DA, T-Subsets, Courts CP, Ban Unions CP, Movements DA 2NR Courts CP, ACA DA"
+  },
+  {
+    "school": "Houston",
+    "team": "Houston HeMa (Anderson Hendrix - Patrick Macasaet)",
+    "tournament": "1 --- Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Kansas HF",
+    "judge": "Tyler Snelling",
+    "roundReport": "1AC Being Messy 1NC Topicality, Maoism K 2NR Case"
+  },
+  {
+    "school": "Houston",
+    "team": "Houston HeMa (Anderson Hendrix - Patrick Macasaet)",
+    "tournament": "1 --- Texas",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "NYU JT",
+    "judge": "Michael Swidecki",
+    "roundReport": "1AC Title VII 1NC Cap K, Impeachment CP, T-CBR, Democracy Bad 2NR Impeachment CP, Democracy Bad"
+  },
+  {
+    "school": "Houston",
+    "team": "Houston HeMa (Anderson Hendrix - Patrick Macasaet)",
+    "tournament": "1 --- Texas",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Kansas State DS",
+    "judge": "Jaysyn Green",
+    "roundReport": "1AC Domestic Bargaining 1NC Rights K, Setcol K 2NR Setcol K"
   },
   {
     "school": "Houston",
@@ -18528,6 +19938,16 @@
     "opponent": "Oklahoma FW",
     "judge": "Alex Barreto",
     "roundReport": "1AC - Domestic Workers 1NC - Madness K, Connectivism K, Case 2NR - Madness K, FW"
+  },
+  {
+    "school": "Houston",
+    "team": "Houston ShAq (Yousef Shehata - Ramana Aqeel)",
+    "tournament": "2---Texas Open",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Georgia LR",
+    "judge": "Loew",
+    "roundReport": "1AC - Domestic Workers 1NC - Midterms DA, Rates DA, Liberties CP, Adv CP, Concon CP, Case 2NR - Concon CP, Midterms DA, Case"
   },
   {
     "school": "Houston",
@@ -18988,6 +20408,26 @@
     "opponent": "Northwestern AK",
     "judge": "Lauren McBlain, Kurt Fifelski, John Turner",
     "roundReport": "1AC---Automation 2NR---Adv CP"
+  },
+  {
+    "school": "Indiana",
+    "team": "Indiana FiTr (Zander Fish - Maia Truemper)",
+    "tournament": "6. Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Southern California DT",
+    "judge": "John Turner",
+    "roundReport": "1AC---Automation 1NC---CLS K, ASPEC, Adv CP, AGI Turn, Degrowth 2NR---AGI Turn"
+  },
+  {
+    "school": "Indiana",
+    "team": "Indiana FiTr (Zander Fish - Maia Truemper)",
+    "tournament": "6. Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Wichita State GM",
+    "judge": "Jeff Nagel",
+    "roundReport": "1AC---Contract 1NC---T, Cap K 2NR---T, Cap K"
   },
   {
     "school": "Indiana",
@@ -19468,6 +20908,16 @@
     "opponent": "Northwestern LR",
     "judge": "Edwards",
     "roundReport": "1ac: bed activism v2 1nc: fw, fjg cp 2nr: fw"
+  },
+  {
+    "school": "Iowa",
+    "team": "Iowa BiSa (Rose Bilicki - 000 Sanderson)",
+    "tournament": "6 - Texas Open",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Michigan BL",
+    "judge": "Beutelspacher",
+    "roundReport": "1ac: fed workers 1nc: wynter k 2nr: k"
   },
   {
     "school": "Iowa",
@@ -20261,6 +21711,36 @@
   },
   {
     "school": "Iowa",
+    "team": "Iowa PaAn (Grey Parfenoff - Spencer Anderson McElligott)",
+    "tournament": "Texas Open",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Kansas LP",
+    "judge": "McCullough",
+    "roundReport": "1AC -- Deidealize Transness 2NR -- Framework"
+  },
+  {
+    "school": "Iowa",
+    "team": "Iowa PaAn (Grey Parfenoff - Spencer Anderson McElligott)",
+    "tournament": "Texas Open",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "NYU JT",
+    "judge": "Li",
+    "roundReport": "1AC -- Civil Rights CBR 2NR -- Case, K - Infrastructures"
+  },
+  {
+    "school": "Iowa",
+    "team": "Iowa PaAn (Grey Parfenoff - Spencer Anderson McElligott)",
+    "tournament": "Texas Open",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Kansas WO",
+    "judge": "Greer",
+    "roundReport": "1AC -- Nuclear Reactors Workers 2NR -- T"
+  },
+  {
+    "school": "Iowa",
     "team": "Iowa WeEl (Nathan Weimar - Bashir Eltyeb)",
     "tournament": "01 --- Owen L Coon Memorial Debates at Northwestern",
     "round": "Round 1",
@@ -20510,6 +21990,36 @@
     "roundReport": "1AC --- Fed Workers 1NC --- Afropessimism, Case 2NR --- Afropessimism"
   },
   {
+    "school": "Iowa",
+    "team": "Iowa WeEl (Nathan Weimar - Bashir Eltyeb)",
+    "tournament": "06 --- Texas Open",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Georgetown GT",
+    "judge": "Joe Schatz",
+    "roundReport": "1AC --- Zombies 1NC --- Parameters, Cap, Case 2NR --- Parameters, Case"
+  },
+  {
+    "school": "Iowa",
+    "team": "Iowa WeEl (Nathan Weimar - Bashir Eltyeb)",
+    "tournament": "06 --- Texas Open",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Wake Forest LW",
+    "judge": "Kaine Cherry",
+    "roundReport": "1AC --- White House 1NC --- Afropessimism, Case 2NR --- Afropessimism"
+  },
+  {
+    "school": "Iowa",
+    "team": "Iowa WeEl (Nathan Weimar - Bashir Eltyeb)",
+    "tournament": "06 --- Texas Open",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "CSU Long Beach OM",
+    "judge": "Jameson Balda",
+    "roundReport": "1AC --- NEW Waters v1 1NC --- New Affs Bad, T-Radical Stasis, Slave PIK, Cap 2NR --- Cap"
+  },
+  {
     "school": "James Madison",
     "team": "James Madison Novices",
     "tournament": "Aff - Farm Workers",
@@ -20548,6 +22058,36 @@
     "opponent": "",
     "judge": "",
     "roundReport": ""
+  },
+  {
+    "school": "James Madison",
+    "team": "James Madison BaHi (Madeline Barbee Doerfler - Lindsey Hilts)",
+    "tournament": "All Tournaments",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": ""
+  },
+  {
+    "school": "James Madison",
+    "team": "James Madison BaHi (Madeline Barbee Doerfler - Lindsey Hilts)",
+    "tournament": "Texas",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "GMU BR",
+    "judge": "Jensen",
+    "roundReport": ""
+  },
+  {
+    "school": "James Madison",
+    "team": "James Madison BaHi (Madeline Barbee Doerfler - Lindsey Hilts)",
+    "tournament": "Texas",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "GMU FV",
+    "judge": "Tarnowski",
+    "roundReport": "1AC---Ag Workers"
   },
   {
     "school": "James Madison",
@@ -20712,12 +22252,42 @@
   {
     "school": "James Madison",
     "team": "James Madison MaOe (Maggie Matzen - Anna Oehler)",
+    "tournament": "Texas Open",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Wake Forest LW",
+    "judge": "Mckenzie - ONLINE",
+    "roundReport": "1ac - kaff 2nr - k"
+  },
+  {
+    "school": "James Madison",
+    "team": "James Madison MaOe (Maggie Matzen - Anna Oehler)",
+    "tournament": "Texas Open",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "West Point OS",
+    "judge": "Hudson - ONLINE",
+    "roundReport": "1ac - fed workers 2nr - k"
+  },
+  {
+    "school": "James Madison",
+    "team": "James Madison MaOe (Maggie Matzen - Anna Oehler)",
     "tournament": "USNA Crowe Warken Debates",
     "round": "Round 2",
     "side": "Neg",
     "opponent": "George Mason TR",
     "judge": "Makuch",
     "roundReport": "1ac - Right to Work 2nr - K"
+  },
+  {
+    "school": "James Madison",
+    "team": "James Madison MaOe (Maggie Matzen - Anna Oehler)",
+    "tournament": "USNA Crowe Warken Debates",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Michigan State GS",
+    "judge": "Irshad Reza Husain",
+    "roundReport": "1ac - Access Thievery v2 2nr - Hartman K"
   },
   {
     "school": "James Madison",
@@ -21431,6 +23001,86 @@
   },
   {
     "school": "Kansas",
+    "team": "Kansas AiUl (Claire Ain - Max Ulven)",
+    "tournament": "6. Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Wichita State GM",
+    "judge": "Jensen, William",
+    "roundReport": "1AC - NRC 1NC - Advantage CP, Settler Colonialism K, Baudrillard K, Nuclear Terror Good 2NC - Nuclear Terror Good 1NR - Baudrillard K 2NR - Nuclear Terror Good"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas AiUl (Claire Ain - Max Ulven)",
+    "tournament": "6. Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Georgetown LN",
+    "judge": "Dill, Ian",
+    "roundReport": "1AC - Zombie 1NC - Capitalism K, T Substantial, Midterms DA, AFL-CIO CP 2NC - Capitalism K 1NR - Case 2NR - Capitalism K"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas AiUl (Claire Ain - Max Ulven)",
+    "tournament": "6. Texas",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Michigan CS",
+    "judge": "Morbeck, Gabriel",
+    "roundReport": "1AC - Federal CBAs 1NC - T Subsets, T No Fed, Settler Colonialism K, Curbing DA, Midterms DA, Employment Law CP, Dedevelopment 2NC - Dedevelopment 1NR - Midterms DA 2NR - Dedevelopment"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas AiUl (Claire Ain - Max Ulven)",
+    "tournament": "6. Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Dartmouth CG",
+    "judge": "Jankovsky, Gabriel",
+    "roundReport": "1AC - Ag Cooperatives 1NC - T Substantial, State Incentives CP, NLRB Tradeoff DA, Midterms DA, Contempt CP 2NC - Contempt CP 1NR - Midterms DA 2NR - Contempt CP"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas BaBo (Carson Bath - Nate Boyle)",
+    "tournament": "1---Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Michigan State FM",
+    "judge": "Spencer Roetlin",
+    "roundReport": "1AC - Shady Work 1NC - T-USFG, CBAs DA, Unions Good K 2NR - Unions Good K"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas BaBo (Carson Bath - Nate Boyle)",
+    "tournament": "1---Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "West Point OS",
+    "judge": "Tommy Weddington",
+    "roundReport": "1AC - Federal Workers 1NC - Faith K, P-Disclosure 2NR - Faith K"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas BaBo (Carson Bath - Nate Boyle)",
+    "tournament": "1---Texas",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Trinity KP",
+    "judge": "Tessa Harper",
+    "roundReport": "1AC - Shady Work 1NC - FW-Role of the Neg, Cap K, Psychoanalysis PIK, Metaphors Case Turn 2NR - Psychoanalysis PIK"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas BaBo (Carson Bath - Nate Boyle)",
+    "tournament": "1---Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Georgia CP",
+    "judge": "Roy Rinehart",
+    "roundReport": "1AC - Federal Workers 1NC - KKKapitalism K, Presumption 2NR - KKKapitalism K, Presumption"
+  },
+  {
+    "school": "Kansas",
     "team": "Kansas BaMa (Tyler Bauman - Isaac Martinez)",
     "tournament": "Los Columpios Parte 1",
     "round": "Round 1",
@@ -21978,6 +23628,36 @@
     "opponent": "Kansas State CS",
     "judge": "Pena, Rothenbaum, Vernon",
     "roundReport": "1AC - Degrowth JG 1NC - T: CBRs, K: Hyperstition, K: Capitalism, DA: Midterms 2NR - K: Capitalism"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas BaPe (Tyler Bauman - Sigi Persson)",
+    "tournament": "5 - Texas Open",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Michigan BP",
+    "judge": "Ethan Greer",
+    "roundReport": "1AC - Fed Workers 1NC - T: Workers, K: Guattari, K: Cap 2NR - K: Guattari"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas BaPe (Tyler Bauman - Sigi Persson)",
+    "tournament": "5 - Texas Open",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Indiana DJ",
+    "judge": "Jameson Balda",
+    "roundReport": "1AC - Logocentrism 1NC - T: FW, K: Capitalism 2NR - K: Capitalism"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas BaPe (Tyler Bauman - Sigi Persson)",
+    "tournament": "5 - Texas Open",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "George Mason ED",
+    "judge": "Morgan Copeland",
+    "roundReport": "1AC - Black Note 1NC - T: FW, K: Archive, K: Cap 2NR - K: Archive"
   },
   {
     "school": "Kansas",
@@ -22811,6 +24491,46 @@
   },
   {
     "school": "Kansas",
+    "team": "Kansas BrWa (Connor Brown - Henry Walawender)",
+    "tournament": "6 - Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Harvard DS",
+    "judge": "Henry Mitchell",
+    "roundReport": "1AC - Physicians 1NC - Employment Law CP, Contempt CP, Midterms DA, NLRB Overstretch DA, BizCon DA, T-Substantial 2NR - T"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas BrWa (Connor Brown - Henry Walawender)",
+    "tournament": "6 - Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Kansas State DS",
+    "judge": "Temitope Ogundare",
+    "roundReport": "1AC - Sectoral Bargaining 1NC - Rights K, Setcol K 2NR - Rights K"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas BrWa (Connor Brown - Henry Walawender)",
+    "tournament": "6 - Texas",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Michigan State FM",
+    "judge": "Benjamin Morbeck",
+    "roundReport": "1AC - Federal Unions 1NC - T-No Fed, T-Substantial, Advantage CP, Flex DA, Midterms DA, Court Capital DA 2NR - Advantage CP, Flex DA"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas BrWa (Connor Brown - Henry Walawender)",
+    "tournament": "6 - Texas",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "USC BR",
+    "judge": "Ben Biggs",
+    "roundReport": "1AC - Sectoral Bargaining 1NC - Rights Creep DA, Adv CP, States CP, Rights K, Econ Turn 2NR - Adv CP, Econ Turn"
+  },
+  {
+    "school": "Kansas",
     "team": "Kansas ChFa (Harris Chaudhry - Gilly Falin)",
     "tournament": "1---Mo-State",
     "round": "Round 2",
@@ -23008,6 +24728,36 @@
     "opponent": "Louisville VJ",
     "judge": "White",
     "roundReport": "1AC -- Reparations 1NC -- T-USFG, DA-Productivity, CP-Signing Statements. 2NR -- T-USFG, DA-Productivity."
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas ChFa (Harris Chaudhry - Gilly Falin)",
+    "tournament": "5---Texas Open",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Emory CR",
+    "judge": "Jankovsky",
+    "roundReport": "1AC -- Fed CBAs. 1NC -- K-Capitalism, CP-Advantage, DA-Article II, DA-Midterms, DA-Ice. 2NR -- DA-ICE"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas ChFa (Harris Chaudhry - Gilly Falin)",
+    "tournament": "5---Texas Open",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "NYU KK",
+    "judge": "Roetlin",
+    "roundReport": "1AC -- Digital Surveillance 1NC -- States CP, AFL-CIO CP, Contemp CP, Midterms DA, Clarity DA 2NR: Midterms DA"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas ChFa (Harris Chaudhry - Gilly Falin)",
+    "tournament": "5---Texas Open",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Northwestern AP",
+    "judge": "Aoki - ONLINE",
+    "roundReport": "1AC -- Federal CBAs. 1NC -- PIK-Gregorian Dating, DA-NSC, K-Anti-blackness, T-Substantial, PIC-CBRs. 2NR -- PIK-Gregorian Dating, DA-NSC."
   },
   {
     "school": "Kansas",
@@ -23437,7 +25187,7 @@
     "side": "Neg",
     "opponent": "Kansas State DR",
     "judge": "Alonso Pena",
-    "roundReport": "1AC---Nonbinary Knowledge Production 1NC---K-Queer Pess, K-Disability 2NR----K-Queer Pess"
+    "roundReport": "1AC --- Nonbinary Knowledge Production 1NC --- K-Queer Pess, K-Disability 2NR --- K-Queer Pess"
   },
   {
     "school": "Kansas",
@@ -23468,6 +25218,46 @@
     "opponent": "Missouri State CD",
     "judge": "Alex McVey",
     "roundReport": "1AC --- Migrant World Making 1NC --- K - Disability 2NR --- K - Disability"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas FoSh (Aidan Foust - Sasha Sharman)",
+    "tournament": "4---Texas Open",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Wyoming WW",
+    "judge": "Nine Abad",
+    "roundReport": "1AC --- Life Strike 1NC --- Semiocap K 2NR --- Semiocap K"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas FoSh (Aidan Foust - Sasha Sharman)",
+    "tournament": "4---Texas Open",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Georgia CP",
+    "judge": "Jenny Vazquez Torres",
+    "roundReport": "1AC --- Federal Workers 1NC --- Disability K, ICE PIC, Spreading Procedural 2NR --- ICE PIC"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas FoSh (Aidan Foust - Sasha Sharman)",
+    "tournament": "4---Texas Open",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Northwestern HP",
+    "judge": "Abhis Sedhai",
+    "roundReport": "1AC --- Federal Workers 1NC --- ICE PIC, Disability K 1NR --- Disability K"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas FoSh (Aidan Foust - Sasha Sharman)",
+    "tournament": "4---Texas Open",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Baylor BK",
+    "judge": "Tessa Harper",
+    "roundReport": "1AC --- Life Strike 1NC --- Cap K 2NR --- Cap K"
   },
   {
     "school": "Kansas",
@@ -23732,6 +25522,26 @@
   {
     "school": "Kansas",
     "team": "Kansas HaLe (Averi Harker - Ava Levin)",
+    "tournament": "Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Iowa KS",
+    "judge": "Maverick Edwards",
+    "roundReport": "1AC-Fed 1NC-Psychopolitics K 2NR-Psychopolitics K"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas HaLe (Averi Harker - Ava Levin)",
+    "tournament": "Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Houston IF",
+    "judge": "Dawn Pierce",
+    "roundReport": "1AC-Culp Fiction 1NC-T USFG, Misinformation Da 2NR- T USFG"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas HaLe (Averi Harker - Ava Levin)",
     "tournament": "Wake",
     "round": "Round 1",
     "side": "Aff",
@@ -23898,6 +25708,26 @@
     "opponent": "Northern Iowa MV",
     "judge": "Magalhaes",
     "roundReport": "1AC -- Sectoral Bargaining 1NC -- Cap K, Productivity K, Fed workers CP 2NR -- Productivity K"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas HeFo (Cooper Hefty - Abigail Fordyce)",
+    "tournament": "Texas Open",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Michigan SS",
+    "judge": "Bressler",
+    "roundReport": "1AC -- Fed Workers 1NC -- Conquest K 2NR -- Conquest K"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas HeFo (Cooper Hefty - Abigail Fordyce)",
+    "tournament": "Texas Open",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Houston HM",
+    "judge": "Snelling",
+    "roundReport": "1AC -- Messiness 1NC -- Cap, Ballot PIK 2NR -- Ballot PIK"
   },
   {
     "school": "Kansas",
@@ -24458,6 +26288,36 @@
     "opponent": "Houston IF",
     "judge": "McVey, Shook, Turner",
     "roundReport": "1AC---Culp Fiction 1NC---T-USFG, Heg DA, Growth Good CT 2NR---T-USFG"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas LaPa (Payten LaPoint - Lucy Pace)",
+    "tournament": "2---Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Iowa AP",
+    "judge": "McCullough",
+    "roundReport": "1AC---Abolish Transness 1NC---T-USFG 2NR---T-USFG"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas LaPa (Payten LaPoint - Lucy Pace)",
+    "tournament": "2---Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Bing CK",
+    "judge": "Stamenkovic Diez",
+    "roundReport": "1AC---Federal CBAs 1NC---Case 2NR---Case"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas LaPa (Payten LaPoint - Lucy Pace)",
+    "tournament": "2---Texas",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Wyoming LW",
+    "judge": "Lepp",
+    "roundReport": "1AC---Affective Labor 1NC---T-USFG, AFL-CIO CP 2NR---AFL-CIO CP"
   },
   {
     "school": "Kansas",
@@ -25022,6 +26882,46 @@
   {
     "school": "Kansas",
     "team": "Kansas LaSc (Rose Larson - Luna Schultz)",
+    "tournament": "Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "GMU RT",
+    "judge": "Nick Fleming",
+    "roundReport": "1ac - The Weight of Beautiful Things 2nr - Presumption"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas LaSc (Rose Larson - Luna Schultz)",
+    "tournament": "Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Northwestern LW",
+    "judge": "Scott Phillips",
+    "roundReport": "1ac - Federal Workers 2nr - T-Substantially, Case 2ar - New Broad-Based Bargaining 3nr - No New Arguments"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas LaSc (Rose Larson - Luna Schultz)",
+    "tournament": "Texas",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Northwestern LR",
+    "judge": "Adam White",
+    "roundReport": "1ac - Federal Workers 2nr - Military PIC, Moral Skepticism"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas LaSc (Rose Larson - Luna Schultz)",
+    "tournament": "Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Wyoming WW",
+    "judge": "Salma Waheed",
+    "roundReport": "1ac - The Weight of Beautiful Things 2nr - Semiocapitalism K"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas LaSc (Rose Larson - Luna Schultz)",
     "tournament": "Wake",
     "round": "Round 1",
     "side": "Neg",
@@ -25308,6 +27208,36 @@
     "opponent": "UT San Antonio PS",
     "judge": "Anjan Roy",
     "roundReport": "1AC---Physicians 2NR---T-Substantial, AFL-CIO CP, Case"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas LeVe (Brianna Lemaster - Aryan Verma)",
+    "tournament": "3---Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "UTD HH",
+    "judge": "Adrienne Brovero",
+    "roundReport": "1AC---Sectoral Bargaining 2NR---Shipyards DA, Case"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas LeVe (Brianna Lemaster - Aryan Verma)",
+    "tournament": "3---Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Baylor BK",
+    "judge": "Jackie Poapst",
+    "roundReport": "1AC---Revolutionary Love 2NR---Cap K"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas LeVe (Brianna Lemaster - Aryan Verma)",
+    "tournament": "3---Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Emory ST",
+    "judge": "Young Kwon",
+    "roundReport": "1AC---Fed Workers 2NR---Teleworkers DA, Case"
   },
   {
     "school": "Kansas",
@@ -26151,6 +28081,46 @@
   },
   {
     "school": "Kansas",
+    "team": "Kansas OwWi (Owen Owings - Zach Willingham)",
+    "tournament": "7 - Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Northwestern AK",
+    "judge": "Sam Price",
+    "roundReport": "1AC - Federal CBAs 1NC - T Workers, Return Fire K, CBR PIC, ACA Subsidies DA, Debt DA 2NR - Debt DA"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas OwWi (Owen Owings - Zach Willingham)",
+    "tournament": "7 - Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "USC BM",
+    "judge": "Storm Lasseter",
+    "roundReport": "1AC - Correctional Populations 1NC - T CBR, T Worker, T Subs, CP Contempt, CP Adv, DA Court 2NC - CP Adv, T CBR 1NR - DA Court 2NR - CP Adv, T CBR"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas OwWi (Owen Owings - Zach Willingham)",
+    "tournament": "7 - Texas",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Iowa AP",
+    "judge": "Ethan Greer",
+    "roundReport": "1AC - NRC 1NC - Oikonomia K, T Substantial 2NR - T Substantial"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas OwWi (Owen Owings - Zach Willingham)",
+    "tournament": "7 - Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "UTD HH",
+    "judge": "Henry Mitchell",
+    "roundReport": "1AC - Data Producers 1NC - T Strengthen, T Worker, CP States, CP AFL-CIO, Cap K, DA Hemp 2NC - Case 1NR - AFL-CIO CP, Hemp DA 2NR - AFL-CIO CP"
+  },
+  {
+    "school": "Kansas",
     "team": "Kansas ShSu (Katelynn Shaw - Nargis Suleman)",
     "tournament": "55th Annual JW Patterson Debates hosted by UK",
     "round": "Round 1",
@@ -26428,6 +28398,56 @@
     "opponent": "Emory CF",
     "judge": "KJ Reese",
     "roundReport": "1AC - Federal CBAs 1NC - Cap K, T - CBR, Article II DA, Midterms DA, Telework DA 2NC - Cap K 1NR - Article II DA 2NR - Cap K"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas TeSm (Jaxson Terreros - Quinn Smith)",
+    "tournament": "5---Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Emory GC",
+    "judge": "Tim Freehan",
+    "roundReport": "1AC - Federal workers [New Adv] 1NC - Disclosure, T - Substantially, T - Preexisting, K - Imperialism K, CP - Contempt, CP - Advantage, DA - Midterms 2NC - Disclosure, T - Preexisting, CP - Advantage, Case 1NR - DA - Midterms 2NR - Disclosure, T - Preexisting"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas TeSm (Jaxson Terreros - Quinn Smith)",
+    "tournament": "5---Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "CSULB OM",
+    "judge": "William Jensen",
+    "roundReport": "1AC - Federal Workers 1NC - K 2NR - K"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas TeSm (Jaxson Terreros - Quinn Smith)",
+    "tournament": "5---Texas",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Dartmouth JR",
+    "judge": "Henry Mitchell",
+    "roundReport": "1AC - Secondary Strikes 1NC - Anthro K, AFL-CIO CP, ADV CP, Labor Freedoms CP, Techlash DA, Midterms DA, Hemp DA 2NR - Midterms DA"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas TeSm (Jaxson Terreros - Quinn Smith)",
+    "tournament": "5---Texas",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Utah PP",
+    "judge": "Dustyn Beutelspacher",
+    "roundReport": "1AC - Federal CBAs 1NC - Set Col K, Cap K 2NR - Set Col K"
+  },
+  {
+    "school": "Kansas State",
+    "team": "Kansas State ArSa (Lillian Ardis - Caitlin Sand)",
+    "tournament": "00 --- All Tournaments",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": "Caitlin 1A/2N - she/they, caitlinmsand@gmail.com Lillian 2A/1N - they/them, lardis.debate@gmail.com No spreading, analytics please, thank you from yours truly KSU AS <3"
   },
   {
     "school": "Kansas State",
@@ -26801,16 +28821,6 @@
   },
   {
     "school": "Kansas State",
-    "team": "Kansas State ArSa (Lillian Ardis - Caitlin Sand)",
-    "tournament": "All Tournaments",
-    "round": "All",
-    "side": "Aff",
-    "opponent": "",
-    "judge": "",
-    "roundReport": ""
-  },
-  {
-    "school": "Kansas State",
     "team": "Kansas State DaRa (Taryn Day - Jace Raines)",
     "tournament": "0---Disclosure",
     "round": "All",
@@ -26973,6 +28983,66 @@
     "school": "Kansas State",
     "team": "Kansas State DaRo (Taryn Day - Daniel Robertson)",
     "tournament": "Sunflower Swing 2 K State 2026",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "UT San Antonio PS",
+    "judge": "Sims",
+    "roundReport": "1AC - NB Knowledge Production 2NR - T, Cap, Presumption"
+  },
+  {
+    "school": "Kansas State",
+    "team": "Kansas State DaRo (Taryn Day - Daniel Robertson)",
+    "tournament": "Sunflower Swing 2 K State 2026",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Samford AS",
+    "judge": "Lasseter",
+    "roundReport": "1AC - Sex Workers 2NR - Cap K"
+  },
+  {
+    "school": "Kansas State",
+    "team": "Kansas State DaRo (Taryn Day - Daniel Robertson)",
+    "tournament": "Sunflower Swing 2 K State 2026",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "UTD HK",
+    "judge": "Shook",
+    "roundReport": "1AC - Grounded Normativity 2NR - FW"
+  },
+  {
+    "school": "Kansas State",
+    "team": "Kansas State DaRo (Taryn Day - Daniel Robertson)",
+    "tournament": "Sunflower Swing 2 K State 2026",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Northern Iowa MV",
+    "judge": "Hudson",
+    "roundReport": "1AC - NB Knowledge Production 2NR - Case Turns"
+  },
+  {
+    "school": "Kansas State",
+    "team": "Kansas State DaRo (Taryn Day - Daniel Robertson)",
+    "tournament": "Sunflower Swing 2 K State 2026",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "Wyoming CH",
+    "judge": "Moore",
+    "roundReport": "1AC - Affective Labor 2NR - Cap K"
+  },
+  {
+    "school": "Kansas State",
+    "team": "Kansas State DaRo (Taryn Day - Daniel Robertson)",
+    "tournament": "Sunflower Swing 2 K State 2026",
+    "round": "Round 6",
+    "side": "Aff",
+    "opponent": "Kansas KS",
+    "judge": "Pena",
+    "roundReport": "1AC - NB Knowledge Production 2NR - Hartman"
+  },
+  {
+    "school": "Kansas State",
+    "team": "Kansas State DaRo (Taryn Day - Daniel Robertson)",
+    "tournament": "Sunflower Swing 2 K State 2026",
     "round": "Octas",
     "side": "Aff",
     "opponent": "Cal State Fulle CM",
@@ -27068,6 +29138,26 @@
     "opponent": "Wyoming CH",
     "judge": "Glass,Pena,Watson",
     "roundReport": "1AC - NB Knowledge Production 2NR - Sasha Garden PIC"
+  },
+  {
+    "school": "Kansas State",
+    "team": "Kansas State DaRo (Taryn Day - Daniel Robertson)",
+    "tournament": "Texas Open",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "James Madison KP",
+    "judge": "Wiessner",
+    "roundReport": "1AC - Abolition 2NR - Ballot PIK"
+  },
+  {
+    "school": "Kansas State",
+    "team": "Kansas State DaRo (Taryn Day - Daniel Robertson)",
+    "tournament": "Texas Open",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Emory LY",
+    "judge": "\"I don't evaluate K-affs\"",
+    "roundReport": "didn't evaluate our k-aff."
   },
   {
     "school": "Kansas State",
@@ -28301,6 +30391,46 @@
   },
   {
     "school": "Kentucky",
+    "team": "Kentucky GaSl (Ariel Gabay - Regan Slish)",
+    "tournament": "Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Macalester HK",
+    "judge": "Johnnie Stupek",
+    "roundReport": "1AC: Sectoral Bargaining 1NC: T CBR, Cap K, States CP, Midterms DA, Econ Turn, Case 2NC: States CP, Econ Turn, Case 1NR: Case, Midterms DA 2NR: Econ Turn, Case."
+  },
+  {
+    "school": "Kentucky",
+    "team": "Kentucky GaSl (Ariel Gabay - Regan Slish)",
+    "tournament": "Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Utah PP",
+    "judge": "Joey Weideman",
+    "roundReport": "1AC: Grad Students 1NC: ASpec, T Subsets, T Strengthen, Midterms DA, ILO CP, States CP, NLRB CP, Disability K, Capitalism Turn, Case 2NC: ILO CP, States CP, NLRB CP, Capitalism Turn, Case 1NR: T Subsets, Midterms DA 2NR: T Subsets, ILO CP"
+  },
+  {
+    "school": "Kentucky",
+    "team": "Kentucky GaSl (Ariel Gabay - Regan Slish)",
+    "tournament": "Texas",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Emory RY",
+    "judge": "Nate Martin",
+    "roundReport": "1AC: Sectoral Bargaining 1NC: Antitrust DA, T Strengthen, Employment Law CP, Cap K, Midterms DA, Succession CP, Productivity Turn, Case 2NC: Employment Law CP, Antitrust DA, Case 1NR: Case, Midterms DA 2NR: Antitrust DA, Case"
+  },
+  {
+    "school": "Kentucky",
+    "team": "Kentucky GaSl (Ariel Gabay - Regan Slish)",
+    "tournament": "Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Georgetown LN",
+    "judge": "Margaret Hecht",
+    "roundReport": "1AC: Zombies 1NC: ConCon CP, Rights PIC, Disability K, Midterms DA, T Subsets, AI Leadership DA, ILO CP, Zombie Metaphores Bad, Unconditional Hospitality Bad, Case 2NC: T Subsets, ILO CP, Zombie Metaphores Bad, Unconditional Hospitality Bad, Case 1NR: ConCon CP, Midterms DA 2NR: Midterms DA, T Subsets, Case"
+  },
+  {
+    "school": "Kentucky",
     "team": "Kentucky RiWa (Jeremiah Rimpson - Amanti Washington)",
     "tournament": "Gonzaga",
     "round": "Round 1",
@@ -28910,6 +31040,16 @@
     "roundReport": "1AC - Secondary Strikes 1NC - Nommo, Greetings K, Bad Religion K 2NC - Bad Religion K 1NR - Case 2NR - Bad Religion K"
   },
   {
+    "school": "Kentucky",
+    "team": "Kentucky ScRi (Haddie Schedler - Jeremiah Rimpson)",
+    "tournament": "Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "UTD HK",
+    "judge": "Ryan Cavanaugh",
+    "roundReport": "1AC: Blue v1.1 1NC: T-USFG, Cap K, Disability K, Case 2NC: Cap, Case 1NR: Case 2NR: Cap"
+  },
+  {
     "school": "Liberty",
     "team": "Liberty Novices",
     "tournament": "All Tournaments",
@@ -29371,9 +31511,59 @@
   },
   {
     "school": "Liberty",
+    "team": "Liberty CuLa (Jayden Cunningham - Emmalee Layton)",
+    "tournament": "7- Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "UTD DD",
+    "judge": "Taj Robinson",
+    "roundReport": "1AC - Ecstatic Breathing 1NC - Afropess 2NR - Afropess"
+  },
+  {
+    "school": "Liberty",
+    "team": "Liberty CuLa (Jayden Cunningham - Emmalee Layton)",
+    "tournament": "7- Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Kansas State LW",
+    "judge": "Kenny Delph",
+    "roundReport": "1AC - Cyber Poetics 2NR - Case"
+  },
+  {
+    "school": "Liberty",
+    "team": "Liberty CuLa (Jayden Cunningham - Emmalee Layton)",
+    "tournament": "7- Texas",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "UTD RP",
+    "judge": "Spencer Roetlin",
+    "roundReport": "1AC - Ecstatic Breathing 1NC - Fwk, Cap, Unions K (on case) 2NR - Fwk"
+  },
+  {
+    "school": "Liberty",
+    "team": "Liberty CuLa (Jayden Cunningham - Emmalee Layton)",
+    "tournament": "7- Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Georgetown CX",
+    "judge": "DJ Williams",
+    "roundReport": "1AC - Fed Workers 2NR - ICE PIC"
+  },
+  {
+    "school": "Liberty",
     "team": "Liberty DaSt (Nathan Daley - Olivia Stene)",
     "tournament": "Navy",
     "round": "All",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": ""
+  },
+  {
+    "school": "Liberty",
+    "team": "Liberty DaSt (Nathan Daley - Olivia Stene)",
+    "tournament": "Texas",
+    "round": "Round 2",
     "side": "Aff",
     "opponent": "",
     "judge": "",
@@ -29398,6 +31588,16 @@
     "opponent": "",
     "judge": "",
     "roundReport": ""
+  },
+  {
+    "school": "Liberty",
+    "team": "Liberty HaHa (Isaiah Hathaway - Isaac Hathaway)",
+    "tournament": "Texas",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "GMU FV",
+    "judge": "Choudhury",
+    "roundReport": "1AC---Fed Workers 1NC---Aspec, T-Subsets, Econ DA, Clarity Politics DA, Reinstatement CP, CCS CP"
   },
   {
     "school": "Liberty",
@@ -29721,6 +31921,16 @@
   },
   {
     "school": "Liberty",
+    "team": "Liberty PeRo (Sophia Peters - Ava Ronchetti)",
+    "tournament": "Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": ""
+  },
+  {
+    "school": "Liberty",
     "team": "Liberty RoDa (Ava Ronchetti - Nathan Daley)",
     "tournament": "All Tournaments",
     "round": "All",
@@ -30022,6 +32232,46 @@
   {
     "school": "Liberty",
     "team": "Liberty YoEt (Elaine Yoon - Hunter Etienne)",
+    "tournament": "Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "GMU ON",
+    "judge": "Taylor Brough",
+    "roundReport": "1AC-Dying Better 1NC- Afropess, Case 2NR-Afropess"
+  },
+  {
+    "school": "Liberty",
+    "team": "Liberty YoEt (Elaine Yoon - Hunter Etienne)",
+    "tournament": "Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Bing BM",
+    "judge": "Subbi Namakula",
+    "roundReport": "1AC-Planetary Strike 2NR- Abolish Debt CP/Case"
+  },
+  {
+    "school": "Liberty",
+    "team": "Liberty YoEt (Elaine Yoon - Hunter Etienne)",
+    "tournament": "Texas",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "GMU BH",
+    "judge": "Jyleesa Hampton",
+    "roundReport": "1AC- Fed Workers 2NR- Ghost Labor K, Case"
+  },
+  {
+    "school": "Liberty",
+    "team": "Liberty YoEt (Elaine Yoon - Hunter Etienne)",
+    "tournament": "Texas",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "SNU CD",
+    "judge": "Pav Reddy",
+    "roundReport": "1AC- Dying Better 1NC- T/Fw, Tactics, Strikes CP, Labor Movements DA"
+  },
+  {
+    "school": "Liberty",
+    "team": "Liberty YoEt (Elaine Yoon - Hunter Etienne)",
     "tournament": "West Point",
     "round": "Round 1",
     "side": "Neg",
@@ -30181,6 +32431,26 @@
   },
   {
     "school": "Macalester College",
+    "team": "Macalester College HaKo (Isabella Harrison - Will Kochel)",
+    "tournament": "Texas Open",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Kentucky GS",
+    "judge": "Stupek",
+    "roundReport": "1AC: Sectoral bargining 1NC: T-CBR, Midterms da, States cp, Internationalism K 2NR: Case"
+  },
+  {
+    "school": "Macalester College",
+    "team": "Macalester College HaKo (Isabella Harrison - Will Kochel)",
+    "tournament": "Texas Open",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Wake Forest AB",
+    "judge": "Gustavson",
+    "roundReport": "1AC: Neoliberalism 1NC: K 2NR:K"
+  },
+  {
+    "school": "Macalester College",
     "team": "Macalester College HaWi (Isabella Harrison - Noah Winters)",
     "tournament": "1- Owen L Coon Memorial Debates at Northwestern",
     "round": "Round 1",
@@ -30278,6 +32548,16 @@
     "opponent": "Missouri State LD",
     "judge": "Specker",
     "roundReport": "1ac: sectoral bargining 1nc: advp cp, states cp, millitancy da, rates da, midterms da 2nr: millitancy da adv cp"
+  },
+  {
+    "school": "Macalester College",
+    "team": "Macalester College KiFl (Owen Killoran - Aidi Flores)",
+    "tournament": "Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": "prosocial bargaining 1ac"
   },
   {
     "school": "Macalester College",
@@ -30738,6 +33018,26 @@
     "opponent": "Emory ST",
     "judge": "Hilligoss,Meadows,Wilkinson",
     "roundReport": "1AC - Fed Workers 2NR - Curbing DA, Adv CP"
+  },
+  {
+    "school": "Michigan",
+    "team": "Michigan BaLe (Mira Baba - Gianna Ledesma)",
+    "tournament": "Texas Open",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Iowa BS",
+    "judge": "Beutelspacher",
+    "roundReport": "1AC - Federal Workers 2NR - K"
+  },
+  {
+    "school": "Michigan",
+    "team": "Michigan BaLe (Mira Baba - Gianna Ledesma)",
+    "tournament": "Texas Open",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Dartmouth JR",
+    "judge": "Greer",
+    "roundReport": "1AC - General Strike 2NR - T-No Strikes"
   },
   {
     "school": "Michigan",
@@ -31388,6 +33688,36 @@
     "opponent": "Dartmouth CG",
     "judge": "Devane Murphy",
     "roundReport": "1AC NEW Gig Workers 2NR Long-termism K"
+  },
+  {
+    "school": "Michigan",
+    "team": "Michigan BaPa (Eleanor Barrett - Jiyoon Park)",
+    "tournament": "Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Kansas BP",
+    "judge": "Ethan Greer",
+    "roundReport": "1AC Federal Workers 2NR Guattari K"
+  },
+  {
+    "school": "Michigan",
+    "team": "Michigan BaPa (Eleanor Barrett - Jiyoon Park)",
+    "tournament": "Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Baylor MP",
+    "judge": "Dustyn Beutelspacher",
+    "roundReport": "1AC Data Workers 2NR EU CP"
+  },
+  {
+    "school": "Michigan",
+    "team": "Michigan BaPa (Eleanor Barrett - Jiyoon Park)",
+    "tournament": "Texas",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Emory KS",
+    "judge": "Tony Miklovis",
+    "roundReport": "1AC Bankruptcy 2NR Recession Turn"
   },
   {
     "school": "Michigan",
@@ -32538,6 +34868,46 @@
     "opponent": "Kentucky RW",
     "judge": "Booth, Nagel, Powers, Regnier, Wilkus",
     "roundReport": "1AC Federal Workers 2NR T-Subsets"
+  },
+  {
+    "school": "Michigan",
+    "team": "Michigan EsSh (Cyrus Esmailzadeh - Rishi Shetty)",
+    "tournament": "Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Wyoming CH",
+    "judge": "Balda",
+    "roundReport": "1AC Secondary Strikes 2NR Valdez K"
+  },
+  {
+    "school": "Michigan",
+    "team": "Michigan EsSh (Cyrus Esmailzadeh - Rishi Shetty)",
+    "tournament": "Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Wake HN",
+    "judge": "Powers",
+    "roundReport": "1AC Brattiness 2NR Topicality"
+  },
+  {
+    "school": "Michigan",
+    "team": "Michigan EsSh (Cyrus Esmailzadeh - Rishi Shetty)",
+    "tournament": "Texas",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Binghamton CK",
+    "judge": "Puerto",
+    "roundReport": "1AC Black Sapphism 2NR Topicality"
+  },
+  {
+    "school": "Michigan",
+    "team": "Michigan EsSh (Cyrus Esmailzadeh - Rishi Shetty)",
+    "tournament": "Texas",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Missouri State NS",
+    "judge": "Stupek",
+    "roundReport": "1AC Federal Workers 2NR T-No Federal Workers"
   },
   {
     "school": "Michigan",
@@ -34011,6 +36381,36 @@
   },
   {
     "school": "Michigan",
+    "team": "Michigan OuJo (Robert Ou - John Joyce)",
+    "tournament": "Texas Open",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Emory KW",
+    "judge": "Ben Biggs",
+    "roundReport": "1AC---Fed Workers 1NC---DA Midterms CP EU T Subsets DA Court PTX CP Admin Flex 2NR---DA Midterms"
+  },
+  {
+    "school": "Michigan",
+    "team": "Michigan OuJo (Robert Ou - John Joyce)",
+    "tournament": "Texas Open",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Georgetown AC",
+    "judge": "Kevin McCaffrey",
+    "roundReport": "1AC---Secondary Strkes 1NC---T CBR CP States CP Advantage DA Inflation DA Midterms DA Hollow Hope 2NR---CP Advantage DA Hollow Hope"
+  },
+  {
+    "school": "Michigan",
+    "team": "Michigan OuJo (Robert Ou - John Joyce)",
+    "tournament": "Texas Open",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Southern California BM",
+    "judge": "Spiers",
+    "roundReport": "1AC---Prison Labor 1NC---T Strikes T Extra T Workers T Subsets DA Curbing CP Qui Tam K Nietzsche CP Remand 2NR---Subsets"
+  },
+  {
+    "school": "Michigan",
     "team": "Michigan ShSh (Avi Shah - Conner Shih)",
     "tournament": "Georgetown",
     "round": "Round 1",
@@ -34508,6 +36908,26 @@
     "opponent": "Kansas LS",
     "judge": "Ralph Anderson, Adam White, Alex Mojica, Spencer Roetlin, Sam Price",
     "roundReport": "1AC Maladjustment 2NR Topicality"
+  },
+  {
+    "school": "Michigan",
+    "team": "Michigan ShSh (Avi Shah - Conner Shih)",
+    "tournament": "Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Kansas HF",
+    "judge": "Gene Bressler",
+    "roundReport": "1AC Federal Workers 2NR Conquest K"
+  },
+  {
+    "school": "Michigan",
+    "team": "Michigan ShSh (Avi Shah - Conner Shih)",
+    "tournament": "Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Emory GM",
+    "judge": "Tyler Vergho",
+    "roundReport": "1AC Broad Based Bargaining 2NR States CP Midterms DA"
   },
   {
     "school": "Michigan State",
@@ -35311,6 +37731,46 @@
   },
   {
     "school": "Michigan State",
+    "team": "Michigan State FoMa (Isabella Foster - Henry Martin)",
+    "tournament": "08---Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Kansas BB",
+    "judge": "Spencer Roetlin",
+    "roundReport": "1AC---[NEW] Shady Work 1NC---T-FW, K-Unions, DA-Cede CBAs 2NR---K-Unions"
+  },
+  {
+    "school": "Michigan State",
+    "team": "Michigan State FoMa (Isabella Foster - Henry Martin)",
+    "tournament": "08---Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Baylor DL",
+    "judge": "Ned Gidley",
+    "roundReport": "1AC---Civil Service V2.2.1 [alteration - took out Dorning/Fisk, replaced with Balser] 1NC---T-Subsets, T-Worker, K-Zionism, P-Zionism, PIK-BIA 2NR---PIK-BIA"
+  },
+  {
+    "school": "Michigan State",
+    "team": "Michigan State FoMa (Isabella Foster - Henry Martin)",
+    "tournament": "08---Texas",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Kansas BW",
+    "judge": "Benjamin Morbeck",
+    "roundReport": "1AC---Civil Service V2.2 1NC---T-Substantial, T-Only Private, CP-CBR PIC, DA-Court PTX [Tariffs], DA-Midterms, DA-Agency Flex 2NR---CP-CBR PIC, DA-Agency Flex"
+  },
+  {
+    "school": "Michigan State",
+    "team": "Michigan State FoMa (Isabella Foster - Henry Martin)",
+    "tournament": "08---Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "GMU RS",
+    "judge": "Sam Gustavson",
+    "roundReport": "1AC---Sumud 1NC---T-FW, PIK-Ballot, PIK-Poetry, K-Unions, DA-Municipal Socialism 2NR---T-FW"
+  },
+  {
+    "school": "Michigan State",
     "team": "Michigan State GeSh (Arielle Gearring - Hina Shehzad)",
     "tournament": "55th Annual JW Patterson Debates hosted by UK",
     "round": "Round 1",
@@ -35658,6 +38118,26 @@
     "opponent": "Kansas State SA",
     "judge": "Li",
     "roundReport": "2NR---K"
+  },
+  {
+    "school": "Michigan State",
+    "team": "Michigan State GeSh (Arielle Gearring - Hina Shehzad)",
+    "tournament": "Texas Open",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "NYU KK",
+    "judge": "Makuch - ONLINE",
+    "roundReport": "1AC - Esther Brown 2NR - Topicality"
+  },
+  {
+    "school": "Michigan State",
+    "team": "Michigan State GeSh (Arielle Gearring - Hina Shehzad)",
+    "tournament": "Texas Open",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "George Mason RT",
+    "judge": "Martin - ONLINE",
+    "roundReport": "1AC - Esther Brown 2NR - Topicality"
   },
   {
     "school": "Michigan State",
@@ -36208,6 +38688,46 @@
     "opponent": "Emory GS",
     "judge": "B Bricker, J Wilkus, G Revare, K Hirn, N Fleming",
     "roundReport": "1AC - Foreign Service 1NC - T Substantially, T CBRs, Vagueness, CBR PIC, Regulatory Analysis CP, Imperialism K, Appointments DA + UQ CP, Nondelegation DA + UQ CP 2NR - Appointments DA + UQ CP"
+  },
+  {
+    "school": "Michigan State",
+    "team": "Michigan State GuLe (Joanna Gusis - Stephen Lewis)",
+    "tournament": "Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Wake PS",
+    "judge": "Jackie Poapst",
+    "roundReport": "1AC - Immployment 1NC - Set Col K 2NR - Set Col K"
+  },
+  {
+    "school": "Michigan State",
+    "team": "Michigan State GuLe (Joanna Gusis - Stephen Lewis)",
+    "tournament": "Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Missouri State NS",
+    "judge": "Nick Fleming",
+    "roundReport": "1AC - Banks Only Sectoral Bargaining 1NC - T 10%, T CBR, States CP, Brazil CP, AFL-CIO CP, Politics DA, 10 for 1 DA, ASPEC 2NR - Politics DA"
+  },
+  {
+    "school": "Michigan State",
+    "team": "Michigan State GuLe (Joanna Gusis - Stephen Lewis)",
+    "tournament": "Texas",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "George Mason RS",
+    "judge": "DJ Williams",
+    "roundReport": "1AC - Immployment 1NC - Labor Zionism K 2NR - Labor Zionism K"
+  },
+  {
+    "school": "Michigan State",
+    "team": "Michigan State GuLe (Joanna Gusis - Stephen Lewis)",
+    "tournament": "Texas Open",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Michigan SS",
+    "judge": "Benjamin Morbeck",
+    "roundReport": "1AC - Fed Workers 1NC - ASPEC, T 2%, Adv CP, AFL-CIO CP, Tariffs DA, Politics DA 2NR - T 2%"
   },
   {
     "school": "Michigan State",
@@ -36790,6 +39310,36 @@
     "roundReport": "1AC - Immployment 2.0 1NC - Three Tier, Stick Up, Afropessimism 2NC - Afropessimism 2NR - Afropessimism"
   },
   {
+    "school": "Michigan State",
+    "team": "Michigan State JaSc (Zaria Jarman - Glen Scully)",
+    "tournament": "7 - Navy",
+    "round": "Octas",
+    "side": "Neg",
+    "opponent": "GMU RT",
+    "judge": "Brovero, Stupek, Ferguson",
+    "roundReport": "1AC - Sectoral Bargaining 2NR - PTX"
+  },
+  {
+    "school": "Michigan State",
+    "team": "Michigan State JaSc (Zaria Jarman - Glen Scully)",
+    "tournament": "8 - Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Kansas BS",
+    "judge": "Dan Bannister",
+    "roundReport": "1AC - Civil Service 6.5 1NC - CBR PIC, Agency Flex DA, T - Employee, Set Col K, Freedoms CP 2NC - CBR PIC 1NR - Agency Flex 2NR - Agency Flex"
+  },
+  {
+    "school": "Michigan State",
+    "team": "Michigan State JaSc (Zaria Jarman - Glen Scully)",
+    "tournament": "8 - Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Emory SW",
+    "judge": "Will Katz",
+    "roundReport": "1AC - USMCA 2NR - Court PTX, States"
+  },
+  {
     "school": "Minnesota",
     "team": "Minnesota HaUs (Benjy Haber-Fawcett - Timur Usenov)",
     "tournament": "0-Contact Info",
@@ -37218,6 +39768,46 @@
     "opponent": "Minnesota HU",
     "judge": "Baker,DeLong,Stockstill",
     "roundReport": "1AC: Federal Workers 1NC: Disability K"
+  },
+  {
+    "school": "Minnesota",
+    "team": "Minnesota HaUs (Benjy Haber-Fawcett - Timur Usenov)",
+    "tournament": "7-Texas Open",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Northwestern PS",
+    "judge": "Baker",
+    "roundReport": "1AC-General Strike 1NC-T, Cap K 2NR-Cap K"
+  },
+  {
+    "school": "Minnesota",
+    "team": "Minnesota HaUs (Benjy Haber-Fawcett - Timur Usenov)",
+    "tournament": "7-Texas Open",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "James Madison KP",
+    "judge": "Mitchell - ONLINE",
+    "roundReport": "1AC: Federal Workers 1NC: T-Substantially, Uncooperative Federalism CP, Midterms DA 2NR: Midterms DA"
+  },
+  {
+    "school": "Minnesota",
+    "team": "Minnesota HaUs (Benjy Haber-Fawcett - Timur Usenov)",
+    "tournament": "7-Texas Open",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Northwestern LW",
+    "judge": "Lasseter",
+    "roundReport": "1AC-fed workers 1NC-T CBR, T sub, cap K, adv CP, court ptx, midterms 2NR-court politics"
+  },
+  {
+    "school": "Minnesota",
+    "team": "Minnesota HaUs (Benjy Haber-Fawcett - Timur Usenov)",
+    "tournament": "7-Texas Open",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Baylor MP",
+    "judge": "Wang",
+    "roundReport": "1AC: Federal Workers 1NC: T-Workers, Adv CP, Ice PIC, Midterms DA, AI DA Block: T-Workers, Adv CP, Midterms 2NR: T-Workers"
   },
   {
     "school": "Minnesota",
@@ -37721,6 +40311,36 @@
   },
   {
     "school": "Missouri State",
+    "team": "Missouri State BaHa (Avery Bates - Shelby Hahn)",
+    "tournament": "Team info",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": "Contact info Avery Bates - 1A/2N - Averyrbates@gmail.com Shelby Hahn - 2A/1N - Sasherhahn1@gmail.com Avery - (She/Her) Shelby- (He/Him) Please add mostatedebate@gmail.com to the email chain"
+  },
+  {
+    "school": "Missouri State",
+    "team": "Missouri State BaHa (Avery Bates - Shelby Hahn)",
+    "tournament": "Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "WKU NF",
+    "judge": "DeLong",
+    "roundReport": "1AC - Banking 2NR- Worker coop"
+  },
+  {
+    "school": "Missouri State",
+    "team": "Missouri State BaHa (Avery Bates - Shelby Hahn)",
+    "tournament": "Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Southern Nazarene HS",
+    "judge": "Park",
+    "roundReport": "1AC-gig workers 2NR-Adv Cp, Midterms"
+  },
+  {
+    "school": "Missouri State",
     "team": "Missouri State BuCo (Liv Busenhart - Gary Cowdrey-Mota)",
     "tournament": "00---Contact Information",
     "round": "All",
@@ -38018,6 +40638,16 @@
     "opponent": "Northwestern HP",
     "judge": "Manny Navarrete",
     "roundReport": "1AC: - Fed workers 1NC: - EPA PIC - Energy DA - Cap K - T-Strengthen 2NC: - EPA PIC 1NR: - Energy DA 2NR: - Energy DA"
+  },
+  {
+    "school": "Missouri State",
+    "team": "Missouri State BuMc (Liv Busenhart - Evan McSorley)",
+    "tournament": "00---Contact Info",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "You",
+    "judge": "",
+    "roundReport": "Evan McSorley (He/Him) evanmcsorley07@gmail.com Liv Busenhart (He/She/They) ollie.busenhart@gmail.com Please also add: mostatedebate@gmail.com"
   },
   {
     "school": "Missouri State",
@@ -38481,6 +41111,36 @@
   },
   {
     "school": "Missouri State",
+    "team": "Missouri State DeNe (Levi DeAngelis - Asher Neal)",
+    "tournament": "01 Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Emory GS",
+    "judge": "Anderson, Ralph",
+    "roundReport": "1AC: Finance 1NC: T-Subsets, Shutdown DA, Dedev, Hegemony Bad"
+  },
+  {
+    "school": "Missouri State",
+    "team": "Missouri State DeNe (Levi DeAngelis - Asher Neal)",
+    "tournament": "01 Texas",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Kansas State LW",
+    "judge": "Wilkus, Jacob",
+    "roundReport": "1AC: Cyborgs 1NC: T-USFG, Cap K, Semiotics K 2NR: Semiotics K, Case"
+  },
+  {
+    "school": "Missouri State",
+    "team": "Missouri State DeNe (Levi DeAngelis - Asher Neal)",
+    "tournament": "01 Texas",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Kansas SS",
+    "judge": "Abad, Nine",
+    "roundReport": "1AC: Sectoral Bargaining 1NC: Anti-blackness 2NR: Anti-blackness"
+  },
+  {
+    "school": "Missouri State",
     "team": "Missouri State GrCo (James Granger - Gary Cowdrey-Mota)",
     "tournament": "00---Contact Information",
     "round": "All",
@@ -38498,6 +41158,26 @@
     "opponent": "YOU!",
     "judge": "JUDGE!",
     "roundReport": "Gary Cowdrey- Mota (He/Him): 1A/2N James Granger (He/Him): 2A/1N Please add to email chains: gcowdreydebate@gmail.com jlelandgranger@gmail.com mostatedebate@gmail.com debatedocs@googlegroups.com"
+  },
+  {
+    "school": "Missouri State",
+    "team": "Missouri State GrCo (James Granger - Gary Cowdrey-Mota)",
+    "tournament": "01 - Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "UC Berkeley RM",
+    "judge": "Storm Lasseter",
+    "roundReport": "1AC - Data Workers 1NC - T 80%, Racial Cap K, States CP, Code CP, Midterms DA 2NC - Code CP, case 1NR - T 2NR - T"
+  },
+  {
+    "school": "Missouri State",
+    "team": "Missouri State GrCo (James Granger - Gary Cowdrey-Mota)",
+    "tournament": "01 - Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Texas GS",
+    "judge": "Jacob Wilkus",
+    "roundReport": "1AC---Solidarity 1NC---T-CBR, T-CBR, Midterms DA, Afropess K Block---Afropess K 2NR---Afropess K"
   },
   {
     "school": "Missouri State",
@@ -39530,6 +42210,46 @@
     "roundReport": "1AC: Gig Workers - Digital Authoritarianism 1NC: - Existential Ecology K - T-CBRs - CSR DA - Countervailance CP - T-Subsets - Rates DA - Democracy Bad Block: - T-Subsets - T-CBRs - Countervailance CP - Democracy Bad - CSR DA - Rates DA 2NR: - T-Subsets - T-CBRs 2AR: - Perfcon"
   },
   {
+    "school": "Missouri State",
+    "team": "Missouri State NeSi (Nico Neal - Evan Siever)",
+    "tournament": "09 Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Oklahoma BW",
+    "judge": "P, Scotty",
+    "roundReport": "1AC: NRC - *NEW* Terror - *NEW* Meltdowns 1NC: - Capitalism K - T-Strengthen - Political Questions DA - New Advantages Bad - Major Questions CP - Boats DA - T-Subsets - Risk Review CP - Advantage CP Block: - Boats DA - Major Questions CP - Risk Review CP 2NR: - Major Questions CP 2AR: - Solvency Advocate Theory - Condo"
+  },
+  {
+    "school": "Missouri State",
+    "team": "Missouri State NeSi (Nico Neal - Evan Siever)",
+    "tournament": "09 Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "MSU GL",
+    "judge": "Fleming, Nick",
+    "roundReport": "1AC: Finance - Systemic Risk - Brazil 1NC: - States CP - T-Strengthen - Brazil CP - HFC DA - T-Substantially - AFL-CIO CP - A-Spec - 10-For-1 DA Block: - AFL-CIO CP - HFC DA 2NR: - HFC DA"
+  },
+  {
+    "school": "Missouri State",
+    "team": "Missouri State NeSi (Nico Neal - Evan Siever)",
+    "tournament": "09 Texas",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Kansas HF",
+    "judge": "Hecht, Margaret",
+    "roundReport": "1AC: Sectoral Bargaining - Automation - Corporatism - Framing 1NC/Block: - T-CBRs - Conquest K 2NR: - T-CBRs"
+  },
+  {
+    "school": "Missouri State",
+    "team": "Missouri State NeSi (Nico Neal - Evan Siever)",
+    "tournament": "09 Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Michigan ES",
+    "judge": "Stupek, Johnnie",
+    "roundReport": "1AC: Fed Workers - Expertise - Overreach 1NC: - Imperialism K - T-Substantially - Boats DA - T-Private Sector - Code CP - Energy DA - Dedev Block: - Dedev - T-Private Sector 2NR: - T-Private Sector"
+  },
+  {
     "school": "Navy",
     "team": "Navy Novices",
     "tournament": "All Tournaments",
@@ -39618,6 +42338,26 @@
     "opponent": "",
     "judge": "",
     "roundReport": "Due to DOW Memorandum \"Department of War Personnel Participation in External Engagements\" anything we post on the wiki is subject to review by the Secretary of the Navy prior to publication. Please email navydebate305@gmail.com or danielle.verney@gmail.com for disclosure requests."
+  },
+  {
+    "school": "New Mexico",
+    "team": "New Mexico Novices",
+    "tournament": "Texas Open",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "NM State",
+    "judge": "",
+    "roundReport": "1ac sex workers"
+  },
+  {
+    "school": "New Mexico",
+    "team": "New Mexico Novices",
+    "tournament": "Texas Open",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "USMA",
+    "judge": "Dennis",
+    "roundReport": "setcol k"
   },
   {
     "school": "New Mexico",
@@ -40777,7 +43517,7 @@
     "side": "Aff",
     "opponent": "",
     "judge": "",
-    "roundReport": "We opt to not disclose the aff on the WIKI. Feel free to email quincidanell@gmail.com and bdoyledebate@gmail.com and we can further discuss disclosure."
+    "roundReport": "We opt to not disclose the aff on the WIKI. Feel free to email quincidanell@gmail.com and bdoyledebate@gmail.com and we can further discuss disclosure. Additionally, we ask that teams send analytics when available for accessibility reasons. We will do the same."
   },
   {
     "school": "Northern Iowa",
@@ -41187,7 +43927,7 @@
     "side": "Neg",
     "opponent": "Kansas State RD",
     "judge": "Hudson",
-    "roundReport": "1AC- Nonbinary Knowledge Production 2NR - Cis people Pic, Case"
+    "roundReport": "1AC- Nonbinary Knowledge Production 2NR - Cis people PIK, Case"
   },
   {
     "school": "Northern Iowa",
@@ -41628,6 +44368,76 @@
     "opponent": "Indiana FT",
     "judge": "Conway",
     "roundReport": "1AC---Federal Workers 1NC---T- NLRA, APSEC, Vagueness, Adv CP, Clean Slate CP, Appointments DA, Movements DA 2NR---Appointments DA"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern ArKu (Ari Arceo - Gavin Kung)",
+    "tournament": "6. Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Kansas OW",
+    "judge": "Sam Price",
+    "roundReport": "1AC---Federal Workers 1NC---T-Subsets, Politics DA, Debt DA, ESR CP, Queer Anarchism K, Flex Turn 2NR---Debt DA"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern ArKu (Ari Arceo - Gavin Kung)",
+    "tournament": "6. Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Trinity BK",
+    "judge": "Taylor-Ward",
+    "roundReport": "1AC---Federal Workers 1NC---Terror PIK, Polycrisis PIK, Cap K 2NR---Authors Indicts, Cap K"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern ArKu (Ari Arceo - Gavin Kung)",
+    "tournament": "6. Texas",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Wake Forest HN",
+    "judge": "Anderson",
+    "roundReport": "1AC---Brat Attack 1NC---T, N-1 2NR---T"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern ArPa (Buck Arney - Lucia Patterson)",
+    "tournament": "Texas Open",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Southern Nazarene HS",
+    "judge": "Trujillo",
+    "roundReport": "1AC - La Levante 2NR - T-USFG"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern ArPa (Buck Arney - Lucia Patterson)",
+    "tournament": "Texas Open",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Western Kentucky NF",
+    "judge": "Reeves, Peyton",
+    "roundReport": "1AC---Merger Review 2NR---Afropessimsim"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern ArPa (Buck Arney - Lucia Patterson)",
+    "tournament": "Texas Open",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Kansas FC",
+    "judge": "Aoki, Kenji",
+    "roundReport": "1AC---Fed Workers 2NR---Gregorian Dating CP, Hege Bad"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern ArPa (Buck Arney - Lucia Patterson)",
+    "tournament": "Texas Open",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Baylor DL",
+    "judge": "Turner",
+    "roundReport": "1AC - La Levante 2NR - T-USFG"
   },
   {
     "school": "Northwestern",
@@ -42072,6 +44882,16 @@
   {
     "school": "Northwestern",
     "team": "Northwestern HePe (Nathan Heftman - Nathan Peltier)",
+    "tournament": "01 - Texas Open",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Emory AS",
+    "judge": "Wang",
+    "roundReport": "1AC- Federal Workers 1NC- T, Cap K, Coloniality K, Petitioning CP, Adv CP, Rates DA, Flex DA, Shutdown DA. 2NR- Flex DA"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern HePe (Nathan Heftman - Nathan Peltier)",
     "tournament": "02 - Gonzaga University Jesuit Debates",
     "round": "Round 1",
     "side": "Aff",
@@ -42105,7 +44925,7 @@
     "tournament": "02 - Gonzaga University Jesuit Debates",
     "round": "Round 4",
     "side": "Aff",
-    "opponent": "Trinity CK - ONLINE",
+    "opponent": "Trinity CK",
     "judge": "Baez",
     "roundReport": "1AC- Sectoral Bargaining 1NC- Anthro K, Cap K, Rights PIC 2NR- Anthro"
   },
@@ -42115,7 +44935,7 @@
     "tournament": "02 - Gonzaga University Jesuit Debates",
     "round": "Round 5",
     "side": "Aff",
-    "opponent": "Emory CG - ONLINE",
+    "opponent": "Emory CG",
     "judge": "Rooney",
     "roundReport": "1AC- Federal Workers 1NC- Cap K, Exec DA, T-Workers, Adv CP 2NR- Cap"
   },
@@ -42145,7 +44965,7 @@
     "tournament": "02 - Gonzaga University Jesuit Debates",
     "round": "Round 8",
     "side": "Aff",
-    "opponent": "Purdue HH - ONLINE",
+    "opponent": "Purdue HH",
     "judge": "Tillman",
     "roundReport": "1AC- Federal Workers 1NC- T-NLRA, T-Subsets, Adv CP, Exec DA, Realignment DA 2NR- T-subsets"
   },
@@ -42195,8 +45015,8 @@
     "tournament": "03 - FR Shirley and ADA Fall Champions at WFU",
     "round": "Round 6",
     "side": "Aff",
-    "opponent": "Houston SF - ONLINE",
-    "judge": "Beutelspacher - ONLINE",
+    "opponent": "Houston SF",
+    "judge": "Beutelspacher",
     "roundReport": "1AC- Federal Workers 1NC- Disability K, Cap K, Heg bad 2NR- Cap K"
   },
   {
@@ -42248,6 +45068,26 @@
     "opponent": "Kansas SS",
     "judge": "Ferguson",
     "roundReport": "1AC: Lalalabor 1NC: T - USFG, Cap K 2NR: T - USFG"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern HePe (Nathan Heftman - Nathan Peltier)",
+    "tournament": "05 - Texas Open",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Wyoming WW",
+    "judge": "Biggs",
+    "roundReport": "1AC: Queer Labor 1NC: T - USFG, Modalities PIK, Street Level K, N-1 PIK, Negative Universality K 2NR: T - USFG"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern HePe (Nathan Heftman - Nathan Peltier)",
+    "tournament": "05 - Texas Open",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Oklahoma DF",
+    "judge": "Weddington",
+    "roundReport": "1AC: NRC 1NC: T - Subsets, ACA Politics DA, States CP, CBR PIC, Agency Flex DA 2NR: States CP, Agency Flex DA"
   },
   {
     "school": "Northwestern",
@@ -42691,6 +45531,46 @@
   },
   {
     "school": "Northwestern",
+    "team": "Northwestern LeWe (Michael Lee - Samuel Weisz)",
+    "tournament": "7---Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Houston HM",
+    "judge": "Gidley",
+    "roundReport": "1AC: Domestic Workers 1NC: States CP, Courts CP, ACA Subsidies DA, Ban Unions CP, T-Subsets, Movements DA 2NR: Courts CP, ACA Subsidies DA 2AR: Conditionality Bad"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern LeWe (Michael Lee - Samuel Weisz)",
+    "tournament": "7---Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Kansas LS",
+    "judge": "Phillips",
+    "roundReport": "1AC: Fed Workers 1NC: Cap K, ICE DA, T-Substantially, Moral Skepticism 2NR: T-Substantially, Capacity Turn 2AR: Skep Affirms, New 2AR Args, Warrants Regressive, Ev Distortion, Sectoral Bargaining"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern LeWe (Michael Lee - Samuel Weisz)",
+    "tournament": "7---Texas",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Minnesota HU",
+    "judge": "Lasseter",
+    "roundReport": "1AC: Fed Workers 1NC: T-NLRA, T-Substantially, ASPEC, Cap K, Adv CP, Court Politics DA, Midterms DA 2NR: Court Politics DA"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern LeWe (Michael Lee - Samuel Weisz)",
+    "tournament": "7---Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "UTD HK",
+    "judge": "Noriega",
+    "roundReport": "1AC: Grounded Normativity 1NC: T-USFG, Negative Universality, Unions Good 2NR: T-USFG"
+  },
+  {
+    "school": "Northwestern",
     "team": "Northwestern LuLe (Annabeth Lundberg - Sophie Leonard)",
     "tournament": "01---Northwestern",
     "round": "Round 1",
@@ -43058,6 +45938,36 @@
     "opponent": "UC Berkeley LS",
     "judge": "Dawn Pierce",
     "roundReport": "1AC - Hartman 1NC - T-USFG, Cap K 2NR - Cap K"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern LuLe (Annabeth Lundberg - Sophie Leonard)",
+    "tournament": "06---Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Emory GS",
+    "judge": "Bryce Rao",
+    "roundReport": "1AC - Federal Workers 1NC - T-Workers, Midterms DA, EVs DA, Federal Automation DA 2NR - Midterms DA"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern LuLe (Annabeth Lundberg - Sophie Leonard)",
+    "tournament": "06---Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Oklahoma FD",
+    "judge": "Manny Navarrete",
+    "roundReport": "1AC - Federal Workers 1NC - Disability K, Midterms DA, Heg bad, democracy bad 2NR - Midterms DA, Heg bad"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern LuLe (Annabeth Lundberg - Sophie Leonard)",
+    "tournament": "06---Texas",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Baylor MP",
+    "judge": "Bobby Phillips",
+    "roundReport": "1AC - Data Workers 1NC - T-Workers, T-Subsets, Politics DA, AI Dominance DA, Federalism DA, States CP 2NR - AI Dominance DA"
   },
   {
     "school": "Northwestern",
@@ -43801,6 +46711,36 @@
   },
   {
     "school": "Northwestern",
+    "team": "Northwestern PaSo (Jack Pacconi - Antonio Souchet)",
+    "tournament": "5. Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Minnesota HU",
+    "judge": "Will Baker",
+    "roundReport": "1AC - General Strike 2NR - Capitalism K"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern PaSo (Jack Pacconi - Antonio Souchet)",
+    "tournament": "5. Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "USC BR",
+    "judge": "Dimarvin Puerto",
+    "roundReport": "1AC - Crip Spacetime 2NR - Afropessimism"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern PaSo (Jack Pacconi - Antonio Souchet)",
+    "tournament": "5. Texas",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Harvard CS",
+    "judge": "Joshua Michael",
+    "roundReport": "1AC - Cowgirl 2NR - Afropessimism"
+  },
+  {
+    "school": "Northwestern",
     "team": "Northwestern RuLi (Veronica Rubin - Mike Li)",
     "tournament": "00---Contact Info",
     "round": "Finals",
@@ -44380,6 +47320,46 @@
     "roundReport": "1AC---Fed Workers 1NC---EV DA, Court PTX, Anarchism K, National Debt DA, T Workers, T Subsets, Civil Service PIC 2NR---Court PTX"
   },
   {
+    "school": "Northwestern",
+    "team": "Northwestern RuLi (Veronica Rubin - Mike Li)",
+    "tournament": "07---Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "UC Berkeley GS",
+    "judge": "Gabriel Morbeck",
+    "roundReport": "1AC---Federal Workers 1NC---States CP, Shutdown DA, Cap K, T Substantial, Rights PIC 2NR---Cap K"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern RuLi (Veronica Rubin - Mike Li)",
+    "tournament": "07---Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "UTD KR",
+    "judge": "Benjamín Noriega",
+    "roundReport": "1AC---Colonialism 1NC---T-USFG, Unions K, Capitalism K 2NR---T-USFG"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern RuLi (Veronica Rubin - Mike Li)",
+    "tournament": "07---Texas",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Kansas LS",
+    "judge": "Adam White",
+    "roundReport": "1AC---Federal Workers 1NC---Skepticism, Military CP, Equity CP, Security K, T Substantial 2NR---Skepticism, Military CP"
+  },
+  {
+    "school": "Northwestern",
+    "team": "Northwestern RuLi (Veronica Rubin - Mike Li)",
+    "tournament": "07---Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Trinity KP",
+    "judge": "Nigel Taylor-Ward",
+    "roundReport": "1AC---General Strike 1NC---T-USFG, T-No Strike, Capitalism Turn 2NR---Capitalism Turn"
+  },
+  {
     "school": "NYU",
     "team": "NYU AdPa (Elinor Adams - Natalie Parrot)",
     "tournament": "Big Tent Online",
@@ -44831,6 +47811,126 @@
   },
   {
     "school": "NYU",
+    "team": "NYU MaSa (Emmanuel Makinde - Vikram Saigal)",
+    "tournament": "55th Annual JW Patterson Debates hosted by UK",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Iowa BS",
+    "judge": "Howard",
+    "roundReport": "1AC - Bed Activism 2NR - Disability"
+  },
+  {
+    "school": "NYU",
+    "team": "NYU MaSa (Emmanuel Makinde - Vikram Saigal)",
+    "tournament": "55th Annual JW Patterson Debates hosted by UK",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Harvard CS",
+    "judge": "Waldinger",
+    "roundReport": "1AC - Medical Workers 2NR - Black Bataille"
+  },
+  {
+    "school": "NYU",
+    "team": "NYU MaSa (Emmanuel Makinde - Vikram Saigal)",
+    "tournament": "55th Annual JW Patterson Debates hosted by UK",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "Michigan CS",
+    "judge": "Dal Pra",
+    "roundReport": "1AC - Care Work 2NR - Afropessimism"
+  },
+  {
+    "school": "NYU",
+    "team": "NYU MaSa (Emmanuel Makinde - Vikram Saigal)",
+    "tournament": "Baird Debates",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Michigan State GS",
+    "judge": "Copeland,Kivimaki",
+    "roundReport": "1AC - Waywardness 2NR - Disability K"
+  },
+  {
+    "school": "NYU",
+    "team": "NYU MaSa (Emmanuel Makinde - Vikram Saigal)",
+    "tournament": "Baird Debates",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Iowa AP",
+    "judge": "Kirk,Wunderlich",
+    "roundReport": "1AC - Deidealize Transition 2NR - Fatal Resurrection K"
+  },
+  {
+    "school": "NYU",
+    "team": "NYU MaSa (Emmanuel Makinde - Vikram Saigal)",
+    "tournament": "Baird Debates",
+    "round": "Round 6",
+    "side": "Neg",
+    "opponent": "Liberty CL",
+    "judge": "Cavanaugh,Harper",
+    "roundReport": "1AC - Conspiration 2NR - Cybernetics K"
+  },
+  {
+    "school": "NYU",
+    "team": "NYU MaSa (Emmanuel Makinde - Vikram Saigal)",
+    "tournament": "Baird Debates",
+    "round": "Round 7",
+    "side": "Neg",
+    "opponent": "Baylor DL",
+    "judge": "Chiri,Kuffour",
+    "roundReport": "1AC - Sumud 2NR - Disability"
+  },
+  {
+    "school": "NYU",
+    "team": "NYU MaSa (Emmanuel Makinde - Vikram Saigal)",
+    "tournament": "Georgetown College Tournament",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Georgia CP",
+    "judge": "Makuch",
+    "roundReport": "1AC - Federal Workers 2NR - Black Bataille K"
+  },
+  {
+    "school": "NYU",
+    "team": "NYU MaSa (Emmanuel Makinde - Vikram Saigal)",
+    "tournament": "Georgetown College Tournament",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Kansas AU",
+    "judge": "Osei",
+    "roundReport": "1AC - EPA 2NR - Semiocapitalism K"
+  },
+  {
+    "school": "NYU",
+    "team": "NYU MaSa (Emmanuel Makinde - Vikram Saigal)",
+    "tournament": "Georgetown College Tournament",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "Iowa EW",
+    "judge": "Fuchs",
+    "roundReport": "1AC - Sha-Clack-Clack 2NR - Disability K"
+  },
+  {
+    "school": "NYU",
+    "team": "NYU MaSa (Emmanuel Makinde - Vikram Saigal)",
+    "tournament": "Georgetown College Tournament",
+    "round": "Round 8",
+    "side": "Neg",
+    "opponent": "UC Berkeley BU",
+    "judge": "McCullough",
+    "roundReport": "1AC - Data Workers 2NR - Semiocapitalism K"
+  },
+  {
+    "school": "NYU",
+    "team": "NYU MaSa (Emmanuel Makinde - Vikram Saigal)",
+    "tournament": "Georgetown College Tournament",
+    "round": "Doubles",
+    "side": "Neg",
+    "opponent": "Kansas HP",
+    "judge": "Fisher,Osei,Pickens",
+    "roundReport": "1AC - Politics of the Surround 2NR - Disability K"
+  },
+  {
+    "school": "NYU",
     "team": "NYU TrTs (Caitlin Travers - Justin Tseng)",
     "tournament": "USNA Crowe Warken",
     "round": "Round 1",
@@ -45118,6 +48218,46 @@
     "opponent": "Wyoming HP",
     "judge": "Peyton Reeves",
     "roundReport": "1AC - Secondary Strikes 1NC - Empire K 2NR - Empire K"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma BaWr (Lucas Ballinger - Jacob Wright)",
+    "tournament": "01 - Indiana",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Purdue HH",
+    "judge": "Mathew Wilkinson",
+    "roundReport": "1AC - Federal Workers 1NC - Failure of Imagination 2NR - Failure of Imagination"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma BaWr (Lucas Ballinger - Jacob Wright)",
+    "tournament": "01 - Indiana",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Northwestern LW",
+    "judge": "Aryan Jasani",
+    "roundReport": "1AC - [NEW] NRC 1NC - Kant DA, T-Substantial, IFF CP, Advantage CP, States CP, Politics DA, Flex DA, Vagueness 2NR - Flex DA 2AR - Condo"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma BaWr (Lucas Ballinger - Jacob Wright)",
+    "tournament": "01 - Indiana",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "Missouri State BD",
+    "judge": "Jeff Buntin",
+    "roundReport": "1AC - Solidarity 1NC - Failure of Imagination 2NR - Failure of Imagination 2AR - \"Paralysis\" Voter"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma BaWr (Lucas Ballinger - Jacob Wright)",
+    "tournament": "01 - Indiana",
+    "round": "Round 6",
+    "side": "Aff",
+    "opponent": "Northwestern LO",
+    "judge": "Niko Sims",
+    "roundReport": "1AC - NRC 1NC - Disclosure, K 2NR - Disclosure, K"
   },
   {
     "school": "Oklahoma",
@@ -45452,7 +48592,7 @@
   {
     "school": "Oklahoma",
     "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
-    "tournament": "3rd Annual Sunflower Swing Part 1 hosted by KU",
+    "tournament": "4. 3rd Annual Sunflower Swing Part 1 hosted by KU",
     "round": "Round 1",
     "side": "Neg",
     "opponent": "Southern Nazarene LD",
@@ -45462,7 +48602,7 @@
   {
     "school": "Oklahoma",
     "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
-    "tournament": "3rd Annual Sunflower Swing Part 1 hosted by KU",
+    "tournament": "4. 3rd Annual Sunflower Swing Part 1 hosted by KU",
     "round": "Round 2",
     "side": "Aff",
     "opponent": "Wyoming MW",
@@ -45472,7 +48612,7 @@
   {
     "school": "Oklahoma",
     "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
-    "tournament": "3rd Annual Sunflower Swing Part 1 hosted by KU",
+    "tournament": "4. 3rd Annual Sunflower Swing Part 1 hosted by KU",
     "round": "Round 3",
     "side": "Aff",
     "opponent": "UT San Antonio PS",
@@ -45482,7 +48622,7 @@
   {
     "school": "Oklahoma",
     "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
-    "tournament": "3rd Annual Sunflower Swing Part 1 hosted by KU",
+    "tournament": "4. 3rd Annual Sunflower Swing Part 1 hosted by KU",
     "round": "Round 4",
     "side": "Neg",
     "opponent": "North Texas SP",
@@ -45492,7 +48632,7 @@
   {
     "school": "Oklahoma",
     "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
-    "tournament": "3rd Annual Sunflower Swing Part 1 hosted by KU",
+    "tournament": "4. 3rd Annual Sunflower Swing Part 1 hosted by KU",
     "round": "Round 5",
     "side": "Aff",
     "opponent": "Southern Nazarene BL",
@@ -45502,7 +48642,7 @@
   {
     "school": "Oklahoma",
     "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
-    "tournament": "3rd Annual Sunflower Swing Part 1 hosted by KU",
+    "tournament": "4. 3rd Annual Sunflower Swing Part 1 hosted by KU",
     "round": "Round 6",
     "side": "Neg",
     "opponent": "Missouri State ML",
@@ -45512,67 +48652,7 @@
   {
     "school": "Oklahoma",
     "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
-    "tournament": "Hoosier Invitational Tournament HIT",
-    "round": "Round 1",
-    "side": "Aff",
-    "opponent": "Kentucky Ervin & Rushing",
-    "judge": "Rooney",
-    "roundReport": "1AC- NRC 1NC- King, T- 50, New Affs bad 2NR- King"
-  },
-  {
-    "school": "Oklahoma",
-    "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
-    "tournament": "Hoosier Invitational Tournament HIT",
-    "round": "Round 2",
-    "side": "Neg",
-    "opponent": "Missouri State Neal & Neal",
-    "judge": "McCullough",
-    "roundReport": "1AC- Sectoral 1NC- Midterms, Small Biz 2NR- Case"
-  },
-  {
-    "school": "Oklahoma",
-    "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
-    "tournament": "Hoosier Invitational Tournament HIT",
-    "round": "Round 3",
-    "side": "Aff",
-    "opponent": "Missouri State Cooper & Hahn",
-    "judge": "Fish",
-    "roundReport": "1AC- NRC 1NC- T-no fed, midterms, cap, fascism procedural, MQD CP, Disclosure. 2NR- T-no fed, midterms, MQD, Case"
-  },
-  {
-    "school": "Oklahoma",
-    "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
-    "tournament": "Hoosier Invitational Tournament HIT",
-    "round": "Round 4",
-    "side": "Neg",
-    "opponent": "Wyoming Widi & Willson",
-    "judge": "Lain",
-    "roundReport": "1AC- Queer labor 1NC- Quare pik, T-FW 2NR- Case"
-  },
-  {
-    "school": "Oklahoma",
-    "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
-    "tournament": "Hoosier Invitational Tournament HIT",
-    "round": "Round 5",
-    "side": "Neg",
-    "opponent": "Northwestern LippSmith & Olorunsola",
-    "judge": "Dal Pra",
-    "roundReport": "1AC- N******mation 2NR- T-FW"
-  },
-  {
-    "school": "Oklahoma",
-    "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
-    "tournament": "Hoosier Invitational Tournament HIT",
-    "round": "Round 6",
-    "side": "Aff",
-    "opponent": "Dartmouth Gonzalez Arce & Hant",
-    "judge": "Kirk (woah hes back)",
-    "roundReport": "1AC- NRC 2NR- Labor Militancy K, Advantage CP"
-  },
-  {
-    "school": "Oklahoma",
-    "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
-    "tournament": "Sunflower Swing 2 K State 2026",
+    "tournament": "5. Sunflower Swing 2 K State 2026",
     "round": "Round 1",
     "side": "Aff",
     "opponent": "Wyoming MW",
@@ -45582,7 +48662,7 @@
   {
     "school": "Oklahoma",
     "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
-    "tournament": "Sunflower Swing 2 K State 2026",
+    "tournament": "5. Sunflower Swing 2 K State 2026",
     "round": "Round 2",
     "side": "Neg",
     "opponent": "Houston DD",
@@ -45592,7 +48672,7 @@
   {
     "school": "Oklahoma",
     "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
-    "tournament": "Sunflower Swing 2 K State 2026",
+    "tournament": "5. Sunflower Swing 2 K State 2026",
     "round": "Round 3",
     "side": "Aff",
     "opponent": "Northern Iowa BD",
@@ -45602,7 +48682,7 @@
   {
     "school": "Oklahoma",
     "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
-    "tournament": "Sunflower Swing 2 K State 2026",
+    "tournament": "5. Sunflower Swing 2 K State 2026",
     "round": "Round 4",
     "side": "Aff",
     "opponent": "Houston DD",
@@ -45612,12 +48692,82 @@
   {
     "school": "Oklahoma",
     "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
-    "tournament": "Sunflower Swing 2 K State 2026",
+    "tournament": "5. Sunflower Swing 2 K State 2026",
     "round": "Round 5",
     "side": "Neg",
     "opponent": "Houston AO",
     "judge": "Lasseter",
     "roundReport": "1AC- AG 2NR- supply chain DA, Zoonotics turn"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
+    "tournament": "6. Hoosier Invitational Tournament HIT",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Kentucky Ervin & Rushing",
+    "judge": "Rooney",
+    "roundReport": "1AC- NRC 1NC- King, T- 50, New Affs bad 2NR- King"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
+    "tournament": "6. Hoosier Invitational Tournament HIT",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Missouri State Neal & Neal",
+    "judge": "McCullough",
+    "roundReport": "1AC- Sectoral 1NC- Midterms, Small Biz 2NR- Case"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
+    "tournament": "6. Hoosier Invitational Tournament HIT",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Missouri State Cooper & Hahn",
+    "judge": "Fish",
+    "roundReport": "1AC- NRC 1NC- T-no fed, midterms, cap, fascism procedural, MQD CP, Disclosure. 2NR- T-no fed, midterms, MQD, Case"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
+    "tournament": "6. Hoosier Invitational Tournament HIT",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Wyoming Widi & Willson",
+    "judge": "Lain",
+    "roundReport": "1AC- Queer labor 1NC- Quare pik, T-FW 2NR- Case"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
+    "tournament": "6. Hoosier Invitational Tournament HIT",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "Northwestern LippSmith & Olorunsola",
+    "judge": "Dal Pra",
+    "roundReport": "1AC- N******mation 2NR- T-FW"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
+    "tournament": "6. Hoosier Invitational Tournament HIT",
+    "round": "Round 6",
+    "side": "Aff",
+    "opponent": "Dartmouth Gonzalez Arce & Hant",
+    "judge": "Kirk (woah hes back)",
+    "roundReport": "1AC- NRC 2NR- Labor Militancy K, Advantage CP"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
+    "tournament": "7. Texas Open",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Baylor MP",
+    "judge": "Karthikeyan",
+    "roundReport": "1AC- NRC 2NR- T"
   },
   {
     "school": "Oklahoma",
@@ -45928,6 +49078,26 @@
     "opponent": "Missouri State Cooper & Hahn",
     "judge": "Stockstill, Anna",
     "roundReport": "1AC - Secondary Actions 1NC - Connectivism K, Security K, case 2NR - connectivism K, case"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma Webu1 (Forest Werner - yobani bustos)",
+    "tournament": "2. Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "WP FG",
+    "judge": "Adam Lee",
+    "roundReport": "1AC - NRC 1NC - P - vagueness, T- substantial, Ethics DA, Court Clog DA 2NR - Court clog DA"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma Webu1 (Forest Werner - yobani bustos)",
+    "tournament": "All Tournaments",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": ""
   },
   {
     "school": "Oklahoma",
@@ -47105,9 +50275,29 @@
     "tournament": "4-ASU",
     "round": "Round 6",
     "side": "Neg",
-    "opponent": "Fullerton CD",
+    "opponent": "CSU Fullerton CD",
     "judge": "Cooper",
     "roundReport": "1AC---Worker Centers 2NR---Case"
+  },
+  {
+    "school": "Southern California",
+    "team": "Southern California BhRa (Anish Bhadani - Rayeed Rahman)",
+    "tournament": "5-Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Dartmouth BG",
+    "judge": "Meadows",
+    "roundReport": "1AC---Green Sectoral Bargaining 2NR---Adv CP, Oil DA, Case"
+  },
+  {
+    "school": "Southern California",
+    "team": "Southern California BhRa (Anish Bhadani - Rayeed Rahman)",
+    "tournament": "5-Texas",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Georgetown CX",
+    "judge": "Tarnowski",
+    "roundReport": "1AC---Prison Labor 2NR---Cap K, Case"
   },
   {
     "school": "Southern California",
@@ -47128,6 +50318,16 @@
     "opponent": "Wake Forest SL",
     "judge": "Adrian Sendejas",
     "roundReport": "1AC: Sex Workification 2NR: Racial Cap K"
+  },
+  {
+    "school": "Southern California",
+    "team": "Southern California BrMa (Clare Bradley - Sarah Martin)",
+    "tournament": "ASU",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "CSU Long Beach TG",
+    "judge": "Natalie Yehezkel Stolarski",
+    "roundReport": "1ac - arbitration 2nr - court clog da, case"
   },
   {
     "school": "Southern California",
@@ -47368,6 +50568,26 @@
     "opponent": "Kansas BW",
     "judge": "Jason Regnier",
     "roundReport": "1ac - sectoral bargaining 2nr - cls k, case"
+  },
+  {
+    "school": "Southern California",
+    "team": "Southern California BrMa (Clare Bradley - Sarah Martin)",
+    "tournament": "Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Trinity BK",
+    "judge": "Nik Stamenkovic Diez",
+    "roundReport": "1ac - [new] prisons 2nr - t-subsets"
+  },
+  {
+    "school": "Southern California",
+    "team": "Southern California BrMa (Clare Bradley - Sarah Martin)",
+    "tournament": "Texas",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Michigan OJ",
+    "judge": "Jared Spiers",
+    "roundReport": "1ac - incarcerated labor v5 2nr - t subs"
   },
   {
     "school": "Southern California",
@@ -47612,6 +50832,16 @@
   {
     "school": "Southern California",
     "team": "Southern California TrMi (Madison Troup - Jackson Mills)",
+    "tournament": "Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Georgetown AC",
+    "judge": "Temitope Ogundare",
+    "roundReport": "1AC — Fed Workers 1NC — T, LIO K, Labor Frame K, Case 2NR — LIO K"
+  },
+  {
+    "school": "Southern California",
+    "team": "Southern California TrMi (Madison Troup - Jackson Mills)",
     "tournament": "Wake",
     "round": "Round 1",
     "side": "Neg",
@@ -47628,6 +50858,36 @@
     "opponent": "Missouri State BC",
     "judge": "Max Wiessner",
     "roundReport": "1AC — Black Sensuality v3 1NC — Affective Information K 2NR — Affective Information K"
+  },
+  {
+    "school": "Southern California",
+    "team": "Southern California TrMi (Madison Troup - Jackson Mills)",
+    "tournament": "Wake",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "UTD HH",
+    "judge": "Taj Robinson",
+    "roundReport": "1AC — Data Workers 1NC — Labor Frame K + Case 2NR — Labor Frame K"
+  },
+  {
+    "school": "Southern California",
+    "team": "Southern California TrMi (Madison Troup - Jackson Mills)",
+    "tournament": "Wake",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "Kansas BM",
+    "judge": "Ignacio Evans",
+    "roundReport": "1AC — Revolutionary Love 1NC — Cap K + Ballroom turn 2NR — Ballroom turn + Cap"
+  },
+  {
+    "school": "Southern California",
+    "team": "Southern California TrMi (Madison Troup - Jackson Mills)",
+    "tournament": "Wake",
+    "round": "Round 7",
+    "side": "Neg",
+    "opponent": "Northwestern LW",
+    "judge": "Dennis Savill",
+    "roundReport": "1AC — Sectoral Bargaining 1NC — Labor Frame K + Case 2NR — Labor Frame K"
   },
   {
     "school": "Southern California",
@@ -48122,6 +51382,36 @@
   {
     "school": "Southern Nazarene",
     "team": "Southern Nazarene HoSt (Ian Horton - Katherine Stockstill)",
+    "tournament": "UT Austin",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Northwestern AP",
+    "judge": "Trujillo, Aaron",
+    "roundReport": "1AC- Afro-latina counter narratives 1nc- F/W-USFG, Cap, Presumption 2NR- f/w-usfg"
+  },
+  {
+    "school": "Southern Nazarene",
+    "team": "Southern Nazarene HoSt (Ian Horton - Katherine Stockstill)",
+    "tournament": "UT Austin",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "MoState BH",
+    "judge": "Park, Jimin",
+    "roundReport": "1AC- Gig workers v4 1NC- T-NLRB, CapK, Midterms DA, MDQ CP, Survaillence ADV cp, gradualism turn 2NR- Midterms DA, Adv cp, gradualism turn"
+  },
+  {
+    "school": "Southern Nazarene",
+    "team": "Southern Nazarene HoSt (Ian Horton - Katherine Stockstill)",
+    "tournament": "UT Austin",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Texas FL",
+    "judge": "Lee, Adam",
+    "roundReport": "1AC- Gig Workers v4 1NC- T-Strengthen, adv cp, states cp, FTC DA, Venture Capital DA, Midterms"
+  },
+  {
+    "school": "Southern Nazarene",
+    "team": "Southern Nazarene HoSt (Ian Horton - Katherine Stockstill)",
     "tournament": "UTSA",
     "round": "Round 1",
     "side": "Neg",
@@ -48198,6 +51488,16 @@
     "opponent": "MoState NS",
     "judge": "Martinez, Ale Talamantes; Woodward, DM; Taylor, James",
     "roundReport": "1AC- Digital Authoritarianism 1NC- Existential Ecology K, T-CBRs, CSR DA, Countervailance CP, T-Subsets, Rates DA 2AR- Perf Con"
+  },
+  {
+    "school": "Southern Nazarene",
+    "team": "Southern Nazarene JeLu (Sophia Jennings - Tanner Luce)",
+    "tournament": "Texas Open",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "West Point LP",
+    "judge": "Hudson - ONLINE",
+    "roundReport": "1AC - Gig Workers 2NR - Midterms DA"
   },
   {
     "school": "Southern Nazarene",
@@ -49013,6 +52313,16 @@
     "school": "Texas",
     "team": "Texas FeLo (Lindsay Jade Feinstein - Samantha Low)",
     "tournament": "5- Brick City RR",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Iowa AP",
+    "judge": "Jacob Wilkus",
+    "roundReport": "1AC - Abolish Transness 2NR - T-USFG"
+  },
+  {
+    "school": "Texas",
+    "team": "Texas FeLo (Lindsay Jade Feinstein - Samantha Low)",
+    "tournament": "5- Brick City RR",
     "round": "Round 3",
     "side": "Aff",
     "opponent": "Kansas OW",
@@ -49028,6 +52338,36 @@
     "opponent": "Binghamton CK",
     "judge": "Maverick Edwards",
     "roundReport": "please check debatedocs or email for chain! 1AC - Healthcare v2 1NC - Case Turn 2NR - Case Turn"
+  },
+  {
+    "school": "Texas",
+    "team": "Texas FeLo (Lindsay Jade Feinstein - Samantha Low)",
+    "tournament": "5- Brick City RR",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "Emory RY",
+    "judge": "Devane Murphy",
+    "roundReport": "1AC - Fed Workers 2NR - FAA PIC"
+  },
+  {
+    "school": "Texas",
+    "team": "Texas FeLo (Lindsay Jade Feinstein - Samantha Low)",
+    "tournament": "6- Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Western Kentucky KC",
+    "judge": "Dan Bannister",
+    "roundReport": "1AC - Merger Review 2NR - Dedev"
+  },
+  {
+    "school": "Texas",
+    "team": "Texas FeLo (Lindsay Jade Feinstein - Samantha Low)",
+    "tournament": "6- Texas Open",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Harvard DS",
+    "judge": "Graham Revare",
+    "roundReport": "1AC - Labor Monopsony v5 1NC - T-CBR, Skep, Cap K, Adv CP, Uncooperative Federalism CP, Innovation DA 2NR - Cap K"
   },
   {
     "school": "Texas",
@@ -49400,6 +52740,36 @@
     "roundReport": "1ac - black feminism poetry 1nc - cap, t, case 2nr - cap, case"
   },
   {
+    "school": "Texas",
+    "team": "Texas SuAl (Blaine Sutton - Grayson Allen)",
+    "tournament": "Texas Open",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Binghamton MB",
+    "judge": "Abhis Sedhai",
+    "roundReport": "1AC -- Antitrust 2NR -- T substantial"
+  },
+  {
+    "school": "Texas",
+    "team": "Texas SuAl (Blaine Sutton - Grayson Allen)",
+    "tournament": "Texas Open",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Liberty JS",
+    "judge": "Gabriel Morbeck",
+    "roundReport": "1AC -- Native JG 2NR -- Case Turn"
+  },
+  {
+    "school": "Texas",
+    "team": "Texas SuAl (Blaine Sutton - Grayson Allen)",
+    "tournament": "Texas Open",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Houston DO",
+    "judge": "Sam Price",
+    "roundReport": "1AC -- Antitrust 2NR -- Democracy DA"
+  },
+  {
     "school": "Texas AM",
     "team": "Texas AM BiCr (Arlin Birkby - Elijah Cruz)",
     "tournament": "0- BTHO Debates",
@@ -49708,6 +53078,66 @@
     "opponent": "Missouri State CD",
     "judge": "Kaine Cherry",
     "roundReport": "1AC - Migrant World Making 1NC - T-CBR, Ableism PIK, Cap K, Academy K 2NR - Academy K"
+  },
+  {
+    "school": "Trinity",
+    "team": "Trinity BaKh (Grant Barden - Mariska Khalikov)",
+    "tournament": "03 --- KState",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Northern Iowa CD",
+    "judge": "Salma Waheed",
+    "roundReport": "1AC - UNI CD 1NC - T-CB, Cap K, Ballot PIK 2NR - Ballot PIK"
+  },
+  {
+    "school": "Trinity",
+    "team": "Trinity BaKh (Grant Barden - Mariska Khalikov)",
+    "tournament": "03 --- KState",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "North Texas PS",
+    "judge": "Ryan Cavanaugh",
+    "roundReport": "1AC - Sit Down Strike 1NC - T-FW, Psychoanalysis K 2NR - K"
+  },
+  {
+    "school": "Trinity",
+    "team": "Trinity BaKh (Grant Barden - Mariska Khalikov)",
+    "tournament": "03 --- KState",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "Kansas BP",
+    "judge": "Jalisa Jackson",
+    "roundReport": "1AC - Logocentrism 1NC - T-CB, Cap K, Ableism K 2NR - Cap K"
+  },
+  {
+    "school": "Trinity",
+    "team": "Trinity BaKh (Grant Barden - Mariska Khalikov)",
+    "tournament": "03 --- KState",
+    "round": "Round 6",
+    "side": "Aff",
+    "opponent": "Kansas LW",
+    "judge": "Lawson Hudson",
+    "roundReport": "1AC - Sit-Down Strike 1NC - T-FW, Statephobia DA 2NR - T-FW"
+  },
+  {
+    "school": "Trinity",
+    "team": "Trinity BaKh (Grant Barden - Mariska Khalikov)",
+    "tournament": "04 --- Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "USC BM",
+    "judge": "Nik Stamenkovic Diez",
+    "roundReport": "1AC - Carceral Labor 1NC - T-Subsets, Abolition K, States CP, Court Clog DA, Rights PIC 2NR - T-Subsets"
+  },
+  {
+    "school": "Trinity",
+    "team": "Trinity BaKh (Grant Barden - Mariska Khalikov)",
+    "tournament": "04 --- Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Northwestern AK",
+    "judge": "Nigel Taylor-Ward",
+    "roundReport": "1AC - Federal Workers 1NC - Cap K, Polycrisis PIC, Terrorism PIC 2NR - Cap K"
   },
   {
     "school": "Trinity",
@@ -50222,6 +53652,46 @@
   {
     "school": "Trinity",
     "team": "Trinity KiPa (Brooklyn King - Ruth Patterson)",
+    "tournament": "Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Berkeley BU",
+    "judge": "Julian Kuffour",
+    "roundReport": "1ac---data workers 1nc---cap k, anthro k, rights pik 2nr---anthro k"
+  },
+  {
+    "school": "Trinity",
+    "team": "Trinity KiPa (Brooklyn King - Ruth Patterson)",
+    "tournament": "Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "bye",
+    "judge": "",
+    "roundReport": ""
+  },
+  {
+    "school": "Trinity",
+    "team": "Trinity KiPa (Brooklyn King - Ruth Patterson)",
+    "tournament": "Texas",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Kansas BB",
+    "judge": "Tessa Harper",
+    "roundReport": "1ac---shady work 1nc---hypotesting, cap k, psychoanalysis pik 2nr---pik"
+  },
+  {
+    "school": "Trinity",
+    "team": "Trinity KiPa (Brooklyn King - Ruth Patterson)",
+    "tournament": "Texas",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Northwestern LR",
+    "judge": "Nigel Taylor-Ward",
+    "roundReport": "1ac---general strike 1nc---t framework, t no strikes, cap good 2nr---cap good"
+  },
+  {
+    "school": "Trinity",
+    "team": "Trinity KiPa (Brooklyn King - Ruth Patterson)",
     "tournament": "Wake Forest",
     "round": "Round 1",
     "side": "Neg",
@@ -50591,6 +54061,36 @@
   },
   {
     "school": "UC Berkeley",
+    "team": "UC Berkeley BoUr (Ilan Boguslavsky - Molly Urfalian)",
+    "tournament": "6---ASU College Tournament",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Cal State Fullerton Dominguez & Catapang",
+    "judge": "Nate Martin",
+    "roundReport": "1AC---Worker Center 2NR---T-USFG"
+  },
+  {
+    "school": "UC Berkeley",
+    "team": "UC Berkeley BoUr (Ilan Boguslavsky - Molly Urfalian)",
+    "tournament": "6---ASU College Tournament",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Southern California Huerto & savdharia",
+    "judge": "Natalie Yehezkel",
+    "roundReport": "1AC---Prisons 2NR---Abolition K"
+  },
+  {
+    "school": "UC Berkeley",
+    "team": "UC Berkeley BoUr (Ilan Boguslavsky - Molly Urfalian)",
+    "tournament": "6---ASU College Tournament",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "Southern California Rahman & Bhadani",
+    "judge": "Jaysyn Green",
+    "roundReport": "1AC---Disability 2NR---Cap K"
+  },
+  {
+    "school": "UC Berkeley",
     "team": "UC Berkeley GiSi (Dash Gilrain-Lennon - Aaron Situ)",
     "tournament": "1---55th Annual JW Patterson Debates hosted by UK",
     "round": "Round 1",
@@ -50798,6 +54298,46 @@
     "opponent": "Gonzaga WW",
     "judge": "Rishi Mukherjee",
     "roundReport": "1AC---Data Workers 2NR---T"
+  },
+  {
+    "school": "UC Berkeley",
+    "team": "UC Berkeley GiSi (Dash Gilrain-Lennon - Aaron Situ)",
+    "tournament": "4---Texas Open",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Northwestern LR",
+    "judge": "Gabriel Morbeck",
+    "roundReport": "1AC---Federal Workers 2NR---Cap K"
+  },
+  {
+    "school": "UC Berkeley",
+    "team": "UC Berkeley GiSi (Dash Gilrain-Lennon - Aaron Situ)",
+    "tournament": "4---Texas Open",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Georgetown CX",
+    "judge": "Jeff Buntin",
+    "roundReport": "1AC---Data Workers v2 2NR---Midterms + States"
+  },
+  {
+    "school": "UC Berkeley",
+    "team": "UC Berkeley GiSi (Dash Gilrain-Lennon - Aaron Situ)",
+    "tournament": "4---Texas Open",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Missouri State BH",
+    "judge": "Zidao Wang",
+    "roundReport": "1AC---Data Workers v2 2NR---T, Cap K, Midterms"
+  },
+  {
+    "school": "UC Berkeley",
+    "team": "UC Berkeley GiSi (Dash Gilrain-Lennon - Aaron Situ)",
+    "tournament": "4---Texas Open",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Kansas HF",
+    "judge": "Jenny Vazquez Torres",
+    "roundReport": "1AC---Messiness 2NR---Cap K"
   },
   {
     "school": "UC Berkeley",
@@ -51305,6 +54845,16 @@
     "tournament": "All Tournaments",
     "round": "All",
     "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": ""
+  },
+  {
+    "school": "Utah",
+    "team": "Utah BrBo (Aidan Brewer - Juan Boscan)",
+    "tournament": "All Tournaments",
+    "round": "All",
+    "side": "Neg",
     "opponent": "",
     "judge": "",
     "roundReport": ""
@@ -51981,6 +55531,26 @@
   },
   {
     "school": "UTD",
+    "team": "UTD HaKa (Charlie Hale - Mahintha Karthik)",
+    "tournament": "06---Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Kentucky SR",
+    "judge": "Cavanaugh",
+    "roundReport": "1AC - Blue 2NR - Capitalism K"
+  },
+  {
+    "school": "UTD",
+    "team": "UTD HaKa (Charlie Hale - Mahintha Karthik)",
+    "tournament": "06---Texas",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Michigan State JS",
+    "judge": "Hirn",
+    "roundReport": "1AC - Civil Service 2NR - Brutalism K"
+  },
+  {
+    "school": "UTD",
     "team": "UTD HaKh (Charlie Hale - Theo Khakoo)",
     "tournament": "01 --- K-State",
     "round": "Round 1",
@@ -52261,6 +55831,36 @@
   },
   {
     "school": "UTD",
+    "team": "UTD HoHu (Isaac Hoch - Adam Humphrey)",
+    "tournament": "04 - Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Kansas VL",
+    "judge": "Brovero",
+    "roundReport": "1AC: Sectoral Bargaining 1NC: T Contract Negotiation, Shipyards DA, Markets K, Privileges CP, Trade CP 2NC: Markets K, Case 1NR: Shipyards DA, Case 2NR: Shipyards DA, Case"
+  },
+  {
+    "school": "UTD",
+    "team": "UTD HoHu (Isaac Hoch - Adam Humphrey)",
+    "tournament": "04 - Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Emory RY",
+    "judge": "Freehan",
+    "roundReport": "1AC: Data Production 1NC: Capitalism K, T Mandatory Subjects, T Workers, T Substantially, States CP, Midterms DA, FTC DA 2NC: T Mandatory Subjects, Case 1NR: FTC DA, Capitalism K 2NR: T Mandatory Subjects, FTC DA, Case, Capitalism K, States CP 2AR: States CP"
+  },
+  {
+    "school": "UTD",
+    "team": "UTD HoHu (Isaac Hoch - Adam Humphrey)",
+    "tournament": "04 - Texas",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Emory GM",
+    "judge": "Mishra",
+    "roundReport": "1AC: BBB 1NC: Indolence K, T Contract Negotiation, Markets K, Shipyards DA, Privileges CP 2NC: Case, Indolence K, T Contract Negotiation 1NR: Shipyards DA, Case 2NR: Indolence K"
+  },
+  {
+    "school": "UTD",
     "team": "UTD HuRa (Adam Humphrey - Leo Ramirez)",
     "tournament": "01 - Houston",
     "round": "Round 1",
@@ -52458,6 +56058,26 @@
     "opponent": "Kansas State DR",
     "judge": "Jalisa Jackson, Noel Keil, Matthew Wilkinson",
     "roundReport": "1AC---NB Knowledge Production 1NC---PIK---Quare, K---Stryker, K---Capitalism 2NR---K---Stryker"
+  },
+  {
+    "school": "UTD",
+    "team": "UTD KhRa (Theo Khakoo - Leo Ramirez)",
+    "tournament": "03 --- Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Georgetown CX",
+    "judge": "Lassiter, Jack",
+    "roundReport": "1AC---Gig Workers 2NR---K---Settler Colonialism"
+  },
+  {
+    "school": "UTD",
+    "team": "UTD KhRa (Theo Khakoo - Leo Ramirez)",
+    "tournament": "03 --- Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Northwestern LR",
+    "judge": "Noriega, Benjamín",
+    "roundReport": "1AC---Grounded Normativity 2NR---T---Framework"
   },
   {
     "school": "UTD",
@@ -52978,6 +56598,46 @@
     "opponent": "WKU SS",
     "judge": "Andrews",
     "roundReport": "1AC---Mergers 2NR---Platforms DA"
+  },
+  {
+    "school": "UTD",
+    "team": "UTD PeRa (Rahul Penumetcha - Sabarish Ravi)",
+    "tournament": "07---Texas",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Dartmouth JR",
+    "judge": "Walberg",
+    "roundReport": "1AC---Surveillance Capitalism 2NR---Antiblackness K"
+  },
+  {
+    "school": "UTD",
+    "team": "UTD PeRa (Rahul Penumetcha - Sabarish Ravi)",
+    "tournament": "07---Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Iowa BS",
+    "judge": "Stidham",
+    "roundReport": "1AC---Adjacency 2NR---T, Unions Good"
+  },
+  {
+    "school": "UTD",
+    "team": "UTD PeRa (Rahul Penumetcha - Sabarish Ravi)",
+    "tournament": "07---Texas",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Liberty CL",
+    "judge": "Roetlin",
+    "roundReport": "1AC---Breath 2NR---T"
+  },
+  {
+    "school": "UTD",
+    "team": "UTD PeRa (Rahul Penumetcha - Sabarish Ravi)",
+    "tournament": "07---Texas",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "GMU ED",
+    "judge": "Phillips",
+    "roundReport": "1AC---Surveillance Capitalism 2NR---Afropess K"
   },
   {
     "school": "UTSA",
@@ -53788,6 +57448,16 @@
     "opponent": "MoState GD",
     "judge": "Taylor, Woodward, Jensen",
     "roundReport": "1AC- Black Transtopia 1NC- T/FW, Cap K, Semiotics K 2NR- Cap K"
+  },
+  {
+    "school": "UTSA",
+    "team": "UTSA GiPa (Rylie Gilbert - Mary Jo Paschall)",
+    "tournament": "D3",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "WE are going 15 off",
+    "judge": "Time travel CP",
+    "roundReport": "Check Team Notes"
   },
   {
     "school": "UTSA",
@@ -54651,6 +58321,46 @@
   },
   {
     "school": "Wake Forest",
+    "team": "Wake Forest DiEl (Mae Dingley - Elizabeth Elliott)",
+    "tournament": "5---Texas Open",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "CSU Long Beach OM",
+    "judge": "Malsin",
+    "roundReport": "1AC---Black Holes 1NC---T-Framework, Secondary Strikes CP 2NC---T-Framework 1NR---Secondary Strikes CP, Case 2NR---T-Framework"
+  },
+  {
+    "school": "Wake Forest",
+    "team": "Wake Forest DiEl (Mae Dingley - Elizabeth Elliott)",
+    "tournament": "5---Texas Open",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Emory CG",
+    "judge": "Wang",
+    "roundReport": "1AC---Agriculture 1NC---Cap K, States CP, Boards CP, Politics DA, T-Subsets 2NC---Cap K 1NR---Politics DA, Case 2NR---Cap K"
+  },
+  {
+    "school": "Wake Forest",
+    "team": "Wake Forest DiEl (Mae Dingley - Elizabeth Elliott)",
+    "tournament": "5---Texas Open",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Dartmouth BC",
+    "judge": "Freehan",
+    "roundReport": "1AC---Agriculture 1NC---T-Subsets, LPE K, Adv CP, AI DA, Preemption Waivers CP, Innovation CT 2NC---CT 1NR---Waivers CP 2NR---Waivers CP"
+  },
+  {
+    "school": "Wake Forest",
+    "team": "Wake Forest DiEl (Mae Dingley - Elizabeth Elliott)",
+    "tournament": "5---Texas Open",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "James Madison KP",
+    "judge": "Meadows - ONLINE",
+    "roundReport": "1AC---Melting 1NC---T-Framework, Adv CP, Case 2NC---T-Framework, Adv CP 1NR---Case 2NR---T-Framework, Adv CP"
+  },
+  {
+    "school": "Wake Forest",
     "team": "Wake Forest DiKa (Mae Dingley - Jack Kampine)",
     "tournament": "0---Contact Info",
     "round": "All",
@@ -54848,6 +58558,16 @@
     "opponent": "Kansas SC",
     "judge": "Namakula",
     "roundReport": "1ac -- strengthen collective bargaining rights for government workers 1nc -- global gov K 2nr -- global gov K"
+  },
+  {
+    "school": "Wake Forest",
+    "team": "Wake Forest HaNa (Destiny Hale - Kalina Namikas)",
+    "tournament": "Texas Open",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Michigan ES",
+    "judge": "Powers",
+    "roundReport": "1AC Brat Attack 1NR Cap K, Academy, Case, T 2NR T"
   },
   {
     "school": "Wake Forest",
@@ -55271,6 +58991,16 @@
   },
   {
     "school": "Wake Forest",
+    "team": "Wake Forest LiSf (Harper Lindsay - Sienna Sferrazza)",
+    "tournament": "Texas Open",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Southern Nazarene CD",
+    "judge": "Yadagiri",
+    "roundReport": "1AR - Ag aff 1NC - Automation DA, T-subsets, States CP, Midterms DA 2NR - automation and case"
+  },
+  {
+    "school": "Wake Forest",
     "team": "Wake Forest LoPe (Austin Lovette - Courtneigh Peebles)",
     "tournament": "All Tournaments",
     "round": "All",
@@ -55388,6 +59118,36 @@
     "opponent": "Minnesota HK",
     "judge": "Anna Stockstill",
     "roundReport": "1AC - Bearing Witness 1NC - T - USfg, K - Cap 2NR - T - USfg"
+  },
+  {
+    "school": "Wake Forest",
+    "team": "Wake Forest MbSa (Mary Mbye - Jayden Sampat)",
+    "tournament": "2--Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Texas FL",
+    "judge": "Grace McManus",
+    "roundReport": "1AC - Dobbs 1NC - K - Combat Breathing 2NR - K"
+  },
+  {
+    "school": "Wake Forest",
+    "team": "Wake Forest MbSa (Mary Mbye - Jayden Sampat)",
+    "tournament": "2--Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Dartmouth BG",
+    "judge": "John Nagy",
+    "roundReport": "1AC - Bearing Witness v2 1NC - T - USfg, CP - Secondary Strikes, CP - Student Unions, CP - BDS 2NR - CP - Secondary Strikes, CP - BDS"
+  },
+  {
+    "school": "Wake Forest",
+    "team": "Wake Forest MbSa (Mary Mbye - Jayden Sampat)",
+    "tournament": "2--Texas",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "Emory CG",
+    "judge": "Jameson Balda",
+    "roundReport": "1AC - Fed Workers 1NC - K - Pess 2NR - K"
   },
   {
     "school": "Wake Forest",
@@ -56201,6 +59961,16 @@
   },
   {
     "school": "West Point",
+    "team": "West Point HoDe (Coral Howell - Gavin Dean)",
+    "tournament": "Texas",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "GMU BR",
+    "judge": "Maverick Edwards",
+    "roundReport": ""
+  },
+  {
+    "school": "West Point",
     "team": "West Point OpSo (Dominic Opron - James Song)",
     "tournament": "Binghamton 8th Annual Phyllis Schatz Invitational",
     "round": "Round 1",
@@ -56418,6 +60188,56 @@
     "opponent": "Liberty SS",
     "judge": "Fuchs,Imbimbo,Lowery",
     "roundReport": "1AC: Abelism 1NC: T, Brevard CP 2NR: T"
+  },
+  {
+    "school": "West Point",
+    "team": "West Point OpSo (Dominic Opron - James Song)",
+    "tournament": "Texas Open",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Baylor DL",
+    "judge": "Snelling",
+    "roundReport": "1AC: Free Palestine 1NC: T, Case 2NR: Case"
+  },
+  {
+    "school": "West Point",
+    "team": "West Point OpSo (Dominic Opron - James Song)",
+    "tournament": "Texas Open",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Kansas BB",
+    "judge": "Weddington",
+    "roundReport": "1AC: Federal Employees 1NC: K, Procedural, Case Turns 2NR: K"
+  },
+  {
+    "school": "West Point",
+    "team": "West Point OpSo (Dominic Opron - James Song)",
+    "tournament": "Texas Open",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "James Madison MO",
+    "judge": "Hudson - ONLINE",
+    "roundReport": "1AC: Federal Employees 1NC: K 2NR: K"
+  },
+  {
+    "school": "West Point",
+    "team": "West Point OpSo (Dominic Opron - James Song)",
+    "tournament": "Texas Open",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "MoState GC",
+    "judge": "Fleming",
+    "roundReport": "1AC: Finance 1NC: T subsets, Security K, Midterms da, God DA, States cp 2NR: God DA"
+  },
+  {
+    "school": "West Point",
+    "team": "West Point TrWo (Nam Tran - Christopher Wong)",
+    "tournament": "Texas",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "GMU BR",
+    "judge": "Michael Swidecki",
+    "roundReport": "1AC---Military Unions"
   },
   {
     "school": "Western Kentucky",
@@ -56741,6 +60561,46 @@
   },
   {
     "school": "Western Kentucky",
+    "team": "Western Kentucky CaKu (Sage Carter - Vaden Kumar)",
+    "tournament": "2. Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Northwestern LO",
+    "judge": "Sam Gustavson",
+    "roundReport": "1AC - Detroit 1NC - T, Cap K 2NR - T"
+  },
+  {
+    "school": "Western Kentucky",
+    "team": "Western Kentucky CaKu (Sage Carter - Vaden Kumar)",
+    "tournament": "2. Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Texas FL",
+    "judge": "Dan Bannister",
+    "roundReport": "1AC - Merger Review 1NC - T-CBR, T-Strengthen, CP-Nationalization, DA-FTC Tradeoff, DA-Midterms, CT-DeDev 2NC - DeDev 1NR - CP-Nationalization 2NR - DeDev"
+  },
+  {
+    "school": "Western Kentucky",
+    "team": "Western Kentucky CaKu (Sage Carter - Vaden Kumar)",
+    "tournament": "2. Texas",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "UC Berkeley UB",
+    "judge": "Tyler Vergho",
+    "roundReport": "1AC - Merger Review 1NC - T-CBR, DA-Midterms, K-Capitalism, CP-States, PIC-Sustainability, DA-Shutdown PTX 2NC - K-Capitalism 1NR - K, Case 2NR - K-Capitalism"
+  },
+  {
+    "school": "Western Kentucky",
+    "team": "Western Kentucky CaKu (Sage Carter - Vaden Kumar)",
+    "tournament": "2. Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Northwestern LL",
+    "judge": "Kurt Fifelski",
+    "roundReport": "1AC - Fed Workers 1NC - P-Vagueness, PIC-USAID, CP-Worker Control, DA-Rates, T-CBR, K-Disability, CP-Tribes, CT-Heg Bad, CT-Nuke Terror Good 2NC - T-CBR, DA-Rates 1NR - CT-Nuke Terror Good, CT-Heg Bad 2NR - Nuke Terror Good"
+  },
+  {
+    "school": "Western Kentucky",
     "team": "Western Kentucky InPu (Kole Ingram - Ameya Puranik)",
     "tournament": "0 --- Contact Info",
     "round": "All",
@@ -57048,6 +60908,46 @@
     "opponent": "Northwestern LW",
     "judge": "Kurt Fifelski, Eric Morris, Matthew Wilkinson",
     "roundReport": "1AC: Merger Review 2NR: Midterms DA"
+  },
+  {
+    "school": "Western Kentucky",
+    "team": "Western Kentucky NeFo (Riley Ney - Rae Fournier)",
+    "tournament": "2. Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Missouri State BH",
+    "judge": "Brain DeLong",
+    "roundReport": "1AC: [NEW] Bank Unions 2NR: Workers Control CP, Hegemony Bad"
+  },
+  {
+    "school": "Western Kentucky",
+    "team": "Western Kentucky NeFo (Riley Ney - Rae Fournier)",
+    "tournament": "2. Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Northwestern AP",
+    "judge": "Peyton Reeves",
+    "roundReport": "1AC: Merger Review v.4 2NR: Afropessimism K"
+  },
+  {
+    "school": "Western Kentucky",
+    "team": "Western Kentucky NeFo (Riley Ney - Rae Fournier)",
+    "tournament": "2. Texas",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Emory TS",
+    "judge": "Scott Phillips",
+    "roundReport": "1AC: Merger Review 2NR: Capitalism K"
+  },
+  {
+    "school": "Western Kentucky",
+    "team": "Western Kentucky NeFo (Riley Ney - Rae Fournier)",
+    "tournament": "2. Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Dartmouth BC",
+    "judge": "Grace McManus",
+    "roundReport": "1AC: Undocumented Workers 2NR: Midterms DA"
   },
   {
     "school": "Western Kentucky",
@@ -58330,6 +62230,26 @@
     "roundReport": "1ac - contract v1 1nc - t-fw, cap k 2nr - cap k"
   },
   {
+    "school": "Wichita State",
+    "team": "Wichita State GrMo (Marianne Griffith - Miguel Molina Chavez)",
+    "tournament": "8 - Texas Open",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Kansas AU",
+    "judge": "Jensen",
+    "roundReport": "1ac - fed workers 1nc - setcol k, info k, nuke terror good 2nr - nuke terror good"
+  },
+  {
+    "school": "Wichita State",
+    "team": "Wichita State GrMo (Marianne Griffith - Miguel Molina Chavez)",
+    "tournament": "8 - Texas Open",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Indiana FT",
+    "judge": "Nagel",
+    "roundReport": "1ac - contract v2 1nc - t-fw, cap k 2nr - t-fw"
+  },
+  {
     "school": "Wyoming",
     "team": "Wyoming CaHa (Jaden Campbell - Jeremiah Hawley)",
     "tournament": "0. Disclosure",
@@ -58712,6 +62632,16 @@
   {
     "school": "Wyoming",
     "team": "Wyoming CaHa (Jaden Campbell - Jeremiah Hawley)",
+    "tournament": "UT",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Michigan ES",
+    "judge": "Balda, Jameson",
+    "roundReport": "1AC: Secondary Strikes 1NC: Valdez K 2NR: Valdez K"
+  },
+  {
+    "school": "Wyoming",
+    "team": "Wyoming CaHa (Jaden Campbell - Jeremiah Hawley)",
     "tournament": "Wake",
     "round": "Round 1",
     "side": "Aff",
@@ -59008,6 +62938,16 @@
     "opponent": "NYU KK",
     "judge": "Max Wiessner",
     "roundReport": "1AC – Syndicalism 1NC – Fem K, Empire K 2NC – Fem K"
+  },
+  {
+    "school": "Wyoming",
+    "team": "Wyoming LyWi (Brayden Lyday - Rosalie Willson)",
+    "tournament": "Texas Open",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "USC Fullerton NM",
+    "judge": "Dimarvin Puerto",
+    "roundReport": "1AC: abolishing white being 1NC: Fem K, Empire K, Wilderson link 2NR: Empire K Wilderson link"
   },
   {
     "school": "Wyoming",
@@ -59878,5 +63818,45 @@
     "opponent": "Michigan AO",
     "judge": "Anjan Roy",
     "roundReport": "1AC - Secondary Strikes 1NC - Empire K 2NR - Empire K"
+  },
+  {
+    "school": "Wyoming",
+    "team": "Wyoming WiWi (Saimaa Widi - Jean-Luc Willson)",
+    "tournament": "9. Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Kansas FS",
+    "judge": "Nine Abad",
+    "roundReport": "1AC - Bargain for your life 1NC - Semiocap K 2NR - Semiocap K"
+  },
+  {
+    "school": "Wyoming",
+    "team": "Wyoming WiWi (Saimaa Widi - Jean-Luc Willson)",
+    "tournament": "9. Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Northwestern HP",
+    "judge": "Ben Biggs",
+    "roundReport": "1AC - Queer Labor 1NC - FW, Negative Universality K, Modalities PIK, N-1, Street Level K 2NR - FW"
+  },
+  {
+    "school": "Wyoming",
+    "team": "Wyoming WiWi (Saimaa Widi - Jean-Luc Willson)",
+    "tournament": "9. Texas",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Emory GS",
+    "judge": "Tajaih Robinson",
+    "roundReport": "1AC - Queer Labor 1NC - FW, Fed Workers CP, Court Clog DA 2NR - FW"
+  },
+  {
+    "school": "Wyoming",
+    "team": "Wyoming WiWi (Saimaa Widi - Jean-Luc Willson)",
+    "tournament": "9. Texas",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Kansas LS",
+    "judge": "Salma Waheed",
+    "roundReport": "1AC - The Weight of Beautiful Things 1NC - Semiocap K 2NR - Semiocap"
   }
 ]
