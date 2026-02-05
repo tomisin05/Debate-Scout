@@ -561,12 +561,13 @@ body {
   color: white;
 }
 
+
 .download-btn {
-  background: #e8f5e8;
-  color: #2e7d32;
+  background: #e3f2fd;
+  color: #1976d2;
 }
 
 .download-btn:hover {
-  background: #2e7d32;
+  background: #1976d2;
   color: white;
 }
