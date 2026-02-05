@@ -27,6 +27,7 @@ function App() {
     opponent: true,
     judge: true,
     roundReport: true,
+    openSource: true,
   });
   const [showColumnMenu, setShowColumnMenu] = useState(false);
   const [columnFilterMenus, setColumnFilterMenus] = useState({});
@@ -40,6 +41,7 @@ function App() {
     opponent: 150,
     judge: 150,
     roundReport: 300,
+    openSource: 120,
   });
   const resizingRef = useRef(null);
 
@@ -421,6 +423,14 @@ function App() {
                   />
                   <span>Round Report</span>
                 </label>
+                <label className="column-option">
+                  <input
+                    type="checkbox"
+                    checked={visibleColumns.openSource}
+                    onChange={() => toggleColumn("openSource")}
+                  />
+                  <span>Open Source</span>
+                </label>
               </div>
             )}
           </div>
@@ -736,6 +746,39 @@ function App() {
                               {row.roundReport}
                             </td>
                           )}
+                          {visibleColumns.openSource && (
+                            <td
+                              style={{
+                                width: columnWidths.openSource,
+                                minWidth: columnWidths.openSource,
+                              }}
+                            >
+                              <div className="open-source-icons">
+                                {row.previewUrl && (
+                                  <a
+                                    href={row.previewUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="icon-btn preview-btn"
+                                    title="Preview Document"
+                                  >
+                                    <i className="fas fa-eye"></i>
+                                  </a>
+                                )}
+                                {row.downloadUrl && (
+                                  <a
+                                    href={row.downloadUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="icon-btn download-btn"
+                                    title="Download Document"
+                                  >
+                                    <i className="fas fa-download"></i>
+                                  </a>
+                                )}
+                              </div>
+                            </td>
+                          )}
                         </tr>
                       ))}
                       {items.length > 10 && (
@@ -863,6 +906,39 @@ function App() {
                         }}
                       >
                         {row.roundReport}
+                      </td>
+                    )}
+                    {visibleColumns.openSource && (
+                      <td
+                        style={{
+                          width: columnWidths.openSource,
+                          minWidth: columnWidths.openSource,
+                        }}
+                      >
+                        <div className="open-source-icons">
+                          {row.previewUrl && (
+                            <a
+                              href={row.previewUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="icon-btn preview-btn"
+                              title="Preview Document"
+                            >
+                              <i className="fas fa-eye"></i>
+                            </a>
+                          )}
+                          {row.downloadUrl && (
+                            <a
+                              href={row.downloadUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="icon-btn download-btn"
+                              title="Download Document"
+                            >
+                              <i className="fas fa-download"></i>
+                            </a>
+                          )}
+                        </div>
                       </td>
                     )}
                   </tr>

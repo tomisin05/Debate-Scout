@@ -1,58 +1,14 @@
 [
   {
-    "school": "Edgemont",
+    "school": "UTD",
     "error": "No teams found"
   },
   {
-    "school": "Edmond Memorial",
+    "school": "Wichita State",
     "error": "No teams found"
   },
   {
-    "school": "Georgia State",
-    "error": "No teams found"
-  },
-  {
-    "school": "Hutchinson",
-    "error": "No teams found"
-  },
-  {
-    "school": "Illinois",
-    "error": "No teams found"
-  },
-  {
-    "school": "Kingwood",
-    "error": "No teams found"
-  },
-  {
-    "school": "Lanier",
-    "error": "No teams found"
-  },
-  {
-    "school": "Larned",
-    "error": "No teams found"
-  },
-  {
-    "school": "Pines",
-    "error": "No teams found"
-  },
-  {
-    "school": "South Anchorage",
-    "error": "No teams found"
-  },
-  {
-    "school": "UChicago Lab",
-    "error": "No teams found"
-  },
-  {
-    "school": "UNC - Chapel Hill",
-    "error": "No teams found"
-  },
-  {
-    "school": "USC",
-    "error": "No teams found"
-  },
-  {
-    "school": "Vanderbilt",
+    "school": "Wyoming",
     "error": "No teams found"
   }
 ]

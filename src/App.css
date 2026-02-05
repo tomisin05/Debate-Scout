@@ -531,3 +531,42 @@ body {
   font-size: 0.9rem;
   color: #666;
 }
+
+.open-source-icons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.2s;
+  font-size: 0.9rem;
+}
+
+.preview-btn {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.preview-btn:hover {
+  background: #1976d2;
+  color: white;
+}
+
+.download-btn {
+  background: #e8f5e8;
+  color: #2e7d32;
+}
+
+.download-btn:hover {
+  background: #2e7d32;
+  color: white;
+}

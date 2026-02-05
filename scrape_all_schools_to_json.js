@@ -125,47 +125,69 @@ async function scrapeAllSchools(username, password) {
                             await sleep(3000);
 
                             const roundData = await page.evaluate(() => {
-                                const content = document.body.innerText;
-                                const startPattern = /Round ReportExpand All/;
-                                const startMatch = content.match(startPattern);
-                                const lastAccountIndex = content.lastIndexOf('Account Untrusted');
-
-                                if (!startMatch || lastAccountIndex === -1) return null;
-
-                                const relevantSection = content.substring(startMatch.index, lastAccountIndex);
                                 const rounds = [];
-                                const lines = relevantSection.split('\n');
-
-                                for (let i = 0; i < lines.length; i++) {
-                                    const line = lines[i].trim();
-
-                                    if (line.includes('\t') && (line.includes('Aff') || line.includes('Neg'))) {
-                                        const parts = line.split('\t').filter(p => p.trim());
-
-                                        if (parts.length >= 3) {
-                                            const tournament = parts[0];
-                                            const round = parts[1];
-                                            const side = parts[2];
-                                            const opponent = parts[3] || '';
-                                            const judge = parts[4] || '';
-
-                                            let roundReport = '';
-                                            if (i + 1 < lines.length) {
-                                                roundReport = lines[i + 1].trim();
+                                const tables = document.querySelectorAll('table');
+                                let roundsTable = null;
+                                
+                                for (const table of tables) {
+                                    const headerRow = table.querySelector('tr');
+                                    if (headerRow) {
+                                        const headers = Array.from(headerRow.querySelectorAll('td, th')).map(h => h.innerText.trim());
+                                        if (headers.includes('Tournament') && headers.includes('Round') && headers.includes('Side')) {
+                                            roundsTable = table;
+                                            break;
+                                        }
+                                    }
+                                }
+                                
+                                if (!roundsTable) return rounds;
+                                
+                                const rows = Array.from(roundsTable.querySelectorAll('tr'));
+                                
+                                for (let i = 1; i < rows.length; i++) {
+                                    const row = rows[i];
+                                    const cells = row.querySelectorAll('td');
+                                    
+                                    if (cells.length >= 6) {
+                                        const tournament = cells[0]?.innerText.trim() || '';
+                                        const roundNum = cells[1]?.innerText.trim() || '';
+                                        const side = cells[2]?.innerText.trim() || '';
+                                        const opponent = cells[3]?.innerText.trim() || '';
+                                        const judge = cells[4]?.innerText.trim() || '';
+                                        const roundReport = cells[5]?.innerText.trim() || '';
+                                        
+                                        // Get preview URL and convert to API download URL
+                                        let previewUrl = null;
+                                        let downloadUrl = null;
+                                        
+                                        if (cells[6]) {
+                                            const previewLink = cells[6].querySelector('a[href*="/preview"]');
+                                            if (previewLink) {
+                                                previewUrl = previewLink.href;
+                                                // Convert to API download URL
+                                                const urlParams = new URLSearchParams(new URL(previewUrl).search);
+                                                const path = urlParams.get('path');
+                                                if (path) {
+                                                    downloadUrl = `https://api.opencaselist.com/v1/download?path=${path}`;
+                                                }
                                             }
-
+                                        }
+                                        
+                                        if (tournament && roundNum) {
                                             rounds.push({
                                                 tournament,
-                                                round,
+                                                round: roundNum,
                                                 side,
                                                 opponent,
                                                 judge,
-                                                roundReport
+                                                roundReport,
+                                                previewUrl,
+                                                downloadUrl
                                             });
                                         }
                                     }
                                 }
-
+                                
                                 return rounds;
                             });
 
@@ -179,7 +201,9 @@ async function scrapeAllSchools(username, password) {
                                         side: round.side,
                                         opponent: round.opponent,
                                         judge: round.judge,
-                                        roundReport: round.roundReport
+                                        roundReport: round.roundReport,
+                                        previewUrl: round.previewUrl,
+                                        downloadUrl: round.downloadUrl
                                     });
                                 });
                                 console.log(`      Found ${roundData.length} rounds`);
