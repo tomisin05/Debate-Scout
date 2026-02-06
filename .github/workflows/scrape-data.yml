@@ -39,6 +39,18 @@ jobs:
           OPENCASELIST_USERNAME: ${{ secrets.OPENCASELIST_USERNAME }}
           OPENCASELIST_PASSWORD: ${{ secrets.OPENCASELIST_PASSWORD }}
 
+      - name: Retry failed schools
+        run: |
+          if [ -f "scrape_errors.json" ]; then
+            echo "Found errors, retrying failed schools..."
+            node retry_failed_schools.js
+          else
+            echo "No errors found, skipping retry"
+          fi
+        env:
+          OPENCASELIST_USERNAME: ${{ secrets.OPENCASELIST_USERNAME }}
+          OPENCASELIST_PASSWORD: ${{ secrets.OPENCASELIST_PASSWORD }}
+
       - name: Move data to public folder
         run: |
           mkdir -p public
@@ -62,7 +74,7 @@ jobs:
             echo "New data has more records. Committing..."
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
-            git add public/data.json
+            git add public/data.json scrape_errors.json
             git commit -m "Update debate data: $NEW_SIZE records"
             git push
           else

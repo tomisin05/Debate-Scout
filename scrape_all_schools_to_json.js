@@ -45,7 +45,7 @@ async function scrapeAllSchools(username, password) {
     const errors = [];
     const failedSchools = [];
     const BATCH_SIZE = 15;
-    const WAIT_TIME = 5 * 60 * 1000; // 5 minutes
+    const WAIT_TIME = 2 * 60 * 1000; // 2 minutes
 
     try {
         browser = await puppeteer.launch({ headless: "new", args: ['--no-sandbox'] });
@@ -234,7 +234,7 @@ async function scrapeAllSchools(username, password) {
 
             // Wait 5 minutes between batches (except after last batch)
             if (batchIndex + BATCH_SIZE < schools.length) {
-                console.log(`\n\n⏳ Waiting 5 minutes before next batch...\n`);
+                console.log(`\n\n⏳ Waiting 2 minutes before next batch...\n`);
                 await sleep(WAIT_TIME);
             }
         }
