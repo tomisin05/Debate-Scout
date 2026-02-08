@@ -1,14 +1,14 @@
 [
   {
+    "school": "Liberty",
+    "error": "No teams found"
+  },
+  {
     "school": "Macalester College",
     "error": "No teams found"
   },
   {
     "school": "Marian",
-    "error": "No teams found"
-  },
-  {
-    "school": "Massachusetts Amherst",
     "error": "No teams found"
   }
 ]
