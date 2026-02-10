@@ -1,6 +1,6 @@
 [
   {
-    "school": "Liberty",
+    "school": "Georgia",
     "error": "No teams found"
   },
   {
@@ -9,6 +9,38 @@
   },
   {
     "school": "Marian",
+    "error": "No teams found"
+  },
+  {
+    "school": "Massachusetts Amherst",
+    "error": "No teams found"
+  },
+  {
+    "school": "Miami",
+    "error": "No teams found"
+  },
+  {
+    "school": "Miami OH",
+    "error": "No teams found"
+  },
+  {
+    "school": "Purdue",
+    "error": "No teams found"
+  },
+  {
+    "school": "Rochester",
+    "error": "No teams found"
+  },
+  {
+    "school": "West Point",
+    "error": "No teams found"
+  },
+  {
+    "school": "Western Kentucky",
+    "error": "No teams found"
+  },
+  {
+    "school": "Wichita State",
     "error": "No teams found"
   }
 ]
