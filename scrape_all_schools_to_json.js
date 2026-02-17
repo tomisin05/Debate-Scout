@@ -44,7 +44,7 @@ async function scrapeAllSchools(username, password) {
     const allRounds = [];
     const errors = [];
     const failedSchools = [];
-    const BATCH_SIZE = 15;
+    const BATCH_SIZE = 10;
     const WAIT_TIME = 2 * 60 * 1000; // 2 minutes
 
     try {

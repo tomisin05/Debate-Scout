@@ -1,14 +1,75 @@
 [
   {
-    "school": "Macalester College",
-    "error": "No teams found"
+    "school": "Arizona State",
+    "error": "School link not found"
   },
   {
-    "school": "Marian",
-    "error": "No teams found"
+    "school": "Baylor",
+    "error": "School link not found"
   },
   {
-    "school": "Massachusetts Amherst",
-    "error": "No teams found"
+    "school": "Binghamton",
+    "error": "School link not found"
+  },
+  {
+    "school": "Boston College",
+    "error": "School link not found"
+  },
+  {
+    "school": "Central Oklahoma",
+    "error": "School link not found"
+  },
+  {
+    "school": "Columbia",
+    "error": "School link not found"
+  },
+  {
+    "school": "Cornell",
+    "error": "School link not found"
+  },
+  {
+    "school": "Houston",
+    "team": "Houston MaSh (Patrick Macasaet - Yousef Shehata)",
+    "error": "Round count mismatch: expected 1, got 0"
+  },
+  {
+    "school": "Houston",
+    "team": "Houston ReOs (Tonimario Reyes - Abdelmuhaymen Osama)",
+    "error": "Round count mismatch: expected 2, got 0"
+  },
+  {
+    "school": "Houston",
+    "team": "Houston ShAq (Yousef Shehata - Ramana Aqeel)",
+    "error": "Round count mismatch: expected 5, got 0"
+  },
+  {
+    "school": "Houston",
+    "team": "Houston ShIb (Bryce Sheffield - Oliver Ibarra)",
+    "error": "Round count mismatch: expected 9, got 0"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma DaTo (Ashlyn Davis - Luis Toro)",
+    "error": "Round count mismatch: expected 7, got 0"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma DuWe (Aiden Duncan - Preston Werner)",
+    "error": "Round count mismatch: expected 8, got 0"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
+    "error": "Round count mismatch: expected 38, got 0"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma FuWe (Ella Fulkerson - Preston Werner)",
+    "error": "Round count mismatch: expected 8, got 0"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma MoBu (Napayshni-Ohitekah Morales - Yobani Bustos)",
+    "error": "Round count mismatch: expected 1, got 0"
   }
 ]

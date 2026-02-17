@@ -21,7 +21,10 @@ jobs:
           node-version: "18"
 
       - name: Install dependencies
-        run: npm install puppeteer
+        run: |
+          npm install puppeteer
+          sudo apt-get update
+          sudo apt-get install -y chromium-browser
 
       - name: Check current data size
         id: current-size
@@ -34,7 +37,7 @@ jobs:
           fi
 
       - name: Scrape new data
-        run: node scrape_all_schools_to_json.js
+        run: node scrape_with_verification.js
         env:
           OPENCASELIST_USERNAME: ${{ secrets.OPENCASELIST_USERNAME }}
           OPENCASELIST_PASSWORD: ${{ secrets.OPENCASELIST_PASSWORD }}
@@ -54,7 +57,12 @@ jobs:
       - name: Move data to public folder
         run: |
           mkdir -p public
-          mv data.json public/data.json
+          if [ -f "data.json" ]; then
+            mv data.json public/data.json
+          else
+            echo "No data.json found, creating empty file"
+            echo "[]" > public/data.json
+          fi
 
       - name: Check new data size
         id: new-size
@@ -74,8 +82,14 @@ jobs:
             echo "New data has more records. Committing..."
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
-            git add public/data.json scrape_errors.json
-            git commit -m "Update debate data: $NEW_SIZE records"
+            git add public/data.json
+            if [ -f "scrape_errors.json" ]; then
+              git add scrape_errors.json
+            fi
+            if [ -f "round_count_map.json" ]; then
+              git add round_count_map.json
+            fi
+            git commit -m "Update debate data: $NEW_SIZE records (+$(($NEW_SIZE - $CURRENT_SIZE)))"
             git push
           else
             echo "No new data. Skipping commit."
