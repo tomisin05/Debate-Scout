@@ -327,7 +327,7 @@ async function scrapeWithVerification(username, password, roundCountMap) {
     let browser;
     const allRounds = [];
     const errors = [];
-    const BATCH_SIZE = 10;
+    const BATCH_SIZE = 5;
     const MAX_RETRIES = 3;
 
     try {
