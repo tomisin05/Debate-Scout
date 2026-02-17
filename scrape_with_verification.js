@@ -179,7 +179,7 @@ async function createRoundCountMap(username, password) {
     const roundCountMap = {};
     
     try {
-        browser = await puppeteer.launch({ headless: false, args: ['--no-sandbox'] });
+        browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
         
         for (let batchIndex = 0; batchIndex < schools.length; batchIndex += 5) {
             const batch = schools.slice(batchIndex, batchIndex + 5);
@@ -331,7 +331,7 @@ async function scrapeWithVerification(username, password, roundCountMap) {
     const MAX_RETRIES = 3;
 
     try {
-        browser = await puppeteer.launch({ headless: false, args: ['--no-sandbox'] });
+        browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
 
         for (let batchIndex = 0; batchIndex < schools.length; batchIndex += BATCH_SIZE) {
             const batch = schools.slice(batchIndex, batchIndex + BATCH_SIZE);
