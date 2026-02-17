@@ -42,7 +42,7 @@ async function retryNullTeams(username, password) {
     // We need to re-scan schools to find all teams, then check which are missing
     let browser;
     try {
-        browser = await puppeteer.launch({ headless: false, args: ['--no-sandbox'] });
+        browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
         const page = await browser.newPage();
         page.setDefaultTimeout(60000);
 
