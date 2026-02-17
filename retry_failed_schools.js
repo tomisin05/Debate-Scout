@@ -41,7 +41,7 @@ async function retryFailedSchools(username, password) {
     let browser;
 
     try {
-        browser = await puppeteer.launch({ headless: false, args: ['--no-sandbox'] });
+        browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
 
         // Group errors by type
         const schoolNotFoundErrors = errors.filter(e => e.error === 'School link not found');
