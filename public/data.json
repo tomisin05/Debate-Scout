@@ -650,6 +650,30 @@
   {
     "school": "Baylor",
     "team": "Baylor KeBe (Anastasia Keeler - Spencer Benton)",
+    "tournament": "NDT D3 And The Mid America Championship",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Kansas State SD",
+    "judge": "Rothenbaum",
+    "roundReport": "1AC - FJG Degrowth 2NR - disability",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FBaylor%2FKeBe%2FBaylor-KeBe-Neg-NDT-D3-And-The-Mid-America-Championship-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Baylor/KeBe/Baylor-KeBe-Neg-NDT-D3-And-The-Mid-America-Championship-Round-1.docx"
+  },
+  {
+    "school": "Baylor",
+    "team": "Baylor KeBe (Anastasia Keeler - Spencer Benton)",
+    "tournament": "NDT D3 And The Mid America Championship",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Houston FI",
+    "judge": "Knight",
+    "roundReport": "1AC - NEW Black Freedom Dreams & Nightmares",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FBaylor%2FKeBe%2FBaylor-KeBe-Aff-NDT-D3-And-The-Mid-America-Championship-Round-2.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Baylor/KeBe/Baylor-KeBe-Aff-NDT-D3-And-The-Mid-America-Championship-Round-2.docx"
+  },
+  {
+    "school": "Baylor",
+    "team": "Baylor KeBe (Anastasia Keeler - Spencer Benton)",
     "tournament": "Northwestern",
     "round": "Round 1",
     "side": "Neg",
@@ -1306,6 +1330,30 @@
     "roundReport": "1AC- Student Workers 2NR-Adv CP + Unions Turn",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FBaylor%2FMePh%2FBaylor-MePh-Neg-55th-Annual-JW-Patterson-Debates-hosted-by-UK-Round-5.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Baylor/MePh/Baylor-MePh-Neg-55th-Annual-JW-Patterson-Debates-hosted-by-UK-Round-5.docx"
+  },
+  {
+    "school": "Baylor",
+    "team": "Baylor MePh (Jessie Merriwether - Tyler Phillips)",
+    "tournament": "D3",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "UTD KH",
+    "judge": "McManus",
+    "roundReport": "1AC- Grounded Normativity 2NR- Marx K",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FBaylor%2FMePh%2FBaylor-MePh-Neg-D3-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Baylor/MePh/Baylor-MePh-Neg-D3-Round-1.docx"
+  },
+  {
+    "school": "Baylor",
+    "team": "Baylor MePh (Jessie Merriwether - Tyler Phillips)",
+    "tournament": "D3",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Trinity BK",
+    "judge": "Turner",
+    "roundReport": "1AC- Degrowth 2NR- Cap K",
+    "previewUrl": null,
+    "downloadUrl": null
   },
   {
     "school": "Baylor",
@@ -2155,7 +2203,7 @@
     "side": "Neg",
     "opponent": "Cornell DV",
     "judge": "Ben Biggs",
-    "roundReport": "1AC - Sectoral Bargaining 1NC - Trump DA, UBI CP, Case 2NR - Case",
+    "roundReport": "1AC - Sectoral Bargaining 1NC - Trump DA, UBI CP, Case (Oil DA) 2NR - Oil Turn",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FBinghamton%2FBrHa%2FBinghamton-BrHa-Neg-2---Binghamton-Round-2.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Binghamton/BrHa/Binghamton-BrHa-Neg-2---Binghamton-Round-2.docx"
   },
@@ -2167,7 +2215,7 @@
     "side": "Neg",
     "opponent": "Johnson Community NP",
     "judge": "Justice Wallenmeyer",
-    "roundReport": "1AC - Just Cause (Ban At-Will) 1NC - T-CBR, Automation DA, UBI CP, Case 2NR - T-CBR, Case",
+    "roundReport": "1AC - Just Cause (Ban At-Will) 1NC - T-CBR, Automation DA, UBI CP, Case (Oil DA) 2NR - T-CBR, Oil Turn",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FBinghamton%2FBrHa%2FBinghamton-BrHa-Neg-2---Binghamton-Round-3.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Binghamton/BrHa/Binghamton-BrHa-Neg-2---Binghamton-Round-3.docx"
   },
@@ -3451,7 +3499,7 @@
     "side": "Aff",
     "opponent": "૮ ˶ᵔ ᵕ ᵔ˶ ა",
     "judge": "˖᯽ ݁˖",
-    "roundReport": "nutwooddebate.cd@gmail.com debatecsuf@gmail.com (pls include both) samantha (all pronouns) izzy (he/him) spreading ok, but let us know if we can accommodate otherwise (spreading, music, etc.)",
+    "roundReport": "nutwooddebate.cd@gmail.com debatecsuf@gmail.com (pls include both) samantha (all pronouns) izzy (he/him)",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -5873,8 +5921,8 @@
     "tournament": "USNA Crowe Warken Debates",
     "round": "Round 1",
     "side": "Neg",
-    "opponent": "Meyers-Levy",
-    "judge": "George Mason DE",
+    "opponent": "George Mason DE",
+    "judge": "Meyers-Levy",
     "roundReport": "1AC: Black Note 1NC: T-USFG, C/A General Strike, K - Immediacy 2NR: T-USFG",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FDartmouthCollege%2FBrGo%2FDartmouthCollege-BrGo-Neg-USNA-Crowe-Warken-Debates-Round-1.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/DartmouthCollege/BrGo/DartmouthCollege-BrGo-Neg-USNA-Crowe-Warken-Debates-Round-1.docx"
@@ -23871,6 +23919,18 @@
     "school": "Harvard",
     "team": "Harvard AoBo (Seiji Aoki - Jayden Bodet)",
     "tournament": "3. Georgetown College Tournament",
+    "round": "Round 6",
+    "side": "Neg",
+    "opponent": "Kansas JB",
+    "judge": "Diego Flores",
+    "roundReport": "1AC: Trans Militancy 2NR: Debt K",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHarvard%2FAoBo%2FHarvard-AoBo-Neg-3.-Georgetown-College-Tournament-Round-6.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Harvard/AoBo/Harvard-AoBo-Neg-3.-Georgetown-College-Tournament-Round-6.docx"
+  },
+  {
+    "school": "Harvard",
+    "team": "Harvard AoBo (Seiji Aoki - Jayden Bodet)",
+    "tournament": "3. Georgetown College Tournament",
     "round": "Round 7",
     "side": "Neg",
     "opponent": "Northwestern LL",
@@ -25453,6 +25513,30 @@
   },
   {
     "school": "Houston",
+    "team": "Houston HeMa (Anderson Hendrix - Patrick Macasaet)",
+    "tournament": "2 --- D3",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "North Texas BV",
+    "judge": "Dustyn Beutelspacher",
+    "roundReport": "1AC Domestic Bargaining 1NC Border Capitalism K 2NR Border Capitalism K",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Aff-2-----D3-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Aff-2-----D3-Round-1.docx"
+  },
+  {
+    "school": "Houston",
+    "team": "Houston HeMa (Anderson Hendrix - Patrick Macasaet)",
+    "tournament": "2 --- D3",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Southern Nazarene HS",
+    "judge": "Ian Dill",
+    "roundReport": "1AC Gig Workers 1NC T-Strengthen, Cap K, UCF CP, T-Workers, Democracy Bad 2NR UCF CP",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Neg-2-----D3-Round-2.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Neg-2-----D3-Round-2.docx"
+  },
+  {
+    "school": "Houston",
     "team": "Houston HeSh (Anderson Hendrix - Yousef Shehata)",
     "tournament": "0---Contact Info",
     "round": "All",
@@ -25930,6 +26014,18 @@
     "roundReport": "2N - Patrick - he/him 2A - Yousef - he/him Emails: patrickmacasaet711@gmail.com yshehata.debate@gmail.com Please let us know if you have any accommodations you would like us to make!",
     "previewUrl": null,
     "downloadUrl": null
+  },
+  {
+    "school": "Houston",
+    "team": "Houston OsDa (Abdelmuhaymen Osama - Eloisa Davidson)",
+    "tournament": "Texas Open",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": "",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FOsDa%2FHouston-OsDa-Aff-Texas-Open-All-Rounds.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/OsDa/Houston-OsDa-Aff-Texas-Open-All-Rounds.docx"
   },
   {
     "school": "Houston",
@@ -29011,7 +29107,7 @@
     "side": "Aff",
     "opponent": "UTD HK",
     "judge": "John Turner",
-    "roundReport": "1AC --- Sha-Clack-Clack v3 1NC --- T-USFG, Cap, Abolition PIK, Unions K, Case 2NR --- T-USFG, Case",
+    "roundReport": "1AC --- Sha-Clack-Clack v3 1NC --- T-USFG, Cap K, Abolition PIK, Unions K, Case 2NR --- T-USFG, Case",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FIowa%2FWeEl%2FIowa-WeEl-Aff-06-----Texas-Open-Round-5.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Iowa/WeEl/Iowa-WeEl-Aff-06-----Texas-Open-Round-5.docx"
   },
@@ -32857,6 +32953,42 @@
   },
   {
     "school": "Kansas",
+    "team": "Kansas FaBl (Gilead Falin - Chase Blaser)",
+    "tournament": "00---Team Notes",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "Contact Information",
+    "roundReport": "",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas FaBl (Gilead Falin - Chase Blaser)",
+    "tournament": "01---MAC",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Wake PS",
+    "judge": "Hudson",
+    "roundReport": "1AC---Federal CBAs. 1NC---K-Settler Colonialism. 2NR---K-Settler Colonialism.",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas FaBl (Gilead Falin - Chase Blaser)",
+    "tournament": "01---MAC",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "SNU BG",
+    "judge": "Cherry",
+    "roundReport": "1AC---Gig Workers. 1NC---DA-Offshoring, T-Preexisting, T-Substantially, P-Skepticism, DA-Midterms, CP-Contempt. 2NR---P-Skep.",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FKansas%2FFaBl%2FKansas-FaBl-Neg-01---MAC-Round-2.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Kansas/FaBl/Kansas-FaBl-Neg-01---MAC-Round-2.docx"
+  },
+  {
+    "school": "Kansas",
     "team": "Kansas FoLe (Aidan Foust - Brianna Lemaster)",
     "tournament": "0 - No spreading Send analytics",
     "round": "All",
@@ -34633,6 +34765,30 @@
   },
   {
     "school": "Kansas",
+    "team": "Kansas LaPa (Payten LaPoint - Lucy Pace)",
+    "tournament": "3---MAC",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Kansas State LF",
+    "judge": "Waheed",
+    "roundReport": "1AC---Federal CBAs 1NC---T Strengthen, Adv CP, Midterms DA, Deleuze K 2NR---K",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FKansas%2FLaPa%2FKansas-LaPa-Aff-3---MAC-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Kansas/LaPa/Kansas-LaPa-Aff-3---MAC-Round-1.docx"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas LaPa (Payten LaPoint - Lucy Pace)",
+    "tournament": "3---MAC",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "UTSA PS",
+    "judge": "Sprecker",
+    "roundReport": "1AC---Physicians 1NC---T Strengthen, T Substantial, State Incentives CP, NLRB DA, Pandemics Good CT 2NR---T Substantial",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FKansas%2FLaPa%2FKansas-LaPa-Neg-3---MAC-Round-2.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Kansas/LaPa/Kansas-LaPa-Neg-3---MAC-Round-2.docx"
+  },
+  {
+    "school": "Kansas",
     "team": "Kansas LaSc (Rose Larson - Luna Schultz)",
     "tournament": "Dartmouth RR",
     "round": "Round 1",
@@ -35818,6 +35974,30 @@
     "roundReport": "1AC---Sectoral Bargaining 2NR---Labor Normativity K",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FKansas%2FLeVe%2FKansas-LeVe-Aff-3---Texas-Round-5.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Kansas/LeVe/Kansas-LeVe-Aff-3---Texas-Round-5.docx"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas LiPe (Cameron Linde - Sigmund Persson)",
+    "tournament": "MAC",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Iowa/JCCC LP",
+    "judge": "B. Lain",
+    "roundReport": "1AC---Federal Workers 1NC---K---Abolition 2NR---K",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FKansas%2FLiPe%2FKansas-LiPe-Aff-MAC-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Kansas/LiPe/Kansas-LiPe-Aff-MAC-Round-1.docx"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas LiPe (Cameron Linde - Sigmund Persson)",
+    "tournament": "MAC",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Southern Nazarene CD",
+    "judge": "K. Horne",
+    "roundReport": "1AC---Gig Workers 1NC---T---Strengthen, CP---AFL-CIO, K---Cap, DA---Midterms 2NR---CP",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FKansas%2FLiPe%2FKansas-LiPe-Neg-MAC-Round-2.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Kansas/LiPe/Kansas-LiPe-Neg-MAC-Round-2.docx"
   },
   {
     "school": "Kansas",
@@ -37813,6 +37993,18 @@
   },
   {
     "school": "Kansas State",
+    "team": "Kansas State ArSa (Lillian Ardis - Caitlin Sand)",
+    "tournament": "7 --- NDT D3",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "MoState BG",
+    "judge": "Gustavson",
+    "roundReport": "1AC - Solidarity 2NR - Ableism K",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Kansas State",
     "team": "Kansas State DaRa (Taryn Day - Jace Raines)",
     "tournament": "0---Disclosure",
     "round": "All",
@@ -38164,7 +38356,7 @@
     "team": "Kansas State DaRo (Taryn Day - Daniel Robertson)",
     "tournament": "2---KU",
     "round": "Round 4",
-    "side": "Neg",
+    "side": "Aff",
     "opponent": "Kansas BM",
     "judge": "Namakula - ONLINE",
     "roundReport": "1AC - NB Knowledge Production 2NR - SetCol",
@@ -38401,6 +38593,18 @@
   },
   {
     "school": "Kansas State",
+    "team": "Kansas State DaRo (Taryn Day - Daniel Robertson)",
+    "tournament": "NDT D3 And The Mid America Championship",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Central Oklahoma EW",
+    "judge": "Glass",
+    "roundReport": "1AC - Decolonial Anarchy 2NR - FW",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FKansasState%2FDaRo%2FKansasState-DaRo-Neg-NDT-D3-And-The-Mid-America-Championship-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/KansasState/DaRo/KansasState-DaRo-Neg-NDT-D3-And-The-Mid-America-Championship-Round-1.docx"
+  },
+  {
+    "school": "Kansas State",
     "team": "Kansas State DrSp (Kyle Draeger - Cody Spurlock)",
     "tournament": "55th Annual JW Patterson Debates hosted by UK",
     "round": "Round 1",
@@ -38492,6 +38696,18 @@
     "opponent": "MoState NS",
     "judge": "Waheed",
     "roundReport": "1AC JG 1NC Circuit CP, Rates DA, JG Pic, Socialist Growth CP, 2NR Rates DA",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Kansas State",
+    "team": "Kansas State DrSp (Kyle Draeger - Cody Spurlock)",
+    "tournament": "NDT D3 And The Mid America Championship",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "MoState CH",
+    "judge": "Watson",
+    "roundReport": "1AC - solidarity strikes 2NR - Setcol",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -38870,7 +39086,7 @@
   {
     "school": "Kansas State",
     "team": "Kansas State RoSu (Daniel Robertson - Rachel Sum)",
-    "tournament": "FR Shirley and ADA Fall Champions at WFU",
+    "tournament": "3---FR Shirley and ADA Fall Champions at WFU",
     "round": "Round 5",
     "side": "Aff",
     "opponent": "Minnesota HU - ONLINE",
@@ -53101,6 +53317,42 @@
   },
   {
     "school": "Missouri State",
+    "team": "Missouri State BuCo (Liv Busenhart - Gary Cowdrey-Mota)",
+    "tournament": "05---Time for some MACtion",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Texas AS",
+    "judge": "Nyx Moore",
+    "roundReport": "1AC---Migrant World Making 1NC---FW, Cap K, Presumption 2NR---FW",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Missouri State",
+    "team": "Missouri State BuGr (Connor Burns - James Granger)",
+    "tournament": "01---D3",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "K-State AS",
+    "judge": "Sam Gustavson",
+    "roundReport": "1AC: - Solidarity 1NC: - K: Disability - CT: Neoliberalism 2NC: - K: Disability 1NR: - CT: Neolib 2NR: - K: Disability",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FMissouriState%2FBuGr%2FMissouriState-BuGr-Aff-01---D3-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/MissouriState/BuGr/MissouriState-BuGr-Aff-01---D3-Round-1.docx"
+  },
+  {
+    "school": "Missouri State",
+    "team": "Missouri State BuGr (Connor Burns - James Granger)",
+    "tournament": "01---D3",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Texas GS",
+    "judge": "Jack Moore",
+    "roundReport": "1AC - Fugitivity 1NC - Cap K, T FW, Agential Fantasy K 2NC - Cap K, Case 1NR - Case 2NR - Cap K",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FMissouriState%2FBuGr%2FMissouriState-BuGr-Neg-01---D3-Round-2.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/MissouriState/BuGr/MissouriState-BuGr-Neg-01---D3-Round-2.docx"
+  },
+  {
+    "school": "Missouri State",
     "team": "Missouri State BuKi (Connor Burns - Addie Kimmerle)",
     "tournament": "01---Kentucky",
     "round": "Round 1",
@@ -53977,6 +54229,30 @@
   },
   {
     "school": "Missouri State",
+    "team": "Missouri State DeNe (Levi DeAngelis - Asher Neal)",
+    "tournament": "02 D3",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Houston FI",
+    "judge": "Phillips, Bobby",
+    "roundReport": "1AC: Culp Fiction 1NC: T-USFG, Racial Cap K 2NR: Case, Racial Cap K",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FMissouriState%2FDeNe%2FMissouriState-DeNe-Neg-02-D3-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/MissouriState/DeNe/MissouriState-DeNe-Neg-02-D3-Round-1.docx"
+  },
+  {
+    "school": "Missouri State",
+    "team": "Missouri State DeNe (Levi DeAngelis - Asher Neal)",
+    "tournament": "02 D3",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Central Oklahoma EW",
+    "judge": "Shook, Lindsey",
+    "roundReport": "1AC: Solidarity 1NC: Settler Colonialism K 2NR: Settler Colonialism K",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FMissouriState%2FDeNe%2FMissouriState-DeNe-Aff-02-D3-Round-2.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/MissouriState/DeNe/MissouriState-DeNe-Aff-02-D3-Round-2.docx"
+  },
+  {
+    "school": "Missouri State",
     "team": "Missouri State GrCo (James Granger - Gary Cowdrey-Mota)",
     "tournament": "00---Contact Information",
     "round": "All",
@@ -54382,6 +54658,30 @@
     "roundReport": "1AC: Sectoral Bargaining 1NC: Settler Colonialism K, Midterms DA, Advantage CP, Free-Rider CP, Techlash DA 2NR: Techlash DA",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FMissouriState%2FHaNe%2FMissouriState-HaNe-Aff-05-Wake-Round-6.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/MissouriState/HaNe/MissouriState-HaNe-Aff-05-Wake-Round-6.docx"
+  },
+  {
+    "school": "Missouri State",
+    "team": "Missouri State KiMc (Addie Kimmerle - Evan McSorley)",
+    "tournament": "00---Contact Info",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "You",
+    "judge": "",
+    "roundReport": "Evan McSorley (He/Him) evanmcsorley07@gmail.com Addie Kimmerle (She/Her) kimmerle.debate@gmail.com Please also add: mostatedebate@gmail.com debatedocs@googlegroups.com",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Missouri State",
+    "team": "Missouri State KiMc (Addie Kimmerle - Evan McSorley)",
+    "tournament": "01---MAC 'n' Cheese",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Southern Nazarene LJ",
+    "judge": "Watson",
+    "roundReport": "1AC - Banking 1NC - T-Substantial, States CP, Midterms DA, & Automation DA 2NR - Automation DA",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FMissouriState%2FKiMc%2FMissouriState-KiMc-Aff-01---MAC-%27n%27-Cheese-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/MissouriState/KiMc/MissouriState-KiMc-Aff-01---MAC-'n'-Cheese-Round-1.docx"
   },
   {
     "school": "Missouri State",
@@ -55354,6 +55654,30 @@
     "roundReport": "1AC: Finance - Systemic Risk - Brazil 1NC: - T-Subsets - Midterms DA - States CP - Strikes DA - Capitalism K Block: - States CP - Midterms DA - T-Subsets 2NR: - T-Subsets - Midterms DA",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FMissouriState%2FNeSi%2FMissouriState-NeSi-Aff-09-Texas-Round-8.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/MissouriState/NeSi/MissouriState-NeSi-Aff-09-Texas-Round-8.docx"
+  },
+  {
+    "school": "Missouri State",
+    "team": "Missouri State NeSi (Nico Neal - Evan Siever)",
+    "tournament": "10 Districts",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Trinity BK",
+    "judge": "Anderson, Ralph",
+    "roundReport": "1AC: Carceral Labor 1NC: - Capitalism K - Advantage CP - T-NLRA - Major Questions CP - Boats DA - T-Subsets - Midterms DA - Reformism Turn Block: - Advantage CP - Major Questions CP - T-Subsets 2NR: - Major Questions CP 2AR: - Sanctions Bad - Extinction Reps Bad",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FMissouriState%2FNeSi%2FMissouriState-NeSi-Neg-10-Districts-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/MissouriState/NeSi/MissouriState-NeSi-Neg-10-Districts-Round-1.docx"
+  },
+  {
+    "school": "Missouri State",
+    "team": "Missouri State NeSi (Nico Neal - Evan Siever)",
+    "tournament": "10 Districts",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Texas FL",
+    "judge": "Lasseter, Storm",
+    "roundReport": "1AC: Finance - Systemic Risk - Brazil 1NC: - T-Subsets - Midterms DA - Antitrust DA - Tender CP - Advantage CP Block: - Advantage CP - Antitrust DA - Tender CP 2NR: - Antitrust DA - Advantage CP",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FMissouriState%2FNeSi%2FMissouriState-NeSi-Aff-10-Districts-Round-2.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/MissouriState/NeSi/MissouriState-NeSi-Aff-10-Districts-Round-2.docx"
   },
   {
     "school": "Navy",
@@ -56858,7 +57182,7 @@
   {
     "school": "Northern Iowa",
     "team": "Northern Iowa ChDo (Quinci Chapman - Burke Doyle)",
-    "tournament": "0 -- disclosure",
+    "tournament": "0 -- Disclosure & Team Info",
     "round": "All",
     "side": "Aff",
     "opponent": "",
@@ -63097,6 +63421,18 @@
   },
   {
     "school": "Oklahoma",
+    "team": "Oklahoma BuDa (Yobani Bustos - Daven Daniel)",
+    "tournament": "Emails/Info",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "puters",
+    "judge": "ur mom",
+    "roundReport": "Yobani Bustos (he/him) email: yobaniprojects@gmail.com Daven Daniel (he/they) email: davendanieldb8@gmail.com Also add oudebatedocs@gmail.com to the chain!",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Oklahoma",
     "team": "Oklahoma DaBr (Daven Daniel - Rhianna Bruner)",
     "tournament": "0. All",
     "round": "Finals",
@@ -65725,6 +66061,30 @@
   },
   {
     "school": "Southern California",
+    "team": "Southern California BhRa (Anish Bhadani - Rayeed Rahman)",
+    "tournament": "6-Districts",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Fullerton NM",
+    "judge": "Cooper",
+    "roundReport": "1AC---Crip Spacetime 2NR---Consult CP",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FSouthernCalifornia%2FBhRa%2FSouthernCalifornia-BhRa-Aff-6-Districts-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/SouthernCalifornia/BhRa/SouthernCalifornia-BhRa-Aff-6-Districts-Round-1.docx"
+  },
+  {
+    "school": "Southern California",
+    "team": "Southern California BhRa (Anish Bhadani - Rayeed Rahman)",
+    "tournament": "6-Districts",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Long Beach ET",
+    "judge": "Lemuel",
+    "roundReport": "1AC---Puta 2NR---K",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FSouthernCalifornia%2FBhRa%2FSouthernCalifornia-BhRa-Neg-6-Districts-Round-2.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/SouthernCalifornia/BhRa/SouthernCalifornia-BhRa-Neg-6-Districts-Round-2.docx"
+  },
+  {
+    "school": "Southern California",
     "team": "Southern California BhZh (Nina Bhuket - Iris Zhang)",
     "tournament": "N/A",
     "round": "All",
@@ -65758,6 +66118,18 @@
     "roundReport": "1ac - arbitration 2nr - court clog da, case",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FSouthernCalifornia%2FBrMa%2FSouthernCalifornia-BrMa-Neg-ASU-Round-2.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/SouthernCalifornia/BrMa/SouthernCalifornia-BrMa-Neg-ASU-Round-2.docx"
+  },
+  {
+    "school": "Southern California",
+    "team": "Southern California BrMa (Clare Bradley - Sarah Martin)",
+    "tournament": "D1 Pacific Champs NDT Qual and CARD at Beach",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Cal State Fullerton Dominguez & Catapang",
+    "judge": "Joel Lemuel",
+    "roundReport": "1ac - prison labor v4 1nc - t-subs, t-3 tier, da-midterms, k-abolition 2nr - k-abolition",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FSouthernCalifornia%2FBrMa%2FSouthernCalifornia-BrMa-Aff-D1-Pacific-Champs-NDT-Qual-and-CARD-at-Beach-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/SouthernCalifornia/BrMa/SouthernCalifornia-BrMa-Aff-D1-Pacific-Champs-NDT-Qual-and-CARD-at-Beach-Round-1.docx"
   },
   {
     "school": "Southern California",
@@ -66746,14 +67118,26 @@
   {
     "school": "Southern Nazarene",
     "team": "Southern Nazarene BoGo (Christian Booth - Lexi Goossens)",
-    "tournament": "01- Missouri State",
-    "round": "All",
+    "tournament": "Texas Open",
+    "round": "Round 4",
     "side": "Aff",
-    "opponent": "",
-    "judge": "",
+    "opponent": "George Mason BS",
+    "judge": "Copeland",
+    "roundReport": "1AC - Gig Workers",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Southern Nazarene",
+    "team": "Southern Nazarene BoGo (Christian Booth - Lexi Goossens)",
+    "tournament": "Texas Open",
+    "round": "Round 6",
+    "side": "Aff",
+    "opponent": "Liberty HH",
+    "judge": "Wilkus",
     "roundReport": "",
-    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FSouthernNazarene%2FBoGo%2FSouthernNazarene-BoGo-Aff-01--Missouri-State-All-Rounds.docx",
-    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/SouthernNazarene/BoGo/SouthernNazarene-BoGo-Aff-01--Missouri-State-All-Rounds.docx"
+    "previewUrl": null,
+    "downloadUrl": null
   },
   {
     "school": "Southern Nazarene",
@@ -66769,18 +67153,6 @@
   },
   {
     "school": "Southern Nazarene",
-    "team": "Southern Nazarene BoLa (Christian Booth - Archie Lard)",
-    "tournament": "KU",
-    "round": "Round 2",
-    "side": "Aff",
-    "opponent": "UTSA PS",
-    "judge": "Cade Blenden",
-    "roundReport": "1AC Gig workers 1NC Racial Cap K",
-    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FSouthernNazarene%2FBoLa%2FSouthernNazarene-BoLa-Aff-KU-Round-2.docx",
-    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/SouthernNazarene/BoLa/SouthernNazarene-BoLa-Aff-KU-Round-2.docx"
-  },
-  {
-    "school": "Southern Nazarene",
     "team": "Southern Nazarene CrDo (Thomas Cruzan - Deryk Doherty)",
     "tournament": "ADA Fall Championship",
     "round": "Round 1",
@@ -66790,6 +67162,18 @@
     "roundReport": "1AC - Gig Worker AFF 2NR - Abolish K",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FSouthernNazarene%2FCrDo%2FSouthernNazarene-CrDo-Aff-ADA-Fall-Championship-Round-1.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/SouthernNazarene/CrDo/SouthernNazarene-CrDo-Aff-ADA-Fall-Championship-Round-1.docx"
+  },
+  {
+    "school": "Southern Nazarene",
+    "team": "Southern Nazarene CrDo (Thomas Cruzan - Deryk Doherty)",
+    "tournament": "texas new aff",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": "",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FSouthernNazarene%2FCrDo%2FSouthernNazarene-CrDo-Aff-texas-new-aff-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/SouthernNazarene/CrDo/SouthernNazarene-CrDo-Aff-texas-new-aff-Round-1.docx"
   },
   {
     "school": "Southern Nazarene",
@@ -66898,6 +67282,18 @@
     "roundReport": "1AC- Gig Workers 2NC- T-50%, Imperialism K, Midterms DA, Incentives CP, AI Reg DA, AI Productivity DA, Case- Democracy Turn 2NR- T-50%, AI Dev DA, Democracy Turn",
     "previewUrl": null,
     "downloadUrl": null
+  },
+  {
+    "school": "Southern Nazarene",
+    "team": "Southern Nazarene HoSt (Ian Horton - Katherine Stockstill)",
+    "tournament": "D3 District Tournament",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Baylor DL",
+    "judge": "Morris, Eric",
+    "roundReport": "1AC- Internationalist Labor Organizing 1NC- F/W USFG, Cap K, Presumption 2NR- Case + Presumption",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FSouthernNazarene%2FHoSt%2FSouthernNazarene-HoSt-Neg-D3-District-Tournament-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/SouthernNazarene/HoSt/SouthernNazarene-HoSt-Neg-D3-District-Tournament-Round-1.docx"
   },
   {
     "school": "Southern Nazarene",
@@ -67850,12 +68246,24 @@
   {
     "school": "Texas",
     "team": "Texas DoPr (Rebecca Dong - Alexander Prieto)",
+    "tournament": "NDT D3 And The Mid America Championship",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Wake Forest BK",
+    "judge": "Azad",
+    "roundReport": "1AC - Labor Monopsony 1NC - T - CBR, K - Anti-blackness, case 2NR - T - CBR, K - Anti-blackness",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FTexas%2FDoPr%2FTexas-DoPr-Aff-NDT-D3-And-The-Mid-America-Championship-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Texas/DoPr/Texas-DoPr-Aff-NDT-D3-And-The-Mid-America-Championship-Round-1.docx"
+  },
+  {
+    "school": "Texas",
+    "team": "Texas DoPr (Rebecca Dong - Alexander Prieto)",
     "tournament": "Texas Open",
     "round": "Round 1",
     "side": "Aff",
     "opponent": "George Mason BH",
     "judge": "Ethan Harris",
-    "roundReport": "1AC - Antitrust 1NC - T - CBR, K - SetCol, case 2nr - K - SetCol",
+    "roundReport": "1AC - Labor Monopsony 1NC - T - CBR, K - SetCol, case 2nr - K - SetCol",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FTexas%2FDoPr%2FTexas-DoPr-Aff-Texas-Open-Round-1.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Texas/DoPr/Texas-DoPr-Aff-Texas-Open-Round-1.docx"
   },
@@ -67879,7 +68287,7 @@
     "side": "Aff",
     "opponent": "West Point LP",
     "judge": "Matthew Granstrom",
-    "roundReport": "1AC - Antitrust v2 1NC - TH - Aspec, T - CBR, DA - Midterms, DA - Econ, Case 2NR - DA - Midterms",
+    "roundReport": "1AC - Labor Monopsony v2 1NC - TH - Aspec, T - CBR, DA - Midterms, DA - Econ, Case 2NR - DA - Midterms",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FTexas%2FDoPr%2FTexas-DoPr-Aff-Texas-Open-Round-3.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Texas/DoPr/Texas-DoPr-Aff-Texas-Open-Round-3.docx"
   },
@@ -67915,7 +68323,7 @@
     "side": "Aff",
     "opponent": "West Point AR",
     "judge": "Jasani",
-    "roundReport": "1AC - Antitrust v2 1NC - T - CBR, DA - AI, DA - GOP realignment, CP - states 2NR - DA - GOP realignment",
+    "roundReport": "1AC - Labor Monopsony v2 1NC - T - CBR, DA - AI, DA - GOP realignment, CP - states 2NR - DA - GOP realignment",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FTexas%2FDoPr%2FTexas-DoPr-Aff-Texas-Open-Round-6.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Texas/DoPr/Texas-DoPr-Aff-Texas-Open-Round-6.docx"
   },
@@ -68458,6 +68866,30 @@
     "roundReport": "please check debatedocs or email for docs! 1AC - Healthcare v1 1NC - T-Strengthen, Misogynoir K, States CP, Rights CP, ACA DA 2NR - Misogynoir K",
     "previewUrl": null,
     "downloadUrl": null
+  },
+  {
+    "school": "Texas",
+    "team": "Texas FeLo (Lindsay Jade Feinstein - Samantha Low)",
+    "tournament": "7- Districts",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Wichita State GM",
+    "judge": "Jeff Nagel",
+    "roundReport": "please check debatedocs or email for chain! 1AC - Healthcare v3 1NC - Inherency, T-Subsets, Set Col, Court Clog DA 2NR - Set Col",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Texas",
+    "team": "Texas FeLo (Lindsay Jade Feinstein - Samantha Low)",
+    "tournament": "7- Districts",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "MoState NS",
+    "judge": "Storm Lasseter",
+    "roundReport": "1AC - Finance 2NR - Antitrust CP, Antitrust DA",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FTexas%2FFeLo%2FTexas-FeLo-Neg-7--Districts-Round-2.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Texas/FeLo/Texas-FeLo-Neg-7--Districts-Round-2.docx"
   },
   {
     "school": "Texas",
@@ -69505,6 +69937,30 @@
   },
   {
     "school": "Trinity",
+    "team": "Trinity BaKh (Grant Barden - Mariska Khalikov)",
+    "tournament": "05 --- D3 Districts",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Missouri State NS",
+    "judge": "Ralph Anderson",
+    "roundReport": "1AC - Carceral Labor 1NC - T-NLRA, T-Subsets, Adv CP, MQD CP, Boats DA, Midterms DA, Cap K 2NR - MQD CP",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FTrinity%2FBaKh%2FTrinity-BaKh-Aff-05-----D3-Districts-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Trinity/BaKh/Trinity-BaKh-Aff-05-----D3-Districts-Round-1.docx"
+  },
+  {
+    "school": "Trinity",
+    "team": "Trinity BaKh (Grant Barden - Mariska Khalikov)",
+    "tournament": "05 --- D3 Districts",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Baylor MP",
+    "judge": "Trevor Turner",
+    "roundReport": "1AC - Degrowth 1NC - T-CBR, Disability K, Cap K, Econ DA 2NR - Cap K",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FTrinity%2FBaKh%2FTrinity-BaKh-Neg-05-----D3-Districts-Round-2.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Trinity/BaKh/Trinity-BaKh-Neg-05-----D3-Districts-Round-2.docx"
+  },
+  {
+    "school": "Trinity",
     "team": "Trinity CrKh (Leo Crowley - Mariska Khalikov)",
     "tournament": "01 --- Gonzaga",
     "round": "Round 1",
@@ -69970,6 +70426,30 @@
     "roundReport": "1AC - Black Transtopia 1NC - T-CB, Cap K, Opacity K 2NR - Opacity K, Ballot DA",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FTrinity%2FKhOl%2FTrinity-KhOl-Neg-02-----UTSA-Round-6.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Trinity/KhOl/Trinity-KhOl-Neg-02-----UTSA-Round-6.docx"
+  },
+  {
+    "school": "Trinity",
+    "team": "Trinity KiPa (Brooklyn King - Ruth Patterson)",
+    "tournament": "D3",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "UTD PR",
+    "judge": "Flynn Makuch",
+    "roundReport": "1ac---digital internationalism 1nc---t should, polycrisis k, visibility pic, anthro k 2nr---anthro k",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FTrinity%2FKiPa%2FTrinity-KiPa-Neg-D3-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Trinity/KiPa/Trinity-KiPa-Neg-D3-Round-1.docx"
+  },
+  {
+    "school": "Trinity",
+    "team": "Trinity KiPa (Brooklyn King - Ruth Patterson)",
+    "tournament": "D3",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Oklahoma DF",
+    "judge": "Kristiana Baez-Gustavson",
+    "roundReport": "1ac---sit down strike 1nc---set col k",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FTrinity%2FKiPa%2FTrinity-KiPa-Aff-D3-Round-2.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Trinity/KiPa/Trinity-KiPa-Aff-D3-Round-2.docx"
   },
   {
     "school": "Trinity",
@@ -72781,6 +73261,18 @@
   },
   {
     "school": "UTD",
+    "team": "UTD HaKa (Charlie Hale - Mahintha Karthik)",
+    "tournament": "07---Districts",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Baylor MP",
+    "judge": "McManus",
+    "roundReport": "1AC - Grounded Normativity 2NR - Capitalism K",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FUTD%2FHaKa%2FUTD-HaKa-Aff-07---Districts-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/UTD/HaKa/UTD-HaKa-Aff-07---Districts-Round-1.docx"
+  },
+  {
+    "school": "UTD",
     "team": "UTD HaKh (Charlie Hale - Theo Khakoo)",
     "tournament": "01 --- K-State",
     "round": "Round 1",
@@ -73210,6 +73702,30 @@
     "roundReport": "1AC: Data Production 1NC: R-Spec 2NC: Afropessimism K 1NR: Afropessimism K, Case 2NR: Afropessimism K",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FUTD%2FHoHu%2FUTD-HoHu-Aff-04---Texas-Round-8.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/UTD/HoHu/UTD-HoHu-Aff-04---Texas-Round-8.docx"
+  },
+  {
+    "school": "UTD",
+    "team": "UTD HoHu (Isaac Hoch - Adam Humphrey)",
+    "tournament": "05 - Mid-America Championship",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "BYE",
+    "judge": "BYE",
+    "roundReport": "BYE",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "UTD",
+    "team": "UTD HoHu (Isaac Hoch - Adam Humphrey)",
+    "tournament": "05 - Mid-America Championship",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Texas AS",
+    "judge": "Wilkinson",
+    "roundReport": "1AC: Antitrust 1NC: Indolence K, T Strengthen, Shipyards DA, Trade CP 2NC: Shipyards DA, Case 1NR: T Strengthen 2NR: T Strengthen 2AR: Conditionality Bad",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FUTD%2FHoHu%2FUTD-HoHu-Neg-05---Mid-America-Championship-Round-2.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/UTD/HoHu/UTD-HoHu-Neg-05---Mid-America-Championship-Round-2.docx"
   },
   {
     "school": "UTD",
@@ -74917,6 +75433,18 @@
   },
   {
     "school": "UTSA",
+    "team": "UTSA CaGa (Iliana Carrillo - Emilio Garza)",
+    "tournament": "7 - D3 NDT Districts",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "UTD PR",
+    "judge": "Niko Sims",
+    "roundReport": "1AC - Brujeria V4 2NR - TFW",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FUTSA%2FCaGa%2FUTSA-CaGa-Aff-7---D3-NDT-Districts-Round-2.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/UTSA/CaGa/UTSA-CaGa-Aff-7---D3-NDT-Districts-Round-2.docx"
+  },
+  {
+    "school": "UTSA",
     "team": "UTSA GiJa (Rylie Gilbert - Makenna Jackson)",
     "tournament": "3rd Annual Sunflower Swing Part 1 hosted by KU",
     "round": "Round 1",
@@ -75255,11 +75783,47 @@
     "school": "UTSA",
     "team": "UTSA GiPa (Rylie Gilbert - Mary Jo Paschall)",
     "tournament": "D3",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Texas GS",
+    "judge": "Mathis",
+    "roundReport": "1AC-Black Transtopia v2 1NC-T/FW,T-Tactics, Cap K 2NR-Ballot PIK, T/FW",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FUTSA%2FGiPa%2FUTSA-GiPa-Aff-D3-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/UTSA/GiPa/UTSA-GiPa-Aff-D3-Round-1.docx"
+  },
+  {
+    "school": "UTSA",
+    "team": "UTSA GiPa (Rylie Gilbert - Mary Jo Paschall)",
+    "tournament": "D3",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "WSU GM",
+    "judge": "Makuch",
+    "roundReport": "1AC-Contract v4 1NC-Abelism K, Audio-centrism PIK, Case 2NR-Audio-centrism PIK",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FUTSA%2FGiPa%2FUTSA-GiPa-Neg-D3-Round-2.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/UTSA/GiPa/UTSA-GiPa-Neg-D3-Round-2.docx"
+  },
+  {
+    "school": "UTSA",
+    "team": "UTSA GiPa (Rylie Gilbert - Mary Jo Paschall)",
+    "tournament": "D3",
     "round": "All",
     "side": "Aff",
     "opponent": "WE are going 15 off",
     "judge": "Time travel CP",
     "roundReport": "Check Team Notes- most recent rounds on GM/BP",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "UTSA",
+    "team": "UTSA GiPa (Rylie Gilbert - Mary Jo Paschall)",
+    "tournament": "D3",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "vx",
+    "judge": "dcvdw",
+    "roundReport": "Accessibility request--no spreading/ conversation pace",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -75680,8 +76244,8 @@
     "opponent": "North Texas PS",
     "judge": "Monteith",
     "roundReport": "1AC: Whorearchy 1NC: Racial Cap K, Ballot PIK, case 2NR: Racial Cap, Case",
-    "previewUrl": null,
-    "downloadUrl": null
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FUTSA%2FPaSr1%2FUTSA-PaSr1-Neg-Sunflower-Swing-2-K-State-2026-Round-5.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/UTSA/PaSr1/UTSA-PaSr1-Neg-Sunflower-Swing-2-K-State-2026-Round-5.docx"
   },
   {
     "school": "UTSA",
@@ -81346,6 +81910,54 @@
     "roundReport": "1ac - putas 1nc - t-fw, setcol k, cap k, disability k 2nr - t-fw",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FWichitaState%2FGrMo%2FWichitaState-GrMo-Neg-8---Texas-Open-Round-5.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/WichitaState/GrMo/WichitaState-GrMo-Neg-8---Texas-Open-Round-5.docx"
+  },
+  {
+    "school": "Wichita State",
+    "team": "Wichita State GrMo (Marianne Griffith - Miguel Molina Chavez)",
+    "tournament": "8 - Texas Open",
+    "round": "Round 6",
+    "side": "Aff",
+    "opponent": "Georgia CK",
+    "judge": "Yehezkel - ONLINE",
+    "roundReport": "1ac - contract v3 1nc - cap k, cite black women, t-fw 2nr - cite black women",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FWichitaState%2FGrMo%2FWichitaState-GrMo-Aff-8---Texas-Open-Round-6.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/WichitaState/GrMo/WichitaState-GrMo-Aff-8---Texas-Open-Round-6.docx"
+  },
+  {
+    "school": "Wichita State",
+    "team": "Wichita State GrMo (Marianne Griffith - Miguel Molina Chavez)",
+    "tournament": "8 - Texas Open",
+    "round": "Round 7",
+    "side": "Aff",
+    "opponent": "Wyoming CH",
+    "judge": "Starks - ONLINE",
+    "roundReport": "1ac - contract v3 1nc - t-fw, aspec 2nr - t-fw",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Wichita State",
+    "team": "Wichita State GrMo (Marianne Griffith - Miguel Molina Chavez)",
+    "tournament": "8 - Texas Open",
+    "round": "Round 8",
+    "side": "Neg",
+    "opponent": "Kansas LP",
+    "judge": "Fifelski",
+    "roundReport": "1ac - fed workers 1nc - setcol, heg bad 2nr - setcol",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FWichitaState%2FGrMo%2FWichitaState-GrMo-Neg-8---Texas-Open-Round-8.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/WichitaState/GrMo/WichitaState-GrMo-Neg-8---Texas-Open-Round-8.docx"
+  },
+  {
+    "school": "Wichita State",
+    "team": "Wichita State GrMo (Marianne Griffith - Miguel Molina Chavez)",
+    "tournament": "9 - NDT D3 And The Mid America Championship",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Texas FL",
+    "judge": "Nagel",
+    "roundReport": "1ac - dobbs 1nc - t-subsets, t-inherency, setcol k, court clog da 2nr - setcol",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FWichitaState%2FGrMo%2FWichitaState-GrMo-Neg-9---NDT-D3-And-The-Mid-America-Championship-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/WichitaState/GrMo/WichitaState-GrMo-Neg-9---NDT-D3-And-The-Mid-America-Championship-Round-1.docx"
   },
   {
     "school": "Wyoming",
