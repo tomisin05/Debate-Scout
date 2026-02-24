@@ -18926,26 +18926,14 @@
   {
     "school": "George Mason",
     "team": "George Mason WrWi (Ashley Wright - Ben Witkov)",
-    "tournament": "8---D7",
-    "round": "Round 3",
-    "side": "Aff",
-    "opponent": "Georgetown LN",
-    "judge": "O'Gorman",
-    "roundReport": "1AC - Antitrust v4 1NC - T CBR, T Remedies, Security K, States CP, Antitrust DA, Midterms DA 2NR - States CP, Antitrust DA",
-    "previewUrl": null,
-    "downloadUrl": null
-  },
-  {
-    "school": "George Mason",
-    "team": "George Mason WrWi (Ashley Wright - Ben Witkov)",
     "tournament": "8---Districts",
     "round": "Round 1",
     "side": "Neg",
     "opponent": "Liberty KT",
     "judge": "Taylor",
     "roundReport": "1AC - Afrofuturism 1NC - T, PIK, Secondary Strikes CP, Cap Good 2NR - T",
-    "previewUrl": null,
-    "downloadUrl": null
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FGeorgeMason%2FWrWi%2FGeorgeMason-WrWi-Neg-8---Districts-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/GeorgeMason/WrWi/GeorgeMason-WrWi-Neg-8---Districts-Round-1.docx"
   },
   {
     "school": "George Mason",
@@ -18954,10 +18942,34 @@
     "round": "Round 2",
     "side": "Neg",
     "opponent": "Georgetown GT",
-    "judge": "Johnson",
-    "roundReport": "1AC - Zombies 1NC - Disability K, T Strengthen, T Workers, T Subsets, PIK, UCF CP, NLRB DA, Midterms DA 2NR - UCF CP",
-    "previewUrl": null,
-    "downloadUrl": null
+    "judge": "T. Johnson",
+    "roundReport": "1AC - Zombies 1NC - Disability K, T Strengthen, T Workers, T Subsets, Adichie PIK, UCF CP, NLRB DA, Midterms DA 2NR - UCF CP",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FGeorgeMason%2FWrWi%2FGeorgeMason-WrWi-Neg-8---Districts-Round-2.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/GeorgeMason/WrWi/GeorgeMason-WrWi-Neg-8---Districts-Round-2.docx"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason WrWi (Ashley Wright - Ben Witkov)",
+    "tournament": "8---Districts",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Georgetown LN",
+    "judge": "O'Gorman",
+    "roundReport": "1AC - Antitrust v4 1NC - T CBR, T Remedies, Security K, States CP, Antitrust DA, Midterms DA 2NR - States CP, Antitrust DA",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FGeorgeMason%2FWrWi%2FGeorgeMason-WrWi-Aff-8---Districts-Round-3.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/GeorgeMason/WrWi/GeorgeMason-WrWi-Aff-8---Districts-Round-3.docx"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason WrWi (Ashley Wright - Ben Witkov)",
+    "tournament": "8---Districts",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Liberty CL",
+    "judge": "Balda",
+    "roundReport": "1AC - Sectoral Bargaining 1NC - Black Rage K, Stay Black and Die, Archive K, Black Pussy, Black Breath CT",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FGeorgeMason%2FWrWi%2FGeorgeMason-WrWi-Aff-8---Districts-Round-4.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/GeorgeMason/WrWi/GeorgeMason-WrWi-Aff-8---Districts-Round-4.docx"
   },
   {
     "school": "George Mason",
@@ -18970,6 +18982,18 @@
     "roundReport": "1AC - Injunctions 1NC - T CBR, Cap K, Adv CP, UCF CP, Midterms DA, NLRB DA 2NR - NLRB DA 2AR - Condo",
     "previewUrl": null,
     "downloadUrl": null
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason WrWi (Ashley Wright - Ben Witkov)",
+    "tournament": "8---Districts",
+    "round": "Round 6",
+    "side": "Aff",
+    "opponent": "JMU MO",
+    "judge": "Christ",
+    "roundReport": "1AC - Sectoral Bargaining 1NC - Debility K, Rhetoric K 2NR - Rhetoric K",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FGeorgeMason%2FWrWi%2FGeorgeMason-WrWi-Aff-8---Districts-Round-6.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/GeorgeMason/WrWi/GeorgeMason-WrWi-Aff-8---Districts-Round-6.docx"
   },
   {
     "school": "Georgetown",
@@ -35638,6 +35662,66 @@
     "roundReport": "1AC---Federal CBAs 1NC---Terror PIK, Socialized Nations K 2NR---PIK",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FKansas%2FLaPa%2FKansas-LaPa-Aff-3---MAC-Round-4.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Kansas/LaPa/Kansas-LaPa-Aff-3---MAC-Round-4.docx"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas LaPa (Payten LaPoint - Lucy Pace)",
+    "tournament": "3---MAC",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "Wake BK",
+    "judge": "Watson",
+    "roundReport": "1AC---Wildcatting 1NC---T USFG, Moten PIK, Disability turn 2NR---T USFG",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FKansas%2FLaPa%2FKansas-LaPa-Neg-3---MAC-Round-5.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Kansas/LaPa/Kansas-LaPa-Neg-3---MAC-Round-5.docx"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas LaPa (Payten LaPoint - Lucy Pace)",
+    "tournament": "3---MAC",
+    "round": "Round 6",
+    "side": "Aff",
+    "opponent": "Missouri State KM",
+    "judge": "Dill",
+    "roundReport": "1AC---Federal CBAs 1NC---T Workers, T Subsets, Ships DA, Cap K 2NR---T Subsets",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FKansas%2FLaPa%2FKansas-LaPa-Aff-3---MAC-Round-6.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Kansas/LaPa/Kansas-LaPa-Aff-3---MAC-Round-6.docx"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas LaPa (Payten LaPoint - Lucy Pace)",
+    "tournament": "3---MAC",
+    "round": "Finals",
+    "side": "Aff",
+    "opponent": "Kansas BF",
+    "judge": "Linde, Persson, Baretto",
+    "roundReport": "CLOSE OUT!",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas LaPa (Payten LaPoint - Lucy Pace)",
+    "tournament": "3---MAC",
+    "round": "Quarters",
+    "side": "Aff",
+    "opponent": "Wake BK",
+    "judge": "Cherry, Beutelspacher, Lain",
+    "roundReport": "1AC---Federal CBAs 1NC---Empire K 2NR---Empire K",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FKansas%2FLaPa%2FKansas-LaPa-Aff-3---MAC-Quarters.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Kansas/LaPa/Kansas-LaPa-Aff-3---MAC-Quarters.docx"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas LaPa (Payten LaPoint - Lucy Pace)",
+    "tournament": "3---MAC",
+    "round": "Semis",
+    "side": "Aff",
+    "opponent": "UTD HH",
+    "judge": "Haughton, Yadagiri, Wilkinson",
+    "roundReport": "1AC---Federal CBAs 1NC---T Subsets, ASPEC, Adv CP, Privileges CP, ICE PIC, Indolence K, Downballot DA 2NR---ICE PIC",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FKansas%2FLaPa%2FKansas-LaPa-Aff-3---MAC-Semis.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Kansas/LaPa/Kansas-LaPa-Aff-3---MAC-Semis.docx"
   },
   {
     "school": "Kansas",
@@ -55405,6 +55489,30 @@
   },
   {
     "school": "Missouri State",
+    "team": "Missouri State DeNe (Levi DeAngelis - Asher Neal)",
+    "tournament": "02 D3",
+    "round": "Finals",
+    "side": "Aff",
+    "opponent": "Southern Nazarene HS",
+    "judge": "Cherry, Shook, Vernon",
+    "roundReport": "1AC: Finance 1NC: T-Subsets, Hyperobject K, Midterms DA, Robo-Advisors DA 2NR: Midterms DA",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FMissouriState%2FDeNe%2FMissouriState-DeNe-Aff-02-D3-Finals.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/MissouriState/DeNe/MissouriState-DeNe-Aff-02-D3-Finals.docx"
+  },
+  {
+    "school": "Missouri State",
+    "team": "Missouri State DeNe (Levi DeAngelis - Asher Neal)",
+    "tournament": "02 D3",
+    "round": "Semis",
+    "side": "Neg",
+    "opponent": "Trinity BK",
+    "judge": "Beutelspacher, Gustavson, McVey",
+    "roundReport": "1AC: Carceral Labor 1NC: T-Subsets, T-Pre-existing, Boats DA, Cap K, Code CP, States CP, Midterms DA 2NR: Code CP, Boats DA",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FMissouriState%2FDeNe%2FMissouriState-DeNe-Neg-02-D3-Semis.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/MissouriState/DeNe/MissouriState-DeNe-Neg-02-D3-Semis.docx"
+  },
+  {
+    "school": "Missouri State",
     "team": "Missouri State GrCo (James Granger - Gary Cowdrey-Mota)",
     "tournament": "00---Contact Information",
     "round": "All",
@@ -64849,6 +64957,18 @@
   },
   {
     "school": "Oklahoma",
+    "team": "Oklahoma BuDa (Yobani Bustos - Daven Daniel)",
+    "tournament": "MAC/D3",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Trinity CO",
+    "judge": "Peyton Reeves",
+    "roundReport": "1 AC---NRC 2 NR---Terrorism PIK",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FOklahoma%2FBuDa%2FOklahoma-BuDa-Aff-MACD3-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Oklahoma/BuDa/Oklahoma-BuDa-Aff-MACD3-Round-1.docx"
+  },
+  {
+    "school": "Oklahoma",
     "team": "Oklahoma DaBr (Daven Daniel - Rhianna Bruner)",
     "tournament": "0. All",
     "round": "Finals",
@@ -65602,6 +65722,18 @@
     "roundReport": "1AC- NRC (Taiwan) 1NC- Setcol 2NR-Setcol",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FOklahoma%2FFuDu%2FOklahoma-FuDu-Aff-8.-NDT-D3-And-The-Mid-America-Championship-Round-7.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Oklahoma/FuDu/Oklahoma-FuDu-Aff-8.-NDT-D3-And-The-Mid-America-Championship-Round-7.docx"
+  },
+  {
+    "school": "Oklahoma",
+    "team": "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)",
+    "tournament": "8. NDT D3 And The Mid America Championship",
+    "round": "Round 8",
+    "side": "Neg",
+    "opponent": "Southern Nazarene HS",
+    "judge": "Rothenbaum",
+    "roundReport": "1AC- Finance 1NC- SetCol, Midterms, OLRC 2NR- Heg bad",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FOklahoma%2FFuDu%2FOklahoma-FuDu-Neg-8.-NDT-D3-And-The-Mid-America-Championship-Round-8.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Oklahoma/FuDu/Oklahoma-FuDu-Neg-8.-NDT-D3-And-The-Mid-America-Championship-Round-8.docx"
   },
   {
     "school": "Oklahoma",
@@ -66494,12 +66626,96 @@
   {
     "school": "Rochester",
     "team": "Rochester CoBa (Emily Cook - Gaurav Barve)",
+    "tournament": "Districts -- Suffolk",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Monmouth DF",
+    "judge": "Nicholas Tilmes",
+    "roundReport": "1AC: Taft Hartley 2NR: Oligarchy K",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Rochester",
+    "team": "Rochester CoBa (Emily Cook - Gaurav Barve)",
+    "tournament": "Districts -- Suffolk",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "NYU TT",
+    "judge": "Juliette Ludka",
+    "roundReport": "1AC: Transformative Solidarity 2NR: Case Turn",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Rochester",
+    "team": "Rochester CoBa (Emily Cook - Gaurav Barve)",
+    "tournament": "Districts -- Suffolk",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "NYU AL",
+    "judge": "Jesse Smith",
+    "roundReport": "1AC: Taft Hartley 2NR: Econ DA",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Rochester",
+    "team": "Rochester CoBa (Emily Cook - Gaurav Barve)",
+    "tournament": "Districts -- Suffolk",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Fairmont State EF",
+    "judge": "Anthony Davila",
+    "roundReport": "1AC: Right to Work 2NR: FW//Disability K small school solidarity.",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Rochester",
+    "team": "Rochester CoBa (Emily Cook - Gaurav Barve)",
+    "tournament": "Districts -- Suffolk",
+    "round": "Round 5",
+    "side": "Aff",
+    "opponent": "West Point JE",
+    "judge": "Joe Patten",
+    "roundReport": "1AC: Taft Hartley 2NR: Semi-conductors DA",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Rochester",
+    "team": "Rochester CoBa (Emily Cook - Gaurav Barve)",
+    "tournament": "Districts -- Suffolk",
+    "round": "Octas",
+    "side": "Neg",
+    "opponent": "",
+    "judge": "",
+    "roundReport": "BYE",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Rochester",
+    "team": "Rochester CoBa (Emily Cook - Gaurav Barve)",
+    "tournament": "Districts -- Suffolk",
+    "round": "Quarters",
+    "side": "Aff",
+    "opponent": "Suffolk DZ",
+    "judge": "Vincent Li, Will Baker, Armands Revelins",
+    "roundReport": "1AC: Taft Hartley 2NR: Psychoanalysis K",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Rochester",
+    "team": "Rochester CoBa (Emily Cook - Gaurav Barve)",
     "tournament": "gen disclosure !! :D",
     "round": "All",
     "side": "Aff",
     "opponent": "prob you",
     "judge": "gauravs hw",
-    "roundReport": "1ac: taft hartley w/ healthcare + inequality advs most recent 2nr: t-substantial and case email: propheticquips@gmail.com",
+    "roundReport": "1ac: taft hartley w/ healthcare + inequality advs email: propheticquips@gmail.com",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -73033,6 +73249,30 @@
   },
   {
     "school": "UC Berkeley",
+    "team": "UC Berkeley BoUr (Ilan Boguslavsky - Molly Urfalian)",
+    "tournament": "7---D1 Pacific Champs NDT Qual and CARD at Beach",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Cal State Fullerton Nworgu & Martinez",
+    "judge": "Kennedy",
+    "roundReport": "1AC---Data Workers 2NR---Afropess",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FUCBerkeley%2FBoUr%2FUCBerkeley-BoUr-Aff-7---D1-Pacific-Champs-NDT-Qual-and-CARD-at-Beach-Round-2.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/UCBerkeley/BoUr/UCBerkeley-BoUr-Aff-7---D1-Pacific-Champs-NDT-Qual-and-CARD-at-Beach-Round-2.docx"
+  },
+  {
+    "school": "UC Berkeley",
+    "team": "UC Berkeley BoUr (Ilan Boguslavsky - Molly Urfalian)",
+    "tournament": "7---D1 Pacific Champs NDT Qual and CARD at Beach",
+    "round": "Round 6",
+    "side": "Aff",
+    "opponent": "Southern California Bradley & Martin",
+    "judge": "Thomas",
+    "roundReport": "1AC---Baudrillard 2NR---Rights Good",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FUCBerkeley%2FBoUr%2FUCBerkeley-BoUr-Aff-7---D1-Pacific-Champs-NDT-Qual-and-CARD-at-Beach-Round-6.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/UCBerkeley/BoUr/UCBerkeley-BoUr-Aff-7---D1-Pacific-Champs-NDT-Qual-and-CARD-at-Beach-Round-6.docx"
+  },
+  {
+    "school": "UC Berkeley",
     "team": "UC Berkeley GiSi (Dash Gilrain-Lennon - Aaron Situ)",
     "tournament": "1---55th Annual JW Patterson Debates hosted by UK",
     "round": "Round 1",
@@ -78308,6 +78548,30 @@
     "opponent": "Houston OD",
     "judge": "Lain",
     "roundReport": "1ac: Disc, Physcians Aff, 1NC: Match CP, Midterm CP + DA, Automation Da 2ar: Physcian Aff, Match CP, Automation Da",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "UTSA",
+    "team": "UTSA PaSr1 (Ashutosh Panda - Aditi Srivatsan)",
+    "tournament": "NDT D3 And The Mid America Championship",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "Texas DP",
+    "judge": "Lasseter",
+    "roundReport": "1AC: Dobbs 1NC: T, Compassion Strike Counter Plan, Tricks CP Coloniality, Disclosure 2NR: T, Compassion Strike CP, Tricks CP",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "UTSA",
+    "team": "UTSA PaSr1 (Ashutosh Panda - Aditi Srivatsan)",
+    "tournament": "NDT D3 And The Mid America Championship",
+    "round": "Round 6",
+    "side": "Aff",
+    "opponent": "Kansas BF",
+    "judge": "Yadagiri",
+    "roundReport": "1AC: Physicians CBR 1NC: T-Subsets, Cap K, Cemex DA, Cardless CP, T -CBR, Kant DA, Contempt CP 2NR: Cemex DA, Contempt CP 2AR: Theory, case",
     "previewUrl": null,
     "downloadUrl": null
   },
