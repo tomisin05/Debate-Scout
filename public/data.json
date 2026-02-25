@@ -15319,33 +15319,33 @@
     "side": "Aff",
     "opponent": "",
     "judge": "",
-    "roundReport": "1A/2N: jaybeeru13s@gmail.com 2A/1N: amberlysun0@gmail.com mason-debate@googlegroups.com",
+    "roundReport": "jaybeeru13s@gmail.com amberlysun0@gmail.com mason-debate@googlegroups.com NEVER PUT GMU BS ON DEBATE DOCS WITHOUT CONSENT, thank you",
     "previewUrl": null,
     "downloadUrl": null
   },
   {
     "school": "George Mason",
     "team": "George Mason BrSu (Jordan Bridgers - Amberly Sun)",
-    "tournament": "1AC",
-    "round": "All",
-    "side": "Aff",
-    "opponent": "",
-    "judge": "",
-    "roundReport": "1AC-- Wildcats/Racial Capitalism K",
-    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FGeorgeMason%2FBrSu%2FGeorgeMason-BrSu-Aff-1AC-All-Rounds.docx",
-    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/GeorgeMason/BrSu/GeorgeMason-BrSu-Aff-1AC-All-Rounds.docx"
-  },
-  {
-    "school": "George Mason",
-    "team": "George Mason BrSu (Jordan Bridgers - Amberly Sun)",
-    "tournament": "2NR",
+    "tournament": "1--Navy",
     "round": "All",
     "side": "Neg",
     "opponent": "",
     "judge": "",
-    "roundReport": "2NR-- Afropessimism K",
+    "roundReport": "2NR-- Pess",
     "previewUrl": null,
     "downloadUrl": null
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason BrSu (Jordan Bridgers - Amberly Sun)",
+    "tournament": "1--Texas",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": "1AC-- Wildcats",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FGeorgeMason%2FBrSu%2FGeorgeMason-BrSu-Aff-1--Texas-All-Rounds.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/GeorgeMason/BrSu/GeorgeMason-BrSu-Aff-1--Texas-All-Rounds.docx"
   },
   {
     "school": "George Mason",
@@ -16594,6 +16594,18 @@
     "roundReport": "1AC---Fed Workers",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FGeorgeMason%2FFaVa%2FGeorgeMason-FaVa-Aff-Texas-Round-5.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/GeorgeMason/FaVa/GeorgeMason-FaVa-Aff-Texas-Round-5.docx"
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason GoNe (Del Gorman - Emebet Neale)",
+    "tournament": "0---Goodnight Team Info",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "my 11th grade English teacher",
+    "judge": "Mother Renee Rapp",
+    "roundReport": "Team email's: mason-debate@googlegroups.com Contact info for scouting: Delboomer13@gmail.com emebet.neale@gmail.com All love and PLZ NEVER PUT US ON DEBATE DOCS WITHOUT CONSENT and Good luck <3",
+    "previewUrl": null,
+    "downloadUrl": null
   },
   {
     "school": "George Mason",
@@ -18978,10 +18990,10 @@
     "round": "Round 5",
     "side": "Neg",
     "opponent": "Navy LS",
-    "judge": "Kelley",
+    "judge": "BK",
     "roundReport": "1AC - Injunctions 1NC - T CBR, Cap K, Adv CP, UCF CP, Midterms DA, NLRB DA 2NR - NLRB DA 2AR - Condo",
-    "previewUrl": null,
-    "downloadUrl": null
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FGeorgeMason%2FWrWi%2FGeorgeMason-WrWi-Neg-8---Districts-Round-5.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/GeorgeMason/WrWi/GeorgeMason-WrWi-Neg-8---Districts-Round-5.docx"
   },
   {
     "school": "George Mason",
@@ -20474,19 +20486,19 @@
   {
     "school": "Georgetown",
     "team": "Georgetown GrTa (Michael Greenberg - Leroy Tamfu)",
-    "tournament": "5 - Texas",
+    "tournament": "5 - Texas Open",
     "round": "Round 1",
     "side": "Neg",
     "opponent": "Central Oklahoma EW",
     "judge": "DSRB",
     "roundReport": "1AC - Decolonial Anarchy 2NR - Statism K",
-    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FGeorgetown%2FGrTa%2FGeorgetown-GrTa-Neg-5---Texas-Round-1.docx",
-    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Georgetown/GrTa/Georgetown-GrTa-Neg-5---Texas-Round-1.docx"
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FGeorgetown%2FGrTa%2FGeorgetown-GrTa-Neg-5---Texas-Open-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Georgetown/GrTa/Georgetown-GrTa-Neg-5---Texas-Open-Round-1.docx"
   },
   {
     "school": "Georgetown",
     "team": "Georgetown GrTa (Michael Greenberg - Leroy Tamfu)",
-    "tournament": "5 - Texas",
+    "tournament": "5 - Texas Open",
     "round": "Round 2",
     "side": "Aff",
     "opponent": "Iowa EW",
@@ -20498,7 +20510,7 @@
   {
     "school": "Georgetown",
     "team": "Georgetown GrTa (Michael Greenberg - Leroy Tamfu)",
-    "tournament": "5 - Texas",
+    "tournament": "5 - Texas Open",
     "round": "Round 3",
     "side": "Aff",
     "opponent": "George Mason WW",
@@ -20510,31 +20522,31 @@
   {
     "school": "Georgetown",
     "team": "Georgetown GrTa (Michael Greenberg - Leroy Tamfu)",
-    "tournament": "5 - Texas",
+    "tournament": "5 - Texas Open",
     "round": "Round 4",
     "side": "Neg",
     "opponent": "Texas GS",
     "judge": "Jay Fuchs",
-    "roundReport": "1AC - Incompleteness 2NR - Marriott K",
-    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FGeorgetown%2FGrTa%2FGeorgetown-GrTa-Neg-5---Texas-Round-4.docx",
-    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Georgetown/GrTa/Georgetown-GrTa-Neg-5---Texas-Round-4.docx"
+    "roundReport": "1AC - Incompleteness 2NR - The \"Fanonian\" Leap",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FGeorgetown%2FGrTa%2FGeorgetown-GrTa-Neg-5---Texas-Open-Round-4.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Georgetown/GrTa/Georgetown-GrTa-Neg-5---Texas-Open-Round-4.docx"
   },
   {
     "school": "Georgetown",
     "team": "Georgetown GrTa (Michael Greenberg - Leroy Tamfu)",
-    "tournament": "5 - Texas",
+    "tournament": "5 - Texas Open",
     "round": "Round 5",
     "side": "Neg",
     "opponent": "Baylor BK",
     "judge": "Kwudjwa Osei",
     "roundReport": "1AC - Revolutionary Love 2NR - Black Baudrillard",
-    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FGeorgetown%2FGrTa%2FGeorgetown-GrTa-Neg-5---Texas-Round-5.docx",
-    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Georgetown/GrTa/Georgetown-GrTa-Neg-5---Texas-Round-5.docx"
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FGeorgetown%2FGrTa%2FGeorgetown-GrTa-Neg-5---Texas-Open-Round-5.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Georgetown/GrTa/Georgetown-GrTa-Neg-5---Texas-Open-Round-5.docx"
   },
   {
     "school": "Georgetown",
     "team": "Georgetown GrTa (Michael Greenberg - Leroy Tamfu)",
-    "tournament": "5 - Texas",
+    "tournament": "5 - Texas Open",
     "round": "Round 6",
     "side": "Aff",
     "opponent": "Kansas HF",
@@ -20546,7 +20558,7 @@
   {
     "school": "Georgetown",
     "team": "Georgetown GrTa (Michael Greenberg - Leroy Tamfu)",
-    "tournament": "5 - Texas",
+    "tournament": "5 - Texas Open",
     "round": "Round 7",
     "side": "Aff",
     "opponent": "Dartmouth BG",
@@ -20558,14 +20570,86 @@
   {
     "school": "Georgetown",
     "team": "Georgetown GrTa (Michael Greenberg - Leroy Tamfu)",
-    "tournament": "5 - Texas",
+    "tournament": "5 - Texas Open",
     "round": "Round 8",
     "side": "Neg",
     "opponent": "Baylor MP",
     "judge": "Graham Revare",
     "roundReport": "1AC - Degrowth 2NR - K",
-    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FGeorgetown%2FGrTa%2FGeorgetown-GrTa-Neg-5---Texas-Round-8.docx",
-    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Georgetown/GrTa/Georgetown-GrTa-Neg-5---Texas-Round-8.docx"
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FGeorgetown%2FGrTa%2FGeorgetown-GrTa-Neg-5---Texas-Open-Round-8.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Georgetown/GrTa/Georgetown-GrTa-Neg-5---Texas-Open-Round-8.docx"
+  },
+  {
+    "school": "Georgetown",
+    "team": "Georgetown GrTa (Michael Greenberg - Leroy Tamfu)",
+    "tournament": "6 - NDT Districts @ Towson University",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Towson DP",
+    "judge": "Copeland, Morgan",
+    "roundReport": "1AC - Black girls can...",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Georgetown",
+    "team": "Georgetown GrTa (Michael Greenberg - Leroy Tamfu)",
+    "tournament": "6 - NDT Districts @ Towson University",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "George Mason WW",
+    "judge": "Johnson, Taylor",
+    "roundReport": "1AC - Zombies 2NR - NGA CP",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Georgetown",
+    "team": "Georgetown GrTa (Michael Greenberg - Leroy Tamfu)",
+    "tournament": "6 - NDT Districts @ Towson University",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "James Madison KP",
+    "judge": "Chiri, Vida",
+    "roundReport": "1AC - Melting 2NR - Afro - Nihilism K",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FGeorgetown%2FGrTa%2FGeorgetown-GrTa-Neg-6---NDT-Districts-%40-Towson-University-Round-3.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Georgetown/GrTa/Georgetown-GrTa-Neg-6---NDT-Districts-@-Towson-University-Round-3.docx"
+  },
+  {
+    "school": "Georgetown",
+    "team": "Georgetown GrTa (Michael Greenberg - Leroy Tamfu)",
+    "tournament": "6 - NDT Districts @ Towson University",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Navy LS",
+    "judge": "Rodak, Meg",
+    "roundReport": "1AC - Zombies 2NR - Inherency",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Georgetown",
+    "team": "Georgetown GrTa (Michael Greenberg - Leroy Tamfu)",
+    "tournament": "6 - NDT Districts @ Towson University",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "George Mason RT",
+    "judge": "Christ, Daniel",
+    "roundReport": "1AC - Sectoral Bargaining 2NR - K",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FGeorgetown%2FGrTa%2FGeorgetown-GrTa-Neg-6---NDT-Districts-%40-Towson-University-Round-5.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Georgetown/GrTa/Georgetown-GrTa-Neg-6---NDT-Districts-@-Towson-University-Round-5.docx"
+  },
+  {
+    "school": "Georgetown",
+    "team": "Georgetown GrTa (Michael Greenberg - Leroy Tamfu)",
+    "tournament": "6 - NDT Districts @ Towson University",
+    "round": "Round 6",
+    "side": "Aff",
+    "opponent": "Liberty CL",
+    "judge": "Fuchs, Jay",
+    "roundReport": "1AC - Zombies 2NR - Capitalism K",
+    "previewUrl": null,
+    "downloadUrl": null
   },
   {
     "school": "Georgetown",
@@ -26230,90 +26314,6 @@
     "roundReport": "1AC Independent Contractors 1NC T-Strengthen, Cap K, UCF CP, T-Subsets, Warming Good 2NR T-Strengthen",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Neg-2-----D3-Round-8.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Neg-2-----D3-Round-8.docx"
-  },
-  {
-    "school": "Houston",
-    "team": "Houston HeSh (Anderson Hendrix - Yousef Shehata)",
-    "tournament": "0---Contact Info",
-    "round": "All",
-    "side": "Aff",
-    "opponent": "",
-    "judge": "",
-    "roundReport": "Anderson - he/they Yousef - he/him Emails: andersonthendrix@gmail.com yshehata.debate@gmail.com uhoustondebate@gmail.com Please let us know if you have any accommodations you would like us to make!",
-    "previewUrl": null,
-    "downloadUrl": null
-  },
-  {
-    "school": "Houston",
-    "team": "Houston HeSh (Anderson Hendrix - Yousef Shehata)",
-    "tournament": "1---Houston",
-    "round": "Round 1",
-    "side": "Aff",
-    "opponent": "North Texas BP",
-    "judge": "Erik Mathis",
-    "roundReport": "1AC---*NEW* Domestic Bargaining 2NR---Queerpessimism K 2AR---Condo Bad",
-    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeSh%2FHouston-HeSh-Aff-1---Houston-Round-1.docx",
-    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeSh/Houston-HeSh-Aff-1---Houston-Round-1.docx"
-  },
-  {
-    "school": "Houston",
-    "team": "Houston HeSh (Anderson Hendrix - Yousef Shehata)",
-    "tournament": "1---Houston",
-    "round": "Round 2",
-    "side": "Neg",
-    "opponent": "Monmouth FR",
-    "judge": "Storm Lasseter",
-    "roundReport": "1AC---Agriculture Workers 2NR---T-Strengthen",
-    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeSh%2FHouston-HeSh-Neg-1---Houston-Round-2.docx",
-    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeSh/Houston-HeSh-Neg-1---Houston-Round-2.docx"
-  },
-  {
-    "school": "Houston",
-    "team": "Houston HeSh (Anderson Hendrix - Yousef Shehata)",
-    "tournament": "1---Houston",
-    "round": "Round 3",
-    "side": "Neg",
-    "opponent": "UT San Antonio PA",
-    "judge": "T Weddington",
-    "roundReport": "1AC---AI Artists 2NR---T-Strengthen",
-    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeSh%2FHouston-HeSh-Neg-1---Houston-Round-3.docx",
-    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeSh/Houston-HeSh-Neg-1---Houston-Round-3.docx"
-  },
-  {
-    "school": "Houston",
-    "team": "Houston HeSh (Anderson Hendrix - Yousef Shehata)",
-    "tournament": "1---Houston",
-    "round": "Round 4",
-    "side": "Aff",
-    "opponent": "Trinity CO",
-    "judge": "Niko Sims",
-    "roundReport": "1AC---Domestic Bargaining 2NR---Cap K",
-    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeSh%2FHouston-HeSh-Aff-1---Houston-Round-4.docx",
-    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeSh/Houston-HeSh-Aff-1---Houston-Round-4.docx"
-  },
-  {
-    "school": "Houston",
-    "team": "Houston HeSh (Anderson Hendrix - Yousef Shehata)",
-    "tournament": "1---Houston",
-    "round": "Round 5",
-    "side": "Aff",
-    "opponent": "CSU Long Beach/Southwestern JF",
-    "judge": "Kc Vernon",
-    "roundReport": "1AC---Domestic Bargaining 2NR---Black Fem K",
-    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeSh%2FHouston-HeSh-Aff-1---Houston-Round-5.docx",
-    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeSh/Houston-HeSh-Aff-1---Houston-Round-5.docx"
-  },
-  {
-    "school": "Houston",
-    "team": "Houston HeSh (Anderson Hendrix - Yousef Shehata)",
-    "tournament": "1---Houston",
-    "round": "Round 6",
-    "side": "Neg",
-    "opponent": "Oklahoma DW",
-    "judge": "Eric Pelletier",
-    "roundReport": "1AC---Secondary Strikes 2NR---T-Strengthen",
-    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeSh%2FHouston-HeSh-Neg-1---Houston-Round-6.docx",
-    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeSh/Houston-HeSh-Neg-1---Houston-Round-6.docx"
   },
   {
     "school": "Houston",
@@ -33836,6 +33836,18 @@
     "opponent": "MoState KM",
     "judge": "Beutelspacher",
     "roundReport": "1AC---Federal CBAs. 1NC---T-Worker, K-Unions, DA-Russian LNG. 2NR---DA-Russian LNG.",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas FaBl (Gilead Falin - Chase Blaser)",
+    "tournament": "01---MAC",
+    "round": "Round 5",
+    "side": "Aff",
+    "opponent": "Kansas State LF",
+    "judge": "Anjan Roy",
+    "roundReport": "1AC---Federal CBAs. 1NC---CP-Taxes, DA-Midterms, CP-God of War, K-Dionysus. 2NR---K-Dionysus.",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -42836,6 +42848,78 @@
     "opponent": "",
     "judge": "",
     "roundReport": "",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Liberty",
+    "team": "Liberty KoTo (Nova Koenig - Elijah Tooley)",
+    "tournament": "D7",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "George Mason WW",
+    "judge": "Terrell Taylor",
+    "roundReport": "1AC - Blackcrit v.3 1NC - FW, Frame Subtraction, Right to Strike CP 2NR - FW",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FLiberty%2FKoTo%2FLiberty-KoTo-Aff-D7-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Liberty/KoTo/Liberty-KoTo-Aff-D7-Round-1.docx"
+  },
+  {
+    "school": "Liberty",
+    "team": "Liberty KoTo (Nova Koenig - Elijah Tooley)",
+    "tournament": "D7",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "George Mason DE",
+    "judge": "Jameson Balda",
+    "roundReport": "1AC - Black Notes 1NC - T, M4BL CP, Frame Subtraction, Cap K 2NR - T",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Liberty",
+    "team": "Liberty KoTo (Nova Koenig - Elijah Tooley)",
+    "tournament": "D7",
+    "round": "Round 3",
+    "side": "Aff",
+    "opponent": "Towson DP",
+    "judge": "Jay Fuchs",
+    "roundReport": "1AC - Blackcrit v.3 1NC - Frame Subtraction, Tactics 2NR - Tactics",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Liberty",
+    "team": "Liberty KoTo (Nova Koenig - Elijah Tooley)",
+    "tournament": "D7",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Georgetown LN",
+    "judge": "Tarang Mishra",
+    "roundReport": "1AC - Blackcrit v.3 1NC - FW, Historical Materialism K 2NR - FW",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Liberty",
+    "team": "Liberty KoTo (Nova Koenig - Elijah Tooley)",
+    "tournament": "D7",
+    "round": "Round 5",
+    "side": "Neg",
+    "opponent": "James Madison KP",
+    "judge": "Ben Biggs",
+    "roundReport": "1AC - Fed Workers 1NC - Disclosure, T-Right to Strike, ICE PIC, Stay Black and Die, Cap K, Stickup 2NR - Stickup",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Liberty",
+    "team": "Liberty KoTo (Nova Koenig - Elijah Tooley)",
+    "tournament": "D7",
+    "round": "Round 6",
+    "side": "Neg",
+    "opponent": "George Mason RT",
+    "judge": "Taylor Johnson",
+    "roundReport": "1AC - Sectoral Bargaining 1NC - T-Right to Strike, Stay Black and Die, Stickup, Cap K, Fiat K 2NR - Fiat K",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -64958,14 +65042,14 @@
   {
     "school": "Oklahoma",
     "team": "Oklahoma BuDa (Yobani Bustos - Daven Daniel)",
-    "tournament": "MAC/D3",
+    "tournament": "NDT D3 And The Mid America Championship",
     "round": "Round 1",
     "side": "Aff",
     "opponent": "Trinity CO",
     "judge": "Peyton Reeves",
     "roundReport": "1 AC---NRC 2 NR---Terrorism PIK",
-    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FOklahoma%2FBuDa%2FOklahoma-BuDa-Aff-MACD3-Round-1.docx",
-    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Oklahoma/BuDa/Oklahoma-BuDa-Aff-MACD3-Round-1.docx"
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FOklahoma%2FBuDa%2FOklahoma-BuDa-Aff-NDT-D3-And-The-Mid-America-Championship-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Oklahoma/BuDa/Oklahoma-BuDa-Aff-NDT-D3-And-The-Mid-America-Championship-Round-1.docx"
   },
   {
     "school": "Oklahoma",
@@ -78125,11 +78209,23 @@
     "tournament": "D3",
     "round": "Round 7",
     "side": "Neg",
-    "opponent": "",
+    "opponent": "MoState DN",
     "judge": "Ogundare",
     "roundReport": "1AC-Solidarity 1NC-T--Ungovernability, Ableism K 2NR-T--Ungovernability",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FUTSA%2FGiPa%2FUTSA-GiPa-Neg-D3-Round-7.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/UTSA/GiPa/UTSA-GiPa-Neg-D3-Round-7.docx"
+  },
+  {
+    "school": "UTSA",
+    "team": "UTSA GiPa (Rylie Gilbert - Mary Jo Paschall)",
+    "tournament": "D3",
+    "round": "Round 8",
+    "side": "Aff",
+    "opponent": "Baylor DL",
+    "judge": "Azad",
+    "roundReport": "1AC- 1NC- T/FW, Agreement CP, Cap K 2NR-T/FW, Agreement CP/Competition PIK",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FUTSA%2FGiPa%2FUTSA-GiPa-Aff-D3-Round-8.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/UTSA/GiPa/UTSA-GiPa-Aff-D3-Round-8.docx"
   },
   {
     "school": "UTSA",
@@ -86566,5 +86662,89 @@
     "roundReport": "1AC - Data Workers 1NC - T - CBR, Empire K 2NR - Empire K",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FWyoming%2FWiWi%2FWyoming-WiWi-Neg-9.-Texas-Round-8.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Wyoming/WiWi/Wyoming-WiWi-Neg-9.-Texas-Round-8.docx"
+  },
+  {
+    "school": "Houston",
+    "team": "Houston HeSh (Anderson Hendrix - Yousef Shehata)",
+    "tournament": "Contact",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": "Anderson - he/they Yousef - he/him Emails: andersonthendrix@gmail.com yshehata.debate@gmail.com uhoustondebate@gmail.com Please let us know if you have any accommodations you would like us to make!",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Houston",
+    "team": "Houston HeSh (Anderson Hendrix - Yousef Shehata)",
+    "tournament": "Houston",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "North Texas BP",
+    "judge": "Erik Mathis",
+    "roundReport": "1AC---*NEW* Domestic Bargaining 2NR---Queerpessimism K",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeSh%2FHouston-HeSh-Aff-Houston-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeSh/Houston-HeSh-Aff-Houston-Round-1.docx"
+  },
+  {
+    "school": "Houston",
+    "team": "Houston HeSh (Anderson Hendrix - Yousef Shehata)",
+    "tournament": "Houston",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Monmouth FR",
+    "judge": "Storm Lasseter",
+    "roundReport": "1AC---Agriculture Workers 2NR---T-Strengthen",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeSh%2FHouston-HeSh-Neg-Houston-Round-2.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeSh/Houston-HeSh-Neg-Houston-Round-2.docx"
+  },
+  {
+    "school": "Houston",
+    "team": "Houston HeSh (Anderson Hendrix - Yousef Shehata)",
+    "tournament": "Houston",
+    "round": "Round 3",
+    "side": "Neg",
+    "opponent": "UT San Antonio PA",
+    "judge": "T Weddington",
+    "roundReport": "1AC---AI Artists 2NR---T-Strengthen",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeSh%2FHouston-HeSh-Neg-Houston-Round-3.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeSh/Houston-HeSh-Neg-Houston-Round-3.docx"
+  },
+  {
+    "school": "Houston",
+    "team": "Houston HeSh (Anderson Hendrix - Yousef Shehata)",
+    "tournament": "Houston",
+    "round": "Round 4",
+    "side": "Aff",
+    "opponent": "Trinity CO",
+    "judge": "Niko Sims",
+    "roundReport": "1AC---Domestic Bargaining 2NR---Cap K",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeSh%2FHouston-HeSh-Aff-Houston-Round-4.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeSh/Houston-HeSh-Aff-Houston-Round-4.docx"
+  },
+  {
+    "school": "Houston",
+    "team": "Houston HeSh (Anderson Hendrix - Yousef Shehata)",
+    "tournament": "Houston",
+    "round": "Round 5",
+    "side": "Aff",
+    "opponent": "CSU Long Beach/Southwestern JF",
+    "judge": "Kc Vernon",
+    "roundReport": "1AC---Domestic Bargaining 2NR---Black Fem K",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeSh%2FHouston-HeSh-Aff-Houston-Round-5.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeSh/Houston-HeSh-Aff-Houston-Round-5.docx"
+  },
+  {
+    "school": "Houston",
+    "team": "Houston HeSh (Anderson Hendrix - Yousef Shehata)",
+    "tournament": "Houston",
+    "round": "Round 6",
+    "side": "Neg",
+    "opponent": "Oklahoma DW",
+    "judge": "Eric Pelletier",
+    "roundReport": "1AC---Secondary Strikes 2NR---T-Strengthen",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeSh%2FHouston-HeSh-Neg-Houston-Round-6.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeSh/Houston-HeSh-Neg-Houston-Round-6.docx"
   }
 ]
