@@ -2749,6 +2749,30 @@
   },
   {
     "school": "Binghamton",
+    "team": "Binghamton BrMc (Darwin Bryen - Lucas McLaughlin)",
+    "tournament": "5-JV/Novice Nats",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "West Point AR",
+    "judge": "Pav Reddy",
+    "roundReport": "1AC - Fed Workers 1NC - T-Subsets, Nietzsche K, Fourth Branch CP, T-Should, Case Turns (Spark) 2NR - Spark",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FBinghamton%2FBrMc%2FBinghamton-BrMc-Neg-5-JVNovice-Nats-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Binghamton/BrMc/Binghamton-BrMc-Neg-5-JVNovice-Nats-Round-1.docx"
+  },
+  {
+    "school": "Binghamton",
+    "team": "Binghamton BrMc (Darwin Bryen - Lucas McLaughlin)",
+    "tournament": "5-JV/Novice Nats",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "George Mason OT",
+    "judge": "Anthony Davila",
+    "roundReport": "1AC - Debt Strike 1NC - (Reversed) Automation DA, Cap Good DA, T-FW, Secondary Actions CP 2NR - T-FW",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FBinghamton%2FBrMc%2FBinghamton-BrMc-Aff-5-JVNovice-Nats-Round-2.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Binghamton/BrMc/Binghamton-BrMc-Aff-5-JVNovice-Nats-Round-2.docx"
+  },
+  {
+    "school": "Binghamton",
     "team": "Binghamton GaGu (Advika Gakhare - Jason Guo)",
     "tournament": "All Tournaments",
     "round": "All",
@@ -3230,6 +3254,18 @@
   {
     "school": "Cornell",
     "team": "Cornell DyVo (Matthew Dye - April Vorontsova)",
+    "tournament": "00 - Contact Info",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "Technology",
+    "judge": "",
+    "roundReport": "cornelldvdebate@gmail.com For some reason, caselist keeps disappearing our email out of the team notes.",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Cornell",
+    "team": "Cornell DyVo (Matthew Dye - April Vorontsova)",
     "tournament": "Binghamton",
     "round": "Round 1",
     "side": "Neg",
@@ -3622,6 +3658,30 @@
     "roundReport": "1AC Jianghu 2NR Black Feminism K",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FCornell%2FLiLi%2FCornell-LiLi-Aff-01%E2%80%94West-Point-Semis.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Cornell/LiLi/Cornell-LiLi-Aff-01—West-Point-Semis.docx"
+  },
+  {
+    "school": "Cornell",
+    "team": "Cornell LiLi (Terra Li - Davis Liang)",
+    "tournament": "02—Fairmont",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Wake Forest MN",
+    "judge": "Vincent H. Li",
+    "roundReport": "1AC Agricultural Workers 2NR Advantage CP Politics DA Strikes Turn",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FCornell%2FLiLi%2FCornell-LiLi-Neg-02%E2%80%94Fairmont-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Cornell/LiLi/Cornell-LiLi-Neg-02—Fairmont-Round-1.docx"
+  },
+  {
+    "school": "Cornell",
+    "team": "Cornell LiLi (Terra Li - Davis Liang)",
+    "tournament": "02—Fairmont",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "George Mason GN",
+    "judge": "Jesse Smith",
+    "roundReport": "1AC NEW Codework 2NR Black Disclosure",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FCornell%2FLiLi%2FCornell-LiLi-Aff-02%E2%80%94Fairmont-Round-2.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Cornell/LiLi/Cornell-LiLi-Aff-02—Fairmont-Round-2.docx"
   },
   {
     "school": "Cornell",
@@ -16705,6 +16765,18 @@
   },
   {
     "school": "George Mason",
+    "team": "George Mason GoNo (Del Gorman - Ches Noye)",
+    "tournament": "1---Navy",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "Kentucky",
+    "judge": "",
+    "roundReport": "",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FGeorgeMason%2FGoNo%2FGeorgeMason-GoNo-Aff-1---Navy-Round-2.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/GeorgeMason/GoNo/GeorgeMason-GoNo-Aff-1---Navy-Round-2.docx"
+  },
+  {
+    "school": "George Mason",
     "team": "George Mason HaBa (Hiba Haroon - Oluwatomisin Badmus)",
     "tournament": "Navy",
     "round": "Round 2",
@@ -18428,6 +18500,30 @@
     "opponent": "///",
     "judge": "Nick Loew (fav coach ever)",
     "roundReport": "gmuretweet@gmail.com alocon389@gmai.com mason-debate@googlegroups.com",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason WiPo (Benjamin Witkov - Isabelle Poteet)",
+    "tournament": "1---JV Novi Nats",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "Wake LS",
+    "judge": "Horne",
+    "roundReport": "1AC - Fed Workers v2 1NC - T Subsets, Midterms DA, Adv CP, China DA, Rates DA 2NR - China DA",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason WiPo (Benjamin Witkov - Isabelle Poteet)",
+    "tournament": "1---JV Novi Nats",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Southwestern MF",
+    "judge": "Specker",
+    "roundReport": "1AC - Debate Strike 1NC - T, Ballot PIK, Commodification K, Right to Strike CP, ASPEC, CT Cap Good 2NR - T, Ballot PIK",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -32857,6 +32953,30 @@
   },
   {
     "school": "Kansas",
+    "team": "Kansas BlSu (Chase Blaser - Iman Suleman)",
+    "tournament": "1---Texas",
+    "round": "Round 1",
+    "side": "Neg",
+    "opponent": "Michigan State JS",
+    "judge": "Dan Bannister",
+    "roundReport": "1AC---Federal Workers 2NR---Agency Flex DA",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FKansas%2FBlSu%2FKansas-BlSu-Neg-1---Texas-Round-1.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Kansas/BlSu/Kansas-BlSu-Neg-1---Texas-Round-1.docx"
+  },
+  {
+    "school": "Kansas",
+    "team": "Kansas BlSu (Chase Blaser - Iman Suleman)",
+    "tournament": "1---Texas",
+    "round": "Round 2",
+    "side": "Aff",
+    "opponent": "UC Berkeley MR",
+    "judge": "Viveth Karthikeyan",
+    "roundReport": "1AC---Federal CBAs 2NR---Cap K",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FKansas%2FBlSu%2FKansas-BlSu-Aff-1---Texas-Round-2.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Kansas/BlSu/Kansas-BlSu-Aff-1---Texas-Round-2.docx"
+  },
+  {
+    "school": "Kansas",
     "team": "Kansas BlTe (Chase Blaser - Jaxson Terreros)",
     "tournament": "1---Minnesota",
     "round": "Round 1",
@@ -43310,6 +43430,18 @@
   {
     "school": "Liberty",
     "team": "Liberty HaHa (Isaiah Hathaway - Isaac Hathaway)",
+    "tournament": "New School",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": "",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FLiberty%2FHaHa%2FLiberty-HaHa-Aff-New-School-All-Rounds.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Liberty/HaHa/Liberty-HaHa-Aff-New-School-All-Rounds.docx"
+  },
+  {
+    "school": "Liberty",
+    "team": "Liberty HaHa (Isaiah Hathaway - Isaac Hathaway)",
     "tournament": "Texas",
     "round": "Round 3",
     "side": "Neg",
@@ -43861,6 +43993,30 @@
   },
   {
     "school": "Liberty",
+    "team": "Liberty LaTi (Taylor Landeros-Jimenez - Jozzelynn Tinch)",
+    "tournament": "New School",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": "",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FLiberty%2FLaTi%2FLiberty-LaTi-Aff-New-School-All-Rounds.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Liberty/LaTi/Liberty-LaTi-Aff-New-School-All-Rounds.docx"
+  },
+  {
+    "school": "Liberty",
+    "team": "Liberty LaTi (Taylor Landeros-Jimenez - Jozzelynn Tinch)",
+    "tournament": "New School",
+    "round": "All",
+    "side": "Neg",
+    "opponent": "",
+    "judge": "",
+    "roundReport": "",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FLiberty%2FLaTi%2FLiberty-LaTi-Neg-New-School-All-Rounds.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Liberty/LaTi/Liberty-LaTi-Neg-New-School-All-Rounds.docx"
+  },
+  {
+    "school": "Liberty",
     "team": "Liberty PeRo (Sophia Peters - Ava Ronchetti)",
     "tournament": "Navy",
     "round": "All",
@@ -43870,6 +44026,30 @@
     "roundReport": "",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FLiberty%2FPeRo%2FLiberty-PeRo-Aff-Navy-All-Rounds.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Liberty/PeRo/Liberty-PeRo-Aff-Navy-All-Rounds.docx"
+  },
+  {
+    "school": "Liberty",
+    "team": "Liberty PeRo (Sophia Peters - Ava Ronchetti)",
+    "tournament": "New School",
+    "round": "Round 4",
+    "side": "Neg",
+    "opponent": "Suffolk DZ",
+    "judge": "",
+    "roundReport": "",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FLiberty%2FPeRo%2FLiberty-PeRo-Neg-New-School-Round-4.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Liberty/PeRo/Liberty-PeRo-Neg-New-School-Round-4.docx"
+  },
+  {
+    "school": "Liberty",
+    "team": "Liberty PeRo (Sophia Peters - Ava Ronchetti)",
+    "tournament": "New School",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "",
+    "judge": "",
+    "roundReport": "",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FLiberty%2FPeRo%2FLiberty-PeRo-Aff-New-School-All-Rounds.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Liberty/PeRo/Liberty-PeRo-Aff-New-School-All-Rounds.docx"
   },
   {
     "school": "Liberty",
@@ -44144,6 +44324,30 @@
     "opponent": "GMU CO",
     "judge": "Jefferson Yahom, Samantha Godbey, Joe Patrice",
     "roundReport": "1AC- Dying Better 1NC- T/FW, Academy, Secondary Actions CP 2NR-T/FW",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Liberty",
+    "team": "Liberty YoEt (Elaine Yoon - Hunter Etienne)",
+    "tournament": "JV/Novice Nationals",
+    "round": "Round 1",
+    "side": "Aff",
+    "opponent": "GMU BH",
+    "judge": "Joe Patrice",
+    "roundReport": "1AC- Dying Better 1NC- T, Procedural, Set Col 2NR- Set Col",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Liberty",
+    "team": "Liberty YoEt (Elaine Yoon - Hunter Etienne)",
+    "tournament": "JV/Novice Nationals",
+    "round": "Round 2",
+    "side": "Neg",
+    "opponent": "Wake LS",
+    "judge": "Vincent Li",
+    "roundReport": "1AC- Farmworkers 2NR- T- Resolved, Case, Extinction Voter",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -78331,7 +78535,7 @@
     "side": "Neg",
     "opponent": "Houston IF",
     "judge": "Kaine Cherry",
-    "roundReport": "1AC - A.L.I.V.E 2NR - None of your damn business via email at all i wont be disclosing this because this round was fucked up #lethoesbe",
+    "roundReport": "1AC - A.L.I.V.E 2NR - None of your damn business dont email at all i wont be disclosing this because this round was fucked up #lethoesbe",
     "previewUrl": null,
     "downloadUrl": null
   },
