@@ -12,7 +12,7 @@
   "Binghamton": {
     "Binghamton Novices": 16,
     "Binghamton BrHa (Darwin Bryen - Elise Harshbarger)": 26,
-    "Binghamton BrMc (Darwin Bryen - Lucas McLaughlin)": 25,
+    "Binghamton BrMc (Darwin Bryen - Lucas McLaughlin)": 29,
     "Binghamton GaGu (Advika Gakhare - Jason Guo)": 1,
     "Binghamton RaRo (Arusha Ramaswamy - Arryana Robinson)": 1,
     "Binghamton TrPa (Amanda Treulich - Nina Patel)": 9,
@@ -35,7 +35,7 @@
     "Cornell DiBa (Absa Diop - Mia Barratt)": 4,
     "Cornell DyVo (Matthew Dye - April Vorontsova)": 21,
     "Cornell LiDi (Davis Liang - Absa Diop)": 3,
-    "Cornell LiLi (Terra Li - Davis Liang)": 12,
+    "Cornell LiLi (Terra Li - Davis Liang)": 16,
     "Cornell MaTr (Sean Marcy - Alana Trevino)": 2
   },
   "CSU Fullerton": {
@@ -106,10 +106,12 @@
   },
   "George Mason": {
     "George Mason Novices": 2,
+    "George Mason AlSa (Alejandro Alegre - Noah Sanchez)": 0,
     "George Mason BeIv (Denzel Bell - Roman Ivarone)": 0,
     "George Mason BrSu (Jordan Bridgers - Amberly Sun)": 3,
     "George Mason DaEs (Austin Davis - Andre Esteves)": 40,
     "George Mason DaGo (Austin Davis - Del Gorman)": 21,
+    "George Mason ElIv (Sami Elsayed - Roman Ivarone)": 0,
     "George Mason ElSa (Sami Elsayed - Noah Sanchez)": 40,
     "George Mason FaVa (Riley Fariss - Reanna Vardhanapu)": 3,
     "George Mason GoNe (Del Gorman - Emebet Neale)": 1,
@@ -122,8 +124,8 @@
     "George Mason RiTa (Dean Richter - Reet Taxali)": 43,
     "George Mason RoBe (Camila Rosa Perez Montes - Denzel Bell)": 4,
     "George Mason RoSu (Camila Rosa-Perez Montes - Amberly Sun)": 2,
-    "George Mason TaOC (Reet Taxali - Autumn OConnor)": 2,
-    "George Mason WiPo (Benjamin Witkov - Isabelle Poteet)": 2,
+    "George Mason TaOC (Reet Taxali - Autumn OConnor)": 5,
+    "George Mason WiPo (Benjamin Witkov - Isabelle Poteet)": 6,
     "George Mason WrWi (Ashley Wright - Ben Witkov)": 57
   },
   "Georgetown": {
@@ -211,7 +213,7 @@
     "Kansas BlCh (Chase Blaser - Kavinayashri Chidambaranathan)": 8,
     "Kansas BlMc (Chase Blaser - Sean McConnell)": 6,
     "Kansas BlPa (Chase Blaser - Lucy Pace)": 22,
-    "Kansas BlSu (Chase Blaser - Iman Suleman)": 2,
+    "Kansas BlSu (Chase Blaser - Iman Suleman)": 8,
     "Kansas BlTe (Chase Blaser - Jaxson Terreros)": 8,
     "Kansas BrWa (Connor Brown - Henry Walawender)": 48,
     "Kansas ChFa (Harris Chaudhry - Gilly Falin)": 25,
@@ -274,7 +276,7 @@
     "Liberty SoSp (Alanna Soares - Will Spencer)": 1,
     "Liberty SpTo (Will Spencer - Elijah Tooley)": 1,
     "Liberty TiPe (Jozzelyn Tinch - Sophia Peters)": 1,
-    "Liberty YoEt (Elaine Yoon - Hunter Etienne)": 49
+    "Liberty YoEt (Elaine Yoon - Hunter Etienne)": 53
   },
   "Macalester College": {
     "Macalester College CoDu (Maggie Costello - Annabelle Durbin)": 9,
