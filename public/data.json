@@ -2821,6 +2821,18 @@
   },
   {
     "school": "Binghamton",
+    "team": "Binghamton BrMc (Darwin Bryen - Lucas McLaughlin)",
+    "tournament": "5-JV/Novice Nats",
+    "round": "Quarters",
+    "side": "Aff",
+    "opponent": "George Mason GN",
+    "judge": "Kaleb Horne, Eric Maag, Ryan Wash",
+    "roundReport": "1AC - Debt Strike 1NC - Preemption Voter, Afro-Pessimism, PIK, Case 2NR - PIK",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FBinghamton%2FBrMc%2FBinghamton-BrMc-Aff-5-JVNovice-Nats-Quarters.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Binghamton/BrMc/Binghamton-BrMc-Aff-5-JVNovice-Nats-Quarters.docx"
+  },
+  {
+    "school": "Binghamton",
     "team": "Binghamton GaGu (Advika Gakhare - Jason Guo)",
     "tournament": "All Tournaments",
     "round": "All",
@@ -3778,6 +3790,18 @@
     "roundReport": "1AC Antitrust 2NR Melancholia K",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FCornell%2FLiLi%2FCornell-LiLi-Neg-02%E2%80%94Fairmont-Round-6.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Cornell/LiLi/Cornell-LiLi-Neg-02—Fairmont-Round-6.docx"
+  },
+  {
+    "school": "Cornell",
+    "team": "Cornell LiLi (Terra Li - Davis Liang)",
+    "tournament": "02—Fairmont",
+    "round": "Quarters",
+    "side": "Aff",
+    "opponent": "George Mason PW",
+    "judge": "Panel",
+    "roundReport": "1AC NEW Universalism 2NR Polaroid Sunglasses CP Superforecasters CP Evaluate the debate after the 1NC",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FCornell%2FLiLi%2FCornell-LiLi-Aff-02%E2%80%94Fairmont-Quarters.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Cornell/LiLi/Cornell-LiLi-Aff-02—Fairmont-Quarters.docx"
   },
   {
     "school": "Cornell",
@@ -15691,7 +15715,7 @@
     "side": "Aff",
     "opponent": "Emory CR",
     "judge": "Temitope Ogundare",
-    "roundReport": "1AC - Black Note 1NC - T-USFG, Cap K, Daoism K 2NR - Framework",
+    "roundReport": "1AC - Black Note 1NC - T-USFG, Cap K, Daoism K 2NR - T-USFG",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -18704,6 +18728,30 @@
     "opponent": "Cornell LL",
     "judge": "Chiri",
     "roundReport": "1AC - Antitrust 1NC - T CBR, Melancholia K, Chinese New Year Procedural 2NR - Melancholia K",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason WiPo (Benjamin Witkov - Isabelle Poteet)",
+    "tournament": "1---JV Novi Nats",
+    "round": "Quarters",
+    "side": "Neg",
+    "opponent": "Cornell LL",
+    "judge": "Chiri, Davila, Smith",
+    "roundReport": "1AC - Kant 1NC - T subsets, T Pre Existing, New Affs Bad, Superforecasters CP, Concon CP, Cap K, UCF CP, NLRB DA, Paradox 2NC - Polaroid Sunglasses CP, Taoism K 2NR - Polaroid Sunglasses CP, Superforecasters CP, Paradox",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason WiPo (Benjamin Witkov - Isabelle Poteet)",
+    "tournament": "1---JV Novi Nats",
+    "round": "Semis",
+    "side": "Aff",
+    "opponent": "Liberty EY",
+    "judge": "Puerto, Godbey, Smith",
+    "roundReport": "1AC - Sectoral Bargaining 1NC - T CBR, NGA CP, Migrants K, Extinction K, ConCon CP, Housing DA, Midterms DA 2NR - T CBR",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -43183,7 +43231,7 @@
     "side": "Neg",
     "opponent": "UTD RP",
     "judge": "Ryan Cavanaugh, Maile Huffman",
-    "roundReport": "1AC - broad-based bargaining across supply chains and legalize secondary actions in the United States for: -worker information and the production of information -independent contractors and informal workers -employer’s use of algorithms and digital technologies. 2NR - Black Queer Feminism",
+    "roundReport": "1AC - broad-based bargaining across supply chains and legalize secondary actions in the United States for: -worker information and the production of information -independent contractors and informal workers -employer’s use of algorithms and digital technologies. 2NR - Black Queer Feminism K",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -43195,7 +43243,7 @@
     "side": "Aff",
     "opponent": "Purdue HH",
     "judge": "Bennett McGraw",
-    "roundReport": "1AC - Ecstatic Breathing 1NC - Fwk, Cap, Disclosure, Ballot Pik 2NR - Fwk",
+    "roundReport": "1AC - Ecstatic Breathing 1NC - Fwk, Cap K, Disclosure, Ballot Pik 2NR - Fwk",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -43255,7 +43303,7 @@
     "side": "Aff",
     "opponent": "Michigan CC",
     "judge": "Spencer Roetlin",
-    "roundReport": "1AC - Ecstatic Breathing 1NC - Fwk, Cap, Secondary Strikes CP 2NR - Fwk",
+    "roundReport": "1AC - Ecstatic Breathing 1NC - Fwk, Cap K, Secondary Strikes CP 2NR - Fwk",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -43267,7 +43315,7 @@
     "side": "Aff",
     "opponent": "USC DT",
     "judge": "Ralph Anderson",
-    "roundReport": "1AC - Ecstatic Breathing 1NC - Fwk, Cap, Ballot Pik, Correctional Workers CP 2NR - Ballot Pik",
+    "roundReport": "1AC - Ecstatic Breathing 1NC - Fwk, Cap K, Ballot Pik, Correctional Workers CP 2NR - Ballot Pik",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -43315,7 +43363,7 @@
     "side": "Aff",
     "opponent": "Kansas BJ",
     "judge": "Jazmine Pickens",
-    "roundReport": "1AC - Ecstatic Breathing 1NC - Cap 2NR - Cap",
+    "roundReport": "1AC - Ecstatic Breathing 1NC - Cap K 2NR - Cap K",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -43327,7 +43375,7 @@
     "side": "Aff",
     "opponent": "CSU Long Beach OM",
     "judge": "Max Weissner",
-    "roundReport": "1AC - Ecstatic Breathing 1NC - Fwk, Cap, Frame Subtraction 2NR - Cap",
+    "roundReport": "1AC - Ecstatic Breathing 1NC - Fwk, Cap K, Frame Subtraction 2NR - Cap K",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -43351,7 +43399,7 @@
     "side": "Neg",
     "opponent": "Georgetown GT",
     "judge": "Jay Fuchs",
-    "roundReport": "1AC - Zombie 2NR - Black Queer Feminism",
+    "roundReport": "1AC - Zombies 2NR - Black Queer Feminism K",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -43363,7 +43411,7 @@
     "side": "Aff",
     "opponent": "GMU RS",
     "judge": "Natalie Yehezkel-Stolarski",
-    "roundReport": "1AC - Ecstatic Breathing 1NC - Semiocap 2NR - Semiocap",
+    "roundReport": "1AC - Ecstatic Breathing 1NC - Semiocap K 2NR - Semiocap K",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -43386,8 +43434,8 @@
     "round": "Doubles",
     "side": "Aff",
     "opponent": "Harvard DS",
-    "judge": "DJ Williams, Dimarvin Puerto, Joshua Michael, Roy Rinehart, Ben Biggs,",
-    "roundReport": "1AC - Ecstatic Breathing 1NC - Fwk, Cap 2NR - Fwk, Cap link, Unions good from case",
+    "judge": "DJ Williams, Dimarvin Puerto, Joshua Michael, Roy Rinehart, Ben Biggs",
+    "roundReport": "1AC - Ecstatic Breathing 1NC - Fwk, Cap K 2NR - Fwk, Cap link, Unions good from case",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -43423,7 +43471,7 @@
     "side": "Aff",
     "opponent": "Wake LW",
     "judge": "Manny Navarrete",
-    "roundReport": "1AC - Ecstatic Breathing 1NC - Cap, Tactics, Word Pic 2NR - Cap",
+    "roundReport": "1AC - Ecstatic Breathing 1NC - Cap K, Tactics, Word Pic 2NR - Cap K",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -43483,7 +43531,7 @@
     "side": "Aff",
     "opponent": "UTD RP",
     "judge": "Spencer Roetlin",
-    "roundReport": "1AC - Ecstatic Breathing 1NC - Fwk, Cap, Unions K (on case) 2NR - Fwk",
+    "roundReport": "1AC - Ecstatic Breathing 1NC - Fwk, Cap K, Unions K (on case) 2NR - Fwk",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -43531,7 +43579,7 @@
     "side": "Aff",
     "opponent": "Baylor MP",
     "judge": "Alaina Walberg",
-    "roundReport": "1AC - Ecstatic Breathing 1NC - Fwk, Cap, Ballot Pik 2NR - Cap",
+    "roundReport": "1AC - Ecstatic Breathing 1NC - Fwk, Cap K, Ballot Pik 2NR - Cap",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -43579,7 +43627,7 @@
     "side": "Aff",
     "opponent": "GMU RT",
     "judge": "Kumail Zaidi",
-    "roundReport": "1AC - Ecstatic Breathing 1NC - Fwk, Cap, Secondary Strikes CP 2NR - Cap",
+    "roundReport": "1AC - Ecstatic Breathing 1NC - Fwk, Cap K, Secondary Strikes CP 2NR - Cap K",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -43615,7 +43663,7 @@
     "side": "Neg",
     "opponent": "Georgetown GT",
     "judge": "Jay Fuchs",
-    "roundReport": "1AC - Zombies 2NR - Cap",
+    "roundReport": "1AC - Zombies 2NR - Cap K",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -44431,7 +44479,7 @@
     "side": "Neg",
     "opponent": "Rochester BC",
     "judge": "TJ Buttgereit",
-    "roundReport": "1AC- Codetermination 1NC-Ghost Labor 2NR- Ghost Labor/Case",
+    "roundReport": "1AC- Codetermination 2NR- Ghost Labor/Case",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -44648,6 +44696,30 @@
     "opponent": "Navy HK",
     "judge": "AJ Warne",
     "roundReport": "1AC- Disabled Workers 2NR- Ghost Labor",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Liberty",
+    "team": "Liberty YoEt (Elaine Yoon - Hunter Etienne)",
+    "tournament": "JV/Novice Nats",
+    "round": "Quarters",
+    "side": "Neg",
+    "opponent": "Southwestern AF",
+    "judge": "Jackie Poapst, Pav Reddy, Vincent Li",
+    "roundReport": "1AC- Black Girl Survival 2NR- M4BL CP, Case",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "Liberty",
+    "team": "Liberty YoEt (Elaine Yoon - Hunter Etienne)",
+    "tournament": "JV/Novice Nats",
+    "round": "Semis",
+    "side": "Neg",
+    "opponent": "Liberty PW",
+    "judge": "Dimarvin Puerto, Samantha Godbey, Jesse Smith",
+    "roundReport": "1AC- Sectoral Bargaining 2NR- T- RTS",
     "previewUrl": null,
     "downloadUrl": null
   },
