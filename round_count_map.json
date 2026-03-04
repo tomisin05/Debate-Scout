@@ -106,16 +106,13 @@
   },
   "George Mason": {
     "George Mason Novices": 2,
-    "George Mason AlSa (Alejandro Alegre - Noah Sanchez)": 0,
-    "George Mason BeIv (Denzel Bell - Roman Ivarone)": 0,
     "George Mason BrSu (Jordan Bridgers - Amberly Sun)": 3,
     "George Mason DaEs (Austin Davis - Andre Esteves)": 40,
     "George Mason DaGo (Austin Davis - Del Gorman)": 21,
-    "George Mason ElIv (Sami Elsayed - Roman Ivarone)": 0,
+    "George Mason ElIv (Sami Elsayed - Roman Ivarone)": 10,
     "George Mason ElSa (Sami Elsayed - Noah Sanchez)": 40,
     "George Mason FaVa (Riley Fariss - Reanna Vardhanapu)": 3,
     "George Mason GoNe (Del Gorman - Emebet Neale)": 1,
-    "George Mason GoNo (Del Gorman - Ches Noye)": 2,
     "George Mason HaBa (Hiba Haroon - Oluwatomisin Badmus)": 1,
     "George Mason OCNe (Autumn OConnor - Emebet Neale)": 18,
     "George Mason PoAl (Isabelle Poteet - Alejandro Alegre)": 2,
@@ -180,7 +177,7 @@
     "Houston ShIb (Bryce Sheffield - Oliver Ibarra)": 9
   },
   "Indiana": {
-    "Indiana Novices": 3,
+    "Indiana Novices": 0,
     "Indiana FiTr (Zander Fish - Maia Truemper)": 39,
     "Indiana FoGa (Adam Foudali - Rowlin Garcia)": 0,
     "Indiana JoDu (Lilly Jones - Jay Duggal)": 37,
@@ -280,7 +277,7 @@
   },
   "Macalester College": {
     "Macalester College CoDu (Maggie Costello - Annabelle Durbin)": 9,
-    "Macalester College HaKo (Isabella Harrison - Will Kochel)": 7,
+    "Macalester College HaKo (Isabella Harrison - Will Kochel)": 9,
     "Macalester College HaWi (Isabella Harrison - Noah Winters)": 10,
     "Macalester College KiFl (Owen Killoran - Aidi Flores)": 1,
     "Macalester College RoXu (Lewis Robinson - Fiona Xue)": 1,
