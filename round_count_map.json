@@ -3,7 +3,7 @@
     "Arizona State SaSm (Abhinav Saxena - Aden Smith)": 19
   },
   "Baylor": {
-    "Baylor DaLa (Omar Darwish - Lorilei Lassen)": 17,
+    "Baylor DaLa (Omar Darwish - Lorilei Lassen)": 26,
     "Baylor KeBe (Anastasia Keeler - Spencer Benton)": 52,
     "Baylor LoLi (Izzie Locicero - Josh Li)": 19,
     "Baylor MePh (Jessie Merriwether - Tyler Phillips)": 57,
@@ -58,7 +58,7 @@
   },
   "Dartmouth College": {
     "Dartmouth College BeCa (Sheima Ben-Abdallah - Katie Carpenter)": 32,
-    "Dartmouth College BrGo (Cooper Brody - Saanvi Goyal)": 28,
+    "Dartmouth College BrGo (Cooper Brody - Saanvi Goyal)": 29,
     "Dartmouth College CaGo (Nora Cai - Leah Goldberg)": 57,
     "Dartmouth College GuMo (Saturn Guo - Katharine Morley)": 8,
     "Dartmouth College HaGo (Alex Hant - Jared Gonzalez)": 17,
@@ -89,7 +89,7 @@
     "Emory GrCh (Alyson Granchi - Jason Chen)": 37,
     "Emory JiRa (Tvisha Jindal - Adhitya Ravikumar)": 8,
     "Emory KiSh (Aaron Kim - Jared Shirts)": 47,
-    "Emory LoYa (Lucas Lobo - Coralynn Yang)": 59,
+    "Emory LoYa (Lucas Lobo - Coralynn Yang)": 63,
     "Emory OkPa (Michi Okahata - Chan Park)": 15,
     "Emory PeSt (Madeleine Pelli - Maggie Stearns)": 5,
     "Emory RuYo (Serena Rupp - Jack Young)": 54,
@@ -98,7 +98,7 @@
     "Emory StTa (Maggie Stearns - Ethan Tai)": 24,
     "Emory TaTa (Kento Taylor - Ethan Tai)": 6,
     "Emory WaKi (Tinghan Wang - Samar Kibe)": 39,
-    "Emory WoTa (Miles Woods - Alva Tang)": 13,
+    "Emory WoTa (Miles Woods - Alva Tang)": 19,
     "Emory ZhCo (Evelyn Zhang - Justin Cooper)": 6,
     "Emory grKi (alyson granchi - Samar Kibe)": 0
   },
@@ -130,7 +130,7 @@
   },
   "Georgetown": {
     "Georgetown Novices": 0,
-    "Georgetown AgCo (Arnav Aggarwal - Connelly Cowan)": 80,
+    "Georgetown AgCo (Arnav Aggarwal - Connelly Cowan)": 86,
     "Georgetown CoXi (Jackie Correa - Caroline Xiao)": 17,
     "Georgetown GrTa (Michael Greenberg - Leroy Tamfu)": 52,
     "Georgetown KlLi (Megan Klingler - Nathan Li)": 21,
@@ -183,7 +183,7 @@
     "Indiana Novices": 3,
     "Indiana FiTr (Zander Fish - Maia Truemper)": 39,
     "Indiana FoGa (Adam Foudali - Rowlin Garcia)": 0,
-    "Indiana JoDu (Lilly Jones - Jay Duggal)": 37,
+    "Indiana JoDu (Lily Jones - Jay Duggal)": 44,
     "Indiana PeDu (Violet Peotter - Jay Duggal)": 2,
     "Indiana ThFl (Aubrey Thomas - Ally Fleischman)": 3
   },
@@ -257,7 +257,7 @@
     "Kentucky AuSk (Maddie Augustine - Jacob Skinner)": 0,
     "Kentucky BiSc (Hana Bisevac - Haddie Schedler)": 2,
     "Kentucky ErRu (Wheezy Ervin - Jonn Rushing)": 14,
-    "Kentucky GaSl (Ariel Gabay - Regan Slish)": 57,
+    "Kentucky GaSl (Ariel Gabay - Regan Slish)": 60,
     "Kentucky RiWa (Jeremiah Rimpson - Amanti Washington)": 29,
     "Kentucky RuSc (Jonn Rushing - Haddie Schedler)": 13,
     "Kentucky RuSk (Jonn Rushing - Jacob Skinner)": 17,
@@ -554,7 +554,7 @@
   "UTSA": {
     "UTSA AlPa (Nicolas Alonzo - Ashutosh Panda)": 13,
     "UTSA CaGa (Iliana Carrillo - Emilio Garza)": 49,
-    "UTSA GiJa (Rylie Gilbert - Makenna Jackson)": 21,
+    "UTSA GiJa (Rylie Gilbert - Makenna Jackson)": 22,
     "UTSA GiMa (Rylie Gilbert - Tala Mahjoub)": 7,
     "UTSA GiPa (Rylie Gilbert - Mary Jo Paschall)": 10,
     "UTSA JaSr (Makenna Jackson - Aditi Srivatsan)": 1,
@@ -614,7 +614,7 @@
     "Western Kentucky StSh (Joshua St Peter - Chase Shockley)": 4
   },
   "Wichita State": {
-    "Wichita State GrMo (Marianne Griffith - Miguel Molina Chavez)": 63
+    "Wichita State GrMo (Marianne Griffith - Miguel Molina Chavez)": 65
   },
   "Wyoming": {
     "Wyoming CaHa (Jaden Campbell - Jeremiah Hawley)": 47,
