@@ -298,7 +298,7 @@
     "Marian MuRi (Evyn Muckerheide - Armoni Richardson)": 2
   },
   "Massachusetts Amherst": {
-    "Massachusetts Amherst LeMo (Jamie Levitan - Maguene Moussavou)": 0
+    "Massachusetts Amherst LeMo (Jamie Levitan - Maguene Moussavou)": 1
   },
   "Miami": {
     "Miami Novices": 2
@@ -425,7 +425,7 @@
     "NYU KhKh (Akhil Khade - Muad Khalif)": 9,
     "NYU LeTa (Terry Lesane - Justin Tam)": 1,
     "NYU MaSa (Emmanuel Makinde - Vikram Saigal)": 13,
-    "NYU TrTs (Caitlin Travers - Justin Tseng)": 1,
+    "NYU TrTs (Caitlin Travers - Justin Tseng)": 15,
     "NYU XuSc (Benjamin Xu - Yaden Scharf)": 6,
     "NYU ZoLe (Tatum Zolkin - Alex Lee)": 8
   },
@@ -531,6 +531,7 @@
   "Utah": {
     "Utah BrBo (Aidan Brewer - Juan Boscan)": 2,
     "Utah BrVe (Aidan Brewer - Benji Verbeck-OBrien)": 1,
+    "Utah FuKi (Andrew Funai - Liam Kingery)": 1,
     "Utah FuSc (Andrew Funai - Jake Scott)": 1,
     "Utah HiBo (Myra Hicks - Juan Boscan)": 1,
     "Utah HiTy (Myra Hicks - Clara Tyler)": 1,
