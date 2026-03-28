@@ -1,17 +1,12 @@
 [
   {
-    "school": "Indiana",
-    "team": "Indiana JoDu (Lilly Jones - Jay Duggal)",
-    "error": "Round count mismatch: expected 37, got 0"
+    "school": "Baylor",
+    "team": "Baylor DaLa (Omar Darwish - Lorilei Lassen)",
+    "error": "Round count mismatch: expected 26, got 27"
   },
   {
-    "school": "Indiana",
-    "team": "Indiana PeDu (Violet Peotter - Jay Duggal)",
-    "error": "Round count mismatch: expected 2, got 0"
-  },
-  {
-    "school": "Indiana",
-    "team": "Indiana ThFl (Aubrey Thomas - Ally Fleischman)",
-    "error": "Round count mismatch: expected 3, got 0"
+    "school": "Massachusetts Amherst",
+    "team": "Massachusetts Amherst LeMo (Jamie Levitan - Maguene Moussavou)",
+    "error": "Round count mismatch: expected 2, got 3"
   }
 ]
