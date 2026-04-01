@@ -52,7 +52,7 @@
     "CSU Long Beach EsTo (Alessandra Escobar - Emerson Tobias)": 2,
     "CSU Long Beach GrTo (Brandon Griffin - Eric Tobias)": 11,
     "CSU Long Beach GuMe (Dorian Gurrola - Daniel Medina)": 7,
-    "CSU Long Beach OrMe (Curtis Ortega - Daniel Medina)": 87
+    "CSU Long Beach OrMe (Curtis Ortega - Daniel Medina)": 92
   },
   "CSU Northridge": {
     "CSU Northridge ThAg (Ellyana Thornton - Jorge Aguilar)": 1
@@ -60,7 +60,7 @@
   "Dartmouth College": {
     "Dartmouth College BeCa (Sheima Ben-Abdallah - Katie Carpenter)": 32,
     "Dartmouth College BrGo (Cooper Brody - Saanvi Goyal)": 29,
-    "Dartmouth College CaGo (Nora Cai - Leah Goldberg)": 66,
+    "Dartmouth College CaGo (Nora Cai - Leah Goldberg)": 67,
     "Dartmouth College GuMo (Saturn Guo - Katharine Morley)": 8,
     "Dartmouth College HaGo (Alex Hant - Jared Gonzalez)": 17,
     "Dartmouth College HaGu (Eli Hatton - Saturn Guo)": 10,
@@ -85,7 +85,7 @@
     "Emory CrTa (Thaddeus Cross - Kento Taylor)": 15,
     "Emory FeCa (Conor Feldman - Will Cannaday)": 3,
     "Emory GaRu (Daniel Gallagher - Serena Rupp)": 1,
-    "Emory GaSo (Daniel Gallagher - Ike Song)": 87,
+    "Emory GaSo (Daniel Gallagher - Ike Song)": 90,
     "Emory GeMa (Sanjith Geevarghese - Raleigh Maxwell)": 19,
     "Emory GrCh (Alyson Granchi - Jason Chen)": 37,
     "Emory JiRa (Tvisha Jindal - Adhitya Ravikumar)": 8,
@@ -127,11 +127,11 @@
     "George Mason RoSu (Camila Rosa-Perez Montes - Amberly Sun)": 2,
     "George Mason TaOC (Reet Taxali - Autumn OConnor)": 5,
     "George Mason WiPo (Benjamin Witkov - Isabelle Poteet)": 8,
-    "George Mason WrWi (Ashley Wright - Ben Witkov)": 70
+    "George Mason WrWi (Ashley Wright - Ben Witkov)": 72
   },
   "Georgetown": {
     "Georgetown Novices": 0,
-    "Georgetown AgCo (Arnav Aggarwal - Connelly Cowan)": 94,
+    "Georgetown AgCo (Arnav Aggarwal - Connelly Cowan)": 95,
     "Georgetown CoXi (Jackie Correa - Caroline Xiao)": 17,
     "Georgetown GrTa (Michael Greenberg - Leroy Tamfu)": 52,
     "Georgetown KlLi (Megan Klingler - Nathan Li)": 21,
@@ -157,7 +157,7 @@
     "Gonzaga WeWe (Dashiell Weinhardt - Kaelyn Wellman)": 10
   },
   "Harvard": {
-    "Harvard AoBo (Seiji Aoki - Jayden Bodet)": 32,
+    "Harvard AoBo (Seiji Aoki - Jayden Bodet)": 33,
     "Harvard AoLe (Seiji Aoki - Jamie Levitan)": 2,
     "Harvard BoSh (Jayden Bodet - Payton Shen)": 1,
     "Harvard ChSa (Dora Chen - Mirei Saneyoshi)": 24,
@@ -198,7 +198,7 @@
   "James Madison": {
     "James Madison Novices": 4,
     "James Madison BaHi (Madeline Barbee Doerfler - Lindsey Hilts)": 3,
-    "James Madison MaOe (Maggie Matzen - Anna Oehler)": 47,
+    "James Madison MaOe (Maggie Matzen - Anna Oehler)": 48,
     "James Madison PiKa (Maria Pinto - Giavanna Kardos)": 38
   },
   "Johnson County Community College": {
@@ -266,7 +266,7 @@
   },
   "Liberty": {
     "Liberty Novices": 1,
-    "Liberty CuLa (Jayden Cunningham - Emmalee Layton)": 76,
+    "Liberty CuLa (Jayden Cunningham - Emmalee Layton)": 77,
     "Liberty DaSt (Nathan Daley - Olivia Stene)": 3,
     "Liberty HaHa (Isaiah Hathaway - Isaac Hathaway)": 4,
     "Liberty JoSc (Katrina Jorquez - Lydia Schmidtler)": 3,
@@ -322,14 +322,14 @@
     "Michigan MoAl (Ava Moon - Ava Almand)": 25,
     "Michigan OuAg (Robert Ou - William Agustin)": 71,
     "Michigan OuJo (Robert Ou - John Joyce)": 7,
-    "Michigan ShSh (Avi Shah - Conner Shih)": 68,
+    "Michigan ShSh (Avi Shah - Conner Shih)": 71,
     "Michigan ShSh1 (Avi Shah - Rishi Shetty)": 8
   },
   "Michigan State": {
     "Michigan State Asst (Eleazar Asase - will sterbenc)": 24,
     "Michigan State FoMa (Isabella Foster - Henry Martin)": 80,
     "Michigan State GeSh (Arielle Gearring - Hina Shehzad)": 64,
-    "Michigan State GuLe (Joanna Gusis - Stephen Lewis)": 81,
+    "Michigan State GuLe (Joanna Gusis - Stephen Lewis)": 83,
     "Michigan State JaSc (Zaria Jarman - Glen Scully)": 57
   },
   "Minnesota": {
@@ -387,7 +387,7 @@
   "North Texas": {
     "North Texas BoVa (Ronen Bowman - Emanuel Vargas)": 48,
     "North Texas GaVa (Naren Ganesh - Emanuel Vargas)": 14,
-    "North Texas HaPa (Jack Hasper - Sumya Paruchuri)": 0,
+    "North Texas HaPa (Jack Hasper - Sumya Paruchuri)": 1,
     "North Texas HaVa (Jack Hasper - Damian Vazquez)": 3,
     "North Texas PaBo (Sumya Paruchuri - Ronen Bowman)": 18,
     "North Texas PaSh (Sumya Paruchuri - Nicholette Sharp)": 20,
@@ -399,7 +399,7 @@
     "Northern Iowa ChDo (Quinci Chapman - Burke Doyle)": 16,
     "Northern Iowa MiDo (Tony Miller - Burke Doyle)": 6,
     "Northern Iowa ScBa (Anthony Scott - Sabrina Barati)": 2,
-    "Northern Iowa VaMi (Kat Van Buren - Tony Miller)": 29
+    "Northern Iowa VaMi (Kat Van Buren - Tony Miller)": 30
   },
   "Northwestern": {
     "Northwestern ArHi (Ari Arceo - Brock Hines)": 8,
@@ -423,7 +423,7 @@
     "NYU ChGo (Grace Cheng - Andrea Gonzales)": 1,
     "NYU DeGa (Brian Delgado - Jaylin Galvan)": 1,
     "NYU GaBo (Jaylin Galvan - Lynette Bonsu)": 2,
-    "NYU JaTh (Anuj Jain - Callum Theiding)": 45,
+    "NYU JaTh (Anuj Jain - Callum Theiding)": 47,
     "NYU KhKh (Akhil Khade - Muad Khalif)": 9,
     "NYU LeTa (Terry Lesane - Justin Tam)": 1,
     "NYU MaSa (Emmanuel Makinde - Vikram Saigal)": 17,
@@ -497,7 +497,7 @@
   "Texas": {
     "Texas DaLi (Maahiyaa Datwani - Natasha Lippmann)": 3,
     "Texas DoPr (Rebecca Dong - Alexander Prieto)": 13,
-    "Texas FeLo (Lindsay Jade Feinstein - Samantha Low)": 65,
+    "Texas FeLo (Lindsay Jade Feinstein - Samantha Low)": 67,
     "Texas GaSt (Venkata Danush Gade - Devon Stevenson)": 28,
     "Texas GlGu (Elizabeth Glasper - Cynthia Guzman Ramirez)": 6,
     "Texas HaSu (Parker Hamstra - Blaine Sutton)": 16,
@@ -516,16 +516,16 @@
     "Trinity BaCr (Grant Barden - Leo Crowley)": 2,
     "Trinity BaKh (Grant Barden - Mariska Khalikov)": 33,
     "Trinity CrKh (Leo Crowley - Mariska Khalikov)": 8,
-    "Trinity CrOl (Leo Crowley - Faith Olabanji)": 17,
+    "Trinity CrOl (Leo Crowley - Faith Olabanji)": 28,
     "Trinity FrMu (Siam Freeman - Imaad Mustafa)": 0,
     "Trinity KhOl (Mariska Khalikov - Faith Olabanji)": 14,
-    "Trinity KiPa (Brooklyn King - Ruth Patterson)": 36
+    "Trinity KiPa (Brooklyn King - Ruth Patterson)": 37
   },
   "UC Berkeley": {
     "UC Berkeley BoUr (Ilan Boguslavsky - Molly Urfalian)": 57,
     "UC Berkeley GiSi (Dash Gilrain-Lennon - Aaron Situ)": 35,
     "UC Berkeley LiSm (Jenny Liu - Gabrielle Smith)": 3,
-    "UC Berkeley MeRe (Emilio Menotti - Riley Reichel)": 67
+    "UC Berkeley MeRe (Emilio Menotti - Riley Reichel)": 68
   },
   "UC Davis": {
     "UC Davis MiSh (Mateo Mijares - Umar Shaikh)": 4
