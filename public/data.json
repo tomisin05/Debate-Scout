@@ -2765,9 +2765,9 @@
     "tournament": "4 - Gotham",
     "round": "Round 4",
     "side": "Aff",
-    "opponent": "West Point KL",
+    "opponent": "West Point KR",
     "judge": "Michael Harrington",
-    "roundReport": "1AC - Council Democracy 1NC - T-CBR, T-Strengthen, Cap K, Court Clog DA, Midterms DA 2NR - T-CBR",
+    "roundReport": "1AC - Council Democracy 1NC - T-CBR, T-Strengthen, Cap K, Court Clog DA, Midterms DA 2NR – T-CBR",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FBinghamton%2FBrHa%2FBinghamton-BrHa-Aff-4---Gotham-Round-4.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Binghamton/BrHa/Binghamton-BrHa-Aff-4---Gotham-Round-4.docx"
   },
@@ -3091,7 +3091,7 @@
     "side": "Neg",
     "opponent": "West Point AR",
     "judge": "Pav Reddy",
-    "roundReport": "1AC - Fed Workers 1NC - T-Subsets, Nietzsche K, Fourth Branch CP, T-Should, Case Turns (Spark) 2NR - Spark",
+    "roundReport": "1AC - Fed Workers 1NC - T-Subsets, Nietzsche K, Fourth Branch CP, T-Should, Case Turns (Spark) 2NR – Spark",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FBinghamton%2FBrMc%2FBinghamton-BrMc-Neg-5-JVNovice-Nats-Round-1.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Binghamton/BrMc/Binghamton-BrMc-Neg-5-JVNovice-Nats-Round-1.docx"
   },
@@ -5886,7 +5886,7 @@
     "round": "Round 3",
     "side": "Aff",
     "opponent": "Michigan SS",
-    "judge": "Arjan Roy",
+    "judge": "Anjan Roy",
     "roundReport": "1AC - Black Holes 1NC - T-USFG, Capitalism K, Secondary Strikes CP, Court Clog DA, Case 2NR - T-USFG, Case",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FCSULongBeach%2FOrMe%2FCSULongBeach-OrMe-Aff-03---Operation%3A-Horse-Play-(Kentucky)-Round-3.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/CSULongBeach/OrMe/CSULongBeach-OrMe-Aff-03---Operation:-Horse-Play-(Kentucky)-Round-3.docx"
@@ -20984,6 +20984,18 @@
     "opponent": "NU LW",
     "judge": "George/T Weddington",
     "roundReport": "1AC---SB 1NC---SETTLER PSYCHO K 2NR---SETTLER PSYCHO K",
+    "previewUrl": null,
+    "downloadUrl": null
+  },
+  {
+    "school": "George Mason",
+    "team": "George Mason ReSh (Brenda Reyes - Amira Shananier)",
+    "tournament": "08---CEDA",
+    "round": "Triples",
+    "side": "Neg",
+    "opponent": "idk idgaf",
+    "judge": "some goat",
+    "roundReport": "idk we made it to trips, free palestine, fuck Ic3. GMU RS out!",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -77311,7 +77323,7 @@
     "side": "Neg",
     "opponent": "NYU MS",
     "judge": "Baker, Tilmes, Booth, Sherman",
-    "roundReport": "1AC - Welcome Home 2NR - Deliberative Democracy Counterplan 4-0 for slop",
+    "roundReport": "1AC - Welcome Home 2NR - Deliberative Democracy CP",
     "previewUrl": null,
     "downloadUrl": null
   },
@@ -77419,7 +77431,7 @@
     "side": "Aff",
     "opponent": "Northwestern NP",
     "judge": "Robinson",
-    "roundReport": "1AC - Title VII 1NC - New Affs Bad, Word PIK, Afropess K, Space Traders CP, Lash out DA on case 2NR - K",
+    "roundReport": "1AC - NEW Title VII 1NC - New Affs Bad, Word PIK, Afropess K, Space Traders CP, Lash out DA on case 2NR - K",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FNYU%2FJaTh%2FNYU-JaTh-Aff-55th-Annual-JW-Patterson-Debates-hosted-by-UK-Round-1.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/NYU/JaTh/NYU-JaTh-Aff-55th-Annual-JW-Patterson-Debates-hosted-by-UK-Round-1.docx"
   },
@@ -77707,7 +77719,7 @@
     "side": "Aff",
     "opponent": "UTSA CG",
     "judge": "Cavanaugh,Choudhury,Ella",
-    "roundReport": "1AC - Surveillance 2NR - Whore Spark, Erotic Colonialism was fun yall :D",
+    "roundReport": "1AC - Surveillance 2NR - Whore Spark, Erotic Colonialism ggs",
     "previewUrl": null,
     "downloadUrl": null
   },
