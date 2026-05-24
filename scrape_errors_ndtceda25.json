@@ -1,0 +1,152 @@
+[
+  {
+    "year": "ndtceda25",
+    "school": "Columbia",
+    "team": "Columbia AgHu (Sachin Aggarwal - Fiona Hu)",
+    "error": "round mismatch: got 0, expected 4"
+  },
+  {
+    "year": "ndtceda25",
+    "school": "Cornell",
+    "team": "Cornell DiBa (Absa Diop - Mia Barratt)",
+    "error": "round mismatch: got 0, expected 4"
+  },
+  {
+    "year": "ndtceda25",
+    "school": "Cornell",
+    "team": "Cornell DyVo (Matthew Dye - April Vorontsova)",
+    "error": "round mismatch: got 0, expected 29"
+  },
+  {
+    "year": "ndtceda25",
+    "school": "Cornell",
+    "team": "Cornell LiDi (Davis Liang - Absa Diop)",
+    "error": "round mismatch: got 0, expected 3"
+  },
+  {
+    "year": "ndtceda25",
+    "school": "Cornell",
+    "team": "Cornell LiLi (Terra Li - Davis Liang)",
+    "error": "round mismatch: got 0, expected 17"
+  },
+  {
+    "year": "ndtceda25",
+    "school": "Cornell",
+    "team": "Cornell MaTr (Sean Marcy - Alana Trevino)",
+    "error": "round mismatch: got 0, expected 2"
+  },
+  {
+    "year": "ndtceda25",
+    "school": "Harvard",
+    "team": "Harvard FaKu (Zackhery Facey - Kimtee Kundu)",
+    "error": "round mismatch: got 0, expected 4"
+  },
+  {
+    "year": "ndtceda25",
+    "school": "Harvard",
+    "team": "Harvard JiSy (Andrew Jin - Michi Synn)",
+    "error": "round mismatch: got 0, expected 17"
+  },
+  {
+    "year": "ndtceda25",
+    "school": "Harvard",
+    "team": "Harvard SyLo (Michi Synn - Ashley Lourenco)",
+    "error": "round mismatch: got 0, expected 15"
+  },
+  {
+    "year": "ndtceda25",
+    "school": "Houston",
+    "team": "Houston FeDo (Aaron Fernandez - Hector Doratt)",
+    "error": "round mismatch: got 0, expected 16"
+  },
+  {
+    "year": "ndtceda25",
+    "school": "Houston",
+    "team": "Houston FeSh (Aaron Fernandez - Bryce Sheffield)",
+    "error": "round mismatch: got 0, expected 8"
+  },
+  {
+    "year": "ndtceda25",
+    "school": "Houston",
+    "team": "Houston HeMa (Anderson Hendrix - Patrick Macasaet)",
+    "error": "round mismatch: got 0, expected 24"
+  },
+  {
+    "year": "ndtceda25",
+    "school": "Houston",
+    "team": "Houston HeSh (Anderson Hendrix - Yousef Shehata)",
+    "error": "round mismatch: got 0, expected 6"
+  },
+  {
+    "year": "ndtceda25",
+    "school": "Houston",
+    "team": "Houston IbFe (Oliver Ibarra - Aaron Fernandez)",
+    "error": "round mismatch: got 0, expected 52"
+  },
+  {
+    "year": "ndtceda25",
+    "school": "Macalester College",
+    "team": "Macalester College WiCo (Noah Winters - Maggie Costello)",
+    "error": "round mismatch: got 0, expected 6"
+  },
+  {
+    "year": "ndtceda25",
+    "school": "Macalester College",
+    "team": "Macalester College WiKo (Noah Winters - Will Kochel)",
+    "error": "round mismatch: got 0, expected 8"
+  },
+  {
+    "year": "ndtceda25",
+    "school": "Marian",
+    "team": "Marian HiHa (Aaron Hill - Tayjah Harper)",
+    "error": "round mismatch: got 0, expected 1"
+  },
+  {
+    "year": "ndtceda25",
+    "school": "Marian",
+    "team": "Marian HiRi (Aaron Hill - Armoni Richardson)",
+    "error": "round mismatch: got 0, expected 1"
+  },
+  {
+    "year": "ndtceda25",
+    "school": "Marian",
+    "team": "Marian MuRi (Evyn Muckerheide - Armoni Richardson)",
+    "error": "round mismatch: got 0, expected 2"
+  },
+  {
+    "year": "ndtceda25",
+    "school": "NYU",
+    "team": "NYU KhKh (Akhil Khade - Muad Khalif)",
+    "error": "round mismatch: got 0, expected 9"
+  },
+  {
+    "year": "ndtceda25",
+    "school": "NYU",
+    "team": "NYU LeTa (Terry Lesane - Justin Tam)",
+    "error": "round mismatch: got 0, expected 1"
+  },
+  {
+    "year": "ndtceda25",
+    "school": "NYU",
+    "team": "NYU MaSa (Emmanuel Makinde - Vikram Saigal)",
+    "error": "round mismatch: got 0, expected 19"
+  },
+  {
+    "year": "ndtceda25",
+    "school": "NYU",
+    "team": "NYU TrTs (Caitlin Travers - Justin Tseng)",
+    "error": "round mismatch: got 0, expected 15"
+  },
+  {
+    "year": "ndtceda25",
+    "school": "NYU",
+    "team": "NYU XuSc (Benjamin Xu - Yaden Scharf)",
+    "error": "round mismatch: got 0, expected 6"
+  },
+  {
+    "year": "ndtceda25",
+    "school": "NYU",
+    "team": "NYU ZoLe (Tatum Zolkin - Alex Lee)",
+    "error": "round mismatch: got 0, expected 15"
+  }
+]

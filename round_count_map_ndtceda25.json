@@ -1,18 +1,23 @@
 {
+  "Amherst College": {
+    "Amherst College LoOp (Ashley Lourenco - Joanne Opoku)": 4
+  },
   "Arizona State": {
     "Arizona State SaSm (Abhinav Saxena - Aden Smith)": 19
   },
   "Baylor": {
-    "Baylor DaLa (Omar Darwish - Lorilei Lassen)": 17,
-    "Baylor KeBe (Anastasia Keeler - Spencer Benton)": 52,
+    "Baylor DaLa (Omar Darwish - Lorilei Lassen)": 27,
+    "Baylor KeBe (Anastasia Keeler - Spencer Benton)": 65,
     "Baylor LoLi (Izzie Locicero - Josh Li)": 19,
     "Baylor MePh (Jessie Merriwether - Tyler Phillips)": 57,
-    "Baylor PeHo (Kyla Pertuit - Maddie Holland)": 0
+    "Baylor PeHo (Kyla Pertuit - Maddie Holland)": 0,
+    "Baylor PhLi (Tyler Phillips - Yueshuya Li)": 5
   },
   "Binghamton": {
     "Binghamton Novices": 16,
     "Binghamton BrHa (Darwin Bryen - Elise Harshbarger)": 26,
-    "Binghamton BrMc (Darwin Bryen - Lucas McLaughlin)": 23,
+    "Binghamton BrMc (Darwin Bryen - Lucas McLaughlin)": 38,
+    "Binghamton CoKi (Jeremiah Cohn - Ashley King)": 4,
     "Binghamton GaGu (Advika Gakhare - Jason Guo)": 1,
     "Binghamton RaRo (Arusha Ramaswamy - Arryana Robinson)": 1,
     "Binghamton TrPa (Amanda Treulich - Nina Patel)": 9,
@@ -24,7 +29,7 @@
     "Boston College RaBr (Anirudh Rangesh - Matthew Bruce)": 0
   },
   "Central Oklahoma": {
-    "Central Oklahoma WaEc (Kensington Walker - Eric Eckard)": 3,
+    "Central Oklahoma WaEc (Kensington Walker - Eric Eckard)": 13,
     "Central Oklahoma WaKa (Kensington Walker - Louis Kagiri)": 14
   },
   "Columbia": {
@@ -33,15 +38,15 @@
   },
   "Cornell": {
     "Cornell DiBa (Absa Diop - Mia Barratt)": 4,
-    "Cornell DyVo (Matthew Dye - April Vorontsova)": 20,
+    "Cornell DyVo (Matthew Dye - April Vorontsova)": 29,
     "Cornell LiDi (Davis Liang - Absa Diop)": 3,
-    "Cornell LiLi (Terra Li - Davis Liang)": 10,
+    "Cornell LiLi (Terra Li - Davis Liang)": 17,
     "Cornell MaTr (Sean Marcy - Alana Trevino)": 2
   },
   "CSU Fullerton": {
-    "CSU Fullerton CaDo (Samantha Catapang - Israel Dominguez)": 20,
+    "CSU Fullerton CaDo (Samantha Catapang - Israel Dominguez)": 28,
     "CSU Fullerton CaMa (Samantha Catapang - David Martinez)": 9,
-    "CSU Fullerton MaNw (David Martinez - Obinna Nworgu)": 5,
+    "CSU Fullerton MaNw (David Martinez - Obinna Nworgu)": 6,
     "CSU Fullerton MeAy (Jonathan Meza - Anirv Ayyala)": 7
   },
   "CSU Long Beach": {
@@ -50,44 +55,47 @@
     "CSU Long Beach EsTo (Alessandra Escobar - Emerson Tobias)": 2,
     "CSU Long Beach GrTo (Brandon Griffin - Eric Tobias)": 11,
     "CSU Long Beach GuMe (Dorian Gurrola - Daniel Medina)": 7,
-    "CSU Long Beach OrMe (Curtis Ortega - Daniel Medina)": 71
+    "CSU Long Beach OrMe (Curtis Ortega - Daniel Medina)": 104
   },
   "CSU Northridge": {
     "CSU Northridge ThAg (Ellyana Thornton - Jorge Aguilar)": 1
   },
   "Dartmouth College": {
-    "Dartmouth College BeCa (Sheima Ben-Abdallah - Katie Carpenter)": 32,
-    "Dartmouth College BrGo (Cooper Brody - Saanvi Goyal)": 28,
-    "Dartmouth College CaGo (Nora Cai - Leah Goldberg)": 57,
+    "Dartmouth College BeCa (Sheima Ben-Abdallah - Katie Carpenter)": 34,
+    "Dartmouth College BrGo (Cooper Brody - Saanvi Goyal)": 29,
+    "Dartmouth College CaGo (Nora Cai - Leah Goldberg)": 67,
     "Dartmouth College GuMo (Saturn Guo - Katharine Morley)": 8,
     "Dartmouth College HaGo (Alex Hant - Jared Gonzalez)": 17,
     "Dartmouth College HaGu (Eli Hatton - Saturn Guo)": 10,
     "Dartmouth College HaPa (Alex Hant - Ethan Park)": 4,
     "Dartmouth College JoBe (Judah Jones - Sheima Ben-Abdallah)": 8,
     "Dartmouth College JoKi (Sophie Johnson - Taite Kirkpatrick)": 6,
-    "Dartmouth College JoRa (Judah Jones - Sebastian Rao)": 54,
+    "Dartmouth College JoRa (Judah Jones - Sebastian Rao)": 62,
     "Dartmouth College KaRa (Harlan Katyal - Sebastian Rao)": 8,
     "Dartmouth College LiFl (Levi Li - Rhys Florence-Smith)": 2,
+    "Dartmouth College PaBe (Ethan Park - Sheima Ben-Abdallah)": 6,
     "Dartmouth College PaHa (Ethan Park - Eli Hatton)": 9,
     "Dartmouth College PaTe (Ethan Park - Alena Tejavanija)": 6,
     "Dartmouth College RoMa (Michael Ross - Kavneer Majhail)": 6
   },
+  "Edgemont": {},
+  "Edmond Memorial": {},
   "Emory": {
-    "Emory AgSt (Sachin Aggarwal - Johnny Stumpff)": 34,
+    "Emory AgSt (Sachin Aggarwal - Johnny Stumpff)": 39,
     "Emory CaSt (Will Cannaday - Maggie Stearns)": 5,
     "Emory ChFe (Vishwa Charabuddi - Conor Feldman)": 8,
-    "Emory ChRa (Vishwa Charabuddi - Adhitya Ravikumar)": 47,
+    "Emory ChRa (Vishwa Charabuddi - Adhitya Ravikumar)": 0,
     "Emory CrSh (Thaddeus Cross - Jared Shirts)": 8,
     "Emory CrSt (Thaddeus Cross - Johnny Stumpff)": 6,
     "Emory CrTa (Thaddeus Cross - Kento Taylor)": 15,
     "Emory FeCa (Conor Feldman - Will Cannaday)": 3,
-    "Emory GaRu (Daniel Gallagher - Serena Rupp)": 0,
-    "Emory GaSo (Daniel Gallagher - Ike Song)": 79,
+    "Emory GaRu (Daniel Gallagher - Serena Rupp)": 1,
+    "Emory GaSo (Daniel Gallagher - Ike Song)": 91,
     "Emory GeMa (Sanjith Geevarghese - Raleigh Maxwell)": 19,
     "Emory GrCh (Alyson Granchi - Jason Chen)": 37,
     "Emory JiRa (Tvisha Jindal - Adhitya Ravikumar)": 8,
-    "Emory KiSh (Aaron Kim - Jared Shirts)": 47,
-    "Emory LoYa (Lucas Lobo - Coralynn Yang)": 56,
+    "Emory KiSh (Aaron Kim - Jared Shirts)": 56,
+    "Emory LoYa (Lucas Lobo - Coralynn Yang)": 70,
     "Emory OkPa (Michi Okahata - Chan Park)": 15,
     "Emory PeSt (Madeleine Pelli - Maggie Stearns)": 5,
     "Emory RuYo (Serena Rupp - Jack Young)": 54,
@@ -96,75 +104,80 @@
     "Emory StTa (Maggie Stearns - Ethan Tai)": 24,
     "Emory TaTa (Kento Taylor - Ethan Tai)": 6,
     "Emory WaKi (Tinghan Wang - Samar Kibe)": 39,
-    "Emory WoTa (Miles Woods - Alva Tang)": 6,
+    "Emory WoTa (Miles Woods - Alva Tang)": 19,
     "Emory ZhCo (Evelyn Zhang - Justin Cooper)": 6,
     "Emory grKi (alyson granchi - Samar Kibe)": 0
   },
   "Fairmont State": {
+    "Fairmont State Novices": 0,
     "Fairmont State SiAl (Dexter Simon - Reagan Allen)": 18
   },
   "George Mason": {
     "George Mason Novices": 2,
-    "George Mason BeIv (Denzel Bell - Roman Ivarone)": 0,
-    "George Mason BrSu (Jordan Bridgers - Amberly Sun)": 3,
-    "George Mason DaEs (Austin Davis - Andre Esteves)": 40,
+    "George Mason BrSu (Jordan Bridgers - Amberly Sun)": 5,
+    "George Mason DaEs (Austin Davis - Andre Esteves)": 63,
     "George Mason DaGo (Austin Davis - Del Gorman)": 21,
-    "George Mason ElSa (Sami Elsayed - Noah Sanchez)": 40,
-    "George Mason FaVa (Riley Fariss - Reanna Vardhanapu)": 3,
-    "George Mason GoNo (Del Gorman - Ches Noye)": 1,
-    "George Mason HaBa (Hiba Haroon - Oluwatomisin Badmus)": 1,
+    "George Mason ElIv (Sami Elsayed - Roman Ivarone)": 17,
+    "George Mason ElSa (Sami Elsayed - Noah Sanchez)": 48,
+    "George Mason FaVa (Riley Fariss - Reanna Vardhanapu)": 9,
+    "George Mason GoNe (Del Gorman - Emebet Neale)": 9,
+    "George Mason GoSa (Del Gorman - Noah Sanchez)": 1,
+    "George Mason HaBa (Hiba Haroon - Oluwatomisin Badmus)": 2,
     "George Mason OCNe (Autumn OConnor - Emebet Neale)": 18,
-    "George Mason PoAl (Isabelle Poteet - Alejandro Alegre)": 2,
+    "George Mason PoAl (Isabelle Poteet - Alejandro Alegre)": 6,
     "George Mason PoNe (Izzy Poteet - Emebet Neale)": 28,
-    "George Mason ReSh (Brenda Reyes - Amira Shananier)": 44,
+    "George Mason ReSh (Brenda Reyes - Amira Shananier)": 45,
     "George Mason RiTa (Dean Richter - Reet Taxali)": 43,
-    "George Mason RoBe (Camila Rosa Perez Montes - Denzel Bell)": 4,
+    "George Mason RoBe (Camila Rosa Perez Montes - Denzel Bell)": 9,
     "George Mason RoSu (Camila Rosa-Perez Montes - Amberly Sun)": 2,
-    "George Mason WrWi (Ashley Wright - Ben Witkov)": 57
+    "George Mason TaOC (Reet Taxali - Autumn OConnor)": 5,
+    "George Mason WiPo (Benjamin Witkov - Isabelle Poteet)": 8,
+    "George Mason WrWi (Ashley Wright - Ben Witkov)": 82
   },
   "Georgetown": {
     "Georgetown Novices": 0,
-    "Georgetown AgCo (Arnav Aggarwal - Connelly Cowan)": 75,
+    "Georgetown AgCo (Arnav Aggarwal - Connelly Cowan)": 98,
     "Georgetown CoXi (Jackie Correa - Caroline Xiao)": 17,
-    "Georgetown GrTa (Michael Greenberg - Leroy Tamfu)": 45,
+    "Georgetown GrTa (Michael Greenberg - Leroy Tamfu)": 62,
     "Georgetown KlLi (Megan Klingler - Nathan Li)": 21,
-    "Georgetown KoXi (Sasha Kos - Caroline Xiao)": 0,
-    "Georgetown LaNa (Luke Lastelick - Aaly Nanji)": 0,
-    "Georgetown LiVa (Nathan Li - Vikram Valame)": 0,
-    "Georgetown PeTa (Nora Perez-Rubio - Leroy Tamfu)": 0,
-    "Georgetown PeVa (Nora Perez-Rubio - Vikram Valame)": 0,
-    "Georgetown WaCo (Leon Wang - Jackie Correa)": 0,
-    "Georgetown ZaVa (Haider Zaidi - Sameer Varkantham)": 0
+    "Georgetown KoXi (Sasha Kos - Caroline Xiao)": 7,
+    "Georgetown LaNa (Luke Lastelick - Aaly Nanji)": 71,
+    "Georgetown LiVa (Nathan Li - Vikram Valame)": 8,
+    "Georgetown PeTa (Nora Perez-Rubio - Leroy Tamfu)": 8,
+    "Georgetown PeVa (Nora Perez-Rubio - Vikram Valame)": 9,
+    "Georgetown WaCo (Leon Wang - Jackie Correa)": 9,
+    "Georgetown ZaVa (Haider Zaidi - Sameer Varkantham)": 6
   },
   "Georgia": {
-    "Georgia CaPa (Zoe Cannon - Laurel Pack)": 0,
-    "Georgia ChLa (Ida Chapman - Caroline Lackey)": 0,
-    "Georgia GlRe (Alexander Glover - Alex Reed)": 0,
-    "Georgia KaCh (Eshkar Kaidar-Heafetz - Ida Chapman)": 0,
-    "Georgia LaGl (Caroline Lackey - Alexander Glover)": 0,
-    "Georgia LaRe (Caroline Lackey - Alex Reed)": 0
+    "Georgia CaPa (Zoe Cannon - Laurel Pack)": 68,
+    "Georgia ChLa (Ida Chapman - Caroline Lackey)": 18,
+    "Georgia GlRe (Alexander Glover - Alex Reed)": 8,
+    "Georgia KaCh (Eshkar Kaidar-Heafetz - Ida Chapman)": 53,
+    "Georgia LaGl (Caroline Lackey - Alexander Glover)": 12,
+    "Georgia LaRe (Caroline Lackey - Alex Reed)": 6
   },
+  "Georgia State": {},
   "Gonzaga": {
-    "Gonzaga WeGi (Dashiell Weinhardt - Kadence Gibson)": 0,
-    "Gonzaga WeRo (Kaelyn Wellman - Everett Roe)": 0,
-    "Gonzaga WeWe (Dashiell Weinhardt - Kaelyn Wellman)": 0
+    "Gonzaga WeGi (Dashiell Weinhardt - Kadence Gibson)": 4,
+    "Gonzaga WeRo (Kaelyn Wellman - Everett Roe)": 31,
+    "Gonzaga WeWe (Dashiell Weinhardt - Kaelyn Wellman)": 10
   },
   "Harvard": {
-    "Harvard AoBo (Seiji Aoki - Jayden Bodet)": 0,
-    "Harvard AoLe (Seiji Aoki - Jamie Levitan)": 0,
-    "Harvard BoSh (Jayden Bodet - Payton Shen)": 0,
-    "Harvard ChSa (Dora Chen - Mirei Saneyoshi)": 0,
-    "Harvard DeSr (Niranjan Deshpande - Agastya Sridharan)": 0,
-    "Harvard FaKu (Zackhery Facey - Kimtee Kundu)": 0,
-    "Harvard JiSy (Andrew Jin - Michi Synn)": 0,
-    "Harvard SyLo (Michi Synn - Ashley Lourenco)": 0
+    "Harvard AoBo (Seiji Aoki - Jayden Bodet)": 33,
+    "Harvard AoLe (Seiji Aoki - Jamie Levitan)": 2,
+    "Harvard BoSh (Jayden Bodet - Payton Shen)": 1,
+    "Harvard ChSa (Dora Chen - Mirei Saneyoshi)": 24,
+    "Harvard DeSr (Niranjan Deshpande - Agastya Sridharan)": 56,
+    "Harvard FaKu (Zackhery Facey - Kimtee Kundu)": 4,
+    "Harvard JiSy (Andrew Jin - Michi Synn)": 17,
+    "Harvard SyLo (Michi Synn - Ashley Lourenco)": 15
   },
   "Houston": {
     "Houston FeDo (Aaron Fernandez - Hector Doratt)": 16,
     "Houston FeSh (Aaron Fernandez - Bryce Sheffield)": 8,
-    "Houston HeMa (Anderson Hendrix - Patrick Macasaet)": 17,
-    "Houston HeSh (Anderson Hendrix - Yousef Shehata)": 7,
-    "Houston IbFe (Oliver Ibarra - Aaron Fernandez)": 27,
+    "Houston HeMa (Anderson Hendrix - Patrick Macasaet)": 24,
+    "Houston HeSh (Anderson Hendrix - Yousef Shehata)": 6,
+    "Houston IbFe (Oliver Ibarra - Aaron Fernandez)": 52,
     "Houston IbHe (Oliver Ibarra - Anderson Hendrix)": 7,
     "Houston MaSh (Patrick Macasaet - Yousef Shehata)": 1,
     "Houston OsDa (Abdelmuhaymen Osama - Eloisa Davidson)": 2,
@@ -173,108 +186,108 @@
     "Houston ShAq (Yousef Shehata - Ramana Aqeel)": 5,
     "Houston ShIb (Bryce Sheffield - Oliver Ibarra)": 9
   },
+  "Hutchinson": {},
+  "Illinois": {},
   "Indiana": {
     "Indiana Novices": 3,
-    "Indiana FiTr (Zander Fish - Maia Truemper)": 39,
+    "Indiana FiTr (Zander Fish - Maia Truemper)": 53,
     "Indiana FoGa (Adam Foudali - Rowlin Garcia)": 0,
-    "Indiana JoDu (Lilly Jones - Jay Duggal)": 37,
+    "Indiana JoDu (Lily Jones - Jay Duggal)": 44,
     "Indiana PeDu (Violet Peotter - Jay Duggal)": 2,
     "Indiana ThFl (Aubrey Thomas - Ally Fleischman)": 3
   },
   "Iowa": {
+    "Iowa BiLa (Rose Bilicki - Kaj Larsen)": 9,
     "Iowa BiSa (Rose Bilicki - 000 Sanderson)": 32,
-    "Iowa KlSe (Ben Kleiman - Lily Severson)": 22,
+    "Iowa KlSe (Ben Kleiman - Lily Severson)": 30,
     "Iowa LaPa (Kaj Larsen - Isaac Palmer)": 10,
-    "Iowa PaAn (Grey Parfenoff - Spencer Anderson McElligott)": 64,
-    "Iowa WeEl (Nathan Weimar - Bashir Eltyeb)": 34
+    "Iowa PaAn (Grey Parfenoff - Spencer Anderson McElligott)": 84,
+    "Iowa WeEl (Nathan Weimar - Bashir Eltyeb)": 47
   },
   "James Madison": {
     "James Madison Novices": 4,
     "James Madison BaHi (Madeline Barbee Doerfler - Lindsey Hilts)": 3,
-    "James Madison MaOe (Maggie Matzen - Anna Oehler)": 42,
-    "James Madison PiKa (Maria Pinto - Giavanna Kardos)": 14
+    "James Madison MaOe (Maggie Matzen - Anna Oehler)": 55,
+    "James Madison PiKa (Maria Pinto - Giavanna Kardos)": 38
   },
   "Johnson County Community College": {
     "Johnson County Community College ChJa (Ismaila Chongan - Mariama Jallow)": 1,
     "Johnson County Community College NePa (James Newton - Isaac Palmer)": 2
   },
   "Kansas": {
-    "Kansas AiUl (Claire Ain - Max Ulven)": 51,
-    "Kansas BaBo (Carson Bath - Nate Boyle)": 8,
+    "Kansas AiUl (Claire Ain - Max Ulven)": 58,
+    "Kansas BaBo (Carson Bath - Nate Boyle)": 17,
     "Kansas BaMa (Tyler Bauman - Isaac Martinez)": 6,
     "Kansas BaMc (Carson Bath - Sean McConnell)": 26,
-    "Kansas BaPe (Tyler Bauman - Sigi Persson)": 31,
+    "Kansas BaPe (Tyler Bauman - Sigi Persson)": 35,
     "Kansas BlCh (Chase Blaser - Kavinayashri Chidambaranathan)": 8,
     "Kansas BlMc (Chase Blaser - Sean McConnell)": 6,
     "Kansas BlPa (Chase Blaser - Lucy Pace)": 22,
-    "Kansas BlSu (Chase Blaser - Iman Suleman)": 0,
+    "Kansas BlSu (Chase Blaser - Iman Suleman)": 14,
     "Kansas BlTe (Chase Blaser - Jaxson Terreros)": 8,
-    "Kansas BrWa (Connor Brown - Henry Walawender)": 48,
+    "Kansas BrWa (Connor Brown - Henry Walawender)": 55,
     "Kansas ChFa (Harris Chaudhry - Gilly Falin)": 25,
     "Kansas ChSu (Kavinayashri Chidambaranathan - Iman Suleman)": 18,
-    "Kansas FaBl (Gilead Falin - Chase Blaser)": 5,
+    "Kansas ChTe (Harris Chaudhry - Jaxson Terreros)": 5,
+    "Kansas FaBl (Gilead Falin - Chase Blaser)": 6,
     "Kansas FoLe (Aidan Foust - Brianna Lemaster)": 8,
-    "Kansas FoSh (Aidan Foust - Sasha Sharman)": 28,
+    "Kansas FoSh (Aidan Foust - Sasha Sharman)": 35,
     "Kansas FoSh1 (Aidan Foust - KateLynn Shaw)": 5,
     "Kansas FoVe (Abigail Fordyce - Aryan Verma)": 14,
     "Kansas HaLe (Averi Harker - Ava Levin)": 12,
-    "Kansas HaPe (Brooklynn Hato - AJ Persinger)": 6,
+    "Kansas HaPe (Brooklynn Hato - AJ Persinger)": 15,
+    "Kansas HaSc (Averi Harker - Luna Schultz)": 2,
     "Kansas HeFo (Cooper Hefty - Abigail Fordyce)": 11,
-    "Kansas HeMa (Estrella Hernandez - Isaac Martinez)": 6,
+    "Kansas HeMa (Estrella Hernandez - Isaac Martinez)": 9,
     "Kansas JuBo (Asra June - Nate Boyle)": 37,
     "Kansas LaLe (Payten LaPoint - Brianna LeMaster)": 5,
     "Kansas LaPa (Payten LaPoint - Lucy Pace)": 25,
-    "Kansas LaSc (Rose Larson - Luna Schultz)": 77,
+    "Kansas LaSc (Rose Larson - Luna Schultz)": 98,
     "Kansas LaSh (Payten LaPoint - Sasha Sharman)": 6,
-    "Kansas LeVe (Brianna Lemaster - Aryan Verma)": 16,
+    "Kansas LeLa (Ava Levin - Payten LaPoint)": 3,
+    "Kansas LeVe (Brianna Lemaster - Aryan Verma)": 18,
     "Kansas LiPe (Cameron Linde - Sigmund Persson)": 2,
     "Kansas LiWe (Cameron Linde - Grayson Weber)": 24,
     "Kansas MaSu (John Marshall - Iman Suleman)": 10,
-    "Kansas OwWi (Owen Owings - Zach Willingham)": 59,
+    "Kansas OwWi (Owen Owings - Zach Willingham)": 76,
     "Kansas ShSu (Katelynn Shaw - Nargis Suleman)": 2,
     "Kansas TeSm (Jaxson Terreros - Quinn Smith)": 33
   },
   "Kansas State": {
-    "Kansas State ArSa (Lillian Ardis - Caitlin Sand)": 44,
+    "Kansas State ArSa (Lillian Ardis - Caitlin Sand)": 49,
     "Kansas State DaRa (Taryn Day - Jace Raines)": 15,
-    "Kansas State DaRo (Taryn Day - Daniel Robertson)": 37,
+    "Kansas State DaRo (Taryn Day - Daniel Robertson)": 49,
+    "Kansas State DaWi (Taryn Day - Ava Williamson)": 7,
     "Kansas State DrFe (Kyle Draeger - Bigjohn Fellows)": 0,
-    "Kansas State DrSp (Kyle Draeger - Cody Spurlock)": 22,
+    "Kansas State DrSp (Kyle Draeger - Cody Spurlock)": 46,
     "Kansas State LeFe (Aidyn Lewis - Johnathon Fellows)": 0,
-    "Kansas State RoSu (Daniel Robertson - Rachel Sum)": 19,
+    "Kansas State RoSu (Daniel Robertson - Rachel Sum)": 31,
     "Kansas State WiLe (Ava Williamson - Aidyn Lewis)": 18
   },
-  "Kentucky": {
-    "Kentucky Novices": 4,
-    "Kentucky AuSk (Maddie Augustine - Jacob Skinner)": 0,
-    "Kentucky BiSc (Hana Bisevac - Haddie Schedler)": 2,
-    "Kentucky ErRu (Wheezy Ervin - Jonn Rushing)": 14,
-    "Kentucky GaSl (Ariel Gabay - Regan Slish)": 56,
-    "Kentucky RiWa (Jeremiah Rimpson - Amanti Washington)": 29,
-    "Kentucky RuSc (Jonn Rushing - Haddie Schedler)": 13,
-    "Kentucky RuSk (Jonn Rushing - Jacob Skinner)": 11,
-    "Kentucky ScRi (Haddie Schedler - Jeremiah Rimpson)": 10
-  },
+  "Kingwood": {},
+  "Lanier": {},
+  "Larned": {},
   "Liberty": {
     "Liberty Novices": 1,
-    "Liberty CuLa (Jayden Cunningham - Emmalee Layton)": 59,
+    "Liberty CuLa (Jayden Cunningham - Emmalee Layton)": 77,
     "Liberty DaSt (Nathan Daley - Olivia Stene)": 3,
-    "Liberty HaHa (Isaiah Hathaway - Isaac Hathaway)": 3,
+    "Liberty HaHa (Isaiah Hathaway - Isaac Hathaway)": 4,
     "Liberty JoSc (Katrina Jorquez - Lydia Schmidtler)": 3,
     "Liberty KoSo (Nova Koenig - Alanna Soares)": 0,
-    "Liberty KoTo (Nova Koenig - Elijah Tooley)": 35,
+    "Liberty KoTo (Nova Koenig - Elijah Tooley)": 41,
     "Liberty LaSt (Taylor Landeros-Jimenez - Olivia Stene)": 1,
-    "Liberty LaTi (Taylor Landeros-Jimenez - Jozzelynn Tinch)": 0,
-    "Liberty PeRo (Sophia Peters - Ava Ronchetti)": 2,
+    "Liberty LaTi (Taylor Landeros-Jimenez - Jozzelynn Tinch)": 2,
+    "Liberty PeRo (Sophia Peters - Ava Ronchetti)": 4,
     "Liberty RoDa (Ava Ronchetti - Nathan Daley)": 1,
-    "Liberty SoSp (Alanna Soares - Will Spencer)": 1,
+    "Liberty SoSp (Alanna Soares - Will Spencer)": 2,
     "Liberty SpTo (Will Spencer - Elijah Tooley)": 1,
     "Liberty TiPe (Jozzelyn Tinch - Sophia Peters)": 1,
-    "Liberty YoEt (Elaine Yoon - Hunter Etienne)": 47
+    "Liberty YoEt (Elaine Yoon - Hunter Etienne)": 63
   },
   "Macalester College": {
     "Macalester College CoDu (Maggie Costello - Annabelle Durbin)": 9,
-    "Macalester College HaKo (Isabella Harrison - Will Kochel)": 7,
+    "Macalester College DuWi (Annabelle Durbin - Noah Winters)": 5,
+    "Macalester College HaKo (Isabella Harrison - Will Kochel)": 28,
     "Macalester College HaWi (Isabella Harrison - Noah Winters)": 10,
     "Macalester College KiFl (Owen Killoran - Aidi Flores)": 1,
     "Macalester College RoXu (Lewis Robinson - Fiona Xue)": 1,
@@ -284,34 +297,50 @@
   "Marian": {
     "Marian Novices": 0,
     "Marian HaRi (Tayjah Harper - Armoni Richardson)": 0,
-    "Marian HiHa (Aaron Hill - Tayjah Harper)": 0,
-    "Marian HiRi (Aaron Hill - Armoni Richardson)": 0,
-    "Marian MuRi (Evyn Muckerheide - Armoni Richardson)": 0
+    "Marian HiHa (Aaron Hill - Tayjah Harper)": 1,
+    "Marian HiRi (Aaron Hill - Armoni Richardson)": 1,
+    "Marian MuRi (Evyn Muckerheide - Armoni Richardson)": 2
   },
   "Massachusetts Amherst": {
-    "Massachusetts Amherst LeMo (Jamie Levitan - Maguene Moussavou)": 0
+    "Massachusetts Amherst LeMo (Jamie Levitan - Maguene Moussavou)": 4
   },
   "Miami": {
-    "Miami Novices": 0
+    "Miami Novices": 2
   },
   "Miami OH": {
     "Miami OH FeGo (Nathalie Fellows - Adam Goe)": 0
   },
   "Michigan": {
-    "Michigan BaLe (Mira Baba - Gianna Ledesma)": 0,
-    "Michigan BaPa (Eleanor Barrett - Jiyoon Park)": 0,
-    "Michigan ChCh (Jerry Chen - Gautam Chamarthy)": 0,
-    "Michigan ChSa (Sebastian Cho - Ben Saudek)": 0,
-    "Michigan ChSh (Gautam Chamarthy - Conner Shih)": 0,
-    "Michigan EsSh (Cyrus Esmailzadeh - Rishi Shetty)": 0,
-    "Michigan HeCo (Emilio Hernandez - Christopher Cotrutsa)": 0,
-    "Michigan HwMc (Calvin Hwang - Ian McIlhenny)": 0,
-    "Michigan JoGa (John Joyce - Alexis Garvey)": 0,
-    "Michigan MaDi (Atharva Makode - Jessica Ding)": 0,
-    "Michigan MoAl (Ava Moon - Ava Almand)": 0,
-    "Michigan OuAg (Robert Ou - William Agustin)": 0,
-    "Michigan OuJo (Robert Ou - John Joyce)": 0,
-    "Michigan ShSh (Avi Shah - Conner Shih)": 0
+    "Michigan BaEs (Eleanor Barrett - Cyrus Esmailzadeh)": 10,
+    "Michigan BaLe (Mira Baba - Gianna Ledesma)": 44,
+    "Michigan BaPa (Eleanor Barrett - Jiyoon Park)": 89,
+    "Michigan ChCh (Jerry Chen - Gautam Chamarthy)": 39,
+    "Michigan ChSa (Sebastian Cho - Ben Saudek)": 23,
+    "Michigan ChSh (Gautam Chamarthy - Conner Shih)": 1,
+    "Michigan EsSh (Cyrus Esmailzadeh - Rishi Shetty)": 61,
+    "Michigan HeCo (Emilio Hernandez - Christopher Cotrutsa)": 9,
+    "Michigan HwMc (Calvin Hwang - Ian McIlhenny)": 10,
+    "Michigan JoGa (John Joyce - Alexis Garvey)": 13,
+    "Michigan MaDi (Atharva Makode - Jessica Ding)": 25,
+    "Michigan MoAl (Ava Moon - Ava Almand)": 25,
+    "Michigan OuAg (Robert Ou - William Agustin)": 71,
+    "Michigan OuJo (Robert Ou - John Joyce)": 7,
+    "Michigan ShSh (Avi Shah - Conner Shih)": 72,
+    "Michigan ShSh1 (Avi Shah - Rishi Shetty)": 8
+  },
+  "Michigan State": {
+    "Michigan State Asst (Eleazar Asase - will sterbenc)": 24,
+    "Michigan State FoMa (Isabella Foster - Henry Martin)": 80,
+    "Michigan State GeSh (Arielle Gearring - Hina Shehzad)": 64,
+    "Michigan State GuLe (Joanna Gusis - Stephen Lewis)": 83,
+    "Michigan State JaSc (Zaria Jarman - Glen Scully)": 57
+  },
+  "Minnesota": {
+    "Minnesota BrMu (Abby Brown - Teddy Munson)": 4,
+    "Minnesota HaUs (Benjy Haber-Fawcett - Timur Usenov)": 66,
+    "Minnesota HeKa (Jack Herzer - Vaughn Kathner)": 3,
+    "Minnesota KaBr (Vaughn Kathner - Abigail Brown)": 6,
+    "Minnesota WeMu (Kacee Wells - Teddy Munson)": 11
   },
   "Missouri State": {
     "Missouri State BaDe (Avery Bates - Levi DeAngelis)": 30,
@@ -327,13 +356,13 @@
     "Missouri State CoNe (Gary Cowdrey-Mota - Asher Neal)": 7,
     "Missouri State DeGr (Levi DeAngelis - James Granger)": 3,
     "Missouri State DeLa (Levi DeAngelis - Sean Lay)": 4,
-    "Missouri State DeNe (Levi DeAngelis - Asher Neal)": 17,
+    "Missouri State DeNe (Levi DeAngelis - Asher Neal)": 41,
     "Missouri State GrCo (James Granger - Gary Cowdrey-Mota)": 4,
     "Missouri State HaNe (Shelby Hahn - Asher Neal)": 30,
     "Missouri State KiMc (Addie Kimmerle - Evan McSorley)": 3,
     "Missouri State McLa (Evan McSorley - Sean Lay)": 8,
     "Missouri State NeNe (Asher Neal - Nico Neal)": 8,
-    "Missouri State NeSi (Nico Neal - Evan Siever)": 70
+    "Missouri State NeSi (Nico Neal - Evan Siever)": 88
   },
   "Monmouth": {
     "Monmouth Novices": 0
@@ -342,7 +371,7 @@
     "Navy Novices": 3,
     "Navy CoRe (Truman Connor - Armen Rea)": 4,
     "Navy KlHu (Aubrey Klain - Robert Hughes)": 2,
-    "Navy LaSa (Jake Lawrence - Griffin Satterfield)": 0
+    "Navy LaSa (Jake Lawrence - Griffin Satterfield)": 4
   },
   "New Mexico": {
     "New Mexico Novices": 2,
@@ -351,6 +380,7 @@
   },
   "New School": {
     "New School CuLi (Ryan Curran - Po Chen Lin)": 4,
+    "New School CuLy (Ryan Curran - Brayden Lyday)": 1,
     "New School GiCa (mollie Gilbertson - Cozette Calderon)": 0,
     "New School HeCu (CJ Hernandez - Ryan Curry)": 4,
     "New School LaDi (Lua Lamounier - Amber Diaz)": 1,
@@ -358,9 +388,10 @@
     "New School PeZh (Marianne Pena - McKensie Zhu)": 2
   },
   "North Texas": {
-    "North Texas BoVa (Ronen Bowman - Emanuel Vargas)": 40,
+    "North Texas BoVa (Ronen Bowman - Emanuel Vargas)": 57,
+    "North Texas BuVa (Josias Busa - Damian Vazquez)": 1,
     "North Texas GaVa (Naren Ganesh - Emanuel Vargas)": 14,
-    "North Texas HaPa (Jack Hasper - Sumya Paruchuri)": 0,
+    "North Texas HaPa (Jack Hasper - Sumya Paruchuri)": 9,
     "North Texas HaVa (Jack Hasper - Damian Vazquez)": 3,
     "North Texas PaBo (Sumya Paruchuri - Ronen Bowman)": 18,
     "North Texas PaSh (Sumya Paruchuri - Nicholette Sharp)": 20,
@@ -369,24 +400,28 @@
   "Northern Iowa": {
     "Northern Iowa BaDo (Sabrina Barati - Ellie Dorris)": 2,
     "Northern Iowa CaMi (Faye Casimir - Tony Miller)": 1,
-    "Northern Iowa ChDo (Quinci Chapman - Burke Doyle)": 10,
+    "Northern Iowa ChDo (Quinci Chapman - Burke Doyle)": 16,
     "Northern Iowa MiDo (Tony Miller - Burke Doyle)": 6,
     "Northern Iowa ScBa (Anthony Scott - Sabrina Barati)": 2,
-    "Northern Iowa VaMi (Kat Van Buren - Tony Miller)": 29
+    "Northern Iowa VaMi (Kat Van Buren - Tony Miller)": 34
   },
   "Northwestern": {
     "Northwestern ArHi (Ari Arceo - Brock Hines)": 8,
-    "Northwestern ArKu (Ari Arceo - Gavin Kung)": 44,
+    "Northwestern ArKu (Ari Arceo - Gavin Kung)": 45,
     "Northwestern ArPa (Buck Arney - Lucia Patterson)": 9,
-    "Northwestern ArTa (Buck Arney - Ahsan Tahirkheli)": 39,
-    "Northwestern HePe (Nathan Heftman - Nathan Peltier)": 32,
-    "Northwestern LeWe (Michael Lee - Samuel Weisz)": 52,
+    "Northwestern ArTa (Buck Arney - Ahsan Tahirkheli)": 55,
+    "Northwestern HePe (Nathan Heftman - Nathan Peltier)": 35,
+    "Northwestern LeWe (Michael Lee - Samuel Weisz)": 59,
     "Northwestern LiOl (Foster LippSmith - Temilola Olorunsola)": 0,
     "Northwestern LuLe (Annabeth Lundberg - Sophie Leonard)": 45,
     "Northwestern MaOl (Mark Martinez - Temilola Olorunsola)": 3,
-    "Northwestern NePa (Maryclare Nestor - Lucia Patterson)": 33,
-    "Northwestern PaSo (Jack Pacconi - Antonio Souchet)": 48,
-    "Northwestern RuLi (Veronica Rubin - Mike Li)": 67
+    "Northwestern NePa (Maryclare Nestor - Lucia Patterson)": 44,
+    "Northwestern PaSo (Jack Pacconi - Antonio Souchet)": 56,
+    "Northwestern RuLi (Veronica Rubin - Mike Li)": 84
+  },
+  "Nova": {},
+  "Nova AA": {
+    "Nova AA AuAu (Amaya Augustin - Amaya Augustin)": 0
   },
   "NYU": {
     "NYU Novices": 0,
@@ -396,25 +431,28 @@
     "NYU ChGo (Grace Cheng - Andrea Gonzales)": 1,
     "NYU DeGa (Brian Delgado - Jaylin Galvan)": 1,
     "NYU GaBo (Jaylin Galvan - Lynette Bonsu)": 2,
-    "NYU JaTh (Anuj Jain - Callum Theiding)": 37,
+    "NYU JaTh (Anuj Jain - Callum Theiding)": 71,
     "NYU KhKh (Akhil Khade - Muad Khalif)": 9,
     "NYU LeTa (Terry Lesane - Justin Tam)": 1,
-    "NYU MaSa (Emmanuel Makinde - Vikram Saigal)": 13,
-    "NYU TrTs (Caitlin Travers - Justin Tseng)": 1,
+    "NYU MaSa (Emmanuel Makinde - Vikram Saigal)": 19,
+    "NYU TrTs (Caitlin Travers - Justin Tseng)": 15,
     "NYU XuSc (Benjamin Xu - Yaden Scharf)": 6,
-    "NYU ZoLe (Tatum Zolkin - Alex Lee)": 8
+    "NYU ZoLe (Tatum Zolkin - Alex Lee)": 15
+  },
+  "NYU-Houston": {
+    "NYU-Houston MoSh (Shreeram Modi - Bryce Sheffield)": 14
   },
   "Ohio State": {
     "Ohio State MaKo (Nabil Makour - James Kolak)": 0
   },
   "Oklahoma": {
     "Oklahoma BaSm (Lucas Ballinger - Blaire Smith)": 12,
-    "Oklahoma BaWr (Lucas Ballinger - Jacob Wright)": 8,
-    "Oklahoma BuDa (Yobani Bustos - Daven Daniel)": 2,
+    "Oklahoma BaWr (Lucas Ballinger - Jacob Wright)": 18,
+    "Oklahoma BuDa (Yobani Bustos - Daven Daniel)": 7,
     "Oklahoma DaBr (Daven Daniel - Rhianna Bruner)": 2,
     "Oklahoma DaTo (Ashlyn Davis - Luis Toro)": 7,
     "Oklahoma DuWe (Aiden Duncan - Preston Werner)": 8,
-    "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)": 47,
+    "Oklahoma FuDu (Ella Fulkerson - Aiden Duncan)": 59,
     "Oklahoma FuWe (Ella Fulkerson - Preston Werner)": 8,
     "Oklahoma MoBu (Napayshni-Ohitekah Morales - Yobani Bustos)": 1,
     "Oklahoma MoWe (Napayshni-Ohitekah Morales - Forest Werner)": 1,
@@ -423,40 +461,40 @@
     "Oklahoma Webu1 (Forest Werner - yobani bustos)": 14,
     "Oklahoma wrbu (Jacob wright - Yobani bustos)": 15
   },
+  "Pines": {},
   "Purdue": {
     "Purdue HaAh (Riley Hawksworth - Tasneem Ahmed)": 6,
-    "Purdue HaHa (Riley Hawksworth - Patrick Hansen)": 12
+    "Purdue HaHa (Riley Hawksworth - Patrick Hansen)": 13
   },
   "Rochester": {
     "Rochester Novices": 3,
     "Rochester CoBa (Emily Cook - Gaurav Barve)": 8,
     "Rochester JoSw (Faith Jones - Aiden Swartz)": 1,
-    "Rochester OzRa (Lara Ozcayir - Ashaz Rahman)": 43
+    "Rochester OzRa (Lara Ozcayir - Ashaz Rahman)": 51
   },
   "Samford": {
     "Samford Novices": 1,
-    "Samford AlSe (Kate Alexander - Sarah Setzler)": 5
+    "Samford AlSe (Kate Alexander - Sarah Setzler)": 16
   },
+  "South Anchorage": {},
   "Southern California": {
-    "Southern California AgSo (Adarsh Agrawal - Dhruva Sood)": 14,
-    "Southern California BhRa (Anish Bhadani - Rayeed Rahman)": 28,
+    "Southern California BhRa (Anish Bhadani - Rayeed Rahman)": 38,
     "Southern California BhZh (Nina Bhuket - Iris Zhang)": 2,
     "Southern California BrBh (Clare Bradley - Anish Bhadani)": 0,
-    "Southern California BrMa (Clare Bradley - Sarah Martin)": 0,
-    "Southern California TrMi (Madison Troup - Jackson Mills)": 0,
-    "Southern California VeHu (Janet Vega - Alliana Sherie Huerto)": 0,
-    "Southern California WoRu (Max Wong - Shea Rueda)": 0,
-    "Southern California saHu (aumrita savdharia - Alliana Sherie Huerto)": 0
+    "Southern California BrMa (Clare Bradley - Sarah Martin)": 40,
+    "Southern California TrMi (Madison Troup - Jackson Mills)": 38,
+    "Southern California VeHu (Janet Vega - Alliana Sherie Huerto)": 14,
+    "Southern California WoRu (Max Wong - Shea Rueda)": 6,
+    "Southern California saHu (aumrita savdharia - Alliana Sherie Huerto)": 2
   },
   "Southern Nazarene": {
-    "Southern Nazarene BoGo (Christian Booth - Lexi Goossens)": 0,
-    "Southern Nazarene CrDo (Thomas Cruzan - Deryk Doherty)": 0,
-    "Southern Nazarene CrHo (Thomas Cruzan - Ian Horton)": 0,
-    "Southern Nazarene HoSt (Ian Horton - Katherine Stockstill)": 0,
-    "Southern Nazarene JeLu (Sophia Jennings - Tanner Luce)": 0,
-    "Southern Nazarene LaTa (Archie Lard - Aubrie Talamasy)": 0,
-    "Southern Nazarene LuDo (Tanner Luce - Deryk Doherty)": 0,
-    "Southern Nazarene StJe (Katherine Stockstill - Sophia Jennings)": 0
+    "Southern Nazarene BoGo (Christian Booth - Lexi Goossens)": 5,
+    "Southern Nazarene CrDo (Thomas Cruzan - Deryk Doherty)": 3,
+    "Southern Nazarene CrHo (Thomas Cruzan - Ian Horton)": 9,
+    "Southern Nazarene HoSt (Ian Horton - Katherine Stockstill)": 32,
+    "Southern Nazarene JeLu (Sophia Jennings - Tanner Luce)": 5,
+    "Southern Nazarene LuDo (Tanner Luce - Deryk Doherty)": 2,
+    "Southern Nazarene StJe (Katherine Stockstill - Sophia Jennings)": 13
   },
   "Stanford": {
     "Stanford LaLa (Kevin Lai - Devin Lai)": 23,
@@ -470,12 +508,12 @@
   },
   "Texas": {
     "Texas DaLi (Maahiyaa Datwani - Natasha Lippmann)": 3,
-    "Texas DoPr (Rebecca Dong - Alexander Prieto)": 9,
-    "Texas FeLo (Lindsay Jade Feinstein - Samantha Low)": 50,
-    "Texas GaSt (Venkata Danush Gade - Devon Stevenson)": 21,
+    "Texas DoPr (Rebecca Dong - Alexander Prieto)": 13,
+    "Texas FeLo (Lindsay Jade Feinstein - Samantha Low)": 67,
+    "Texas GaSt (Venkata Danush Gade - Devon Stevenson)": 28,
     "Texas GlGu (Elizabeth Glasper - Cynthia Guzman Ramirez)": 6,
     "Texas HaSu (Parker Hamstra - Blaine Sutton)": 16,
-    "Texas SuAl (Blaine Sutton - Grayson Allen)": 4
+    "Texas SuAl (Blaine Sutton - Grayson Allen)": 10
   },
   "Texas AM": {
     "Texas AM BiCr (Arlin Birkby - Elijah Cruz)": 5,
@@ -484,66 +522,76 @@
   "Towson": {
     "Towson Novices": 5,
     "Towson DaCr (Nina Darden - Felix Cruz)": 2,
-    "Towson PeDa (Arya Persaud - Nina Darden)": 2
+    "Towson PeDa (Arya Persaud - Nina Darden)": 3
   },
   "Trinity": {
     "Trinity BaCr (Grant Barden - Leo Crowley)": 2,
-    "Trinity BaKh (Grant Barden - Mariska Khalikov)": 33,
+    "Trinity BaKh (Grant Barden - Mariska Khalikov)": 36,
     "Trinity CrKh (Leo Crowley - Mariska Khalikov)": 8,
-    "Trinity CrOl (Leo Crowley - Faith Olabanji)": 17,
+    "Trinity CrOl (Leo Crowley - Faith Olabanji)": 36,
     "Trinity FrMu (Siam Freeman - Imaad Mustafa)": 0,
     "Trinity KhOl (Mariska Khalikov - Faith Olabanji)": 14,
-    "Trinity KiPa (Brooklyn King - Ruth Patterson)": 29
+    "Trinity KiPa (Brooklyn King - Ruth Patterson)": 44
   },
   "UC Berkeley": {
-    "UC Berkeley BoUr (Ilan Boguslavsky - Molly Urfalian)": 46,
-    "UC Berkeley GiSi (Dash Gilrain-Lennon - Aaron Situ)": 29,
+    "UC Berkeley BoUr (Ilan Boguslavsky - Molly Urfalian)": 57,
+    "UC Berkeley GiSi (Dash Gilrain-Lennon - Aaron Situ)": 35,
     "UC Berkeley LiSm (Jenny Liu - Gabrielle Smith)": 3,
-    "UC Berkeley MeRe (Emilio Menotti - Riley Reichel)": 54
+    "UC Berkeley MeRe (Emilio Menotti - Riley Reichel)": 69
   },
   "UC Davis": {
     "UC Davis MiSh (Mateo Mijares - Umar Shaikh)": 4
   },
+  "UChicago Lab": {},
+  "UNC - Chapel Hill": {},
+  "University Missouri- Kansas City": {
+    "University Missouri- Kansas City RiCo (Joseph Rice - Gary Cowdrey-Mota)": 3
+  },
+  "USC": {},
   "Utah": {
     "Utah BrBo (Aidan Brewer - Juan Boscan)": 2,
-    "Utah BrVe (Aidan Brewer - Benji Verbeck-OBrien)": 1,
+    "Utah FuKi (Andrew Funai - Liam Kingery)": 1,
     "Utah FuSc (Andrew Funai - Jake Scott)": 1,
-    "Utah HiBo (Myra Hicks - Juan Boscan)": 1,
+    "Utah HiTy (Myra Hicks - Clara Tyler)": 1,
     "Utah MaHi (Maria Manousakis - Myra Hicks)": 1,
     "Utah MaSc (Maria Manousakis - Emily Scott)": 1,
     "Utah PaPo (Jeremy Parrish - Aubrie Powers)": 1,
     "Utah TiMu (Elliot Tilley - Hermon Mulugeta)": 1,
-    "Utah TyKi (Clara Tyler - Liam Kingery)": 1
+    "Utah TyKi (Clara Tyler - Liam Kingery)": 1,
+    "Utah VeBo (Benji Verbeck-OBrien - Juan Boscan)": 1,
+    "Utah HiBo (Myra Hicks - Juan Boscan)": 1
   },
   "UTD": {
-    "UTD DADi (Joseph-Charles DAntuono - Jess Dickey)": 23,
-    "UTD DiUn (Jessica Dickey - Robert Underwood)": 7,
-    "UTD HaKa (Charlie Hale - Mahintha Karthik)": 39,
+    "UTD DADi (Joseph-Charles DAntuono - Jess Dickey)": 30,
+    "UTD HaKa (Charlie Hale - Mahintha Karthik)": 51,
     "UTD HaKh (Charlie Hale - Theo Khakoo)": 7,
-    "UTD HoHu (Isaac Hoch - Adam Humphrey)": 37,
+    "UTD HaKu (Charlie Hale - Vaden Kumar)": 0,
+    "UTD HoHu (Isaac Hoch - Adam Humphrey)": 39,
     "UTD HuRa (Adam Humphrey - Leo Ramirez)": 6,
-    "UTD KhRa (Theo Khakoo - Leo Ramirez)": 20,
+    "UTD KhRa (Theo Khakoo - Leo Ramirez)": 26,
     "UTD KhUn (Theo Khakoo - Robert Underwood)": 6,
-    "UTD PeRa (Rahul Penumetcha - Sabarish Ravi)": 63
+    "UTD PeRa (Rahul Penumetcha - Sabarish Ravi)": 80
   },
   "UTSA": {
     "UTSA AlPa (Nicolas Alonzo - Ashutosh Panda)": 13,
-    "UTSA CaGa (Iliana Carrillo - Emilio Garza)": 49,
-    "UTSA GiJa (Rylie Gilbert - Makenna Jackson)": 21,
+    "UTSA AlPa1 (Nicolas Alonzo - Mary Jo Paschall)": 8,
+    "UTSA CaGa (Iliana Carrillo - Emilio Garza)": 70,
+    "UTSA GiJa (Rylie Gilbert - Makenna Jackson)": 27,
     "UTSA GiMa (Rylie Gilbert - Tala Mahjoub)": 7,
-    "UTSA GiPa (Rylie Gilbert - Mary Jo Paschall)": 9,
+    "UTSA GiPa (Rylie Gilbert - Mary Jo Paschall)": 10,
     "UTSA JaSr (Makenna Jackson - Aditi Srivatsan)": 1,
     "UTSA PaBl (Mary Paschall - Sebby Blazquez)": 19,
     "UTSA PaSr (Mary Jo Paschall - Aditi Srivatsan)": 2,
     "UTSA PaSr1 (Ashutosh Panda - Aditi Srivatsan)": 19,
     "UTSA SmGi (KB Smith - Rylie Gilbert)": 7
   },
+  "Vanderbilt": {},
   "Wake Forest": {
     "Wake Forest Novices": 0,
-    "Wake Forest AdBr (Ademoreoluwa Aderibigbe - Jordan Brown)": 10,
+    "Wake Forest AdBr (Ademoreoluwa Aderibigbe - Jordan Brown)": 11,
     "Wake Forest BrKa (Jordan Brown - Jack Kampine)": 1,
-    "Wake Forest DiEl (Mae Dingley - Elizabeth Elliott)": 40,
-    "Wake Forest DiKa (Mae Dingley - Jack Kampine)": 1,
+    "Wake Forest DiEl (Mae Dingley - Elizabeth Elliott)": 49,
+    "Wake Forest DiKa (Mae Dingley - Jack Kampine)": 7,
     "Wake Forest HaNa (Destiny Hale - Kalina Namikas)": 20,
     "Wake Forest KaSa (Jack Kampine - Jayden Sampat)": 6,
     "Wake Forest KaSh (Jack Kampine - Hanna Shak)": 8,
@@ -551,20 +599,20 @@
     "Wake Forest LiSf (Harper Lindsay - Sienna Sferrazza)": 21,
     "Wake Forest LoPe (Austin Lovette - Courtneigh Peebles)": 2,
     "Wake Forest MbPe (Mary Mbye - Ryan Peters)": 3,
-    "Wake Forest MbSa (Mary Mbye - Jayden Sampat)": 14,
+    "Wake Forest MbSa (Mary Mbye - Jayden Sampat)": 22,
     "Wake Forest NgMi (Kimberly Nguyen - Cooper Miller)": 7,
     "Wake Forest NgSf (Kimberly Nguyen - Sienna Sferrazza)": 5,
     "Wake Forest PaSe (Vriti Patel - Rita Sencion)": 4,
     "Wake Forest PoKi (William Porter - Grant Kinghorn)": 9,
     "Wake Forest SaPa (J0 Say - Vriti Patel)": 4,
     "Wake Forest SaWi (Jayden Sampat - Shiloh Williams)": 14,
-    "Wake Forest WoLe (Cole Wolfe - Eden Leverett)": 6
+    "Wake Forest WoLe (Cole Wolfe - Eden Leverett)": 10
   },
   "West Georgia": {
     "West Georgia BeRo (Mason Bell - Bryce Rotell)": 0,
     "West Georgia HaHa (Ed Handley - Hannah Hansen)": 0,
     "West Georgia KeKe (Jordan Keller - James Kennon)": 1,
-    "West Georgia KeMi (James Kennon - Bruce Missell)": 18,
+    "West Georgia KeMi (James Kennon - Bruce Missell)": 34,
     "West Georgia MiRi (Kenney Mitchell - Jasmine Richardson)": 0
   },
   "West Point": {
@@ -574,46 +622,31 @@
     "West Point HoDe (Coral Howell - Gavin Dean)": 1,
     "West Point LiEr (Josh Little - Quenten Erikson)": 0,
     "West Point MaFe (Ailish MacDonnell - Lucy Fellman)": 0,
-    "West Point OpSo (Dominic Opron - James Song)": 36,
+    "West Point OpSo (Dominic Opron - James Song)": 44,
     "West Point RoKa (Vincent Rodriguez - Gene Kang)": 0,
     "West Point TrWo (Nam Tran - Christopher Wong)": 1
   },
   "Western Kentucky": {
     "Western Kentucky CaFo (Sage Carter - Rae Fournier)": 25,
-    "Western Kentucky CaKu (Sage Carter - Vaden Kumar)": 15,
+    "Western Kentucky CaKu (Sage Carter - Vaden Kumar)": 22,
     "Western Kentucky InPu (Kole Ingram - Ameya Puranik)": 15,
     "Western Kentucky InSh (Kole Ingram - Chase Shockley)": 8,
-    "Western Kentucky NeFo (Riley Ney - Rae Fournier)": 16,
+    "Western Kentucky KuHa (Vaden Kumar - Charlie Hale-UTD-HYBRID)": 10,
+    "Western Kentucky NeFo (Riley Ney - Rae Fournier)": 31,
     "Western Kentucky NeKu (Riley Ney - Vaden Kumar)": 36,
-    "Western Kentucky StSc (Joshua St Peter - Nik Schintgen)": 38,
+    "Western Kentucky StSc (Joshua St Peter - Nik Schintgen)": 52,
     "Western Kentucky StSh (Joshua St Peter - Chase Shockley)": 4
   },
   "Wichita State": {
-    "Wichita State GrMo (Marianne Griffith - Miguel Molina Chavez)": 0
+    "Wichita State GrMo (Marianne Griffith - Miguel Molina Chavez)": 69
   },
   "Wyoming": {
-    "Wyoming CaHa (Jaden Campbell - Jeremiah Hawley)": 0,
-    "Wyoming LyHe (Brayden Lyday - Aiden Hedrick)": 0,
-    "Wyoming LyWi (Brayden Lyday - Rosalie Willson)": 0,
-    "Wyoming PiHe (Adam Pierson - Aiden Hedrick)": 0,
-    "Wyoming WiMo (Rosalie Willson - Hayvn Morrison)": 0,
-    "Wyoming WiPi (Rosalie Willson - Adam Pierson)": 0,
-    "Wyoming WiWi (Saimaa Widi - Jean-Luc Willson)": 0
-  },
-  "Recently Modified": {
-    "Binghamton BrHa - 4 - Gotham Round 2 Aff vs Houston MS": 26,
-    "Purdue HaHa - 3---Indiana Round 5 Neg vs Indiana FT": 13,
-    "CSU Long Beach OrMe - 09 - NDT 26 (80th National Debate Tournament) Finals Aff vs Emory GS": 104,
-    "George Mason ReSh - 08---CEDA Triples Neg vs idk idgaf": 45,
-    "NYU JaTh - 55th Annual JW Patterson Debates hosted by UK Round 1 Aff vs Northwestern NP": 71,
-    "Binghamton BrMc - 5-JV/Novice Nats Round 6 Neg vs Wake LS": 38,
-    "Houston IbFe - 05---NDT Round 6 Aff vs MSU FM": 52,
-    "Iowa WeEl - 04 --- FR Shirley and ADA Fall Champions at WFU Doubles Neg vs Texas LF": 47,
-    "Georgetown AgCo - 10 - NDT Round 5 Aff vs Emory GS": 98,
-    "Northwestern NePa - 5---CEDA Quarters Aff vs Kansas HS": 44,
-    "North Texas BoVa - 6 -- NDT Round 1 Aff vs Macalester HK": 57,
-    "Iowa PaAn - Rutgers University Newark Brick City Round Robin Round 4 Neg vs Emory YR": 84
-  },
-  "Bulk Downloads": {},
-  "Amherst College": {}
+    "Wyoming CaHa (Jaden Campbell - Jeremiah Hawley)": 69,
+    "Wyoming LyHe (Brayden Lyday - Aiden Hedrick)": 19,
+    "Wyoming LyWi (Brayden Lyday - Rosalie Willson)": 5,
+    "Wyoming PiHe (Adam Pierson - Aiden Hedrick)": 14,
+    "Wyoming WiMo (Rosalie Willson - Hayvn Morrison)": 7,
+    "Wyoming WiPi (Rosalie Willson - Adam Pierson)": 17,
+    "Wyoming WiWi (Saimaa Widi - Jean-Luc Willson)": 75
+  }
 }

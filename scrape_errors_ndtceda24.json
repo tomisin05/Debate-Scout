@@ -1,0 +1,26 @@
+[
+    {
+    "year": "ndtceda24",
+    "school": "Missouri State",
+    "team": "Missouri State CoKi (Ga..... Co..... - Ad..... Ki.....)",
+    "error": "round mismatch: got 0, expected 8"
+  },
+  {
+    "year": "ndtceda24",
+    "school": "Missouri State",
+    "team": "Missouri State CoNe (Qu..... Co..... - Ni..... Ne.....)",
+    "error": "round mismatch: got 0, expected 34"
+  },
+  {
+    "year": "ndtceda24",
+    "school": "Missouri State",
+    "team": "Missouri State CoRo (Ga..... Co..... - An..... Ro.....)",
+    "error": "round mismatch: got 0, expected 4"
+  },
+  {
+    "year": "ndtceda24",
+    "school": "Missouri State",
+    "team": "Missouri State CoTo (Ga..... Co..... - Ki..... To.....)",
+    "error": "round mismatch: got 0, expected 12"
+  }
+]

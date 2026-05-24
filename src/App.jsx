@@ -7,6 +7,8 @@ import "./App.css";
 function App() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [allData, setAllData] = useState({});
+  const [selectedYear, setSelectedYear] = useState("25");
   const [data, setData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
@@ -54,11 +56,35 @@ function App() {
   }, []);
 
   useEffect(() => {
-    fetch("/data.json")
-      .then((res) => res.json())
-      .then(setData)
-      .catch(() => setData([]));
+    const loadAllData = async () => {
+      try {
+        const [data25, data24, data23] = await Promise.all([
+          fetch("/data_ndtceda25.json").then(res => res.json()),
+          fetch("/data_ndtceda24.json").then(res => res.json()),
+          fetch("/data_ndtceda23.json").then(res => res.json())
+        ]);
+        
+        const yearData = {
+          "25": data25.rounds || [],
+          "24": data24.rounds || [],
+          "23": data23.rounds || []
+        };
+        
+        setAllData(yearData);
+        setData(yearData["25"] || []);
+      } catch (error) {
+        console.error("Error loading data:", error);
+        setAllData({});
+        setData([]);
+      }
+    };
+    
+    loadAllData();
   }, []);
+
+  useEffect(() => {
+    setData(allData[selectedYear] || []);
+  }, [selectedYear, allData]);
 
   const handleLogout = async () => {
     try {
@@ -326,6 +352,18 @@ function App() {
           </div>
         </div>
         <div className="header-right">
+          <div className="year-selector">
+            <label>Year:</label>
+            <select
+              value={selectedYear}
+              onChange={(e) => setSelectedYear(e.target.value)}
+              className="filter-select"
+            >
+              <option value="25">2025</option>
+              <option value="24">2024</option>
+              <option value="23">2023</option>
+            </select>
+          </div>
           <div className="search-box">
             <i className="fas fa-search"></i>
             <input
