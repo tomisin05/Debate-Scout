@@ -58,18 +58,24 @@ function App() {
   useEffect(() => {
     const loadAllData = async () => {
       try {
-        const [data25, data24, data23] = await Promise.all([
-          fetch("/data_ndtceda25.json").then(res => res.json()),
-          fetch("/data_ndtceda24.json").then(res => res.json()),
-          fetch("/data_ndtceda23.json").then(res => res.json())
+        const [data25, data24, data23, data22, data21, data20] = await Promise.all([
+          fetch("/data_ndtceda25.json").then((res) => res.json()),
+          fetch("/data_ndtceda24.json").then((res) => res.json()),
+          fetch("/data_ndtceda23.json").then((res) => res.json()),
+          fetch("/data_ndtceda22.json").then((res) => res.json()),
+          fetch("/data_ndtceda21.json").then((res) => res.json()),
+          fetch("/data_ndtceda20.json").then((res) => res.json()),
         ]);
-        
+
         const yearData = {
-          "25": data25.rounds || [],
-          "24": data24.rounds || [],
-          "23": data23.rounds || []
+          25: data25.rounds || [],
+          24: data24.rounds || [],
+          23: data23.rounds || [],
+          22: data22.rounds || [],
+          21: data21.rounds || [],
+          20: data20.rounds || [],
         };
-        
+
         setAllData(yearData);
         setData(yearData["25"] || []);
       } catch (error) {
@@ -78,7 +84,7 @@ function App() {
         setData([]);
       }
     };
-    
+
     loadAllData();
   }, []);
 
@@ -362,6 +368,9 @@ function App() {
               <option value="25">2025</option>
               <option value="24">2024</option>
               <option value="23">2023</option>
+              <option value="22">2022</option>
+              <option value="21">2021</option>
+              <option value="20">2020</option>
             </select>
           </div>
           <div className="search-box">
@@ -605,7 +614,17 @@ function App() {
                           {col.charAt(0).toUpperCase() +
                             col.slice(1).replace(/([A-Z])/g, " $1")}
                         </span>
-                        <i className={`fas ${sortColumn === col ? (sortDirection === 'asc' ? 'fa-sort-up' : 'fa-sort-down') : 'fa-sort'} sort-icon ${sortColumn === col ? 'active-sort' : ''}`}></i>
+                        <i
+                          className={`fas ${
+                            sortColumn === col
+                              ? sortDirection === "asc"
+                                ? "fa-sort-up"
+                                : "fa-sort-down"
+                              : "fa-sort"
+                          } sort-icon ${
+                            sortColumn === col ? "active-sort" : ""
+                          }`}
+                        ></i>
                       </div>
                       {col !== "roundReport" && (
                         <div

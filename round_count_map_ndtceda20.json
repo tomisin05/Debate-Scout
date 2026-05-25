@@ -1,0 +1,484 @@
+{
+  "Arizona State University": {
+    "Arizona State University SpWe (Ab..... Sp..... - Me..... We.....)": 5
+  },
+  "Army": {
+    "Army MoMc (Tr..... Mo..... - Al..... Mc.....)": 2,
+    "Army StHa (Ra..... St..... - Je..... Ha.....)": 1
+  },
+  "Baylor": {
+    "Baylor FeHu (Be..... Fe..... - La..... Hu.....)": 8,
+    "Baylor LaMc (Ch..... La..... - Ci..... Mc.....)": 10,
+    "Baylor McTh (Ci..... Mc..... - Jo..... Th.....)": 5,
+    "Baylor NgWy (Ka..... Ng..... - To..... Wy.....)": 26,
+    "Baylor SmLa (Co..... Sm..... - Ch..... La.....)": 9
+  },
+  "Binghamton": {
+    "Binghamton GuRe (Ai..... Gu..... - Si..... Re.....)": 4,
+    "Binghamton MaAh (Ka..... Ma..... - Ro..... Ah.....)": 50,
+    "Binghamton PePi (Li..... Pe..... - Ha..... Pi.....)": 10,
+    "Binghamton RiMu (De..... Ri..... - Ni..... Mu.....)": 3,
+    "Binghamton SuCa (St..... Su..... - De..... Ca.....)": 1
+  },
+  "Boston College": {
+    "Boston College CaZh (So..... Ca..... - An..... Zh.....)": 0,
+    "Boston College CoGl (Cr..... Co..... - Lo..... Gl.....)": 3,
+    "Boston College DeVa (Be..... De..... - No..... Va.....)": 0
+  },
+  "Cal Berkeley": {
+    "Cal Berkeley BeSc (Ol..... Be..... - Ma..... Sc.....)": 4,
+    "Cal Berkeley BeWi (Ju..... Be..... - Ka..... Wi.....)": 59,
+    "Cal Berkeley EuEu (Mi..... Eu..... - Ma..... Eu.....)": 67,
+    "Cal Berkeley FlQu (Ni..... Fl..... - Da..... Qu.....)": 28,
+    "Cal Berkeley FlWi (Ni..... Fl..... - Ka..... Wi.....)": 7
+  },
+  "Central Oklahoma": {
+    "Central Oklahoma CoHu (Gr..... Co..... - Za..... Hu.....)": 35,
+    "Central Oklahoma ReTa (Jo..... Re..... - PJ..... Ta.....)": 0,
+    "Central Oklahoma ReWe (Jo..... Re..... - Ky..... We.....)": 1
+  },
+  "Columbia": {
+    "Columbia Da (Am..... Da.....)": 9,
+    "Columbia DaDe (Am..... Da..... - Be..... De.....)": 8,
+    "Columbia DaDr (Am..... Da..... - Gr..... Dr.....)": 4,
+    "Columbia PaCl (Jo..... Pa..... - Qu..... Cl.....)": 7,
+    "Columbia WeWi (Fo..... We..... - St..... Wi.....)": 6
+  },
+  "Cornell": {
+    "Cornell AbKa (Zi..... Ab..... - Da..... Ka.....)": 1,
+    "Cornell AbLi (Zi..... Ab..... - Ri..... Li.....)": 39,
+    "Cornell CaWa (Da..... Ca..... - He..... Wa.....)": 9,
+    "Cornell DaMe (Di..... Da..... - Ja..... Me.....)": 0,
+    "Cornell FiKe (Aa..... Fi..... - Ge..... Ke.....)": 18,
+    "Cornell LeSh (Br..... Le..... - Am..... Sh.....)": 15,
+    "Cornell LiSh (Ri..... Li..... - Am..... Sh.....)": 5,
+    "Cornell NaVe (An..... Na..... - Kr..... Ve.....)": 0
+  },
+  "CSU Fullerton": {
+    "CSU Fullerton ArGa (Ai..... Ar..... - Na..... Ga.....)": 1,
+    "CSU Fullerton BuWh (Ja..... Bu..... - Vo..... Wh.....)": 47,
+    "CSU Fullerton CoMo (Ca..... Co..... - Ad..... Mo.....)": 1,
+    "CSU Fullerton DeLo (No..... De..... - Br..... Lo.....)": 2,
+    "CSU Fullerton DeRe (Ev..... De..... - Ab..... Re.....)": 0,
+    "CSU Fullerton HeRo (Ja..... He..... - Ya..... Ro.....)": 4,
+    "CSU Fullerton JaQu (Da..... Ja..... - De..... Qu.....)": 0,
+    "CSU Fullerton KeJe (Ha..... Ke..... - Ev..... Je.....)": 2,
+    "CSU Fullerton LoMe (Br..... Lo..... - Jo..... Me.....)": 2,
+    "CSU Fullerton LoPe (Br..... Lo..... - Br..... Pe.....)": 2,
+    "CSU Fullerton WhMe (Vo..... Wh..... - Jo..... Me.....)": 0,
+    "CSU Fullerton laWi (ka..... la..... - Ma..... Wi.....)": 0
+  },
+  "CSU Long Beach": {
+    "CSU Long Beach ChFl (No..... Ch..... - Di..... Fl.....)": 52,
+    "CSU Long Beach ThFl (Ra..... Th..... - Ja..... Fl.....)": 5
+  },
+  "CSU Northridge": {
+    "CSU Northridge GoCa (Au..... Go..... - Sa..... Ca.....)": 0,
+    "CSU Northridge SaCa (Is..... Sa..... - Sa..... Ca.....)": 0,
+    "CSU Northridge SaGo (Is..... Sa..... - Au..... Go.....)": 0
+  },
+  "Dartmouth": {
+    "Dartmouth EcWo (Qu..... Ec..... - So..... Wo.....)": 1,
+    "Dartmouth GoSa (Ma..... Go..... - Al..... Sa.....)": 39,
+    "Dartmouth HeLi (Er..... He..... - Zo..... Li.....)": 4,
+    "Dartmouth HeVa (Er..... He..... - Je..... Va.....)": 8,
+    "Dartmouth KaHe (Re..... Ka..... - Er..... He.....)": 0
+  },
+  "Eleanor Roosevelt": {},
+  "Emory": {},
+  "Emporia State": {
+    "Emporia State KuSi (Ke..... Ku..... - Ni..... Si.....)": 25
+  },
+  "Florida": {
+    "Florida MaRe (As..... Ma..... - Lu..... Re.....)": 0
+  },
+  "Fresno City College": {
+    "Fresno City College AlSa (Sa..... Al..... - Sa..... Sa.....)": 1,
+    "Fresno City College PoSa (Pa..... Po..... - Le..... Sa.....)": 2
+  },
+  "Fullerton College": {
+    "Fullerton College GiMe (Is..... Gi..... - Jo..... Me.....)": 14
+  },
+  "George Mason": {
+    "George Mason AlMa (Er..... Al..... - Er..... Ma.....)": 3,
+    "George Mason ArLo (Ma..... Ar..... - Ni..... Lo.....)": 5,
+    "George Mason ArSa (Ma..... Ar..... - De..... Sa.....)": 35,
+    "George Mason BaGu (Se..... Ba..... - Er..... Gu.....)": 12,
+    "George Mason BaSw (Se..... Ba..... - Pa..... Sw.....)": 0,
+    "George Mason BrHo (Ga..... Br..... - Ri..... Ho.....)": 1,
+    "George Mason BrPh (Ai..... Br..... - Ti..... Ph.....)": 4,
+    "George Mason BuGr (Ky..... Bu..... - No..... Gr.....)": 29,
+    "George Mason DaHo (Ja..... Da..... - Ri..... Ho.....)": 22,
+    "George Mason HiBa (Ar..... Hi..... - Ra..... Ba.....)": 11,
+    "George Mason HoPa (Ri..... Ho..... - Lu..... Pa.....)": 1,
+    "George Mason JoTu (Sh..... Jo..... - Ma..... Tu.....)": 9,
+    "George Mason LoMo (Ni..... Lo..... - Ia..... Mo.....)": 61,
+    "George Mason LoPe (Li..... Lo..... - Ce..... Pe.....)": 9,
+    "George Mason MaPa (Er..... Ma..... - Lu..... Pa.....)": 9,
+    "George Mason MoDa (Ia..... Mo..... - Ja..... Da.....)": 22,
+    "George Mason RyPa (Sh..... Ry..... - Lu..... Pa.....)": 4,
+    "George Mason SaSw (De..... Sa..... - Pa..... Sw.....)": 6,
+    "George Mason TuGr (Ma..... Tu..... - No..... Gr.....)": 0,
+    "George Mason ViPa (Aa..... Vi..... - Da..... Pa.....)": 3
+  },
+  "Georgetown": {
+    "Georgetown AmGa (Be..... Am..... - Jo..... Ga.....)": 6,
+    "Georgetown AmKu (Be..... Am..... - Ha..... Ku.....)": 15,
+    "Georgetown AnGr (Ke..... An..... - Et..... Gr.....)": 81,
+    "Georgetown ClGa (Er..... Cl..... - Jo..... Ga.....)": 5,
+    "Georgetown EdNt (Da..... Ed..... - Er..... Nt.....)": 23,
+    "Georgetown GaNt (Jo..... Ga..... - Er..... Nt.....)": 4,
+    "Georgetown KuNt (Ha..... Ku..... - Er..... Nt.....)": 7,
+    "Georgetown MaBe (Ka..... Ma..... - Da..... Be.....)": 22,
+    "Georgetown MeWa (Be..... Me..... - Zi..... Wa.....)": 65
+  },
+  "Georgia": {
+    "Georgia AbCa (No..... Ab..... - Ma..... Ca.....)": 1,
+    "Georgia AdWe (Za..... Ad..... - Jo..... We.....)": 16,
+    "Georgia KaWa (Es..... Ka..... - Da..... Wa.....)": 7,
+    "Georgia MrWa (Ja..... Mr..... - Da..... Wa.....)": 50
+  },
+  "Gonzaga": {
+    "Gonzaga MaHi (Mo..... Ma..... - Av..... Hi.....)": 76
+  },
+  "Harvard": {
+    "Harvard AhBa (Sa..... Ah..... - Ad..... Ba.....)": 17,
+    "Harvard AhHa (Sa..... Ah..... - Ju..... Ha.....)": 25,
+    "Harvard AoFa (Ke..... Ao..... - An..... Fa.....)": 28,
+    "Harvard BaNa (Ad..... Ba..... - Ja..... Na.....)": 7,
+    "Harvard BlYo (Ta..... Bl..... - Sy..... Yo.....)": 6,
+    "Harvard BoWi (Su..... Bo..... - Sp..... Wi.....)": 12,
+    "Harvard GiGi (Ch..... Gi..... - Ev..... Gi.....)": 0,
+    "Harvard GiMu (Ch..... Gi..... - Ri..... Mu.....)": 27,
+    "Harvard OgYe (Og..... Og..... - Ly..... Ye.....)": 10,
+    "Harvard ShUg (Ro..... Sh..... - Ro..... Ug.....)": 4
+  },
+  "Houston": {
+    "Houston BoNa (Br..... Bo..... - Ka..... Na.....)": 1,
+    "Houston BoWh (Br..... Bo..... - Sa..... Wh.....)": 0,
+    "Houston GuHu (Sa..... Gu..... - Ja..... Hu.....)": 1,
+    "Houston HoKh (Sp..... Ho..... - Ki..... Kh.....)": 3,
+    "Houston HoWh (Sp..... Ho..... - Sa..... Wh.....)": 1,
+    "Houston KhWo (Ki..... Kh..... - Tr..... Wo.....)": 1,
+    "Houston LeFo (Ga..... Le..... - Pa..... Fo.....)": 23,
+    "Houston LeVo (Ch..... Le..... - Na..... Vo.....)": 2,
+    "Houston LoPo (Ca..... Lo..... - Ma..... Po.....)": 0,
+    "Houston OrAl (Ma..... Or..... - Ma..... Al.....)": 5,
+    "Houston SuKh (St..... Su..... - Ki..... Kh.....)": 4
+  },
+  "Indiana": {
+    "Indiana GuDa (Me..... Gu..... - Am..... Da.....)": 4,
+    "Indiana GuJa (Me..... Gu..... - Ar..... Ja.....)": 15,
+    "Indiana JaLa (Ar..... Ja..... - Ga..... La.....)": 3,
+    "Indiana LoLe (Ky..... Lo..... - Pa..... Le.....)": 0,
+    "Indiana OlHo (Ja..... Ol..... - Pa..... Ho.....)": 17,
+    "Indiana OlJa (Ja..... Ol..... - Ar..... Ja.....)": 1,
+    "Indiana SaGu (Na..... Sa..... - Me..... Gu.....)": 16,
+    "Indiana ScLo (Ja..... Sc..... - Ky..... Lo.....)": 0
+  },
+  "Iowa": {
+    "Iowa BeRo (El..... Be..... - Sp..... Ro.....)": 39,
+    "Iowa CaNa (Ry..... Ca..... - Su..... Na.....)": 2,
+    "Iowa PiCa (Ma..... Pi..... - Ry..... Ca.....)": 18,
+    "Iowa PuSa (Ro..... Pu..... - Ja..... Sa.....)": 7
+  },
+  "James Madison": {
+    "James Madison DuBr (Ph..... Du..... - Da..... Br.....)": 2,
+    "James Madison HaSm (As..... Ha..... - Au..... Sm.....)": 19,
+    "James Madison StWa (Wi..... St..... - Je..... Wa.....)": 1
+  },
+  "JCCC": {
+    "JCCC BaBa (Tr..... Ba..... - Th..... Ba.....)": 64
+  },
+  "Kansas": {
+    "Kansas BuFi (Az..... Bu..... - Ro..... Fi.....)": 63,
+    "Kansas EsMa (Ga..... Es..... - Jo..... Ma.....)": 13,
+    "Kansas GuZi (Mi..... Gu..... - So..... Zi.....)": 1,
+    "Kansas HaSn (Ca..... Ha..... - Ry..... Sn.....)": 17,
+    "Kansas LuZi (Mi..... Lu..... - So..... Zi.....)": 1,
+    "Kansas MaLu (Za..... Ma..... - Mi..... Lu.....)": 13,
+    "Kansas MaRe (Na..... Ma..... - Gr..... Re.....)": 77,
+    "Kansas McCa (Ma..... Mc..... - Re..... Ca.....)": 0,
+    "Kansas OtPa (Li..... Ot..... - Ji..... Pa.....)": 20,
+    "Kansas PaLu (Ji..... Pa..... - Mi..... Lu.....)": 7,
+    "Kansas PaMa (Ji..... Pa..... - Jo..... Ma.....)": 0,
+    "Kansas PaSe (Ji..... Pa..... - Je..... Se.....)": 11,
+    "Kansas PeSe (Ra..... Pe..... - Je..... Se.....)": 35,
+    "Kansas ScMc (Mi..... Sc..... - Mi..... Mc.....)": 50,
+    "Kansas SeSn (Je..... Se..... - Ry..... Sn.....)": 8,
+    "Kansas SoEs (Wi..... So..... - Ga..... Es.....)": 11,
+    "Kansas SoMa (Wi..... So..... - Za..... Ma.....)": 32,
+    "Kansas SoWo (Wi..... So..... - Ma..... Wo.....)": 24
+  },
+  "Kansas State": {
+    "Kansas State ChTu (Da..... Ch..... - Tr..... Tu.....)": 5,
+    "Kansas State FuTh (Ga..... Fu..... - Be..... Th.....)": 9,
+    "Kansas State SpWa (Sa..... Sp..... - Ca..... Wa.....)": 6,
+    "Kansas State TuTh (Tr..... Tu..... - Be..... Th.....)": 23
+  },
+  "Kentucky": {},
+  "Liberty": {
+    "Liberty CaPo (Er..... Ca..... - Ja..... Po.....)": 3,
+    "Liberty CaPo (Na..... Ca..... - Ja..... Po.....)": 3,
+    "Liberty CaRa (Pa..... Ca..... - Jo..... Ra.....)": 28,
+    "Liberty CoRo (Mo..... Co..... - Na..... Ro.....)": 33,
+    "Liberty DeDu (Me..... De..... - Sp..... Du.....)": 2,
+    "Liberty DeJo (Me..... De..... - Jo..... Jo.....)": 7,
+    "Liberty GiJo (Da..... Gi..... - Si..... Jo.....)": 10,
+    "Liberty HaCa (Li..... Ha..... - Er..... Ca.....)": 1,
+    "Liberty HaJo (Pa..... Ha..... - Jo..... Jo.....)": 2,
+    "Liberty HaWi (As..... Ha..... - El..... Wi.....)": 0,
+    "Liberty KaMa (Es..... Ka..... - Sa..... Ma.....)": 0,
+    "Liberty KeDu (Em..... Ke..... - Sp..... Du.....)": 3,
+    "Liberty KiSm (Ab..... Ki..... - Sk..... Sm.....)": 0,
+    "Liberty MaMe (Sa..... Ma..... - Al..... Me.....)": 3,
+    "Liberty MaSm (Sa..... Ma..... - Sk..... Sm.....)": 5,
+    "Liberty SoWa (Ra..... So..... - Ad..... Wa.....)": 47,
+    "Liberty StWi (Mi..... St..... - Mi..... Wi.....)": 0,
+    "Liberty WaWi (Ju..... Wa..... - Ry..... Wi.....)": 59
+  },
+  "Michigan State University": {
+    "Michigan State University AdMe (Du..... Ad..... - Pi..... Me.....)": 62,
+    "Michigan State University BuKo (Ri..... Bu..... - Da..... Ko.....)": 42,
+    "Michigan State University FaGl (Ev..... Fa..... - Na..... Gl.....)": 7,
+    "Michigan State University GlKo (Na..... Gl..... - Da..... Ko.....)": 12,
+    "Michigan State University GlSc (Na..... Gl..... - Mi..... Sc.....)": 13,
+    "Michigan State University GlWe (Na..... Gl..... - Al..... We.....)": 8,
+    "Michigan State University GrSe (Le..... Gr..... - Ez..... Se.....)": 43,
+    "Michigan State University HoVa (No..... Ho..... - Ma..... Va.....)": 6,
+    "Michigan State University KaVa (Wa..... Ka..... - Ma..... Va.....)": 18,
+    "Michigan State University KoSc (Da..... Ko..... - Mi..... Sc.....)": 19,
+    "Michigan State University ScVa (Mi..... Sc..... - Th..... Va.....)": 11,
+    "Michigan State University VaWe (Ma..... Va..... - Al..... We.....)": 12
+  },
+  "Minnesota": {
+    "Minnesota AmSu (Ab..... Am..... - Ke..... Su.....)": 80,
+    "Minnesota DaAm (Ry..... Da..... - Ab..... Am.....)": 1,
+    "Minnesota DaJo (Am..... Da..... - No..... Jo.....)": 6,
+    "Minnesota FeRa (Jo..... Fe..... - Br..... Ra.....)": 73,
+    "Minnesota FrMo (Jo..... Fr..... - Pe..... Mo.....)": 76,
+    "Minnesota GrJo (Ma..... Gr..... - No..... Jo.....)": 28,
+    "Minnesota GrPh (Ma..... Gr..... - Ow..... Ph.....)": 19,
+    "Minnesota HuDa (Sy..... Hu..... - Ry..... Da.....)": 75,
+    "Minnesota JaFe (Ha..... Ja..... - Jo..... Fe.....)": 16,
+    "Minnesota JaPh (Ha..... Ja..... - Ow..... Ph.....)": 21,
+    "Minnesota PhJo (Ow..... Ph..... - No..... Jo.....)": 19,
+    "Minnesota PhRa (Ow..... Ph..... - Br..... Ra.....)": 27,
+    "Minnesota PrSh (Ca..... Pr..... - El..... Sh.....)": 36,
+    "Minnesota ShAm (El..... Sh..... - Ab..... Am.....)": 2,
+    "Minnesota SuWe (Ke..... Su..... - Ky..... We.....)": 7
+  },
+  "Missouri State": {
+    "Missouri State AlSm (De..... Al..... - Co..... Sm.....)": 6,
+    "Missouri State CaEn (Sa..... Ca..... - Cl..... En.....)": 6,
+    "Missouri State CaLu (Sa..... Ca..... - Br..... Lu.....)": 2,
+    "Missouri State CaPa (Sa..... Ca..... - Je..... Pa.....)": 10,
+    "Missouri State CaPi (Sa..... Ca..... - El..... Pi.....)": 6,
+    "Missouri State CaWi (Sa..... Ca..... - Ma..... Wi.....)": 17,
+    "Missouri State CoWo (Ch..... Co..... - La..... Wo.....)": 28,
+    "Missouri State EnGr (Cl..... En..... - Ol..... Gr.....)": 47,
+    "Missouri State EnLu (Cl..... En..... - Br..... Lu.....)": 1,
+    "Missouri State EnPa (Cl..... En..... - Je..... Pa.....)": 8,
+    "Missouri State GrLu (Ol..... Gr..... - Br..... Lu.....)": 3,
+    "Missouri State GrRe (Ol..... Gr..... - Pe..... Re.....)": 3,
+    "Missouri State HaLu (Mi..... Ha..... - Br..... Lu.....)": 1,
+    "Missouri State HaPa (Mi..... Ha..... - Je..... Pa.....)": 8,
+    "Missouri State HaRe (Mi..... Ha..... - Pe..... Re.....)": 21,
+    "Missouri State HaWo (Mi..... Ha..... - La..... Wo.....)": 8,
+    "Missouri State KaRe (Za..... Ka..... - Pe..... Re.....)": 32,
+    "Missouri State KaWa (Za..... Ka..... - Mi..... Wa.....)": 11,
+    "Missouri State LeTr (Ma..... Le..... - Jo..... Tr.....)": 0,
+    "Missouri State LuKa (Br..... Lu..... - Za..... Ka.....)": 4,
+    "Missouri State LuPa (Br..... Lu..... - Je..... Pa.....)": 20,
+    "Missouri State LuWi (Br..... Lu..... - Ma..... Wi.....)": 2,
+    "Missouri State MoSp (CJ..... Mo..... - Sk..... Sp.....)": 9,
+    "Missouri State PaRe (Je..... Pa..... - Pe..... Re.....)": 9,
+    "Missouri State PiWi (El..... Pi..... - Ma..... Wi.....)": 4,
+    "Missouri State SpWo (Sk..... Sp..... - La..... Wo.....)": 0,
+    "Missouri State WaWi (Mi..... Wa..... - Ma..... Wi.....)": 5,
+    "Missouri State WiWo (Ma..... Wi..... - La..... Wo.....)": 3
+  },
+  "Navy": {
+    "Navy MaSa (Ma..... Ma..... - Ja..... Sa.....)": 0,
+    "Navy RoLe (Ka..... Ro..... - Wi..... Le.....)": 81
+  },
+  "New School": {
+    "New School ChDo (Te..... Ch..... - Gr..... Do.....)": 2,
+    "New School ChGr (Av..... Ch..... - En..... Gr.....)": 1,
+    "New School DiEn (El..... Di..... - Mi..... En.....)": 2,
+    "New School EnCh (Mi..... En..... - Av..... Ch.....)": 2,
+    "New School KoKa (Qu..... Ko..... - Ad..... Ka.....)": 3,
+    "New School KoMo (Qu..... Ko..... - Je..... Mo.....)": 2,
+    "New School LiBu (No..... Li..... - Ka..... Bu.....)": 9,
+    "New School WiCh (Ma..... Wi..... - Av..... Ch.....)": 1,
+    "New School WiMo (Ma..... Wi..... - Je..... Mo.....)": 0,
+    "New School XiKi (Li..... Xi..... - Aa..... Ki.....)": 0
+  },
+  "Northwestern": {
+    "Northwestern FrLo (Ni..... Fr..... - St..... Lo.....)": 41,
+    "Northwestern FrWe (Ni..... Fr..... - Ti..... We.....)": 41,
+    "Northwestern LaSt (Ja..... La..... - Ni..... St.....)": 26,
+    "Northwestern LaWe (Ja..... La..... - Ti..... We.....)": 28
+  },
+  "NYU": {
+    "NYU AgFe (ik..... Ag..... - Ad..... Fe.....)": 2,
+    "NYU BeZi (Is..... Be..... - Iv..... Zi.....)": 1,
+    "NYU DoSc (Sa..... Do..... - Al..... Sc.....)": 5,
+    "NYU JuPe (Ma..... Ju..... - Me..... Pe.....)": 2,
+    "NYU KaDo (Sa..... Ka..... - Sa..... Do.....)": 5,
+    "NYU KiSc (Jo..... Ki..... - Al..... Sc.....)": 3,
+    "NYU LiBe (La..... Li..... - Is..... Be.....)": 4,
+    "NYU MiVa (Dh..... Mi..... - Is..... Va.....)": 5,
+    "NYU PiHu (Ma..... Pi..... - Fa..... Hu.....)": 45,
+    "NYU RaKi (Be..... Ra..... - Ch..... Ki.....)": 1,
+    "NYU RoSu (Et..... Ro..... - Si..... Su.....)": 2,
+    "NYU ScSu (Al..... Sc..... - Si..... Su.....)": 1,
+    "NYU ShTo (Al..... Sh..... - Eu..... To.....)": 36,
+    "NYU TeCi (Ar..... Te..... - De..... Ci.....)": 1,
+    "NYU ToFe (Al..... To..... - Ad..... Fe.....)": 5,
+    "NYU WhWi (Au..... Wh..... - Ga..... Wi.....)": 4,
+    "NYU ZiRo (Iv..... Zi..... - Et..... Ro.....)": 4,
+    "NYU ZiSc (Iv..... Zi..... - Al..... Sc.....)": 1,
+    "NYU ZiSm (Iv..... Zi..... - Ja..... Sm.....)": 1
+  },
+  "Oklahoma": {
+    "Oklahoma RoSp (Br..... Ro..... - Is..... Sp.....)": 9,
+    "Oklahoma SuTe (Jo..... Su..... - Bl..... Te.....)": 2
+  },
+  "Pittsburgh": {
+    "Pittsburgh AdSh (Ma..... Ad..... - Pa..... Sh.....)": 8,
+    "Pittsburgh LiRe (Za..... Li..... - Al..... Re.....)": 48,
+    "Pittsburgh OsMe (Kw..... Os..... - Ch..... Me.....)": 21,
+    "Pittsburgh PoSh (Lu..... Po..... - Pa..... Sh.....)": 8
+  },
+  "Purdue": {
+    "Purdue AgSu (Ar..... Ag..... - Jo..... Su.....)": 7,
+    "Purdue PrSu (La..... Pr..... - Jo..... Su.....)": 5,
+    "Purdue SiJo (Im..... Si..... - Da..... Jo.....)": 27
+  },
+  "Rochester": {
+    "Rochester AbMo (Al..... Ab..... - Be..... Mo.....)": 61,
+    "Rochester HaCh (Zi..... Ha..... - Ro..... Ch.....)": 3,
+    "Rochester WiBa (Ge..... Wi..... - De..... Ba.....)": 3
+  },
+  "Rutgers": {
+    "Rutgers AsHe (Da..... As..... - Ry..... He.....)": 10,
+    "Rutgers BeKh (Sa..... Be..... - Zo..... Kh.....)": 2,
+    "Rutgers StOg (Ch..... St..... - Te..... Og.....)": 5,
+    "Rutgers StTo (Ch..... St..... - Lu..... To.....)": 2
+  },
+  "Samford": {
+    "Samford EmGa (Sa..... Em..... - Ma..... Ga.....)": 72,
+    "Samford GrTa (Al..... Gr..... - Jo..... Ta.....)": 50,
+    "Samford WiCl (Ma..... Wi..... - Ta..... Cl.....)": 6
+  },
+  "SFSU": {
+    "SFSU PoPe (Mi..... Po..... - Ni..... Pe.....)": 0
+  },
+  "Southern California": {
+    "Southern California AlWi (Ro..... Al..... - An..... Wi.....)": 28,
+    "Southern California FaKo (Ta..... Fa..... - Ry..... Ko.....)": 4,
+    "Southern California FaYe (Ta..... Fa..... - Sr..... Ye.....)": 6,
+    "Southern California HaPa (Jo..... Ha..... - Da..... Pa.....)": 26,
+    "Southern California KiNo (Sa..... Ki..... - Ol..... No.....)": 12,
+    "Southern California KoNo (Ry..... Ko..... - Ol..... No.....)": 14,
+    "Southern California KuSu (Ju..... Ku..... - Ke..... Su.....)": 67
+  },
+  "Southwestern College": {
+    "Southwestern College ArGr (Jo..... Ar..... - Kh..... Gr.....)": 13,
+    "Southwestern College ArVi (Jo..... Ar..... - Ro..... Vi.....)": 1
+  },
+  "Texas": {
+    "Texas ChLo (Da..... Ch..... - Ga..... Lo.....)": 16,
+    "Texas CoMa (Wi..... Co..... - Ma..... Ma.....)": 7,
+    "Texas CoRe (Wi..... Co..... - Ju..... Re.....)": 7,
+    "Texas CuGa (Da..... Cu..... - Iv..... Ga.....)": 2,
+    "Texas CuNo (Da..... Cu..... - Be..... No.....)": 6,
+    "Texas LuRe (Ja..... Lu..... - Ju..... Re.....)": 2,
+    "Texas NoHe (Be..... No..... - Sa..... He.....)": 35,
+    "Texas PaMa (Va..... Pa..... - Ri..... Ma.....)": 7,
+    "Texas WaDe (Za..... Wa..... - He..... De.....)": 69
+  },
+  "UNLV": {
+    "UNLV BoKh (Br..... Bo..... - Yu..... Kh.....)": 11,
+    "UNLV BoSi (Br..... Bo..... - Ju..... Si.....)": 19,
+    "UNLV LaWo (Si..... La..... - Ke..... Wo.....)": 2,
+    "UNLV MeSh (Se..... Me..... - Ab..... Sh.....)": 2,
+    "UNLV ReRy (Ma..... Re..... - Al..... Ry.....)": 67,
+    "UNLV SiLa (Ju..... Si..... - Si..... La.....)": 0,
+    "UNLV ZaKh (Al..... Za..... - Yu..... Kh.....)": 22
+  },
+  "UTD": {
+    "UTD BaWa (Al..... Ba..... - So..... Wa.....)": 6,
+    "UTD BeKa (Du..... Be..... - Ra..... Ka.....)": 34,
+    "UTD BhSa (Xa..... Bh..... - Aa..... Sa.....)": 1,
+    "UTD IsWa (Ha..... Is..... - So..... Wa.....)": 1,
+    "UTD KoPa (Ra..... Ko..... - Kr..... Pa.....)": 4,
+    "UTD LaMu (St..... La..... - Ha..... Mu.....)": 61,
+    "UTD LaWa (St..... La..... - So..... Wa.....)": 4
+  },
+  "UTSA": {
+    "UTSA MyMa (Tr..... My..... - Ja..... Ma.....)": 1,
+    "UTSA UmWe (An..... Um..... - Ch..... We.....)": 4
+  },
+  "Wake Forest": {
+    "Wake Forest AaPu (Br..... Aa..... - Di..... Pu.....)": 4,
+    "Wake Forest AaWi (Br..... Aa..... - DJ..... Wi.....)": 4,
+    "Wake Forest BaKa (Al..... Ba..... - Ty..... Ka.....)": 7,
+    "Wake Forest BiDa (An..... Bi..... - Ar..... Da.....)": 41,
+    "Wake Forest CiTr (Se..... Ci..... - Iy..... Tr.....)": 5,
+    "Wake Forest CoRo (Ri..... Co..... - Tr..... Ro.....)": 3,
+    "Wake Forest FeHa (Ro..... Fe..... - Te..... Ha.....)": 35,
+    "Wake Forest KlMa (Ru..... Kl..... - Al..... Ma.....)": 47,
+    "Wake Forest KrTa (Na..... Kr..... - As..... Ta.....)": 12,
+    "Wake Forest PuWh (Di..... Pu..... - Al..... Wh.....)": 10,
+    "Wake Forest RoSm (Tr..... Ro..... - Ca..... Sm.....)": 6
+  },
+  "Wayne State": {
+    "Wayne State BaRe (Lu..... Ba..... - Br..... Re.....)": 36,
+    "Wayne State FoRe (Ro..... Fo..... - Ir..... Re.....)": 6,
+    "Wayne State GuRe (An..... Gu..... - Ir..... Re.....)": 35,
+    "Wayne State KoTr (Ja..... Ko..... - Be..... Tr.....)": 3,
+    "Wayne State ReRe (Br..... Re..... - Ir..... Re.....)": 6,
+    "Wayne State RoMc (Ki..... Ro..... - Ta..... Mc.....)": 3
+  },
+  "Weber State": {
+    "Weber State BrTh (Ba..... Br..... - Zo..... Th.....)": 2,
+    "Weber State PhBr (Ha..... Ph..... - Mo..... Br.....)": 1
+  },
+  "West Georgia": {
+    "West Georgia DaSt (De..... Da..... - Re..... St.....)": 2
+  },
+  "West Virginia University": {
+    "West Virginia University AnMa (Ni..... An..... - Br..... Ma.....)": 1,
+    "West Virginia University SaMc (Ma..... Sa..... - Li..... Mc.....)": 1,
+    "West Virginia University UrWe (Ma..... Ur..... - Ca..... We.....)": 1
+  },
+  "Western Washington": {
+    "Western Washington AlHa (Ca..... Al..... - Ly..... Ha.....)": 15,
+    "Western Washington BaAl (Br..... Ba..... - Ca..... Al.....)": 10,
+    "Western Washington HaKi (Ly..... Ha..... - Ke..... Ki.....)": 3,
+    "Western Washington HaWa (Ly..... Ha..... - Lu..... Wa.....)": 14
+  },
+  "Wichita State": {
+    "Wichita State BeLe (Ka..... Be..... - Do..... Le.....)": 6,
+    "Wichita State BeMi (Ka..... Be..... - Co..... Mi.....)": 36,
+    "Wichita State LePh (Do..... Le..... - Bo..... Ph.....)": 13
+  },
+  "Wyoming": {
+    "Wyoming GiKr (Ca..... Gi..... - Ma..... Kr.....)": 23,
+    "Wyoming GiSu (Ca..... Gi..... - St..... Su.....)": 5,
+    "Wyoming GiVa (Ca..... Gi..... - Th..... Va.....)": 6,
+    "Wyoming GiWo (Ca..... Gi..... - La..... Wo.....)": 10,
+    "Wyoming KrDa (Ma..... Kr..... - Am..... Da.....)": 6,
+    "Wyoming KrMi (Ma..... Kr..... - Jo..... Mi.....)": 8,
+    "Wyoming KrPo (Ma..... Kr..... - EC..... Po.....)": 28,
+    "Wyoming KrTa (Ma..... Kr..... - Ri..... Ta.....)": 5,
+    "Wyoming MiRa (Jo..... Mi..... - Ki..... Ra.....)": 67,
+    "Wyoming PoDa (EC..... Po..... - Am..... Da.....)": 8,
+    "Wyoming PoPo (Ja..... Po..... - EC..... Po.....)": 27,
+    "Wyoming PoRa (EC..... Po..... - Ki..... Ra.....)": 6,
+    "Wyoming RaMa (Ki..... Ra..... - Mo..... Ma.....)": 7,
+    "Wyoming RaTa (Ki..... Ra..... - Ri..... Ta.....)": 5
+  }
+}

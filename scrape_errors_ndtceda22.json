@@ -1,0 +1,122 @@
+[
+  {
+    "year": "ndtceda22",
+    "school": "Arizona State",
+    "team": "Arizona State HeLi (Ky..... He..... - Me..... Li.....)",
+    "error": "round mismatch: got 0, expected 1"
+  },
+  {
+    "year": "ndtceda22",
+    "school": "Army",
+    "error": "Navigation timeout of 60000 ms exceeded"
+  },
+  {
+    "year": "ndtceda22",
+    "school": "Baylor",
+    "error": "Navigation timeout of 60000 ms exceeded"
+  },
+  {
+    "year": "ndtceda22",
+    "school": "Boston College",
+    "error": "net::ERR_NETWORK_CHANGED at https://opencaselist.com/login"
+  },
+  {
+    "year": "ndtceda22",
+    "school": "Brentwood",
+    "error": "net::ERR_NETWORK_CHANGED at https://opencaselist.com/login"
+  },
+  {
+    "year": "ndtceda22",
+    "school": "Cal Berkeley",
+    "error": "net::ERR_NAME_NOT_RESOLVED at https://opencaselist.com/login"
+  },
+  {
+    "year": "ndtceda22",
+    "school": "Cal State Fullerton",
+    "error": "net::ERR_NAME_NOT_RESOLVED at https://opencaselist.com/login"
+  },
+  {
+    "year": "ndtceda22",
+    "school": "Central Oklahoma",
+    "error": "net::ERR_NAME_NOT_RESOLVED at https://opencaselist.com/login"
+  },
+  {
+    "year": "ndtceda22",
+    "school": "Cornell",
+    "error": "net::ERR_NAME_NOT_RESOLVED at https://opencaselist.com/login"
+  },
+  {
+    "year": "ndtceda22",
+    "school": "CSU Long Beach",
+    "error": "net::ERR_NAME_NOT_RESOLVED at https://opencaselist.com/login"
+  },
+  {
+    "year": "ndtceda22",
+    "school": "CSU Northridge",
+    "error": "net::ERR_NAME_NOT_RESOLVED at https://opencaselist.com/login"
+  },
+  {
+    "year": "ndtceda22",
+    "school": "Dartmouth",
+    "error": "net::ERR_NAME_NOT_RESOLVED at https://opencaselist.com/login"
+  },
+  {
+    "year": "ndtceda22",
+    "school": "Emory",
+    "error": "net::ERR_NAME_NOT_RESOLVED at https://opencaselist.com/login"
+  },
+  {
+    "year": "ndtceda22",
+    "school": "James Madison",
+    "team": "James Madison MaSc (Ha..... Ma..... - Ma..... Sc.....)",
+    "error": "round mismatch: got 0, expected 8"
+  },
+  {
+    "year": "ndtceda22",
+    "school": "Minnesota-INTEC",
+    "team": "Minnesota-INTEC HaDa (Be..... Ha..... - Ma..... Da.....)",
+    "error": "round mismatch: got 0, expected 8"
+  },
+  {
+    "year": "ndtceda22",
+    "school": "Missouri State",
+    "team": "Missouri State AbGr (Ar..... Ab..... - Ja..... Gr.....)",
+    "error": "round mismatch: got 0, expected 11"
+  },
+  {
+    "year": "ndtceda22",
+    "school": "Missouri State",
+    "team": "Missouri State AbWo (Ar..... Ab..... - La..... Wo.....)",
+    "error": "round mismatch: got 0, expected 3"
+  },
+  {
+    "year": "ndtceda22",
+    "school": "Missouri State",
+    "team": "Missouri State AlBu (Ju..... Al..... - Co..... Bu.....)",
+    "error": "round mismatch: got 0, expected 13"
+  },
+  {
+    "year": "ndtceda22",
+    "school": "Missouri State",
+    "team": "Missouri State BrRo (Ae..... Br..... - An..... Ro.....)",
+    "error": "round mismatch: got 0, expected 23"
+  },
+  {
+    "year": "ndtceda22",
+    "school": "Missouri State",
+    "team": "Missouri State BuSh (Co..... Bu..... - Ja..... Sh.....)",
+    "error": "round mismatch: got 0, expected 20"
+  },
+  {
+    "year": "ndtceda22",
+    "school": "Missouri State",
+    "team": "Missouri State CaLu (Sa..... Ca..... - Br..... Lu.....)",
+    "error": "round mismatch: got 0, expected 15"
+  },
+  {
+    "year": "ndtceda22",
+    "school": "Missouri State",
+    "team": "Missouri State CaWi (Sa..... Ca..... - Ma..... Wi.....)",
+    "error": "round mismatch: got 0, expected 5"
+  }
+]

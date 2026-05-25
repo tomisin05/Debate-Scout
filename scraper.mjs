@@ -29,7 +29,7 @@ function parseArgs() {
         phase: 'all',          // "map" | "scrape" | "retry" | "all"
         resume: true,          // skip already-done teams
         batchSize: 5,
-        batchDelay: 2 * 60_000, // ms between batches
+        batchDelay: 1 * 60_000, // ms between batches
         pageDelay: 1500,        // ms between page loads
         username: process.env.OPENCASELIST_USERNAME || 'tyur55357@gmail.com',
         password: process.env.OPENCASELIST_PASSWORD || 'Debate-Scrapper',
@@ -94,7 +94,7 @@ function schoolToSlug(school) {
 }
 
 /** Exponential backoff retry wrapper */
-async function withRetry(fn, maxAttempts = 3, baseDelay = 2000) {
+async function withRetry(fn, maxAttempts = 3, baseDelay = 20000) {
     let lastErr;
     for (let attempt = 1; attempt <= maxAttempts; attempt++) {
         try {

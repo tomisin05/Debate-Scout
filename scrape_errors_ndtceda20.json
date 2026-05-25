@@ -1,0 +1,233 @@
+[
+  {
+    "year": "ndtceda20",
+    "school": "Dartmouth",
+    "team": "Dartmouth HeVa (Er..... He..... - Je..... Va.....)",
+    "error": "round mismatch: got 0, expected 8"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "Kansas",
+    "team": "Kansas PaSe (Ji..... Pa..... - Je..... Se.....)",
+    "error": "round mismatch: got 0, expected 11"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "Kansas",
+    "team": "Kansas PeSe (Ra..... Pe..... - Je..... Se.....)",
+    "error": "round mismatch: got 0, expected 35"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "Kansas",
+    "team": "Kansas ScMc (Mi..... Sc..... - Mi..... Mc.....)",
+    "error": "round mismatch: got 0, expected 50"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "Kansas",
+    "team": "Kansas SeSn (Je..... Se..... - Ry..... Sn.....)",
+    "error": "round mismatch: got 0, expected 8"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "Kansas",
+    "team": "Kansas SoEs (Wi..... So..... - Ga..... Es.....)",
+    "error": "round mismatch: got 0, expected 11"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "Kansas",
+    "team": "Kansas SoMa (Wi..... So..... - Za..... Ma.....)",
+    "error": "round mismatch: got 0, expected 32"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "Kansas",
+    "team": "Kansas SoWo (Wi..... So..... - Ma..... Wo.....)",
+    "error": "round mismatch: got 0, expected 24"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "Kansas State",
+    "team": "Kansas State ChTu (Da..... Ch..... - Tr..... Tu.....)",
+    "error": "round mismatch: got 0, expected 5"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "Kansas State",
+    "team": "Kansas State FuTh (Ga..... Fu..... - Be..... Th.....)",
+    "error": "round mismatch: got 0, expected 9"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "Kansas State",
+    "team": "Kansas State SpWa (Sa..... Sp..... - Ca..... Wa.....)",
+    "error": "round mismatch: got 0, expected 6"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "Kansas State",
+    "team": "Kansas State TuTh (Tr..... Tu..... - Be..... Th.....)",
+    "error": "round mismatch: got 0, expected 23"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "Kentucky",
+    "error": "Navigation timeout of 60000 ms exceeded"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "Northwestern",
+    "team": "Northwestern FrWe (Ni..... Fr..... - Ti..... We.....)",
+    "error": "round mismatch: got 0, expected 41"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "Northwestern",
+    "team": "Northwestern LaSt (Ja..... La..... - Ni..... St.....)",
+    "error": "round mismatch: got 0, expected 26"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "Northwestern",
+    "team": "Northwestern LaWe (Ja..... La..... - Ti..... We.....)",
+    "error": "round mismatch: got 0, expected 28"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "NYU",
+    "team": "NYU AgFe (ik..... Ag..... - Ad..... Fe.....)",
+    "error": "round mismatch: got 0, expected 2"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "NYU",
+    "team": "NYU BeZi (Is..... Be..... - Iv..... Zi.....)",
+    "error": "round mismatch: got 0, expected 1"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "NYU",
+    "team": "NYU DoSc (Sa..... Do..... - Al..... Sc.....)",
+    "error": "round mismatch: got 0, expected 5"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "NYU",
+    "team": "NYU JuPe (Ma..... Ju..... - Me..... Pe.....)",
+    "error": "round mismatch: got 0, expected 2"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "NYU",
+    "team": "NYU KaDo (Sa..... Ka..... - Sa..... Do.....)",
+    "error": "round mismatch: got 0, expected 5"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "NYU",
+    "team": "NYU KiSc (Jo..... Ki..... - Al..... Sc.....)",
+    "error": "round mismatch: got 0, expected 3"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "NYU",
+    "team": "NYU LiBe (La..... Li..... - Is..... Be.....)",
+    "error": "round mismatch: got 0, expected 4"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "NYU",
+    "team": "NYU MiVa (Dh..... Mi..... - Is..... Va.....)",
+    "error": "round mismatch: got 0, expected 5"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "NYU",
+    "team": "NYU PiHu (Ma..... Pi..... - Fa..... Hu.....)",
+    "error": "round mismatch: got 0, expected 45"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "NYU",
+    "team": "NYU RaKi (Be..... Ra..... - Ch..... Ki.....)",
+    "error": "round mismatch: got 0, expected 1"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "NYU",
+    "team": "NYU RoSu (Et..... Ro..... - Si..... Su.....)",
+    "error": "round mismatch: got 0, expected 2"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "NYU",
+    "team": "NYU ScSu (Al..... Sc..... - Si..... Su.....)",
+    "error": "round mismatch: got 0, expected 1"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "NYU",
+    "team": "NYU ShTo (Al..... Sh..... - Eu..... To.....)",
+    "error": "round mismatch: got 0, expected 36"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "NYU",
+    "team": "NYU TeCi (Ar..... Te..... - De..... Ci.....)",
+    "error": "round mismatch: got 0, expected 1"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "NYU",
+    "team": "NYU ToFe (Al..... To..... - Ad..... Fe.....)",
+    "error": "round mismatch: got 0, expected 5"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "NYU",
+    "team": "NYU WhWi (Au..... Wh..... - Ga..... Wi.....)",
+    "error": "round mismatch: got 0, expected 4"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "NYU",
+    "team": "NYU ZiRo (Iv..... Zi..... - Et..... Ro.....)",
+    "error": "round mismatch: got 0, expected 4"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "NYU",
+    "team": "NYU ZiSc (Iv..... Zi..... - Al..... Sc.....)",
+    "error": "round mismatch: got 0, expected 1"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "NYU",
+    "team": "NYU ZiSm (Iv..... Zi..... - Ja..... Sm.....)",
+    "error": "round mismatch: got 0, expected 1"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "Oklahoma",
+    "error": "Navigation timeout of 60000 ms exceeded"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "Pittsburgh",
+    "error": "Navigation timeout of 60000 ms exceeded"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "Wyoming",
+    "team": "Wyoming RaMa (Ki..... Ra..... - Mo..... Ma.....)",
+    "error": "round mismatch: got 0, expected 7"
+  },
+  {
+    "year": "ndtceda20",
+    "school": "Wyoming",
+    "team": "Wyoming RaTa (Ki..... Ra..... - Ri..... Ta.....)",
+    "error": "round mismatch: got 0, expected 5"
+  }
+]

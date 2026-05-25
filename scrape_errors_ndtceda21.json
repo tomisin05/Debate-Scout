@@ -1,0 +1,250 @@
+[
+  {
+    "year": "ndtceda21",
+    "school": "AmherstHarvard",
+    "error": "Navigation timeout of 60000 ms exceeded"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Army",
+    "error": "Navigation timeout of 60000 ms exceeded"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Houston",
+    "team": "Houston CrFo (Br..... Cr..... - Pa..... Fo.....)",
+    "error": "round mismatch: got 0, expected 8"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Houston",
+    "team": "Houston CrLe (Br..... Cr..... - Ga..... Le.....)",
+    "error": "round mismatch: got 0, expected 3"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Houston",
+    "team": "Houston CrLe (Br..... Cr..... - Tu..... Le.....)",
+    "error": "round mismatch: got 0, expected 1"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Houston",
+    "team": "Houston GoNg (Je..... Go..... - Al..... Ng.....)",
+    "error": "round mismatch: got 0, expected 4"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Houston",
+    "team": "Houston KhHo (Ki..... Kh..... - Sp..... Ho.....)",
+    "error": "round mismatch: got 0, expected 14"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Houston",
+    "team": "Houston LeFo (Ga..... Le..... - Pa..... Fo.....)",
+    "error": "round mismatch: got 0, expected 11"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Houston",
+    "team": "Houston LeKi (Ch..... Le..... - Re..... Ki.....)",
+    "error": "round mismatch: got 0, expected 1"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Houston",
+    "team": "Houston LeLe (Tu..... Le..... - Ch..... Le.....)",
+    "error": "round mismatch: got 0, expected 1"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Houston",
+    "team": "Houston LoPa (Di..... Lo..... - Am..... Pa.....)",
+    "error": "round mismatch: got 0, expected 4"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Houston",
+    "team": "Houston VoLo (Na..... Vo..... - Ca..... Lo.....)",
+    "error": "round mismatch: got 0, expected 1"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Indiana",
+    "team": "Indiana FiLo (An..... Fi..... - Ky..... Lo.....)",
+    "error": "round mismatch: got 0, expected 3"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Indiana",
+    "team": "Indiana FlKi (Ma..... Fl..... - Za..... Ki.....)",
+    "error": "round mismatch: got 0, expected 2"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Indiana",
+    "team": "Indiana HoFi (Ha..... Ho..... - An..... Fi.....)",
+    "error": "round mismatch: got 0, expected 14"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Indiana",
+    "team": "Indiana JaHo (Ar..... Ja..... - Ha..... Ho.....)",
+    "error": "round mismatch: got 0, expected 1"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Minnesota",
+    "team": "Minnesota AmPr (Ab..... Am..... - Ca..... Pr.....)",
+    "error": "round mismatch: got 0, expected 30"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Minnesota",
+    "team": "Minnesota AnPr (Cl..... An..... - Ca..... Pr.....)",
+    "error": "round mismatch: got 0, expected 5"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Minnesota",
+    "team": "Minnesota BeAn (Ky..... Be..... - Cl..... An.....)",
+    "error": "round mismatch: got 0, expected 5"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Minnesota",
+    "team": "Minnesota DaMu (Ry..... Da..... - Th..... Mu.....)",
+    "error": "round mismatch: got 0, expected 8"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Minnesota",
+    "team": "Minnesota DaPa (Ry..... Da..... - J..... Pa.....)",
+    "error": "round mismatch: got 0, expected 48"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Minnesota",
+    "team": "Minnesota DaRu (Ry..... Da..... - Ny..... Ru.....)",
+    "error": "round mismatch: got 0, expected 22"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Minnesota",
+    "team": "Minnesota DoMu (Av..... Do..... - Th..... Mu.....)",
+    "error": "round mismatch: got 0, expected 6"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Minnesota",
+    "team": "Minnesota FrPa (Jo..... Fr..... - J..... Pa.....)",
+    "error": "round mismatch: got 0, expected 23"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Minnesota",
+    "team": "Minnesota JoSu (No..... Jo..... - Ke..... Su.....)",
+    "error": "round mismatch: got 0, expected 88"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Minnesota",
+    "team": "Minnesota KoMu (Mi..... Ko..... - Th..... Mu.....)",
+    "error": "round mismatch: got 0, expected 6"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Minnesota",
+    "team": "Minnesota MuBl (Th..... Mu..... - Gr..... Bl.....)",
+    "error": "round mismatch: got 0, expected 6"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Minnesota",
+    "team": "Minnesota MuPr (Th..... Mu..... - Ca..... Pr.....)",
+    "error": "round mismatch: got 0, expected 18"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Minnesota",
+    "team": "Minnesota MuRu (Th..... Mu..... - Ny..... Ru.....)",
+    "error": "round mismatch: got 0, expected 17"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Minnesota",
+    "team": "Minnesota PaSu (J..... Pa..... - Ke..... Su.....)",
+    "error": "round mismatch: got 0, expected 7"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Minnesota",
+    "team": "Minnesota PhRa (Ow..... Ph..... - Br..... Ra.....)",
+    "error": "round mismatch: got 0, expected 71"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Minnesota",
+    "team": "Minnesota PhSp (Ow..... Ph..... - Ab..... Sp.....)",
+    "error": "round mismatch: got 0, expected 5"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Minnesota",
+    "team": "Minnesota PrRu (Ca..... Pr..... - Ny..... Ru.....)",
+    "error": "round mismatch: got 0, expected 6"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Minnesota",
+    "team": "Minnesota PrSp (Ca..... Pr..... - Ab..... Sp.....)",
+    "error": "round mismatch: got 0, expected 6"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Minnesota",
+    "team": "Minnesota RuKo (Ny..... Ru..... - Mi..... Ko.....)",
+    "error": "round mismatch: got 0, expected 1"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Missouri State",
+    "error": "Navigation timeout of 60000 ms exceeded"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Monmouth",
+    "error": "Navigation timeout of 60000 ms exceeded"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Washington",
+    "team": "Washington ShSt (An..... Sh..... - Jo..... St.....)",
+    "error": "round mismatch: got 0, expected 2"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Washington University",
+    "team": "Washington University AlDa (Ev..... Al..... - Am..... Da.....)",
+    "error": "round mismatch: got 0, expected 50"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Wayne State",
+    "team": "Wayne State KoTr (Ja..... Ko..... - Mi..... Tr.....)",
+    "error": "round mismatch: got 0, expected 6"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Wayne State",
+    "team": "Wayne State LuRe (Ja..... Lu..... - Ir..... Re.....)",
+    "error": "round mismatch: got 0, expected 2"
+  },
+  {
+    "year": "ndtceda21",
+    "school": "Wayne State",
+    "team": "Wayne State ReHo (Br..... Re..... - Fa..... Ho.....)",
+    "error": "round mismatch: got 0, expected 5"
+  }
+]
