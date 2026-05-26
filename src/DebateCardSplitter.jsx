@@ -1,29 +1,59 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const DebateCardSplitter = () => {
-  const [docs, setDocs] = useState(new Map());
   const [cards, setCards] = useState([]);
   const [filtered, setFiltered] = useState([]);
-  const [selectedCardId, setSelectedCardId] = useState(null);
   const [search, setSearch] = useState('');
   const [searchScope, setSearchScope] = useState('all');
-  const [docFilter, setDocFilter] = useState('');
-  const [sectionFilter, setSectionFilter] = useState('');
   const [sortOrder, setSortOrder] = useState('doc');
   const [showSearchHelp, setShowSearchHelp] = useState(false);
-  const [nextDocId, setNextDocId] = useState(1);
-  const [nextCardId, setNextCardId] = useState(1);
-  const [libLoading, setLibLoading] = useState(true);
+  const [selectedCard, setSelectedCard] = useState(null);
 
-  const fileInputRef = useRef(null);
-  const leftPaneRef = useRef(null);
+  // Mock data for demonstration
+  const mockCards = [
+    {
+      id: 1,
+      docName: "Climate Policy 2024",
+      section: "Impacts",
+      tag: "Climate change causes extinction through multiple pathways",
+      cite: "Hansen 24 (James, NASA Climate Scientist, \"Accelerating Climate Crisis,\" Nature Climate Change, March 2024)",
+      bodyPlain: "Climate change represents an existential threat to human civilization through multiple interconnected pathways. Rising temperatures trigger cascading feedback loops that accelerate warming beyond human control. Sea level rise displaces billions, creating unprecedented refugee crises. Extreme weather events destroy infrastructure and agricultural systems. Ocean acidification collapses marine ecosystems that billions depend on for protein. The combination of these factors creates a perfect storm for civilizational collapse.",
+      searchTag: "climate change causes extinction through multiple pathways",
+      searchCite: "hansen 24 (james, nasa climate scientist, \"accelerating climate crisis,\" nature climate change, march 2024)",
+      searchBody: "climate change represents an existential threat to human civilization through multiple interconnected pathways. rising temperatures trigger cascading feedback loops that accelerate warming beyond human control. sea level rise displaces billions, creating unprecedented refugee crises. extreme weather events destroy infrastructure and agricultural systems. ocean acidification collapses marine ecosystems that billions depend on for protein. the combination of these factors creates a perfect storm for civilizational collapse.",
+      searchAll: "climate change causes extinction through multiple pathways hansen 24 (james, nasa climate scientist, \"accelerating climate crisis,\" nature climate change, march 2024) climate change represents an existential threat to human civilization through multiple interconnected pathways. rising temperatures trigger cascading feedback loops that accelerate warming beyond human control. sea level rise displaces billions, creating unprecedented refugee crises. extreme weather events destroy infrastructure and agricultural systems. ocean acidification collapses marine ecosystems that billions depend on for protein. the combination of these factors creates a perfect storm for civilizational collapse.",
+      author: "Hansen"
+    },
+    {
+      id: 2,
+      docName: "Energy Transition",
+      section: "Solutions",
+      tag: "Renewable energy transition is technically feasible and economically viable",
+      cite: "Jacobson 23 (Mark, Stanford University, \"100% Clean Energy Roadmap,\" Energy Policy, December 2023)",
+      bodyPlain: "A complete transition to renewable energy is not only technically feasible but economically advantageous. Wind, water, and solar technologies can provide 100% of global energy needs by 2035. The transition would create 28 million more jobs than it eliminates. Total system costs would be 63% lower than business-as-usual scenarios. Grid stability can be maintained through smart grid technologies and energy storage. The primary barriers are political, not technological or economic.",
+      searchTag: "renewable energy transition is technically feasible and economically viable",
+      searchCite: "jacobson 23 (mark, stanford university, \"100% clean energy roadmap,\" energy policy, december 2023)",
+      searchBody: "a complete transition to renewable energy is not only technically feasible but economically advantageous. wind, water, and solar technologies can provide 100% of global energy needs by 2035. the transition would create 28 million more jobs than it eliminates. total system costs would be 63% lower than business-as-usual scenarios. grid stability can be maintained through smart grid technologies and energy storage. the primary barriers are political, not technological or economic.",
+      searchAll: "renewable energy transition is technically feasible and economically viable jacobson 23 (mark, stanford university, \"100% clean energy roadmap,\" energy policy, december 2023) a complete transition to renewable energy is not only technically feasible but economically advantageous. wind, water, and solar technologies can provide 100% of global energy needs by 2035. the transition would create 28 million more jobs than it eliminates. total system costs would be 63% lower than business-as-usual scenarios. grid stability can be maintained through smart grid technologies and energy storage. the primary barriers are political, not technological or economic.",
+      author: "Jacobson"
+    },
+    {
+      id: 3,
+      docName: "Nuclear Policy",
+      section: "Deterrence",
+      tag: "Nuclear weapons modernization increases first-strike capabilities",
+      cite: "Kristensen 24 (Hans, Federation of American Scientists, \"Nuclear Modernization Trends,\" Bulletin of Atomic Scientists, January 2024)",
+      bodyPlain: "Current nuclear modernization programs are fundamentally altering the strategic balance by enhancing first-strike capabilities. New low-yield warheads lower the threshold for nuclear use. Hypersonic delivery systems compress decision-making timeframes to minutes. Improved accuracy makes counterforce strikes more feasible. These developments undermine crisis stability and increase the likelihood of nuclear conflict through miscalculation or technical failure.",
+      searchTag: "nuclear weapons modernization increases first-strike capabilities",
+      searchCite: "kristensen 24 (hans, federation of american scientists, \"nuclear modernization trends,\" bulletin of atomic scientists, january 2024)",
+      searchBody: "current nuclear modernization programs are fundamentally altering the strategic balance by enhancing first-strike capabilities. new low-yield warheads lower the threshold for nuclear use. hypersonic delivery systems compress decision-making timeframes to minutes. improved accuracy makes counterforce strikes more feasible. these developments undermine crisis stability and increase the likelihood of nuclear conflict through miscalculation or technical failure.",
+      searchAll: "nuclear weapons modernization increases first-strike capabilities kristensen 24 (hans, federation of american scientists, \"nuclear modernization trends,\" bulletin of atomic scientists, january 2024) current nuclear modernization programs are fundamentally altering the strategic balance by enhancing first-strike capabilities. new low-yield warheads lower the threshold for nuclear use. hypersonic delivery systems compress decision-making timeframes to minutes. improved accuracy makes counterforce strikes more feasible. these developments undermine crisis stability and increase the likelihood of nuclear conflict through miscalculation or technical failure.",
+      author: "Kristensen"
+    }
+  ];
 
   // Enhanced Search Engine
   class SearchEngine {
-    constructor() {
-      this.stopWords = new Set(['the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by']);
-    }
-
     parseQuery(query) {
       if (!query.trim()) return { type: 'empty' };
       
@@ -225,28 +255,15 @@ const DebateCardSplitter = () => {
   const searchEngine = new SearchEngine();
 
   useEffect(() => {
-    // Simulate library loading
-    const timer = setTimeout(() => {
-      setLibLoading(false);
-    }, 1000);
-    return () => clearTimeout(timer);
+    setCards(mockCards);
+    setFiltered(mockCards);
   }, []);
-
-  const handleFileUpload = (files) => {
-    console.log('Files uploaded:', files.length);
-    // File processing would go here
-  };
 
   const applyFilters = () => {
     const q = search.trim();
-    const docFilterId = docFilter ? Number(docFilter) : null;
-
     let result = [];
     
     for (const card of cards) {
-      if (docFilterId && card.docId !== docFilterId) continue;
-      if (sectionFilter && card.section !== sectionFilter) continue;
-      
       const searchResult = searchEngine.searchCard(card, q, searchScope);
       if (searchResult.matches) {
         result.push({ ...card, searchScore: searchResult.score });
@@ -257,10 +274,8 @@ const DebateCardSplitter = () => {
       result.sort((a, b) => (b.searchScore || 0) - (a.searchScore || 0));
     } else if (sortOrder === 'alpha') {
       result.sort((a, b) => a.author.localeCompare(b.author));
-    } else if (sortOrder === 'taglen') {
-      result.sort((a, b) => a.tag.length - b.tag.length);
     } else {
-      result.sort((a, b) => a.docId - b.docId || a.id - b.id);
+      result.sort((a, b) => a.id - b.id);
     }
 
     setFiltered(result);
@@ -271,7 +286,7 @@ const DebateCardSplitter = () => {
       applyFilters();
     }, 120);
     return () => clearTimeout(timer);
-  }, [search, searchScope, docFilter, sectionFilter, sortOrder, cards]);
+  }, [search, searchScope, sortOrder, cards]);
 
   const highlightMatches = (text, query) => {
     if (!query.trim()) return text;
@@ -312,17 +327,6 @@ const DebateCardSplitter = () => {
       result = result.replace(new RegExp(`(${safe})`, 'gi'), '<mark style="background:#fff39a;padding:0 1px;">$1</mark>');
     }
     
-    for (const term of query.fuzzyTerms) {
-      const words = result.split(/\s+/);
-      for (let i = 0; i < words.length; i++) {
-        const cleanWord = words[i].replace(/<[^>]*>/g, '').toLowerCase();
-        if (searchEngine.similarity(term, cleanWord) >= 0.7) {
-          const safe = cleanWord.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-          result = result.replace(new RegExp(`\\b(${safe})\\b`, 'gi'), '<mark style="background:#b8d4ff;padding:0 1px;">$1</mark>');
-        }
-      }
-    }
-    
     return result;
   };
 
@@ -331,101 +335,49 @@ const DebateCardSplitter = () => {
       display: 'grid', 
       gridTemplateRows: 'auto auto 1fr', 
       height: '100vh', 
-      maxHeight: '100vh', 
-      overflow: 'hidden',
-      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
       color: '#1f1e1d',
       background: '#ffffff'
     }}>
-      {/* Library Loading Banner */}
-      {libLoading && (
-        <div style={{
-          position: 'fixed', top: 0, left: 0, right: 0,
-          background: '#e8f0fe', borderBottom: '0.5px solid #6f8bd6',
-          padding: '8px 20px', fontSize: '12px', color: '#2a4fa3',
-          display: 'flex', alignItems: 'center', gap: '8px', zIndex: 100
-        }}>
-          <div style={{
-            width: '12px', height: '12px', border: '1.5px solid #a0b4e8',
-            borderTopColor: '#2a4fa3', borderRadius: '50%',
-            animation: 'spin 0.7s linear infinite'
-          }}></div>
-          Loading document renderer...
-        </div>
-      )}
-
       {/* Top Bar */}
       <div style={{
-        padding: '14px 20px', borderBottom: '0.5px solid #e3e1d8',
-        display: 'flex', alignItems: 'center', gap: '18px', flexWrap: 'wrap',
-        marginTop: libLoading ? '37px' : '0'
+        padding: '14px 20px', borderBottom: '1px solid #e3e1d8',
+        display: 'flex', alignItems: 'center', gap: '18px', flexWrap: 'wrap'
       }}>
         <h1 style={{ fontSize: '16px', fontWeight: 600, margin: 0 }}>
-          Debate Card Splitter <span style={{ color: '#5e5d59', fontWeight: 400, marginLeft: '4px' }}>multi-doc</span>
+          Debate Card Splitter <span style={{ color: '#5e5d59', fontWeight: 400 }}>demo</span>
         </h1>
-        <button 
-          onClick={() => fileInputRef.current?.click()}
-          style={{
-            display: 'inline-flex', alignItems: 'center', gap: '6px',
-            background: '#1f1e1d', color: '#ffffff', border: 'none',
-            borderRadius: '6px', padding: '7px 12px', fontSize: '13px', cursor: 'pointer'
-          }}
-        >
-          + Add documents
-        </button>
-        <input 
-          ref={fileInputRef}
-          id="file-input"
-          name="file-input"
-          type="file" 
-          accept=".docx" 
-          multiple 
-          style={{ display: 'none' }}
-          onChange={(e) => handleFileUpload(Array.from(e.target.files || []))}
-          aria-label="Upload DOCX files"
-        />
         <div style={{ display: 'flex', gap: '16px', fontSize: '12px', color: '#5e5d59', marginLeft: 'auto' }}>
-          <span><b style={{ color: '#1f1e1d', fontWeight: 600, marginRight: '4px', fontSize: '13px' }}>{docs.size}</b>documents</span>
-          <span><b style={{ color: '#1f1e1d', fontWeight: 600, marginRight: '4px', fontSize: '13px' }}>{cards.length}</b>cards</span>
-          <span><b style={{ color: '#1f1e1d', fontWeight: 600, marginRight: '4px', fontSize: '13px' }}>{filtered.length}</b>shown</span>
+          <span><b style={{ color: '#1f1e1d', fontWeight: 600, marginRight: '4px' }}>3</b>documents</span>
+          <span><b style={{ color: '#1f1e1d', fontWeight: 600, marginRight: '4px' }}>{cards.length}</b>cards</span>
+          <span><b style={{ color: '#1f1e1d', fontWeight: 600, marginRight: '4px' }}>{filtered.length}</b>shown</span>
         </div>
       </div>
 
       {/* Search Row */}
       <div style={{
-        padding: '12px 20px', borderBottom: '0.5px solid #e3e1d8',
+        padding: '12px 20px', borderBottom: '1px solid #e3e1d8',
         display: 'flex', gap: '10px', alignItems: 'center', flexWrap: 'wrap'
       }}>
         <div style={{ position: 'relative', flex: 1, minWidth: '260px' }}>
-          <label htmlFor="search-input" style={{ position: 'absolute', left: '-9999px' }}>Search debate cards</label>
-          <span style={{
-            position: 'absolute', left: '11px', top: '50%', transform: 'translateY(-50%)',
-            fontSize: '16px', color: '#8a8983', pointerEvents: 'none'
-          }}>🔍</span>
           <input 
-            id="search-input"
-            name="search-input"
             type="search"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            placeholder='Search: "exact phrase", word1 AND word2, word1 OR word2, -exclude, fuzzy~'
-            aria-label="Search debate cards"
+            placeholder='Try: "climate change", nuclear AND weapons, energy -fossil, climat~'
             style={{
-              width: '100%', padding: '9px 40px 9px 34px',
-              border: '0.5px solid #c9c7be', borderRadius: '6px',
-              fontSize: '14px', background: '#ffffff', color: '#1f1e1d', outline: 'none'
+              width: '100%', padding: '9px 40px 9px 12px',
+              border: '1px solid #c9c7be', borderRadius: '6px',
+              fontSize: '14px', background: '#ffffff', outline: 'none'
             }}
           />
           <button 
-            id="search-help"
             onClick={() => setShowSearchHelp(!showSearchHelp)}
-            aria-label="Show search help"
-            aria-expanded={showSearchHelp}
             style={{
               position: 'absolute', right: '8px', top: '50%', transform: 'translateY(-50%)',
               width: '20px', height: '20px', borderRadius: '50%',
               background: '#f6f5f1', color: '#8a8983', border: 'none', cursor: 'pointer',
-              fontSize: '12px', fontWeight: 'bold', display: 'flex', alignItems: 'center', justifyContent: 'center'
+              fontSize: '12px', fontWeight: 'bold'
             }}
           >
             ?
@@ -437,34 +389,30 @@ const DebateCardSplitter = () => {
               borderRadius: '6px', fontSize: '12px', lineHeight: '1.4',
               boxShadow: '0 4px 12px rgba(0,0,0,0.15)', zIndex: 1000, minWidth: '300px'
             }}>
-              <h4 style={{ margin: '0 0 8px 0', fontSize: '13px', fontWeight: 600 }}>Advanced Search</h4>
+              <h4 style={{ margin: '0 0 8px 0', fontSize: '13px', fontWeight: 600 }}>Enhanced Search</h4>
               <ul style={{ margin: 0, paddingLeft: '16px' }}>
-                <li style={{ marginBottom: '4px' }}><code style={{ background: 'rgba(255,255,255,0.2)', padding: '1px 4px', borderRadius: '2px' }}>"climate change"</code> - Exact phrase</li>
-                <li style={{ marginBottom: '4px' }}><code style={{ background: 'rgba(255,255,255,0.2)', padding: '1px 4px', borderRadius: '2px' }}>climate AND change</code> - Both words required</li>
-                <li style={{ marginBottom: '4px' }}><code style={{ background: 'rgba(255,255,255,0.2)', padding: '1px 4px', borderRadius: '2px' }}>climate OR warming</code> - Either word</li>
-                <li style={{ marginBottom: '4px' }}><code style={{ background: 'rgba(255,255,255,0.2)', padding: '1px 4px', borderRadius: '2px' }}>climate -denial</code> - Include climate, exclude denial</li>
-                <li style={{ marginBottom: '4px' }}><code style={{ background: 'rgba(255,255,255,0.2)', padding: '1px 4px', borderRadius: '2px' }}>climat~</code> - Fuzzy match (climate, climatic, etc.)</li>
+                <li>"climate change" - Exact phrase</li>
+                <li>nuclear AND weapons - Both required</li>
+                <li>energy OR renewable - Either word</li>
+                <li>climate -denial - Exclude denial</li>
+                <li>climat~ - Fuzzy match</li>
               </ul>
             </div>
           )}
         </div>
         
         <div style={{
-          display: 'inline-flex', gap: '4px', background: '#f6f5f1',
+          display: 'flex', gap: '4px', background: '#f6f5f1',
           padding: '3px', borderRadius: '6px'
-        }} role="tablist" aria-label="Search scope">
+        }}>
           {['all', 'tag', 'cite', 'body'].map(scope => (
             <button
               key={scope}
               onClick={() => setSearchScope(scope)}
-              role="tab"
-              aria-selected={searchScope === scope}
-              aria-label={`Search in ${scope === 'all' ? 'all fields' : scope}`}
               style={{
                 border: 'none', background: searchScope === scope ? '#ffffff' : 'transparent',
                 padding: '5px 10px', fontSize: '12px', borderRadius: '4px',
-                cursor: 'pointer', color: searchScope === scope ? '#1f1e1d' : '#5e5d59',
-                boxShadow: searchScope === scope ? '0 1px 2px rgba(0,0,0,0.05)' : 'none'
+                cursor: 'pointer', color: searchScope === scope ? '#1f1e1d' : '#5e5d59'
               }}
             >
               {scope.charAt(0).toUpperCase() + scope.slice(1)}
@@ -472,85 +420,102 @@ const DebateCardSplitter = () => {
           ))}
         </div>
 
-        <label htmlFor="sort-order" style={{ position: 'absolute', left: '-9999px' }}>Sort order</label>
-
         <select 
-          id="sort-order"
-          name="sort-order"
           value={sortOrder}
           onChange={(e) => setSortOrder(e.target.value)}
-          aria-label="Sort order"
           style={{
             fontSize: '13px', padding: '8px 10px', borderRadius: '6px',
-            border: '0.5px solid #c9c7be', background: '#ffffff',
-            color: '#1f1e1d', maxWidth: '220px'
+            border: '1px solid #c9c7be', background: '#ffffff'
           }}
         >
           <option value="doc">Document order</option>
           <option value="alpha">Author (A–Z)</option>
-          <option value="taglen">Tag length</option>
           <option value="relevance">Relevance</option>
         </select>
       </div>
 
       {/* Main Content */}
       <div style={{
-        display: 'grid', gridTemplateColumns: 'minmax(340px, 460px) 1fr',
+        display: 'grid', gridTemplateColumns: '400px 1fr',
         minHeight: 0, overflow: 'hidden'
       }}>
-        {/* Left Pane */}
-        <div ref={leftPaneRef} style={{
-          borderRight: '0.5px solid #e3e1d8', overflowY: 'auto',
-          minHeight: 0, background: '#f6f5f1'
+        {/* Left Pane - Card List */}
+        <div style={{
+          borderRight: '1px solid #e3e1d8', overflowY: 'auto',
+          background: '#f6f5f1'
         }}>
           <div style={{
             position: 'sticky', top: 0, background: '#f6f5f1',
-            padding: '10px 14px', borderBottom: '0.5px solid #e3e1d8',
-            fontSize: '12px', color: '#5e5d59',
-            display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 2
+            padding: '10px 14px', borderBottom: '1px solid #e3e1d8',
+            fontSize: '12px', color: '#5e5d59'
           }}>
-            <span>No documents uploaded</span>
+            {filtered.length} of {cards.length} cards
           </div>
           
-          <div style={{ padding: '60px 30px', textAlign: 'center', color: '#8a8983', fontSize: '13px' }}>
-            <span style={{ fontSize: '28px', display: 'block', marginBottom: '10px', color: '#5e5d59' }}>📄</span>
-            Upload .docx files to get started.
-            <br /><br />
-            <button 
-              onClick={() => fileInputRef.current?.click()}
+          {filtered.map(card => (
+            <div 
+              key={card.id}
+              onClick={() => setSelectedCard(card)}
               style={{
-                display: 'inline-flex', alignItems: 'center', gap: '6px',
-                background: '#1f1e1d', color: '#ffffff', border: 'none',
-                borderRadius: '6px', padding: '7px 12px', fontSize: '13px', cursor: 'pointer',
-                marginTop: '16px'
+                padding: '12px 14px', borderBottom: '1px solid #e3e1d8',
+                cursor: 'pointer', background: selectedCard?.id === card.id ? '#ffffff' : '#f6f5f1',
+                borderLeft: selectedCard?.id === card.id ? '3px solid #6f8bd6' : 'none'
               }}
             >
-              + Add documents
-            </button>
-          </div>
+              <div style={{ fontSize: '10px', color: '#8a8983', marginBottom: '4px' }}>
+                {card.docName} • {card.section}
+                {card.searchScore && sortOrder === 'relevance' && (
+                  <span style={{ marginLeft: '8px', color: '#8a8983' }}>
+                    {Math.round(card.searchScore)}
+                  </span>
+                )}
+              </div>
+              <div 
+                style={{ fontSize: '13px', fontWeight: 600, marginBottom: '4px' }}
+                dangerouslySetInnerHTML={{ __html: highlightMatches(card.tag, search) }}
+              />
+              <div 
+                style={{ fontSize: '11px', color: '#5e5d59', marginBottom: '6px' }}
+                dangerouslySetInnerHTML={{ __html: highlightMatches(card.cite, search) }}
+              />
+              <div 
+                style={{ fontSize: '11px', color: '#5e5d59', fontFamily: 'Georgia, serif' }}
+                dangerouslySetInnerHTML={{ __html: highlightMatches(card.bodyPlain.substring(0, 150) + '...', search) }}
+              />
+            </div>
+          ))}
         </div>
 
-        {/* Right Pane */}
-        <div style={{
-          display: 'grid', gridTemplateRows: 'auto 1fr auto',
-          minHeight: 0, overflow: 'hidden'
-        }}>
-          <div style={{
-            display: 'flex', flexDirection: 'column', alignItems: 'center',
-            justifyContent: 'center', height: '100%', padding: '60px 30px',
-            textAlign: 'center', color: '#8a8983', fontSize: '13px'
-          }}>
-            <span style={{ fontSize: '28px', display: 'block', marginBottom: '10px', color: '#5e5d59' }}>←</span>
-            Select a card from the list to view it here.
-          </div>
+        {/* Right Pane - Card Preview */}
+        <div style={{ padding: '20px', overflowY: 'auto' }}>
+          {selectedCard ? (
+            <div>
+              {selectedCard.section && (
+                <div style={{ fontSize: '10px', color: '#8a8983', marginBottom: '8px', textTransform: 'uppercase' }}>
+                  {selectedCard.section}
+                </div>
+              )}
+              <h2 style={{ fontSize: '18px', fontWeight: 700, marginBottom: '12px' }}>
+                {selectedCard.tag}
+              </h2>
+              <div style={{ fontSize: '12px', fontWeight: 600, marginBottom: '16px' }}>
+                {selectedCard.cite}
+              </div>
+              <div style={{ fontSize: '14px', lineHeight: '1.6', fontFamily: 'Georgia, serif' }}>
+                {selectedCard.bodyPlain}
+              </div>
+            </div>
+          ) : (
+            <div style={{
+              display: 'flex', flexDirection: 'column', alignItems: 'center',
+              justifyContent: 'center', height: '100%', color: '#8a8983'
+            }}>
+              <div style={{ fontSize: '28px', marginBottom: '10px' }}>←</div>
+              Select a card from the list to view it here.
+            </div>
+          )}
         </div>
       </div>
-
-      <style>{`
-        @keyframes spin {
-          to { transform: rotate(360deg); }
-        }
-      `}</style>
     </div>
   );
 };
