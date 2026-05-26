@@ -1,0 +1,429 @@
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-sans); }
+.container { padding: 1.5rem 0; }
+.header { margin-bottom: 1.5rem; }
+.header h2 { font-size: 18px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 6px; }
+.header p { font-size: 13px; color: var(--color-text-secondary); line-height: 1.5; }
+.upload-zone { border: 1.5px dashed var(--color-border-secondary); border-radius: var(--border-radius-lg); padding: 2rem; text-align: center; cursor: pointer; transition: background 0.15s; margin-bottom: 1.5rem; }
+.upload-zone:hover { background: var(--color-background-secondary); }
+.upload-zone.dragover { background: var(--color-background-info); border-color: var(--color-border-info); }
+.upload-zone i { font-size: 28px; color: var(--color-text-secondary); display: block; margin-bottom: 8px; }
+.upload-zone p { font-size: 14px; color: var(--color-text-secondary); }
+.upload-zone .sub { font-size: 12px; color: var(--color-text-tertiary); margin-top: 4px; }
+#file-input { display: none; }
+.stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 1.5rem; }
+.stat { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 12px; }
+.stat-label { font-size: 12px; color: var(--color-text-secondary); margin-bottom: 4px; }
+.stat-value { font-size: 22px; font-weight: 500; color: var(--color-text-primary); }
+.controls { display: flex; gap: 8px; margin-bottom: 1rem; flex-wrap: wrap; align-items: center; }
+.controls label { font-size: 13px; color: var(--color-text-secondary); }
+select { font-size: 13px; padding: 6px 10px; border-radius: var(--border-radius-md); }
+.card-list { display: flex; flex-direction: column; gap: 8px; max-height: 380px; overflow-y: auto; border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 8px; }
+.card-item { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-md); padding: 10px 12px; display: flex; align-items: flex-start; gap: 10px; cursor: pointer; transition: border-color 0.15s; }
+.card-item:hover { border-color: var(--color-border-secondary); }
+.card-item.selected { border-color: var(--color-border-info); background: var(--color-background-info); }
+.card-check { width: 16px; height: 16px; flex-shrink: 0; margin-top: 2px; }
+.card-info { flex: 1; min-width: 0; }
+.card-tag { font-size: 12px; font-weight: 500; color: var(--color-text-primary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.card-cite { font-size: 11px; color: var(--color-text-secondary); margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.card-section { font-size: 10px; color: var(--color-text-tertiary); margin-top: 2px; }
+.action-row { display: flex; gap: 8px; margin-top: 1rem; flex-wrap: wrap; }
+.btn-primary { background: var(--color-background-primary); border: 0.5px solid var(--color-border-secondary); border-radius: var(--border-radius-md); padding: 8px 16px; font-size: 13px; cursor: pointer; display: flex; align-items: center; gap: 6px; }
+.btn-primary:hover { background: var(--color-background-secondary); }
+.btn-accent { background: var(--color-text-primary); color: var(--color-background-primary); border: none; border-radius: var(--border-radius-md); padding: 8px 16px; font-size: 13px; cursor: pointer; display: flex; align-items: center; gap: 6px; }
+.btn-accent:hover { opacity: 0.85; }
+.progress { background: var(--color-background-secondary); border-radius: var(--border-radius-md); height: 6px; margin-top: 1rem; overflow: hidden; display: none; }
+.progress-bar { height: 100%; background: var(--color-text-primary); transition: width 0.2s; border-radius: var(--border-radius-md); }
+.select-all-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; font-size: 13px; color: var(--color-text-secondary); }
+.status-msg { font-size: 13px; color: var(--color-text-secondary); margin-top: 8px; min-height: 20px; }
+</style>
+
+<div class="container">
+  <div class="header">
+    <h2><i class="ti ti-cards" aria-hidden="true" style="margin-right:8px;font-size:18px;vertical-align:-2px;"></i>Debate card splitter</h2>
+    <p>Upload a debate document and split each evidence card into its own .docx file, preserving all bold, underline, and highlight formatting.</p>
+  </div>
+
+  <div class="upload-zone" id="drop-zone">
+    <input type="file" id="file-input" accept=".docx">
+    <i class="ti ti-file-upload" aria-hidden="true"></i>
+    <p>Drop your .docx file here or click to browse</p>
+    <p class="sub">Works with standard debate doc formatting (Heading4 tag + citation paragraph + body text)</p>
+  </div>
+
+  <div id="main-ui" style="display:none;">
+    <div class="stats-row">
+      <div class="stat"><div class="stat-label">Cards found</div><div class="stat-value" id="stat-cards">0</div></div>
+      <div class="stat"><div class="stat-label">Sections</div><div class="stat-value" id="stat-sections">0</div></div>
+      <div class="stat"><div class="stat-label">Selected</div><div class="stat-value" id="stat-selected">0</div></div>
+      <div class="stat"><div class="stat-label">File</div><div class="stat-value" style="font-size:13px;padding-top:4px;" id="stat-file">—</div></div>
+    </div>
+
+    <div class="controls">
+      <label>Filter by section:</label>
+      <select id="section-filter"><option value="">All sections</option></select>
+      <label style="margin-left:8px;">Sort:</label>
+      <select id="sort-order">
+        <option value="doc">Document order</option>
+        <option value="alpha">Author (A–Z)</option>
+      </select>
+    </div>
+
+    <div class="select-all-row">
+      <input type="checkbox" id="select-all" style="width:14px;height:14px;">
+      <label for="select-all">Select all</label>
+      <span id="filter-count" style="color:var(--color-text-tertiary);font-size:12px;"></span>
+    </div>
+
+    <div class="card-list" id="card-list"></div>
+
+    <div class="action-row">
+      <button class="btn-accent" id="btn-generate"><i class="ti ti-download" aria-hidden="true"></i>Generate selected docs</button>
+      <button class="btn-primary" id="btn-zip"><i class="ti ti-package" aria-hidden="true"></i>Download as ZIP</button>
+      <button class="btn-primary" id="btn-ask"><i class="ti ti-message" aria-hidden="true"></i>Ask Claude ↗</button>
+    </div>
+    <div class="progress" id="progress-wrap"><div class="progress-bar" id="progress-bar" style="width:0%"></div></div>
+    <div class="status-msg" id="status-msg"></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+let parsedCards = [];
+let rawXml = '';
+let originalFile = null;
+let zipData = null;
+
+const dropZone = document.getElementById('drop-zone');
+const fileInput = document.getElementById('file-input');
+
+dropZone.addEventListener('click', () => fileInput.click());
+dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('dragover'); });
+dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
+dropZone.addEventListener('drop', e => { e.preventDefault(); dropZone.classList.remove('dragover'); handleFile(e.dataTransfer.files[0]); });
+fileInput.addEventListener('change', e => handleFile(e.target.files[0]));
+
+async function handleFile(file) {
+  if (!file || !file.name.endsWith('.docx')) { setStatus('Please upload a .docx file.'); return; }
+  originalFile = file;
+  document.getElementById('stat-file').textContent = file.name.replace('.docx','');
+  setStatus('Parsing document...');
+
+  try {
+    const arrayBuf = await file.arrayBuffer();
+    const zip = await JSZip.loadAsync(arrayBuf);
+    const xmlContent = await zip.file('word/document.xml').async('string');
+    rawXml = xmlContent;
+    zipData = zip;
+    parsedCards = parseCards(xmlContent);
+    renderUI();
+  } catch(e) {
+    setStatus('Error reading file: ' + e.message);
+  }
+}
+
+function parseCards(xml) {
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(xml, 'text/xml');
+  const ns = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';
+  const paragraphs = Array.from(doc.getElementsByTagNameNS(ns, 'p'));
+
+  const cards = [];
+  let currentSection = '';
+  let currentTag = null;
+  let currentCite = null;
+  let cardParas = [];
+  let tagPara = null;
+  let citePara = null;
+  let inCard = false;
+  let cardIndex = 0;
+
+  function getStyle(p) {
+    const pStyle = p.querySelector ? p.getElementsByTagNameNS(ns,'pStyle')[0] : null;
+    return pStyle ? pStyle.getAttribute('http://schemas.openxmlformats.org/wordprocessingml/2006/main' === 'w' ? 'val' : 'w:val') || pStyle.getAttribute('val') : null;
+  }
+
+  function getStyleCompat(p) {
+    const pPr = p.getElementsByTagNameNS(ns,'pPr')[0];
+    if (!pPr) return null;
+    const pStyle = pPr.getElementsByTagNameNS(ns,'pStyle')[0];
+    if (!pStyle) return null;
+    for (const attr of pStyle.attributes) {
+      if (attr.localName === 'val') return attr.value;
+    }
+    return null;
+  }
+
+  function getText(p) {
+    const runs = p.getElementsByTagNameNS(ns,'t');
+    let txt = '';
+    for (const r of runs) txt += r.textContent;
+    return txt.trim();
+  }
+
+  function isHeading(p, level) {
+    const s = getStyleCompat(p);
+    return s === 'Heading' + level;
+  }
+
+  function isCitation(p) {
+    const style = getStyleCompat(p);
+    if (style && style.startsWith('Heading')) return false;
+    const runs = p.getElementsByTagNameNS(ns,'r');
+    for (const r of runs) {
+      const rPr = r.getElementsByTagNameNS(ns,'rPr')[0];
+      if (rPr) {
+        const rStyle = rPr.getElementsByTagNameNS(ns,'rStyle')[0];
+        if (rStyle) {
+          for (const a of rStyle.attributes) {
+            if (a.localName === 'val' && (a.value === 'Style13ptBold' || a.value === 'Strong' || a.value === 'CharBold')) return true;
+          }
+        }
+        const bold = rPr.getElementsByTagNameNS(ns,'b')[0];
+        if (bold) return true;
+      }
+    }
+    return false;
+  }
+
+  function saveCurrentCard() {
+    if (!currentTag) return;
+    const cite = currentCite || '';
+    const authorMatch = cite.match(/^([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*(?:\s+et\s+al)?)\s+\d{2}/);
+    const author = authorMatch ? authorMatch[1] : cite.split('.')[0].trim().substring(0, 40);
+    cards.push({
+      index: cardIndex++,
+      section: currentSection,
+      tag: currentTag,
+      cite: cite,
+      author: author || 'Unknown',
+      tagPara: tagPara,
+      citePara: citePara,
+      bodyParas: [...cardParas],
+      selected: true
+    });
+    cardParas = [];
+    currentTag = null;
+    currentCite = null;
+    tagPara = null;
+    citePara = null;
+  }
+
+  for (let i = 0; i < paragraphs.length; i++) {
+    const p = paragraphs[i];
+    const style = getStyleCompat(p);
+    const text = getText(p);
+
+    if (isHeading(p, 2) || isHeading(p, 3)) {
+      if (inCard) saveCurrentCard();
+      inCard = false;
+      currentSection = text || currentSection;
+      continue;
+    }
+
+    if (isHeading(p, 4)) {
+      if (inCard) saveCurrentCard();
+      inCard = false;
+      if (text.length > 10) {
+        currentTag = text;
+        tagPara = p;
+        const nextP = paragraphs[i+1];
+        if (nextP && !isHeading(nextP, 2) && !isHeading(nextP, 3) && !isHeading(nextP, 4)) {
+          if (isCitation(nextP)) {
+            currentCite = getText(nextP);
+            citePara = nextP;
+            i++;
+            inCard = true;
+          } else {
+            inCard = true;
+          }
+        } else {
+          inCard = true;
+        }
+      }
+      continue;
+    }
+
+    if (inCard) {
+      if (text || p.getElementsByTagNameNS(ns,'r').length > 0) {
+        cardParas.push(p);
+      }
+    }
+  }
+  if (inCard) saveCurrentCard();
+
+  return cards;
+}
+
+function renderUI() {
+  document.getElementById('main-ui').style.display = 'block';
+  document.getElementById('stat-cards').textContent = parsedCards.length;
+  const sections = [...new Set(parsedCards.map(c => c.section).filter(Boolean))];
+  document.getElementById('stat-sections').textContent = sections.length;
+  const sel = document.getElementById('section-filter');
+  sel.innerHTML = '<option value="">All sections</option>' + sections.map(s => `<option value="${s}">${s.substring(0,40)}</option>`).join('');
+  sel.addEventListener('change', renderList);
+  document.getElementById('sort-order').addEventListener('change', renderList);
+  document.getElementById('select-all').addEventListener('change', onSelectAll);
+  renderList();
+  setStatus('Found ' + parsedCards.length + ' cards. Select and generate individual .docx files.');
+}
+
+function getVisibleCards() {
+  const section = document.getElementById('section-filter').value;
+  const sort = document.getElementById('sort-order').value;
+  let visible = section ? parsedCards.filter(c => c.section === section) : [...parsedCards];
+  if (sort === 'alpha') visible.sort((a,b) => a.author.localeCompare(b.author));
+  return visible;
+}
+
+function renderList() {
+  const visible = getVisibleCards();
+  const list = document.getElementById('card-list');
+  list.innerHTML = '';
+  visible.forEach(card => {
+    const div = document.createElement('div');
+    div.className = 'card-item' + (card.selected ? ' selected' : '');
+    div.innerHTML = `
+      <input type="checkbox" class="card-check" data-idx="${card.index}" ${card.selected ? 'checked' : ''}>
+      <div class="card-info">
+        <div class="card-tag">${escHtml(card.tag.substring(0,90))}</div>
+        <div class="card-cite">${escHtml(card.cite.substring(0,80))}</div>
+        <div class="card-section">${escHtml(card.section.substring(0,60))}</div>
+      </div>
+    `;
+    div.querySelector('input').addEventListener('change', e => {
+      parsedCards[card.index].selected = e.target.checked;
+      div.classList.toggle('selected', e.target.checked);
+      updateSelCount();
+    });
+    list.appendChild(div);
+  });
+  updateSelCount();
+  document.getElementById('filter-count').textContent = `(${visible.length} shown)`;
+}
+
+function onSelectAll(e) {
+  const visible = getVisibleCards();
+  visible.forEach(c => { parsedCards[c.index].selected = e.target.checked; });
+  renderList();
+}
+
+function updateSelCount() {
+  document.getElementById('stat-selected').textContent = parsedCards.filter(c => c.selected).length;
+}
+
+function escHtml(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+async function buildCardDocx(card) {
+  if (!zipData) return null;
+  const newZip = new JSZip();
+  const keys = Object.keys(zipData.files);
+  for (const key of keys) {
+    if (key === 'word/document.xml') continue;
+    const f = zipData.files[key];
+    if (!f.dir) {
+      const content = await f.async('uint8array');
+      newZip.file(key, content);
+    } else {
+      newZip.folder(key);
+    }
+  }
+
+  const ns = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';
+  const parser = new DOMParser();
+  const origDoc = parser.parseFromString(rawXml, 'text/xml');
+  const origBody = origDoc.getElementsByTagNameNS(ns,'body')[0];
+  const allParas = Array.from(origBody.getElementsByTagNameNS(ns,'p'));
+
+  const keepParas = new Set();
+  if (card.tagPara) keepParas.add(card.tagPara);
+  if (card.citePara) keepParas.add(card.citePara);
+  card.bodyParas.forEach(p => keepParas.add(p));
+
+  const serializer = new XMLSerializer();
+  let newBodyContent = '';
+  for (const p of allParas) {
+    if (keepParas.has(p)) {
+      newBodyContent += serializer.serializeToString(p);
+    }
+  }
+
+  const sectPr = origBody.getElementsByTagNameNS(ns,'sectPr')[0];
+  const sectPrXml = sectPr ? serializer.serializeToString(sectPr) : '';
+
+  const newDocXml = rawXml.replace(/<w:body[^>]*>[\s\S]*<\/w:body>/, (match) => {
+    const openTag = match.match(/^<w:body[^>]*>/)[0];
+    return openTag + newBodyContent + sectPrXml + '</w:body>';
+  });
+
+  newZip.file('word/document.xml', newDocXml);
+  return await newZip.generateAsync({type:'blob'});
+}
+
+function safeFilename(tag, author) {
+  const clean = (s) => s.replace(/[^a-zA-Z0-9 _-]/g,'').replace(/\s+/g,'_').substring(0,40);
+  return clean(author) + '_' + clean(tag.substring(0,30)) + '.docx';
+}
+
+document.getElementById('btn-generate').addEventListener('click', async () => {
+  const selected = parsedCards.filter(c => c.selected);
+  if (!selected.length) { setStatus('No cards selected.'); return; }
+  const bar = document.getElementById('progress-bar');
+  const wrap = document.getElementById('progress-wrap');
+  wrap.style.display = 'block';
+
+  if (selected.length === 1) {
+    setStatus('Building document...');
+    bar.style.width = '50%';
+    const blob = await buildCardDocx(selected[0]);
+    bar.style.width = '100%';
+    if (blob) {
+      download(blob, safeFilename(selected[0].tag, selected[0].author));
+      setStatus('Downloaded 1 card document.');
+    }
+    setTimeout(() => { wrap.style.display='none'; bar.style.width='0%'; }, 1000);
+    return;
+  }
+
+  setStatus(`Building ${selected.length} documents into a ZIP...`);
+  const masterZip = new JSZip();
+  for (let i = 0; i < selected.length; i++) {
+    const card = selected[i];
+    bar.style.width = Math.round((i / selected.length) * 90) + '%';
+    setStatus(`Processing ${i+1} of ${selected.length}: ${card.author}...`);
+    const blob = await buildCardDocx(card);
+    if (blob) {
+      const ab = await blob.arrayBuffer();
+      masterZip.file(safeFilename(card.tag, card.author), ab);
+    }
+  }
+  bar.style.width = '95%';
+  setStatus('Zipping...');
+  const zipBlob = await masterZip.generateAsync({type:'blob'});
+  bar.style.width = '100%';
+  download(zipBlob, 'cards_' + Date.now() + '.zip');
+  setStatus(`Done! Downloaded ZIP with ${selected.length} card documents.`);
+  setTimeout(() => { wrap.style.display='none'; bar.style.width='0%'; }, 1500);
+});
+
+document.getElementById('btn-zip').addEventListener('click', () => {
+  document.getElementById('btn-generate').click();
+});
+
+document.getElementById('btn-ask').addEventListener('click', () => {
+  const sel = parsedCards.filter(c => c.selected);
+  sendPrompt(`I've selected ${sel.length} cards from the debate document. The cards cover these authors: ${sel.slice(0,5).map(c=>c.author).join(', ')}${sel.length > 5 ? ', ...' : ''}. Can you help me understand the best way to organize them or suggest which cards are most critical?`);
+});
+
+function download(blob, filename) {
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = filename; a.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+function setStatus(msg) { document.getElementById('status-msg').textContent = msg; }
+</script>

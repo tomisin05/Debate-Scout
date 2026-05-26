@@ -1,0 +1,55 @@
+[
+  {
+    "year": "hspolicy19",
+    "school": "Minneapolis South (MN)",
+    "team": "Minneapolis South ChCo (Ga..... Ch..... - Cl..... Co.....)",
+    "error": "round mismatch: got 0, expected 62"
+  },
+  {
+    "year": "hspolicy19",
+    "school": "Minneapolis South (MN)",
+    "team": "Minneapolis South ChHi (Ga..... Ch..... - Is..... Hi.....)",
+    "error": "round mismatch: got 0, expected 4"
+  },
+  {
+    "year": "hspolicy19",
+    "school": "ModernBrain (CA)",
+    "error": "Navigation timeout of 60000 ms exceeded"
+  },
+  {
+    "year": "hspolicy19",
+    "school": "Montgomery Bell (TN)",
+    "error": "Navigation timeout of 60000 ms exceeded"
+  },
+  {
+    "year": "hspolicy19",
+    "school": "Montgomery Blair (MD)",
+    "error": "Navigation timeout of 60000 ms exceeded"
+  },
+  {
+    "year": "hspolicy19",
+    "school": "Nashua South (NH)",
+    "error": "Navigation timeout of 60000 ms exceeded"
+  },
+  {
+    "year": "hspolicy19",
+    "school": "Neenah (WI)",
+    "error": "Navigation timeout of 60000 ms exceeded"
+  },
+  {
+    "year": "hspolicy19",
+    "school": "Newton (KS)",
+    "team": "Newton HuMo (Fl..... Hu..... - Mi..... Mo.....)",
+    "error": "round mismatch: got 0, expected 5"
+  },
+  {
+    "year": "hspolicy19",
+    "school": "Niles North (IL)",
+    "error": "Navigation timeout of 60000 ms exceeded"
+  },
+  {
+    "year": "hspolicy19",
+    "school": "Niles West (IL)",
+    "error": "Navigation timeout of 60000 ms exceeded"
+  }
+]

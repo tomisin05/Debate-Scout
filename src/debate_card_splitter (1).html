@@ -1,0 +1,1779 @@
+import { initializeApp } from 'firebase/app'
+import { getAuth, GoogleAuthProvider } from 'firebase/auth'
+
+const firebaseConfig = {
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
+}
+
+const app = initializeApp(firebaseConfig)
+export const auth = getAuth(app)
+export const googleProvider = new GoogleAuthProvider()
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debate Card Splitter</title>
+    <style>
+        :root {
+            --color-background-primary: #ffffff;
+            --color-background-secondary: #f6f5f1;
+            --color-background-tertiary: #efece5;
+            --color-background-info: #e8f0fe;
+            --color-text-primary: #1f1e1d;
+            --color-text-secondary: #5e5d59;
+            --color-text-tertiary: #8a8983;
+            --color-border-secondary: #c9c7be;
+            --color-border-tertiary: #e3e1d8;
+            --color-border-info: #6f8bd6;
+            --color-highlight-yellow: #fff39a;
+            --color-highlight-green: #b9f6b0;
+            --color-highlight-cyan: #b6f0ee;
+            --color-highlight-magenta: #f6b0e8;
+            --color-highlight-red: #ffb1b1;
+            --color-highlight-blue: #b8d4ff;
+            --border-radius-sm: 4px;
+            --border-radius-md: 6px;
+            --border-radius-lg: 10px;
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            --font-serif: Georgia, "Times New Roman", serif;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { height: 100%; }
+        body { font-family: var(--font-sans); color: var(--color-text-primary); background: var(--color-background-primary); }
+
+        .app {
+            display: grid;
+            grid-template-rows: auto auto 1fr;
+            height: 100vh;
+            max-height: 100vh;
+            overflow: hidden;
+        }
+
+        /* ===== Top bar ===== */
+        .topbar {
+            padding: 14px 20px;
+            border-bottom: 0.5px solid var(--color-border-tertiary);
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+        .topbar h1 { font-size: 16px; font-weight: 600; }
+        .topbar h1 .accent { color: var(--color-text-secondary); font-weight: 400; margin-left: 4px; }
+        .upload-btn {
+            display: inline-flex; align-items: center; gap: 6px;
+            background: var(--color-text-primary); color: var(--color-background-primary);
+            border: none; border-radius: var(--border-radius-md);
+            padding: 7px 12px; font-size: 13px; cursor: pointer;
+        }
+        .upload-btn:hover { opacity: 0.88; }
+        .upload-btn.secondary {
+            background: var(--color-background-primary);
+            color: var(--color-text-primary);
+            border: 0.5px solid var(--color-border-secondary);
+        }
+        .upload-btn.secondary:hover { background: var(--color-background-secondary); }
+        #file-input { display: none; }
+        .stats-inline { display: flex; gap: 16px; font-size: 12px; color: var(--color-text-secondary); margin-left: auto; }
+        .stat-pill b { color: var(--color-text-primary); font-weight: 600; margin-right: 4px; font-size: 13px; }
+
+        /* ===== Search row ===== */
+        .search-row {
+            padding: 12px 20px;
+            border-bottom: 0.5px solid var(--color-border-tertiary);
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .search-wrap { position: relative; flex: 1; min-width: 260px; }
+        .search-wrap input {
+            width: 100%;
+            padding: 9px 12px 9px 34px;
+            border: 0.5px solid var(--color-border-secondary);
+            border-radius: var(--border-radius-md);
+            font-size: 14px;
+            background: var(--color-background-primary);
+            color: var(--color-text-primary);
+            outline: none;
+        }
+        .search-wrap input:focus { border-color: var(--color-border-info); }
+        .search-wrap .search-icon {
+            position: absolute; left: 11px; top: 50%; transform: translateY(-50%);
+            font-size: 16px; color: var(--color-text-tertiary); pointer-events: none;
+        }
+        .search-row select {
+            font-size: 13px; padding: 8px 10px;
+            border-radius: var(--border-radius-md);
+            border: 0.5px solid var(--color-border-secondary);
+            background: var(--color-background-primary);
+            color: var(--color-text-primary);
+            max-width: 220px;
+        }
+        .search-row .scope {
+            display: inline-flex; gap: 4px;
+            background: var(--color-background-secondary);
+            padding: 3px; border-radius: var(--border-radius-md);
+        }
+        .scope button {
+            border: none; background: transparent;
+            padding: 5px 10px; font-size: 12px;
+            border-radius: var(--border-radius-sm);
+            cursor: pointer; color: var(--color-text-secondary);
+        }
+        .scope button.active {
+            background: var(--color-background-primary);
+            color: var(--color-text-primary);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        /* ===== Main split ===== */
+        .split {
+            display: grid;
+            grid-template-columns: minmax(340px, 460px) 1fr;
+            min-height: 0;
+            overflow: hidden;
+        }
+
+        /* ===== Left pane ===== */
+        .left-pane {
+            border-right: 0.5px solid var(--color-border-tertiary);
+            overflow-y: auto;
+            min-height: 0;
+            background: var(--color-background-secondary);
+        }
+        .pane-header {
+            position: sticky; top: 0;
+            background: var(--color-background-secondary);
+            padding: 10px 14px;
+            border-bottom: 0.5px solid var(--color-border-tertiary);
+            font-size: 12px;
+            color: var(--color-text-secondary);
+            display: flex; justify-content: space-between; align-items: center;
+            z-index: 2;
+        }
+        .pane-header .right { display: flex; gap: 8px; align-items: center; }
+        .pane-header .btn-link {
+            background: none; border: none; cursor: pointer;
+            font-size: 12px; color: var(--color-text-secondary);
+            padding: 2px 4px;
+        }
+        .pane-header .btn-link:hover { color: var(--color-text-primary); text-decoration: underline; }
+
+        .card-item {
+            padding: 12px 14px;
+            border-bottom: 0.5px solid var(--color-border-tertiary);
+            cursor: pointer;
+            background: var(--color-background-secondary);
+            transition: background 0.12s;
+        }
+        .card-item:hover { background: var(--color-background-tertiary); }
+        .card-item.active {
+            background: var(--color-background-primary);
+            border-left: 3px solid var(--color-border-info);
+            padding-left: 11px;
+        }
+        .card-doc {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            color: var(--color-text-tertiary);
+            display: flex; gap: 8px;
+            margin-bottom: 4px;
+        }
+        .card-doc .doc-name {
+            overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+            max-width: 60%;
+        }
+        .card-tag {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            line-height: 1.3;
+            margin-bottom: 4px;
+        }
+        .card-cite {
+            font-size: 11px;
+            color: var(--color-text-secondary);
+            line-height: 1.4;
+            margin-bottom: 6px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+        .card-snippet {
+            font-size: 11px;
+            color: var(--color-text-secondary);
+            line-height: 1.4;
+            font-family: var(--font-serif);
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+        .card-snippet mark { background: var(--color-highlight-yellow); padding: 0 1px; }
+
+        .empty-msg {
+            padding: 60px 30px;
+            text-align: center;
+            color: var(--color-text-tertiary);
+            font-size: 13px;
+        }
+        .empty-msg .big {
+            font-size: 28px;
+            display: block;
+            margin-bottom: 10px;
+            color: var(--color-text-secondary);
+        }
+        .empty-msg .upload-cta { margin-top: 16px; display: inline-block; }
+
+        /* ===== Right pane ===== */
+        .right-pane {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            min-height: 0;
+            overflow: hidden;
+        }
+        .preview-toolbar {
+            padding: 12px 20px;
+            border-bottom: 0.5px solid var(--color-border-tertiary);
+            display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
+            background: var(--color-background-primary);
+        }
+        .preview-toolbar .spacer { flex: 1; }
+        .preview-toolbar button {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 7px 12px; font-size: 13px;
+            border-radius: var(--border-radius-md);
+            border: 0.5px solid var(--color-border-secondary);
+            background: var(--color-background-primary);
+            color: var(--color-text-primary);
+            cursor: pointer;
+        }
+        .preview-toolbar button:hover { background: var(--color-background-secondary); }
+        .preview-toolbar button.primary {
+            background: var(--color-text-primary);
+            color: var(--color-background-primary);
+            border-color: var(--color-text-primary);
+        }
+        .preview-toolbar button.primary:hover { opacity: 0.88; }
+
+        .preview-body {
+            overflow: hidden;
+            padding: 0;
+            font-family: var(--font-serif);
+            font-size: 12pt;
+            line-height: 1.5;
+            color: var(--color-text-primary);
+            background: var(--color-background-primary);
+            min-height: 0;
+            position: relative;
+        }
+        .preview-body.html-mode {
+            overflow-y: auto;
+            padding: 28px 40px;
+        }
+        .word-embed {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: white;
+        }
+        .embed-fallback {
+            padding: 28px 40px;
+            overflow-y: auto;
+            height: 100%;
+        }
+        .view-toggle {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 10;
+            display: flex;
+            gap: 4px;
+            background: rgba(255,255,255,0.9);
+            border-radius: var(--border-radius-md);
+            padding: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .view-toggle button {
+            padding: 4px 8px;
+            font-size: 11px;
+            border: none;
+            background: transparent;
+            border-radius: var(--border-radius-sm);
+            cursor: pointer;
+            color: var(--color-text-secondary);
+        }
+        .view-toggle button.active {
+            background: var(--color-text-primary);
+            color: white;
+        }
+        .preview-body .doc-tag {
+            font-family: var(--font-sans);
+            font-size: 14pt;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 8px;
+            color: var(--color-text-primary);
+        }
+        .preview-body .doc-cite {
+            font-size: 11pt;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--color-text-primary);
+            line-height: 1.4;
+        }
+        .preview-body .doc-section {
+            font-family: var(--font-sans);
+            font-size: 10pt;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: var(--color-text-tertiary);
+            margin-bottom: 8px;
+            font-weight: normal;
+        }
+        .preview-body p { 
+            margin: 0 0 6pt; 
+            line-height: 1.5;
+        }
+        .preview-body p:empty::before {
+            content: "\00a0";
+        }
+        .preview-body strong, .preview-body .ooxml-bold { 
+            font-weight: 700; 
+        }
+        .preview-body u, .preview-body .ooxml-u { 
+            text-decoration: underline; 
+        }
+        .preview-body .ooxml-strike { 
+            text-decoration: line-through; 
+        }
+        .preview-body .ooxml-bold.ooxml-u { 
+            text-decoration: underline; 
+            font-weight: 700; 
+        }
+        .preview-body .ooxml-bold.ooxml-strike { 
+            text-decoration: line-through; 
+            font-weight: 700; 
+        }
+        .preview-body .ooxml-u.ooxml-strike { 
+            text-decoration: underline line-through; 
+        }
+        .preview-body .ooxml-bold.ooxml-u.ooxml-strike { 
+            text-decoration: underline line-through; 
+            font-weight: 700; 
+        }
+        .preview-body em, .preview-body .ooxml-i { 
+            font-style: italic; 
+        }
+        /* Word-accurate highlight colors */
+        .preview-body .hl-yellow { background-color: #FFFF00; }
+        .preview-body .hl-green { background-color: #00FF00; }
+        .preview-body .hl-cyan { background-color: #00FFFF; }
+        .preview-body .hl-magenta { background-color: #FF00FF; }
+        .preview-body .hl-red { background-color: #FF0000; }
+        .preview-body .hl-blue { background-color: #0000FF; }
+        .preview-body mark.search-hit {
+            background: #ffe27a;
+            outline: 1px solid #f5c542;
+            padding: 0 1px;
+            border-radius: 2px;
+        }
+
+        .preview-footer {
+            border-top: 0.5px solid var(--color-border-tertiary);
+            padding: 10px 20px;
+            font-size: 12px;
+            color: var(--color-text-secondary);
+            background: var(--color-background-secondary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .preview-footer .label {
+            color: var(--color-text-tertiary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 10px;
+        }
+        .preview-footer .source-name { color: var(--color-text-primary); font-weight: 500; }
+        .preview-footer .source-section {
+            margin-left: auto;
+            color: var(--color-text-tertiary);
+            overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+            max-width: 50%;
+        }
+
+        /* ===== Progress / toast ===== */
+        .progress-overlay {
+            position: fixed; bottom: 18px; right: 18px;
+            background: var(--color-background-primary);
+            border: 0.5px solid var(--color-border-secondary);
+            border-radius: var(--border-radius-md);
+            padding: 10px 14px;
+            font-size: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            display: none;
+            z-index: 50;
+            min-width: 220px;
+        }
+        .progress-overlay.show { display: block; }
+        .progress-overlay .label { color: var(--color-text-secondary); margin-bottom: 6px; }
+        .progress-overlay .bar { height: 4px; background: var(--color-background-secondary); border-radius: 2px; overflow: hidden; }
+        .progress-overlay .bar > div { height: 100%; background: var(--color-text-primary); width: 0%; transition: width 0.2s; }
+
+        .toast {
+            position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%);
+            background: var(--color-text-primary); color: var(--color-background-primary);
+            padding: 8px 14px; border-radius: var(--border-radius-md);
+            font-size: 13px;
+            opacity: 0; pointer-events: none;
+            transition: opacity 0.2s;
+            z-index: 60;
+        }
+        .toast.show { opacity: 1; }
+
+        @media (max-width: 760px) {
+            .split { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="app" id="app">
+        <div class="topbar">
+            <h1>Debate Card Splitter <span class="accent">multi-doc</span></h1>
+            <button class="upload-btn" id="btn-upload">+ Add documents</button>
+            <button class="upload-btn secondary" id="btn-clear" style="display:none;">Clear all</button>
+            <input type="file" id="file-input" accept=".docx" multiple>
+            <div class="stats-inline" id="stats-inline">
+                <span class="stat-pill"><b id="stat-docs">0</b>documents</span>
+                <span class="stat-pill"><b id="stat-cards">0</b>cards</span>
+                <span class="stat-pill"><b id="stat-shown">0</b>shown</span>
+            </div>
+        </div>
+
+        <div class="search-row">
+            <div class="search-wrap">
+                <span class="search-icon">&#x1F50D;</span>
+                <input type="search" id="search-input" placeholder="Search tags, citations, and card text across all uploaded documents...">
+            </div>
+            <div class="scope" id="scope-toggle" role="tablist">
+                <button data-scope="all" class="active">All</button>
+                <button data-scope="tag">Tag</button>
+                <button data-scope="cite">Cite</button>
+                <button data-scope="body">Body</button>
+            </div>
+            <select id="doc-filter"><option value="">All documents</option></select>
+            <select id="section-filter"><option value="">All sections</option></select>
+            <select id="sort-order">
+                <option value="doc">Document order</option>
+                <option value="alpha">Author (A&ndash;Z)</option>
+                <option value="taglen">Tag length</option>
+            </select>
+        </div>
+
+        <div class="split" id="split">
+            <div class="left-pane" id="left-pane">
+                <div class="pane-header">
+                    <span id="list-summary">No documents uploaded</span>
+                    <div class="right">
+                        <button class="btn-link" id="btn-download-all">Download all as ZIP</button>
+                    </div>
+                </div>
+                <div id="card-list">
+                    <div class="empty-msg" id="initial-empty">
+                        <span class="big">&#x1F4C4;</span>
+                        Upload .docx files to get started.
+                        <br><br>
+                        <button class="upload-btn upload-cta" id="btn-upload-2">+ Add documents</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-pane" id="right-pane">
+                <div class="preview-toolbar" id="preview-toolbar" style="display:none;">
+                    <button class="primary" id="btn-copy"><span>&#x1F4CB;</span> Copy formatted</button>
+                    <button id="btn-copy-plain"><span>&#x1F4DD;</span> Copy plain text</button>
+                    <button id="btn-download"><span>&#x2B07;</span> Download .docx</button>
+                    <span class="spacer"></span>
+                    <button id="btn-prev" title="Previous card">&#x2190; Prev</button>
+                    <button id="btn-next" title="Next card">Next &#x2192;</button>
+                </div>
+                <div class="preview-body" id="preview-body">
+                    <div class="empty-msg">
+                        <span class="big">&#x2190;</span>
+                        Select a card from the list to view it here.
+                    </div>
+                </div>
+                <div class="preview-footer" id="preview-footer" style="display:none;">
+                    <span class="label">Source</span>
+                    <span class="source-name" id="source-name">&mdash;</span>
+                    <span class="source-section" id="source-section"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="progress-overlay" id="progress-overlay">
+        <div class="label" id="progress-label">Working...</div>
+        <div class="bar"><div id="progress-bar"></div></div>
+    </div>
+    <div class="toast" id="toast">Copied</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script>
+    (function () {
+        'use strict';
+
+        const NS = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';
+
+        const state = {
+            docs: new Map(),
+            cards: [],
+            filtered: [],
+            selectedCardId: null,
+            search: '',
+            searchScope: 'all',
+            docFilter: '',
+            sectionFilter: '',
+            sortOrder: 'doc',
+            nextDocId: 1,
+            nextCardId: 1
+        };
+
+        const $ = id => document.getElementById(id);
+        const fileInput = $('file-input');
+        const cardListEl = $('card-list');
+        const previewBody = $('preview-body');
+        const previewToolbar = $('preview-toolbar');
+        const previewFooter = $('preview-footer');
+        const searchInput = $('search-input');
+        const docFilter = $('doc-filter');
+        const sectionFilter = $('section-filter');
+        const sortOrder = $('sort-order');
+        const progressOverlay = $('progress-overlay');
+        const progressBar = $('progress-bar');
+        const progressLabel = $('progress-label');
+        const toast = $('toast');
+        const leftPane = $('left-pane');
+
+        $('btn-upload').addEventListener('click', () => fileInput.click());
+        $('btn-clear').addEventListener('click', clearAll);
+        fileInput.addEventListener('change', e => {
+            const files = Array.from(e.target.files || []);
+            if (files.length) ingestFiles(files);
+            fileInput.value = '';
+        });
+
+        ['dragover', 'dragenter'].forEach(evt => {
+            leftPane.addEventListener(evt, e => { e.preventDefault(); leftPane.style.background = 'var(--color-background-info)'; });
+        });
+        ['dragleave', 'drop'].forEach(evt => {
+            leftPane.addEventListener(evt, e => { e.preventDefault(); leftPane.style.background = ''; });
+        });
+        leftPane.addEventListener('drop', e => {
+            const files = Array.from(e.dataTransfer.files || []).filter(f => f.name.toLowerCase().endsWith('.docx'));
+            if (files.length) ingestFiles(files);
+        });
+
+        let searchDebounce = null;
+        searchInput.addEventListener('input', e => {
+            clearTimeout(searchDebounce);
+            const value = e.target.value;
+            searchDebounce = setTimeout(() => {
+                state.search = value;
+                applyFilters();
+            }, 120);
+        });
+
+        document.querySelectorAll('#scope-toggle button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('#scope-toggle button').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                state.searchScope = btn.dataset.scope;
+                applyFilters();
+            });
+        });
+
+        docFilter.addEventListener('change', () => { state.docFilter = docFilter.value; applyFilters(); });
+        sectionFilter.addEventListener('change', () => { state.sectionFilter = sectionFilter.value; applyFilters(); });
+        sortOrder.addEventListener('change', () => { state.sortOrder = sortOrder.value; applyFilters(); });
+
+        $('btn-copy').addEventListener('click', () => copyCurrent(true));
+        $('btn-copy-plain').addEventListener('click', () => copyCurrent(false));
+        $('btn-download').addEventListener('click', () => downloadCurrent());
+        $('btn-prev').addEventListener('click', () => stepSelection(-1));
+        $('btn-next').addEventListener('click', () => stepSelection(1));
+        $('btn-download-all').addEventListener('click', downloadAllZip);
+
+        document.addEventListener('keydown', e => {
+            if (e.target.matches('input, textarea, select')) return;
+            if (e.key === 'ArrowDown') { stepSelection(1); e.preventDefault(); }
+            else if (e.key === 'ArrowUp') { stepSelection(-1); e.preventDefault(); }
+            else if (e.key === '/') { searchInput.focus(); e.preventDefault(); }
+        });
+
+        async function ingestFiles(files) {
+            showProgress(`Reading ${files.length} document${files.length > 1 ? 's' : ''}...`, 0);
+            let processed = 0;
+            for (const file of files) {
+                try { await ingestOne(file); }
+                catch (err) { console.warn(`Failed to ingest ${file.name}:`, err); }
+                processed++;
+                setProgress(processed / files.length * 100, `Read ${processed} of ${files.length}: ${file.name}`);
+                await new Promise(r => setTimeout(r, 0));
+            }
+            hideProgress();
+            populateDocFilter();
+            populateSectionFilter();
+            applyFilters();
+            $('btn-clear').style.display = state.docs.size > 0 ? '' : 'none';
+        }
+
+        async function ingestOne(file) {
+            if (!file.name.toLowerCase().endsWith('.docx')) return;
+            const arrayBuffer = await file.arrayBuffer();
+            const zip = await JSZip.loadAsync(arrayBuffer);
+            const docXmlFile = zip.file('word/document.xml');
+            if (!docXmlFile) return;
+            const rawXml = await docXmlFile.async('string');
+            const docId = state.nextDocId++;
+            const doc = {
+                id: docId,
+                filename: file.name,
+                shortName: file.name.replace(/\.docx$/i, ''),
+                zipData: zip,
+                rawXml,
+                paragraphsXml: extractParagraphsXml(rawXml)
+            };
+            state.docs.set(docId, doc);
+            parseCardsFromDoc(doc);
+        }
+
+        function clearAll() {
+            if (!confirm('Remove all uploaded documents?')) return;
+            state.docs.clear();
+            state.cards = [];
+            state.filtered = [];
+            state.selectedCardId = null;
+            state.nextDocId = 1;
+            state.nextCardId = 1;
+            populateDocFilter();
+            populateSectionFilter();
+            applyFilters();
+            renderPreview(null);
+            $('btn-clear').style.display = 'none';
+        }
+
+        function parseCardsFromDoc(doc) {
+            const parser = new DOMParser();
+            const xml = parser.parseFromString(doc.rawXml, 'text/xml');
+            const paragraphs = Array.from(xml.getElementsByTagNameNS(NS, 'p'));
+
+            let currentSection = '';
+            let cardState = newCardState();
+
+            for (let i = 0; i < paragraphs.length; i++) {
+                const p = paragraphs[i];
+                const text = paragraphText(p);
+
+                if (isHeading(p, 1) || isHeading(p, 2) || isHeading(p, 3)) {
+                    finalizeCard(doc, cardState);
+                    cardState = newCardState();
+                    if (text) currentSection = text;
+                    continue;
+                }
+
+                if (isHeading(p, 4) && text.length > 4) {
+                    finalizeCard(doc, cardState);
+                    cardState = newCardState();
+                    cardState.section = currentSection;
+                    cardState.tag = text;
+                    cardState.tagParaIndex = i;
+
+                    const next = paragraphs[i + 1];
+                    if (next && isCitation(next)) {
+                        cardState.cite = paragraphText(next);
+                        cardState.citeParaIndex = i + 1;
+                        i++;
+                    }
+                    cardState.inCard = true;
+                    continue;
+                }
+
+                if (cardState.inCard) {
+                    const hasContent = text || p.getElementsByTagNameNS(NS, 'r').length > 0;
+                    if (hasContent) cardState.bodyParaIndices.push(i);
+                }
+            }
+            finalizeCard(doc, cardState);
+        }
+
+        function newCardState() {
+            return {
+                section: '',
+                tag: null,
+                cite: null,
+                tagParaIndex: null,
+                citeParaIndex: null,
+                bodyParaIndices: [],
+                inCard: false
+            };
+        }
+
+        function finalizeCard(doc, s) {
+            if (!s.tag) return;
+
+            const bodyPlain = s.bodyParaIndices
+                .map(idx => stripTagsToText(doc.paragraphsXml[idx]))
+                .join(' ')
+                .replace(/\s+/g, ' ')
+                .trim();
+
+            let snippetHtml = '';
+            if (s.bodyParaIndices.length) {
+                const firstIdx = s.bodyParaIndices[0];
+                snippetHtml = paragraphToInlineHtml(doc.paragraphsXml[firstIdx]);
+                if (snippetHtml.length > 240) snippetHtml = truncateHtml(snippetHtml, 240);
+            }
+
+            const card = {
+                id: state.nextCardId++,
+                docId: doc.id,
+                docName: doc.shortName,
+                section: s.section || '',
+                tag: s.tag,
+                cite: s.cite || '',
+                tagParaIndex: s.tagParaIndex,
+                citeParaIndex: s.citeParaIndex,
+                bodyParaIndices: [...s.bodyParaIndices],
+                bodyPlain,
+                searchTag: s.tag.toLowerCase(),
+                searchCite: (s.cite || '').toLowerCase(),
+                searchBody: bodyPlain.toLowerCase(),
+                searchAll: (s.tag + ' ' + (s.cite || '') + ' ' + bodyPlain).toLowerCase(),
+                snippetHtml,
+                author: extractAuthor(s.cite || '')
+            };
+            state.cards.push(card);
+        }
+
+        function extractAuthor(cite) {
+            const m = cite.match(/^([A-Z][a-zA-Z'’-]+(?:\s+[A-Z][a-zA-Z'’-]+)*(?:\s+et\s+al\.?)?)\s+['’]?\d{2}/);
+            if (m) return m[1];
+            const fallback = cite.split(/[,.]/)[0].trim();
+            return fallback ? fallback.substring(0, 40) : 'Unknown';
+        }
+
+        function paragraphText(p) {
+            const tNodes = p.getElementsByTagNameNS(NS, 't');
+            return Array.from(tNodes).map(n => n.textContent).join('').trim();
+        }
+
+        function styleVal(p) {
+            const pPr = p.getElementsByTagNameNS(NS, 'pPr')[0];
+            if (!pPr) return null;
+            const pStyle = pPr.getElementsByTagNameNS(NS, 'pStyle')[0];
+            if (!pStyle) return null;
+            for (const a of pStyle.attributes) if (a.localName === 'val') return a.value;
+            return null;
+        }
+
+        function isHeading(p, level) {
+            const v = styleVal(p);
+            return v === `Heading${level}` || v === `heading${level}`;
+        }
+
+        function isCitation(p) {
+            const sv = styleVal(p);
+            if (sv && /^Heading/i.test(sv)) return false;
+            const runs = p.getElementsByTagNameNS(NS, 'r');
+            return Array.from(runs).some(run => {
+                const rPr = run.getElementsByTagNameNS(NS, 'rPr')[0];
+                if (!rPr) return false;
+                const rStyle = rPr.getElementsByTagNameNS(NS, 'rStyle')[0];
+                if (rStyle) {
+                    const val = Array.from(rStyle.attributes).find(a => a.localName === 'val')?.value;
+                    if (val && /Bold|Strong|13pt|Style13/i.test(val)) return true;
+                }
+                return rPr.getElementsByTagNameNS(NS, 'b').length > 0;
+            });
+        }
+
+        function extractParagraphsXml(rawXml) {
+            const result = [];
+            const re = /<w:p\b[\s\S]*?<\/w:p>/g;
+            let match;
+            while ((match = re.exec(rawXml)) !== null) {
+                result.push(match[0]);
+            }
+            return result;
+        }
+
+        function stripTagsToText(xml) {
+            if (!xml) return '';
+            const out = [];
+            const re = /<w:t(?:\s[^>]*)?>([\s\S]*?)<\/w:t>/g;
+            let m;
+            while ((m = re.exec(xml)) !== null) {
+                out.push(decodeXmlEntities(m[1]));
+            }
+            return out.join('');
+        }
+
+        function decodeXmlEntities(str) {
+            return str
+                .replace(/&lt;/g, '<')
+                .replace(/&gt;/g, '>')
+                .replace(/&quot;/g, '"')
+                .replace(/&apos;/g, "'")
+                .replace(/&amp;/g, '&');
+        }
+
+        function paragraphToInlineHtml(paraXml) {
+            if (!paraXml) return '';
+            const parser = new DOMParser();
+            const wrapped = `<root xmlns:w="${NS}">${paraXml}</root>`;
+            let doc;
+            try { 
+                doc = parser.parseFromString(wrapped, 'text/xml'); 
+            } catch { 
+                return escapeHtml(stripTagsToText(paraXml)); 
+            }
+            
+            if (doc.getElementsByTagName('parsererror').length) {
+                return escapeHtml(stripTagsToText(paraXml));
+            }
+            
+            const p = doc.getElementsByTagNameNS(NS, 'p')[0];
+            if (!p) return escapeHtml(stripTagsToText(paraXml));
+
+            const out = [];
+            
+            // Process all child elements of the paragraph
+            const processNode = (node) => {
+                if (node.localName === 'r') {
+                    return runToHtml(node);
+                } else if (node.localName === 'hyperlink') {
+                    // Process hyperlinks by processing their runs
+                    const linkParts = [];
+                    for (const child of node.children) {
+                        if (child.localName === 'r') {
+                            linkParts.push(runToHtml(child));
+                        }
+                    }
+                    return linkParts.join('');
+                } else if (node.localName === 'fldSimple') {
+                    // Handle simple fields (like page numbers, dates)
+                    const fieldParts = [];
+                    for (const child of node.children) {
+                        if (child.localName === 'r') {
+                            fieldParts.push(runToHtml(child));
+                        }
+                    }
+                    return fieldParts.join('');
+                } else if (node.localName === 'smartTag') {
+                    // Handle smart tags
+                    const smartParts = [];
+                    for (const child of node.children) {
+                        smartParts.push(processNode(child));
+                    }
+                    return smartParts.join('');
+                }
+                return '';
+            };
+
+            for (const child of p.children) {
+                const result = processNode(child);
+                if (result) out.push(result);
+            }
+            
+            return out.join('');
+        }
+
+        function paragraphToBlockHtml(paraXml) {
+            const inline = paragraphToInlineHtml(paraXml);
+            // Handle empty paragraphs properly
+            const content = inline.trim() || '&nbsp;';
+            return `<p>${content}</p>`;
+        }
+
+        function runToHtml(runEl) {
+            const rPr = runEl.getElementsByTagNameNS(NS, 'rPr')[0];
+            const classes = [];
+            let highlightColor = null;
+            let shadingHex = null;
+            let textColorHex = null;
+            let fontSize = null;
+
+            if (rPr) {
+                // Bold formatting
+                const bold = rPr.getElementsByTagNameNS(NS, 'b')[0];
+                if (bold && !falseAttr(bold)) classes.push('ooxml-bold');
+                
+                // Italic formatting
+                const ital = rPr.getElementsByTagNameNS(NS, 'i')[0];
+                if (ital && !falseAttr(ital)) classes.push('ooxml-i');
+                
+                // Underline formatting
+                const u = rPr.getElementsByTagNameNS(NS, 'u')[0];
+                if (u) {
+                    const val = attrVal(u, 'val');
+                    if (val !== 'none') classes.push('ooxml-u');
+                }
+                
+                // Strike-through formatting
+                const strike = rPr.getElementsByTagNameNS(NS, 'strike')[0];
+                if (strike && !falseAttr(strike)) classes.push('ooxml-strike');
+
+                // Highlight formatting
+                const hl = rPr.getElementsByTagNameNS(NS, 'highlight')[0];
+                if (hl) highlightColor = attrVal(hl, 'val');
+
+                // Shading/background color
+                const shd = rPr.getElementsByTagNameNS(NS, 'shd')[0];
+                if (shd) {
+                    const fill = attrVal(shd, 'fill');
+                    if (fill && fill !== 'auto' && fill !== 'ffffff') {
+                        shadingHex = fill;
+                    }
+                }
+
+                // Text color
+                const color = rPr.getElementsByTagNameNS(NS, 'color')[0];
+                if (color) {
+                    const val = attrVal(color, 'val');
+                    if (val && val !== 'auto' && val !== '000000') textColorHex = val;
+                }
+
+                // Font size
+                const sz = rPr.getElementsByTagNameNS(NS, 'sz')[0];
+                if (sz) {
+                    const val = attrVal(sz, 'val');
+                    if (val) fontSize = Math.round(parseInt(val) / 2); // Convert half-points to points
+                }
+
+                // Run styles (like Strong, Emphasis, etc.)
+                const rStyle = rPr.getElementsByTagNameNS(NS, 'rStyle')[0];
+                if (rStyle) {
+                    const val = attrVal(rStyle, 'val') || '';
+                    if (/Bold|Strong|13pt/i.test(val) && !classes.includes('ooxml-bold')) {
+                        classes.push('ooxml-bold');
+                    }
+                    if (/Underline/i.test(val) && !classes.includes('ooxml-u')) {
+                        classes.push('ooxml-u');
+                    }
+                    if (/Emphasis|Italic/i.test(val) && !classes.includes('ooxml-i')) {
+                        classes.push('ooxml-i');
+                    }
+                }
+            }
+
+            // Map highlight colors to CSS classes
+            if (highlightColor) {
+                const map = {
+                    yellow: 'hl-yellow', green: 'hl-green', cyan: 'hl-cyan',
+                    magenta: 'hl-magenta', red: 'hl-red', blue: 'hl-blue',
+                    darkYellow: 'hl-yellow', darkGreen: 'hl-green', darkCyan: 'hl-cyan',
+                    darkMagenta: 'hl-magenta', darkRed: 'hl-red', darkBlue: 'hl-blue',
+                    lightBlue: 'hl-blue', lightGreen: 'hl-green', lightYellow: 'hl-yellow'
+                };
+                classes.push(map[highlightColor] || 'hl-yellow');
+            }
+
+            // Build inline styles
+            const style = [];
+            if (shadingHex) {
+                // Ensure proper hex format
+                const hex = shadingHex.length === 6 ? shadingHex : shadingHex.padStart(6, '0');
+                style.push(`background-color:#${hex}`);
+            }
+            if (textColorHex) {
+                const hex = textColorHex.length === 6 ? textColorHex : textColorHex.padStart(6, '0');
+                style.push(`color:#${hex}`);
+            }
+            if (fontSize && fontSize !== 11) { // 11pt is default
+                style.push(`font-size:${fontSize}pt`);
+            }
+
+            // Extract text content from run
+            const parts = [];
+            for (const child of runEl.children) {
+                if (child.localName === 't') {
+                    const space = attrVal(child, 'space');
+                    let text = child.textContent || '';
+                    // Preserve spaces if xml:space="preserve"
+                    if (space !== 'preserve') {
+                        text = text.replace(/\s+/g, ' ');
+                    }
+                    parts.push(escapeHtml(text));
+                } else if (child.localName === 'tab') {
+                    parts.push('&nbsp;&nbsp;&nbsp;&nbsp;');
+                } else if (child.localName === 'br') {
+                    parts.push('<br>');
+                } else if (child.localName === 'cr') {
+                    parts.push('<br>');
+                }
+            }
+            
+            const innerText = parts.join('');
+            if (!innerText) return '';
+
+            // Return plain text if no formatting
+            if (!classes.length && !style.length) return innerText;
+            
+            // Build formatted span
+            const cls = classes.length ? ` class="${classes.join(' ')}"` : '';
+            const st = style.length ? ` style="${style.join(';')}"` : '';
+            return `<span${cls}${st}>${innerText}</span>`;
+        }
+
+        function attrVal(el, name) {
+            for (const a of el.attributes) if (a.localName === name) return a.value;
+            return null;
+        }
+        function falseAttr(el) {
+            const v = attrVal(el, 'val');
+            return v === '0' || v === 'false';
+        }
+
+        function escapeHtml(s) {
+            return s
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;');
+        }
+
+        function truncateHtml(html, maxChars) {
+            const wrapper = document.createElement('span');
+            wrapper.innerHTML = html;
+            let count = 0;
+            let stop = false;
+            const walk = node => {
+                if (stop) return;
+                if (node.nodeType === 3) {
+                    const remaining = maxChars - count;
+                    if (node.textContent.length > remaining) {
+                        node.textContent = node.textContent.substring(0, remaining) + '…';
+                        stop = true;
+                    }
+                    count += node.textContent.length;
+                    return;
+                }
+                Array.from(node.childNodes).forEach(walk);
+            };
+            walk(wrapper);
+            return wrapper.innerHTML;
+        }
+
+        function applyFilters() {
+            const q = state.search.trim().toLowerCase();
+            const scope = state.searchScope;
+            const docFilterId = state.docFilter ? Number(state.docFilter) : null;
+
+            let result = state.cards.filter(c => {
+                if (docFilterId && c.docId !== docFilterId) return false;
+                if (state.sectionFilter && c.section !== state.sectionFilter) return false;
+                if (!q) return true;
+                if (scope === 'tag') return c.searchTag.includes(q);
+                if (scope === 'cite') return c.searchCite.includes(q);
+                if (scope === 'body') return c.searchBody.includes(q);
+                return c.searchAll.includes(q);
+            });
+
+            if (state.sortOrder === 'alpha') {
+                result.sort((a, b) => a.author.localeCompare(b.author));
+            } else if (state.sortOrder === 'taglen') {
+                result.sort((a, b) => a.tag.length - b.tag.length);
+            } else {
+                result.sort((a, b) => a.docId - b.docId || a.id - b.id);
+            }
+
+            state.filtered = result;
+            renderList();
+            renderStats();
+            if (state.selectedCardId) {
+                renderPreview(state.cards.find(c => c.id === state.selectedCardId));
+            }
+        }
+
+        function renderStats() {
+            $('stat-docs').textContent = state.docs.size;
+            $('stat-cards').textContent = state.cards.length;
+            $('stat-shown').textContent = state.filtered.length;
+
+            const summary = state.docs.size === 0
+                ? 'No documents uploaded'
+                : `${state.filtered.length} of ${state.cards.length} cards`;
+            $('list-summary').textContent = summary;
+        }
+
+        function renderList() {
+            if (state.docs.size === 0) {
+                cardListEl.innerHTML = `<div class="empty-msg"><span class="big">&#x1F4C4;</span>Upload .docx files to get started.<br><br><button class="upload-btn upload-cta" id="btn-upload-2">+ Add documents</button></div>`;
+                $('btn-upload-2')?.addEventListener('click', () => fileInput.click());
+                return;
+            }
+            if (state.filtered.length === 0) {
+                cardListEl.innerHTML = `<div class="empty-msg">No cards match the current filters.</div>`;
+                return;
+            }
+
+            const RENDER_CAP = 400;
+            const visible = state.filtered.slice(0, RENDER_CAP);
+            const overflow = state.filtered.length - visible.length;
+            const q = state.search.trim();
+
+            const html = visible.map(c => {
+                const tagHtml = q ? highlightMatches(escapeHtml(c.tag), q) : escapeHtml(c.tag);
+                const citeHtml = q ? highlightMatches(escapeHtml(c.cite), q) : escapeHtml(c.cite);
+                const snippetHtml = q ? highlightMatchesInHtml(c.snippetHtml, q) : c.snippetHtml;
+                const active = c.id === state.selectedCardId ? ' active' : '';
+                return `<div class="card-item${active}" data-id="${c.id}">
+                    <div class="card-doc">
+                        <span class="doc-name" title="${escapeHtml(c.docName)}">${escapeHtml(c.docName)}</span>
+                        ${c.section ? `<span>&middot; ${escapeHtml(c.section.substring(0, 36))}</span>` : ''}
+                    </div>
+                    <div class="card-tag">${tagHtml}</div>
+                    ${c.cite ? `<div class="card-cite">${citeHtml}</div>` : ''}
+                    ${snippetHtml ? `<div class="card-snippet">${snippetHtml}</div>` : ''}
+                </div>`;
+            }).join('');
+
+            const overflowHtml = overflow > 0
+                ? `<div class="empty-msg" style="padding:18px;">Showing first ${RENDER_CAP} of ${state.filtered.length}. Narrow your search to see the rest.</div>`
+                : '';
+
+            cardListEl.innerHTML = html + overflowHtml;
+
+            cardListEl.querySelectorAll('.card-item').forEach(el => {
+                el.addEventListener('click', () => selectCard(Number(el.dataset.id)));
+            });
+        }
+
+        function selectCard(id) {
+            const card = state.cards.find(c => c.id === id);
+            if (!card) return;
+            state.selectedCardId = id;
+            cardListEl.querySelectorAll('.card-item').forEach(el => {
+                el.classList.toggle('active', Number(el.dataset.id) === id);
+            });
+            const activeEl = cardListEl.querySelector(`.card-item[data-id="${id}"]`);
+            if (activeEl) {
+                const rect = activeEl.getBoundingClientRect();
+                const paneRect = leftPane.getBoundingClientRect();
+                if (rect.top < paneRect.top || rect.bottom > paneRect.bottom) {
+                    activeEl.scrollIntoView({ block: 'nearest' });
+                }
+            }
+            renderPreview(card);
+        }
+
+        function renderPreview(card) {
+            if (!card) {
+                previewToolbar.style.display = 'none';
+                previewFooter.style.display = 'none';
+                previewBody.innerHTML = `<div class="empty-msg"><span class="big">&#x2190;</span>Select a card from the list to view it here.</div>`;
+                previewBody.className = 'preview-body';
+                return;
+            }
+            const doc = state.docs.get(card.docId);
+            if (!doc) {
+                previewBody.innerHTML = `<div class="empty-msg">Source document is no longer available.</div>`;
+                previewBody.className = 'preview-body';
+                return;
+            }
+            previewToolbar.style.display = '';
+            previewFooter.style.display = '';
+
+            // Create embedded Word document for perfect formatting
+            createEmbeddedWordDoc(card, doc);
+
+            $('source-name').textContent = doc.filename;
+            $('source-section').textContent = card.section || '';
+        }
+
+        function stepSelection(dir) {
+            if (!state.filtered.length) return;
+            const currentIdx = state.filtered.findIndex(c => c.id === state.selectedCardId);
+            let next;
+            if (currentIdx === -1) next = state.filtered[0];
+            else {
+                const idx = Math.max(0, Math.min(state.filtered.length - 1, currentIdx + dir));
+                next = state.filtered[idx];
+            }
+            if (next) selectCard(next.id);
+        }
+
+        function highlightMatches(text, q) {
+            if (!q) return text;
+            const safe = q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            return text.replace(new RegExp(`(${safe})`, 'gi'), '<mark class="search-hit">$1</mark>');
+        }
+
+        function highlightMatchesInHtml(html, q) {
+            if (!q) return html;
+            const tmp = document.createElement('div');
+            tmp.innerHTML = html;
+            const safe = q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            const re = new RegExp(safe, 'gi');
+            const walker = document.createTreeWalker(tmp, NodeFilter.SHOW_TEXT);
+            const targets = [];
+            let n;
+            while ((n = walker.nextNode())) {
+                if (re.test(n.textContent)) targets.push(n);
+                re.lastIndex = 0;
+            }
+            targets.forEach(node => {
+                const parent = node.parentNode;
+                if (!parent) return;
+                const frag = document.createDocumentFragment();
+                const text = node.textContent;
+                let last = 0;
+                let m;
+                re.lastIndex = 0;
+                while ((m = re.exec(text)) !== null) {
+                    if (m.index > last) frag.appendChild(document.createTextNode(text.substring(last, m.index)));
+                    const mark = document.createElement('mark');
+                    mark.className = 'search-hit';
+                    mark.textContent = m[0];
+                    frag.appendChild(mark);
+                    last = m.index + m[0].length;
+                    if (m.index === re.lastIndex) re.lastIndex++;
+                }
+                if (last < text.length) frag.appendChild(document.createTextNode(text.substring(last)));
+                parent.replaceChild(frag, node);
+            });
+            return tmp.innerHTML;
+        }
+
+        function populateDocFilter() {
+            const current = state.docFilter;
+            const options = ['<option value="">All documents</option>'];
+            state.docs.forEach(d => {
+                options.push(`<option value="${d.id}">${escapeHtml(d.shortName)}</option>`);
+            });
+            docFilter.innerHTML = options.join('');
+            docFilter.value = current && state.docs.has(Number(current)) ? current : '';
+            state.docFilter = docFilter.value;
+        }
+
+        function populateSectionFilter() {
+            const current = state.sectionFilter;
+            const sections = [...new Set(state.cards.map(c => c.section).filter(Boolean))].sort();
+            const options = ['<option value="">All sections</option>'];
+            sections.forEach(s => {
+                options.push(`<option value="${escapeHtml(s)}">${escapeHtml(s.substring(0, 50))}</option>`);
+            });
+            sectionFilter.innerHTML = options.join('');
+            sectionFilter.value = sections.includes(current) ? current : '';
+            state.sectionFilter = sectionFilter.value;
+        }
+
+        let currentEmbeddedDoc = null;
+        let currentViewMode = 'word'; // 'word' or 'html'
+
+        async function createEmbeddedWordDoc(card, doc) {
+            try {
+                // Build the Word document blob for this card
+                const docBlob = await buildCardDocx(card, doc);
+                const docUrl = URL.createObjectURL(docBlob);
+                
+                // Store it for copying and cleanup
+                if (currentEmbeddedDoc?.url) {
+                    URL.revokeObjectURL(currentEmbeddedDoc.url);
+                }
+                
+                currentEmbeddedDoc = {
+                    blob: docBlob,
+                    url: docUrl,
+                    card: card,
+                    doc: doc
+                };
+
+                // Render the embedded document
+                renderEmbeddedDoc(card, doc);
+                
+            } catch (error) {
+                console.warn('Failed to create embedded Word doc:', error);
+                currentEmbeddedDoc = null;
+                renderHtmlFallback(card, doc);
+            }
+        }
+
+        function renderEmbeddedDoc(card, doc) {
+            const docUrl = currentEmbeddedDoc?.url;
+            if (!docUrl) {
+                renderHtmlFallback(card, doc);
+                return;
+            }
+
+            previewBody.className = 'preview-body';
+            
+            // Try multiple embedding methods
+            const embedHtml = `
+                <div class="view-toggle">
+                    <button class="${currentViewMode === 'word' ? 'active' : ''}" onclick="switchViewMode('word')">Word View</button>
+                    <button class="${currentViewMode === 'html' ? 'active' : ''}" onclick="switchViewMode('html')">HTML View</button>
+                </div>
+                <div id="word-container" style="height: 100%; display: ${currentViewMode === 'word' ? 'block' : 'none'};">
+                    <!-- Try Office Online Viewer first -->
+                    <iframe class="word-embed" 
+                            src="https://view.officeapps.live.com/op/embed.aspx?src=${encodeURIComponent(window.location.origin + '/' + docUrl)}"
+                            onerror="this.style.display='none'; document.getElementById('word-fallback').style.display='block';"></iframe>
+                    
+                    <!-- Fallback: Direct embed -->
+                    <div id="word-fallback" style="display: none; height: 100%;">
+                        <object class="word-embed" data="${docUrl}" type="application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+                            <embed class="word-embed" src="${docUrl}" type="application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+                                <div class="embed-fallback">
+                                    <div style="text-align: center; padding: 40px; color: var(--color-text-secondary);">
+                                        <h3>Word Document Ready</h3>
+                                        <p style="margin: 16px 0;">Your browser cannot display Word documents directly.</p>
+                                        <button class="upload-btn" onclick="downloadCurrentCard()">📄 Download to view with perfect formatting</button>
+                                        <p style="margin-top: 16px; font-size: 12px;">Or switch to HTML View above for a preview</p>
+                                    </div>
+                                </div>
+                            </embed>
+                        </object>
+                    </div>
+                </div>
+                <div id="html-container" style="height: 100%; display: ${currentViewMode === 'html' ? 'block' : 'none'};"></div>
+            `;
+            
+            previewBody.innerHTML = embedHtml;
+            
+            // If HTML mode is active, render HTML content
+            if (currentViewMode === 'html') {
+                renderHtmlInContainer(card, doc);
+            }
+        }
+
+        function renderHtmlFallback(card, doc) {
+            currentViewMode = 'html';
+            previewBody.className = 'preview-body html-mode';
+            renderHtmlContent(card, doc);
+        }
+
+        function renderHtmlContent(card, doc) {
+            const tagHtml = paragraphToInlineHtml(doc.paragraphsXml[card.tagParaIndex]) || escapeHtml(card.tag);
+            const citeHtml = card.citeParaIndex !== null
+                ? paragraphToInlineHtml(doc.paragraphsXml[card.citeParaIndex])
+                : '';
+            const bodyHtml = card.bodyParaIndices
+                .map(idx => paragraphToBlockHtml(doc.paragraphsXml[idx]))
+                .join('');
+
+            let html = '';
+            if (card.section) html += `<div class="doc-section">${escapeHtml(card.section)}</div>`;
+            html += `<div class="doc-tag">${tagHtml}</div>`;
+            if (citeHtml) html += `<div class="doc-cite">${citeHtml}</div>`;
+            html += bodyHtml;
+
+            html += `<div style="margin-top: 20px; padding: 12px; background: var(--color-background-secondary); border-radius: var(--border-radius-md); font-size: 11px; color: var(--color-text-secondary); font-family: var(--font-sans);">
+                <strong>💡 Tip:</strong> Switch to Word View above for perfect formatting, or use "Copy formatted" / "Download .docx" for best results.
+            </div>`;
+
+            const q = state.search.trim();
+            previewBody.innerHTML = q ? highlightMatchesInHtml(html, q) : html;
+            previewBody.scrollTop = 0;
+        }
+
+        function renderHtmlInContainer(card, doc) {
+            const container = document.getElementById('html-container');
+            if (!container) return;
+            
+            container.className = 'embed-fallback';
+            
+            const tagHtml = paragraphToInlineHtml(doc.paragraphsXml[card.tagParaIndex]) || escapeHtml(card.tag);
+            const citeHtml = card.citeParaIndex !== null
+                ? paragraphToInlineHtml(doc.paragraphsXml[card.citeParaIndex])
+                : '';
+            const bodyHtml = card.bodyParaIndices
+                .map(idx => paragraphToBlockHtml(doc.paragraphsXml[idx]))
+                .join('');
+
+            let html = '';
+            if (card.section) html += `<div class="doc-section">${escapeHtml(card.section)}</div>`;
+            html += `<div class="doc-tag">${tagHtml}</div>`;
+            if (citeHtml) html += `<div class="doc-cite">${citeHtml}</div>`;
+            html += bodyHtml;
+
+            const q = state.search.trim();
+            container.innerHTML = q ? highlightMatchesInHtml(html, q) : html;
+        }
+
+        // Global functions for inline event handlers
+        window.switchViewMode = function(mode) {
+            currentViewMode = mode;
+            const wordContainer = document.getElementById('word-container');
+            const htmlContainer = document.getElementById('html-container');
+            const buttons = document.querySelectorAll('.view-toggle button');
+            
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            if (mode === 'word') {
+                wordContainer.style.display = 'block';
+                htmlContainer.style.display = 'none';
+                buttons[0].classList.add('active');
+            } else {
+                wordContainer.style.display = 'none';
+                htmlContainer.style.display = 'block';
+                buttons[1].classList.add('active');
+                
+                // Render HTML content if not already done
+                const card = state.cards.find(c => c.id === state.selectedCardId);
+                const doc = state.docs.get(card?.docId);
+                if (card && doc) renderHtmlInContainer(card, doc);
+            }
+        };
+
+        window.downloadCurrentCard = function() {
+            if (currentEmbeddedDoc) {
+                const filename = safeFilename(currentEmbeddedDoc.card, currentEmbeddedDoc.doc);
+                downloadFile(currentEmbeddedDoc.blob, filename);
+            }
+        };
+
+        async function copyWordDocument(docBlob, card, doc) {
+            // Method 1: Try to copy as Word document using modern clipboard API
+            if (window.ClipboardItem && navigator.clipboard?.write) {
+                try {
+                    const plainText = buildPlainText(card, doc);
+                    const rtfContent = await convertWordToRTF(docBlob, card, doc);
+                    
+                    const clipboardItem = new ClipboardItem({
+                        'text/plain': new Blob([plainText], { type: 'text/plain' }),
+                        'text/rtf': new Blob([rtfContent], { type: 'text/rtf' }),
+                        'text/html': new Blob([buildClipboardHtml(card, doc)], { type: 'text/html' })
+                    });
+                    
+                    await navigator.clipboard.write([clipboardItem]);
+                    return;
+                } catch (error) {
+                    console.warn('Modern clipboard API failed:', error);
+                }
+            }
+
+            // Method 2: Create a temporary download and copy instruction
+            const filename = safeFilename(card, doc);
+            downloadFile(docBlob, filename);
+            
+            // Also copy HTML as fallback
+            const plain = buildPlainText(card, doc);
+            const html = buildClipboardHtml(card, doc);
+            await writeClipboard(plain, html);
+            
+            throw new Error('Word document copied via download - use Ctrl+A, Ctrl+C in the downloaded file for perfect formatting');
+        }
+
+        async function convertWordToRTF(docBlob, card, doc) {
+            // Generate RTF content that preserves most Word formatting
+            // RTF is more widely supported for clipboard operations
+            
+            const plainText = buildPlainText(card, doc);
+            const lines = plainText.split('\n\n');
+            
+            let rtf = '{\\rtf1\\ansi\\deff0 {\\fonttbl {\\f0 Times New Roman;}{\\f1 Arial;}}';
+            
+            lines.forEach((line, index) => {
+                if (index === 0 && card.section) {
+                    // Section header
+                    rtf += `\\f1\\fs20\\b ${escapeRTF(card.section)}\\b0\\par`;
+                } else if (index === 0 || (index === 1 && card.section)) {
+                    // Tag line
+                    rtf += `\\f1\\fs28\\b ${escapeRTF(line)}\\b0\\par`;
+                } else if (index === 1 || (index === 2 && card.section)) {
+                    // Citation line
+                    rtf += `\\f0\\fs22\\b ${escapeRTF(line)}\\b0\\par`;
+                } else {
+                    // Body text
+                    rtf += `\\f0\\fs24 ${escapeRTF(line)}\\par`;
+                }
+            });
+            
+            rtf += '}';
+            return rtf;
+        }
+
+        async function copyCurrent(rich) {
+            const card = state.cards.find(c => c.id === state.selectedCardId);
+            if (!card) return;
+            const doc = state.docs.get(card.docId);
+            if (!doc) return;
+
+            if (!rich) {
+                // Plain text copy
+                const plain = buildPlainText(card, doc);
+                await writeClipboard(plain, null);
+                showToast('Copied plain text');
+                return;
+            }
+
+            // For rich copy, if we have embedded doc, suggest copying from Word view
+            if (currentEmbeddedDoc && currentEmbeddedDoc.card.id === card.id && currentViewMode === 'word') {
+                showToast('Select text in Word view above and press Ctrl+C for perfect formatting');
+                return;
+            }
+
+            // Fallback to HTML copy
+            const plain = buildPlainText(card, doc);
+            const html = buildClipboardHtml(card, doc);
+            await writeClipboard(plain, html);
+            showToast('Copied formatted text (use Word view for perfect formatting)');
+        }
+
+        function buildPlainText(card, doc) {
+            const parts = [];
+            if (card.section) parts.push(card.section);
+            parts.push(card.tag);
+            if (card.cite) parts.push(card.cite);
+            card.bodyParaIndices.forEach(idx => {
+                const t = stripTagsToText(doc.paragraphsXml[idx]);
+                if (t) parts.push(t);
+            });
+            return parts.join('\n\n');
+        }
+
+        function buildClipboardHtml(card, doc) {
+            const tagHtml = paragraphToInlineHtml(doc.paragraphsXml[card.tagParaIndex]) || escapeHtml(card.tag);
+            const citeHtml = card.citeParaIndex !== null ? paragraphToInlineHtml(doc.paragraphsXml[card.citeParaIndex]) : '';
+            const bodyHtml = card.bodyParaIndices
+                .map(idx => paragraphToBlockHtml(doc.paragraphsXml[idx]))
+                .join('');
+
+            // Convert CSS classes to inline styles for better clipboard compatibility
+            const inlinedBody = bodyHtml
+                .replace(/class="([^"]*)"/g, (m, cls) => {
+                    const style = classToInlineStyle(cls);
+                    return style ? `style="${style}"` : '';
+                })
+                .replace(/<p><\/p>/g, '<p>&nbsp;</p>'); // Handle empty paragraphs
+
+            return `
+<div style="font-family:Georgia,'Times New Roman',serif;font-size:12pt;line-height:1.5;color:#000000;margin:0;padding:0;">
+  ${card.section ? `<div style="font-family:Arial,sans-serif;font-size:10pt;color:#666666;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;font-weight:normal;">${escapeHtml(card.section)}</div>` : ''}
+  <div style="font-family:Arial,sans-serif;font-size:14pt;font-weight:700;margin-bottom:8px;color:#000000;line-height:1.3;">${tagHtml.replace(/class="([^"]*)"/g, (m, cls) => `style="${classToInlineStyle(cls)}"`)}</div>
+  ${citeHtml ? `<div style="font-size:11pt;font-weight:700;margin-bottom:12px;color:#000000;line-height:1.4;">${citeHtml.replace(/class="([^"]*)"/g, (m, cls) => `style="${classToInlineStyle(cls)}"`)}</div>` : ''}
+  ${inlinedBody}
+</div>`;
+        }
+
+        function classToInlineStyle(cls) {
+            if (!cls) return '';
+            const classes = cls.split(/\s+/);
+            const styles = [];
+            
+            // Text formatting
+            if (classes.includes('ooxml-bold')) styles.push('font-weight:700');
+            if (classes.includes('ooxml-i')) styles.push('font-style:italic');
+            
+            // Handle combined underline and strike-through
+            const hasUnderline = classes.includes('ooxml-u');
+            const hasStrike = classes.includes('ooxml-strike');
+            if (hasUnderline && hasStrike) {
+                styles.push('text-decoration:underline line-through');
+            } else if (hasUnderline) {
+                styles.push('text-decoration:underline');
+            } else if (hasStrike) {
+                styles.push('text-decoration:line-through');
+            }
+            
+            // Highlight colors - using exact Word highlight colors
+            if (classes.includes('hl-yellow')) styles.push('background-color:#FFFF00');
+            if (classes.includes('hl-green')) styles.push('background-color:#00FF00');
+            if (classes.includes('hl-cyan')) styles.push('background-color:#00FFFF');
+            if (classes.includes('hl-magenta')) styles.push('background-color:#FF00FF');
+            if (classes.includes('hl-red')) styles.push('background-color:#FF0000');
+            if (classes.includes('hl-blue')) styles.push('background-color:#0000FF');
+            
+            return styles.join(';');
+        }
+
+        async function writeClipboard(plainText, html) {
+            try {
+                if (html && window.ClipboardItem && navigator.clipboard?.write) {
+                    const item = new ClipboardItem({
+                        'text/plain': new Blob([plainText], { type: 'text/plain' }),
+                        'text/html': new Blob([html], { type: 'text/html' })
+                    });
+                    await navigator.clipboard.write([item]);
+                    return;
+                }
+                if (navigator.clipboard?.writeText) {
+                    await navigator.clipboard.writeText(plainText);
+                    return;
+                }
+            } catch (err) {
+                console.warn('Clipboard API failed, falling back:', err);
+            }
+            const ta = document.createElement('textarea');
+            ta.value = plainText;
+            ta.style.position = 'fixed';
+            ta.style.opacity = '0';
+            document.body.appendChild(ta);
+            ta.select();
+            try { document.execCommand('copy'); } catch {}
+            document.body.removeChild(ta);
+        }
+
+        async function downloadCurrent() {
+            const card = state.cards.find(c => c.id === state.selectedCardId);
+            if (!card) return;
+            const doc = state.docs.get(card.docId);
+            if (!doc) return;
+
+            showProgress('Building document...', 50);
+            const blob = await buildCardDocx(card, doc);
+            hideProgress();
+            if (blob) downloadFile(blob, safeFilename(card, doc));
+        }
+
+        async function downloadAllZip() {
+            if (!state.filtered.length) return;
+            const master = new JSZip();
+            showProgress(`Building ${state.filtered.length} documents...`, 0);
+            for (let i = 0; i < state.filtered.length; i++) {
+                const card = state.filtered[i];
+                const doc = state.docs.get(card.docId);
+                if (!doc) continue;
+                const blob = await buildCardDocx(card, doc);
+                if (blob) {
+                    const buf = await blob.arrayBuffer();
+                    master.file(safeFilename(card, doc), buf);
+                }
+                setProgress((i + 1) / state.filtered.length * 95, `Processing ${i + 1} of ${state.filtered.length}`);
+                if (i % 10 === 0) await new Promise(r => setTimeout(r, 0));
+            }
+            setProgress(98, 'Zipping...');
+            const zipBlob = await master.generateAsync({ type: 'blob' });
+            setProgress(100, 'Done');
+            hideProgress();
+            downloadFile(zipBlob, `debate_cards_${Date.now()}.zip`);
+        }
+
+        async function buildCardDocx(card, doc) {
+            const newZip = new JSZip();
+            for (const [path, entry] of Object.entries(doc.zipData.files)) {
+                if (path === 'word/document.xml') continue;
+                if (entry.dir) { newZip.folder(path); continue; }
+                const content = await entry.async('uint8array');
+                newZip.file(path, content);
+            }
+            const newDocXml = buildCardXml(card, doc);
+            newZip.file('word/document.xml', newDocXml);
+            return await newZip.generateAsync({ type: 'blob' });
+        }
+
+        function buildCardXml(card, doc) {
+            const keep = new Set();
+            
+            // Debug: Log what we're keeping
+            console.log('Building card XML for:', card.tag);
+            console.log('Tag para index:', card.tagParaIndex);
+            console.log('Cite para index:', card.citeParaIndex);
+            console.log('Body para indices:', card.bodyParaIndices);
+            
+            // Always include the tag paragraph
+            if (card.tagParaIndex !== null && card.tagParaIndex !== undefined) {
+                keep.add(card.tagParaIndex);
+                console.log('Added tag paragraph at index:', card.tagParaIndex);
+            }
+            
+            // Include citation paragraph if it exists
+            if (card.citeParaIndex !== null && card.citeParaIndex !== undefined) {
+                keep.add(card.citeParaIndex);
+                console.log('Added cite paragraph at index:', card.citeParaIndex);
+            }
+            
+            // Include all body paragraphs
+            card.bodyParaIndices.forEach(i => {
+                keep.add(i);
+                console.log('Added body paragraph at index:', i);
+            });
+
+            console.log('Total paragraphs to keep:', keep.size);
+            console.log('Keep set:', Array.from(keep).sort((a,b) => a-b));
+
+            const bodyParas = doc.paragraphsXml
+                .map((xml, i) => {
+                    if (keep.has(i)) {
+                        console.log(`Including paragraph ${i}:`, xml.substring(0, 100) + '...');
+                        return xml;
+                    }
+                    return null;
+                })
+                .filter(Boolean)
+                .join('');
+
+            console.log('Final body XML length:', bodyParas.length);
+
+            const sectPrMatch = doc.rawXml.match(/<w:sectPr\b[\s\S]*?<\/w:sectPr>/);
+            const sectPr = sectPrMatch ? sectPrMatch[0] : '';
+
+            return doc.rawXml.replace(
+                /<w:body\b[^>]*>[\s\S]*<\/w:body>/,
+                match => {
+                    const open = match.match(/^<w:body\b[^>]*>/)[0];
+                    return `${open}${bodyParas}${sectPr}</w:body>`;
+                }
+            );
+        }
+
+        function safeFilename(card, doc) {
+            const clean = s => (s || '').replace(/[^a-zA-Z0-9 _-]/g, '').replace(/\s+/g, '_').substring(0, 40);
+            const docPart = clean(doc.shortName).substring(0, 20);
+            return `${docPart}__${clean(card.author)}_${clean(card.tag).substring(0, 30)}.docx`;
+        }
+
+        function downloadFile(blob, filename) {
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url; a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            setTimeout(() => URL.revokeObjectURL(url), 1500);
+        }
+
+        function showProgress(label, pct) {
+            progressOverlay.classList.add('show');
+            progressLabel.textContent = label;
+            progressBar.style.width = `${pct}%`;
+        }
+        function setProgress(pct, label) {
+            progressBar.style.width = `${pct}%`;
+            if (label) progressLabel.textContent = label;
+        }
+        function hideProgress() {
+            setTimeout(() => { progressOverlay.classList.remove('show'); progressBar.style.width = '0%'; }, 300);
+        }
+        let toastTimer = null;
+        function showToast(msg) {
+            toast.textContent = msg;
+            toast.classList.add('show');
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => toast.classList.remove('show'), 1600);
+        }
+
+        renderStats();
+        $('btn-upload-2')?.addEventListener('click', () => fileInput.click());
+    })();
+    </script>
+</body>
+</html>

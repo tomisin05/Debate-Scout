@@ -625,14 +625,41 @@
     "Eisenhower GrSt (Ma..... Gr..... - Au..... St.....)": 12,
     "Eisenhower GrWe (Ma..... Gr..... - Le..... We.....)": 2
   },
-  "Elizabeth LC (CA)": {},
-  "Emporia (KS)": {},
-  "Evanston (IL)": {},
-  "Fairview (CO)": {},
-  "Farmington (MN)": {},
-  "Ferris (WA)": {},
-  "Fox Chapel (PA)": {},
-  "Galloway School (GA)": {},
+  "Elizabeth LC (CA)": {
+    "Elizabeth LC AyTa (Am..... Ay..... - El..... Ta.....)": 1,
+    "Elizabeth LC PaRo (Ap..... Pa..... - Sa..... Ro.....)": 19
+  },
+  "Emporia (KS)": {
+    "Emporia DaRe (Ka..... Da..... - Ju..... Re.....)": 1
+  },
+  "Evanston (IL)": {
+    "Evanston LyGy (Je..... Ly..... - An..... Gy.....)": 1,
+    "Evanston ToGu (Ba..... To..... - Ga..... Gu.....)": 3,
+    "Evanston WaCo (Ai..... Wa..... - Et..... Co.....)": 17
+  },
+  "Fairview (CO)": {
+    "Fairview QuQu (Ky..... Qu..... - Ry..... Qu.....)": 2
+  },
+  "Farmington (MN)": {
+    "Farmington FrPa (Mi..... Fr..... - Za..... Pa.....)": 0,
+    "Farmington KoLi (Mi..... Ko..... - Al..... Li.....)": 0,
+    "Farmington KoMo (Mi..... Ko..... - Wi..... Mo.....)": 2,
+    "Farmington LoPa (Ta..... Lo..... - Za..... Pa.....)": 0,
+    "Farmington MoMu (Wi..... Mo..... - Th..... Mu.....)": 0
+  },
+  "Ferris (WA)": {
+    "Ferris MiCl (Em..... Mi..... - Za..... Cl.....)": 18,
+    "Ferris OwSp (Em..... Ow..... - Da..... Sp.....)": 62
+  },
+  "Fox Chapel (PA)": {
+    "Fox Chapel GoRo (Ra..... Go..... - Ja..... Ro.....)": 7
+  },
+  "Galloway School (GA)": {
+    "Galloway School DiSt (Je..... Di..... - Ow..... St.....)": 3,
+    "Galloway School HuDi (Ni..... Hu..... - Je..... Di.....)": 8,
+    "Galloway School StVo (Ow..... St..... - So..... Vo.....)": 8,
+    "Galloway School VoTe (So..... Vo..... - Cl..... Te.....)": 2
+  },
   "George Washington (CO)": {
     "George Washington BuHo (An..... Bu..... - Br..... Ho.....)": 0,
     "George Washington PaFr (Be..... Pa..... - Cl..... Fr.....)": 2,
@@ -763,12 +790,43 @@
   "Gunn (CA)": {
     "Gunn AlSc (Ev..... Al..... - El..... Sc.....)": 2
   },
-  "Guyer (TX)": {},
-  "H H Dow (MI)": {},
-  "Hamilton (AZ)": {},
-  "Harbor Teacher Prep (CA)": {},
-  "Harding Charter Prep (OK)": {},
-  "Harker (CA)": {},
+  "Guyer (TX)": {
+    "Guyer BoAk (Se..... Bo..... - Ak..... Ak.....)": 2,
+    "Guyer ImMu (Mi..... Im..... - Ha..... Mu.....)": 74,
+    "Guyer McRo (Ha..... Mc..... - Pa..... Ro.....)": 1
+  },
+  "H H Dow (MI)": {
+    "H H Dow ShTa (Ta..... Sh..... - Fa..... Ta.....)": 1
+  },
+  "Hamilton (AZ)": {
+    "Hamilton ChGa (Vi..... Ch..... - Sr..... Ga.....)": 3,
+    "Hamilton GoZh (Am..... Go..... - Xe..... Zh.....)": 3,
+    "Hamilton JiNg (An..... Ji..... - Te..... Ng.....)": 2,
+    "Hamilton NgLi (Te..... Ng..... - Me..... Li.....)": 2,
+    "Hamilton NoNo (No..... No..... - No..... No.....)": 2,
+    "Hamilton ShJa (Af..... Sh..... - Ma..... Ja.....)": 13
+  },
+  "Harbor Teacher Prep (CA)": {
+    "Harbor Teacher Prep BaSe (Ri..... Ba..... - Ma..... Se.....)": 2,
+    "Harbor Teacher Prep BiMa (Da..... Bi..... - Si..... Ma.....)": 0,
+    "Harbor Teacher Prep MaBi (Si..... Ma..... - Da..... Bi.....)": 1,
+    "Harbor Teacher Prep MaBr (Cy..... Ma..... - Jo..... Br.....)": 0,
+    "Harbor Teacher Prep OrUd (Du..... Or..... - Ir..... Ud.....)": 0,
+    "Harbor Teacher Prep suho (an..... su..... - le..... ho.....)": 5
+  },
+  "Harding Charter Prep (OK)": {
+    "Harding Charter Prep HiDa (Ka..... Hi..... - An..... Da.....)": 1
+  },
+  "Harker (CA)": {
+    "Harker ArJa (Sa..... Ar..... - Ar..... Ja.....)": 2,
+    "Harker ArSu (Sa..... Ar..... - Na..... Su.....)": 10,
+    "Harker HuLe (Ma..... Hu..... - An..... Le.....)": 18,
+    "Harker MuAr (Ra..... Mu..... - Sa..... Ar.....)": 2,
+    "Harker MuMy (Ra..... Mu..... - Kr..... My.....)": 2,
+    "Harker PaAr (De..... Pa..... - Sa..... Ar.....)": 2,
+    "Harker PaJa (De..... Pa..... - Ar..... Ja.....)": 2,
+    "Harker ViSh (De..... Vi..... - De..... Sh.....)": 21
+  },
   "Hawknatius (OH)": {
     "Hawknatius MoGu (Co..... Mo..... - Is..... Gu.....)": 0,
     "Hawknatius WeNa (Ja..... We..... - Sa..... Na.....)": 1
@@ -899,14 +957,50 @@
     "Houston Memorial MeSh (Ru..... Me..... - da..... Sh.....)": 12,
     "Houston Memorial XiDu (Ke..... Xi..... - Be..... Du.....)": 0
   },
-  "Humanities And Arts (CA)": {},
-  "Hume Fogg (TN)": {},
-  "Hunter College (NY)": {},
-  "Hyattsville Independent (MD)": {},
-  "Independence Independent (TX)": {},
-  "Ingraham (WA)": {},
-  "Inspired Teaching (DC)": {},
-  "Interlake (WA)": {},
+  "Humanities And Arts (CA)": {
+    "Humanities And Arts NoMc (Tr..... No..... - Na..... Mc.....)": 0,
+    "Humanities And Arts PoOr (De..... Po..... - Cu..... Or.....)": 1
+  },
+  "Hume Fogg (TN)": {
+    "Hume Fogg EdMa (Ch..... Ed..... - Ir..... Ma.....)": 0
+  },
+  "Hunter College (NY)": {
+    "Hunter College AsJa (Sh..... As..... - Kh..... Ja.....)": 1
+  },
+  "Hyattsville Independent (MD)": {
+    "Hyattsville Independent MaFi (De..... Ma..... - Al..... Fi.....)": 6
+  },
+  "Independence Independent (TX)": {
+    "Independence Independent KhYi (Ay..... Kh..... - Ch..... Yi.....)": 2
+  },
+  "Ingraham (WA)": {
+    "Ingraham CoOr (Ma..... Co..... - Ka..... Or.....)": 0,
+    "Ingraham KaMe (Ja..... Ka..... - Ot..... Me.....)": 7,
+    "Ingraham LaCo (Be..... La..... - Ma..... Co.....)": 0,
+    "Ingraham MeOr (Fi..... Me..... - Ka..... Or.....)": 0,
+    "Ingraham MePr (Fi..... Me..... - Li..... Pr.....)": 0,
+    "Ingraham PrKa (Li..... Pr..... - Ja..... Ka.....)": 8,
+    "Ingraham XiSt (Vi..... Xi..... - Au..... St.....)": 9
+  },
+  "Inspired Teaching (DC)": {
+    "Inspired Teaching SiPe (Da..... Si..... - Sa..... Pe.....)": 2
+  },
+  "Interlake (WA)": {
+    "Interlake AhCh (Sa..... Ah..... - As..... Ch.....)": 2,
+    "Interlake BaNe (Sa..... Ba..... - Sr..... Ne.....)": 5,
+    "Interlake CaFe (Ne..... Ca..... - Em..... Fe.....)": 10,
+    "Interlake CaLi (Ne..... Ca..... - Ni..... Li.....)": 19,
+    "Interlake CaQi (Ne..... Ca..... - Je..... Qi.....)": 5,
+    "Interlake ChCa (Br..... Ch..... - Ne..... Ca.....)": 9,
+    "Interlake ChFe (Br..... Ch..... - Em..... Fe.....)": 48,
+    "Interlake ChTi (As..... Ch..... - Yv..... Ti.....)": 6,
+    "Interlake PaCh (Sa..... Pa..... - As..... Ch.....)": 3,
+    "Interlake PeCa (Ir..... Pe..... - Ne..... Ca.....)": 10,
+    "Interlake PeTa (Ir..... Pe..... - Mi..... Ta.....)": 37,
+    "Interlake QiPa (Je..... Qi..... - Vl..... Pa.....)": 29,
+    "Interlake WuCa (Si..... Wu..... - Ne..... Ca.....)": 7,
+    "Interlake pane (sa..... pa..... - sr..... ne.....)": 36
+  },
   "Irma Rangel YWLS (TX)": {
     "Irma Rangel YWLS Gu (Va..... Gu.....)": 0
   },
@@ -1053,12 +1147,40 @@
     "La Salle College GrCo (Sa..... Gr..... - Ma..... Co.....)": 2,
     "La Salle College QuQu (Da..... Qu..... - Mi..... Qu.....)": 23
   },
-  "Lake City (ID)": {},
-  "Lake Travis (TX)": {},
-  "Lane Tech (IL)": {},
-  "Langham Creek (TX)": {},
-  "Lansing (KS)": {},
-  "Law Magnet (TX)": {},
+  "Lake City (ID)": {
+    "Lake City MaRo (Py..... Ma..... - Ka..... Ro.....)": 0
+  },
+  "Lake Travis (TX)": {
+    "Lake Travis OlMc (Al..... Ol..... - Vi..... Mc.....)": 4,
+    "Lake Travis SeGr (No..... Se..... - Ka..... Gr.....)": 1
+  },
+  "Lane Tech (IL)": {
+    "Lane Tech GrPu (Ay..... Gr..... - Di..... Pu.....)": 2,
+    "Lane Tech RoPr (Ni..... Ro..... - Sa..... Pr.....)": 55
+  },
+  "Langham Creek (TX)": {
+    "Langham Creek CoLe (Ry..... Co..... - Mi..... Le.....)": 1,
+    "Langham Creek FeIn (Co..... Fe..... - Ni..... In.....)": 8,
+    "Langham Creek FlPo (Ai..... Fl..... - Mi..... Po.....)": 1,
+    "Langham Creek GeSt (Lu..... Ge..... - Ca..... St.....)": 1,
+    "Langham Creek MaSi (Is..... Ma..... - Me..... Si.....)": 0,
+    "Langham Creek SiDo (Gr..... Si..... - Ke..... Do.....)": 1
+  },
+  "Lansing (KS)": {
+    "Lansing DaAt (Am..... Da..... - Ma..... At.....)": 62,
+    "Lansing KaSo (Ch..... Ka..... - Ma..... So.....)": 13,
+    "Lansing KaSt (St..... Ka..... - Wi..... St.....)": 2,
+    "Lansing NoNo (On..... No..... - Tw..... No.....)": 3,
+    "Lansing StSt (Wi..... St..... - Ni..... St.....)": 9,
+    "Lansing ThWa (Ga..... Th..... - An..... Wa.....)": 0,
+    "Lansing WoZi (Ma..... Wo..... - Br..... Zi.....)": 26,
+    "Lansing YmCa (Al..... Ym..... - Ba..... Ca.....)": 2
+  },
+  "Law Magnet (TX)": {
+    "Law Magnet ArJa (Am..... Ar..... - Ab..... Ja.....)": 1,
+    "Law Magnet CoDe (Le..... Co..... - Da..... De.....)": 1,
+    "Law Magnet TaSl (As..... Ta..... - So..... Sl.....)": 9
+  },
   "Lees Summit West (MO)": {
     "Lees Summit West AkEn (La..... Ak..... - Qu..... En.....)": 0,
     "Lees Summit West OsEk (An..... Os..... - Ma..... Ek.....)": 1,
@@ -1193,12 +1315,57 @@
     "Lovejoy SiMa (Ta..... Si..... - An..... Ma.....)": 38,
     "Lovejoy VeCz (Ja..... Ve..... - Ja..... Cz.....)": 8
   },
-  "Lowell (CA)": {},
-  "Madison Central (MS)": {},
-  "Madison East (WI)": {},
-  "Maine East (IL)": {},
-  "Maize (KS)": {},
-  "Mamaroneck (NY)": {},
+  "Lowell (CA)": {
+    "Lowell BeSa (Sa..... Be..... - Je..... Sa.....)": 5,
+    "Lowell MaWy (Aa..... Ma..... - Ta..... Wy.....)": 2,
+    "Lowell SaTs (Je..... Sa..... - Ta..... Ts.....)": 13,
+    "Lowell YeRo (Ke..... Ye..... - Zo..... Ro.....)": 44
+  },
+  "Madison Central (MS)": {
+    "Madison Central GiFl (Ch..... Gi..... - Th..... Fl.....)": 3,
+    "Madison Central MeTu (Le..... Me..... - Ja..... Tu.....)": 0
+  },
+  "Madison East (WI)": {
+    "Madison East HaKe (Be..... Ha..... - Si..... Ke.....)": 0,
+    "Madison East KoHa (El..... Ko..... - Be..... Ha.....)": 3,
+    "Madison East KoJa (El..... Ko..... - Ju..... Ja.....)": 20,
+    "Madison East ReSy (Th..... Re..... - El..... Sy.....)": 0
+  },
+  "Maine East (IL)": {
+    "Maine East BoVa (Vi..... Bo..... - Ad..... Va.....)": 41,
+    "Maine East GaBa (Ka..... Ga..... - Li..... Ba.....)": 0,
+    "Maine East PiPi (Ni..... Pi..... - Be..... Pi.....)": 73,
+    "Maine East RiTs (As..... Ri..... - St..... Ts.....)": 6,
+    "Maine East SaTs (Ha..... Sa..... - St..... Ts.....)": 50,
+    "Maine East ShBa (An..... Sh..... - Be..... Ba.....)": 0,
+    "Maine East ShSh (An..... Sh..... - Ri..... Sh.....)": 0,
+    "Maine East ShTs (Pa..... Sh..... - St..... Ts.....)": 3
+  },
+  "Maize (KS)": {
+    "Maize LoNe (Je..... Lo..... - Br..... Ne.....)": 44,
+    "Maize MiLi (Co..... Mi..... - Ja..... Li.....)": 39
+  },
+  "Mamaroneck (NY)": {
+    "Mamaroneck BlLa (Ja..... Bl..... - Ja..... La.....)": 10,
+    "Mamaroneck BlOw (Ja..... Bl..... - Ja..... Ow.....)": 21,
+    "Mamaroneck ChZi (El..... Ch..... - Iv..... Zi.....)": 1,
+    "Mamaroneck DeRa (De..... De..... - Ra..... Ra.....)": 7,
+    "Mamaroneck DeZi (De..... De..... - Iv..... Zi.....)": 16,
+    "Mamaroneck FeEp (Fr..... Fe..... - An..... Ep.....)": 9,
+    "Mamaroneck FeZi (Sa..... Fe..... - De..... Zi.....)": 5,
+    "Mamaroneck KaBe (Ar..... Ka..... - An..... Be.....)": 2,
+    "Mamaroneck KaRo (Na..... Ka..... - Ja..... Ro.....)": 51,
+    "Mamaroneck LaOw (Ja..... La..... - Ja..... Ow.....)": 5,
+    "Mamaroneck LaPe (Ja..... La..... - Lu..... Pe.....)": 8,
+    "Mamaroneck LaRu (Ja..... La..... - Co..... Ru.....)": 1,
+    "Mamaroneck LaZi (Ma..... La..... - Ju..... Zi.....)": 6,
+    "Mamaroneck LeRu (Te..... Le..... - Ve..... Ru.....)": 36,
+    "Mamaroneck NoTe (No..... No..... - Te..... Te.....)": 9,
+    "Mamaroneck RaMi (Ra..... Ra..... - Ja..... Mi.....)": 70,
+    "Mamaroneck SuRu (St..... Su..... - Ve..... Ru.....)": 5,
+    "Mamaroneck SuSu (St..... Su..... - So..... Su.....)": 58,
+    "Mamaroneck ZiZi (Iv..... Zi..... - De..... Zi.....)": 6
+  },
   "Marquette (WI)": {
     "Marquette LaIb (Sa..... La..... - Ha..... Ib.....)": 3,
     "Marquette LaMa (Sa..... La.....)": 5,
@@ -1379,5 +1546,994 @@
   },
   "DC International (DC)": {
     "DC International AlRo (Pa..... Al..... - Lo..... Ro.....)": 7
+  },
+  "Garfield (WA)": {
+    "Garfield HiKa (Jo..... Hi..... - Am..... Ka.....)": 0,
+    "Garfield LaTh (Rh..... La..... - Be..... Th.....)": 52,
+    "Garfield PoWe (Qu..... Po..... - Ch..... We.....)": 2
+  },
+  "Iowa City City (IA)": {
+    "Iowa City City ChWe (El..... Ch..... - Si..... We.....)": 81,
+    "Iowa City City ClMi (Li..... Cl..... - He..... Mi.....)": 1,
+    "Iowa City City RoSi (Lu..... Ro..... - Ar..... Si.....)": 4
+  },
+  "Iowa City West (AL)": {
+    "Iowa City West BhLi (Ak..... Bh..... - Am..... Li.....)": 20,
+    "Iowa City West ClWe (Mi..... Cl..... - So..... We.....)": 3,
+    "Iowa City West LiCl (Am..... Li..... - Mi..... Cl.....)": 7,
+    "Iowa City West LiSh (Am..... Li..... - Ga..... Sh.....)": 1,
+    "Iowa City West LuCl (An..... Lu..... - Mi..... Cl.....)": 16,
+    "Iowa City West NoNo (Fi..... No..... - Se..... No.....)": 14,
+    "Iowa City West ShDA (Ga..... Sh..... - Et..... DA.....)": 50,
+    "Iowa City West ShLu (Ga..... Sh..... - An..... Lu.....)": 1
+  },
+  "Lawrence (KS)": {
+    "Lawrence DaVa (Da..... Da..... - Am..... Va.....)": 1,
+    "Lawrence KrRo (Ra..... Kr..... - Jo..... Ro.....)": 3,
+    "Lawrence RiBo (J..... Ri..... - Cl..... Bo.....)": 0,
+    "Lawrence RiRo (J..... Ri..... - Jo..... Ro.....)": 1
+  },
+  "Lawrence Free State (KS)": {
+    "Lawrence Free State BaHu (Ai..... Ba..... - Ti..... Hu.....)": 39,
+    "Lawrence Free State BeHa (Ja..... Be..... - Et..... Ha.....)": 76,
+    "Lawrence Free State BrRa (Ma..... Br..... - Dr..... Ra.....)": 6,
+    "Lawrence Free State BrWi (Ma..... Br..... - Ja..... Wi.....)": 20,
+    "Lawrence Free State GuBr (Au..... Gu..... - Ma..... Br.....)": 12,
+    "Lawrence Free State GuRu (Au..... Gu..... - Si..... Ru.....)": 13,
+    "Lawrence Free State HoJo (Ab..... Ho..... - Ri..... Jo.....)": 17,
+    "Lawrence Free State PoBh (Ka..... Po..... - Sh..... Bh.....)": 4,
+    "Lawrence Free State RuMa (Se..... Ru..... - Jo..... Ma.....)": 82,
+    "Lawrence Free State RuWi (Si..... Ru..... - Ja..... Wi.....)": 19
+  },
+  "Maplewood (MO)": {
+    "Maplewood ToCu (Jo..... To..... - Ma..... Cu.....)": 2
+  },
+  "Nevada Union (CA)": {
+    "Nevada Union DrWi (Jo..... Dr..... - Ja..... Wi.....)": 0,
+    "Nevada Union GrLo (Ev..... Gr..... - Ze..... Lo.....)": 2,
+    "Nevada Union GrNo (Ev..... Gr..... - Ha..... No.....)": 22,
+    "Nevada Union WiGr (Ja..... Wi..... - Ev..... Gr.....)": 11
+  },
+  "Neville (LA)": {
+    "Neville MeHa (Ka..... Me..... - Ka..... Ha.....)": 0,
+    "Neville MoMc (Eb..... Mo..... - Me..... Mc.....)": 0,
+    "Neville WaWo (Al..... Wa..... - Pe..... Wo.....)": 0
+  },
+  "New Designs UP (CA)": {
+    "New Designs UP KaRe (Yu..... Ka..... - Am..... Re.....)": 0,
+    "New Designs UP MeRo (Du..... Me..... - Te..... Ro.....)": 0,
+    "New Designs UP ReMe (Am..... Re..... - Du..... Me.....)": 0,
+    "New Designs UP RiEp (Na..... Ri..... - Ke..... Ep.....)": 0,
+    "New Designs UP RiMa (Na..... Ri..... - Cl..... Ma.....)": 2
+  },
+  "New Mission (MA)": {
+    "New Mission NgPo (Di..... Ng..... - Je..... Po.....)": 0
+  },
+  "New Technology (CA)": {
+    "New Technology CrGa (Ju..... Cr..... - Ga..... Ga.....)": 0
+  },
+  "New Trier (IL)": {
+    "New Trier AB (No..... A..... - No..... B.....)": 2,
+    "New Trier DSTi (He..... DS..... - Lu..... Ti.....)": 1,
+    "New Trier DiXu (Ja..... Di..... - Ma..... Xu.....)": 1,
+    "New Trier HeMc (Ma..... He..... - Co..... Mc.....)": 74,
+    "New Trier JoWa (MJ..... Jo..... - Br..... Wa.....)": 50,
+    "New Trier JoXu (Ma..... Jo..... - Ma..... Xu.....)": 7,
+    "New Trier LuRi (Ch..... Lu..... - Ta..... Ri.....)": 1,
+    "New Trier LuSu (Ch..... Lu..... - Ha..... Su.....)": 3,
+    "New Trier LuWi (Ch..... Lu..... - Ni..... Wi.....)": 1,
+    "New Trier RiRo (Ta..... Ri..... - Ev..... Ro.....)": 2,
+    "New Trier RoSu (Da..... Ro..... - Ha..... Su.....)": 19,
+    "New Trier RoWi (Da..... Ro..... - Ni..... Wi.....)": 26,
+    "New Trier Seva (To..... Se..... - Iz..... va.....)": 3,
+    "New Trier TaTo (Ma..... Ta..... - Ni..... To.....)": 7,
+    "New Trier WaWi (Br..... Wa..... - Ni..... Wi.....)": 4,
+    "New Trier WeWa (Jo..... We..... - Ge..... Wa.....)": 0,
+    "New Trier WiRo (Ni..... Wi..... - Ev..... Ro.....)": 2
+  },
+  "Newark Science (NJ)": {
+    "Newark Science JeBr (Sa..... Je..... - Si..... Br.....)": 1,
+    "Newark Science NoCa (Ca..... No..... - No..... Ca.....)": 8,
+    "Newark Science OgBr (Te..... Og..... - Si..... Br.....)": 4,
+    "Newark Science SeQu (Ja..... Se..... - Ga..... Qu.....)": 3,
+    "Newark Science StJe (Ch..... St..... - Sa..... Je.....)": 5,
+    "Newark Science StOg (Ch..... St..... - Te..... Og.....)": 1
+  },
+  "NewarkTech (NJ)": {
+    "NewarkTech AfWi (Te..... Af..... - Zy..... Wi.....)": 2,
+    "NewarkTech AiAk (Mo..... Ai..... - Ch..... Ak.....)": 3,
+    "NewarkTech IwGu (Va..... Iw..... - Ja..... Gu.....)": 2
+  },
+  "Newton (KS)": {
+    "Newton HuMo (Fl..... Hu..... - Mi..... Mo.....)": 5
+  },
+  "Niles North (IL)": {
+    "Niles North BoKh (An..... Bo..... - Ha..... Kh.....)": 1,
+    "Niles North HaAm (Sa..... Ha..... - Ro..... Am.....)": 1,
+    "Niles North HaBo (Th..... Ha..... - An..... Bo.....)": 3,
+    "Niles North VaUn (Ev..... Va..... - Ca..... Un.....)": 15
+  },
+  "Niles West (IL)": {
+    "Niles West AlSu (Pe..... Al..... - Em..... Su.....)": 3,
+    "Niles West BaBe (Du..... Ba..... - Ep..... Be.....)": 71,
+    "Niles West BaSh (Du..... Ba..... - Ab..... Sh.....)": 3,
+    "Niles West ChKo (Se..... Ch..... - De..... Ko.....)": 2,
+    "Niles West ChRa (Se..... Ch..... - Sa..... Ra.....)": 4,
+    "Niles West ChSa (Se..... Ch..... - Jo..... Sa.....)": 4,
+    "Niles West ChSu (Se..... Ch..... - Em..... Su.....)": 4,
+    "Niles West DeTa (Ra..... De..... - Su..... Ta.....)": 3,
+    "Niles West KiSe (Ha..... Ki..... - Fr..... Se.....)": 16,
+    "Niles West NoNo (Fi..... No..... - Se..... No.....)": 3,
+    "Niles West PaTa (Pa..... Pa..... - Su..... Ta.....)": 54,
+    "Niles West ShDe (Ab..... Sh..... - Ra..... De.....)": 68
+  },
+  "Norman North (OK)": {
+    "Norman North LaFr (Si..... La..... - So..... Fr.....)": 5,
+    "Norman North QiSe (Gr..... Qi..... - Me..... Se.....)": 0
+  },
+  "North Broward Prep (FL)": {
+    "North Broward Prep ArRa (Da..... Ar..... - Se..... Ra.....)": 39,
+    "North Broward Prep DeFa (Ak..... De..... - An..... Fa.....)": 83,
+    "North Broward Prep FaKa (An..... Fa..... - Ty..... Ka.....)": 1,
+    "North Broward Prep FaRa (An..... Fa..... - Se..... Ra.....)": 8,
+    "North Broward Prep GoGo (De..... Go..... - Ja..... Go.....)": 54,
+    "North Broward Prep NeRa (Pr..... Ne..... - Se..... Ra.....)": 1
+  },
+  "North Central (WA)": {
+    "North Central ScCr (Co..... Sc..... - Ha..... Cr.....)": 2
+  },
+  "North Liberty (IA)": {
+    "North Liberty StDo (Ju..... St..... - Da..... Do.....)": 3
+  },
+  "Northside (IL)": {
+    "Northside BlHo (Sa..... Bl..... - La..... Ho.....)": 1,
+    "Northside CaBl (Ry..... Ca..... - Sa..... Bl.....)": 2,
+    "Northside CaHe (Ry..... Ca..... - Oc..... He.....)": 7,
+    "Northside CaWi (Ry..... Ca..... - Sa..... Wi.....)": 2,
+    "Northside ChBo (Ky..... Ch..... - Be..... Bo.....)": 5,
+    "Northside ChCh (Ky..... Ch..... - Ev..... Ch.....)": 8,
+    "Northside ChSo (Ky..... Ch..... - Mi..... So.....)": 40,
+    "Northside ChSu (Ev..... Ch..... - Ma..... Su.....)": 17,
+    "Northside CoRa (Ba..... Co..... - Sa..... Ra.....)": 26,
+    "Northside DeKe (Ca..... De..... - No..... Ke.....)": 17,
+    "Northside HeMa (Oc..... He..... - Da..... Ma.....)": 0,
+    "Northside HoKe (La..... Ho..... - No..... Ke.....)": 6,
+    "Northside HoWe (La..... Ho..... - Et..... We.....)": 5,
+    "Northside KaWa (Be..... Ka..... - An..... Wa.....)": 24,
+    "Northside KeNa (No..... Ke..... - Ro..... Na.....)": 6,
+    "Northside MaRa (Da..... Ma..... - Sa..... Ra.....)": 4,
+    "Northside RaBo (Sa..... Ra..... - Be..... Bo.....)": 10,
+    "Northside RaSu (Sa..... Ra..... - Ma..... Su.....)": 1,
+    "Northside SuSo (Ma..... Su..... - Mi..... So.....)": 1,
+    "Northside WeTu (Et..... We..... - Ri..... Tu.....)": 4
+  },
+  "NorthStar (NJ)": {
+    "NorthStar TrOd (Iy..... Tr..... - Se..... Od.....)": 1
+  },
+  "Northview (AL)": {
+    "Northview AfYa (Kh..... Af..... - Ia..... Ya.....)": 79,
+    "Northview IpHo (Pr..... Ip..... - Va..... Ho.....)": 14,
+    "Northview IpMe (Pr..... Ip..... - Ro..... Me.....)": 5,
+    "Northview IpSa (Pr..... Ip..... - Ju..... Sa.....)": 2,
+    "Northview SaSu (Ju..... Sa..... - Mr..... Su.....)": 3
+  },
+  "Northwest (NV)": {
+    "Northwest AvDa (Jo..... Av..... - Ha..... Da.....)": 1,
+    "Northwest LaDa (Ca..... La..... - An..... Da.....)": 2
+  },
+  "Northwood (CA)": {
+    "Northwood FuFa (Al..... Fu..... - Ab..... Fa.....)": 24,
+    "Northwood GaHa (Er..... Ga..... - Za..... Ha.....)": 1,
+    "Northwood SoHa (Ch..... So..... - Sa..... Ha.....)": 18,
+    "Northwood ZhIk (An..... Zh..... - Ju..... Ik.....)": 5
+  },
+  "Notre Dame (CA)": {
+    "Notre Dame AmOr (In..... Am..... - Ka..... Or.....)": 0,
+    "Notre Dame AnKi (Lu..... An..... - Se..... Ki.....)": 44,
+    "Notre Dame AnSn (Lu..... An..... - Br..... Sn.....)": 2,
+    "Notre Dame BuGa (Li..... Bu..... - Ma..... Ga.....)": 1,
+    "Notre Dame BuTh (Li..... Bu..... - Em..... Th.....)": 0,
+    "Notre Dame DaNa (Sa..... Da..... - Ni..... Na.....)": 44,
+    "Notre Dame DaPa (Sa..... Da..... - Cl..... Pa.....)": 1,
+    "Notre Dame DeTh (Ol..... De..... - Em..... Th.....)": 13,
+    "Notre Dame DiSn (Ni..... Di..... - Br..... Sn.....)": 18,
+    "Notre Dame DiYe (Ni..... Di..... - An..... Ye.....)": 23,
+    "Notre Dame GaBo (Al..... Ga..... - So..... Bo.....)": 0,
+    "Notre Dame GoUr (Ro..... Go..... - Mo..... Ur.....)": 4,
+    "Notre Dame GrGr (Sk..... Gr..... - Li..... Gr.....)": 0,
+    "Notre Dame KwSn (Ye..... Kw..... - Br..... Sn.....)": 15,
+    "Notre Dame LaMa (El..... La..... - Ar..... Ma.....)": 0,
+    "Notre Dame PiDe (Ma..... Pi..... - Ol..... De.....)": 0,
+    "Notre Dame PiPa (Ma..... Pi..... - Cl..... Pa.....)": 23,
+    "Notre Dame RaBo (Le..... Ra..... - So..... Bo.....)": 0,
+    "Notre Dame SbBr (Dj..... Sb..... - Al..... Br.....)": 1,
+    "Notre Dame YeKw (An..... Ye..... - Ye..... Kw.....)": 2,
+    "Notre Dame dagr (Sk..... da..... - li..... gr.....)": 1
+  },
+  "Oak Grove (CA)": {
+    "Oak Grove ArOr (An..... Ar..... - Jo..... Or.....)": 0
+  },
+  "Oak Hall (FL)": {
+    "Oak Hall GoBe (An..... Go..... - Gr..... Be.....)": 5,
+    "Oak Hall GoDr (An..... Go..... - Qu..... Dr.....)": 3,
+    "Oak Hall RaDr (Sa..... Ra..... - Qu..... Dr.....)": 1,
+    "Oak Hall RaSo (Sa..... Ra..... - Ra..... So.....)": 1,
+    "Oak Hall ZaGo (Ku..... Za..... - An..... Go.....)": 6
+  },
+  "Oak Hill (OR)": {
+    "Oak Hill CaAn (Mc..... Ca..... - Ka..... An.....)": 26,
+    "Oak Hill HaCa (Da..... Ha..... - Ka..... Ca.....)": 23
+  },
+  "Oak Park River Forest (IL)": {
+    "Oak Park River Forest BlMi (Ch..... Bl..... - Al..... Mi.....)": 13,
+    "Oak Park River Forest BlRu (Ch..... Bl..... - Ma..... Ru.....)": 37,
+    "Oak Park River Forest EsMa (Al..... Es..... - Be..... Ma.....)": 18,
+    "Oak Park River Forest EsMi (Al..... Es..... - Al..... Mi.....)": 14,
+    "Oak Park River Forest GrSh (Da..... Gr..... - Sa..... Sh.....)": 63,
+    "Oak Park River Forest KaMa (Sa..... Ka..... - Be..... Ma.....)": 8,
+    "Oak Park River Forest KaMi (Sa..... Ka..... - Al..... Mi.....)": 16,
+    "Oak Park River Forest KaRu (Sa..... Ka..... - Ma..... Ru.....)": 14,
+    "Oak Park River Forest KaSh (Sa..... Ka..... - Sa..... Sh.....)": 6,
+    "Oak Park River Forest MaRu (Be..... Ma..... - Ma..... Ru.....)": 9,
+    "Oak Park River Forest ShMa (Sa..... Sh..... - Be..... Ma.....)": 3
+  },
+  "Oakland Tech (CA)": {
+    "Oakland Tech MaLi (Me..... Ma..... - Ve..... Li.....)": 4,
+    "Oakland Tech RyLi (Li..... Ry..... - Ve..... Li.....)": 2
+  },
+  "Omaha Marian (NE)": {
+    "Omaha Marian BrFo (C..... Br..... - E..... Fo.....)": 1,
+    "Omaha Marian LaAt (Om..... La..... - Em..... At.....)": 2
+  },
+  "Oregon Episcopal School (OR)": {
+    "Oregon Episcopal School ShTh (So..... Sh..... - Pr..... Th.....)": 4,
+    "Oregon Episcopal School ShZh (So..... Sh..... - Ca..... Zh.....)": 7,
+    "Oregon Episcopal School ThCo (Pr..... Th..... - Ha..... Co.....)": 4,
+    "Oregon Episcopal School TsWi (Al..... Ts..... - Sp..... Wi.....)": 35,
+    "Oregon Episcopal School ZhCo (Ca..... Zh..... - Ha..... Co.....)": 0
+  },
+  "Padre Pio Academy (OH)": {
+    "Padre Pio Academy FrKi (Gi..... Fr..... - Ba..... Ki.....)": 2
+  },
+  "Palo Verde (NV)": {
+    "Palo Verde BaBo (Ty..... Ba..... - Ai..... Bo.....)": 2
+  },
+  "Park Hill (MO)": {
+    "Park Hill ApZa (El..... Ap..... - Lu..... Za.....)": 0,
+    "Park Hill StJo (Al..... St..... - Ni..... Jo.....)": 2
+  },
+  "Park Hill South (MO)": {
+    "Park Hill South KrGr (Ma..... Kr..... - Am..... Gr.....)": 1,
+    "Park Hill South PaWe (Ri..... Pa..... - Lu..... We.....)": 1
+  },
+  "Parkview (MO)": {
+    "Parkview BeAl (Fi..... Be..... - My..... Al.....)": 0,
+    "Parkview CoDe (Ja..... Co..... - Ca..... De.....)": 0,
+    "Parkview DuLa (Fe..... Du..... - Ro..... La.....)": 2,
+    "Parkview HaNg (An..... Ha..... - Jo..... Ng.....)": 1,
+    "Parkview KiKa (Ha..... Ki..... - Ta..... Ka.....)": 0,
+    "Parkview LePa (Da..... Le..... - Da..... Pa.....)": 0,
+    "Parkview SmSk (Er..... Sm..... - Ga..... Sk.....)": 0,
+    "Parkview ZaDa (Tr..... Za..... - An..... Da.....)": 0
+  },
+  "Parkview Magnet (AR)": {
+    "Parkview Magnet BrBu (Da..... Br..... - Ja..... Bu.....)": 2
+  },
+  "Parkway (LA)": {
+    "Parkway BeMa (Am..... Be..... - Ta..... Ma.....)": 2,
+    "Parkway BiSh (Je..... Bi..... - Sk..... Sh.....)": 2,
+    "Parkway JoBe (Gr..... Jo..... - Am..... Be.....)": 6,
+    "Parkway SiLe (Br..... Si..... - Cl..... Le.....)": 2,
+    "Parkway TiJo (Pa..... Ti..... - Gr..... Jo.....)": 2
+  },
+  "Peninsula (CA)": {
+    "Peninsula ChSh (Ol..... Ch..... - Ka..... Sh.....)": 10,
+    "Peninsula DeLu (Bl..... De..... - Kr..... Lu.....)": 4,
+    "Peninsula FrWa (Ja..... Fr..... - Na..... Wa.....)": 44,
+    "Peninsula LeOm (Ma..... Le..... - Ar..... Om.....)": 1,
+    "Peninsula LiLu (Se..... Li..... - Kr..... Lu.....)": 7,
+    "Peninsula LuPa (Kr..... Lu..... - Da..... Pa.....)": 21,
+    "Peninsula MiCh (Dy..... Mi..... - Ol..... Ch.....)": 5,
+    "Peninsula MiRh (Dy..... Mi..... - Lu..... Rh.....)": 8,
+    "Peninsula MiSi (Dy..... Mi..... - An..... Si.....)": 36,
+    "Peninsula OmYa (Ar..... Om..... - Ch..... Ya.....)": 17,
+    "Peninsula PaOm (DJ..... Pa..... - Ar..... Om.....)": 1,
+    "Peninsula PaRh (Da..... Pa..... - Lu..... Rh.....)": 25,
+    "Peninsula PaSi (Da..... Pa..... - An..... Si.....)": 10,
+    "Peninsula QiRo (Ar..... Qi..... - Ma..... Ro.....)": 5,
+    "Peninsula QiYa (Ar..... Qi..... - Ch..... Ya.....)": 7,
+    "Peninsula RaLi (An..... Ra..... - Se..... Li.....)": 4,
+    "Peninsula RhSr (Lu..... Rh..... - Sa..... Sr.....)": 21,
+    "Peninsula SiDe (Ch..... Si..... - Bl..... De.....)": 22,
+    "Peninsula SiPa (Ch..... Si..... - DJ..... Pa.....)": 2,
+    "Peninsula SrCh (Sa..... Sr..... - Ol..... Ch.....)": 7,
+    "Peninsula SrDe (Sa..... Sr..... - Bl..... De.....)": 4,
+    "Peninsula SrLe (Sa..... Sr..... - Ma..... Le.....)": 2,
+    "Peninsula YaRo (Ch..... Ya..... - Ma..... Ro.....)": 24
+  },
+  "Penn (IN)": {
+    "Penn LiBr (Ly..... Li..... - Lu..... Br.....)": 2
+  },
+  "Perry (OH)": {
+    "Perry HaLo (Is..... Ha..... - Ni..... Lo.....)": 22
+  },
+  "Phoenix Country Day School (AZ)": {
+    "Phoenix Country Day School NiCo (Al..... Ni..... - Et..... Co.....)": 1
+  },
+  "Phoenix Military Academy (IL)": {
+    "Phoenix Military Academy BaTr (Ca..... Ba..... - Lu..... Tr.....)": 0
+  },
+  "Pine Crest School (FL)": {
+    "Pine Crest School AwMa (St..... Aw..... - Ma..... Ma.....)": 1,
+    "Pine Crest School AwOS (St..... Aw..... - Da..... OS.....)": 1,
+    "Pine Crest School DaGo (Lu..... Da..... - Ma..... Go.....)": 1,
+    "Pine Crest School DaGr (Lu..... Da..... - Mi..... Gr.....)": 2,
+    "Pine Crest School ElRi (Ma..... El..... - Pe..... Ri.....)": 8,
+    "Pine Crest School GrIv (Mi..... Gr..... - Kr..... Iv.....)": 1,
+    "Pine Crest School HoFe (Ma..... Ho..... - Sa..... Fe.....)": 2,
+    "Pine Crest School IvFr (Kr..... Iv..... - Dy..... Fr.....)": 0,
+    "Pine Crest School KaGo (Sa..... Ka..... - Ch..... Go.....)": 1,
+    "Pine Crest School MaOS (Ja..... Ma..... - Da..... OS.....)": 2,
+    "Pine Crest School MeRo (Ky..... Me..... - Ja..... Ro.....)": 2,
+    "Pine Crest School NiWi (Su..... Ni..... - Ma..... Wi.....)": 2,
+    "Pine Crest School PaRu (Sa..... Pa..... - Mi..... Ru.....)": 8,
+    "Pine Crest School ViHl (Je..... Vi..... - Ro..... Hl.....)": 3,
+    "Pine Crest School YaGe (Ma..... Ya..... - Ch..... Ge.....)": 3,
+    "Pine Crest School YaGr (Ma..... Ya..... - Mi..... Gr.....)": 1
+  },
+  "Piper (KS)": {
+    "Piper FlVa (An..... Fl..... - El..... Va.....)": 3
+  },
+  "Pittsburg (KS)": {
+    "Pittsburg SpMa (Ja..... Sp..... - Ja..... Ma.....)": 4
+  },
+  "Polytechnic (CA)": {
+    "Polytechnic HaHu (Me..... Ha..... - Ka..... Hu.....)": 4,
+    "Polytechnic OgOg (Og..... Og..... - Ik..... Og.....)": 2
+  },
+  "Port Of Los Angeles (CA)": {
+    "Port Of Los Angeles CaSh (Me..... Ca..... - Mi..... Sh.....)": 0,
+    "Port Of Los Angeles DoIb (Ja..... Do..... - Mi..... Ib.....)": 0,
+    "Port Of Los Angeles DoLe (Ja..... Do..... - Ry..... Le.....)": 0,
+    "Port Of Los Angeles GoCa (Ja..... Go..... - Me..... Ca.....)": 17,
+    "Port Of Los Angeles GoSh (Ja..... Go..... - Mi..... Sh.....)": 0,
+    "Port Of Los Angeles LeRo (Ry..... Le..... - An..... Ro.....)": 0
+  },
+  "Presentation (CA)": {
+    "Presentation GhSc (An..... Gh..... - Mo..... Sc.....)": 5
+  },
+  "Princeton (TX)": {
+    "Princeton DoBu (Ta..... Do..... - Ed..... Bu.....)": 2,
+    "Princeton RoLo (Ha..... Ro..... - Vi..... Lo.....)": 1
+  },
+  "Prosper (TX)": {
+    "Prosper KiWi (Co..... Ki..... - Ca..... Wi.....)": 1,
+    "Prosper RaWe (Jo..... Ra..... - Ad..... We.....)": 20
+  },
+  "Providence (NC)": {
+    "Providence YoPh (Jo..... Yo..... - Ow..... Ph.....)": 3
+  },
+  "Rancho (CA)": {
+    "Rancho LaLa (Ke..... La..... - De..... La.....)": 2
+  },
+  "Rancho San Joaquin (CA)": {
+    "Rancho San Joaquin LaLa (Ke..... La..... - De..... La.....)": 2
+  },
+  "RaymorePeculiar (MO)": {
+    "RaymorePeculiar FlWa (Am..... Fl..... - Ca..... Wa.....)": 1
+  },
+  "Reagan (TX)": {
+    "Reagan AzGu (Za..... Az..... - Da..... Gu.....)": 6,
+    "Reagan BhAz (Re..... Bh..... - Za..... Az.....)": 36,
+    "Reagan GuPh (Da..... Gu..... - Ka..... Ph.....)": 16,
+    "Reagan KaSh (Na..... Ka..... - Mi..... Sh.....)": 5,
+    "Reagan LiEp (An..... Li..... - Jo..... Ep.....)": 4,
+    "Reagan LuHe (Mi..... Lu..... - Ka..... He.....)": 0,
+    "Reagan MaSh (Ta..... Ma..... - Mi..... Sh.....)": 7,
+    "Reagan RiSc (Tr..... Ri..... - An..... Sc.....)": 42,
+    "Reagan VaLe (Ro..... Va..... - An..... Le.....)": 3
+  },
+  "Riverfield (OK)": {
+    "Riverfield AnBe (To..... An..... - Tu..... Be.....)": 0,
+    "Riverfield IrFl (Ja..... Ir..... - Mi..... Fl.....)": 0,
+    "Riverfield SiSc (Sh..... Si..... - Mi..... Sc.....)": 5
+  },
+  "Riverwood (GA)": {
+    "Riverwood LoCr (Ys..... Lo..... - No..... Cr.....)": 9,
+    "Riverwood PoJo (Lu..... Po..... - Bl..... Jo.....)": 14
+  },
+  "Rock Springs (WY)": {
+    "Rock Springs CrYo (Ha..... Cr..... - As..... Yo.....)": 1,
+    "Rock Springs PrWh (Gw..... Pr..... - Br..... Wh.....)": 3
+  },
+  "Rockdale County (GA)": {
+    "Rockdale County AmGi (Ma..... Am..... - Aa..... Gi.....)": 14
+  },
+  "Rocky Mountain (CO)": {
+    "Rocky Mountain ClKa (Ja..... Cl..... - Ju..... Ka.....)": 5
+  },
+  "Roosevelt (MN)": {
+    "Roosevelt BoBo (Sa..... Bo..... - Sa..... Bo.....)": 4
+  },
+  "Rosemont (CA)": {
+    "Rosemont WaNg (Im..... Wa..... - Ki..... Ng.....)": 2
+  },
+  "Rosemount (MN)": {
+    "Rosemount NoJa (Ka..... No..... - An..... Ja.....)": 12,
+    "Rosemount PaSm (Vi..... Pa..... - Ca..... Sm.....)": 10,
+    "Rosemount RuHu (Ny..... Ru..... - Ch..... Hu.....)": 20
+  },
+  "Roseville (MN)": {
+    "Roseville HeFo (Se..... He..... - Ga..... Fo.....)": 1,
+    "Roseville VuON (Co..... Vu..... - Mi..... ON.....)": 2
+  },
+  "Roswell (GA)": {
+    "Roswell FrTo (Jo..... Fr..... - Mi..... To.....)": 1
+  },
+  "Round Rock (TX)": {
+    "Round Rock GoPh (So..... Go..... - An..... Ph.....)": 12,
+    "Round Rock KuKo (Kr..... Ku..... - Ka..... Ko.....)": 0
+  },
+  "Rowland Hall (UT)": {
+    "Rowland Hall AmCh (Be..... Am..... - Pe..... Ch.....)": 6,
+    "Rowland Hall AmGu (Be..... Am..... - Ad..... Gu.....)": 13,
+    "Rowland Hall AmPe (Be..... Am..... - Ju..... Pe.....)": 22,
+    "Rowland Hall ChTo (Pe..... Ch..... - An..... To.....)": 32,
+    "Rowland Hall DaLu (So..... Da..... - Ty..... Lu.....)": 6,
+    "Rowland Hall DoGu (St..... Do..... - Ad..... Gu.....)": 64,
+    "Rowland Hall LeBo (Sa..... Le..... - Au..... Bo.....)": 7,
+    "Rowland Hall LeDo (Sa..... Le..... - St..... Do.....)": 7,
+    "Rowland Hall LeDr (Sa..... Le..... - Ge..... Dr.....)": 6,
+    "Rowland Hall LuBo (Ty..... Lu..... - Au..... Bo.....)": 9,
+    "Rowland Hall LuFr (Ty..... Lu..... - Ma..... Fr.....)": 1,
+    "Rowland Hall PaBo (Ja..... Pa..... - Au..... Bo.....)": 5,
+    "Rowland Hall PeDr (Ju..... Pe..... - Ge..... Dr.....)": 7
+  },
+  "Rufus King (WI)": {
+    "Rufus King RaLi (Ye..... Ra..... - El..... Li.....)": 4
+  },
+  "Rural Independent (KS)": {
+    "Rural Independent KePe (Gr..... Ke..... - Ra..... Pe.....)": 15
+  },
+  "Saint Georges (WA)": {
+    "Saint Georges BeMc (Ca..... Be..... - Ma..... Mc.....)": 0,
+    "Saint Georges CuRa (Ga..... Cu..... - Ta..... Ra.....)": 4,
+    "Saint Georges DaDi (Pa..... Da..... - Al..... Di.....)": 7
+  },
+  "Salem Hills (UT)": {
+    "Salem Hills AbKe (Jo..... Ab..... - Ja..... Ke.....)": 1,
+    "Salem Hills HuQu (As..... Hu..... - Ti..... Qu.....)": 1,
+    "Salem Hills MeWa (Ca..... Me..... - Sy..... Wa.....)": 11,
+    "Salem Hills QuBu (Ti..... Qu..... - Er..... Bu.....)": 1
+  },
+  "Shawnee Mission East (KS)": {
+    "Shawnee Mission East HeLa (Ol..... He..... - An..... La.....)": 9,
+    "Shawnee Mission East HuYi (Sa..... Hu..... - To..... Yi.....)": 37,
+    "Shawnee Mission East ReCo (Gr..... Re..... - Gr..... Co.....)": 26,
+    "Shawnee Mission East ReWi (Gr..... Re..... - Ev..... Wi.....)": 23,
+    "Shawnee Mission East WiSu (Ev..... Wi..... - Ib..... Su.....)": 27
+  },
+  "Shawnee Mission Northwest (KS)": {
+    "Shawnee Mission Northwest MaFa (Al..... Ma..... - So..... Fa.....)": 21,
+    "Shawnee Mission Northwest MaFe (Al..... Ma..... - An..... Fe.....)": 5,
+    "Shawnee Mission Northwest MaHo (Al..... Ma..... - Mi..... Ho.....)": 4
+  },
+  "Shawnee Mission South (KS)": {
+    "Shawnee Mission South FrKe (Ho..... Fr..... - Ow..... Ke.....)": 2,
+    "Shawnee Mission South LaRi (Ar..... La..... - Cy..... Ri.....)": 34,
+    "Shawnee Mission South ShKe (Ja..... Sh..... - Ow..... Ke.....)": 1,
+    "Shawnee Mission South ShSm (Ja..... Sh..... - An..... Sm.....)": 2,
+    "Shawnee Mission South TrFl (Ju..... Tr..... - Os..... Fl.....)": 1,
+    "Shawnee Mission South TuHe (Ca..... Tu..... - El..... He.....)": 18
+  },
+  "Shawnee Mission West (KS)": {
+    "Shawnee Mission West CaMc (Re..... Ca..... - Al..... Mc.....)": 2,
+    "Shawnee Mission West CaVa (Re..... Ca..... - No..... Va.....)": 2,
+    "Shawnee Mission West McWa (Al..... Mc..... - Za..... Wa.....)": 6,
+    "Shawnee Mission West WaWr (Za..... Wa..... - As..... Wr.....)": 6,
+    "Shawnee Mission West ZuWr (Ma..... Zu..... - As..... Wr.....)": 13
+  },
+  "Sidwell Friends (DC)": {
+    "Sidwell Friends KaPa (Re..... Ka..... - Dy..... Pa.....)": 2
+  },
+  "Silver Creek (CA)": {
+    "Silver Creek JaRa (Da..... Ja..... - Ja..... Ra.....)": 3,
+    "Silver Creek NgTr (Ry..... Ng..... - Ti..... Tr.....)": 1,
+    "Silver Creek SyGo (Ha..... Sy..... - Ni..... Go.....)": 1,
+    "Silver Creek TrVe (Ti..... Tr..... - Is..... Ve.....)": 2,
+    "Silver Creek ZhNg (Ka..... Zh..... - Ka..... Ng.....)": 1
+  },
+  "Sioux Falls (SD)": {
+    "Sioux Falls JoKu (No..... Jo..... - Sr..... Ku.....)": 0
+  },
+  "Sioux Falls Roosevelt (SD)": {
+    "Sioux Falls Roosevelt KrHu (Ja..... Kr..... - Sy..... Hu.....)": 20,
+    "Sioux Falls Roosevelt LuTo (Ja..... Lu..... - Ry..... To.....)": 19,
+    "Sioux Falls Roosevelt MoWe (Pe..... Mo..... - Da..... We.....)": 19
+  },
+  "Sky View (UT)": {
+    "Sky View SiHo (Ol..... Si..... - Ev..... Ho.....)": 0
+  },
+  "Skyline UT (UT)": {
+    "Skyline UT PhMa (Ci..... Ph..... - Ju..... Ma.....)": 0
+  },
+  "SLC West (UT)": {
+    "SLC West BaKi (Ra..... Ba..... - Ma..... Ki.....)": 18,
+    "SLC West GaRi (Ma..... Ga..... - Ha..... Ri.....)": 32,
+    "SLC West PeSu (St..... Pe..... - Ta..... Su.....)": 6,
+    "SLC West SuSh (Ta..... Su..... - Is..... Sh.....)": 6,
+    "SLC West WaOr (Et..... Wa..... - Is..... Or.....)": 3,
+    "SLC West WaPe (Et..... Wa..... - St..... Pe.....)": 16,
+    "SLC West WaSh (Et..... Wa..... - Is..... Sh.....)": 2
+  },
+  "Slocum (TX)": {
+    "Slocum HoBa (Ka..... Ho..... - Ca..... Ba.....)": 11,
+    "Slocum PaVa (Ca..... Pa..... - Er..... Va.....)": 0
+  },
+  "Solon (OH)": {
+    "Solon MiSa (Vi..... Mi..... - Ha..... Sa.....)": 0
+  },
+  "Solorio (IL)": {
+    "Solorio FrBa (Ax..... Fr..... - Br..... Ba.....)": 1,
+    "Solorio GuJa (Ce..... Gu..... - Ma..... Ja.....)": 45,
+    "Solorio MeUr (Da..... Me..... - Jo..... Ur.....)": 21,
+    "Solorio RoRi (He..... Ro..... - Je..... Ri.....)": 48,
+    "Solorio VaMa (Je..... Va..... - Ar..... Ma.....)": 27
+  },
+  "Sonoma Academy (CA)": {
+    "Sonoma Academy AnJa (Ir..... An..... - Ma..... Ja.....)": 13,
+    "Sonoma Academy BrJa (Iv..... Br..... - Ja..... Ja.....)": 1,
+    "Sonoma Academy BrSt (Iv..... Br..... - Ta..... St.....)": 8,
+    "Sonoma Academy EnMi (Mi..... En..... - Ma..... Mi.....)": 1,
+    "Sonoma Academy GiMi (Ri..... Gi..... - Ma..... Mi.....)": 3,
+    "Sonoma Academy JaMi (Ja..... Ja..... - Ma..... Mi.....)": 9,
+    "Sonoma Academy JaPr (Ja..... Ja..... - Zo..... Pr.....)": 3,
+    "Sonoma Academy KoMi (Ad..... Ko..... - Ma..... Mi.....)": 0,
+    "Sonoma Academy KoNa (Ad..... Ko..... - Ha..... Na.....)": 2,
+    "Sonoma Academy PrKo (Zo..... Pr..... - Ad..... Ko.....)": 1
+  },
+  "South Eugene (OR)": {
+    "South Eugene ChKo (Ja..... Ch..... - Wi..... Ko.....)": 7,
+    "South Eugene SaSc (Na..... Sa..... - Ke..... Sc.....)": 0
+  },
+  "SPASH (WI)": {
+    "SPASH GrJa (Da..... Gr..... - Da..... Ja.....)": 3
+  },
+  "Springfield Catholic (MO)": {
+    "Springfield Catholic DaHa (Ma..... Da..... - Ty..... Ha.....)": 0
+  },
+  "St Andrews Episcopal School (MS)": {
+    "St Andrews Episcopal School BrDa (Au..... Br..... - Vi..... Da.....)": 8,
+    "St Andrews Episcopal School DhLa (Jo..... Dh..... - Pa..... La.....)": 3,
+    "St Andrews Episcopal School HuJa (Fo..... Hu..... - An..... Ja.....)": 1,
+    "St Andrews Episcopal School JiLu (St..... Ji..... - Vi..... Lu.....)": 0
+  },
+  "St Francis (CA)": {
+    "St Francis BoRe (Ri..... Bo..... - Vi..... Re.....)": 6,
+    "St Francis KaNg (Sh..... Ka..... - Ar..... Ng.....)": 39,
+    "St Francis KaRe (Sh..... Ka..... - Vi..... Re.....)": 4,
+    "St Francis MeAm (Je..... Me..... - Sa..... Am.....)": 6,
+    "St Francis ShVi (Si..... Sh..... - Ka..... Vi.....)": 5,
+    "St Francis VeSh (Ra..... Ve..... - Ju..... Sh.....)": 29
+  },
+  "St Ignatius (OH)": {
+    "St Ignatius CoAl (Ma..... Co..... - Va..... Al.....)": 2,
+    "St Ignatius DiGe (Za..... Di..... - Jo..... Ge.....)": 1,
+    "St Ignatius NaMo (Sa..... Na..... - Co..... Mo.....)": 8
+  },
+  "St Marks (TX)": {
+    "St Marks AbCh (Sa..... Ab..... - Ma..... Ch.....)": 23,
+    "St Marks AbTa (Sa..... Ab..... - Ne..... Ta.....)": 3,
+    "St Marks SeYa (Sa..... Se..... - Da..... Ya.....)": 64,
+    "St Marks StTa (Za..... St..... - Ne..... Ta.....)": 4,
+    "St Marks TaGo (Ne..... Ta..... - Aa..... Go.....)": 16
+  },
+  "St Paul Central (MN)": {
+    "St Paul Central StWa (Ma..... St..... - Ma..... Wa.....)": 1
+  },
+  "Stanford Online (CA)": {
+    "Stanford Online WaMu (Cl..... Wa..... - Ka..... Mu.....)": 0
+  },
+  "STEAM Legacy (CA)": {
+    "STEAM Legacy CaCh (Is..... Ca..... - Ca..... Ch.....)": 0
+  },
+  "Stern MASS (CA)": {
+    "Stern MASS LeGu (Qi..... Le..... - Ga..... Gu.....)": 23
+  },
+  "Stockdale (CA)": {
+    "Stockdale HeSc (Ti..... He..... - No..... Sc.....)": 18,
+    "Stockdale IpPu (Jo..... Ip..... - Al..... Pu.....)": 3,
+    "Stockdale RuSc (Ty..... Ru..... - Gl..... Sc.....)": 5
+  },
+  "Strath Haven (PA)": {
+    "Strath Haven DiLu (Ja..... Di..... - Mi..... Lu.....)": 85,
+    "Strath Haven DiZh (Ja..... Di..... - Ma..... Zh.....)": 6,
+    "Strath Haven KaZh (Ak..... Ka..... - Ma..... Zh.....)": 24,
+    "Strath Haven LeRu (Wi..... Le..... - Ai..... Ru.....)": 16,
+    "Strath Haven LiSh (Ge..... Li..... - St..... Sh.....)": 5,
+    "Strath Haven LiYu (Ge..... Li..... - Ha..... Yu.....)": 7,
+    "Strath Haven LiZh (Ge..... Li..... - Ma..... Zh.....)": 6,
+    "Strath Haven RuYu (Ai..... Ru..... - Ha..... Yu.....)": 42,
+    "Strath Haven ShWa (St..... Sh..... - Ti..... Wa.....)": 3,
+    "Strath Haven WaSh (Ma..... Wa..... - St..... Sh.....)": 0,
+    "Strath Haven WaWa (Ja..... Wa..... - Ma..... Wa.....)": 23
+  },
+  "Stuyvesant (NY)": {
+    "Stuyvesant AB (No..... A..... - No..... B.....)": 2,
+    "Stuyvesant ChHa (St..... Ch..... - Ju..... Ha.....)": 12,
+    "Stuyvesant ChNg (Je..... Ch..... - Ai..... Ng.....)": 56,
+    "Stuyvesant EsPu (Sa..... Es..... - Si..... Pu.....)": 16,
+    "Stuyvesant HaQi (Ma..... Ha..... - Ma..... Qi.....)": 20,
+    "Stuyvesant HuRh (An..... Hu..... - An..... Rh.....)": 39,
+    "Stuyvesant LaYo (Il..... La..... - Ra..... Yo.....)": 1,
+    "Stuyvesant LoPu (Le..... Lo..... - Si..... Pu.....)": 2,
+    "Stuyvesant NgRh (Ai..... Ng..... - An..... Rh.....)": 1
+  },
+  "Success Academy Bronx (NY)": {
+    "Success Academy Bronx AB (No..... A..... - No..... B.....)": 2,
+    "Success Academy Bronx AgKo (Ra..... Ag..... - Sa..... Ko.....)": 2,
+    "Success Academy Bronx BaHa (So..... Ba..... - Co..... Ha.....)": 2
+  },
+  "Success Academy DP (NY)": {
+    "Success Academy DP AbTh (Or..... Ab..... - Bl..... Th.....)": 1,
+    "Success Academy DP PeDe (Ry..... Pe..... - Or..... De.....)": 1
+  },
+  "Success Academy Midtown West (NY)": {
+    "Success Academy Midtown West ALTE (MD..... AL..... - MD..... TE.....)": 1
+  },
+  "Summit Christian Academy (MO)": {
+    "Summit Christian Academy WiWa (Au..... Wi..... - Ry..... Wa.....)": 0
+  },
+  "SWW (DC)": {
+    "SWW AlKr (Sa..... Al..... - Ju..... Kr.....)": 1,
+    "SWW ChEs (Lu..... Ch..... - Za..... Es.....)": 1
+  },
+  "The Meadows School (NV)": {
+    "The Meadows School HoWo (De..... Ho..... - Ma..... Wo.....)": 2,
+    "The Meadows School IoCh (Sa..... Io..... - Am..... Ch.....)": 3,
+    "The Meadows School NgYe (Ch..... Ng..... - Le..... Ye.....)": 27
+  },
+  "Thomas Jefferson (VA)": {
+    "Thomas Jefferson BaYa (Gr..... Ba..... - Ju..... Ya.....)": 14,
+    "Thomas Jefferson DuXi (Mi..... Du..... - Ma..... Xi.....)": 5,
+    "Thomas Jefferson HeTa (Ja..... He..... - Al..... Ta.....)": 28,
+    "Thomas Jefferson MuAr (Ud..... Mu..... - Ak..... Ar.....)": 18,
+    "Thomas Jefferson PiYa (Ma..... Pi..... - Sr..... Ya.....)": 5
+  },
+  "Thomas Kelly (IL)": {
+    "Thomas Kelly LiRo (Ke..... Li..... - Ra..... Ro.....)": 1
+  },
+  "Topeka (KS)": {
+    "Topeka BlCa (Ca..... Bl..... - Ad..... Ca.....)": 8,
+    "Topeka BlJa (Ca..... Bl..... - Ma..... Ja.....)": 42,
+    "Topeka CaCa (Ir..... Ca..... - Ad..... Ca.....)": 10,
+    "Topeka DaPh (Is..... Da..... - Ka..... Ph.....)": 1,
+    "Topeka JaCa (Ma..... Ja..... - Ir..... Ca.....)": 0,
+    "Topeka MaPe (Ku..... Ma..... - VA..... Pe.....)": 0,
+    "Topeka PaCa (An..... Pa..... - Iv..... Ca.....)": 4
+  },
+  "Trinity (TX)": {
+    "Trinity AdHe (As..... Ad..... - Ab..... He.....)": 1
+  },
+  "Trinity Academy (KS)": {
+    "Trinity Academy KoBr (Da..... Ko..... - Jo..... Br.....)": 5
+  },
+  "Truman (MO)": {
+    "Truman AqRe (Me..... Aq..... - Sh..... Re.....)": 2,
+    "Truman BuDo (Co..... Bu..... - Co..... Do.....)": 5,
+    "Truman BuSm (Ga..... Bu..... - Ay..... Sm.....)": 27,
+    "Truman BuWa (Co..... Bu..... - Ai..... Wa.....)": 5,
+    "Truman DaRo (Za..... Da..... - Za..... Ro.....)": 0,
+    "Truman LeBu (Zo..... Le..... - Co..... Bu.....)": 6,
+    "Truman LeLa (Zo..... Le..... - Ta..... La.....)": 4,
+    "Truman LeWi (Ad..... Le..... - Ow..... Wi.....)": 0,
+    "Truman McLa (Ju..... Mc..... - Ta..... La.....)": 4,
+    "Truman McLe (Ju..... Mc..... - Ad..... Le.....)": 3,
+    "Truman McRo (Ju..... Mc..... - Za..... Ro.....)": 0,
+    "Truman WILa (Ow..... WI..... - Ta..... La.....)": 9,
+    "Truman WaWe (Ai..... Wa..... - Ka..... We.....)": 4,
+    "Truman WiMc (Ow..... Wi..... - My..... Mc.....)": 4
+  },
+  "University Hi (WA)": {
+    "University Hi DaHe (Ni..... Da..... - Ky..... He.....)": 1
+  },
+  "USN (TN)": {
+    "USN BaCh (Wi..... Ba..... - Ch..... Ch.....)": 4,
+    "USN ChKi (Ch..... Ch..... - Lu..... Ki.....)": 35,
+    "USN ClCl (Ni..... Cl..... - Ni..... Cl.....)": 1,
+    "USN ClWi (Ni..... Cl..... - El..... Wi.....)": 6,
+    "USN HaKa (La..... Ha..... - Mo..... Ka.....)": 12,
+    "USN KaCl (Ma..... Ka..... - Ni..... Cl.....)": 4,
+    "USN KaFo (Ma..... Ka..... - Os..... Fo.....)": 20,
+    "USN WiCo (El..... Wi..... - Ne..... Co.....)": 5,
+    "USN baHe (wi..... ba..... - Lu..... He.....)": 20
+  },
+  "Valdosta (GA)": {
+    "Valdosta PaKa (Ja..... Pa..... - Al..... Ka.....)": 2
+  },
+  "Valle De Mill (KS)": {
+    "Valle De Mill BaBa (Th..... Ba..... - Tr..... Ba.....)": 2,
+    "Valle De Mill JoQu (Sa..... Jo..... - Tr..... Qu.....)": 0,
+    "Valle De Mill ShSp (Ev..... Sh..... - An..... Sp.....)": 1,
+    "Valle De Mill WhJo (Ad..... Wh..... - Sa..... Jo.....)": 13,
+    "Valle De Mill WhRe (Ad..... Wh..... - No..... Re.....)": 17
+  },
+  "Valor (CA)": {
+    "Valor MaSa (We..... Ma..... - Je..... Sa.....)": 1
+  },
+  "Vespa College Prep (CA)": {
+    "Vespa College Prep baba (dy..... ba..... - ma..... ba.....)": 0
+  },
+  "VHTPA (CA)": {
+    "VHTPA HoSu (Le..... Ho..... - An..... Su.....)": 0
+  },
+  "Village (TX)": {
+    "Village LuSt (Ta..... Lu..... - An..... St.....)": 2
+  },
+  "VIP (CA)": {
+    "VIP PaAd (Ja..... Pa..... - Ma..... Ad.....)": 1
+  },
+  "Vista Ridge (TX)": {
+    "Vista Ridge DaHa (Am..... Da..... - Ja..... Ha.....)": 0
+  },
+  "Waco Midway (TX)": {
+    "Waco Midway BeWh (St..... Be..... - Be..... Wh.....)": 2,
+    "Waco Midway KoPa (Iv..... Ko..... - Da..... Pa.....)": 19
+  },
+  "Wakeland (TX)": {
+    "Wakeland RaAn (Sh..... Ra..... - Az..... An.....)": 0
+  },
+  "Wallenberg (CA)": {
+    "Wallenberg ChFa (Ma..... Ch..... - Ti..... Fa.....)": 11
+  },
+  "Walter Payton (IL)": {
+    "Walter Payton CaGo (An..... Ca..... - Ja..... Go.....)": 8,
+    "Walter Payton HePa (Br..... He..... - Pa..... Pa.....)": 29,
+    "Walter Payton KoRi (St..... Ko..... - Ja..... Ri.....)": 28,
+    "Walter Payton RiPa (Ma..... Ri..... - Pa..... Pa.....)": 9,
+    "Walter Payton RiSa (Ja..... Ri..... - Ha..... Sa.....)": 0,
+    "Walter Payton VaRi (Za..... Va..... - Ma..... Ri.....)": 65,
+    "Walter Payton WaGi (Be..... Wa..... - Li..... Gi.....)": 13,
+    "Walter Payton WeMc (Co..... We..... - Da..... Mc.....)": 53
+  },
+  "Washburn Rural (KS)": {
+    "Washburn Rural CoNa (Al..... Co..... - Ni..... Na.....)": 0,
+    "Washburn Rural DiSc (Pe..... Di..... - Em..... Sc.....)": 58,
+    "Washburn Rural DoJa (So..... Do..... - Do..... Ja.....)": 37,
+    "Washburn Rural DoSc (So..... Do..... - Em..... Sc.....)": 4
+  },
+  "Washington (SD)": {
+    "Washington DoEs (Ry..... Do..... - Su..... Es.....)": 0,
+    "Washington NoRo (Ri..... No..... - Tr..... Ro.....)": 1
+  },
+  "Washington Latin (DC)": {
+    "Washington Latin ODRo (Ni..... OD..... - Br..... Ro.....)": 2,
+    "Washington Latin PeLe (DA..... Pe..... - Ja..... Le.....)": 2
+  },
+  "Wayzata (MN)": {
+    "Wayzata ChFr (Re..... Ch..... - Ga..... Fr.....)": 9,
+    "Wayzata LiYe (Sh..... Li..... - Sr..... Ye.....)": 55
+  },
+  "WB Ray (TX)": {
+    "WB Ray WaBa (Ri..... Wa..... - Ar..... Ba.....)": 3,
+    "WB Ray WaSi (Ri..... Wa..... - El..... Si.....)": 4
+  },
+  "West Campus (CA)": {
+    "West Campus MoSi (Ab..... Mo..... - Ju..... Si.....)": 25
+  },
+  "West Des Moines Valley (IA)": {
+    "West Des Moines Valley AsCu (Al..... As..... - Ka..... Cu.....)": 2,
+    "West Des Moines Valley DeDu (As..... De..... - Um..... Du.....)": 4,
+    "West Des Moines Valley DeSi (As..... De..... - Co..... Si.....)": 11,
+    "West Des Moines Valley DuLi (Um..... Du..... - On..... Li.....)": 6
+  },
+  "Westside (TX)": {
+    "Westside LaRa (Ay..... La..... - Ro..... Ra.....)": 5,
+    "Westside ScKa (To..... Sc..... - Ma..... Ka.....)": 12
+  },
+  "Westview (OR)": {
+    "Westview ChEa (He..... Ch..... - Vi..... Ea.....)": 4
+  },
+  "Westwood (TX)": {
+    "Westwood BuSh (Vi..... Bu..... - Da..... Sh.....)": 41,
+    "Westwood ChHu (Ne..... Ch..... - Wa..... Hu.....)": 14,
+    "Westwood HeHa (Se..... He..... - Ke..... Ha.....)": 5,
+    "Westwood KuYo (An..... Ku..... - Je..... Yo.....)": 7,
+    "Westwood LiSh (Ha..... Li..... - An..... Sh.....)": 4,
+    "Westwood LiXi (Ja..... Li..... - To..... Xi.....)": 0,
+    "Westwood NeYa (Ru..... Ne..... - Ka..... Ya.....)": 13,
+    "Westwood ReMa (Ro..... Re..... - Ma..... Ma.....)": 0,
+    "Westwood ShWo (Br..... Sh..... - Er..... Wo.....)": 0
+  },
+  "Wheeler (GA)": {
+    "Wheeler PaPh (As..... Pa..... - Se..... Ph.....)": 1
+  },
+  "Whitney Young (IL)": {
+    "Whitney Young GoMi (Ja..... Go..... - He..... Mi.....)": 9,
+    "Whitney Young LeGu (Sa..... Le..... - Ra..... Gu.....)": 0,
+    "Whitney Young MaMi (Je..... Ma..... - He..... Mi.....)": 94,
+    "Whitney Young OMHa (El..... OM..... - Ta..... Ha.....)": 77,
+    "Whitney Young OMHa (El..... OM..... - Tu..... Ha.....)": 4
+  },
+  "Wichita East (KS)": {
+    "Wichita East AjAh (Ma..... Aj..... - No..... Ah.....)": 4,
+    "Wichita East DoYe (Al..... Do..... - Wa..... Ye.....)": 3,
+    "Wichita East GlSi (El..... Gl..... - An..... Si.....)": 4,
+    "Wichita East HaSh (Ma..... Ha..... - Sa..... Sh.....)": 58,
+    "Wichita East NgWa (Ba..... Ng..... - Ca..... Wa.....)": 3,
+    "Wichita East RoGo (Ma..... Ro..... - Am..... Go.....)": 24,
+    "Wichita East SiDo (An..... Si..... - Al..... Do.....)": 1,
+    "Wichita East WaFo (Ar..... Wa..... - Ad..... Fo.....)": 31,
+    "Wichita East YeNg (Wa..... Ye..... - Ba..... Ng.....)": 26
+  },
+  "Will Rogers (OK)": {
+    "Will Rogers BeHo (Ka..... Be..... - Ha..... Ho.....)": 0,
+    "Will Rogers KePa (Mi..... Ke..... - Co..... Pa.....)": 0
+  },
+  "Willard (MO)": {
+    "Willard LoWi (Em..... Lo..... - Ma..... Wi.....)": 3
+  },
+  "William Chrisman (MO)": {
+    "William Chrisman JoDa (Ja..... Jo..... - Ba..... Da.....)": 1
+  },
+  "Winston Churchill (TX)": {
+    "Winston Churchill BlSt (Ca..... Bl..... - Na..... St.....)": 2,
+    "Winston Churchill BrMy (Be..... Br..... - Al..... My.....)": 26,
+    "Winston Churchill DaKi (Cl..... Da..... - Br..... Ki.....)": 6,
+    "Winston Churchill GaRo (Ma..... Ga..... - Ty..... Ro.....)": 17,
+    "Winston Churchill JuKa (La..... Ju..... - Bi..... Ka.....)": 7,
+    "Winston Churchill ORRo (Go..... OR..... - Mi..... Ro.....)": 0
+  },
+  "Woodward (GA)": {
+    "Woodward ChGe (Ak..... Ch..... - Lo..... Ge.....)": 20,
+    "Woodward ChGh (Ak..... Ch..... - As..... Gh.....)": 12,
+    "Woodward ChNG (Ak..... Ch..... - Ni..... NG.....)": 3,
+    "Woodward ChOr (Ak..... Ch..... - Is..... Or.....)": 0,
+    "Woodward ChWo (Ak..... Ch..... - Sa..... Wo.....)": 14,
+    "Woodward GeWo (Lo..... Ge..... - Sa..... Wo.....)": 13,
+    "Woodward GhLi (As..... Gh..... - El..... Li.....)": 12,
+    "Woodward GhRe (Ni..... Gh..... - Sa..... Re.....)": 70,
+    "Woodward GhTh (Ni..... Gh..... - Ri..... Th.....)": 7,
+    "Woodward GhWo (As..... Gh..... - Sa..... Wo.....)": 47,
+    "Woodward HiLi (Ja..... Hi..... - El..... Li.....)": 41,
+    "Woodward HiTh (Ja..... Hi..... - Ri..... Th.....)": 0,
+    "Woodward HoOr (Ma..... Ho..... - Is..... Or.....)": 0,
+    "Woodward HoSl (Ma..... Ho..... - Br..... Sl.....)": 16,
+    "Woodward LiTh (El..... Li..... - Ri..... Th.....)": 5,
+    "Woodward NoTe (No..... No..... - Te..... Te.....)": 4,
+    "Woodward OrPo (Is..... Or..... - Is..... Po.....)": 10,
+    "Woodward OrSl (Is..... Or..... - Br..... Sl.....)": 0,
+    "Woodward SaTh (Ri..... Sa..... - Ri..... Th.....)": 17,
+    "Woodward SlTh (Br..... Sl..... - Ri..... Th.....)": 8
+  },
+  "Wooster (OH)": {
+    "Wooster SmSn (Is..... Sm..... - Mo..... Sn.....)": 0,
+    "Wooster SmVa (Is..... Sm..... - So..... Va.....)": 3,
+    "Wooster SnWi (Mo..... Sn..... - Le..... Wi.....)": 0,
+    "Wooster VaWi (So..... Va..... - Le..... Wi.....)": 0
+  },
+  "Wylie (TX)": {
+    "Wylie StMc (Mi..... St..... - Ge..... Mc.....)": 7
+  },
+  "Yerba Buena (CA)": {
+    "Yerba Buena NgNg (Ka..... Ng..... - Mi..... Ng.....)": 8
+  },
+  "Harvard Westlake (CA)": {
+    "Harvard Westlake ChIm (Ir..... Ch..... - Ju..... Im.....)": 3,
+    "Harvard Westlake NaWe (Ja..... Na..... - Be..... We.....)": 79,
+    "Harvard Westlake WeRu (Be..... We..... - Na..... Ru.....)": 5
+  },
+  "Hawken (OH)": {
+    "Hawken GeLa (Mi..... Ge..... - Va..... La.....)": 1,
+    "Hawken GuTa (Is..... Gu..... - Ra..... Ta.....)": 4,
+    "Hawken McRe (Ma..... Mc..... - Ga..... Re.....)": 0,
+    "Hawken McTa (Ma..... Mc..... - Ra..... Ta.....)": 6,
+    "Hawken McTu (Ma..... Mc..... - Sa..... Tu.....)": 1
+  },
+  "Manhattan (KS)": {
+    "Manhattan BrDe (Tr..... Br..... - Sa..... De.....)": 50,
+    "Manhattan KePa (Me..... Ke..... - Al..... Pa.....)": 1,
+    "Manhattan KiJo (El..... Ki..... - KJ..... Jo.....)": 0
+  },
+  "North Allegheny (PA)": {
+    "North Allegheny ReSe (Ra..... Re..... - Ni..... Se.....)": 2
+  },
+  "Oakton (VA)": {
+    "Oakton NgBa (Vu..... Ng..... - Em..... Ba.....)": 17
+  },
+  "OBryant (MA)": {
+    "OBryant GeMa (Ol..... Ge..... - We..... Ma.....)": 1
+  },
+  "Okemos (MI)": {
+    "Okemos NgRa (At..... Ng..... - Sh..... Ra.....)": 0,
+    "Okemos NuSa (Sh..... Nu..... - An..... Sa.....)": 0,
+    "Okemos VaNg (Jo..... Va..... - At..... Ng.....)": 1,
+    "Okemos YuLi (Ma..... Yu..... - Cl..... Li.....)": 0,
+    "Okemos ZiKe (So..... Zi..... - Sh..... Ke.....)": 2,
+    "Okemos ZiLi (So..... Zi..... - Bo..... Li.....)": 3
+  },
+  "Olathe East (KS)": {
+    "Olathe East PoBo (Aa..... Po..... - Br..... Bo.....)": 1,
+    "Olathe East ToBo (Te..... To..... - Ar..... Bo.....)": 4
+  },
+  "Olympia (FL)": {
+    "Olympia NoEl (Ma..... No..... - Om..... El.....)": 0
+  },
+  "Pittsburgh Central Catholic (PA)": {
+    "Pittsburgh Central Catholic EaHo (No..... Ea..... - Jo..... Ho.....)": 33,
+    "Pittsburgh Central Catholic HeOs (Os..... He..... - Pa..... Os.....)": 1,
+    "Pittsburgh Central Catholic HuSa (No..... Hu..... - Ja..... Sa.....)": 1
+  },
+  "Plano East (TX)": {
+    "Plano East wesu (we..... we..... - su..... su.....)": 0
+  },
+  "Plano West (TX)": {
+    "Plano West JoWa (Dy..... Jo..... - Sh..... Wa.....)": 13
+  },
+  "Pocatello (ID)": {
+    "Pocatello SpMa (Ma..... Sp..... - Ka..... Ma.....)": 1,
+    "Pocatello WoBu (Da..... Wo..... - Al..... Bu.....)": 3
+  },
+  "SA Harlem North Central (NJ)": {
+    "SA Harlem North Central DiTh (B..... Di..... - M..... Th.....)": 1,
+    "SA Harlem North Central LuSt (J..... Lu..... - D..... St.....)": 1,
+    "SA Harlem North Central McRo (T..... Mc..... - J..... Ro.....)": 1,
+    "SA Harlem North Central OpMc (J..... Op..... - T..... Mc.....)": 1,
+    "SA Harlem North Central ViCr (M..... Vi..... - B..... Cr.....)": 1
+  },
+  "SA Queens (NY)": {
+    "SA Queens RaRo (Ma..... Ra..... - Av..... Ro.....)": 2
+  },
+  "Tuloso Midway (TX)": {
+    "Tuloso Midway JaXa (Va..... Ja..... - Je..... Xa.....)": 7,
+    "Tuloso Midway KoZa (Sh..... Ko..... - Ja..... Za.....)": 0
+  },
+  "Tulsa Union (OK)": {
+    "Tulsa Union CaGo (La..... Ca..... - Ma..... Go.....)": 1,
+    "Tulsa Union GoSt (Ma..... Go..... - Al..... St.....)": 1,
+    "Tulsa Union TeTh (Jo..... Te..... - Sy..... Th.....)": 1,
+    "Tulsa Union WaMa (Ja..... Wa..... - Za..... Ma.....)": 2
+  },
+  "U Chicago Lab (IL)": {
+    "U Chicago Lab BoCh (Br..... Bo..... - Ri..... Ch.....)": 2,
+    "U Chicago Lab BoOt (Br..... Bo..... - Be..... Ot.....)": 14,
+    "U Chicago Lab ChKi (Al..... Ch..... - An..... Ki.....)": 15,
+    "U Chicago Lab KiCh (An..... Ki..... - Ri..... Ch.....)": 2,
+    "U Chicago Lab KiKu (Aa..... Ki..... - Sa..... Ku.....)": 6,
+    "U Chicago Lab KiNi (An..... Ki..... - An..... Ni.....)": 6,
+    "U Chicago Lab KiNi (An..... Ki..... - Ja..... Ni.....)": 3,
+    "U Chicago Lab KiPe (Aa..... Ki..... - Br..... Pe.....)": 1,
+    "U Chicago Lab NeHu (Al..... Ne..... - Pe..... Hu.....)": 0,
+    "U Chicago Lab NeNe (Al..... Ne..... - Ad..... Ne.....)": 1,
+    "U Chicago Lab NiCh (An..... Ni..... - Ri..... Ch.....)": 3,
+    "U Chicago Lab NiKi (Ja..... Ni..... - Aa..... Ki.....)": 12,
+    "U Chicago Lab NoNo (Th..... No..... - Th..... No.....)": 0,
+    "U Chicago Lab kiki (an..... ki..... - aa..... ki.....)": 2
+  },
+  "Unionville (PA)": {
+    "Unionville PiAb (Ni..... Pi..... - An..... Ab.....)": 16
+  },
+  "University (CA)": {
+    "University ArPu (Ja..... Ar..... - Ha..... Pu.....)": 5,
+    "University LiLu (An..... Li..... - Er..... Lu.....)": 19
+  },
+  "Westminster (GA)": {
+    "Westminster AlBa (Ge..... Al..... - Ho..... Ba.....)": 53,
+    "Westminster AlBr (Ge..... Al..... - Sa..... Br.....)": 8,
+    "Westminster AlWa (Ge..... Al..... - Fi..... Wa.....)": 1,
+    "Westminster BaBr (Ho..... Ba..... - Sa..... Br.....)": 13,
+    "Westminster BaWa (Ch..... Ba..... - Fi..... Wa.....)": 26,
+    "Westminster BrBa (Sa..... Br..... - Ch..... Ba.....)": 2,
+    "Westminster BrSa (Sa..... Br..... - Be..... Sa.....)": 47,
+    "Westminster FrSa (Co..... Fr..... - Be..... Sa.....)": 3,
+    "Westminster KhFr (Th..... Kh..... - Co..... Fr.....)": 14,
+    "Westminster LiBa (Co..... Li..... - Ch..... Ba.....)": 16,
+    "Westminster MaFr (Ri..... Ma..... - Co..... Fr.....)": 2,
+    "Westminster PaKh (Sa..... Pa..... - Th..... Kh.....)": 8,
+    "Westminster PaMa (Sa..... Pa..... - Ri..... Ma.....)": 50,
+    "Westminster YaJa (Br..... Ya..... - Ge..... Ja.....)": 7,
+    "Westminster YaSa (Br..... Ya..... - Be..... Sa.....)": 2,
+    "Westminster YuLi (Aa..... Yu..... - Co..... Li.....)": 42,
+    "Westminster YuSa (Aa..... Yu..... - Be..... Sa.....)": 9
   }
 }

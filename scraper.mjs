@@ -578,7 +578,7 @@ async function main() {
                 const match = year.match(/^ndtceda(\d{2})$/);
                 if (match) {
                     const yearNum = parseInt(match[1]);
-                    return yearNum >= 20 && yearNum <= 25;
+                    return yearNum >= 2 && yearNum <= 25;
                 }
                 return false;
             }).sort(); // Sort to process chronologically

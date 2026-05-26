@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debate Card Splitter</title>
+    <style>
+        :root {
+            --color-background-primary: #ffffff;
+            --color-background-secondary: #f6f5f1;
+            --color-background-tertiary: #efece5;
+            --color-background-info: #e8f0fe;
+            --color-text-primary: #1f1e1d;
+            --color-text-secondary: #5e5d59;
+            --color-text-tertiary: #8a8983;
+            --color-border-secondary: #c9c7be;
+            --color-border-tertiary: #e3e1d8;
+            --color-border-info: #6f8bd6;
+            --color-highlight-yellow: #fff39a;
+            --color-highlight-green: #b9f6b0;
+            --color-highlight-cyan: #b6f0ee;
+            --color-highlight-magenta: #f6b0e8;
+            --color-highlight-red: #ffb1b1;
+            --color-highlight-blue: #b8d4ff;
+            --border-radius-sm: 4px;
+            --border-radius-md: 6px;
+            --border-radius-lg: 10px;
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            --font-serif: Georgia, "Times New Roman", serif;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { height: 100%; }
+        body { font-family: var(--font-sans); color: var(--color-text-primary); background: var(--color-background-primary); }
+
+        .app {
+            display: grid;
+            grid-template-rows: auto auto 1fr;
+            height: 100vh;
+            max-height: 100vh;
+            overflow: hidden;
+        }
+
+        .topbar {
+            padding: 14px 20px;
+            border-bottom: 0.5px solid var(--color-border-tertiary);
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+        .topbar h1 { font-size: 16px; font-weight: 600; }
+        .topbar h1 .accent { color: var(--color-text-secondary); font-weight: 400; margin-left: 4px; }
+        .upload-btn {
+            display: inline-flex; align-items: center; gap: 6px;
+            background: var(--color-text-primary); color: var(--color-background-primary);
+            border: none; border-radius: var(--border-radius-md);
+            padding: 7px 12px; font-size: 13px; cursor: pointer;
+        }
+        .upload-btn:hover { opacity: 0.88; }
+        .upload-btn.secondary {
+            background: var(--color-background-primary);
+            color: var(--color-text-primary);
+            border: 0.5px solid var(--color-border-secondary);
+        }
+        .upload-btn.secondary:hover { background: var(--color-background-secondary); }
+        #file-input { display: none; }
+        .stats-inline { display: flex; gap: 16px; font-size: 12px; color: var(--color-text-secondary); margin-left: auto; }
+        .stat-pill b { color: var(--color-text-primary); font-weight: 600; margin-right: 4px; font-size: 13px; }
+
+        .search-row {
+            padding: 12px 20px;
+            border-bottom: 0.5px solid var(--color-border-tertiary);
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .search-wrap { position: relative; flex: 1; min-width: 260px; }
+        .search-wrap input {
+            width: 100%;
+            padding: 9px 12px 9px 34px;
+            border: 0.5px solid var(--color-border-secondary);
+            border-radius: var(--border-radius-md);
+            font-size: 14px;
+            background: var(--color-background-primary);
+            color: var(--color-text-primary);
+            outline: none;
+        }
+        .search-wrap input:focus { border-color: var(--color-border-info); }
+        .search-wrap .search-icon {
+            position: absolute; left: 11px; top: 50%; transform: translateY(-50%);
+            font-size: 16px; color: var(--color-text-tertiary); pointer-events: none;
+        }
+        .search-row select {
+            font-size: 13px; padding: 8px 10px;
+            border-radius: var(--border-radius-md);
+            border: 0.5px solid var(--color-border-secondary);
+            background: var(--color-background-primary);
+            color: var(--color-text-primary);
+            max-width: 220px;
+        }
+        .search-row .scope {
+            display: inline-flex; gap: 4px;
+            background: var(--color-background-secondary);
+            padding: 3px; border-radius: var(--border-radius-md);
+        }
+        .scope button {
+            border: none; background: transparent;
+            padding: 5px 10px; font-size: 12px;
+            border-radius: var(--border-radius-sm);
+            cursor: pointer; color: var(--color-text-secondary);
+        }
+        .scope button.active {
+            background: var(--color-background-primary);
+            color: var(--color-text-primary);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        .split {
+            display: grid;
+            grid-template-columns: minmax(340px, 460px) 1fr;
+            min-height: 0;
+            overflow: hidden;
+        }
+
+        .left-pane {
+            border-right: 0.5px solid var(--color-border-tertiary);
+            overflow-y: auto;
+            min-height: 0;
+            background: var(--color-background-secondary);
+        }
+        .pane-header {
+            position: sticky; top: 0;
+            background: var(--color-background-secondary);
+            padding: 10px 14px;
+            border-bottom: 0.5px solid var(--color-border-tertiary);
+            font-size: 12px;
+            color: var(--color-text-secondary);
+            display: flex; justify-content: space-between; align-items: center;
+            z-index: 2;
+        }
+        .pane-header .right { display: flex; gap: 8px; align-items: center; }
+        .pane-header .btn-link {
+            background: none; border: none; cursor: pointer;
+            font-size: 12px; color: var(--color-text-secondary);
+            padding: 2px 4px;
+        }
+        .pane-header .btn-link:hover { color: var(--color-text-primary); text-decoration: underline; }
+
+        .card-item {
+            padding: 12px 14px;
+            border-bottom: 0.5px solid var(--color-border-tertiary);
+            cursor: pointer;
+            background: var(--color-background-secondary);
+            transition: background 0.12s;
+        }
+        .card-item:hover { background: var(--color-background-tertiary); }
+        .card-item.active {
+            background: var(--color-background-primary);
+            border-left: 3px solid var(--color-border-info);
+            padding-left: 11px;
+        }
+        .card-doc {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            color: var(--color-text-tertiary);
+            display: flex; gap: 8px;
+            margin-bottom: 4px;
+        }
+        .card-doc .doc-name {
+            overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+            max-width: 60%;
+        }
+        .card-tag {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            line-height: 1.3;
+            margin-bottom: 4px;
+        }
+        .card-cite {
+            font-size: 11px;
+            color: var(--color-text-secondary);
+            line-height: 1.4;
+            margin-bottom: 6px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+        .card-snippet {
+            font-size: 11px;
+            color: var(--color-text-secondary);
+            line-height: 1.4;
+            font-family: var(--font-serif);
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+        .card-snippet mark { background: var(--color-highlight-yellow); padding: 0 1px; }
+
+        .empty-msg {
+            padding: 60px 30px;
+            text-align: center;
+            color: var(--color-text-tertiary);
+            font-size: 13px;
+        }
+        .empty-msg .big {
+            font-size: 28px;
+            display: block;
+            margin-bottom: 10px;
+            color: var(--color-text-secondary);
+        }
+        .empty-msg .upload-cta { margin-top: 16px; display: inline-block; }
+
+        .right-pane {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            min-height: 0;
+            overflow: hidden;
+        }
+        .preview-toolbar {
+            padding: 12px 20px;
+            border-bottom: 0.5px solid var(--color-border-tertiary);
+            display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
+            background: var(--color-background-primary);
+        }
+        .preview-toolbar .spacer { flex: 1; }
+        .preview-toolbar button {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 7px 12px; font-size: 13px;
+            border-radius: var(--border-radius-md);
+            border: 0.5px solid var(--color-border-secondary);
+            background: var(--color-background-primary);
+            color: var(--color-text-primary);
+            cursor: pointer;
+        }
+        .preview-toolbar button:hover { background: var(--color-background-secondary); }
+        .preview-toolbar button.primary {
+            background: var(--color-text-primary);
+            color: var(--color-background-primary);
+            border-color: var(--color-text-primary);
+        }
+        .preview-toolbar button.primary:hover { opacity: 0.88; }
+
+        /* Preview body: hosts docx-preview output */
+        .preview-body {
+            overflow-y: auto;
+            min-height: 0;
+            background: var(--color-background-primary);
+            position: relative;
+        }
+
+        /* Card header (tag + cite) rendered above docx-preview output */
+        .card-header-block {
+            padding: 24px 40px 0 40px;
+        }
+        .card-header-block .ch-section {
+            font-family: var(--font-sans);
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: var(--color-text-tertiary);
+            margin-bottom: 6px;
+        }
+        .card-header-block .ch-tag {
+            font-family: var(--font-sans);
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 1.35;
+            color: var(--color-text-primary);
+            margin-bottom: 8px;
+        }
+        .card-header-block .ch-cite {
+            font-family: var(--font-sans);
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin-bottom: 4px;
+        }
+        .card-header-block .ch-divider {
+            height: 0.5px;
+            background: var(--color-border-tertiary);
+            margin: 14px 0 0 0;
+        }
+
+        /* docx-preview renders into .docx-wrapper — override its page margins for card view */
+        .preview-body .docx-wrapper {
+            padding: 16px 32px 20px 40px !important;
+            background: var(--color-background-primary) !important;
+        }
+        .preview-body .docx-wrapper > section.docx {
+            width: 100% !important;
+            min-height: unset !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            box-shadow: none !important;
+            background: transparent !important;
+        }
+
+        .preview-loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 60px 30px;
+            color: var(--color-text-tertiary);
+            font-size: 13px;
+        }
+        .preview-loading .spinner {
+            width: 18px; height: 18px;
+            border: 2px solid var(--color-border-tertiary);
+            border-top-color: var(--color-text-secondary);
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .preview-placeholder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            padding: 60px 30px;
+            text-align: center;
+            color: var(--color-text-tertiary);
+            font-size: 13px;
+        }
+        .preview-placeholder .big {
+            font-size: 28px;
+            display: block;
+            margin-bottom: 10px;
+            color: var(--color-text-secondary);
+        }
+
+        .preview-footer {
+            border-top: 0.5px solid var(--color-border-tertiary);
+            padding: 10px 20px;
+            font-size: 12px;
+            color: var(--color-text-secondary);
+            background: var(--color-background-secondary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .preview-footer .label {
+            color: var(--color-text-tertiary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 10px;
+        }
+        .preview-footer .source-name { color: var(--color-text-primary); font-weight: 500; }
+        .preview-footer .source-section {
+            margin-left: auto;
+            color: var(--color-text-tertiary);
+            overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+            max-width: 50%;
+        }
+
+        /* lib-loading banner */
+        .lib-banner {
+            position: fixed; top: 0; left: 0; right: 0;
+            background: var(--color-background-info);
+            border-bottom: 0.5px solid var(--color-border-info);
+            padding: 8px 20px;
+            font-size: 12px;
+            color: #2a4fa3;
+            display: flex; align-items: center; gap: 8px;
+            z-index: 100;
+            transition: opacity 0.3s;
+        }
+        .lib-banner.hidden { opacity: 0; pointer-events: none; }
+        .lib-banner .spinner {
+            width: 12px; height: 12px;
+            border: 1.5px solid #a0b4e8;
+            border-top-color: #2a4fa3;
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+            flex-shrink: 0;
+        }
+
+        .progress-overlay {
+            position: fixed; bottom: 18px; right: 18px;
+            background: var(--color-background-primary);
+            border: 0.5px solid var(--color-border-secondary);
+            border-radius: var(--border-radius-md);
+            padding: 10px 14px;
+            font-size: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            display: none;
+            z-index: 50;
+            min-width: 220px;
+        }
+        .progress-overlay.show { display: block; }
+        .progress-overlay .label { color: var(--color-text-secondary); margin-bottom: 6px; }
+        .progress-overlay .bar { height: 4px; background: var(--color-background-secondary); border-radius: 2px; overflow: hidden; }
+        .progress-overlay .bar > div { height: 100%; background: var(--color-text-primary); width: 0%; transition: width 0.2s; }
+
+        .toast {
+            position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%);
+            background: var(--color-text-primary); color: var(--color-background-primary);
+            padding: 8px 14px; border-radius: var(--border-radius-md);
+            font-size: 13px;
+            opacity: 0; pointer-events: none;
+            transition: opacity 0.2s;
+            z-index: 60;
+        }
+        .toast.show { opacity: 1; }
+
+        @media (max-width: 760px) {
+            .split { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Library loading banner -->
+    <div class="lib-banner" id="lib-banner">
+        <div class="spinner"></div>
+        Loading document renderer...
+    </div>
+
+    <div class="app" id="app" style="padding-top: 37px;">
+        <div class="topbar">
+            <h1>Debate Card Splitter <span class="accent">multi-doc</span></h1>
+            <button class="upload-btn" id="btn-upload">+ Add documents</button>
+            <button class="upload-btn secondary" id="btn-clear" style="display:none;">Clear all</button>
+            <input type="file" id="file-input" accept=".docx" multiple>
+            <div class="stats-inline" id="stats-inline">
+                <span class="stat-pill"><b id="stat-docs">0</b>documents</span>
+                <span class="stat-pill"><b id="stat-cards">0</b>cards</span>
+                <span class="stat-pill"><b id="stat-shown">0</b>shown</span>
+            </div>
+        </div>
+
+        <div class="search-row">
+            <div class="search-wrap">
+                <span class="search-icon">&#x1F50D;</span>
+                <input type="search" id="search-input" placeholder="Search tags, citations, and card text across all uploaded documents...">
+            </div>
+            <div class="scope" id="scope-toggle" role="tablist">
+                <button data-scope="all" class="active">All</button>
+                <button data-scope="tag">Tag</button>
+                <button data-scope="cite">Cite</button>
+                <button data-scope="body">Body</button>
+            </div>
+            <select id="doc-filter"><option value="">All documents</option></select>
+            <select id="section-filter"><option value="">All sections</option></select>
+            <select id="sort-order">
+                <option value="doc">Document order</option>
+                <option value="alpha">Author (A&ndash;Z)</option>
+                <option value="taglen">Tag length</option>
+            </select>
+        </div>
+
+        <div class="split" id="split">
+            <div class="left-pane" id="left-pane">
+                <div class="pane-header">
+                    <span id="list-summary">No documents uploaded</span>
+                    <div class="right">
+                        <button class="btn-link" id="btn-download-all">Download all as ZIP</button>
+                    </div>
+                </div>
+                <div id="card-list">
+                    <div class="empty-msg" id="initial-empty">
+                        <span class="big">&#x1F4C4;</span>
+                        Upload .docx files to get started.
+                        <br><br>
+                        <button class="upload-btn upload-cta" id="btn-upload-2">+ Add documents</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-pane" id="right-pane">
+                <div class="preview-toolbar" id="preview-toolbar" style="display:none;">
+                    <button class="primary" id="btn-copy">&#x1F4CB; Copy formatted</button>
+                    <button id="btn-copy-plain">&#x1F4DD; Copy plain text</button>
+                    <button id="btn-download">&#x2B07; Download .docx</button>
+                    <span class="spacer"></span>
+                    <button id="btn-prev">&#x2190; Prev</button>
+                    <button id="btn-next">Next &#x2192;</button>
+                </div>
+                <div class="preview-body" id="preview-body">
+                    <div class="preview-placeholder">
+                        <span class="big">&#x2190;</span>
+                        Select a card from the list to view it here.
+                    </div>
+                </div>
+                <div class="preview-footer" id="preview-footer" style="display:none;">
+                    <span class="label">Source</span>
+                    <span class="source-name" id="source-name">&mdash;</span>
+                    <span class="source-section" id="source-section"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="progress-overlay" id="progress-overlay">
+        <div class="label" id="progress-label">Working...</div>
+        <div class="bar"><div id="progress-bar"></div></div>
+    </div>
+    <div class="toast" id="toast">Copied</div>
+
+    <!-- Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docx-preview@0.3.3/dist/docx-preview.min.js"></script>
+
+    <script>
+    (function () {
+        'use strict';
+
+        // Wait for docx-preview to load
+        const libBanner = document.getElementById('lib-banner');
+        const appEl = document.getElementById('app');
+
+        function hideLibBanner() {
+            libBanner.classList.add('hidden');
+            appEl.style.paddingTop = '0';
+            setTimeout(() => libBanner.style.display = 'none', 400);
+        }
+
+        // Check if docxPreview loaded
+        let docxPreviewReady = false;
+        let checkAttempts = 0;
+        const checkLib = setInterval(() => {
+            checkAttempts++;
+            if (typeof window.docx !== 'undefined' || typeof window.docxPreview !== 'undefined') {
+                docxPreviewReady = true;
+                clearInterval(checkLib);
+                hideLibBanner();
+            } else if (checkAttempts > 50) {
+                clearInterval(checkLib);
+                libBanner.textContent = 'Renderer unavailable — preview may have limited formatting';
+                setTimeout(hideLibBanner, 3000);
+            }
+        }, 100);
+
+        const NS = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';
+
+        const state = {
+            docs: new Map(),
+            cards: [],
+            filtered: [],
+            selectedCardId: null,
+            search: '',
+            searchScope: 'all',
+            docFilter: '',
+            sectionFilter: '',
+            sortOrder: 'doc',
+            nextDocId: 1,
+            nextCardId: 1,
+            currentPreviewBlob: null
+        };
+
+        const $ = id => document.getElementById(id);
+        const fileInput = $('file-input');
+        const cardListEl = $('card-list');
+        const previewBody = $('preview-body');
+        const previewToolbar = $('preview-toolbar');
+        const previewFooter = $('preview-footer');
+        const searchInput = $('search-input');
+        const docFilterEl = $('doc-filter');
+        const sectionFilterEl = $('section-filter');
+        const sortOrderEl = $('sort-order');
+        const progressOverlay = $('progress-overlay');
+        const progressBar = $('progress-bar');
+        const progressLabel = $('progress-label');
+        const toast = $('toast');
+        const leftPane = $('left-pane');
+
+        $('btn-upload').addEventListener('click', () => fileInput.click());
+        $('btn-clear').addEventListener('click', clearAll);
+        fileInput.addEventListener('change', e => {
+            const files = Array.from(e.target.files || []);
+            if (files.length) ingestFiles(files);
+            fileInput.value = '';
+        });
+
+        ['dragover', 'dragenter'].forEach(evt => {
+            leftPane.addEventListener(evt, e => { e.preventDefault(); leftPane.style.background = 'var(--color-background-info)'; });
+        });
+        ['dragleave', 'drop'].forEach(evt => {
+            leftPane.addEventListener(evt, e => { e.preventDefault(); leftPane.style.background = ''; });
+        });
+        leftPane.addEventListener('drop', e => {
+            const files = Array.from(e.dataTransfer.files || []).filter(f => f.name.toLowerCase().endsWith('.docx'));
+            if (files.length) ingestFiles(files);
+        });
+
+        let searchDebounce = null;
+        searchInput.addEventListener('input', e => {
+            clearTimeout(searchDebounce);
+            const value = e.target.value;
+            searchDebounce = setTimeout(() => { state.search = value; applyFilters(); }, 120);
+        });
+
+        document.querySelectorAll('#scope-toggle button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('#scope-toggle button').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                state.searchScope = btn.dataset.scope;
+                applyFilters();
+            });
+        });
+
+        docFilterEl.addEventListener('change', () => { state.docFilter = docFilterEl.value; applyFilters(); });
+        sectionFilterEl.addEventListener('change', () => { state.sectionFilter = sectionFilterEl.value; applyFilters(); });
+        sortOrderEl.addEventListener('change', () => { state.sortOrder = sortOrderEl.value; applyFilters(); });
+
+        $('btn-copy').addEventListener('click', () => copyCurrent());
+        $('btn-copy-plain').addEventListener('click', () => copyCurrentPlain());
+        $('btn-download').addEventListener('click', () => downloadCurrent());
+        $('btn-prev').addEventListener('click', () => stepSelection(-1));
+        $('btn-next').addEventListener('click', () => stepSelection(1));
+        $('btn-download-all').addEventListener('click', downloadAllZip);
+
+        document.addEventListener('keydown', e => {
+            if (e.target.matches('input, textarea, select')) return;
+            if (e.key === 'ArrowDown') { stepSelection(1); e.preventDefault(); }
+            else if (e.key === 'ArrowUp') { stepSelection(-1); e.preventDefault(); }
+            else if (e.key === '/') { searchInput.focus(); e.preventDefault(); }
+        });
+
+        // ===== FILE INGESTION =====
+
+        async function ingestFiles(files) {
+            showProgress(`Reading ${files.length} document${files.length > 1 ? 's' : ''}...`, 0);
+            let processed = 0;
+            for (const file of files) {
+                try { await ingestOne(file); }
+                catch (err) { console.warn(`Failed to ingest ${file.name}:`, err); }
+                processed++;
+                setProgress(processed / files.length * 100, `Read ${processed} of ${files.length}: ${file.name}`);
+                await new Promise(r => setTimeout(r, 0));
+            }
+            hideProgress();
+            populateDocFilter();
+            populateSectionFilter();
+            applyFilters();
+            $('btn-clear').style.display = state.docs.size > 0 ? '' : 'none';
+        }
+
+        async function ingestOne(file) {
+            if (!file.name.toLowerCase().endsWith('.docx')) return;
+            const arrayBuffer = await file.arrayBuffer();
+            const zip = await JSZip.loadAsync(arrayBuffer);
+            const docXmlFile = zip.file('word/document.xml');
+            if (!docXmlFile) return;
+            const rawXml = await docXmlFile.async('string');
+            const docId = state.nextDocId++;
+            const doc = {
+                id: docId,
+                filename: file.name,
+                shortName: file.name.replace(/\.docx$/i, ''),
+                zipData: zip,
+                rawXml,
+                paragraphsXml: extractParagraphsXml(rawXml)
+            };
+            state.docs.set(docId, doc);
+            parseCardsFromDoc(doc);
+        }
+
+        function clearAll() {
+            if (!confirm('Remove all uploaded documents?')) return;
+            state.docs.clear();
+            state.cards = [];
+            state.filtered = [];
+            state.selectedCardId = null;
+            state.currentPreviewBlob = null;
+            state.nextDocId = 1;
+            state.nextCardId = 1;
+            populateDocFilter();
+            populateSectionFilter();
+            applyFilters();
+            renderPreview(null);
+            $('btn-clear').style.display = 'none';
+        }
+
+        // ===== CARD PARSING (unchanged logic) =====
+
+        function parseCardsFromDoc(doc) {
+            const parser = new DOMParser();
+            const xml = parser.parseFromString(doc.rawXml, 'text/xml');
+            const paragraphs = Array.from(xml.getElementsByTagNameNS(NS, 'p'));
+            let currentSection = '';
+            let cardState = newCardState();
+
+            for (let i = 0; i < paragraphs.length; i++) {
+                const p = paragraphs[i];
+                const text = paragraphText(p);
+
+                if (isHeading(p, 1) || isHeading(p, 2) || isHeading(p, 3)) {
+                    finalizeCard(doc, cardState);
+                    cardState = newCardState();
+                    if (text) currentSection = text;
+                    continue;
+                }
+
+                if (isHeading(p, 4) && text.length > 4) {
+                    finalizeCard(doc, cardState);
+                    cardState = newCardState();
+                    cardState.section = currentSection;
+                    cardState.tag = text;
+                    cardState.tagParaIndex = i;
+                    const next = paragraphs[i + 1];
+                    if (next && isCitation(next)) {
+                        cardState.cite = paragraphText(next);
+                        cardState.citeParaIndex = i + 1;
+                        i++;
+                    }
+                    cardState.inCard = true;
+                    continue;
+                }
+
+                if (cardState.inCard) {
+                    const hasContent = text || p.getElementsByTagNameNS(NS, 'r').length > 0;
+                    if (hasContent) cardState.bodyParaIndices.push(i);
+                }
+            }
+            finalizeCard(doc, cardState);
+        }
+
+        function newCardState() {
+            return { section: '', tag: null, cite: null, tagParaIndex: null, citeParaIndex: null, bodyParaIndices: [], inCard: false };
+        }
+
+        function finalizeCard(doc, s) {
+            if (!s.tag) return;
+            const bodyPlain = s.bodyParaIndices
+                .map(idx => stripTagsToText(doc.paragraphsXml[idx]))
+                .join(' ').replace(/\s+/g, ' ').trim();
+
+            const card = {
+                id: state.nextCardId++,
+                docId: doc.id,
+                docName: doc.shortName,
+                section: s.section || '',
+                tag: s.tag,
+                cite: s.cite || '',
+                tagParaIndex: s.tagParaIndex,
+                citeParaIndex: s.citeParaIndex,
+                bodyParaIndices: [...s.bodyParaIndices],
+                bodyPlain,
+                searchTag: s.tag.toLowerCase(),
+                searchCite: (s.cite || '').toLowerCase(),
+                searchBody: bodyPlain.toLowerCase(),
+                searchAll: (s.tag + ' ' + (s.cite || '') + ' ' + bodyPlain).toLowerCase(),
+                snippetHtml: escapeHtml(bodyPlain.substring(0, 200)),
+                author: extractAuthor(s.cite || '')
+            };
+            state.cards.push(card);
+        }
+
+        function extractAuthor(cite) {
+            const m = cite.match(/^([A-Z][a-zA-Z''\-]+(?:\s+[A-Z][a-zA-Z''\-]+)*(?:\s+et\s+al\.?)?)\s+['']?\d{2}/);
+            if (m) return m[1];
+            const fallback = cite.split(/[,.]/)[0].trim();
+            return fallback ? fallback.substring(0, 40) : 'Unknown';
+        }
+
+        // ===== XML HELPERS =====
+
+        function paragraphText(p) {
+            const tNodes = p.getElementsByTagNameNS(NS, 't');
+            return Array.from(tNodes).map(n => n.textContent).join('').trim();
+        }
+
+        function styleVal(p) {
+            const pPr = p.getElementsByTagNameNS(NS, 'pPr')[0];
+            if (!pPr) return null;
+            const pStyle = pPr.getElementsByTagNameNS(NS, 'pStyle')[0];
+            if (!pStyle) return null;
+            for (const a of pStyle.attributes) if (a.localName === 'val') return a.value;
+            return null;
+        }
+
+        function isHeading(p, level) {
+            const v = styleVal(p);
+            return v === `Heading${level}` || v === `heading${level}`;
+        }
+
+        function isCitation(p) {
+            const sv = styleVal(p);
+            if (sv && /^Heading/i.test(sv)) return false;
+            const runs = p.getElementsByTagNameNS(NS, 'r');
+            return Array.from(runs).some(run => {
+                const rPr = run.getElementsByTagNameNS(NS, 'rPr')[0];
+                if (!rPr) return false;
+                const rStyle = rPr.getElementsByTagNameNS(NS, 'rStyle')[0];
+                if (rStyle) {
+                    const val = Array.from(rStyle.attributes).find(a => a.localName === 'val')?.value;
+                    if (val && /Bold|Strong|13pt|Style13/i.test(val)) return true;
+                }
+                return rPr.getElementsByTagNameNS(NS, 'b').length > 0;
+            });
+        }
+
+        function extractParagraphsXml(rawXml) {
+            const result = [];
+            // Robust paragraph extraction: handle self-closing <w:p .../> which
+            // appear as empty paragraph separators between cards in many docx files.
+            // If not handled, the lazy regex swallows them into the next paragraph,
+            // causing the next Heading4 to appear to have no pStyle and miss detection.
+            let pos = 0;
+            while (pos < rawXml.length) {
+                const start = rawXml.indexOf('<w:p', pos);
+                if (start === -1) break;
+                // Verify it's actually a w:p element (not w:pPr, w:pStyle, etc.)
+                const charAfter = rawXml[start + 4];
+                if (charAfter !== ' ' && charAfter !== '>' && charAfter !== '/') {
+                    pos = start + 4;
+                    continue;
+                }
+                // Find the > that closes this opening tag
+                const tagEnd = rawXml.indexOf('>', start);
+                if (tagEnd === -1) break;
+                if (rawXml[tagEnd - 1] === '/') {
+                    // Self-closing <w:p ... />
+                    result.push(rawXml.slice(start, tagEnd + 1));
+                    pos = tagEnd + 1;
+                } else {
+                    // Regular paragraph - find matching </w:p>
+                    const closeTag = '</w:p>';
+                    const close = rawXml.indexOf(closeTag, tagEnd);
+                    if (close === -1) break;
+                    result.push(rawXml.slice(start, close + closeTag.length));
+                    pos = close + closeTag.length;
+                }
+            }
+            return result;
+        }
+
+        function stripTagsToText(xml) {
+            if (!xml) return '';
+            const out = [];
+            const re = /<w:t(?:\s[^>]*)?>([\s\S]*?)<\/w:t>/g;
+            let m;
+            while ((m = re.exec(xml)) !== null) out.push(decodeXmlEntities(m[1]));
+            return out.join('');
+        }
+
+        function decodeXmlEntities(str) {
+            return str.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&apos;/g, "'").replace(/&amp;/g, '&');
+        }
+
+        function escapeHtml(s) {
+            return (s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        }
+
+        // ===== DOCX BLOB BUILDING =====
+
+        async function buildCardDocx(card, doc, bodyOnly = false) {
+            const newZip = new JSZip();
+            for (const [path, entry] of Object.entries(doc.zipData.files)) {
+                if (path === 'word/document.xml') continue;
+                if (entry.dir) { newZip.folder(path); continue; }
+                const content = await entry.async('uint8array');
+                newZip.file(path, content);
+            }
+            newZip.file('word/document.xml', buildCardXml(card, doc, bodyOnly));
+            return await newZip.generateAsync({ type: 'blob' });
+        }
+
+        function buildCardXml(card, doc, bodyOnly = false) {
+            const keep = new Set();
+            if (!bodyOnly) {
+                if (card.tagParaIndex !== null) keep.add(card.tagParaIndex);
+                if (card.citeParaIndex !== null) keep.add(card.citeParaIndex);
+            }
+            card.bodyParaIndices.forEach(i => keep.add(i));
+
+            const bodyParas = doc.paragraphsXml
+                .map((xml, i) => keep.has(i) ? xml : null)
+                .filter(Boolean).join('');
+
+            const sectPrMatch = doc.rawXml.match(/<w:sectPr\b[\s\S]*?<\/w:sectPr>/);
+            const sectPr = sectPrMatch ? sectPrMatch[0] : '';
+
+            return doc.rawXml.replace(
+                /<w:body\b[^>]*>[\s\S]*<\/w:body>/,
+                match => {
+                    const open = match.match(/^<w:body\b[^>]*>/)[0];
+                    return `${open}${bodyParas}${sectPr}</w:body>`;
+                }
+            );
+        }
+
+        // ===== PREVIEW — docx-preview based =====
+
+        let previewRenderToken = 0;
+
+        async function renderPreview(card) {
+            const token = ++previewRenderToken;
+
+            if (!card) {
+                previewToolbar.style.display = 'none';
+                previewFooter.style.display = 'none';
+                state.currentPreviewBlob = null;
+                previewBody.innerHTML = `<div class="preview-placeholder"><span class="big">&#x2190;</span>Select a card from the list to view it here.</div>`;
+                return;
+            }
+
+            const doc = state.docs.get(card.docId);
+            if (!doc) {
+                previewBody.innerHTML = `<div class="preview-placeholder">Source document is no longer available.</div>`;
+                return;
+            }
+
+            previewToolbar.style.display = '';
+            previewFooter.style.display = '';
+
+            // Show loading spinner
+            previewBody.innerHTML = `<div class="preview-loading"><div class="spinner"></div>Rendering card...</div>`;
+
+            // Build the card's docx blob
+            let blob;
+            try {
+                blob = await buildCardDocx(card, doc);
+            } catch (err) {
+                if (token !== previewRenderToken) return;
+                previewBody.innerHTML = `<div class="preview-placeholder">Error building preview: ${escapeHtml(String(err))}</div>`;
+                return;
+            }
+
+            if (token !== previewRenderToken) return; // stale
+
+            state.currentPreviewBlob = blob;
+            state.currentPreviewCard = card;
+
+            // Try docx-preview
+            const docxLib = window.docx || window.docxPreview;
+            if (docxLib && typeof docxLib.renderAsync === 'function') {
+                try {
+                    // Build body-only blob (no tag/cite paragraphs) for docx-preview
+                    const bodyBlob = await buildCardDocx(card, doc, true);
+                    const arrayBuffer = await bodyBlob.arrayBuffer();
+                    if (token !== previewRenderToken) return;
+
+                    // Build the styled tag + cite header
+                    const headerEl = document.createElement('div');
+                    headerEl.className = 'card-header-block';
+                    if (card.section) {
+                        const sec = document.createElement('div');
+                        sec.className = 'ch-section';
+                        sec.textContent = card.section;
+                        headerEl.appendChild(sec);
+                    }
+                    const tagEl = document.createElement('div');
+                    tagEl.className = 'ch-tag';
+                    tagEl.textContent = card.tag;
+                    headerEl.appendChild(tagEl);
+                    if (card.cite) {
+                        const citeEl = document.createElement('div');
+                        citeEl.className = 'ch-cite';
+                        citeEl.textContent = card.cite;
+                        headerEl.appendChild(citeEl);
+                    }
+                    const divider = document.createElement('div');
+                    divider.className = 'ch-divider';
+                    headerEl.appendChild(divider);
+
+                    // Clear preview and insert header
+                    previewBody.innerHTML = '';
+                    previewBody.appendChild(headerEl);
+
+                    // Render body paragraphs via docx-preview
+                    const bodyContainer = document.createElement('div');
+                    previewBody.appendChild(bodyContainer);
+
+                    await docxLib.renderAsync(arrayBuffer, bodyContainer, null, {
+                        className: 'docx',
+                        inWrapper: true,
+                        ignoreWidth: true,
+                        ignoreHeight: true,
+                        ignoreFonts: false,
+                        breakPages: false,
+                        useBase64URL: true,
+                        renderChanges: false,
+                        renderHeaders: false,
+                        renderFooters: false,
+                        renderFootnotes: false,
+                        renderEndnotes: false,
+                    });
+
+                    if (token !== previewRenderToken) return;
+                    previewBody.scrollTop = 0;
+                } catch (err) {
+                    console.warn('docx-preview failed, falling back:', err);
+                    if (token !== previewRenderToken) return;
+                    renderFallbackPreview(card, doc);
+                }
+            } else {
+                renderFallbackPreview(card, doc);
+            }
+
+            $('source-name').textContent = doc.filename;
+            $('source-section').textContent = card.section || '';
+        }
+
+        // Fallback: simple plain-text preview if docx-preview unavailable
+        function renderFallbackPreview(card, doc) {
+            const parts = [];
+            if (card.section) parts.push(`<div style="font-size:11px;text-transform:uppercase;letter-spacing:0.6px;color:var(--color-text-tertiary);margin-bottom:8px;">${escapeHtml(card.section)}</div>`);
+            parts.push(`<div style="font-size:16px;font-weight:700;font-family:var(--font-sans);margin-bottom:8px;">${escapeHtml(card.tag)}</div>`);
+            if (card.cite) parts.push(`<div style="font-size:12px;font-weight:600;margin-bottom:12px;">${escapeHtml(card.cite)}</div>`);
+            card.bodyParaIndices.forEach(idx => {
+                const t = stripTagsToText(doc.paragraphsXml[idx]);
+                if (t) parts.push(`<p style="font-family:var(--font-serif);font-size:13px;margin-bottom:8px;">${escapeHtml(t)}</p>`);
+            });
+            previewBody.innerHTML = `<div style="padding:28px 40px;">${parts.join('')}</div>`;
+        }
+
+        // ===== COPY — use docx-preview rendered HTML for full fidelity =====
+
+        async function copyCurrent() {
+            const card = state.currentPreviewCard;
+            if (!card) { showToast('No card selected'); return; }
+            const doc = state.docs.get(card.docId);
+            if (!doc) return;
+
+            // Build header HTML (tag + cite) as inline-styled string
+            const sectionHtml = card.section
+                ? `<div style="font-family:Arial,sans-serif;font-size:9pt;color:#666;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">${escapeHtml(card.section)}</div>`
+                : '';
+            const tagHtml = `<div style="font-family:Arial,sans-serif;font-size:14pt;font-weight:700;margin-bottom:6px;">${escapeHtml(card.tag)}</div>`;
+            const citeHtml = card.cite
+                ? `<div style="font-family:Arial,sans-serif;font-size:10pt;font-weight:700;margin-bottom:10px;">${escapeHtml(card.cite)}</div>`
+                : '';
+
+            // Grab the body from docx-preview rendered output
+            const bodyContainer = previewBody.querySelector('.docx-wrapper') || previewBody.querySelector('div:last-child');
+            let bodyHtml = '';
+            if (bodyContainer) {
+                try {
+                    const clone = bodyContainer.cloneNode(true);
+                    inlineComputedStyles(clone, bodyContainer);
+                    bodyHtml = clone.innerHTML;
+                } catch (err) {
+                    console.warn('Style inlining failed:', err);
+                    bodyHtml = bodyContainer.innerHTML;
+                }
+            }
+
+            const htmlContent = `<div style="font-family:Calibri,Georgia,'Times New Roman',serif;font-size:11pt;line-height:1.4;color:#000;">${sectionHtml}${tagHtml}${citeHtml}<div>${bodyHtml}</div></div>`;
+            const plainText = buildPlainText(card, doc);
+
+            try {
+                await writeClipboard(plainText, htmlContent);
+                showToast('Copied formatted — paste into Word or Docs');
+            } catch (err) {
+                console.warn('Rich copy failed:', err);
+                await writeClipboard(plainText, null);
+                showToast('Copied plain text (formatted copy unavailable)');
+            }
+        }
+
+        // Inline computed styles from a live element into a clone for clipboard portability
+        function inlineComputedStyles(clone, live) {
+            const liveEls = live.querySelectorAll('*');
+            const cloneEls = clone.querySelectorAll('*');
+            const KEEP = ['font-weight', 'font-style', 'text-decoration', 'background-color', 'color', 'font-size', 'font-family'];
+            liveEls.forEach((el, i) => {
+                if (i >= cloneEls.length) return;
+                const computed = window.getComputedStyle(el);
+                const existing = cloneEls[i].style.cssText || '';
+                const additions = [];
+                KEEP.forEach(prop => {
+                    const val = computed.getPropertyValue(prop);
+                    if (!val || val === 'none' || val === 'normal' || val === 'rgba(0, 0, 0, 0)' || val === 'transparent') return;
+                    // skip default white background
+                    if (prop === 'background-color' && (val === 'rgb(255, 255, 255)' || val === 'rgba(0, 0, 0, 0)')) return;
+                    // skip default black text
+                    if (prop === 'color' && val === 'rgb(0, 0, 0)') return;
+                    additions.push(`${prop}:${val}`);
+                });
+                if (additions.length) {
+                    cloneEls[i].style.cssText = (existing ? existing + ';' : '') + additions.join(';');
+                }
+            });
+        }
+
+        async function copyCurrentPlain() {
+            const card = state.cards.find(c => c.id === state.selectedCardId);
+            if (!card) return;
+            const doc = state.docs.get(card.docId);
+            if (!doc) return;
+            const plain = buildPlainText(card, doc);
+            await writeClipboard(plain, null);
+            showToast('Copied plain text');
+        }
+
+        function buildPlainText(card, doc) {
+            const parts = [];
+            if (card.section) parts.push(card.section);
+            parts.push(card.tag);
+            if (card.cite) parts.push(card.cite);
+            card.bodyParaIndices.forEach(idx => {
+                const t = stripTagsToText(doc.paragraphsXml[idx]);
+                if (t) parts.push(t);
+            });
+            return parts.join('\n\n');
+        }
+
+        async function writeClipboard(plainText, html) {
+            try {
+                if (html && window.ClipboardItem && navigator.clipboard?.write) {
+                    const item = new ClipboardItem({
+                        'text/plain': new Blob([plainText], { type: 'text/plain' }),
+                        'text/html': new Blob([html], { type: 'text/html' })
+                    });
+                    await navigator.clipboard.write([item]);
+                    return;
+                }
+                if (navigator.clipboard?.writeText) {
+                    await navigator.clipboard.writeText(plainText);
+                    return;
+                }
+            } catch (err) {
+                console.warn('Clipboard API failed:', err);
+            }
+            const ta = document.createElement('textarea');
+            ta.value = plainText;
+            ta.style.cssText = 'position:fixed;opacity:0;top:0;left:0;';
+            document.body.appendChild(ta);
+            ta.select();
+            try { document.execCommand('copy'); } catch {}
+            document.body.removeChild(ta);
+        }
+
+        // ===== DOWNLOAD =====
+
+        async function downloadCurrent() {
+            if (state.currentPreviewBlob) {
+                const card = state.currentPreviewCard;
+                const doc = state.docs.get(card.docId);
+                downloadFile(state.currentPreviewBlob, safeFilename(card, doc));
+                return;
+            }
+            const card = state.cards.find(c => c.id === state.selectedCardId);
+            if (!card) return;
+            const doc = state.docs.get(card.docId);
+            if (!doc) return;
+            showProgress('Building document...', 50);
+            const blob = await buildCardDocx(card, doc);
+            hideProgress();
+            if (blob) downloadFile(blob, safeFilename(card, doc));
+        }
+
+        async function downloadAllZip() {
+            if (!state.filtered.length) return;
+            const master = new JSZip();
+            showProgress(`Building ${state.filtered.length} documents...`, 0);
+            for (let i = 0; i < state.filtered.length; i++) {
+                const card = state.filtered[i];
+                const doc = state.docs.get(card.docId);
+                if (!doc) continue;
+                const blob = await buildCardDocx(card, doc);
+                if (blob) {
+                    const buf = await blob.arrayBuffer();
+                    master.file(safeFilename(card, doc), buf);
+                }
+                setProgress((i + 1) / state.filtered.length * 95, `Processing ${i + 1} of ${state.filtered.length}`);
+                if (i % 10 === 0) await new Promise(r => setTimeout(r, 0));
+            }
+            setProgress(98, 'Zipping...');
+            const zipBlob = await master.generateAsync({ type: 'blob' });
+            setProgress(100, 'Done');
+            hideProgress();
+            downloadFile(zipBlob, `debate_cards_${Date.now()}.zip`);
+        }
+
+        function safeFilename(card, doc) {
+            const clean = s => (s || '').replace(/[^a-zA-Z0-9 _-]/g, '').replace(/\s+/g, '_').substring(0, 40);
+            const docPart = clean(doc.shortName).substring(0, 20);
+            return `${docPart}__${clean(card.author)}_${clean(card.tag).substring(0, 30)}.docx`;
+        }
+
+        function downloadFile(blob, filename) {
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url; a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            setTimeout(() => URL.revokeObjectURL(url), 1500);
+        }
+
+        // ===== LIST RENDERING =====
+
+        function applyFilters() {
+            const q = state.search.trim().toLowerCase();
+            const scope = state.searchScope;
+            const docFilterId = state.docFilter ? Number(state.docFilter) : null;
+
+            let result = state.cards.filter(c => {
+                if (docFilterId && c.docId !== docFilterId) return false;
+                if (state.sectionFilter && c.section !== state.sectionFilter) return false;
+                if (!q) return true;
+                if (scope === 'tag') return c.searchTag.includes(q);
+                if (scope === 'cite') return c.searchCite.includes(q);
+                if (scope === 'body') return c.searchBody.includes(q);
+                return c.searchAll.includes(q);
+            });
+
+            if (state.sortOrder === 'alpha') result.sort((a, b) => a.author.localeCompare(b.author));
+            else if (state.sortOrder === 'taglen') result.sort((a, b) => a.tag.length - b.tag.length);
+            else result.sort((a, b) => a.docId - b.docId || a.id - b.id);
+
+            state.filtered = result;
+            renderList();
+            renderStats();
+        }
+
+        function renderStats() {
+            $('stat-docs').textContent = state.docs.size;
+            $('stat-cards').textContent = state.cards.length;
+            $('stat-shown').textContent = state.filtered.length;
+            $('list-summary').textContent = state.docs.size === 0
+                ? 'No documents uploaded'
+                : `${state.filtered.length} of ${state.cards.length} cards`;
+        }
+
+        function renderList() {
+            if (state.docs.size === 0) {
+                cardListEl.innerHTML = `<div class="empty-msg"><span class="big">&#x1F4C4;</span>Upload .docx files to get started.<br><br><button class="upload-btn upload-cta" id="btn-upload-2">+ Add documents</button></div>`;
+                $('btn-upload-2')?.addEventListener('click', () => fileInput.click());
+                return;
+            }
+            if (state.filtered.length === 0) {
+                cardListEl.innerHTML = `<div class="empty-msg">No cards match the current filters.</div>`;
+                return;
+            }
+
+            const RENDER_CAP = 400;
+            const visible = state.filtered.slice(0, RENDER_CAP);
+            const overflow = state.filtered.length - visible.length;
+            const q = state.search.trim();
+
+            const html = visible.map(c => {
+                const tagHtml = q ? highlightMatches(escapeHtml(c.tag), q) : escapeHtml(c.tag);
+                const citeHtml = q ? highlightMatches(escapeHtml(c.cite), q) : escapeHtml(c.cite);
+                const snippetHtml = q ? highlightMatches(c.snippetHtml, q) : c.snippetHtml;
+                const active = c.id === state.selectedCardId ? ' active' : '';
+                return `<div class="card-item${active}" data-id="${c.id}">
+                    <div class="card-doc">
+                        <span class="doc-name" title="${escapeHtml(c.docName)}">${escapeHtml(c.docName)}</span>
+                        ${c.section ? `<span>&middot; ${escapeHtml(c.section.substring(0, 36))}</span>` : ''}
+                    </div>
+                    <div class="card-tag">${tagHtml}</div>
+                    ${c.cite ? `<div class="card-cite">${citeHtml}</div>` : ''}
+                    ${snippetHtml ? `<div class="card-snippet">${snippetHtml}</div>` : ''}
+                </div>`;
+            }).join('');
+
+            const overflowHtml = overflow > 0
+                ? `<div class="empty-msg" style="padding:18px;">Showing first ${RENDER_CAP} of ${state.filtered.length}. Narrow your search to see more.</div>`
+                : '';
+
+            cardListEl.innerHTML = html + overflowHtml;
+            cardListEl.querySelectorAll('.card-item').forEach(el => {
+                el.addEventListener('click', () => selectCard(Number(el.dataset.id)));
+            });
+        }
+
+        function selectCard(id) {
+            const card = state.cards.find(c => c.id === id);
+            if (!card) return;
+            state.selectedCardId = id;
+            cardListEl.querySelectorAll('.card-item').forEach(el => {
+                el.classList.toggle('active', Number(el.dataset.id) === id);
+            });
+            const activeEl = cardListEl.querySelector(`.card-item[data-id="${id}"]`);
+            if (activeEl) {
+                const rect = activeEl.getBoundingClientRect();
+                const paneRect = leftPane.getBoundingClientRect();
+                if (rect.top < paneRect.top || rect.bottom > paneRect.bottom) activeEl.scrollIntoView({ block: 'nearest' });
+            }
+            renderPreview(card);
+        }
+
+        function stepSelection(dir) {
+            if (!state.filtered.length) return;
+            const currentIdx = state.filtered.findIndex(c => c.id === state.selectedCardId);
+            let next;
+            if (currentIdx === -1) next = state.filtered[0];
+            else {
+                const idx = Math.max(0, Math.min(state.filtered.length - 1, currentIdx + dir));
+                next = state.filtered[idx];
+            }
+            if (next) selectCard(next.id);
+        }
+
+        function highlightMatches(text, q) {
+            if (!q) return text;
+            const safe = q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            return text.replace(new RegExp(`(${safe})`, 'gi'), '<mark style="background:var(--color-highlight-yellow);padding:0 1px;">$1</mark>');
+        }
+
+        function populateDocFilter() {
+            const current = state.docFilter;
+            const options = ['<option value="">All documents</option>'];
+            state.docs.forEach(d => options.push(`<option value="${d.id}">${escapeHtml(d.shortName)}</option>`));
+            docFilterEl.innerHTML = options.join('');
+            docFilterEl.value = current && state.docs.has(Number(current)) ? current : '';
+            state.docFilter = docFilterEl.value;
+        }
+
+        function populateSectionFilter() {
+            const current = state.sectionFilter;
+            const sections = [...new Set(state.cards.map(c => c.section).filter(Boolean))].sort();
+            const options = ['<option value="">All sections</option>'];
+            sections.forEach(s => options.push(`<option value="${escapeHtml(s)}">${escapeHtml(s.substring(0, 50))}</option>`));
+            sectionFilterEl.innerHTML = options.join('');
+            sectionFilterEl.value = sections.includes(current) ? current : '';
+            state.sectionFilter = sectionFilterEl.value;
+        }
+
+        // ===== PROGRESS / TOAST =====
+
+        function showProgress(label, pct) {
+            progressOverlay.classList.add('show');
+            progressLabel.textContent = label;
+            progressBar.style.width = `${pct}%`;
+        }
+        function setProgress(pct, label) {
+            progressBar.style.width = `${pct}%`;
+            if (label) progressLabel.textContent = label;
+        }
+        function hideProgress() {
+            setTimeout(() => { progressOverlay.classList.remove('show'); progressBar.style.width = '0%'; }, 300);
+        }
+        let toastTimer = null;
+        function showToast(msg) {
+            toast.textContent = msg;
+            toast.classList.add('show');
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => toast.classList.remove('show'), 2200);
+        }
+
+        renderStats();
+        $('btn-upload-2')?.addEventListener('click', () => fileInput.click());
+    })();
+    </script>
+</body>
+</html>

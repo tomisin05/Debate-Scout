@@ -2,11 +2,13 @@ import { useState, useEffect, useMemo, useRef } from "react";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "./firebase";
 import Login from "./Login";
+import DebateCardSplitter from "./DebateCardSplitter";
 import "./App.css";
 
 function App() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [activeTab, setActiveTab] = useState('scout');
   const [allData, setAllData] = useState({});
   const [selectedYear, setSelectedYear] = useState("25");
   const [data, setData] = useState([]);
@@ -58,14 +60,16 @@ function App() {
   useEffect(() => {
     const loadAllData = async () => {
       try {
-        const [data25, data24, data23, data22, data21, data20] = await Promise.all([
-          fetch("/data_ndtceda25.json").then((res) => res.json()),
-          fetch("/data_ndtceda24.json").then((res) => res.json()),
-          fetch("/data_ndtceda23.json").then((res) => res.json()),
-          fetch("/data_ndtceda22.json").then((res) => res.json()),
-          fetch("/data_ndtceda21.json").then((res) => res.json()),
-          fetch("/data_ndtceda20.json").then((res) => res.json()),
-        ]);
+        const [data25, data24, data23, data22, data21, data20, data19] =
+          await Promise.all([
+            fetch("/data_ndtceda25.json").then((res) => res.json()),
+            fetch("/data_ndtceda24.json").then((res) => res.json()),
+            fetch("/data_ndtceda23.json").then((res) => res.json()),
+            fetch("/data_ndtceda22.json").then((res) => res.json()),
+            fetch("/data_ndtceda21.json").then((res) => res.json()),
+            fetch("/data_ndtceda20.json").then((res) => res.json()),
+            fetch("/data_hspolicy19.json").then((res) => res.json()),
+          ]);
 
         const yearData = {
           25: data25.rounds || [],
@@ -74,6 +78,7 @@ function App() {
           22: data22.rounds || [],
           21: data21.rounds || [],
           20: data20.rounds || [],
+          19: data19.rounds || [],
         };
 
         setAllData(yearData);
@@ -356,6 +361,20 @@ function App() {
             <i className="fas fa-table"></i>
             <span>Debate Scout</span>
           </div>
+          <div className="tab-navigation">
+            <button 
+              className={`tab-btn ${activeTab === 'scout' ? 'active' : ''}`}
+              onClick={() => setActiveTab('scout')}
+            >
+              <i className="fas fa-table"></i> Scout
+            </button>
+            <button 
+              className={`tab-btn ${activeTab === 'splitter' ? 'active' : ''}`}
+              onClick={() => setActiveTab('splitter')}
+            >
+              <i className="fas fa-cut"></i> Card Splitter
+            </button>
+          </div>
         </div>
         <div className="header-right">
           <div className="year-selector">
@@ -371,6 +390,7 @@ function App() {
               <option value="22">2022</option>
               <option value="21">2021</option>
               <option value="20">2020</option>
+              <option value="19">High School 2019</option>
             </select>
           </div>
           <div className="search-box">
@@ -484,7 +504,9 @@ function App() {
         </div>
       </div>
 
-      <div className="filters-bar">
+      {activeTab === 'scout' && (
+        <>
+          <div className="filters-bar">
         <div className="filter-controls">
           <button className="btn-add-filter" onClick={addFilter}>
             <i className="fas fa-plus"></i> Add Filter
@@ -1047,6 +1069,14 @@ function App() {
           </button>
         </div>
       </div>
+        </>
+      )}
+
+      {activeTab === 'splitter' && (
+        <div className="splitter-container">
+          <DebateCardSplitter />
+        </div>
+      )}
     </div>
   );
 }
