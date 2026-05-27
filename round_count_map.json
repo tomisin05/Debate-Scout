@@ -52,7 +52,7 @@
     "CSU Long Beach EsTo (Alessandra Escobar - Emerson Tobias)": 2,
     "CSU Long Beach GrTo (Brandon Griffin - Eric Tobias)": 11,
     "CSU Long Beach GuMe (Dorian Gurrola - Daniel Medina)": 7,
-    "CSU Long Beach OrMe (Curtis Ortega - Daniel Medina)": 104
+    "CSU Long Beach OrMe (Curtis Ortega - Daniel Medina)": 105
   },
   "CSU Northridge": {
     "CSU Northridge ThAg (Ellyana Thornton - Jorge Aguilar)": 1
@@ -133,38 +133,38 @@
     "Georgetown Novices": 0,
     "Georgetown AgCo (Arnav Aggarwal - Connelly Cowan)": 98,
     "Georgetown CoXi (Jackie Correa - Caroline Xiao)": 17,
-    "Georgetown GrTa (Michael Greenberg - Leroy Tamfu)": 45,
+    "Georgetown GrTa (Michael Greenberg - Leroy Tamfu)": 62,
     "Georgetown KlLi (Megan Klingler - Nathan Li)": 21,
-    "Georgetown KoXi (Sasha Kos - Caroline Xiao)": 0,
-    "Georgetown LaNa (Luke Lastelick - Aaly Nanji)": 0,
-    "Georgetown LiVa (Nathan Li - Vikram Valame)": 0,
-    "Georgetown PeTa (Nora Perez-Rubio - Leroy Tamfu)": 0,
-    "Georgetown PeVa (Nora Perez-Rubio - Vikram Valame)": 0,
-    "Georgetown WaCo (Leon Wang - Jackie Correa)": 0,
-    "Georgetown ZaVa (Haider Zaidi - Sameer Varkantham)": 0
+    "Georgetown KoXi (Sasha Kos - Caroline Xiao)": 7,
+    "Georgetown LaNa (Luke Lastelick - Aaly Nanji)": 71,
+    "Georgetown LiVa (Nathan Li - Vikram Valame)": 8,
+    "Georgetown PeTa (Nora Perez-Rubio - Leroy Tamfu)": 8,
+    "Georgetown PeVa (Nora Perez-Rubio - Vikram Valame)": 9,
+    "Georgetown WaCo (Leon Wang - Jackie Correa)": 9,
+    "Georgetown ZaVa (Haider Zaidi - Sameer Varkantham)": 6
   },
   "Georgia": {
-    "Georgia CaPa (Zoe Cannon - Laurel Pack)": 0,
-    "Georgia ChLa (Ida Chapman - Caroline Lackey)": 0,
-    "Georgia GlRe (Alexander Glover - Alex Reed)": 0,
-    "Georgia KaCh (Eshkar Kaidar-Heafetz - Ida Chapman)": 0,
-    "Georgia LaGl (Caroline Lackey - Alexander Glover)": 0,
-    "Georgia LaRe (Caroline Lackey - Alex Reed)": 0
+    "Georgia CaPa (Zoe Cannon - Laurel Pack)": 68,
+    "Georgia ChLa (Ida Chapman - Caroline Lackey)": 18,
+    "Georgia GlRe (Alexander Glover - Alex Reed)": 8,
+    "Georgia KaCh (Eshkar Kaidar-Heafetz - Ida Chapman)": 53,
+    "Georgia LaGl (Caroline Lackey - Alexander Glover)": 12,
+    "Georgia LaRe (Caroline Lackey - Alex Reed)": 6
   },
   "Gonzaga": {
-    "Gonzaga WeGi (Dashiell Weinhardt - Kadence Gibson)": 0,
-    "Gonzaga WeRo (Kaelyn Wellman - Everett Roe)": 0,
-    "Gonzaga WeWe (Dashiell Weinhardt - Kaelyn Wellman)": 0
+    "Gonzaga WeGi (Dashiell Weinhardt - Kadence Gibson)": 4,
+    "Gonzaga WeRo (Kaelyn Wellman - Everett Roe)": 31,
+    "Gonzaga WeWe (Dashiell Weinhardt - Kaelyn Wellman)": 10
   },
   "Harvard": {
-    "Harvard AoBo (Seiji Aoki - Jayden Bodet)": 0,
-    "Harvard AoLe (Seiji Aoki - Jamie Levitan)": 0,
-    "Harvard BoSh (Jayden Bodet - Payton Shen)": 0,
-    "Harvard ChSa (Dora Chen - Mirei Saneyoshi)": 0,
-    "Harvard DeSr (Niranjan Deshpande - Agastya Sridharan)": 0,
-    "Harvard FaKu (Zackhery Facey - Kimtee Kundu)": 0,
-    "Harvard JiSy (Andrew Jin - Michi Synn)": 0,
-    "Harvard SyLo (Michi Synn - Ashley Lourenco)": 0
+    "Harvard AoBo (Seiji Aoki - Jayden Bodet)": 33,
+    "Harvard AoLe (Seiji Aoki - Jamie Levitan)": 2,
+    "Harvard BoSh (Jayden Bodet - Payton Shen)": 1,
+    "Harvard ChSa (Dora Chen - Mirei Saneyoshi)": 24,
+    "Harvard DeSr (Niranjan Deshpande - Agastya Sridharan)": 56,
+    "Harvard FaKu (Zackhery Facey - Kimtee Kundu)": 4,
+    "Harvard JiSy (Andrew Jin - Michi Synn)": 17,
+    "Harvard SyLo (Michi Synn - Ashley Lourenco)": 15
   },
   "Houston": {
     "Houston FeDo (Aaron Fernandez - Hector Doratt)": 16,
@@ -297,34 +297,50 @@
   "Marian": {
     "Marian Novices": 0,
     "Marian HaRi (Tayjah Harper - Armoni Richardson)": 0,
-    "Marian HiHa (Aaron Hill - Tayjah Harper)": 0,
-    "Marian HiRi (Aaron Hill - Armoni Richardson)": 0,
-    "Marian MuRi (Evyn Muckerheide - Armoni Richardson)": 0
+    "Marian HiHa (Aaron Hill - Tayjah Harper)": 1,
+    "Marian HiRi (Aaron Hill - Armoni Richardson)": 1,
+    "Marian MuRi (Evyn Muckerheide - Armoni Richardson)": 2
   },
   "Massachusetts Amherst": {
     "Massachusetts Amherst LeMo (Jamie Levitan - Maguene Moussavou)": 4
   },
   "Miami": {
-    "Miami Novices": 0
+    "Miami Novices": 2
   },
   "Miami OH": {
     "Miami OH FeGo (Nathalie Fellows - Adam Goe)": 0
   },
   "Michigan": {
-    "Michigan BaLe (Mira Baba - Gianna Ledesma)": 0,
-    "Michigan BaPa (Eleanor Barrett - Jiyoon Park)": 0,
-    "Michigan ChCh (Jerry Chen - Gautam Chamarthy)": 0,
-    "Michigan ChSa (Sebastian Cho - Ben Saudek)": 0,
-    "Michigan ChSh (Gautam Chamarthy - Conner Shih)": 0,
-    "Michigan EsSh (Cyrus Esmailzadeh - Rishi Shetty)": 0,
-    "Michigan HeCo (Emilio Hernandez - Christopher Cotrutsa)": 0,
-    "Michigan HwMc (Calvin Hwang - Ian McIlhenny)": 0,
-    "Michigan JoGa (John Joyce - Alexis Garvey)": 0,
-    "Michigan MaDi (Atharva Makode - Jessica Ding)": 0,
-    "Michigan MoAl (Ava Moon - Ava Almand)": 0,
-    "Michigan OuAg (Robert Ou - William Agustin)": 0,
-    "Michigan OuJo (Robert Ou - John Joyce)": 0,
-    "Michigan ShSh (Avi Shah - Conner Shih)": 0
+    "Michigan BaEs (Eleanor Barrett - Cyrus Esmailzadeh)": 10,
+    "Michigan BaLe (Mira Baba - Gianna Ledesma)": 44,
+    "Michigan BaPa (Eleanor Barrett - Jiyoon Park)": 89,
+    "Michigan ChCh (Jerry Chen - Gautam Chamarthy)": 39,
+    "Michigan ChSa (Sebastian Cho - Ben Saudek)": 23,
+    "Michigan ChSh (Gautam Chamarthy - Conner Shih)": 1,
+    "Michigan EsSh (Cyrus Esmailzadeh - Rishi Shetty)": 61,
+    "Michigan HeCo (Emilio Hernandez - Christopher Cotrutsa)": 9,
+    "Michigan HwMc (Calvin Hwang - Ian McIlhenny)": 10,
+    "Michigan JoGa (John Joyce - Alexis Garvey)": 13,
+    "Michigan MaDi (Atharva Makode - Jessica Ding)": 25,
+    "Michigan MoAl (Ava Moon - Ava Almand)": 25,
+    "Michigan OuAg (Robert Ou - William Agustin)": 71,
+    "Michigan OuJo (Robert Ou - John Joyce)": 7,
+    "Michigan ShSh (Avi Shah - Conner Shih)": 72,
+    "Michigan ShSh1 (Avi Shah - Rishi Shetty)": 8
+  },
+  "Michigan State": {
+    "Michigan State Asst (Eleazar Asase - will sterbenc)": 24,
+    "Michigan State FoMa (Isabella Foster - Henry Martin)": 80,
+    "Michigan State GeSh (Arielle Gearring - Hina Shehzad)": 64,
+    "Michigan State GuLe (Joanna Gusis - Stephen Lewis)": 83,
+    "Michigan State JaSc (Zaria Jarman - Glen Scully)": 57
+  },
+  "Minnesota": {
+    "Minnesota BrMu (Abby Brown - Teddy Munson)": 4,
+    "Minnesota HaUs (Benjy Haber-Fawcett - Timur Usenov)": 66,
+    "Minnesota HeKa (Jack Herzer - Vaughn Kathner)": 3,
+    "Minnesota KaBr (Vaughn Kathner - Abigail Brown)": 6,
+    "Minnesota WeMu (Kacee Wells - Teddy Munson)": 11
   },
   "Missouri State": {
     "Missouri State BaDe (Avery Bates - Levi DeAngelis)": 30,
@@ -456,21 +472,20 @@
     "Southern California BhRa (Anish Bhadani - Rayeed Rahman)": 38,
     "Southern California BhZh (Nina Bhuket - Iris Zhang)": 2,
     "Southern California BrBh (Clare Bradley - Anish Bhadani)": 0,
-    "Southern California BrMa (Clare Bradley - Sarah Martin)": 0,
-    "Southern California TrMi (Madison Troup - Jackson Mills)": 0,
-    "Southern California VeHu (Janet Vega - Alliana Sherie Huerto)": 0,
-    "Southern California WoRu (Max Wong - Shea Rueda)": 0,
-    "Southern California saHu (aumrita savdharia - Alliana Sherie Huerto)": 0
+    "Southern California BrMa (Clare Bradley - Sarah Martin)": 40,
+    "Southern California TrMi (Madison Troup - Jackson Mills)": 38,
+    "Southern California VeHu (Janet Vega - Alliana Sherie Huerto)": 14,
+    "Southern California WoRu (Max Wong - Shea Rueda)": 6,
+    "Southern California saHu (aumrita savdharia - Alliana Sherie Huerto)": 2
   },
   "Southern Nazarene": {
-    "Southern Nazarene BoGo (Christian Booth - Lexi Goossens)": 0,
-    "Southern Nazarene CrDo (Thomas Cruzan - Deryk Doherty)": 0,
-    "Southern Nazarene CrHo (Thomas Cruzan - Ian Horton)": 0,
-    "Southern Nazarene HoSt (Ian Horton - Katherine Stockstill)": 0,
-    "Southern Nazarene JeLu (Sophia Jennings - Tanner Luce)": 0,
-    "Southern Nazarene LaTa (Archie Lard - Aubrie Talamasy)": 0,
-    "Southern Nazarene LuDo (Tanner Luce - Deryk Doherty)": 0,
-    "Southern Nazarene StJe (Katherine Stockstill - Sophia Jennings)": 0
+    "Southern Nazarene BoGo (Christian Booth - Lexi Goossens)": 5,
+    "Southern Nazarene CrDo (Thomas Cruzan - Deryk Doherty)": 3,
+    "Southern Nazarene CrHo (Thomas Cruzan - Ian Horton)": 9,
+    "Southern Nazarene HoSt (Ian Horton - Katherine Stockstill)": 32,
+    "Southern Nazarene JeLu (Sophia Jennings - Tanner Luce)": 5,
+    "Southern Nazarene LuDo (Tanner Luce - Deryk Doherty)": 2,
+    "Southern Nazarene StJe (Katherine Stockstill - Sophia Jennings)": 13
   },
   "Stanford": {
     "Stanford LaLa (Kevin Lai - Devin Lai)": 23,
@@ -607,31 +622,15 @@
     "Western Kentucky StSh (Joshua St Peter - Chase Shockley)": 4
   },
   "Wichita State": {
-    "Wichita State GrMo (Marianne Griffith - Miguel Molina Chavez)": 0
+    "Wichita State GrMo (Marianne Griffith - Miguel Molina Chavez)": 69
   },
   "Wyoming": {
-    "Wyoming CaHa (Jaden Campbell - Jeremiah Hawley)": 0,
-    "Wyoming LyHe (Brayden Lyday - Aiden Hedrick)": 0,
-    "Wyoming LyWi (Brayden Lyday - Rosalie Willson)": 0,
-    "Wyoming PiHe (Adam Pierson - Aiden Hedrick)": 0,
-    "Wyoming WiMo (Rosalie Willson - Hayvn Morrison)": 0,
-    "Wyoming WiPi (Rosalie Willson - Adam Pierson)": 0,
-    "Wyoming WiWi (Saimaa Widi - Jean-Luc Willson)": 0
-  },
-  "Recently Modified": {
-    "Binghamton BrHa - 4 - Gotham Round 2 Aff vs Houston MS": 26,
-    "Purdue HaHa - 3---Indiana Round 5 Neg vs Indiana FT": 13,
-    "CSU Long Beach OrMe - 09 - NDT 26 (80th National Debate Tournament) Finals Aff vs Emory GS": 104,
-    "George Mason ReSh - 08---CEDA Triples Neg vs idk idgaf": 45,
-    "NYU JaTh - 55th Annual JW Patterson Debates hosted by UK Round 1 Aff vs Northwestern NP": 71,
-    "Binghamton BrMc - 5-JV/Novice Nats Round 6 Neg vs Wake LS": 38,
-    "Houston IbFe - 05---NDT Round 6 Aff vs MSU FM": 52,
-    "Iowa WeEl - 04 --- FR Shirley and ADA Fall Champions at WFU Doubles Neg vs Texas LF": 47,
-    "Georgetown AgCo - 10 - NDT Round 5 Aff vs Emory GS": 98,
-    "Northwestern NePa - 5---CEDA Quarters Aff vs Kansas HS": 44,
-    "North Texas BoVa - 6 -- NDT Round 1 Aff vs Macalester HK": 57,
-    "Iowa PaAn - Rutgers University Newark Brick City Round Robin Round 4 Neg vs Emory YR": 84
-  },
-  "Bulk Downloads": {},
-  "Amherst College": {}
+    "Wyoming CaHa (Jaden Campbell - Jeremiah Hawley)": 69,
+    "Wyoming LyHe (Brayden Lyday - Aiden Hedrick)": 19,
+    "Wyoming LyWi (Brayden Lyday - Rosalie Willson)": 5,
+    "Wyoming PiHe (Adam Pierson - Aiden Hedrick)": 14,
+    "Wyoming WiMo (Rosalie Willson - Hayvn Morrison)": 7,
+    "Wyoming WiPi (Rosalie Willson - Adam Pierson)": 17,
+    "Wyoming WiWi (Saimaa Widi - Jean-Luc Willson)": 75
+  }
 }

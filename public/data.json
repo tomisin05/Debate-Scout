@@ -2743,7 +2743,7 @@
     "side": "Aff",
     "opponent": "Houston MS",
     "judge": "Brad Hodgkins",
-    "roundReport": "1AC - **New** Council Democracy 1NC - T-CBR, Fiat K, Cap K 2NR - Fiat K, Cap K 2AR - Condo + All",
+    "roundReport": "1AC - **New** Council Democracy 1NC - T-CBR, Fiat K, Cap K 2NR - Fiat K, Cap K 2AR - Dish",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FBinghamton%2FBrHa%2FBinghamton-BrHa-Aff-4---Gotham-Round-2.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Binghamton/BrHa/Binghamton-BrHa-Aff-4---Gotham-Round-2.docx"
   },
@@ -6862,6 +6862,18 @@
     "roundReport": "1AC - De-Idealize Transness 1NC - Afropessimism K, Case 2NR - Afropessimism K (link to round below!) ggs",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FCSULongBeach%2FOrMe%2FCSULongBeach-OrMe-Neg-10---The-People%27s-Tournament-(CEDA-Nationals-at-Binghamton-University)-Semis.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/CSULongBeach/OrMe/CSULongBeach-OrMe-Neg-10---The-People's-Tournament-(CEDA-Nationals-at-Binghamton-University)-Semis.docx"
+  },
+  {
+    "school": "CSU Long Beach",
+    "team": "CSU Long Beach OrMe (Curtis Ortega - Daniel Medina)",
+    "tournament": "11 - The End.",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "Time.",
+    "judge": "Clock.",
+    "roundReport": "Thanks to everyone for an amazing debate career! - Curtis",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FCSULongBeach%2FOrMe%2FCSULongBeach-OrMe-Aff-11---The-End.-All-Rounds.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/CSULongBeach/OrMe/CSULongBeach-OrMe-Aff-11---The-End.-All-Rounds.docx"
   },
   {
     "school": "CSU Northridge",
@@ -94755,7 +94767,7 @@
     "school": "UTSA",
     "team": "UTSA CaGa (Iliana Carrillo - Emilio Garza)",
     "tournament": "9. - CEDA!!",
-    "round": "Quarters",
+    "round": "Octas",
     "side": "Neg",
     "opponent": "Kansas HS",
     "judge": "Vincent H. Li, Jasysn Green, Kenney Delph, Tajaih Robinson, Trevor Reddick",
