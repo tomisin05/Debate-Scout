@@ -4526,6 +4526,18 @@
   {
     "school": "CSU Fullerton",
     "team": "CSU Fullerton CaDo (Samantha Catapang - Israel Dominguez)",
+    "tournament": "(C)E(D)A",
+    "round": "All",
+    "side": "Aff",
+    "opponent": "All of Yall!",
+    "judge": "James P.Sulivan (The Goat)",
+    "roundReport": "Hey Everyone! Thank you for another amazing year. And thank you to everyone at CEDA with whom we had the pleasure of debating. Already told most teams we hit, but if y'all are running migrant arguments. Thank you for doing your part, and even more so in spaces like debate. Peeps like y'all make this a better space! I hope to meet you all more next year and thank you once again! ps heres the Aff :p Sorry for the late upload",
+    "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FCSUFullerton%2FCaDo%2FCSUFullerton-CaDo-Aff-(C)E(D)A-All-Rounds.docx",
+    "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/CSUFullerton/CaDo/CSUFullerton-CaDo-Aff-(C)E(D)A-All-Rounds.docx"
+  },
+  {
+    "school": "CSU Fullerton",
+    "team": "CSU Fullerton CaDo (Samantha Catapang - Israel Dominguez)",
     "tournament": "00. contacts",
     "round": "All",
     "side": "Aff",
@@ -6679,7 +6691,7 @@
     "side": "Aff",
     "opponent": "Emory GS",
     "judge": "Matt Conway, Dimarvin Puerto, Nathan Rothenbaum, Kumail Zaidi, Julian Kuffour",
-    "roundReport": "1AC - Prayer 1NC - Psychoanalysis K, T-USFG, Failure K, Case 2NR - Case, Psychoanalysis K, Failure K, T-USFG 2AR - Ethics Condo (link to round below, congrats Emory!)",
+    "roundReport": "1AC - Prayer 1NC - Psychoanalysis K, T-USFG, Failure K, Case 2NR - Case, Psychoanalysis K, Failure K, T-USFG 2AR - Ethics of Conditionality (link to round below, congrats Emory!)",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FCSULongBeach%2FOrMe%2FCSULongBeach-OrMe-Aff-09---NDT-26-(80th-National-Debate-Tournament)-Finals.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/CSULongBeach/OrMe/CSULongBeach-OrMe-Aff-09---NDT-26-(80th-National-Debate-Tournament)-Finals.docx"
   },
@@ -6751,7 +6763,7 @@
     "side": "Neg",
     "opponent": "Binghamton CK",
     "judge": "Vontrez White",
-    "roundReport": "1AC - Moon 1NC - Afropessimism K, Case 2NR - Afropessimism K",
+    "roundReport": "1AC - Moon 1NC - Afropessimism K 2NR - Afropessimism K",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FCSULongBeach%2FOrMe%2FCSULongBeach-OrMe-Neg-10---The-People%27s-Tournament-(CEDA-Nationals-at-Binghamton-University)-Round-3.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/CSULongBeach/OrMe/CSULongBeach-OrMe-Neg-10---The-People's-Tournament-(CEDA-Nationals-at-Binghamton-University)-Round-3.docx"
   },
@@ -6858,8 +6870,8 @@
     "round": "Semis",
     "side": "Neg",
     "opponent": "Iowa AP",
-    "judge": "Azja Butler, EC Powers, Scott Harris, Nicholas Tilmes, Will Baker",
-    "roundReport": "1AC - De-Idealize Transness 1NC - Afropessimism K, Case 2NR - Afropessimism K (link to round below!) ggs",
+    "judge": "Azja Butler, EC Powers, Scott Harris, Nicholas Tilmes, Willy B (Will Baker)",
+    "roundReport": "1AC - De-Idealize Transness 1NC - Afropessimism K, Case 2NR - Afropessimism K (link to round below!) 2-3 segregation split ggs",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FCSULongBeach%2FOrMe%2FCSULongBeach-OrMe-Neg-10---The-People%27s-Tournament-(CEDA-Nationals-at-Binghamton-University)-Semis.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/CSULongBeach/OrMe/CSULongBeach-OrMe-Neg-10---The-People's-Tournament-(CEDA-Nationals-at-Binghamton-University)-Semis.docx"
   },
@@ -31231,7 +31243,7 @@
     "side": "Aff",
     "opponent": "Northwestern LW",
     "judge": "Ned Gidley",
-    "roundReport": "1AC Domestic Bargaining 1NC States CP, ACA DA, T-Subsets, Courts CP, Ban Unions CP, Movements DA 2NR Courts CP, ACA DA",
+    "roundReport": "1AC Domestic Bargaining 1NC States CP ACA DA T-Subsets Courts CP Unions CP Movements DA 2NR Courts CP ACA DA",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Aff-1-----Texas-Round-1.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Aff-1-----Texas-Round-1.docx"
   },
@@ -31243,7 +31255,7 @@
     "side": "Neg",
     "opponent": "Kansas HF",
     "judge": "Tyler Snelling",
-    "roundReport": "1AC Being Messy 1NC Framework, Cap K 2NR Phillips Case Turn",
+    "roundReport": "1AC Being Messy 1NC Topicality Cap K Phillips Turn 2NR Phillips Turn",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Neg-1-----Texas-Round-2.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Neg-1-----Texas-Round-2.docx"
   },
@@ -31255,7 +31267,7 @@
     "side": "Neg",
     "opponent": "NYU JT",
     "judge": "Michael Swidecki",
-    "roundReport": "1AC Title VII 1NC Cap K, Impeachment CP, T-CBR, Democracy Bad 2NR Impeachment CP, Democracy Bad",
+    "roundReport": "1AC Title VII 1NC Cap K Impeachment CP T-CBR Democracy Bad 2NR Impeachment CP Democracy Bad",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Neg-1-----Texas-Round-3.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Neg-1-----Texas-Round-3.docx"
   },
@@ -31267,7 +31279,7 @@
     "side": "Aff",
     "opponent": "Kansas State DS",
     "judge": "Jaysyn Green",
-    "roundReport": "1AC Domestic Bargaining 1NC Rights K, Setcol K 2NR Setcol K",
+    "roundReport": "1AC Domestic Bargaining 1NC Rights K Setcol K 2NR Setcol K",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Aff-1-----Texas-Round-4.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Aff-1-----Texas-Round-4.docx"
   },
@@ -31279,7 +31291,7 @@
     "side": "Neg",
     "opponent": "Georgia CP",
     "judge": "Manny Navarrete",
-    "roundReport": "1AC Federal Workers 1NC Cap K, Impeachment CP, Democracy Bad 2NR Cap K",
+    "roundReport": "1AC Federal Workers 1NC Cap K Impeachment CP Democracy Bad 2NR Cap K",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Neg-1-----Texas-Round-5.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Neg-1-----Texas-Round-5.docx"
   },
@@ -31291,7 +31303,7 @@
     "side": "Aff",
     "opponent": "Southern Nazarene HS",
     "judge": "Akif Choudhury",
-    "roundReport": "1AC Domestic Bargaining 1NC T-Preexisting, T-80%, Midterms DA, State JG CP, Econ DA 2NR State JG CP, Econ DA 2AR Dedev",
+    "roundReport": "1AC Domestic Bargaining 1NC T-Preexisting T-80% Midterms DA State JG CP Econ DA 2NR State JG CP Econ DA 2AR Dedev",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Aff-1-----Texas-Round-6.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Aff-1-----Texas-Round-6.docx"
   },
@@ -31303,7 +31315,7 @@
     "side": "Neg",
     "opponent": "Emory KW",
     "judge": "Parker Hopkins",
-    "roundReport": "1AC Federal Workers 1NC Cap K, Bureaucracy Bad, Democracy Bad 2NR Cap K",
+    "roundReport": "1AC Federal Workers 1NC Cap K Bureaucracy Bad Democracy Bad 2NR Cap K",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Neg-1-----Texas-Round-7.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Neg-1-----Texas-Round-7.docx"
   },
@@ -31315,7 +31327,7 @@
     "side": "Aff",
     "opponent": "Wyoming HP",
     "judge": "Alex Sherman",
-    "roundReport": "1AC Domestic Bargaining 1NC Empire K, Cap K 2NR Cap K",
+    "roundReport": "1AC Domestic Bargaining 1NC Empire K Cap K 2NR Cap K",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Aff-1-----Texas-Round-8.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Aff-1-----Texas-Round-8.docx"
   },
@@ -31327,7 +31339,7 @@
     "side": "Aff",
     "opponent": "North Texas BV",
     "judge": "Dustyn Beutelspacher",
-    "roundReport": "1AC Domestic Bargaining 1NC Border Capitalism K 2NR Border Capitalism K",
+    "roundReport": "1AC Domestic Bargaining 1NC Border Imperialism K 2NR Border Imperialism K",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Aff-2-----D3-Round-1.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Aff-2-----D3-Round-1.docx"
   },
@@ -31339,7 +31351,7 @@
     "side": "Neg",
     "opponent": "Southern Nazarene HS",
     "judge": "Ian Dill",
-    "roundReport": "1AC Gig Workers 1NC T-Strengthen, Cap K, UCF CP, T-Workers, Democracy Bad 2NR UCF CP",
+    "roundReport": "1AC Gig Workers 1NC T-Strengthen Cap K UCF CP T-Workers Democracy Bad 2NR UCF CP",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Neg-2-----D3-Round-2.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Neg-2-----D3-Round-2.docx"
   },
@@ -31351,7 +31363,7 @@
     "side": "Aff",
     "opponent": "UTD PR",
     "judge": "Alex Barreto",
-    "roundReport": "1AC Domestic Bargaining 1NC T-Subsets, Rates DA, T-Strengthen, Midterms DA, State Labor Law DA, Trade CP 2NR Trade CP",
+    "roundReport": "1AC Domestic Bargaining 1NC T-Subsets Rates DA T-Strengthen Midterms DA State Labor Law DA Trade CP 2NR Trade CP",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Aff-2-----D3-Round-3.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Aff-2-----D3-Round-3.docx"
   },
@@ -31363,7 +31375,7 @@
     "side": "Neg",
     "opponent": "UTD DD",
     "judge": "Bobby Phillips",
-    "roundReport": "1AC Dissemblance 1NC Framework, Cap K, Academy K 2NR Cap K",
+    "roundReport": "1AC Dissemblance 1NC Topicality Cap K Academy K 2NR Cap K",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Neg-2-----D3-Round-4.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Neg-2-----D3-Round-4.docx"
   },
@@ -31375,7 +31387,7 @@
     "side": "Aff",
     "opponent": "Kansas State DR",
     "judge": "Irshad Reza Husain",
-    "roundReport": "1AC Domestic Bargaining 1NC T-Subsets, Disability K, Cap K 2NR Cap K",
+    "roundReport": "1AC Domestic Bargaining 1NC T-Subsets Disability K Cap K 2NR Cap K",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Aff-2-----D3-Round-5.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Aff-2-----D3-Round-5.docx"
   },
@@ -31387,7 +31399,7 @@
     "side": "Neg",
     "opponent": "Baylor BK",
     "judge": "Alex McVey",
-    "roundReport": "1AC Black Freedom Dreams 1NC Framework, Cap K 2NR Cap K",
+    "roundReport": "1AC Black Freedom Dreams 1NC Topicality Cap K 2NR Cap K",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Neg-2-----D3-Round-6.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Neg-2-----D3-Round-6.docx"
   },
@@ -31399,7 +31411,7 @@
     "side": "Aff",
     "opponent": "Wichita State GM",
     "judge": "Sam Gustavson",
-    "roundReport": "1AC Domestic Bargaining 1NC T-Subsets, T-50%, Disability K, Migrants K, States CP 2NR States CP",
+    "roundReport": "1AC Domestic Bargaining 1NC T-Subsets T-50% Disability K Migrants K States CP 2NR States CP",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Aff-2-----D3-Round-7.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Aff-2-----D3-Round-7.docx"
   },
@@ -31411,7 +31423,7 @@
     "side": "Neg",
     "opponent": "Baylor PM",
     "judge": "Solomon Watson",
-    "roundReport": "1AC Independent Contractors 1NC T-Strengthen, Cap K, UCF CP, T-Subsets, Warming Good 2NR T-Strengthen",
+    "roundReport": "1AC Independent Contractors 1NC T-Strengthen Cap K UCF CP T-Subsets Warming Good 2NR T-Strengthen",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Neg-2-----D3-Round-8.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Neg-2-----D3-Round-8.docx"
   },
@@ -31423,7 +31435,7 @@
     "side": "Aff",
     "opponent": "Southern California RB",
     "judge": "Ian Dill, Anthony Trufanov, Kaine Cherry",
-    "roundReport": "1AC Domestic Bargaining 1NC T-Subsets, CLS K, Adv CP, Lochner DA, Preemption CP 2NR CLS K",
+    "roundReport": "1AC Domestic Bargaining 1NC T-Subsets CLS K Adv CP Lochner DA Preemption CP 2NR CLS K",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Aff-3-----NDT-Round-1.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Aff-3-----NDT-Round-1.docx"
   },
@@ -31435,7 +31447,7 @@
     "side": "Neg",
     "opponent": "Missouri State NS",
     "judge": "Joe Patrice, DavidMichael Woodward, Jordan Di",
-    "roundReport": "1AC Finance 1NC Cap K, T-Subsets, ASPEC, UCF CP, Rights Spec, Signing Statements CP, Dedev 2NR Dedev",
+    "roundReport": "1AC Finance 1NC Cap K T-Subsets ASPEC UCF CP P-Vagueness Signing Statements CP Dedev 2NR Dedev",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Neg-3-----NDT-Round-2.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Neg-3-----NDT-Round-2.docx"
   },
@@ -31447,7 +31459,7 @@
     "side": "Aff",
     "opponent": "Kansas State DS",
     "judge": "Holden Bukowsky, Niko Sims, Lincoln Garrett",
-    "roundReport": "1AC Domestic Bargaining 1NC Rights K, Setcol K 2NR Rights K",
+    "roundReport": "1AC Domestic Bargaining 1NC Rights K Setcol K 2NR Rights K",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Aff-3-----NDT-Round-3.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Aff-3-----NDT-Round-3.docx"
   },
@@ -31459,7 +31471,7 @@
     "side": "Neg",
     "opponent": "Georgia CK",
     "judge": "William Jensen, Dawn Pierce, Kumail Zaidi",
-    "roundReport": "1AC Negotiation 1NC Cap K, Framework 2NR Framework",
+    "roundReport": "1AC Negotiation 1NC Cap K Topicality 2NR Topicality",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Neg-3-----NDT-Round-4.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Neg-3-----NDT-Round-4.docx"
   },
@@ -31471,7 +31483,7 @@
     "side": "Neg",
     "opponent": "Gonzaga WW",
     "judge": "Brendon Bankey, Jack Moore, Alaina Walberg",
-    "roundReport": "1AC Metabolic Labor 1NC T-Workers, T-Strengthen, T-CBR, T-Subsets, ASPEC, UCF CP, Rights Spec, ASI PIC, Cap Good 2NR UCF CP",
+    "roundReport": "1AC Metabolic Labor 1NC T-Workers T-Strengthen T-CBR T-Subsets ASPEC UCF CP P-Vagueness AGI PIC Cap Good 2NR UCF CP",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Neg-3-----NDT-Round-5.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Neg-3-----NDT-Round-5.docx"
   },
@@ -31483,7 +31495,7 @@
     "side": "Aff",
     "opponent": "James Madison KP",
     "judge": "Adrian Sendejas, Jazmine Pickens, Daniel Christ",
-    "roundReport": "1AC Domestic Bargaining 1NC Curbing DA, T-Subsets, UCF CP, Midterms DA 2NR T-Subsets",
+    "roundReport": "1AC Domestic Bargaining 1NC Curbing DA T-Subsets UCF CP Midterms DA 2NR T-Subsets",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Aff-3-----NDT-Round-6.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Aff-3-----NDT-Round-6.docx"
   },
@@ -31495,7 +31507,7 @@
     "side": "Aff",
     "opponent": "Navy LS",
     "judge": "Nathan Fleming, Ec Powers, Armands Revelins",
-    "roundReport": "1AC Domestic Bargaining 1NC T-Strengthen, States CP, AFL CP, Midterms DA 2NR Midterms DA 2AR Animal Wipeout",
+    "roundReport": "1AC Domestic Bargaining 1NC T-Strengthen States CP AFL CP Midterms DA 2NR Midterms DA 2AR Wipeout!",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Aff-3-----NDT-Round-7.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Aff-3-----NDT-Round-7.docx"
   },
@@ -31507,7 +31519,7 @@
     "side": "Neg",
     "opponent": "James Madison OM",
     "judge": "Ryan Cavanaugh, Tajaih Robinson, Jeff Nagel",
-    "roundReport": "1AC Complaint 1NC Framework, Cap K 2NR Framework",
+    "roundReport": "1AC Complaint 1NC Topicality Cap K 2NR Topicality",
     "previewUrl": "https://opencaselist.com/preview?path=ndtceda25%2FHouston%2FHeMa%2FHouston-HeMa-Neg-3-----NDT-Round-8.docx",
     "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda25/Houston/HeMa/Houston-HeMa-Neg-3-----NDT-Round-8.docx"
   },
