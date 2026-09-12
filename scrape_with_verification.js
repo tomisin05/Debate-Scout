@@ -1,17 +1,22 @@
 import puppeteer from 'puppeteer';
 import fs from 'fs';
 
+const YEAR_SLUG = 'ndtceda26';
+const DATA_FILE = `data_${YEAR_SLUG}.json`;
+const ROUND_COUNT_FILE = `round_count_map_${YEAR_SLUG}.json`;
+const ERRORS_FILE = `scrape_errors_${YEAR_SLUG}.json`;
+
 const schools = [
     'Arizona State', 'Baylor', 'Binghamton', 'Boston College', 'Central Oklahoma', 'Columbia', 'Cornell',
-    'CSU Fullerton', 'CSU Long Beach', 'CSU Northridge', 'Dartmouth College',
+    'CSU Fullerton', 'CSU Long Beach', 'CSU Northridge', 'Dartmouth',
     'Emory', 'Fairmont State', 'George Mason', 'Georgetown', 'Georgia', 'Gonzaga',
     'Harvard', 'Houston', 'Indiana', 'Iowa', 'James Madison',
-    'Johnson County Community College', 'Kansas', 'Kansas State', 'Kentucky', 'Liberty', 'Macalester College', 'Marian', 'Massachusetts Amherst', 'Miami', 'Miami OH',
+    'Johnson County Community College', 'Kansas', 'Kansas State', 'Kentucky', 'Lewis and Clark', 'Liberty', 'Macalester College', 'Marian', 'Massachusetts Amherst', 'Miami', 'Miami OH',
     'Michigan', 'Michigan State', 'Minnesota', 'Missouri State', 'Monmouth', 'Navy', 'New Mexico',
-    'New School', 'North Texas', 'Northern Iowa', 'Northwestern', 'NYU', 'Ohio State', 'Oklahoma',
+    'New School', 'North Texas', 'Northern Iowa', 'Northwestern', 'NSH', 'NYU', 'Ohio State', 'Oklahoma',
     'Purdue', 'Rochester', 'Samford', 'Southern California', 'Southern Nazarene',
-    'Stanford', 'Suffolk', 'Texas', 'Texas AM', 'Towson', 'Trinity', 'UC Berkeley', 'UC Davis',
-    'Utah', 'UTD', 'UTSA', 'Wake Forest',
+    'Stanford', 'Suffolk', 'Texas', 'Texas AM', 'Towson', 'Trinity', 'UC Berkeley', 'UC Davis', 'UMass Amherst', 'UT San Antonio',
+    'Utah', 'UTD', 'UTSA', 'Wake Forest', 'Washburn',
     'West Georgia', 'West Point', 'Western Kentucky', 'Wichita State', 'Wyoming'
 ];
 
@@ -29,10 +34,10 @@ async function retryNullTeams(username, password) {
     
     let roundCountMap = {};
     try {
-        const data = fs.readFileSync('round_count_map.json', 'utf8');
+        const data = fs.readFileSync(ROUND_COUNT_FILE, 'utf8');
         roundCountMap = JSON.parse(data);
     } catch (error) {
-        console.error('Could not load round_count_map.json:', error.message);
+        console.error(`Could not load ${ROUND_COUNT_FILE}:`, error.message);
         return;
     }
 
@@ -56,7 +61,7 @@ async function retryNullTeams(username, password) {
             if (!roundCountMap[school]) continue;
             
             const schoolUrlName = school.replace(/\s+/g, '').replace(/-/g, '');
-            const schoolUrl = `https://opencaselist.com/ndtceda25/${schoolUrlName}`;
+            const schoolUrl = `https://opencaselist.com/${YEAR_SLUG}/${schoolUrlName}`;
             
             await page.goto(schoolUrl, { waitUntil: 'networkidle2' });
             await sleep(6000);
@@ -163,7 +168,7 @@ async function retryNullTeams(username, password) {
         }
 
         await browser.close();
-        saveProgress(roundCountMap, 'round_count_map.json');
+        saveProgress(roundCountMap, ROUND_COUNT_FILE);
         console.log('Retry completed\n');
 
     } catch (error) {
@@ -202,7 +207,7 @@ async function createRoundCountMap(username, password) {
                     
                     // Navigate directly to school page
                     const schoolUrlName = school.replace(/\s+/g, '').replace(/-/g, '');
-                    const schoolUrl = `https://opencaselist.com/ndtceda25/${schoolUrlName}`;
+                    const schoolUrl = `https://opencaselist.com/${YEAR_SLUG}/${schoolUrlName}`;
                     
                     await page.goto(schoolUrl, { waitUntil: 'networkidle2' });
                     await sleep(2000);
@@ -210,7 +215,7 @@ async function createRoundCountMap(username, password) {
                     // Check if page is empty and reload if needed
                     const isEmpty = await page.evaluate(() => {
                         const bodyText = document.body.innerText;
-                        return bodyText.includes('2025-2026') && bodyText.includes('2024-2025') && !bodyText.includes('Team');
+                        return !bodyText.includes('Team');
                     });
                     
                     if (isEmpty) {
@@ -304,14 +309,14 @@ async function createRoundCountMap(username, password) {
 
             // Wait 2 minutes between batches
             if (batchIndex + 5 < schools.length) {
-                console.log(`\n⏳ Waiting 5 minute before next batch...`);
-                await sleep(5 * 60 * 1000);
+                console.log(`\n⏳ Waiting 1 minute before next batch...`);
+                await sleep(1 * 60 * 1000);
             }
         }
 
         await browser.close();
-        saveProgress(roundCountMap, 'round_count_map.json');
-        console.log('\nRound count map saved to round_count_map.json');
+        saveProgress(roundCountMap, ROUND_COUNT_FILE);
+        console.log(`\nRound count map saved to ${ROUND_COUNT_FILE}`);
         return roundCountMap;
         
     } catch (error) {
@@ -351,7 +356,7 @@ async function scrapeWithVerification(username, password, roundCountMap) {
                     await page.click('button[type="submit"]');
                     await sleep(3000);
 
-                    await page.goto('https://opencaselist.com/ndtceda25', { waitUntil: 'networkidle2' });
+                    await page.goto(`https://opencaselist.com/${YEAR_SLUG}`, { waitUntil: 'networkidle2' });
                     await sleep(3000);
 
                     const schoolFound = await page.evaluate((schoolName) => {
@@ -522,7 +527,7 @@ async function scrapeWithVerification(username, password, roundCountMap) {
                         await sleep(500);
                     }
 
-                    saveProgress(allRounds, 'data.json');
+                    saveProgress(allRounds, DATA_FILE);
                     console.log(`  Progress saved: ${allRounds.length} total rounds`);
 
                     await page.close();
@@ -535,30 +540,34 @@ async function scrapeWithVerification(username, password, roundCountMap) {
             }
 
             if (batchIndex + BATCH_SIZE < schools.length) {
-                console.log(`\n⏳ Waiting 5 minutes before next batch...`);
-                await sleep(5 * 60 * 1000);
+                console.log(`\n⏳ Waiting 1 minute before next batch...`);
+                await sleep(1 * 60 * 1000);
             }
         }
 
         await browser.close();
 
         if (errors.length > 0) {
-            fs.writeFileSync('scrape_errors.json', JSON.stringify(errors, null, 2));
-            console.log(`\n${errors.length} errors logged to scrape_errors.json`);
+            fs.writeFileSync(ERRORS_FILE, JSON.stringify(errors, null, 2));
+            console.log(`\n${errors.length} errors logged to ${ERRORS_FILE}`);
         }
 
         return allRounds;
     } catch (error) {
         if (browser) await browser.close();
-        saveProgress(allRounds, 'data.json');
+        saveProgress(allRounds, DATA_FILE);
         console.log(`\nFatal error. Saved ${allRounds.length} rounds before crash.`);
         throw error;
     }
 }
 
 async function main() {
-    const username = process.env.OPENCASELIST_USERNAME || 'tyur55357@gmail.com';
-    const password = process.env.OPENCASELIST_PASSWORD || 'Debate-Scrapper';
+    const username = process.env.OPENCASELIST_USERNAME;
+    const password = process.env.OPENCASELIST_PASSWORD;
+
+    if (!username || !password) {
+        throw new Error('Set OPENCASELIST_USERNAME and OPENCASELIST_PASSWORD before running the scraper.');
+    }
 
     try {
         // Phase 1: Create round count map
@@ -568,12 +577,12 @@ async function main() {
         await retryNullTeams(username, password);
         
         // Reload updated map
-        const updatedMap = JSON.parse(fs.readFileSync('round_count_map.json', 'utf8'));
+        const updatedMap = JSON.parse(fs.readFileSync(ROUND_COUNT_FILE, 'utf8'));
         
         // Phase 2: Scrape with verification
         const result = await scrapeWithVerification(username, password, updatedMap);
         
-        console.log(`\nCompleted! Data saved to data.json (${result.length} rounds from all schools)`);
+        console.log(`\nCompleted! Data saved to ${DATA_FILE} (${result.length} rounds from all schools)`);
     } catch (error) {
         console.error('Fatal error:', error.message);
     }

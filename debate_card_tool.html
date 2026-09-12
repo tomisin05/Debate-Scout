@@ -1,0 +1,2524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debate Card Splitter</title>
+    <style>
+        :root {
+            --color-background-primary: #ffffff;
+            --color-background-secondary: #f6f5f1;
+            --color-background-tertiary: #efece5;
+            --color-background-info: #e8f0fe;
+            --color-text-primary: #1f1e1d;
+            --color-text-secondary: #5e5d59;
+            --color-text-tertiary: #8a8983;
+            --color-border-secondary: #c9c7be;
+            --color-border-tertiary: #e3e1d8;
+            --color-border-info: #6f8bd6;
+            --color-highlight-yellow: #fff39a;
+            --color-highlight-green: #b9f6b0;
+            --color-highlight-cyan: #b6f0ee;
+            --color-highlight-magenta: #f6b0e8;
+            --color-highlight-red: #ffb1b1;
+            --color-highlight-blue: #b8d4ff;
+            --border-radius-sm: 4px;
+            --border-radius-md: 6px;
+            --border-radius-lg: 10px;
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            --font-serif: Georgia, "Times New Roman", serif;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { height: 100%; }
+        body { font-family: var(--font-sans); color: var(--color-text-primary); background: var(--color-background-primary); }
+
+        .app {
+            display: grid;
+            grid-template-rows: auto auto auto 1fr;
+            height: 100vh;
+            max-height: 100vh;
+            overflow: hidden;
+        }
+
+        .topbar {
+            padding: 14px 20px;
+            border-bottom: 0.5px solid var(--color-border-tertiary);
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+        .topbar h1 { font-size: 16px; font-weight: 600; }
+        .topbar h1 .accent { color: var(--color-text-secondary); font-weight: 400; margin-left: 4px; }
+        .upload-btn {
+            display: inline-flex; align-items: center; gap: 6px;
+            background: var(--color-text-primary); color: var(--color-background-primary);
+            border: none; border-radius: var(--border-radius-md);
+            padding: 7px 12px; font-size: 13px; cursor: pointer;
+        }
+        .upload-btn:hover { opacity: 0.88; }
+        .upload-btn.secondary {
+            background: var(--color-background-primary);
+            color: var(--color-text-primary);
+            border: 0.5px solid var(--color-border-secondary);
+        }
+        .upload-btn.secondary:hover { background: var(--color-background-secondary); }
+        #file-input { display: none; }
+        .stats-inline { display: flex; gap: 16px; font-size: 12px; color: var(--color-text-secondary); margin-left: auto; }
+        .stat-pill b { color: var(--color-text-primary); font-weight: 600; margin-right: 4px; font-size: 13px; }
+
+        .search-row {
+            padding: 12px 20px;
+            border-bottom: 0.5px solid var(--color-border-tertiary);
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .search-wrap { position: relative; flex: 1; min-width: 260px; }
+        .search-wrap input {
+            width: 100%;
+            padding: 9px 12px 9px 34px;
+            border: 0.5px solid var(--color-border-secondary);
+            border-radius: var(--border-radius-md);
+            font-size: 14px;
+            background: var(--color-background-primary);
+            color: var(--color-text-primary);
+            outline: none;
+        }
+        .search-wrap input:focus { border-color: var(--color-border-info); }
+        .search-wrap .search-icon {
+            position: absolute; left: 11px; top: 50%; transform: translateY(-50%);
+            font-size: 16px; color: var(--color-text-tertiary); pointer-events: none;
+        }
+        .search-help {
+            position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+            width: 20px; height: 20px; border-radius: 50%;
+            background: var(--color-background-secondary);
+            color: var(--color-text-tertiary);
+            border: none; cursor: pointer;
+            font-size: 12px; font-weight: bold;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .search-help:hover {
+            background: var(--color-background-tertiary);
+            color: var(--color-text-secondary);
+        }
+        .search-tooltip {
+            position: absolute; top: 100%; right: 0; margin-top: 8px;
+            background: var(--color-text-primary); color: var(--color-background-primary);
+            padding: 12px 16px; border-radius: var(--border-radius-md);
+            font-size: 12px; line-height: 1.4;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 1000; min-width: 300px;
+            display: none;
+        }
+        .search-tooltip.show { display: block; }
+        .search-tooltip h4 {
+            margin: 0 0 8px 0; font-size: 13px; font-weight: 600;
+        }
+        .search-tooltip ul {
+            margin: 0; padding-left: 16px;
+        }
+        .search-tooltip li {
+            margin-bottom: 4px;
+        }
+        .search-tooltip code {
+            background: rgba(255,255,255,0.2);
+            padding: 1px 4px; border-radius: 2px;
+            font-family: monospace; font-size: 11px;
+        }
+        .search-row select {
+            font-size: 13px; padding: 8px 10px;
+            border-radius: var(--border-radius-md);
+            border: 0.5px solid var(--color-border-secondary);
+            background: var(--color-background-primary);
+            color: var(--color-text-primary);
+            max-width: 220px;
+        }
+        .search-row .scope {
+            display: inline-flex; gap: 4px;
+            background: var(--color-background-secondary);
+            padding: 3px; border-radius: var(--border-radius-md);
+        }
+        .scope button {
+            border: none; background: transparent;
+            padding: 5px 10px; font-size: 12px;
+            border-radius: var(--border-radius-sm);
+            cursor: pointer; color: var(--color-text-secondary);
+        }
+        .scope button.active {
+            background: var(--color-background-primary);
+            color: var(--color-text-primary);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        /* Year filter row */
+        .year-filter-row {
+            padding: 8px 20px;
+            border-bottom: 0.5px solid var(--color-border-tertiary);
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+            background: var(--color-background-secondary);
+            font-size: 12px;
+        }
+        .year-filter-row .label {
+            color: var(--color-text-secondary);
+            font-size: 12px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+        .year-filter-row select {
+            font-size: 12px; padding: 5px 8px;
+            border-radius: var(--border-radius-md);
+            border: 0.5px solid var(--color-border-secondary);
+            background: var(--color-background-primary);
+            color: var(--color-text-primary);
+        }
+        .year-filter-row .year-range-dash {
+            color: var(--color-text-tertiary);
+            font-size: 12px;
+        }
+        .year-filter-row .dedup-toggle {
+            display: inline-flex; align-items: center; gap: 6px;
+            margin-left: 16px;
+            cursor: pointer;
+            color: var(--color-text-secondary);
+            font-size: 12px;
+            user-select: none;
+        }
+        .year-filter-row .dedup-toggle input[type="checkbox"] {
+            width: 14px; height: 14px;
+            accent-color: var(--color-text-primary);
+            cursor: pointer;
+        }
+        .year-badge {
+            display: inline-block;
+            font-size: 10px;
+            background: var(--color-background-tertiary);
+            color: var(--color-text-secondary);
+            border-radius: 3px;
+            padding: 1px 5px;
+            margin-left: 4px;
+            vertical-align: middle;
+        }
+        .dup-badge {
+            display: inline-block;
+            font-size: 10px;
+            background: var(--color-highlight-magenta);
+            color: #7a3060;
+            border-radius: 3px;
+            padding: 1px 5px;
+            margin-left: 4px;
+            vertical-align: middle;
+        }
+        .year-filter-row .reset-link {
+            background: none; border: none;
+            color: var(--color-border-info);
+            font-size: 12px; cursor: pointer;
+            padding: 0; margin-left: 4px;
+            text-decoration: underline;
+        }
+        .year-filter-row .reset-link:hover { color: var(--color-text-primary); }
+        .year-stats {
+            margin-left: auto;
+            color: var(--color-text-tertiary);
+            font-size: 11px;
+        }
+
+        .split {
+            display: grid;
+            grid-template-columns: minmax(340px, 460px) 1fr;
+            min-height: 0;
+            overflow: hidden;
+        }
+
+        .left-pane {
+            border-right: 0.5px solid var(--color-border-tertiary);
+            overflow-y: auto;
+            min-height: 0;
+            background: var(--color-background-secondary);
+        }
+        .pane-header {
+            position: sticky; top: 0;
+            background: var(--color-background-secondary);
+            padding: 10px 14px;
+            border-bottom: 0.5px solid var(--color-border-tertiary);
+            font-size: 12px;
+            color: var(--color-text-secondary);
+            display: flex; justify-content: space-between; align-items: center;
+            z-index: 2;
+        }
+        .pane-header .right { display: flex; gap: 8px; align-items: center; }
+        .pane-header .btn-link {
+            background: none; border: none; cursor: pointer;
+            font-size: 12px; color: var(--color-text-secondary);
+            padding: 2px 4px;
+        }
+        .pane-header .btn-link:hover { color: var(--color-text-primary); text-decoration: underline; }
+
+        .card-item {
+            padding: 12px 14px;
+            border-bottom: 0.5px solid var(--color-border-tertiary);
+            cursor: pointer;
+            background: var(--color-background-secondary);
+            transition: background 0.12s;
+        }
+        .card-item:hover { background: var(--color-background-tertiary); }
+        .card-item.active {
+            background: var(--color-background-primary);
+            border-left: 3px solid var(--color-border-info);
+            padding-left: 11px;
+        }
+        .card-doc {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            color: var(--color-text-tertiary);
+            display: flex; gap: 8px;
+            margin-bottom: 4px;
+        }
+        .card-doc .doc-name {
+            overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+            max-width: 60%;
+        }
+        .card-tag {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            line-height: 1.3;
+            margin-bottom: 4px;
+        }
+        .card-cite {
+            font-size: 11px;
+            color: var(--color-text-secondary);
+            line-height: 1.4;
+            margin-bottom: 6px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+        .card-snippet {
+            font-size: 11px;
+            color: var(--color-text-secondary);
+            line-height: 1.4;
+            font-family: var(--font-serif);
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+        .card-snippet mark { background: var(--color-highlight-yellow); padding: 0 1px; }
+
+        .empty-msg {
+            padding: 60px 30px;
+            text-align: center;
+            color: var(--color-text-tertiary);
+            font-size: 13px;
+        }
+        .empty-msg .big {
+            font-size: 28px;
+            display: block;
+            margin-bottom: 10px;
+            color: var(--color-text-secondary);
+        }
+        .empty-msg .upload-cta { margin-top: 16px; display: inline-block; }
+
+        .right-pane {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            min-height: 0;
+            overflow: hidden;
+        }
+        .preview-toolbar {
+            padding: 12px 20px;
+            border-bottom: 0.5px solid var(--color-border-tertiary);
+            display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
+            background: var(--color-background-primary);
+        }
+        .preview-toolbar .spacer { flex: 1; }
+        .preview-toolbar button {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 7px 12px; font-size: 13px;
+            border-radius: var(--border-radius-md);
+            border: 0.5px solid var(--color-border-secondary);
+            background: var(--color-background-primary);
+            color: var(--color-text-primary);
+            cursor: pointer;
+        }
+        .preview-toolbar button:hover { background: var(--color-background-secondary); }
+        .preview-toolbar button.primary {
+            background: var(--color-text-primary);
+            color: var(--color-background-primary);
+            border-color: var(--color-text-primary);
+        }
+        .preview-toolbar button.primary:hover { opacity: 0.88; }
+
+        .preview-body {
+            overflow-y: auto;
+            min-height: 0;
+            background: var(--color-background-primary);
+            position: relative;
+        }
+
+        .card-header-block {
+            padding: 24px 40px 0 40px;
+        }
+        .card-header-block .ch-section {
+            font-family: var(--font-sans);
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: var(--color-text-tertiary);
+            margin-bottom: 6px;
+        }
+        .card-header-block .ch-tag {
+            font-family: var(--font-sans);
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 1.35;
+            color: var(--color-text-primary);
+            margin-bottom: 8px;
+        }
+        .card-header-block .ch-cite {
+            font-family: var(--font-sans);
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin-bottom: 4px;
+        }
+        .card-header-block .ch-year {
+            display: inline-block;
+            font-size: 10px;
+            background: var(--color-background-tertiary);
+            color: var(--color-text-secondary);
+            border-radius: 3px;
+            padding: 2px 6px;
+            margin-bottom: 4px;
+            font-family: var(--font-sans);
+        }
+        .card-header-block .ch-divider {
+            height: 0.5px;
+            background: var(--color-border-tertiary);
+            margin: 14px 0 0 0;
+        }
+
+        .preview-body .docx-wrapper {
+            padding: 16px 32px 20px 40px !important;
+            background: var(--color-background-primary) !important;
+        }
+        .preview-body .docx-wrapper > section.docx {
+            width: 100% !important;
+            min-height: unset !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            box-shadow: none !important;
+            background: transparent !important;
+        }
+
+        .preview-loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 60px 30px;
+            color: var(--color-text-tertiary);
+            font-size: 13px;
+        }
+        .preview-loading .spinner {
+            width: 18px; height: 18px;
+            border: 2px solid var(--color-border-tertiary);
+            border-top-color: var(--color-text-secondary);
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .preview-placeholder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            padding: 60px 30px;
+            text-align: center;
+            color: var(--color-text-tertiary);
+            font-size: 13px;
+        }
+        .preview-placeholder .big {
+            font-size: 28px;
+            display: block;
+            margin-bottom: 10px;
+            color: var(--color-text-secondary);
+        }
+
+        .preview-footer {
+            border-top: 0.5px solid var(--color-border-tertiary);
+            padding: 10px 20px;
+            font-size: 12px;
+            color: var(--color-text-secondary);
+            background: var(--color-background-secondary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .preview-footer .label {
+            color: var(--color-text-tertiary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 10px;
+        }
+        .preview-footer .source-name { color: var(--color-text-primary); font-weight: 500; }
+        .preview-footer .source-section {
+            margin-left: auto;
+            color: var(--color-text-tertiary);
+            overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+            max-width: 50%;
+        }
+
+        .lib-banner {
+            position: fixed; top: 0; left: 0; right: 0;
+            background: var(--color-background-info);
+            border-bottom: 0.5px solid var(--color-border-info);
+            padding: 8px 20px;
+            font-size: 12px;
+            color: #2a4fa3;
+            display: flex; align-items: center; gap: 8px;
+            z-index: 100;
+            transition: opacity 0.3s;
+        }
+        .lib-banner.hidden { opacity: 0; pointer-events: none; }
+        .lib-banner .spinner {
+            width: 12px; height: 12px;
+            border: 1.5px solid #a0b4e8;
+            border-top-color: #2a4fa3;
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+            flex-shrink: 0;
+        }
+
+        .progress-overlay {
+            position: fixed; bottom: 18px; right: 18px;
+            background: var(--color-background-primary);
+            border: 0.5px solid var(--color-border-secondary);
+            border-radius: var(--border-radius-md);
+            padding: 10px 14px;
+            font-size: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            display: none;
+            z-index: 50;
+            min-width: 220px;
+        }
+        .progress-overlay.show { display: block; }
+        .progress-overlay .label { color: var(--color-text-secondary); margin-bottom: 6px; }
+        .progress-overlay .bar { height: 4px; background: var(--color-background-secondary); border-radius: 2px; overflow: hidden; }
+        .progress-overlay .bar > div { height: 100%; background: var(--color-text-primary); width: 0%; transition: width 0.2s; }
+
+        .toast {
+            position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%);
+            background: var(--color-text-primary); color: var(--color-background-primary);
+            padding: 8px 14px; border-radius: var(--border-radius-md);
+            font-size: 13px;
+            opacity: 0; pointer-events: none;
+            transition: opacity 0.2s;
+            z-index: 60;
+        }
+        .toast.show { opacity: 1; }
+
+        @media (max-width: 760px) {
+            .split { grid-template-columns: 1fr; }
+        }
+
+        /* ===== MERGE PANEL ===== */
+        .merge-overlay {
+            position: fixed; inset: 0;
+            background: rgba(0,0,0,0.35);
+            z-index: 200;
+            display: none;
+            align-items: flex-start;
+            justify-content: flex-end;
+        }
+        .merge-overlay.show { display: flex; }
+
+        .merge-panel {
+            background: var(--color-background-primary);
+            border-left: 0.5px solid var(--color-border-secondary);
+            width: 480px;
+            max-width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            box-shadow: -6px 0 32px rgba(0,0,0,0.12);
+            transform: translateX(100%);
+            transition: transform 0.22s cubic-bezier(0.4,0,0.2,1);
+        }
+        .merge-overlay.show .merge-panel { transform: translateX(0); }
+
+        .merge-panel-header {
+            padding: 16px 20px;
+            border-bottom: 0.5px solid var(--color-border-tertiary);
+            display: flex; align-items: center; gap: 12px;
+        }
+        .merge-panel-header h2 {
+            font-size: 15px; font-weight: 600; flex: 1;
+        }
+        .merge-panel-header .sub {
+            font-size: 12px; color: var(--color-text-tertiary);
+            font-weight: 400; margin-left: 4px;
+        }
+        .merge-panel-close {
+            background: none; border: none;
+            font-size: 20px; cursor: pointer;
+            color: var(--color-text-tertiary);
+            line-height: 1; padding: 2px 4px;
+            border-radius: var(--border-radius-sm);
+        }
+        .merge-panel-close:hover { background: var(--color-background-secondary); color: var(--color-text-primary); }
+
+        .merge-drop-zone {
+            margin: 16px 20px 0 20px;
+            border: 1.5px dashed var(--color-border-secondary);
+            border-radius: var(--border-radius-lg);
+            padding: 28px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: border-color 0.15s, background 0.15s;
+            background: var(--color-background-secondary);
+        }
+        .merge-drop-zone:hover, .merge-drop-zone.dragover {
+            border-color: var(--color-border-info);
+            background: var(--color-background-info);
+        }
+        .merge-drop-zone .dz-icon { font-size: 26px; margin-bottom: 8px; display: block; }
+        .merge-drop-zone .dz-label { font-size: 13px; color: var(--color-text-secondary); margin-bottom: 4px; }
+        .merge-drop-zone .dz-sub { font-size: 11px; color: var(--color-text-tertiary); }
+        #merge-file-input { display: none; }
+
+        .merge-file-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 12px 20px;
+            min-height: 0;
+        }
+        .merge-file-list .mfl-empty {
+            padding: 20px 0;
+            text-align: center;
+            font-size: 12px;
+            color: var(--color-text-tertiary);
+        }
+        .merge-file-list-header {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--color-text-tertiary);
+            margin-bottom: 8px;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .merge-file-list-header .mfl-count {
+            font-size: 11px;
+            color: var(--color-text-secondary);
+            font-weight: 600;
+            text-transform: none;
+            letter-spacing: 0;
+        }
+        .merge-file-item {
+            display: flex; align-items: center; gap: 8px;
+            padding: 8px 10px;
+            border: 0.5px solid var(--color-border-tertiary);
+            border-radius: var(--border-radius-md);
+            margin-bottom: 6px;
+            background: var(--color-background-secondary);
+            font-size: 13px;
+        }
+        .merge-file-item:hover { background: var(--color-background-tertiary); }
+        .mfi-order {
+            font-size: 10px;
+            color: var(--color-text-tertiary);
+            min-width: 18px;
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+        }
+        .mfi-icon { font-size: 15px; flex-shrink: 0; }
+        .mfi-name {
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: var(--color-text-primary);
+        }
+        .mfi-size {
+            font-size: 11px;
+            color: var(--color-text-tertiary);
+            flex-shrink: 0;
+        }
+        .mfi-btns { display: flex; gap: 2px; flex-shrink: 0; }
+        .mfi-btn {
+            background: none; border: none; cursor: pointer;
+            font-size: 13px; padding: 3px 5px;
+            border-radius: var(--border-radius-sm);
+            color: var(--color-text-tertiary);
+            line-height: 1;
+        }
+        .mfi-btn:hover { background: var(--color-background-primary); color: var(--color-text-primary); }
+        .mfi-btn.danger:hover { background: #ffe5e5; color: #c0392b; }
+        .mfi-btn:disabled { opacity: 0.25; pointer-events: none; }
+
+        .merge-panel-footer {
+            border-top: 0.5px solid var(--color-border-tertiary);
+            padding: 14px 20px;
+            display: flex; gap: 10px; align-items: center;
+        }
+        .merge-info {
+            flex: 1;
+            font-size: 11px;
+            color: var(--color-text-tertiary);
+            line-height: 1.4;
+        }
+        .btn-merge {
+            display: inline-flex; align-items: center; gap: 6px;
+            background: var(--color-text-primary);
+            color: var(--color-background-primary);
+            border: none; border-radius: var(--border-radius-md);
+            padding: 9px 16px; font-size: 13px; font-weight: 500;
+            cursor: pointer; white-space: nowrap;
+        }
+        .btn-merge:hover { opacity: 0.88; }
+        .btn-merge:disabled { opacity: 0.4; cursor: not-allowed; }
+        .btn-merge-clear {
+            background: none;
+            color: var(--color-text-secondary);
+            border: 0.5px solid var(--color-border-secondary);
+            border-radius: var(--border-radius-md);
+            padding: 8px 12px; font-size: 13px;
+            cursor: pointer;
+        }
+        .btn-merge-clear:hover { background: var(--color-background-secondary); }
+        .merge-progress-bar {
+            height: 3px; background: var(--color-background-tertiary);
+            border-radius: 2px; overflow: hidden;
+            margin-top: 10px; display: none;
+        }
+        .merge-progress-bar.show { display: block; }
+        .merge-progress-bar > div {
+            height: 100%; background: var(--color-text-primary);
+            width: 0%; transition: width 0.2s;
+        }
+        .merge-status {
+            font-size: 11px; color: var(--color-text-secondary);
+            margin-top: 6px; min-height: 16px; display: none;
+        }
+        .merge-status.show { display: block; }
+        .upload-btn.merge-btn {
+            background: var(--color-background-primary);
+            color: var(--color-text-primary);
+            border: 0.5px solid var(--color-border-secondary);
+        }
+        .upload-btn.merge-btn:hover { background: var(--color-background-secondary); }
+    </style>
+</head>
+<body>
+    <div class="lib-banner" id="lib-banner">
+        <div class="spinner"></div>
+        Loading document renderer...
+    </div>
+
+    <div class="app" id="app" style="padding-top: 37px;">
+        <div class="topbar">
+            <h1>Debate Card Splitter <span class="accent">multi-doc</span></h1>
+            <button class="upload-btn" id="btn-upload">+ Add documents</button>
+            <button class="upload-btn secondary" id="btn-clear" style="display:none;">Clear all</button>
+            <button class="upload-btn merge-btn" id="btn-open-merge">&#x1F4CB; Merge Docs</button>
+            <input type="file" id="file-input" accept=".docx" multiple>
+            <div class="stats-inline" id="stats-inline">
+                <span class="stat-pill"><b id="stat-docs">0</b>documents</span>
+                <span class="stat-pill"><b id="stat-cards">0</b>cards</span>
+                <span class="stat-pill"><b id="stat-dups">0</b>duplicates hidden</span>
+                <span class="stat-pill"><b id="stat-shown">0</b>shown</span>
+            </div>
+        </div>
+
+        <div class="search-row">
+            <div class="search-wrap">
+                <span class="search-icon">&#x1F50D;</span>
+                <input type="search" id="search-input" placeholder='Search: "exact phrase", word1 AND word2, word1 OR word2, -exclude, fuzzy~'>
+                <button class="search-help" id="search-help" type="button">?</button>
+                <div class="search-tooltip" id="search-tooltip">
+                    <h4>Advanced Search</h4>
+                    <ul>
+                        <li><code>"climate change"</code> - Exact phrase</li>
+                        <li><code>climate AND change</code> - Both words required</li>
+                        <li><code>climate OR warming</code> - Either word</li>
+                        <li><code>climate -denial</code> - Include climate, exclude denial</li>
+                        <li><code>climat~</code> - Fuzzy match (climate, climatic, etc.)</li>
+                        <li><code>"global warming" AND policy -skeptic</code> - Complex queries</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="scope" id="scope-toggle" role="tablist">
+                <button data-scope="all" class="active">All</button>
+                <button data-scope="tag">Tag</button>
+                <button data-scope="cite">Cite</button>
+                <button data-scope="body">Body</button>
+            </div>
+            <select id="doc-filter"><option value="">All documents</option></select>
+            <select id="section-filter"><option value="">All sections</option></select>
+            <select id="sort-order">
+                <option value="doc">Document order</option>
+                <option value="alpha">Author (A&ndash;Z)</option>
+                <option value="year-new">Year (newest first)</option>
+                <option value="year-old">Year (oldest first)</option>
+                <option value="taglen">Tag length</option>
+                <option value="relevance">Relevance</option>
+            </select>
+        </div>
+
+        <!-- Year filter + dedup row -->
+        <div class="year-filter-row" id="year-filter-row">
+            <span class="label">Year:</span>
+            <select id="year-min"><option value="">Any</option></select>
+            <span class="year-range-dash">–</span>
+            <select id="year-max"><option value="">Any</option></select>
+            <button class="reset-link" id="btn-reset-years" style="display:none;">reset</button>
+            <label class="dedup-toggle" title="Hide cards that share the same tag + citation as an earlier card">
+                <input type="checkbox" id="dedup-toggle" checked>
+                Hide duplicate cards
+            </label>
+            <span class="year-stats" id="year-stats"></span>
+        </div>
+
+        <div class="split" id="split">
+            <div class="left-pane" id="left-pane">
+                <div class="pane-header">
+                    <span id="list-summary">No documents uploaded</span>
+                    <div class="right">
+                        <button class="btn-link" id="btn-download-all">Download all as ZIP</button>
+                    </div>
+                </div>
+                <div id="card-list">
+                    <div class="empty-msg" id="initial-empty">
+                        <span class="big">&#x1F4C4;</span>
+                        Upload .docx files to get started.
+                        <br><br>
+                        <button class="upload-btn upload-cta" id="btn-upload-2">+ Add documents</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-pane" id="right-pane">
+                <div class="preview-toolbar" id="preview-toolbar" style="display:none;">
+                    <button class="primary" id="btn-copy">Copy formatted</button>
+                    <button id="btn-copy-plain"> Copy plain text</button>
+                    <button id="btn-download"> Download .docx</button>
+                    <span class="spacer"></span>
+                    <button id="btn-prev">&#x2190; Prev</button>
+                    <button id="btn-next">Next &#x2192;</button>
+                </div>
+                <div class="preview-body" id="preview-body">
+                    <div class="preview-placeholder">
+                        <span class="big">&#x2190;</span>
+                        Select a card from the list to view it here.
+                    </div>
+                </div>
+                <div class="preview-footer" id="preview-footer" style="display:none;">
+                    <span class="label">Source</span>
+                    <span class="source-name" id="source-name">&mdash;</span>
+                    <span class="source-section" id="source-section"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="progress-overlay" id="progress-overlay">
+        <div class="label" id="progress-label">Working...</div>
+        <div class="bar"><div id="progress-bar"></div></div>
+    </div>
+    <div class="toast" id="toast">Copied</div>
+
+    <!-- ===== MERGE PANEL ===== -->
+    <div class="merge-overlay" id="merge-overlay">
+        <div class="merge-panel" id="merge-panel">
+            <div class="merge-panel-header">
+                <h2>Merge Docs <span class="sub">combine multiple .docx into one</span></h2>
+                <button class="merge-panel-close" id="btn-close-merge" title="Close">&#x2715;</button>
+            </div>
+
+            <div class="merge-drop-zone" id="merge-drop-zone">
+                <span class="dz-icon">&#x1F4C2;</span>
+                <div class="dz-label">Drop .docx files here, or click to browse</div>
+                <div class="dz-sub">Files will be merged in the order listed below</div>
+            </div>
+            <input type="file" id="merge-file-input" accept=".docx" multiple>
+
+            <div class="merge-file-list" id="merge-file-list">
+                <div id="merge-file-list-header" class="merge-file-list-header" style="display:none;">
+                    <span>Files to merge</span>
+                    <span class="mfl-count" id="mfl-count"></span>
+                </div>
+                <div class="mfl-empty" id="mfl-empty">No files added yet</div>
+            </div>
+
+            <div class="merge-panel-footer">
+                <div>
+                    <div style="display:flex;gap:8px;align-items:center;">
+                        <button class="btn-merge" id="btn-do-merge" disabled>&#x2B07;&#xFE0F; Merge &amp; Download</button>
+                        <button class="btn-merge-clear" id="btn-merge-clear" style="display:none;">Clear list</button>
+                    </div>
+                    <div class="merge-progress-bar" id="merge-progress-bar"><div id="merge-progress-fill"></div></div>
+                    <div class="merge-status" id="merge-status"></div>
+                </div>
+                <div class="merge-info">Formatting, styles, and bold/underline are preserved from each source document.</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docx-preview@0.3.3/dist/docx-preview.min.js"></script>
+
+    <script>
+    (function () {
+        'use strict';
+
+        const libBanner = document.getElementById('lib-banner');
+        const appEl = document.getElementById('app');
+
+        function hideLibBanner() {
+            libBanner.classList.add('hidden');
+            appEl.style.paddingTop = '0';
+            setTimeout(() => libBanner.style.display = 'none', 400);
+        }
+
+        let docxPreviewReady = false;
+        let checkAttempts = 0;
+        const checkLib = setInterval(() => {
+            checkAttempts++;
+            if (typeof window.docx !== 'undefined' || typeof window.docxPreview !== 'undefined') {
+                docxPreviewReady = true;
+                clearInterval(checkLib);
+                hideLibBanner();
+            } else if (checkAttempts > 50) {
+                clearInterval(checkLib);
+                libBanner.textContent = 'Renderer unavailable — preview may have limited formatting';
+                setTimeout(hideLibBanner, 3000);
+            }
+        }, 100);
+
+        const NS = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';
+
+        const state = {
+            docs: new Map(),
+            cards: [],
+            filtered: [],
+            selectedCardId: null,
+            search: '',
+            searchScope: 'all',
+            docFilter: '',
+            sectionFilter: '',
+            sortOrder: 'doc',
+            yearMin: '',
+            yearMax: '',
+            dedupEnabled: true,
+            nextDocId: 1,
+            nextCardId: 1,
+            currentPreviewBlob: null,
+            currentPreviewCard: null
+        };
+
+        const $ = id => document.getElementById(id);
+        const fileInput = $('file-input');
+        const cardListEl = $('card-list');
+        const previewBody = $('preview-body');
+        const previewToolbar = $('preview-toolbar');
+        const previewFooter = $('preview-footer');
+        const searchInput = $('search-input');
+        const docFilterEl = $('doc-filter');
+        const sectionFilterEl = $('section-filter');
+        const sortOrderEl = $('sort-order');
+        const yearMinEl = $('year-min');
+        const yearMaxEl = $('year-max');
+        const dedupToggle = $('dedup-toggle');
+        const progressOverlay = $('progress-overlay');
+        const progressBar = $('progress-bar');
+        const progressLabel = $('progress-label');
+        const toast = $('toast');
+        const leftPane = $('left-pane');
+
+        $('btn-upload').addEventListener('click', () => fileInput.click());
+        $('btn-clear').addEventListener('click', clearAll);
+        fileInput.addEventListener('change', e => {
+            const files = Array.from(e.target.files || []);
+            if (files.length) ingestFiles(files);
+            fileInput.value = '';
+        });
+
+        ['dragover', 'dragenter'].forEach(evt => {
+            leftPane.addEventListener(evt, e => { e.preventDefault(); leftPane.style.background = 'var(--color-background-info)'; });
+        });
+        ['dragleave', 'drop'].forEach(evt => {
+            leftPane.addEventListener(evt, e => { e.preventDefault(); leftPane.style.background = ''; });
+        });
+        leftPane.addEventListener('drop', e => {
+            const files = Array.from(e.dataTransfer.files || []).filter(f => f.name.toLowerCase().endsWith('.docx'));
+            if (files.length) ingestFiles(files);
+        });
+
+        let searchDebounce = null;
+        searchInput.addEventListener('input', e => {
+            clearTimeout(searchDebounce);
+            const value = e.target.value;
+            searchDebounce = setTimeout(() => { state.search = value; applyFilters(); }, 120);
+        });
+
+        const searchHelp = $('search-help');
+        const searchTooltip = $('search-tooltip');
+        let tooltipVisible = false;
+        searchHelp.addEventListener('click', e => {
+            e.stopPropagation();
+            tooltipVisible = !tooltipVisible;
+            searchTooltip.classList.toggle('show', tooltipVisible);
+        });
+        document.addEventListener('click', () => {
+            if (tooltipVisible) { tooltipVisible = false; searchTooltip.classList.remove('show'); }
+        });
+        searchTooltip.addEventListener('click', e => e.stopPropagation());
+
+        document.querySelectorAll('#scope-toggle button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('#scope-toggle button').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                state.searchScope = btn.dataset.scope;
+                applyFilters();
+            });
+        });
+
+        docFilterEl.addEventListener('change', () => { state.docFilter = docFilterEl.value; applyFilters(); });
+        sectionFilterEl.addEventListener('change', () => { state.sectionFilter = sectionFilterEl.value; applyFilters(); });
+        sortOrderEl.addEventListener('change', () => { state.sortOrder = sortOrderEl.value; applyFilters(); });
+
+        // Year filter events
+        yearMinEl.addEventListener('change', () => {
+            state.yearMin = yearMinEl.value;
+            updateResetYearsBtn();
+            applyFilters();
+        });
+        yearMaxEl.addEventListener('change', () => {
+            state.yearMax = yearMaxEl.value;
+            updateResetYearsBtn();
+            applyFilters();
+        });
+        $('btn-reset-years').addEventListener('click', () => {
+            state.yearMin = ''; state.yearMax = '';
+            yearMinEl.value = ''; yearMaxEl.value = '';
+            updateResetYearsBtn();
+            applyFilters();
+        });
+
+        // Dedup toggle
+        dedupToggle.addEventListener('change', () => {
+            state.dedupEnabled = dedupToggle.checked;
+            applyFilters();
+        });
+
+        function updateResetYearsBtn() {
+            $('btn-reset-years').style.display = (state.yearMin || state.yearMax) ? '' : 'none';
+        }
+
+        $('btn-copy').addEventListener('click', () => copyCurrent());
+        $('btn-copy-plain').addEventListener('click', () => copyCurrentPlain());
+        $('btn-download').addEventListener('click', () => downloadCurrent());
+        $('btn-prev').addEventListener('click', () => stepSelection(-1));
+        $('btn-next').addEventListener('click', () => stepSelection(1));
+        $('btn-download-all').addEventListener('click', downloadAllZip);
+
+        document.addEventListener('keydown', e => {
+            if (e.target.matches('input, textarea, select')) return;
+            if (e.key === 'ArrowDown') { stepSelection(1); e.preventDefault(); }
+            else if (e.key === 'ArrowUp') { stepSelection(-1); e.preventDefault(); }
+            else if (e.key === '/') { searchInput.focus(); e.preventDefault(); }
+        });
+
+        // ===== YEAR EXTRACTION =====
+
+        function extractYear(cite) {
+            if (!cite) return null;
+            // 4-digit year: 2024, 1999, 2003 etc.
+            const fullYear = cite.match(/\b(19[5-9]\d|20[0-9]\d)\b/);
+            if (fullYear) return parseInt(fullYear[1]);
+            // 2-digit shorthand: '24, '99, '03 (with smart/straight apostrophe)
+            const shortYear = cite.match(/['''](\d{2})\b/);
+            if (shortYear) {
+                const yr = parseInt(shortYear[1]);
+                // 0-35 → 2000s, 36-99 → 1900s (debate cards rarely cite pre-1936)
+                return yr <= 35 ? 2000 + yr : 1900 + yr;
+            }
+            return null;
+        }
+
+        // ===== FILE INGESTION =====
+
+        async function ingestFiles(files) {
+            showProgress(`Reading ${files.length} document${files.length > 1 ? 's' : ''}...`, 0);
+            let processed = 0;
+            for (const file of files) {
+                try { await ingestOne(file); }
+                catch (err) { console.warn(`Failed to ingest ${file.name}:`, err); }
+                processed++;
+                setProgress(processed / files.length * 100, `Read ${processed} of ${files.length}: ${file.name}`);
+                await new Promise(r => setTimeout(r, 0));
+            }
+            hideProgress();
+            populateDocFilter();
+            populateSectionFilter();
+            populateYearFilter();
+            applyFilters();
+            $('btn-clear').style.display = state.docs.size > 0 ? '' : 'none';
+        }
+
+        async function ingestOne(file) {
+            if (!file.name.toLowerCase().endsWith('.docx')) return;
+            const arrayBuffer = await file.arrayBuffer();
+            const zip = await JSZip.loadAsync(arrayBuffer);
+            const docXmlFile = zip.file('word/document.xml');
+            if (!docXmlFile) return;
+            const rawXml = await docXmlFile.async('string');
+            const docId = state.nextDocId++;
+            const doc = {
+                id: docId,
+                filename: file.name,
+                shortName: file.name.replace(/\.docx$/i, ''),
+                zipData: zip,
+                rawXml,
+                paragraphsXml: extractParagraphsXml(rawXml)
+            };
+            state.docs.set(docId, doc);
+            parseCardsFromDoc(doc);
+        }
+
+        function clearAll() {
+            if (!confirm('Remove all uploaded documents?')) return;
+            state.docs.clear();
+            state.cards = [];
+            state.filtered = [];
+            state.selectedCardId = null;
+            state.currentPreviewBlob = null;
+            state.currentPreviewCard = null;
+            state.nextDocId = 1;
+            state.nextCardId = 1;
+            state.yearMin = ''; state.yearMax = '';
+            yearMinEl.innerHTML = '<option value="">Any</option>';
+            yearMaxEl.innerHTML = '<option value="">Any</option>';
+            updateResetYearsBtn();
+            populateDocFilter();
+            populateSectionFilter();
+            applyFilters();
+            renderPreview(null);
+            $('btn-clear').style.display = 'none';
+        }
+
+        // ===== CARD PARSING =====
+
+        function parseCardsFromDoc(doc) {
+            const parser = new DOMParser();
+            const xml = parser.parseFromString(doc.rawXml, 'text/xml');
+            const paragraphs = Array.from(xml.getElementsByTagNameNS(NS, 'p'));
+            let currentSection = '';
+            let cardState = newCardState();
+
+            for (let i = 0; i < paragraphs.length; i++) {
+                const p = paragraphs[i];
+                const text = paragraphText(p);
+
+                if (isHeading(p, 1) || isHeading(p, 2) || isHeading(p, 3)) {
+                    finalizeCard(doc, cardState);
+                    cardState = newCardState();
+                    if (text) currentSection = text;
+                    continue;
+                }
+
+                if (isHeading(p, 4) && text.length > 4) {
+                    finalizeCard(doc, cardState);
+                    cardState = newCardState();
+                    cardState.section = currentSection;
+                    cardState.tag = text;
+                    cardState.tagParaIndex = i;
+                    const next = paragraphs[i + 1];
+                    if (next && isCitation(next)) {
+                        cardState.cite = paragraphText(next);
+                        cardState.citeParaIndex = i + 1;
+                        i++;
+                    }
+                    cardState.inCard = true;
+                    continue;
+                }
+
+                if (cardState.inCard) {
+                    const hasContent = text || p.getElementsByTagNameNS(NS, 'r').length > 0;
+                    if (hasContent) cardState.bodyParaIndices.push(i);
+                }
+            }
+            finalizeCard(doc, cardState);
+        }
+
+        function newCardState() {
+            return { section: '', tag: null, cite: null, tagParaIndex: null, citeParaIndex: null, bodyParaIndices: [], inCard: false };
+        }
+
+        // Normalise a string for duplicate detection: lowercase, collapse whitespace
+        function normKey(s) {
+            return (s || '').toLowerCase().replace(/\s+/g, ' ').trim();
+        }
+
+        function finalizeCard(doc, s) {
+            if (!s.tag) return;
+            const bodyPlain = s.bodyParaIndices
+                .map(idx => stripTagsToText(doc.paragraphsXml[idx]))
+                .join(' ').replace(/\s+/g, ' ').trim();
+
+            const year = extractYear(s.cite || '');
+
+            // Build duplicate key from normalised tag + cite
+            const dupKey = normKey(s.tag) + '|||' + normKey(s.cite || '');
+
+            const card = {
+                id: state.nextCardId++,
+                docId: doc.id,
+                docName: doc.shortName,
+                section: s.section || '',
+                tag: s.tag,
+                cite: s.cite || '',
+                tagParaIndex: s.tagParaIndex,
+                citeParaIndex: s.citeParaIndex,
+                bodyParaIndices: [...s.bodyParaIndices],
+                bodyPlain,
+                year,
+                dupKey,
+                searchTag: s.tag.toLowerCase(),
+                searchCite: (s.cite || '').toLowerCase(),
+                searchBody: bodyPlain.toLowerCase(),
+                searchAll: (s.tag + ' ' + (s.cite || '') + ' ' + bodyPlain).toLowerCase(),
+                snippetHtml: escapeHtml(bodyPlain.substring(0, 200)),
+                author: extractAuthor(s.cite || '')
+            };
+            state.cards.push(card);
+        }
+
+        function extractAuthor(cite) {
+            const m = cite.match(/^([A-Z][a-zA-Z''\-]+(?:\s+[A-Z][a-zA-Z''\-]+)*(?:\s+et\s+al\.?)?)\s+['']?\d{2}/);
+            if (m) return m[1];
+            const fallback = cite.split(/[,.]/)[0].trim();
+            return fallback ? fallback.substring(0, 40) : 'Unknown';
+        }
+
+        // ===== XML HELPERS =====
+
+        function paragraphText(p) {
+            const tNodes = p.getElementsByTagNameNS(NS, 't');
+            return Array.from(tNodes).map(n => n.textContent).join('').trim();
+        }
+
+        function styleVal(p) {
+            const pPr = p.getElementsByTagNameNS(NS, 'pPr')[0];
+            if (!pPr) return null;
+            const pStyle = pPr.getElementsByTagNameNS(NS, 'pStyle')[0];
+            if (!pStyle) return null;
+            for (const a of pStyle.attributes) if (a.localName === 'val') return a.value;
+            return null;
+        }
+
+        function isHeading(p, level) {
+            const v = styleVal(p);
+            return v === `Heading${level}` || v === `heading${level}`;
+        }
+
+        function isCitation(p) {
+            const sv = styleVal(p);
+            if (sv && /^Heading/i.test(sv)) return false;
+            const runs = p.getElementsByTagNameNS(NS, 'r');
+            return Array.from(runs).some(run => {
+                const rPr = run.getElementsByTagNameNS(NS, 'rPr')[0];
+                if (!rPr) return false;
+                const rStyle = rPr.getElementsByTagNameNS(NS, 'rStyle')[0];
+                if (rStyle) {
+                    const val = Array.from(rStyle.attributes).find(a => a.localName === 'val')?.value;
+                    if (val && /Bold|Strong|13pt|Style13/i.test(val)) return true;
+                }
+                return rPr.getElementsByTagNameNS(NS, 'b').length > 0;
+            });
+        }
+
+        function extractParagraphsXml(rawXml) {
+            const result = [];
+            let pos = 0;
+            while (pos < rawXml.length) {
+                const start = rawXml.indexOf('<w:p', pos);
+                if (start === -1) break;
+                const charAfter = rawXml[start + 4];
+                if (charAfter !== ' ' && charAfter !== '>' && charAfter !== '/') {
+                    pos = start + 4;
+                    continue;
+                }
+                const tagEnd = rawXml.indexOf('>', start);
+                if (tagEnd === -1) break;
+                if (rawXml[tagEnd - 1] === '/') {
+                    result.push(rawXml.slice(start, tagEnd + 1));
+                    pos = tagEnd + 1;
+                } else {
+                    const closeTag = '</w:p>';
+                    const close = rawXml.indexOf(closeTag, tagEnd);
+                    if (close === -1) break;
+                    result.push(rawXml.slice(start, close + closeTag.length));
+                    pos = close + closeTag.length;
+                }
+            }
+            return result;
+        }
+
+        function stripTagsToText(xml) {
+            if (!xml) return '';
+            const out = [];
+            const re = /<w:t(?:\s[^>]*)?>([\s\S]*?)<\/w:t>/g;
+            let m;
+            while ((m = re.exec(xml)) !== null) out.push(decodeXmlEntities(m[1]));
+            return out.join('');
+        }
+
+        function decodeXmlEntities(str) {
+            return str.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&apos;/g, "'").replace(/&amp;/g, '&');
+        }
+
+        function escapeHtml(s) {
+            return (s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        }
+
+        // ===== DOCX BLOB BUILDING =====
+
+        async function buildCardDocx(card, doc, bodyOnly = false) {
+            const newZip = new JSZip();
+            for (const [path, entry] of Object.entries(doc.zipData.files)) {
+                if (path === 'word/document.xml') continue;
+                if (entry.dir) { newZip.folder(path); continue; }
+                const content = await entry.async('uint8array');
+                newZip.file(path, content);
+            }
+            newZip.file('word/document.xml', buildCardXml(card, doc, bodyOnly));
+            return await newZip.generateAsync({ type: 'blob' });
+        }
+
+        function buildCardXml(card, doc, bodyOnly = false) {
+            const keep = new Set();
+            if (!bodyOnly) {
+                if (card.tagParaIndex !== null) keep.add(card.tagParaIndex);
+                if (card.citeParaIndex !== null) keep.add(card.citeParaIndex);
+            }
+            card.bodyParaIndices.forEach(i => keep.add(i));
+
+            const bodyParas = doc.paragraphsXml
+                .map((xml, i) => keep.has(i) ? xml : null)
+                .filter(Boolean).join('');
+
+            const sectPrMatch = doc.rawXml.match(/<w:sectPr\b[\s\S]*?<\/w:sectPr>/);
+            const sectPr = sectPrMatch ? sectPrMatch[0] : '';
+
+            return doc.rawXml.replace(
+                /<w:body\b[^>]*>[\s\S]*<\/w:body>/,
+                match => {
+                    const open = match.match(/^<w:body\b[^>]*>/)[0];
+                    return `${open}${bodyParas}${sectPr}</w:body>`;
+                }
+            );
+        }
+
+        // ===== PREVIEW =====
+
+        let previewRenderToken = 0;
+
+        async function renderPreview(card) {
+            const token = ++previewRenderToken;
+
+            if (!card) {
+                previewToolbar.style.display = 'none';
+                previewFooter.style.display = 'none';
+                state.currentPreviewBlob = null;
+                state.currentPreviewCard = null;
+                previewBody.innerHTML = `<div class="preview-placeholder"><span class="big">&#x2190;</span>Select a card from the list to view it here.</div>`;
+                return;
+            }
+
+            const doc = state.docs.get(card.docId);
+            if (!doc) {
+                previewBody.innerHTML = `<div class="preview-placeholder">Source document is no longer available.</div>`;
+                return;
+            }
+
+            previewToolbar.style.display = '';
+            previewFooter.style.display = '';
+            previewBody.innerHTML = `<div class="preview-loading"><div class="spinner"></div>Rendering card...</div>`;
+
+            let blob;
+            try {
+                blob = await buildCardDocx(card, doc);
+            } catch (err) {
+                if (token !== previewRenderToken) return;
+                previewBody.innerHTML = `<div class="preview-placeholder">Error building preview: ${escapeHtml(String(err))}</div>`;
+                return;
+            }
+
+            if (token !== previewRenderToken) return;
+
+            state.currentPreviewBlob = blob;
+            state.currentPreviewCard = card;
+
+            const docxLib = window.docx || window.docxPreview;
+            if (docxLib && typeof docxLib.renderAsync === 'function') {
+                try {
+                    const bodyBlob = await buildCardDocx(card, doc, true);
+                    const arrayBuffer = await bodyBlob.arrayBuffer();
+                    if (token !== previewRenderToken) return;
+
+                    const headerEl = document.createElement('div');
+                    headerEl.className = 'card-header-block';
+                    if (card.section) {
+                        const sec = document.createElement('div');
+                        sec.className = 'ch-section';
+                        sec.textContent = card.section;
+                        headerEl.appendChild(sec);
+                    }
+                    const tagEl = document.createElement('div');
+                    tagEl.className = 'ch-tag';
+                    tagEl.textContent = card.tag;
+                    headerEl.appendChild(tagEl);
+                    if (card.cite) {
+                        const citeEl = document.createElement('div');
+                        citeEl.className = 'ch-cite';
+                        citeEl.textContent = card.cite;
+                        headerEl.appendChild(citeEl);
+                    }
+                    // Show extracted year as a badge if available
+                    if (card.year) {
+                        const yearEl = document.createElement('div');
+                        yearEl.className = 'ch-year';
+                        yearEl.textContent = `${card.year}`;
+                        headerEl.appendChild(yearEl);
+                    }
+                    const divider = document.createElement('div');
+                    divider.className = 'ch-divider';
+                    headerEl.appendChild(divider);
+
+                    previewBody.innerHTML = '';
+                    previewBody.appendChild(headerEl);
+
+                    const bodyContainer = document.createElement('div');
+                    previewBody.appendChild(bodyContainer);
+
+                    await docxLib.renderAsync(arrayBuffer, bodyContainer, null, {
+                        className: 'docx',
+                        inWrapper: true,
+                        ignoreWidth: true,
+                        ignoreHeight: true,
+                        ignoreFonts: false,
+                        breakPages: false,
+                        useBase64URL: true,
+                        renderChanges: false,
+                        renderHeaders: false,
+                        renderFooters: false,
+                        renderFootnotes: false,
+                        renderEndnotes: false,
+                    });
+
+                    if (token !== previewRenderToken) return;
+                    previewBody.scrollTop = 0;
+                } catch (err) {
+                    console.warn('docx-preview failed, falling back:', err);
+                    if (token !== previewRenderToken) return;
+                    renderFallbackPreview(card, doc);
+                }
+            } else {
+                renderFallbackPreview(card, doc);
+            }
+
+            $('source-name').textContent = doc.filename;
+            $('source-section').textContent = card.section || '';
+        }
+
+        function renderFallbackPreview(card, doc) {
+            const parts = [];
+            if (card.section) parts.push(`<div style="font-size:11px;text-transform:uppercase;letter-spacing:0.6px;color:var(--color-text-tertiary);margin-bottom:8px;">${escapeHtml(card.section)}</div>`);
+            parts.push(`<div style="font-size:16px;font-weight:700;font-family:var(--font-sans);margin-bottom:8px;">${escapeHtml(card.tag)}</div>`);
+            if (card.cite) parts.push(`<div style="font-size:12px;font-weight:600;margin-bottom:6px;">${escapeHtml(card.cite)}</div>`);
+            if (card.year) parts.push(`<div style="font-size:10px;background:var(--color-background-tertiary);color:var(--color-text-secondary);border-radius:3px;padding:2px 6px;display:inline-block;margin-bottom:12px;">${card.year}</div>`);
+            card.bodyParaIndices.forEach(idx => {
+                const t = stripTagsToText(doc.paragraphsXml[idx]);
+                if (t) parts.push(`<p style="font-family:var(--font-serif);font-size:13px;margin-bottom:8px;">${escapeHtml(t)}</p>`);
+            });
+            previewBody.innerHTML = `<div style="padding:28px 40px;">${parts.join('')}</div>`;
+        }
+
+        // ===== COPY =====
+
+        async function copyCurrent() {
+            const card = state.currentPreviewCard;
+            if (!card) { showToast('No card selected'); return; }
+            const doc = state.docs.get(card.docId);
+            if (!doc) return;
+
+            const sectionHtml = card.section
+                ? `<div style="font-family:Arial,sans-serif;font-size:9pt;color:#666;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">${escapeHtml(card.section)}</div>`
+                : '';
+            const tagHtml = `<div style="font-family:Arial,sans-serif;font-size:14pt;font-weight:700;margin-bottom:6px;">${escapeHtml(card.tag)}</div>`;
+            const citeHtml = card.cite
+                ? `<div style="font-family:Arial,sans-serif;font-size:10pt;font-weight:700;margin-bottom:10px;">${escapeHtml(card.cite)}</div>`
+                : '';
+
+            const bodyContainer = previewBody.querySelector('.docx-wrapper') || previewBody.querySelector('div:last-child');
+            let bodyHtml = '';
+            if (bodyContainer) {
+                try {
+                    const clone = bodyContainer.cloneNode(true);
+                    inlineComputedStyles(clone, bodyContainer);
+                    bodyHtml = clone.innerHTML;
+                } catch (err) {
+                    bodyHtml = bodyContainer.innerHTML;
+                }
+            }
+
+            const htmlContent = `<div style="font-family:Calibri,Georgia,'Times New Roman',serif;font-size:11pt;line-height:1.4;color:#000;">${sectionHtml}${tagHtml}${citeHtml}<div>${bodyHtml}</div></div>`;
+            const plainText = buildPlainText(card, doc);
+
+            try {
+                await writeClipboard(plainText, htmlContent);
+                showToast('Copied formatted — paste into Word or Docs');
+            } catch (err) {
+                await writeClipboard(plainText, null);
+                showToast('Copied plain text (formatted copy unavailable)');
+            }
+        }
+
+        function inlineComputedStyles(clone, live) {
+            const liveEls = live.querySelectorAll('*');
+            const cloneEls = clone.querySelectorAll('*');
+            const KEEP = ['font-weight', 'font-style', 'text-decoration', 'background-color', 'color', 'font-size', 'font-family'];
+            liveEls.forEach((el, i) => {
+                if (i >= cloneEls.length) return;
+                const computed = window.getComputedStyle(el);
+                const existing = cloneEls[i].style.cssText || '';
+                const additions = [];
+                KEEP.forEach(prop => {
+                    const val = computed.getPropertyValue(prop);
+                    if (!val || val === 'none' || val === 'normal' || val === 'rgba(0, 0, 0, 0)' || val === 'transparent') return;
+                    if (prop === 'background-color' && (val === 'rgb(255, 255, 255)' || val === 'rgba(0, 0, 0, 0)')) return;
+                    if (prop === 'color' && val === 'rgb(0, 0, 0)') return;
+                    additions.push(`${prop}:${val}`);
+                });
+                if (additions.length) cloneEls[i].style.cssText = (existing ? existing + ';' : '') + additions.join(';');
+            });
+        }
+
+        async function copyCurrentPlain() {
+            const card = state.cards.find(c => c.id === state.selectedCardId);
+            if (!card) return;
+            const doc = state.docs.get(card.docId);
+            if (!doc) return;
+            const plain = buildPlainText(card, doc);
+            await writeClipboard(plain, null);
+            showToast('Copied plain text');
+        }
+
+        function buildPlainText(card, doc) {
+            const parts = [];
+            if (card.section) parts.push(card.section);
+            parts.push(card.tag);
+            if (card.cite) parts.push(card.cite);
+            card.bodyParaIndices.forEach(idx => {
+                const t = stripTagsToText(doc.paragraphsXml[idx]);
+                if (t) parts.push(t);
+            });
+            return parts.join('\n\n');
+        }
+
+        async function writeClipboard(plainText, html) {
+            try {
+                if (html && window.ClipboardItem && navigator.clipboard?.write) {
+                    const item = new ClipboardItem({
+                        'text/plain': new Blob([plainText], { type: 'text/plain' }),
+                        'text/html': new Blob([html], { type: 'text/html' })
+                    });
+                    await navigator.clipboard.write([item]);
+                    return;
+                }
+                if (navigator.clipboard?.writeText) {
+                    await navigator.clipboard.writeText(plainText);
+                    return;
+                }
+            } catch (err) { console.warn('Clipboard API failed:', err); }
+            const ta = document.createElement('textarea');
+            ta.value = plainText;
+            ta.style.cssText = 'position:fixed;opacity:0;top:0;left:0;';
+            document.body.appendChild(ta);
+            ta.select();
+            try { document.execCommand('copy'); } catch {}
+            document.body.removeChild(ta);
+        }
+
+        // ===== DOWNLOAD =====
+
+        async function downloadCurrent() {
+            if (state.currentPreviewBlob) {
+                const card = state.currentPreviewCard;
+                const doc = state.docs.get(card.docId);
+                downloadFile(state.currentPreviewBlob, safeFilename(card, doc));
+                return;
+            }
+            const card = state.cards.find(c => c.id === state.selectedCardId);
+            if (!card) return;
+            const doc = state.docs.get(card.docId);
+            if (!doc) return;
+            showProgress('Building document...', 50);
+            const blob = await buildCardDocx(card, doc);
+            hideProgress();
+            if (blob) downloadFile(blob, safeFilename(card, doc));
+        }
+
+        async function downloadAllZip() {
+            if (!state.filtered.length) return;
+            const master = new JSZip();
+            showProgress(`Building ${state.filtered.length} documents...`, 0);
+            for (let i = 0; i < state.filtered.length; i++) {
+                const card = state.filtered[i];
+                const doc = state.docs.get(card.docId);
+                if (!doc) continue;
+                const blob = await buildCardDocx(card, doc);
+                if (blob) {
+                    const buf = await blob.arrayBuffer();
+                    master.file(safeFilename(card, doc), buf);
+                }
+                setProgress((i + 1) / state.filtered.length * 95, `Processing ${i + 1} of ${state.filtered.length}`);
+                if (i % 10 === 0) await new Promise(r => setTimeout(r, 0));
+            }
+            setProgress(98, 'Zipping...');
+            const zipBlob = await master.generateAsync({ type: 'blob' });
+            setProgress(100, 'Done');
+            hideProgress();
+            downloadFile(zipBlob, `debate_cards_${Date.now()}.zip`);
+        }
+
+        function safeFilename(card, doc) {
+            const clean = s => (s || '').replace(/[^a-zA-Z0-9 _-]/g, '').replace(/\s+/g, '_').substring(0, 40);
+            const docPart = clean(doc.shortName).substring(0, 20);
+            return `${docPart}__${clean(card.author)}_${clean(card.tag).substring(0, 30)}.docx`;
+        }
+
+        function downloadFile(blob, filename) {
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url; a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            setTimeout(() => URL.revokeObjectURL(url), 1500);
+        }
+
+        // ===== SEARCH ENGINE =====
+
+        class SearchEngine {
+
+            // ── Tokenizer ──────────────────────────────────────────────────────
+            // Breaks the raw query string into a flat list of typed tokens:
+            //   { type: 'phrase'|'term'|'fuzzy'|'exclude'|'op', value }
+            tokenize(query) {
+                const tokens = [];
+                let i = 0;
+                while (i < query.length) {
+                    if (/\s/.test(query[i])) { i++; continue; }
+
+                    // Quoted phrase  "..."
+                    if (query[i] === '"') {
+                        const end = query.indexOf('"', i + 1);
+                        if (end !== -1) {
+                            const phrase = query.slice(i + 1, end).trim().toLowerCase();
+                            if (phrase) tokens.push({ type: 'phrase', value: phrase });
+                            i = end + 1;
+                            continue;
+                        }
+                        // Unmatched quote — fall through and treat " as plain char
+                    }
+
+                    // Read next whitespace-delimited word
+                    let word = '';
+                    while (i < query.length && !/\s/.test(query[i])) word += query[i++];
+                    if (!word) continue;
+
+                    const upper = word.toUpperCase();
+                    if (upper === 'AND' || upper === 'OR') {
+                        tokens.push({ type: 'op', value: upper });
+                    } else if (word.startsWith('-') && word.length > 1) {
+                        tokens.push({ type: 'exclude', value: word.slice(1).toLowerCase() });
+                    } else if (word.endsWith('~') && word.length > 1) {
+                        tokens.push({ type: 'fuzzy', value: word.slice(0, -1).toLowerCase() });
+                    } else {
+                        tokens.push({ type: 'term', value: word.toLowerCase() });
+                    }
+                }
+                return tokens;
+            }
+
+            // ── Parser ─────────────────────────────────────────────────────────
+            // Converts token list into a query AST.
+            //
+            // Result shapes:
+            //   { type:'empty' }
+            //   { type:'phrase', phrase }                  — entire query is "..."
+            //   { type:'advanced', inclusions, phrases, fuzzyTerms, exclusions }
+            //                                              — no AND/OR operators
+            //   { type:'boolean', clauses }                — has AND/OR operators
+            //     clause: { kind:'phrase'|'term'|'fuzzy'|'exclude', value, joinOp:'AND'|'OR'|null }
+            //     joinOp = operator that combines THIS clause with the previous result
+            parseQuery(query) {
+                const q = (query || '').trim();
+                if (!q) return { type: 'empty' };
+
+                const tokens = this.tokenize(q);
+                if (!tokens.length) return { type: 'empty' };
+
+                // Entire query is a single phrase token → fast path
+                if (tokens.length === 1 && tokens[0].type === 'phrase') {
+                    return { type: 'phrase', phrase: tokens[0].value };
+                }
+
+                const hasOp = tokens.some(t => t.type === 'op');
+
+                if (!hasOp) {
+                    // No AND/OR: all positive terms are implicitly AND-required
+                    return {
+                        type: 'advanced',
+                        inclusions:  tokens.filter(t => t.type === 'term').map(t => t.value),
+                        phrases:     tokens.filter(t => t.type === 'phrase').map(t => t.value),
+                        fuzzyTerms:  tokens.filter(t => t.type === 'fuzzy').map(t => t.value),
+                        exclusions:  tokens.filter(t => t.type === 'exclude').map(t => t.value),
+                    };
+                }
+
+                // Build clause list, attaching each op to the clause that FOLLOWS it
+                // so that joinOp is "how to combine me with the previous result".
+                const clauses = [];
+                let pendingOp = null;
+                for (const tok of tokens) {
+                    if (tok.type === 'op') { pendingOp = tok.value; continue; }
+                    clauses.push({ kind: tok.type, value: tok.value, joinOp: pendingOp });
+                    pendingOp = null;
+                }
+                return { type: 'boolean', clauses };
+            }
+
+            // ── Public entry point ─────────────────────────────────────────────
+            searchCard(card, query, scope) {
+                const pq = this.parseQuery(query);
+                if (pq.type === 'empty') return { matches: true, score: 0 };
+                const fields = this.getSearchFields(card, scope);
+                switch (pq.type) {
+                    case 'phrase':   return this.searchPhrase(fields, pq.phrase);
+                    case 'boolean':  return this.searchBoolean(fields, pq.clauses);
+                    case 'advanced': return this.searchAdvanced(fields, pq);
+                    default:         return { matches: false, score: 0 };
+                }
+            }
+
+            getSearchFields(card, scope) {
+                switch (scope) {
+                    case 'tag':  return [card.searchTag];
+                    case 'cite': return [card.searchCite];
+                    case 'body': return [card.searchBody];
+                    default:     return [card.searchAll];
+                }
+            }
+
+            // ── Search methods ─────────────────────────────────────────────────
+
+            searchPhrase(fields, phrase) {
+                for (const field of fields) {
+                    if (field.includes(phrase)) {
+                        const pos   = field.indexOf(phrase);
+                        const score = 100 - (pos / field.length * 50) + (phrase.length / field.length * 50);
+                        return { matches: true, score: Math.max(score, 10) };
+                    }
+                }
+                return { matches: false, score: 0 };
+            }
+
+            // Boolean query: clauses connected by explicit AND / OR.
+            // Exclusions (kind:'exclude') are always applied regardless of position.
+            searchBoolean(fields, clauses) {
+                // 1. Apply all exclusions first
+                for (const c of clauses) {
+                    if (c.kind !== 'exclude') continue;
+                    if (this.searchTerm(fields, c.value).matches) return { matches: false, score: 0 };
+                }
+
+                // 2. Evaluate positive clauses left-to-right using their joinOp
+                let result = null, totalScore = 0;
+                for (const c of clauses) {
+                    if (c.kind === 'exclude') continue;
+
+                    let r;
+                    if      (c.kind === 'phrase') r = this.searchPhrase(fields, c.value);
+                    else if (c.kind === 'fuzzy')  r = this.searchFuzzy(fields, c.value);
+                    else                           r = this.searchTerm(fields, c.value);
+
+                    if (result === null) {
+                        result = r.matches; totalScore = r.score;
+                    } else if (c.joinOp === 'AND') {
+                        result = result && r.matches;
+                        totalScore = Math.min(totalScore, r.score);
+                    } else {
+                        // OR (or implicit when no op between adjacent positive terms)
+                        result = result || r.matches;
+                        totalScore = Math.max(totalScore, r.score);
+                    }
+                }
+
+                // If only exclusion clauses existed, result is still null → match everything
+                return { matches: result !== null ? result : true, score: totalScore };
+            }
+
+            // Advanced query: no AND/OR; all inclusions/phrases are required (AND);
+            // fuzzy terms are required when they're the only positive terms.
+            searchAdvanced(fields, query) {
+                let score = 0, matchCount = 0;
+                const positiveCount = query.inclusions.length + query.phrases.length + query.fuzzyTerms.length;
+
+                // Required: all plain inclusion terms
+                for (const term of query.inclusions) {
+                    const r = this.searchTerm(fields, term);
+                    if (!r.matches) return { matches: false, score: 0 };
+                    score += r.score; matchCount++;
+                }
+
+                // Required: all quoted phrases
+                for (const phrase of query.phrases) {
+                    const r = this.searchPhrase(fields, phrase);
+                    if (!r.matches) return { matches: false, score: 0 };
+                    score += r.score; matchCount++;
+                }
+
+                // Fuzzy terms: required if they are the only positive criteria
+                for (const term of query.fuzzyTerms) {
+                    const r = this.searchFuzzy(fields, term);
+                    if (!r.matches) {
+                        if (query.inclusions.length === 0 && query.phrases.length === 0)
+                            return { matches: false, score: 0 }; // fuzzy is the only criterion
+                        // otherwise it's a bonus — skip
+                    } else {
+                        score += r.score * 0.8; matchCount++;
+                    }
+                }
+
+                // Exclusions: if any match, reject the card
+                for (const term of query.exclusions) {
+                    if (this.searchTerm(fields, term).matches) return { matches: false, score: 0 };
+                }
+
+                // If there were no positive criteria at all (only exclusions), any non-excluded card matches
+                if (positiveCount === 0) return { matches: true, score: 0 };
+
+                return { matches: matchCount > 0, score };
+            }
+
+            searchTerm(fields, term) {
+                for (const field of fields) {
+                    if (field.includes(term)) {
+                        const safe  = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                        const occurrences = (field.match(new RegExp(safe, 'g')) || []).length;
+                        const density     = occurrences / field.split(' ').length;
+                        const pos         = field.indexOf(term);
+                        const posScore    = 100 - (pos / field.length * 30);
+                        return { matches: true, score: Math.max((density * 100) + (posScore * 0.3) + (term.length * 2), 5) };
+                    }
+                }
+                return { matches: false, score: 0 };
+            }
+
+            searchFuzzy(fields, term) {
+                let best = 0;
+                for (const field of fields) {
+                    for (const word of field.split(/\s+/)) {
+                        const sim = this.similarity(term, word);
+                        if (sim > best) best = sim;
+                    }
+                }
+                if (best >= 0.7) return { matches: true, score: best * 50 };
+                return { matches: false, score: 0 };
+            }
+
+            similarity(a, b) {
+                const aLen = a.length, bLen = b.length;
+                if (aLen === 0) return bLen === 0 ? 1 : 0;
+                if (bLen === 0) return 0;
+                const matrix = [];
+                for (let i = 0; i <= bLen; i++) matrix[i] = [i];
+                for (let j = 0; j <= aLen; j++) matrix[0][j] = j;
+                for (let i = 1; i <= bLen; i++)
+                    for (let j = 1; j <= aLen; j++)
+                        matrix[i][j] = b[i-1] === a[j-1]
+                            ? matrix[i-1][j-1]
+                            : Math.min(matrix[i-1][j-1]+1, matrix[i][j-1]+1, matrix[i-1][j]+1);
+                return 1 - matrix[bLen][aLen] / Math.max(aLen, bLen);
+            }
+        }
+
+        const searchEngine = new SearchEngine();
+
+        // ===== FILTERS =====
+
+        function applyFilters() {
+            const q = state.search.trim();
+            const scope = state.searchScope;
+            const docFilterId = state.docFilter ? Number(state.docFilter) : null;
+            const yearMin = state.yearMin ? Number(state.yearMin) : null;
+            const yearMax = state.yearMax ? Number(state.yearMax) : null;
+
+            // --- Step 1: basic filters (doc, section, year, search) ---
+            let result = [];
+            for (const card of state.cards) {
+                if (docFilterId && card.docId !== docFilterId) continue;
+                if (state.sectionFilter && card.section !== state.sectionFilter) continue;
+
+                // Year filter: only exclude if year IS known and falls outside range,
+                // or user set a range and card has no extractable year at all
+                if (yearMin !== null || yearMax !== null) {
+                    if (card.year === null) {
+                        // No year found: keep unless strict filtering is desired.
+                        // We'll show them with a visual indicator but not hide them.
+                    } else {
+                        if (yearMin !== null && card.year < yearMin) continue;
+                        if (yearMax !== null && card.year > yearMax) continue;
+                    }
+                }
+
+                const searchResult = searchEngine.searchCard(card, q, scope);
+                if (searchResult.matches) result.push({ ...card, searchScore: searchResult.score });
+            }
+
+            // --- Step 2: deduplication ---
+            let dupCount = 0;
+            if (state.dedupEnabled) {
+                const seen = new Set();
+                const deduped = [];
+                for (const card of result) {
+                    if (seen.has(card.dupKey)) {
+                        dupCount++;
+                    } else {
+                        seen.add(card.dupKey);
+                        deduped.push(card);
+                    }
+                }
+                result = deduped;
+            }
+
+            // --- Step 3: sort ---
+            if (state.sortOrder === 'relevance' && q) {
+                result.sort((a, b) => (b.searchScore || 0) - (a.searchScore || 0));
+            } else if (state.sortOrder === 'alpha') {
+                result.sort((a, b) => a.author.localeCompare(b.author));
+            } else if (state.sortOrder === 'taglen') {
+                result.sort((a, b) => a.tag.length - b.tag.length);
+            } else if (state.sortOrder === 'year-new') {
+                result.sort((a, b) => {
+                    if (a.year === null && b.year === null) return a.docId - b.docId || a.id - b.id;
+                    if (a.year === null) return 1;
+                    if (b.year === null) return -1;
+                    return b.year - a.year || a.docId - b.docId || a.id - b.id;
+                });
+            } else if (state.sortOrder === 'year-old') {
+                result.sort((a, b) => {
+                    if (a.year === null && b.year === null) return a.docId - b.docId || a.id - b.id;
+                    if (a.year === null) return 1;
+                    if (b.year === null) return -1;
+                    return a.year - b.year || a.docId - b.docId || a.id - b.id;
+                });
+            } else {
+                result.sort((a, b) => a.docId - b.docId || a.id - b.id);
+            }
+
+            state.filtered = result;
+            renderList();
+            renderStats(dupCount);
+        }
+
+        function renderStats(dupCount = 0) {
+            $('stat-docs').textContent = state.docs.size;
+            $('stat-cards').textContent = state.cards.length;
+            $('stat-dups').textContent = dupCount;
+            $('stat-shown').textContent = state.filtered.length;
+            $('list-summary').textContent = state.docs.size === 0
+                ? 'No documents uploaded'
+                : `${state.filtered.length} of ${state.cards.length} cards`;
+
+            // Year stats
+            const withYear = state.cards.filter(c => c.year !== null).length;
+            $('year-stats').textContent = state.cards.length > 0
+                ? `${withYear} of ${state.cards.length} cards have a year`
+                : '';
+        }
+
+        function renderList() {
+            if (state.docs.size === 0) {
+                cardListEl.innerHTML = `<div class="empty-msg"><span class="big">&#x1F4C4;</span>Upload .docx files to get started.<br><br><button class="upload-btn upload-cta" id="btn-upload-2">+ Add documents</button></div>`;
+                $('btn-upload-2')?.addEventListener('click', () => fileInput.click());
+                return;
+            }
+            if (state.filtered.length === 0) {
+                cardListEl.innerHTML = `<div class="empty-msg">No cards match the current filters.</div>`;
+                return;
+            }
+
+            const RENDER_CAP = 1000;
+            const visible = state.filtered.slice(0, RENDER_CAP);
+            const overflow = state.filtered.length - visible.length;
+            const q = state.search.trim();
+
+            const html = visible.map(c => {
+                const tagHtml = q ? highlightMatches(escapeHtml(c.tag), q) : escapeHtml(c.tag);
+                const citeHtml = q ? highlightMatches(escapeHtml(c.cite), q) : escapeHtml(c.cite);
+                const snippetHtml = q ? highlightMatches(c.snippetHtml, q) : c.snippetHtml;
+                const active = c.id === state.selectedCardId ? ' active' : '';
+                const scoreHtml = c.searchScore && state.sortOrder === 'relevance' ? `<span style="font-size:10px;color:var(--color-text-tertiary);margin-left:8px;">${Math.round(c.searchScore)}</span>` : '';
+                const yearBadge = c.year ? `<span class="year-badge">${c.year}</span>` : '';
+                return `<div class="card-item${active}" data-id="${c.id}">
+                    <div class="card-doc">
+                        <span class="doc-name" title="${escapeHtml(c.docName)}">${escapeHtml(c.docName)}</span>
+                        ${c.section ? `<span>&middot; ${escapeHtml(c.section.substring(0, 36))}</span>` : ''}
+                        ${scoreHtml}
+                    </div>
+                    <div class="card-tag">${tagHtml}${yearBadge}</div>
+                    ${c.cite ? `<div class="card-cite">${citeHtml}</div>` : ''}
+                    ${snippetHtml ? `<div class="card-snippet">${snippetHtml}</div>` : ''}
+                </div>`;
+            }).join('');
+
+            const overflowHtml = overflow > 0
+                ? `<div class="empty-msg" style="padding:18px;">Showing first ${RENDER_CAP} of ${state.filtered.length}. Narrow your search to see more.</div>`
+                : '';
+
+            cardListEl.innerHTML = html + overflowHtml;
+            cardListEl.querySelectorAll('.card-item').forEach(el => {
+                el.addEventListener('click', () => selectCard(Number(el.dataset.id)));
+            });
+        }
+
+        function selectCard(id) {
+            const card = state.cards.find(c => c.id === id);
+            if (!card) return;
+            state.selectedCardId = id;
+            cardListEl.querySelectorAll('.card-item').forEach(el => {
+                el.classList.toggle('active', Number(el.dataset.id) === id);
+            });
+            const activeEl = cardListEl.querySelector(`.card-item[data-id="${id}"]`);
+            if (activeEl) {
+                const rect = activeEl.getBoundingClientRect();
+                const paneRect = leftPane.getBoundingClientRect();
+                if (rect.top < paneRect.top || rect.bottom > paneRect.bottom) activeEl.scrollIntoView({ block: 'nearest' });
+            }
+            renderPreview(card);
+        }
+
+        function stepSelection(dir) {
+            if (!state.filtered.length) return;
+            const currentIdx = state.filtered.findIndex(c => c.id === state.selectedCardId);
+            let next;
+            if (currentIdx === -1) next = state.filtered[0];
+            else {
+                const idx = Math.max(0, Math.min(state.filtered.length - 1, currentIdx + dir));
+                next = state.filtered[idx];
+            }
+            if (next) selectCard(next.id);
+        }
+
+        function highlightMatches(text, q) {
+            if (!q.trim()) return text;
+            const pq = searchEngine.parseQuery(q);
+            switch (pq.type) {
+                case 'phrase':   return highlightPhrase(text, pq.phrase);
+                case 'boolean':  return highlightBoolean(text, pq.clauses);
+                case 'advanced': return highlightAdvanced(text, pq);
+                default: return text;
+            }
+        }
+
+        function highlightPhrase(text, phrase) {
+            const safe = phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            return text.replace(new RegExp(`(${safe})`, 'gi'), '<mark style="background:var(--color-highlight-yellow);padding:0 1px;">$1</mark>');
+        }
+
+        // Boolean: highlight each positive clause; skip excludes
+        function highlightBoolean(text, clauses) {
+            let result = text;
+            for (const c of clauses) {
+                if (c.kind === 'exclude') continue;
+                if (c.kind === 'phrase') {
+                    result = highlightPhrase(result, c.value);
+                } else {
+                    const safe = c.value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                    result = result.replace(new RegExp(`(${safe})`, 'gi'), '<mark style="background:var(--color-highlight-cyan);padding:0 1px;">$1</mark>');
+                }
+            }
+            return result;
+        }
+
+        // Advanced: phrases → yellow, plain terms → yellow, fuzzy → blue
+        function highlightAdvanced(text, query) {
+            let result = text;
+            for (const phrase of (query.phrases || [])) {
+                result = highlightPhrase(result, phrase);
+            }
+            for (const term of query.inclusions) {
+                const safe = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                result = result.replace(new RegExp(`(${safe})`, 'gi'), '<mark style="background:var(--color-highlight-yellow);padding:0 1px;">$1</mark>');
+            }
+            for (const term of query.fuzzyTerms) {
+                const words = result.split(/\s+/);
+                for (let i = 0; i < words.length; i++) {
+                    const cleanWord = words[i].replace(/<[^>]*>/g, '').toLowerCase();
+                    if (searchEngine.similarity(term, cleanWord) >= 0.7) {
+                        const safe = cleanWord.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                        result = result.replace(new RegExp(`\\b(${safe})\\b`, 'gi'), '<mark style="background:var(--color-highlight-blue);padding:0 1px;">$1</mark>');
+                    }
+                }
+            }
+            return result;
+        }
+
+        function populateDocFilter() {
+            const current = state.docFilter;
+            const options = ['<option value="">All documents</option>'];
+            state.docs.forEach(d => options.push(`<option value="${d.id}">${escapeHtml(d.shortName)}</option>`));
+            docFilterEl.innerHTML = options.join('');
+            docFilterEl.value = current && state.docs.has(Number(current)) ? current : '';
+            state.docFilter = docFilterEl.value;
+        }
+
+        function populateSectionFilter() {
+            const current = state.sectionFilter;
+            const sections = [...new Set(state.cards.map(c => c.section).filter(Boolean))].sort();
+            const options = ['<option value="">All sections</option>'];
+            sections.forEach(s => options.push(`<option value="${escapeHtml(s)}">${escapeHtml(s.substring(0, 50))}</option>`));
+            sectionFilterEl.innerHTML = options.join('');
+            sectionFilterEl.value = sections.includes(current) ? current : '';
+            state.sectionFilter = sectionFilterEl.value;
+        }
+
+        function populateYearFilter() {
+            // Gather all distinct years from cards
+            const years = [...new Set(
+                state.cards.map(c => c.year).filter(y => y !== null)
+            )].sort((a, b) => a - b);
+
+            const prevMin = state.yearMin;
+            const prevMax = state.yearMax;
+
+            const anyOpt = '<option value="">Any</option>';
+            yearMinEl.innerHTML = anyOpt + years.map(y => `<option value="${y}">${y}</option>`).join('');
+            yearMaxEl.innerHTML = anyOpt + years.map(y => `<option value="${y}">${y}</option>`).join('');
+
+            yearMinEl.value = prevMin && years.includes(Number(prevMin)) ? prevMin : '';
+            yearMaxEl.value = prevMax && years.includes(Number(prevMax)) ? prevMax : '';
+            state.yearMin = yearMinEl.value;
+            state.yearMax = yearMaxEl.value;
+        }
+
+        // ===== PROGRESS / TOAST =====
+
+        function showProgress(label, pct) {
+            progressOverlay.classList.add('show');
+            progressLabel.textContent = label;
+            progressBar.style.width = `${pct}%`;
+        }
+        function setProgress(pct, label) {
+            progressBar.style.width = `${pct}%`;
+            if (label) progressLabel.textContent = label;
+        }
+        function hideProgress() {
+            setTimeout(() => { progressOverlay.classList.remove('show'); progressBar.style.width = '0%'; }, 300);
+        }
+        let toastTimer = null;
+        function showToast(msg) {
+            toast.textContent = msg;
+            toast.classList.add('show');
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => toast.classList.remove('show'), 2200);
+        }
+
+        renderStats();
+        $('btn-upload-2')?.addEventListener('click', () => fileInput.click());
+
+        // ===== MERGE DOCS PANEL =====
+        (function() {
+            const overlay    = document.getElementById('merge-overlay');
+            const dropZone   = document.getElementById('merge-drop-zone');
+            const mergeInput = document.getElementById('merge-file-input');
+            const fileListEl = document.getElementById('merge-file-list');
+            const listHeader = document.getElementById('merge-file-list-header');
+            const emptyMsg   = document.getElementById('mfl-empty');
+            const mflCount   = document.getElementById('mfl-count');
+            const btnDoMerge = document.getElementById('btn-do-merge');
+            const btnClear   = document.getElementById('btn-merge-clear');
+            const progBar    = document.getElementById('merge-progress-bar');
+            const progFill   = document.getElementById('merge-progress-fill');
+            const statusEl   = document.getElementById('merge-status');
+
+            let mergeFiles = [];
+            let nextId = 1;
+            let merging = false;
+
+            // ── Open / close ──────────────────────────────────────────────────
+            document.getElementById('btn-open-merge').addEventListener('click', () => overlay.classList.add('show'));
+            document.getElementById('btn-close-merge').addEventListener('click', closePanel);
+            overlay.addEventListener('click', e => { if (e.target === overlay) closePanel(); });
+            document.addEventListener('keydown', e => { if (e.key === 'Escape') closePanel(); });
+            function closePanel() { overlay.classList.remove('show'); }
+
+            // ── File input ────────────────────────────────────────────────────
+            dropZone.addEventListener('click', () => mergeInput.click());
+            mergeInput.addEventListener('change', e => { addFiles(Array.from(e.target.files || [])); mergeInput.value = ''; });
+
+            ['dragover','dragenter'].forEach(ev => dropZone.addEventListener(ev, e => { e.preventDefault(); dropZone.classList.add('dragover'); }));
+            ['dragleave','drop'].forEach(ev => dropZone.addEventListener(ev, e => { e.preventDefault(); dropZone.classList.remove('dragover'); }));
+            dropZone.addEventListener('drop', e => {
+                const files = Array.from(e.dataTransfer.files || []).filter(f => f.name.toLowerCase().endsWith('.docx'));
+                if (files.length) addFiles(files);
+            });
+
+            btnClear.addEventListener('click', () => { mergeFiles = []; renderMergeList(); setMergeStatus('', false); });
+            btnDoMerge.addEventListener('click', doMerge);
+
+            function addFiles(files) {
+                files.filter(f => f.name.toLowerCase().endsWith('.docx'))
+                     .forEach(f => mergeFiles.push({ file: f, id: nextId++ }));
+                renderMergeList();
+                setMergeStatus('', false);
+            }
+            function removeFile(id) { mergeFiles = mergeFiles.filter(f => f.id !== id); renderMergeList(); }
+            function moveFile(id, dir) {
+                const idx = mergeFiles.findIndex(f => f.id === id);
+                if (idx === -1) return;
+                const ni = idx + dir;
+                if (ni < 0 || ni >= mergeFiles.length) return;
+                [mergeFiles[idx], mergeFiles[ni]] = [mergeFiles[ni], mergeFiles[idx]];
+                renderMergeList();
+            }
+            function fmtSize(b) {
+                return b < 1024 ? b + ' B' : b < 1048576 ? (b/1024).toFixed(0) + ' KB' : (b/1048576).toFixed(1) + ' MB';
+            }
+            function renderMergeList() {
+                const count = mergeFiles.length;
+                emptyMsg.style.display = count ? 'none' : '';
+                listHeader.style.display = count ? '' : 'none';
+                mflCount.textContent = `${count} file${count !== 1 ? 's' : ''}`;
+                btnDoMerge.disabled = count < 2 || merging;
+                btnClear.style.display = count ? '' : 'none';
+                fileListEl.querySelectorAll('.merge-file-item').forEach(el => el.remove());
+                mergeFiles.forEach((entry, idx) => {
+                    const item = document.createElement('div');
+                    item.className = 'merge-file-item';
+                    item.innerHTML = `
+                        <span class="mfi-order">${idx+1}</span>
+                        <span class="mfi-icon">&#x1F4C4;</span>
+                        <span class="mfi-name" title="${escMerge(entry.file.name)}">${escMerge(entry.file.name)}</span>
+                        <span class="mfi-size">${fmtSize(entry.file.size)}</span>
+                        <span class="mfi-btns">
+                            <button class="mfi-btn" data-action="up" ${idx===0?'disabled':''}>&#x2191;</button>
+                            <button class="mfi-btn" data-action="down" ${idx===mergeFiles.length-1?'disabled':''}>&#x2193;</button>
+                            <button class="mfi-btn danger" data-action="remove">&#x2715;</button>
+                        </span>`;
+                    item.querySelectorAll('[data-action]').forEach(btn => {
+                        btn.addEventListener('click', () => {
+                            const a = btn.dataset.action;
+                            if (a==='up') moveFile(entry.id,-1);
+                            else if (a==='down') moveFile(entry.id,1);
+                            else removeFile(entry.id);
+                        });
+                    });
+                    fileListEl.appendChild(item);
+                });
+            }
+            function escMerge(s) { return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+            function setMergeStatus(msg, show) { statusEl.textContent = msg; statusEl.classList.toggle('show', show); }
+            function setMergeProgress(pct, show) { progFill.style.width = pct+'%'; progBar.classList.toggle('show', show); }
+
+            // ── Relationship types that belong to the BASE document structure ──
+            // Paragraphs from other docs may reference these types, but we should
+            // skip remapping them — the base doc already provides them.
+            const SKIP_REL_TYPE_ENDS = new Set([
+                'styles','settings','theme','fontTable','webSettings',
+                'numbering','endnotes','footnotes','comments',
+                'customXml','customXmlProps','glossaryDocument',
+            ]);
+
+            // ── Parse a .rels XML string into an array of relationship objects ──
+            function parseRels(xml) {
+                const rels = [];
+                // Match self-closing and full-element Relationship tags
+                const re = /<Relationship\b([^>]*?)(?:\/>|>[\s\S]*?<\/Relationship>)/g;
+                let m;
+                while ((m = re.exec(xml)) !== null) {
+                    const a = m[1];
+                    const id   = (a.match(/\bId="([^"]*)"/) || [])[1];
+                    const type = (a.match(/\bType="([^"]*)"/) || [])[1];
+                    const tgt  = (a.match(/\bTarget="([^"]*)"/) || [])[1];
+                    const mode = (a.match(/\bTargetMode="([^"]*)"/) || [])[1] || null;
+                    if (id && type && tgt) rels.push({ id, type, target: tgt, targetMode: mode });
+                }
+                return rels;
+            }
+
+            // ── Rebuild a .rels XML string from an array ──
+            function buildRelsXml(rels) {
+                const body = rels.map(r => {
+                    const mode = r.targetMode ? ` TargetMode="${r.targetMode}"` : '';
+                    return `  <Relationship Id="${r.id}" Type="${r.type}" Target="${r.target}"${mode}/>`;
+                }).join('\n');
+                return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">\n${body}\n</Relationships>`;
+            }
+
+            // ── Remap all rId attribute values in a block of XML ──
+            function remapRelIds(xml, idMap) {
+                // Covers r:id, r:embed, r:link (all the ways a paragraph can reference a rel)
+                return xml.replace(/\b(r:id|r:embed|r:link)="([^"]*)"/g, (match, attr, oldId) => {
+                    const newId = idMap[oldId];
+                    return newId ? `${attr}="${newId}"` : match;
+                });
+            }
+
+            // ── Extract <w:p> elements from a document.xml string ──
+            function extractBodyParas(docXml) {
+                const bodyMatch = docXml.match(/<w:body\b[^>]*>([\s\S]*)<\/w:body>/);
+                if (!bodyMatch) return [];
+                const body = bodyMatch[1];
+                const paras = [];
+                let pos = 0;
+                while (pos < body.length) {
+                    const start = body.indexOf('<w:p', pos);
+                    if (start === -1) break;
+                    const ch = body[start + 4];
+                    if (ch !== ' ' && ch !== '>' && ch !== '/') { pos = start + 4; continue; }
+                    if (body[start+4] === '/' && body[start+5] === '>') {
+                        paras.push(body.slice(start, start+6)); pos = start+6; continue;
+                    }
+                    const tagEnd = body.indexOf('>', start);
+                    if (tagEnd === -1) break;
+                    if (body[tagEnd-1] === '/') {
+                        paras.push(body.slice(start, tagEnd+1)); pos = tagEnd+1;
+                    } else {
+                        const close = body.indexOf('</w:p>', tagEnd);
+                        if (close === -1) break;
+                        paras.push(body.slice(start, close+6)); pos = close+6;
+                    }
+                }
+                return paras;
+            }
+
+            // ── Build the final merged document.xml ──
+            function buildMergedDocXml(baseDocXml, allParas) {
+                let sectPr = '';
+                if (baseDocXml) {
+                    const sm = baseDocXml.match(/<w:sectPr\b[\s\S]*?<\/w:sectPr>/);
+                    if (sm) sectPr = sm[0];
+                }
+                const parasXml = allParas.join('\n');
+                if (baseDocXml) {
+                    return baseDocXml.replace(
+                        /<w:body\b[^>]*>[\s\S]*<\/w:body>/,
+                        m => { const open = m.match(/^<w:body\b[^>]*/)[0] + '>'; return `${open}${parasXml}${sectPr}</w:body>`; }
+                    );
+                }
+                return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:document xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body>${parasXml}${sectPr}</w:body></w:document>`;
+            }
+
+            // ── Ensure content types cover any new extensions we added ──
+            async function patchContentTypes(outZip, addedExtensions) {
+                const ctFile = outZip.file('[Content_Types].xml');
+                if (!ctFile || !addedExtensions.size) return;
+                let ctXml = await ctFile.async('string');
+                for (const ext of addedExtensions) {
+                    if (ctXml.includes(`Extension="${ext}"`)) continue;
+                    const mime = { png:'image/png', jpg:'image/jpeg', jpeg:'image/jpeg', gif:'image/gif',
+                                   wmf:'image/x-wmf', emf:'image/x-emf', svg:'image/svg+xml',
+                                   tif:'image/tiff', tiff:'image/tiff', bmp:'image/bmp' }[ext] || 'application/octet-stream';
+                    ctXml = ctXml.replace('</Types>', `  <Default Extension="${ext}" ContentType="${mime}"/>\n</Types>`);
+                }
+                outZip.file('[Content_Types].xml', ctXml);
+            }
+
+            // ── Core merge ────────────────────────────────────────────────────
+            async function doMerge() {
+                if (mergeFiles.length < 2 || merging) return;
+                merging = true;
+                btnDoMerge.disabled = true;
+                setMergeProgress(0, true);
+
+                try {
+                    // Step 1 — load all zips
+                    const zips = [];
+                    for (let i = 0; i < mergeFiles.length; i++) {
+                        setMergeStatus(`Loading ${mergeFiles[i].file.name}…`, true);
+                        setMergeProgress((i / mergeFiles.length) * 30, true);
+                        const buf = await mergeFiles[i].file.arrayBuffer();
+                        zips.push({ name: mergeFiles[i].file.name, zip: await JSZip.loadAsync(buf) });
+                        await tick();
+                    }
+
+                    setMergeStatus('Building merged document…', true);
+                    setMergeProgress(35, true);
+
+                    // Step 2 — start output zip from base (first) document
+                    const baseZip = zips[0].zip;
+                    const outZip  = new JSZip();
+
+                    // Copy everything from base except document.xml and its rels
+                    // (we'll rebuild both)
+                    for (const [path, entry] of Object.entries(baseZip.files)) {
+                        if (entry.dir) continue;
+                        if (path === 'word/document.xml') continue;
+                        if (path === 'word/_rels/document.xml.rels') continue;
+                        outZip.file(path, await entry.async('uint8array'));
+                    }
+
+                    // Step 3 — build merged rels starting from the base document's rels
+                    const baseRelsFile = baseZip.file('word/_rels/document.xml.rels');
+                    const baseRelsXml  = baseRelsFile ? await baseRelsFile.async('string') : '';
+                    const mergedRels   = parseRels(baseRelsXml);
+
+                    // Track the highest rId number already used so we can assign new unique ones
+                    let nextRid = 1;
+                    for (const r of mergedRels) {
+                        const n = parseInt(r.id.replace(/\D/g,''), 10);
+                        if (!isNaN(n) && n >= nextRid) nextRid = n + 1;
+                    }
+
+                    // Extensions we copy into the zip that might need content-type entries
+                    const addedExts = new Set();
+
+                    // Step 4 — process each document
+                    const allParas = [];
+                    const baseDocXmlFile = baseZip.file('word/document.xml');
+                    const baseDocXml = baseDocXmlFile ? await baseDocXmlFile.async('string') : null;
+
+                    for (let i = 0; i < zips.length; i++) {
+                        const { name, zip } = zips[i];
+                        setMergeStatus(`Merging ${name}…`, true);
+                        setMergeProgress(35 + (i / zips.length) * 50, true);
+                        await tick();
+
+                        const docXmlFile = zip.file('word/document.xml');
+                        if (!docXmlFile) continue;
+                        let docXml = await docXmlFile.async('string');
+
+                        if (i === 0) {
+                            // Base doc: rels already in mergedRels, paragraphs go in as-is
+                            allParas.push(...extractBodyParas(docXml));
+                            continue;
+                        }
+
+                        // Parse this doc's rels and build an ID remapping table
+                        const relsFile = zip.file('word/_rels/document.xml.rels');
+                        const relsXml  = relsFile ? await relsFile.async('string') : '';
+                        const docRels  = parseRels(relsXml);
+                        const idMap    = {};
+
+                        for (const rel of docRels) {
+                            // Skip structural rels — the base document provides those
+                            const typeEnd = rel.type.split('/').pop();
+                            if (SKIP_REL_TYPE_ENDS.has(typeEnd)) continue;
+
+                            // If an identical rel (same type + target + targetMode) already
+                            // exists in the merged doc, reuse its ID — no duplication needed
+                            const dup = mergedRels.find(
+                                r => r.type === rel.type &&
+                                     r.target === rel.target &&
+                                     r.targetMode === rel.targetMode
+                            );
+                            if (dup) { idMap[rel.id] = dup.id; continue; }
+
+                            // Assign a fresh relationship ID
+                            const newId = `rId${nextRid++}`;
+                            idMap[rel.id] = newId;
+
+                            if (rel.targetMode === 'External') {
+                                // Hyperlink or other external — just carry the reference
+                                mergedRels.push({ ...rel, id: newId });
+                            } else {
+                                // Internal resource (image, chart, etc.) — copy the actual file
+                                // and give it a unique name to avoid collisions
+                                const srcPath = rel.target.startsWith('/')
+                                    ? rel.target.slice(1)
+                                    : `word/${rel.target}`;
+                                const srcFile = zip.file(srcPath) || zip.file(`word/${rel.target}`);
+                                if (srcFile) {
+                                    const ext  = rel.target.split('.').pop().toLowerCase();
+                                    const base = rel.target.replace(/^.*\//, '').replace(/\.[^.]+$/, '');
+                                    const newFileName = `media/${base}_${newId}.${ext}`;
+                                    outZip.file(`word/${newFileName}`, await srcFile.async('uint8array'));
+                                    addedExts.add(ext);
+                                    mergedRels.push({ ...rel, id: newId, target: newFileName });
+                                } else {
+                                    // File not found in source zip — still record the rel so
+                                    // references resolve (Word will just show a broken image)
+                                    mergedRels.push({ ...rel, id: newId });
+                                }
+                            }
+                        }
+
+                        // Remap every r:id / r:embed / r:link in this doc's XML, then extract paragraphs
+                        docXml = remapRelIds(docXml, idMap);
+                        allParas.push(...extractBodyParas(docXml));
+                    }
+
+                    setMergeStatus('Writing output…', true);
+                    setMergeProgress(88, true);
+
+                    // Step 5 — write rebuilt rels and document.xml
+                    outZip.file('word/_rels/document.xml.rels', buildRelsXml(mergedRels));
+                    outZip.file('word/document.xml', buildMergedDocXml(baseDocXml, allParas));
+
+                    // Patch [Content_Types].xml for any new media extensions
+                    await patchContentTypes(outZip, addedExts);
+
+                    setMergeProgress(95, true);
+                    setMergeStatus('Generating file…', true);
+
+                    const blob = await outZip.generateAsync({ type: 'blob', mimeType: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' });
+                    setMergeProgress(100, true);
+                    setMergeStatus(`✓ ${mergeFiles.length} documents merged successfully`, true);
+
+                    const baseName = mergeFiles[0].file.name.replace(/\.docx$/i, '');
+                    downloadMergedFile(blob, `merged_${baseName}_+${mergeFiles.length-1}more.docx`);
+
+                } catch (err) {
+                    setMergeStatus(`Error: ${err.message || err}`, true);
+                    console.error('Merge error:', err);
+                } finally {
+                    merging = false;
+                    btnDoMerge.disabled = mergeFiles.length < 2;
+                    setTimeout(() => setMergeProgress(0, false), 2000);
+                }
+            }
+
+            function tick() { return new Promise(r => setTimeout(r, 0)); }
+
+            function downloadMergedFile(blob, filename) {
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url; a.download = filename;
+                document.body.appendChild(a); a.click(); document.body.removeChild(a);
+                setTimeout(() => URL.revokeObjectURL(url), 1500);
+            }
+
+        })(); // end merge module
+    })();
+    </script>
+</body>
+</html>

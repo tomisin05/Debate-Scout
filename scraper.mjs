@@ -5,7 +5,7 @@
  *  - Dynamic year discovery: no more hardcoding "ndtceda25"
  *  - Dynamic school discovery: reads schools from the caselist page
  *  - Resume support: skips schools/teams already present in output file
- *  - CLI flags (--year, --school, --output, --phase, --resume, --concurrency)
+ *  - CLI flags (--year, --school, --output, --phase, --resume)
  *  - Session reuse: logs in once per browser lifecycle, not per page
  *  - Exponential backoff retries with jitter
  *  - Structured JSON output with metadata
@@ -23,7 +23,7 @@ function parseArgs() {
     const opts = {
         year: null,            // e.g. "ndtceda25" — discovered dynamically if omitted
         schools: [],           // filter to specific schools (comma-separated)
-        output: 'data.json',
+        output: null,           // defaults to data_<year>.json after year selection
         mapFile: 'round_count_map.json',
         errorsFile: 'scrape_errors.json',
         phase: 'all',          // "map" | "scrape" | "retry" | "all"
@@ -31,8 +31,8 @@ function parseArgs() {
         batchSize: 5,
         batchDelay: 1 * 60_000, // ms between batches
         pageDelay: 1500,        // ms between page loads
-        username: process.env.OPENCASELIST_USERNAME || 'tyur55357@gmail.com',
-        password: process.env.OPENCASELIST_PASSWORD || 'Debate-Scrapper',
+        username: process.env.OPENCASELIST_USERNAME,
+        password: process.env.OPENCASELIST_PASSWORD,
     };
 
     for (let i = 0; i < args.length; i++) {
@@ -52,11 +52,11 @@ function parseArgs() {
 Options:
   --year <slug>          Caselist year slug, e.g. ndtceda25 (auto-detected if omitted)
   --school <names>       Comma-separated school names to limit scraping to
-  --output <file>        Output JSON file (default: data.json)
+  --output <file>        Output JSON file (single-year runs only; default: data_<year>.json)
   --phase <phase>        One of: map | scrape | retry | all (default: all)
   --no-resume            Re-scrape everything, ignoring existing output
   --batch-size <n>       Schools per batch (default: 5)
-  --batch-delay <secs>   Seconds between batches (default: 300)
+  --batch-delay <secs>   Seconds between batches (default: 60)
   --username <email>     Login email
   --password <pass>      Login password
 
@@ -78,6 +78,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 const jitter = ms => sleep(ms * (0.6 + Math.random() * 0.8));
 
 function saveJSON(filepath, data) {
+    fs.mkdirSync(path.dirname(path.resolve(filepath)), { recursive: true });
     fs.writeFileSync(filepath, JSON.stringify(data, null, 2));
 }
 
@@ -134,16 +135,18 @@ async function loginPage(browser, username, password) {
     await page.type('input[name="username"]', username, { delay: 30 });
     await page.$eval('input[name="password"]', el => (el.value = ''));
     await page.type('input[name="password"]', password, { delay: 30 });
-    await page.click('button[type="submit"]');
-    await sleep(5000);
+    await Promise.all([
+        page.waitForNavigation({ waitUntil: 'domcontentloaded', timeout: 15_000 }).catch(() => null),
+        page.click('button[type="submit"]'),
+    ]);
+    await sleep(2000);
 
-    // Verify login by checking for a logged-in indicator
-    const loggedIn = await page.evaluate(() => {
-        const text = document.body.innerText;
-        return !text.includes('Log In') && !text.includes('Sign In');
-    });
-    if (!loggedIn) {
-        console.warn('  ⚠  Login may have failed — continuing anyway');
+    // A failed login leaves the user on the login page with the form visible.
+    const loginFailed = new URL(page.url()).pathname === '/login' ||
+        await page.$('input[name="password"]') !== null;
+    if (loginFailed) {
+        await page.close();
+        throw new Error('OpenCaselist login failed. Check OPENCASELIST_USERNAME and OPENCASELIST_PASSWORD.');
     }
     return page;
 }
@@ -165,7 +168,7 @@ async function discoverYears(page) {
 
     if (years.length === 0) {
         // Fallback: try known pattern
-        return ['ndtceda25'];
+        return ['ndtceda26'];
     }
     console.log('  Found years:', years.join(', '));
     return years;
@@ -258,11 +261,6 @@ async function createRoundCountMap(browser, schools, yearSlug, opts) {
         console.log(`\nBatch ${Math.floor(i / opts.batchSize) + 1}/${Math.ceil(schools.length / opts.batchSize)}`);
 
         for (const school of batch) {
-            if (opts.resume && existing[school.name] && Object.keys(existing[school.name]).length > 0) {
-                console.log(`  ✓ ${school.name} already mapped, skipping`);
-                continue;
-            }
-
             let page;
             try {
                 page = await loginPage(browser, opts.username, opts.password);
@@ -435,12 +433,21 @@ async function extractRounds(page) {
 async function scrapeWithVerification(browser, schools, yearSlug, roundCountMap, opts) {
     console.log('\n═══ PHASE 2: Scraping rounds ═══\n');
 
-    const existing = opts.resume ? loadJSON(opts.output, { meta: {}, rounds: [] }) : { meta: {}, rounds: [] };
-    if (!existing.rounds) existing.rounds = [];
+    const loaded = opts.resume ? loadJSON(opts.output, null) : null;
+    const existing = Array.isArray(loaded)
+        ? { meta: {}, rounds: loaded }
+        : loaded || { meta: {}, rounds: [] };
+    if (!Array.isArray(existing.rounds)) existing.rounds = [];
 
-    // Build a set of already-scraped (school, team) pairs for resume
-    const done = new Set(existing.rounds.map(r => `${r.year}|${r.school}|${r.team}`));
+    // Count saved rounds per team so partial teams are not treated as complete.
+    const existingCounts = new Map();
+    for (const record of existing.rounds) {
+        const key = `${record.year}|${record.school}|${record.team}`;
+        existingCounts.set(key, (existingCounts.get(key) || 0) + 1);
+    }
     const errors = [];
+    const completedTeamKeys = new Set();
+    const completedSchoolKeys = new Set();
     let totalAdded = 0;
 
     for (let i = 0; i < schools.length; i += opts.batchSize) {
@@ -469,12 +476,12 @@ async function scrapeWithVerification(browser, schools, yearSlug, roundCountMap,
 
                 for (const team of teamLinks) {
                     const doneKey = `${yearSlug}|${school.name}|${team.name}`;
-                    if (opts.resume && done.has(doneKey)) {
+                    const expected = roundCountMap[school.name]?.[team.name] ?? null;
+                    if (opts.resume && expected !== null && (existingCounts.get(doneKey) || 0) === expected) {
+                        completedTeamKeys.add(doneKey);
                         console.log(`    ✓ ${team.name} already scraped`);
                         continue;
                     }
-
-                    const expected = roundCountMap[school.name]?.[team.name] ?? null;
 
                     let rounds = [];
                     let succeeded = false;
@@ -496,6 +503,10 @@ async function scrapeWithVerification(browser, schools, yearSlug, roundCountMap,
                     }
 
                     if (succeeded) {
+                        // Replace partial records from an earlier run instead of duplicating them.
+                        existing.rounds = existing.rounds.filter(r =>
+                            `${r.year}|${r.school}|${r.team}` !== doneKey
+                        );
                         const records = rounds.map(r => ({
                             year: yearSlug,
                             school: school.name,
@@ -504,6 +515,8 @@ async function scrapeWithVerification(browser, schools, yearSlug, roundCountMap,
                             scrapedAt: new Date().toISOString(),
                         }));
                         existing.rounds.push(...records);
+                        existingCounts.set(doneKey, records.length);
+                        completedTeamKeys.add(doneKey);
                         totalAdded += records.length;
                         console.log(`    ✓ ${team.name}: ${rounds.length} rounds`);
                     }
@@ -519,6 +532,7 @@ async function scrapeWithVerification(browser, schools, yearSlug, roundCountMap,
                 };
                 saveJSON(opts.output, existing);
                 console.log(`    Progress saved — ${existing.rounds.length} total rounds`);
+                completedSchoolKeys.add(`${yearSlug}|${school.name}`);
 
             } catch (err) {
                 console.log(`  Error on ${school.name}: ${err.message}`);
@@ -534,11 +548,27 @@ async function scrapeWithVerification(browser, schools, yearSlug, roundCountMap,
         }
     }
 
-    if (errors.length > 0) {
-        const prev = loadJSON(opts.errorsFile, []);
-        saveJSON(opts.errorsFile, [...prev, ...errors]);
-        console.log(`\n${errors.length} errors saved to ${opts.errorsFile}`);
+    // Keep only unresolved errors. Resolved entries disappear, and a repeated
+    // failure replaces its previous entry instead of being appended again.
+    const previousErrors = loadJSON(opts.errorsFile, []);
+    const unresolved = new Map();
+    const errorKey = error => `${error.year}|${error.school}|${error.team || ''}`;
+
+    if (Array.isArray(previousErrors)) {
+        for (const error of previousErrors) {
+            const teamKey = error.team ? `${error.year}|${error.school}|${error.team}` : null;
+            const schoolKey = `${error.year}|${error.school}`;
+            const resolved = teamKey
+                ? completedTeamKeys.has(teamKey)
+                : completedSchoolKeys.has(schoolKey);
+            if (!resolved) unresolved.set(errorKey(error), error);
+        }
     }
+    for (const error of errors) unresolved.set(errorKey(error), error);
+
+    const unresolvedErrors = [...unresolved.values()];
+    saveJSON(opts.errorsFile, unresolvedErrors);
+    console.log(`\n${unresolvedErrors.length} unresolved errors saved to ${opts.errorsFile}`);
 
     return existing;
 }
@@ -547,10 +577,20 @@ async function scrapeWithVerification(browser, schools, yearSlug, roundCountMap,
 
 async function main() {
     const opts = parseArgs();
+    opts.username = opts.username?.trim();
+    if (!opts.username || !opts.password) {
+        throw new Error('Set OPENCASELIST_USERNAME and OPENCASELIST_PASSWORD before running the scraper.');
+    }
+    if (!['map', 'scrape', 'retry', 'all'].includes(opts.phase)) {
+        throw new Error(`Invalid --phase "${opts.phase}". Use map, scrape, retry, or all.`);
+    }
+    if (opts.output && !opts.year) {
+        throw new Error('--output requires --year so multiple seasons cannot overwrite one file.');
+    }
     console.log('═══ opencaselist scraper ═══');
     console.log('Phase:', opts.phase);
     console.log('Resume:', opts.resume);
-    console.log('Output:', opts.output);
+    console.log('Output:', opts.output || 'data_<year>.json');
 
     let browser;
     try {
@@ -573,17 +613,17 @@ async function main() {
                 process.exit(1);
             }
 
-            // Filter years 2020-2025 (only ndtceda format)
+            // Filter years 2020-2026 (only ndtceda format)
             yearsToScrape = allYears.filter(year => {
                 const match = year.match(/^ndtceda(\d{2})$/);
                 if (match) {
                     const yearNum = parseInt(match[1]);
-                    return yearNum >= 2 && yearNum <= 25;
+                    return yearNum >= 20 && yearNum <= 26;
                 }
                 return false;
             }).sort(); // Sort to process chronologically
 
-            console.log(`Found years 2020-2025: ${yearsToScrape.join(', ')}`);
+            console.log(`Found years 2020-2026: ${yearsToScrape.join(', ')}`);
         }
 
         // ── Step 2: Process each year ────────────────────────────────────────
@@ -594,7 +634,9 @@ async function main() {
             // Create year-specific output files
             const yearOpts = {
                 ...opts,
-                output: `data_${yearSlug}.json`,
+                output: opts.output && yearsToScrape.length === 1
+                    ? opts.output
+                    : `data_${yearSlug}.json`,
                 mapFile: `round_count_map_${yearSlug}.json`,
                 errorsFile: `scrape_errors_${yearSlug}.json`
             };

@@ -2,15 +2,13 @@ import { useState, useEffect, useMemo, useRef } from "react";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "./firebase";
 import Login from "./Login";
-import DebateCardSplitter from "./DebateCardSplitter";
 import "./App.css";
 
 function App() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [activeTab, setActiveTab] = useState('scout');
   const [allData, setAllData] = useState({});
-  const [selectedYear, setSelectedYear] = useState("25");
+  const [selectedYear, setSelectedYear] = useState("26");
   const [data, setData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
@@ -60,8 +58,9 @@ function App() {
   useEffect(() => {
     const loadAllData = async () => {
       try {
-        const [data25, data24, data23, data22, data21, data20, data19] =
+        const [data26, data25, data24, data23, data22, data21, data20, data19] =
           await Promise.all([
+            fetch("/data_ndtceda26.json").then((res) => res.json()),
             fetch("/data_ndtceda25.json").then((res) => res.json()),
             fetch("/data_ndtceda24.json").then((res) => res.json()),
             fetch("/data_ndtceda23.json").then((res) => res.json()),
@@ -72,6 +71,7 @@ function App() {
           ]);
 
         const yearData = {
+          26: data26.rounds || [],
           25: data25.rounds || [],
           24: data24.rounds || [],
           23: data23.rounds || [],
@@ -82,7 +82,7 @@ function App() {
         };
 
         setAllData(yearData);
-        setData(yearData["25"] || []);
+        setData(yearData["26"] || []);
       } catch (error) {
         console.error("Error loading data:", error);
         setAllData({});
@@ -361,20 +361,6 @@ function App() {
             <i className="fas fa-table"></i>
             <span>Debate Scout</span>
           </div>
-          <div className="tab-navigation">
-            <button 
-              className={`tab-btn ${activeTab === 'scout' ? 'active' : ''}`}
-              onClick={() => setActiveTab('scout')}
-            >
-              <i className="fas fa-table"></i> Scout
-            </button>
-            <button 
-              className={`tab-btn ${activeTab === 'splitter' ? 'active' : ''}`}
-              onClick={() => setActiveTab('splitter')}
-            >
-              <i className="fas fa-cut"></i> Card Splitter
-            </button>
-          </div>
         </div>
         <div className="header-right">
           <div className="year-selector">
@@ -384,6 +370,7 @@ function App() {
               onChange={(e) => setSelectedYear(e.target.value)}
               className="filter-select"
             >
+              <option value="26">2026</option>
               <option value="25">2025</option>
               <option value="24">2024</option>
               <option value="23">2023</option>
@@ -504,9 +491,7 @@ function App() {
         </div>
       </div>
 
-      {activeTab === 'scout' && (
-        <>
-          <div className="filters-bar">
+      <div className="filters-bar">
         <div className="filter-controls">
           <button className="btn-add-filter" onClick={addFilter}>
             <i className="fas fa-plus"></i> Add Filter
@@ -1069,14 +1054,6 @@ function App() {
           </button>
         </div>
       </div>
-        </>
-      )}
-
-      {activeTab === 'splitter' && (
-        <div className="splitter-container">
-          <DebateCardSplitter />
-        </div>
-      )}
     </div>
   );
 }

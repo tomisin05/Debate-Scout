@@ -18,56 +18,34 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: "22"
+          cache: npm
 
       - name: Install dependencies
-        run: |
-          npm install puppeteer
-          sudo apt-get update
-          sudo apt-get install -y chromium-browser
+        run: npm ci
 
       - name: Check current data size
         id: current-size
         run: |
-          if [ -f "public/data.json" ]; then
-            CURRENT_SIZE=$(jq length public/data.json)
+          if [ -f "public/data_ndtceda26.json" ]; then
+            CURRENT_SIZE=$(jq 'if type == "array" then length else (.rounds | length) end' public/data_ndtceda26.json)
             echo "current_size=$CURRENT_SIZE" >> $GITHUB_OUTPUT
           else
             echo "current_size=0" >> $GITHUB_OUTPUT
           fi
 
-      - name: Scrape new data
-        run: node scrape_with_verification.js
+      - name: Scrape 2026 data
+        run: node scraper.mjs --year ndtceda26 --output public/data_ndtceda26.json
         env:
           OPENCASELIST_USERNAME: ${{ secrets.OPENCASELIST_USERNAME }}
           OPENCASELIST_PASSWORD: ${{ secrets.OPENCASELIST_PASSWORD }}
-
-      - name: Retry failed schools
-        run: |
-          if [ -f "scrape_errors.json" ]; then
-            echo "Found errors, retrying failed schools..."
-            node retry_failed_schools.js
-          else
-            echo "No errors found, skipping retry"
-          fi
-        env:
-          OPENCASELIST_USERNAME: ${{ secrets.OPENCASELIST_USERNAME }}
-          OPENCASELIST_PASSWORD: ${{ secrets.OPENCASELIST_PASSWORD }}
-
-      - name: Move data to public folder
-        run: |
-          mkdir -p public
-          if [ -f "data.json" ]; then
-            mv data.json public/data.json
-          else
-            echo "No data.json found, creating empty file"
-            echo "[]" > public/data.json
-          fi
 
       - name: Check new data size
         id: new-size
         run: |
-          NEW_SIZE=$(jq length public/data.json)
+          test -f public/data_ndtceda26.json
+          jq -e '.rounds and (.rounds | type == "array")' public/data_ndtceda26.json > /dev/null
+          NEW_SIZE=$(jq '.rounds | length' public/data_ndtceda26.json)
           echo "new_size=$NEW_SIZE" >> $GITHUB_OUTPUT
 
       - name: Compare and commit
@@ -82,12 +60,12 @@ jobs:
             echo "New data has more records. Committing..."
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
-            git add public/data.json
-            if [ -f "scrape_errors.json" ]; then
-              git add scrape_errors.json
+            git add public/data_ndtceda26.json
+            if [ -f "scrape_errors_ndtceda26.json" ]; then
+              git add scrape_errors_ndtceda26.json
             fi
-            if [ -f "round_count_map.json" ]; then
-              git add round_count_map.json
+            if [ -f "round_count_map_ndtceda26.json" ]; then
+              git add round_count_map_ndtceda26.json
             fi
             git commit -m "Update debate data: $NEW_SIZE records (+$(($NEW_SIZE - $CURRENT_SIZE)))"
             git push

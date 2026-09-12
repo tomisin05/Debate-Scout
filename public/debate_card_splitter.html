@@ -92,6 +92,43 @@
             position: absolute; left: 11px; top: 50%; transform: translateY(-50%);
             font-size: 16px; color: var(--color-text-tertiary); pointer-events: none;
         }
+        .search-help {
+            position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+            width: 20px; height: 20px; border-radius: 50%;
+            background: var(--color-background-secondary);
+            color: var(--color-text-tertiary);
+            border: none; cursor: pointer;
+            font-size: 12px; font-weight: bold;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .search-help:hover {
+            background: var(--color-background-tertiary);
+            color: var(--color-text-secondary);
+        }
+        .search-tooltip {
+            position: absolute; top: 100%; right: 0; margin-top: 8px;
+            background: var(--color-text-primary); color: var(--color-background-primary);
+            padding: 12px 16px; border-radius: var(--border-radius-md);
+            font-size: 12px; line-height: 1.4;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 1000; min-width: 300px;
+            display: none;
+        }
+        .search-tooltip.show { display: block; }
+        .search-tooltip h4 {
+            margin: 0 0 8px 0; font-size: 13px; font-weight: 600;
+        }
+        .search-tooltip ul {
+            margin: 0; padding-left: 16px;
+        }
+        .search-tooltip li {
+            margin-bottom: 4px;
+        }
+        .search-tooltip code {
+            background: rgba(255,255,255,0.2);
+            padding: 1px 4px; border-radius: 2px;
+            font-family: monospace; font-size: 11px;
+        }
         .search-row select {
             font-size: 13px; padding: 8px 10px;
             border-radius: var(--border-radius-md);
@@ -256,9 +293,42 @@
             position: relative;
         }
 
+        /* Card header (tag + cite) rendered above docx-preview output */
+        .card-header-block {
+            padding: 24px 40px 0 40px;
+        }
+        .card-header-block .ch-section {
+            font-family: var(--font-sans);
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: var(--color-text-tertiary);
+            margin-bottom: 6px;
+        }
+        .card-header-block .ch-tag {
+            font-family: var(--font-sans);
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 1.35;
+            color: var(--color-text-primary);
+            margin-bottom: 8px;
+        }
+        .card-header-block .ch-cite {
+            font-family: var(--font-sans);
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin-bottom: 4px;
+        }
+        .card-header-block .ch-divider {
+            height: 0.5px;
+            background: var(--color-border-tertiary);
+            margin: 14px 0 0 0;
+        }
+
         /* docx-preview renders into .docx-wrapper — override its page margins for card view */
         .preview-body .docx-wrapper {
-            padding: 20px 32px !important;
+            padding: 16px 32px 20px 40px !important;
             background: var(--color-background-primary) !important;
         }
         .preview-body .docx-wrapper > section.docx {
@@ -409,7 +479,19 @@
         <div class="search-row">
             <div class="search-wrap">
                 <span class="search-icon">&#x1F50D;</span>
-                <input type="search" id="search-input" placeholder="Search tags, citations, and card text across all uploaded documents...">
+                <input type="search" id="search-input" placeholder='Search: "exact phrase", word1 AND word2, word1 OR word2, -exclude, fuzzy~'>
+                <button class="search-help" id="search-help" type="button">?</button>
+                <div class="search-tooltip" id="search-tooltip">
+                    <h4>Advanced Search</h4>
+                    <ul>
+                        <li><code>"climate change"</code> - Exact phrase</li>
+                        <li><code>climate AND change</code> - Both words required</li>
+                        <li><code>climate OR warming</code> - Either word</li>
+                        <li><code>climate -denial</code> - Include climate, exclude denial</li>
+                        <li><code>climat~</code> - Fuzzy match (climate, climatic, etc.)</li>
+                        <li><code>"global warming" AND policy -skeptic</code> - Complex queries</li>
+                    </ul>
+                </div>
             </div>
             <div class="scope" id="scope-toggle" role="tablist">
                 <button data-scope="all" class="active">All</button>
@@ -423,6 +505,7 @@
                 <option value="doc">Document order</option>
                 <option value="alpha">Author (A&ndash;Z)</option>
                 <option value="taglen">Tag length</option>
+                <option value="relevance">Relevance</option>
             </select>
         </div>
 
@@ -446,9 +529,9 @@
 
             <div class="right-pane" id="right-pane">
                 <div class="preview-toolbar" id="preview-toolbar" style="display:none;">
-                    <button class="primary" id="btn-copy">&#x1F4CB; Copy formatted</button>
-                    <button id="btn-copy-plain">&#x1F4DD; Copy plain text</button>
-                    <button id="btn-download">&#x2B07; Download .docx</button>
+                    <button class="primary" id="btn-copy">Copy formatted</button>
+                    <button id="btn-copy-plain"> Copy plain text</button>
+                    <button id="btn-download"> Download .docx</button>
                     <span class="spacer"></span>
                     <button id="btn-prev">&#x2190; Prev</button>
                     <button id="btn-next">Next &#x2192;</button>
@@ -566,6 +649,26 @@
             const value = e.target.value;
             searchDebounce = setTimeout(() => { state.search = value; applyFilters(); }, 120);
         });
+
+        // Search help tooltip
+        const searchHelp = $('search-help');
+        const searchTooltip = $('search-tooltip');
+        let tooltipVisible = false;
+        
+        searchHelp.addEventListener('click', e => {
+            e.stopPropagation();
+            tooltipVisible = !tooltipVisible;
+            searchTooltip.classList.toggle('show', tooltipVisible);
+        });
+        
+        document.addEventListener('click', () => {
+            if (tooltipVisible) {
+                tooltipVisible = false;
+                searchTooltip.classList.remove('show');
+            }
+        });
+        
+        searchTooltip.addEventListener('click', e => e.stopPropagation());
 
         document.querySelectorAll('#scope-toggle button').forEach(btn => {
             btn.addEventListener('click', () => {
@@ -770,9 +873,36 @@
 
         function extractParagraphsXml(rawXml) {
             const result = [];
-            const re = /<w:p\b[\s\S]*?<\/w:p>/g;
-            let match;
-            while ((match = re.exec(rawXml)) !== null) result.push(match[0]);
+            // Robust paragraph extraction: handle self-closing <w:p .../> which
+            // appear as empty paragraph separators between cards in many docx files.
+            // If not handled, the lazy regex swallows them into the next paragraph,
+            // causing the next Heading4 to appear to have no pStyle and miss detection.
+            let pos = 0;
+            while (pos < rawXml.length) {
+                const start = rawXml.indexOf('<w:p', pos);
+                if (start === -1) break;
+                // Verify it's actually a w:p element (not w:pPr, w:pStyle, etc.)
+                const charAfter = rawXml[start + 4];
+                if (charAfter !== ' ' && charAfter !== '>' && charAfter !== '/') {
+                    pos = start + 4;
+                    continue;
+                }
+                // Find the > that closes this opening tag
+                const tagEnd = rawXml.indexOf('>', start);
+                if (tagEnd === -1) break;
+                if (rawXml[tagEnd - 1] === '/') {
+                    // Self-closing <w:p ... />
+                    result.push(rawXml.slice(start, tagEnd + 1));
+                    pos = tagEnd + 1;
+                } else {
+                    // Regular paragraph - find matching </w:p>
+                    const closeTag = '</w:p>';
+                    const close = rawXml.indexOf(closeTag, tagEnd);
+                    if (close === -1) break;
+                    result.push(rawXml.slice(start, close + closeTag.length));
+                    pos = close + closeTag.length;
+                }
+            }
             return result;
         }
 
@@ -795,7 +925,7 @@
 
         // ===== DOCX BLOB BUILDING =====
 
-        async function buildCardDocx(card, doc) {
+        async function buildCardDocx(card, doc, bodyOnly = false) {
             const newZip = new JSZip();
             for (const [path, entry] of Object.entries(doc.zipData.files)) {
                 if (path === 'word/document.xml') continue;
@@ -803,67 +933,32 @@
                 const content = await entry.async('uint8array');
                 newZip.file(path, content);
             }
-            newZip.file('word/document.xml', buildCardXml(card, doc));
+            newZip.file('word/document.xml', buildCardXml(card, doc, bodyOnly));
             return await newZip.generateAsync({ type: 'blob' });
         }
 
-        function buildCardXml(card, doc) {
+        function buildCardXml(card, doc, bodyOnly = false) {
             const keep = new Set();
-            
-            // Debug logging to see what we're including
-            console.log('Building card for:', card.tag);
-            console.log('Tag paragraph index:', card.tagParaIndex);
-            console.log('Cite paragraph index:', card.citeParaIndex);
-            console.log('Body paragraph indices:', card.bodyParaIndices);
-            
-            // Always include the tag paragraph (Heading4)
-            if (card.tagParaIndex !== null && card.tagParaIndex !== undefined) {
-                keep.add(card.tagParaIndex);
-                console.log('Added tag paragraph at index:', card.tagParaIndex);
+            if (!bodyOnly) {
+                if (card.tagParaIndex !== null) keep.add(card.tagParaIndex);
+                if (card.citeParaIndex !== null) keep.add(card.citeParaIndex);
             }
-            
-            // Include citation paragraph if it exists
-            if (card.citeParaIndex !== null && card.citeParaIndex !== undefined) {
-                keep.add(card.citeParaIndex);
-                console.log('Added cite paragraph at index:', card.citeParaIndex);
-            }
-            
-            // Include all body paragraphs
-            card.bodyParaIndices.forEach(i => {
-                keep.add(i);
-                console.log('Added body paragraph at index:', i);
-            });
-
-            console.log('Total paragraphs to keep:', keep.size);
-            console.log('Paragraph indices to keep:', Array.from(keep).sort((a,b) => a-b));
+            card.bodyParaIndices.forEach(i => keep.add(i));
 
             const bodyParas = doc.paragraphsXml
-                .map((xml, i) => {
-                    if (keep.has(i)) {
-                        console.log(`Including paragraph ${i}:`, xml.substring(0, 150) + '...');
-                        return xml;
-                    }
-                    return null;
-                })
-                .filter(Boolean)
-                .join('');
-
-            console.log('Generated body XML length:', bodyParas.length);
-            console.log('First 200 chars of body XML:', bodyParas.substring(0, 200));
+                .map((xml, i) => keep.has(i) ? xml : null)
+                .filter(Boolean).join('');
 
             const sectPrMatch = doc.rawXml.match(/<w:sectPr\b[\s\S]*?<\/w:sectPr>/);
             const sectPr = sectPrMatch ? sectPrMatch[0] : '';
 
-            const finalXml = doc.rawXml.replace(
+            return doc.rawXml.replace(
                 /<w:body\b[^>]*>[\s\S]*<\/w:body>/,
                 match => {
                     const open = match.match(/^<w:body\b[^>]*>/)[0];
                     return `${open}${bodyParas}${sectPr}</w:body>`;
                 }
             );
-            
-            console.log('Final XML first 500 chars:', finalXml.substring(0, 500));
-            return finalXml;
         }
 
         // ===== PREVIEW — docx-preview based =====
@@ -912,15 +1007,43 @@
             const docxLib = window.docx || window.docxPreview;
             if (docxLib && typeof docxLib.renderAsync === 'function') {
                 try {
-                    const arrayBuffer = await blob.arrayBuffer();
+                    // Build body-only blob (no tag/cite paragraphs) for docx-preview
+                    const bodyBlob = await buildCardDocx(card, doc, true);
+                    const arrayBuffer = await bodyBlob.arrayBuffer();
                     if (token !== previewRenderToken) return;
 
-                    // Clear and prepare container
-                    previewBody.innerHTML = '';
-                    const container = document.createElement('div');
-                    previewBody.appendChild(container);
+                    // Build the styled tag + cite header
+                    const headerEl = document.createElement('div');
+                    headerEl.className = 'card-header-block';
+                    if (card.section) {
+                        const sec = document.createElement('div');
+                        sec.className = 'ch-section';
+                        sec.textContent = card.section;
+                        headerEl.appendChild(sec);
+                    }
+                    const tagEl = document.createElement('div');
+                    tagEl.className = 'ch-tag';
+                    tagEl.textContent = card.tag;
+                    headerEl.appendChild(tagEl);
+                    if (card.cite) {
+                        const citeEl = document.createElement('div');
+                        citeEl.className = 'ch-cite';
+                        citeEl.textContent = card.cite;
+                        headerEl.appendChild(citeEl);
+                    }
+                    const divider = document.createElement('div');
+                    divider.className = 'ch-divider';
+                    headerEl.appendChild(divider);
 
-                    await docxLib.renderAsync(arrayBuffer, container, null, {
+                    // Clear preview and insert header
+                    previewBody.innerHTML = '';
+                    previewBody.appendChild(headerEl);
+
+                    // Render body paragraphs via docx-preview
+                    const bodyContainer = document.createElement('div');
+                    previewBody.appendChild(bodyContainer);
+
+                    await docxLib.renderAsync(arrayBuffer, bodyContainer, null, {
                         className: 'docx',
                         inWrapper: true,
                         ignoreWidth: true,
@@ -971,28 +1094,40 @@
             const doc = state.docs.get(card.docId);
             if (!doc) return;
 
-            // Grab what's currently rendered in the preview pane — it already has full formatting
-            const renderedContainer = previewBody.querySelector('.docx-wrapper') || previewBody.firstElementChild;
-            if (renderedContainer) {
+            // Build header HTML (tag + cite) as inline-styled string
+            const sectionHtml = card.section
+                ? `<div style="font-family:Arial,sans-serif;font-size:9pt;color:#666;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">${escapeHtml(card.section)}</div>`
+                : '';
+            const tagHtml = `<div style="font-family:Arial,sans-serif;font-size:14pt;font-weight:700;margin-bottom:6px;">${escapeHtml(card.tag)}</div>`;
+            const citeHtml = card.cite
+                ? `<div style="font-family:Arial,sans-serif;font-size:10pt;font-weight:700;margin-bottom:10px;">${escapeHtml(card.cite)}</div>`
+                : '';
+
+            // Grab the body from docx-preview rendered output
+            const bodyContainer = previewBody.querySelector('.docx-wrapper') || previewBody.querySelector('div:last-child');
+            let bodyHtml = '';
+            if (bodyContainer) {
                 try {
-                    // Build HTML string from the rendered docx-preview output
-                    // We need to inline styles since external stylesheets won't travel with clipboard HTML
-                    const clone = renderedContainer.cloneNode(true);
-                    inlineComputedStyles(clone, renderedContainer);
-
-                    const htmlContent = `<div style="font-family:Calibri,Georgia,'Times New Roman',serif;">${clone.innerHTML}</div>`;
-                    const plainText = buildPlainText(card, doc);
-
-                    await writeClipboard(plainText, htmlContent);
-                    showToast('Copied formatted — paste into Word or Docs');
-                    return;
+                    const clone = bodyContainer.cloneNode(true);
+                    inlineComputedStyles(clone, bodyContainer);
+                    bodyHtml = clone.innerHTML;
                 } catch (err) {
-                    console.warn('Rich copy failed:', err);
+                    console.warn('Style inlining failed:', err);
+                    bodyHtml = bodyContainer.innerHTML;
                 }
             }
 
-            // Fallback: plain text
-            await copyCurrentPlain();
+            const htmlContent = `<div style="font-family:Calibri,Georgia,'Times New Roman',serif;font-size:11pt;line-height:1.4;color:#000;">${sectionHtml}${tagHtml}${citeHtml}<div>${bodyHtml}</div></div>`;
+            const plainText = buildPlainText(card, doc);
+
+            try {
+                await writeClipboard(plainText, htmlContent);
+                showToast('Copied formatted — paste into Word or Docs');
+            } catch (err) {
+                console.warn('Rich copy failed:', err);
+                await writeClipboard(plainText, null);
+                showToast('Copied plain text (formatted copy unavailable)');
+            }
         }
 
         // Inline computed styles from a live element into a clone for clipboard portability
@@ -1126,26 +1261,258 @@
             setTimeout(() => URL.revokeObjectURL(url), 1500);
         }
 
+        // ===== ENHANCED SEARCH ENGINE =====
+
+        class SearchEngine {
+            constructor() {
+                this.stopWords = new Set(['the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by', 'is', 'are', 'was', 'were', 'be', 'been', 'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could', 'should', 'may', 'might', 'can', 'this', 'that', 'these', 'those']);
+            }
+
+            parseQuery(query) {
+                if (!query.trim()) return { type: 'empty' };
+                
+                // Check for exact phrase (quoted)
+                const phraseMatch = query.match(/^"(.+)"$/);
+                if (phraseMatch) {
+                    return { type: 'phrase', phrase: phraseMatch[1].toLowerCase() };
+                }
+
+                // Check for boolean operators
+                if (query.includes(' AND ') || query.includes(' OR ')) {
+                    return this.parseBooleanQuery(query);
+                }
+
+                // Check for exclusion (-word)
+                const exclusions = [];
+                const inclusions = [];
+                const fuzzyTerms = [];
+                
+                const tokens = query.split(/\s+/);
+                for (const token of tokens) {
+                    if (token.startsWith('-') && token.length > 1) {
+                        exclusions.push(token.substring(1).toLowerCase());
+                    } else if (token.endsWith('~') && token.length > 1) {
+                        fuzzyTerms.push(token.substring(0, token.length - 1).toLowerCase());
+                    } else if (token.trim()) {
+                        inclusions.push(token.toLowerCase());
+                    }
+                }
+
+                return {
+                    type: 'advanced',
+                    inclusions,
+                    exclusions,
+                    fuzzyTerms
+                };
+            }
+
+            parseBooleanQuery(query) {
+                const terms = [];
+                const parts = query.split(/(\s+(?:AND|OR)\s+)/i);
+                
+                for (let i = 0; i < parts.length; i += 2) {
+                    const term = parts[i].trim().toLowerCase();
+                    const operator = i + 1 < parts.length ? parts[i + 1].trim().toUpperCase() : null;
+                    
+                    if (term) {
+                        terms.push({ term, operator: operator === 'AND' ? 'AND' : 'OR' });
+                    }
+                }
+
+                return { type: 'boolean', terms };
+            }
+
+            searchCard(card, query, scope) {
+                const parsedQuery = this.parseQuery(query);
+                
+                if (parsedQuery.type === 'empty') return { matches: true, score: 0 };
+
+                const searchFields = this.getSearchFields(card, scope);
+                
+                switch (parsedQuery.type) {
+                    case 'phrase':
+                        return this.searchPhrase(searchFields, parsedQuery.phrase);
+                    case 'boolean':
+                        return this.searchBoolean(searchFields, parsedQuery.terms);
+                    case 'advanced':
+                        return this.searchAdvanced(searchFields, parsedQuery);
+                    default:
+                        return { matches: false, score: 0 };
+                }
+            }
+
+            getSearchFields(card, scope) {
+                switch (scope) {
+                    case 'tag': return [card.searchTag];
+                    case 'cite': return [card.searchCite];
+                    case 'body': return [card.searchBody];
+                    default: return [card.searchAll];
+                }
+            }
+
+            searchPhrase(fields, phrase) {
+                for (const field of fields) {
+                    if (field.includes(phrase)) {
+                        // Score based on phrase position and field length
+                        const position = field.indexOf(phrase);
+                        const score = 100 - (position / field.length * 50) + (phrase.length / field.length * 50);
+                        return { matches: true, score: Math.max(score, 10) };
+                    }
+                }
+                return { matches: false, score: 0 };
+            }
+
+            searchBoolean(fields, terms) {
+                let result = null;
+                let totalScore = 0;
+                
+                for (const { term, operator } of terms) {
+                    const termResult = this.searchTerm(fields, term);
+                    
+                    if (result === null) {
+                        result = termResult.matches;
+                        totalScore = termResult.score;
+                    } else if (operator === 'AND') {
+                        result = result && termResult.matches;
+                        totalScore = Math.min(totalScore, termResult.score);
+                    } else { // OR
+                        result = result || termResult.matches;
+                        totalScore = Math.max(totalScore, termResult.score);
+                    }
+                }
+                
+                return { matches: result || false, score: totalScore };
+            }
+
+            searchAdvanced(fields, query) {
+                let score = 0;
+                let hasMatches = false;
+
+                // Check inclusions (all must match)
+                for (const term of query.inclusions) {
+                    const result = this.searchTerm(fields, term);
+                    if (!result.matches) return { matches: false, score: 0 };
+                    score += result.score;
+                    hasMatches = true;
+                }
+
+                // Check fuzzy terms
+                for (const term of query.fuzzyTerms) {
+                    const result = this.searchFuzzy(fields, term);
+                    if (result.matches) {
+                        score += result.score * 0.8; // Lower weight for fuzzy
+                        hasMatches = true;
+                    }
+                }
+
+                // Check exclusions (none should match)
+                for (const term of query.exclusions) {
+                    const result = this.searchTerm(fields, term);
+                    if (result.matches) return { matches: false, score: 0 };
+                }
+
+                return { matches: hasMatches || query.inclusions.length === 0, score };
+            }
+
+            searchTerm(fields, term) {
+                for (const field of fields) {
+                    if (field.includes(term)) {
+                        // Calculate relevance score
+                        const occurrences = (field.match(new RegExp(term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g')) || []).length;
+                        const density = occurrences / field.split(' ').length;
+                        const position = field.indexOf(term);
+                        const positionScore = 100 - (position / field.length * 30);
+                        const score = (density * 100) + (positionScore * 0.3) + (term.length * 2);
+                        return { matches: true, score: Math.max(score, 5) };
+                    }
+                }
+                return { matches: false, score: 0 };
+            }
+
+            searchFuzzy(fields, term) {
+                const threshold = 0.7; // Similarity threshold
+                
+                for (const field of fields) {
+                    const words = field.split(/\s+/);
+                    for (const word of words) {
+                        if (this.similarity(term, word) >= threshold) {
+                            const score = this.similarity(term, word) * 50;
+                            return { matches: true, score };
+                        }
+                    }
+                }
+                return { matches: false, score: 0 };
+            }
+
+            // Levenshtein distance-based similarity
+            similarity(a, b) {
+                const matrix = [];
+                const aLen = a.length;
+                const bLen = b.length;
+
+                if (aLen === 0) return bLen === 0 ? 1 : 0;
+                if (bLen === 0) return 0;
+
+                for (let i = 0; i <= bLen; i++) {
+                    matrix[i] = [i];
+                }
+
+                for (let j = 0; j <= aLen; j++) {
+                    matrix[0][j] = j;
+                }
+
+                for (let i = 1; i <= bLen; i++) {
+                    for (let j = 1; j <= aLen; j++) {
+                        if (b.charAt(i - 1) === a.charAt(j - 1)) {
+                            matrix[i][j] = matrix[i - 1][j - 1];
+                        } else {
+                            matrix[i][j] = Math.min(
+                                matrix[i - 1][j - 1] + 1,
+                                matrix[i][j - 1] + 1,
+                                matrix[i - 1][j] + 1
+                            );
+                        }
+                    }
+                }
+
+                const distance = matrix[bLen][aLen];
+                return 1 - distance / Math.max(aLen, bLen);
+            }
+        }
+
+        const searchEngine = new SearchEngine();
+
         // ===== LIST RENDERING =====
 
         function applyFilters() {
-            const q = state.search.trim().toLowerCase();
+            const q = state.search.trim();
             const scope = state.searchScope;
             const docFilterId = state.docFilter ? Number(state.docFilter) : null;
 
-            let result = state.cards.filter(c => {
-                if (docFilterId && c.docId !== docFilterId) return false;
-                if (state.sectionFilter && c.section !== state.sectionFilter) return false;
-                if (!q) return true;
-                if (scope === 'tag') return c.searchTag.includes(q);
-                if (scope === 'cite') return c.searchCite.includes(q);
-                if (scope === 'body') return c.searchBody.includes(q);
-                return c.searchAll.includes(q);
-            });
+            let result = [];
+            
+            for (const card of state.cards) {
+                // Apply document and section filters first
+                if (docFilterId && card.docId !== docFilterId) continue;
+                if (state.sectionFilter && card.section !== state.sectionFilter) continue;
+                
+                // Apply search with scoring
+                const searchResult = searchEngine.searchCard(card, q, scope);
+                if (searchResult.matches) {
+                    result.push({ ...card, searchScore: searchResult.score });
+                }
+            }
 
-            if (state.sortOrder === 'alpha') result.sort((a, b) => a.author.localeCompare(b.author));
-            else if (state.sortOrder === 'taglen') result.sort((a, b) => a.tag.length - b.tag.length);
-            else result.sort((a, b) => a.docId - b.docId || a.id - b.id);
+            // Sort results
+            if (state.sortOrder === 'relevance' && q) {
+                result.sort((a, b) => (b.searchScore || 0) - (a.searchScore || 0));
+            } else if (state.sortOrder === 'alpha') {
+                result.sort((a, b) => a.author.localeCompare(b.author));
+            } else if (state.sortOrder === 'taglen') {
+                result.sort((a, b) => a.tag.length - b.tag.length);
+            } else {
+                result.sort((a, b) => a.docId - b.docId || a.id - b.id);
+            }
 
             state.filtered = result;
             renderList();
@@ -1182,10 +1549,12 @@
                 const citeHtml = q ? highlightMatches(escapeHtml(c.cite), q) : escapeHtml(c.cite);
                 const snippetHtml = q ? highlightMatches(c.snippetHtml, q) : c.snippetHtml;
                 const active = c.id === state.selectedCardId ? ' active' : '';
+                const scoreHtml = c.searchScore && state.sortOrder === 'relevance' ? `<span style="font-size:10px;color:var(--color-text-tertiary);margin-left:8px;">${Math.round(c.searchScore)}</span>` : '';
                 return `<div class="card-item${active}" data-id="${c.id}">
                     <div class="card-doc">
                         <span class="doc-name" title="${escapeHtml(c.docName)}">${escapeHtml(c.docName)}</span>
                         ${c.section ? `<span>&middot; ${escapeHtml(c.section.substring(0, 36))}</span>` : ''}
+                        ${scoreHtml}
                     </div>
                     <div class="card-tag">${tagHtml}</div>
                     ${c.cite ? `<div class="card-cite">${citeHtml}</div>` : ''}
@@ -1232,9 +1601,58 @@
         }
 
         function highlightMatches(text, q) {
-            if (!q) return text;
-            const safe = q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            if (!q.trim()) return text;
+            
+            const parsedQuery = searchEngine.parseQuery(q);
+            
+            switch (parsedQuery.type) {
+                case 'phrase':
+                    return highlightPhrase(text, parsedQuery.phrase);
+                case 'boolean':
+                    return highlightBoolean(text, parsedQuery.terms);
+                case 'advanced':
+                    return highlightAdvanced(text, parsedQuery);
+                default:
+                    return text;
+            }
+        }
+
+        function highlightPhrase(text, phrase) {
+            const safe = phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
             return text.replace(new RegExp(`(${safe})`, 'gi'), '<mark style="background:var(--color-highlight-yellow);padding:0 1px;">$1</mark>');
+        }
+
+        function highlightBoolean(text, terms) {
+            let result = text;
+            for (const { term } of terms) {
+                const safe = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                result = result.replace(new RegExp(`(${safe})`, 'gi'), '<mark style="background:var(--color-highlight-cyan);padding:0 1px;">$1</mark>');
+            }
+            return result;
+        }
+
+        function highlightAdvanced(text, query) {
+            let result = text;
+            
+            // Highlight inclusions in yellow
+            for (const term of query.inclusions) {
+                const safe = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                result = result.replace(new RegExp(`(${safe})`, 'gi'), '<mark style="background:var(--color-highlight-yellow);padding:0 1px;">$1</mark>');
+            }
+            
+            // Highlight fuzzy matches in blue
+            for (const term of query.fuzzyTerms) {
+                const words = result.split(/\s+/);
+                for (let i = 0; i < words.length; i++) {
+                    const cleanWord = words[i].replace(/<[^>]*>/g, '').toLowerCase();
+                    if (searchEngine.similarity(term, cleanWord) >= 0.7) {
+                        const safe = cleanWord.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                        result = result.replace(new RegExp(`\\b(${safe})\\b`, 'gi'), '<mark style="background:var(--color-highlight-blue);padding:0 1px;">$1</mark>');
+                    }
+                }
+            }
+            
+            return result;
         }
 
         function populateDocFilter() {
