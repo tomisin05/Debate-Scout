@@ -1,14 +1,1 @@
-[
-  {
-    "year": "ndtceda26",
-    "school": "Houston",
-    "team": "Houston AqSh (Ramana Aqeel - Yousef Shehata)",
-    "error": "round mismatch: got 0, expected 1"
-  },
-  {
-    "year": "ndtceda26",
-    "school": "Houston",
-    "team": "Houston FeIb (Aaron Fernandez - Oliver Ibarra)",
-    "error": "round mismatch: got 0, expected 1"
-  }
-]
+[]

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-12T05:19:25.851Z",
-    "totalRounds": 93,
+    "lastUpdated": "2026-09-12T10:15:41.905Z",
+    "totalRounds": 95,
     "year": "ndtceda26"
   },
   "rounds": [
@@ -620,20 +620,6 @@
       "previewUrl": null,
       "downloadUrl": null,
       "scrapedAt": "2026-09-12T05:05:16.929Z"
-    },
-    {
-      "year": "ndtceda26",
-      "school": "Liberty",
-      "team": "Liberty EtTo (Hunter Etienne - Elijah Tooley)",
-      "tournament": "Contact Info",
-      "round": "All",
-      "side": "Aff",
-      "opponent": ":)",
-      "judge": ":)",
-      "roundReport": "Emails: eli2ley35@gmail.com hunteredebate@gmail.com Feel free to contact us with any questions. Thx!",
-      "previewUrl": null,
-      "downloadUrl": null,
-      "scrapedAt": "2026-09-12T05:05:19.142Z"
     },
     {
       "year": "ndtceda26",
@@ -1295,6 +1281,48 @@
     },
     {
       "year": "ndtceda26",
+      "school": "Houston",
+      "team": "Houston AqSh (Ramana Aqeel - Yousef Shehata)",
+      "tournament": "00---Contact Info",
+      "round": "All",
+      "side": "Aff",
+      "opponent": "",
+      "judge": "",
+      "roundReport": "2A - Ramana - they/them 2N - Yousef - he/him Emails: ra14deb@gmail.com yshehata.debate@gmail.com Please let us know if you have any accommodations you would like us to make!",
+      "previewUrl": null,
+      "downloadUrl": null,
+      "scrapedAt": "2026-09-12T10:03:49.159Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Houston",
+      "team": "Houston FeIb (Aaron Fernandez - Oliver Ibarra)",
+      "tournament": "00---Contact Info",
+      "round": "All",
+      "side": "Aff",
+      "opponent": "All",
+      "judge": "N/A",
+      "roundReport": "Contact/team info: 2N - Aaron He/Him - Aaron.does.debate@gmail.com 2A - Oliver He/him - olibarra323@gmail.com uhoustondebate@gmail.com Debatedocs@googlegroups.com",
+      "previewUrl": null,
+      "downloadUrl": null,
+      "scrapedAt": "2026-09-12T10:03:51.262Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Liberty",
+      "team": "Liberty EtTo (Hunter Etienne - Elijah Tooley)",
+      "tournament": "Contact Info",
+      "round": "All",
+      "side": "Aff",
+      "opponent": ":)",
+      "judge": ":)",
+      "roundReport": "Emails: eli2ley35@gmail.com hunteredebate@gmail.com Feel free to contact us with any questions. Thx!",
+      "previewUrl": null,
+      "downloadUrl": null,
+      "scrapedAt": "2026-09-12T10:06:41.400Z"
+    },
+    {
+      "year": "ndtceda26",
       "school": "Western Kentucky",
       "team": "Western Kentucky CaSc (Sage Carter - Nik Schintgen)",
       "tournament": "00. Contact Info",
@@ -1305,7 +1333,7 @@
       "roundReport": "Sage - she/her Nik - they/them email: wku.cs.debate@gmail.com wku.db8.docs@gmail.com",
       "previewUrl": null,
       "downloadUrl": null,
-      "scrapedAt": "2026-09-12T05:19:07.715Z"
+      "scrapedAt": "2026-09-12T10:15:35.606Z"
     }
   ]
 }
