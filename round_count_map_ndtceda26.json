@@ -61,10 +61,14 @@
     "Georgetown PeVa (Nasia Perkins - Reanna Vardhanapu)": 0,
     "Georgetown VaXi (Vikram Valame - Caroline Xiao)": 0
   },
-  "Georgia": {},
+  "Georgia": {
+    "Georgia CaPa (Zoe Cannon - Laurel Pack)": 2,
+    "Georgia KaLa (Eshkar Kaidar-Heafetz - Caroline Lackey)": 3
+  },
   "Gonzaga": {
     "Gonzaga MaMa (Sean Mariano - Callista Martin)": 1,
-    "Gonzaga MuPa (Everett Murray - Nathan Pascas)": 2
+    "Gonzaga MuPa (Everett Murray - Nathan Pascas)": 2,
+    "Gonzaga AtGi (Henry Atkin - Kadence Gibson)": 2
   },
   "Harvard": {
     "Harvard AoBo (Seiji Aoki - Jayden Bodet)": 0,
@@ -79,17 +83,21 @@
   "Indiana": {
     "Indiana FoGa (Adam Foudali - Rowlin Garcia)": 1,
     "Indiana JoDu (Lily Jones - Jay Duggal)": 1,
-    "Indiana ThPe (Aubrey Thomas - Kaz Pena)": 1
+    "Indiana ThPe (Aubrey Thomas - Kaz Pena)": 1,
+    "Indiana FiTr (Zander Fish - Maia Truemper)": 0
   },
   "Iowa": {
     "Iowa BiSe (Rose Bilicki - Lily Severson)": 1,
     "Iowa ElWe (Bashir Eltyeb - Nathan Weimar)": 0,
-    "Iowa LaSa (Kaj Larsen - Bea Sanderson)": 0
+    "Iowa LaSa (Kaj Larsen - Bea Sanderson)": 0,
+    "Iowa PaKl (Grey Parfenoff - Ben Kleiman)": 3
   },
   "James Madison": {
     "James Madison Novices": 4
   },
-  "Johnson County Community College": {},
+  "Johnson County Community College": {
+    "Johnson County Community College TuJa (Charlotte Turner - Mariama Jallow)": 1
+  },
   "Kansas": {
     "Kansas AiWa (Claire Ain - Henry Walawender)": 0,
     "Kansas BaBo (Carson Bath - Nate Boyle)": 0,
@@ -99,10 +107,14 @@
     "Kansas ChCh (Kavinayashri Chidambaranathan - Harris Chaudhry)": 0,
     "Kansas FoHa (Abigail Fordyce - Lena Hasiuk)": 0,
     "Kansas LaPa (Payten Lapoint - Lucy Pace)": 0,
-    "Kansas OwUl (Owen Owings - Max Ulven)": 0
+    "Kansas OwUl (Owen Owings - Max Ulven)": 0,
+    "Kansas BaPe (Tyler Bauman - Sigmund Persson)": 3,
+    "Kansas LeLe (Ava Levin - Brianna Lemaster)": 1,
+    "Kansas ShSu (Katelynn Shaw - Nargis Suleman)": 1
   },
   "Kansas State": {
-    "Kansas State SpFe (Cody Spurlock - Johnathon Fellows)": 1
+    "Kansas State SpFe (Cody Spurlock - Johnathon Fellows)": 1,
+    "Kansas State DrDa (Kyla Draeger - Taryn Day)": 1
   },
   "Kentucky": {
     "Kentucky CoSl (Camden Coale - Regan Slish)": 0,
@@ -117,7 +129,8 @@
     "Liberty KoSp (Nova Koenig - Will Spencer)": 0
   },
   "Macalester College": {
-    "Macalester College BoSc (Joshua Bonilla Rivera - Carson Scott)": 0
+    "Macalester College BoSc (Joshua Bonilla Rivera - Carson Scott)": 0,
+    "Macalester College ScKo (Josiah Schaffhausen - Will Kochel)": 2
   },
   "Marian": {},
   "Massachusetts Amherst": {},
@@ -131,7 +144,14 @@
     "Michigan DaDi (Zach Davis - Jessica Ding)": 1,
     "Michigan EsSh (Cyrus Esmailzadeh - Avi Shah)": 0,
     "Michigan GeVa (Zaki George - Vikrant Vadathavoor)": 0,
-    "Michigan LaSi (Asha Laskar - Varsha Sivasubramanian)": 1
+    "Michigan LaSi (Asha Laskar - Varsha Sivasubramanian)": 1,
+    "Michigan AgOu (William Agustin - Robert Ou)": 1,
+    "Michigan BaLe (Mira Baba - Gianna Ledesma)": 0,
+    "Michigan BePa (Sajad Beg - Mihika Pandit)": 0,
+    "Michigan ChAl (Rohan Chalamalasetti - Ava Almand)": 0,
+    "Michigan ChSh (Gautam Chamarthy - Rishi Shetty)": 0,
+    "Michigan ChXu (Connor Chun - Raymond Xu)": 1,
+    "Michigan PaFu (Grady Pazona - Lena Furtek)": 3
   },
   "Michigan State": {
     "Michigan State BuSt (Cameron Buhl - Will Sterbenc)": 0,
@@ -181,7 +201,8 @@
     "Oklahoma BaDu (Jackson Ballinger - Aiden Duncan)": 1,
     "Oklahoma BaWr (Lucas Ballinger - Jacob Wright)": 0,
     "Oklahoma BuRa (Yobani Bustos - Kimberly Ramirez)": 0,
-    "Oklahoma SmPr (Blaire Smith - Seth Prather)": 1
+    "Oklahoma SmPr (Blaire Smith - Seth Prather)": 1,
+    "Oklahoma DaFu (Daven Daniel - Ella Fulkerson)": 0
   },
   "Purdue": {},
   "Rochester": {},
@@ -191,7 +212,9 @@
   },
   "Southern California": {
     "Southern California BrMa (Clare Bradley - Sarah Martin)": 0,
-    "Southern California PrDo (Brayden Presley - Jack Dollinger)": 0
+    "Southern California PrDo (Brayden Presley - Jack Dollinger)": 0,
+    "Southern California LePl (Emma Lee - Lucas Plotkin)": 1,
+    "Southern California TrMi (Madison Troup - Jackson Mills)": 2
   },
   "Southern Nazarene": {
     "Southern Nazarene LuHu (Tanner Luce - Caleb Hudson)": 1,
@@ -201,7 +224,8 @@
   "Suffolk": {},
   "Texas": {
     "Texas AlGa (Iliyan Ali - Danush Gade)": 0,
-    "Texas GaSt (Emilio Garza - Devon Stevenson)": 1
+    "Texas GaSt (Emilio Garza - Devon Stevenson)": 1,
+    "Texas LoAn (Samantha Low - Ethan Andrew)": 2
   },
   "Texas AM": {},
   "Towson": {
@@ -220,15 +244,23 @@
   "Utah": {
     "Utah FrHa (Emma Fraser - Jacob Hatch)": 1,
     "Utah MaKe (Maria Manousakis - Brinley Kemp)": 1,
-    "Utah ScVe (Emily Scott - Benji Verbeck OBrien)": 1
+    "Utah ScVe (Emily Scott - Benji Verbeck OBrien)": 1,
+    "Utah BoHi (Juan Boscan - Myra Hicks)": 1,
+    "Utah PaVe (Jeremy Parrish - Benji Verbeck-OBrien)": 0
   },
-  "UTD": {},
+  "UTD": {
+    "UTD HaDi (Charlie Hale - Jessica Dickey)": 2,
+    "UTD HoRa (Isaac Hoch - Sabarish Ravi)": 2
+  },
   "UTSA": {},
   "Wake Forest": {
     "Wake Forest GoPe (Yulong Gong - Courtneigh Peebles)": 0,
     "Wake Forest LaWi (Alana Laforest - Shiloh Williams)": 0,
     "Wake Forest LePa (Eden Leverett - Vriti Patel)": 0,
-    "Wake Forest PrTi (Aryan Prabhakar - Elizabeth Timsah)": 1
+    "Wake Forest PrTi (Aryan Prabhakar - Elizabeth Timsah)": 1,
+    "Wake Forest AdMb (Ademoreoluwa Aderibigbe - Mary Mbye)": 3,
+    "Wake Forest DiMc (Mae Dingley - Liam McDonald)": 4,
+    "Wake Forest NoSa (Nikola Nounawon-Castro - Jayden Sampat)": 3
   },
   "West Georgia": {
     "West Georgia G0Ke (X0 G0 - James Kennon)": 0,
@@ -258,7 +290,10 @@
     "Dartmouth HaGo (Alex Hant - Jared Gonzalez Arce)": 0,
     "Dartmouth HiHa (Jaylen Hilario-Peralta - Ellie Hatton)": 1,
     "Dartmouth JoTa (Judah Jones - Kaitlyn Tapia)": 0,
-    "Dartmouth RiUt (Angel Ribo - Sterling Utovac)": 0
+    "Dartmouth RiUt (Angel Ribo - Sterling Utovac)": 0,
+    "Dartmouth CaSi (Luke Canabou - Res Siebels)": 2,
+    "Dartmouth OkDi (Gerald Okuna - Charlotte Dinerman)": 2,
+    "Dartmouth SoRa (Jerry Song - Sebastian Rao)": 3
   },
   "Lewis And Clark": {
     "Lewis And Clark BeLa (Drew Benthein - Mikey Laurent)": 1
@@ -272,5 +307,9 @@
   },
   "Washburn": {
     "Washburn LaRa (Quinn Largent - Jace Raines)": 0
+  },
+  "University Of Wyoming": {
+    "University Of Wyoming WiHa (Saimaa Widi - Jeremiah Hawley)": 3,
+    "University Of Wyoming WiLy (Rosalie Willson - Brayden Lyday)": 1
   }
 }
