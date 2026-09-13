@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-12T22:38:22.692Z",
-    "totalRounds": 139,
+    "lastUpdated": "2026-09-13T11:19:40.328Z",
+    "totalRounds": 141,
     "year": "ndtceda26"
   },
   "rounds": [
@@ -1519,20 +1519,6 @@
     },
     {
       "year": "ndtceda26",
-      "school": "Liberty",
-      "team": "Liberty EtTo (Hunter Etienne - Elijah Tooley)",
-      "tournament": "Contact Info",
-      "round": "All",
-      "side": "Aff",
-      "opponent": ":)",
-      "judge": ":)",
-      "roundReport": "Emails: eli2ley35@gmail.com hunteredebate@gmail.com Feel free to contact us with any questions. Thx!",
-      "previewUrl": null,
-      "downloadUrl": null,
-      "scrapedAt": "2026-09-12T22:28:03.107Z"
-    },
-    {
-      "year": "ndtceda26",
       "school": "Macalester College",
       "team": "Macalester College ScKo (Josiah Schaffhausen - Will Kochel)",
       "tournament": "01 - Northwestern",
@@ -1897,6 +1883,34 @@
     },
     {
       "year": "ndtceda26",
+      "school": "Georgia",
+      "team": "Georgia ReTh (John Reed - Josephine Threlkeld)",
+      "tournament": "Owen L Coon Memorial Debates at Northwestern",
+      "round": "Round 1",
+      "side": "Aff",
+      "opponent": "Johnson County Community JT",
+      "judge": "Jack Hightower",
+      "roundReport": "1AC - Philippines 2NR - Antiblackness K",
+      "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FGeorgia%2FReTh%2FGeorgia-ReTh-Aff-Owen-L-Coon-Memorial-Debates-at-Northwestern-Round-1.docx",
+      "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FGeorgia%2FReTh%2FGeorgia-ReTh-Aff-Owen-L-Coon-Memorial-Debates-at-Northwestern-Round-1.docx",
+      "scrapedAt": "2026-09-13T11:06:28.073Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Liberty",
+      "team": "Liberty EtTo (Hunter Etienne - Elijah Tooley)",
+      "tournament": "Contact Info",
+      "round": "All",
+      "side": "Aff",
+      "opponent": ":)",
+      "judge": ":)",
+      "roundReport": "Emails: eli2ley35@gmail.com hunteredebate@gmail.com Feel free to contact us with any questions. Thx!",
+      "previewUrl": null,
+      "downloadUrl": null,
+      "scrapedAt": "2026-09-13T11:09:48.469Z"
+    },
+    {
+      "year": "ndtceda26",
       "school": "Western Kentucky",
       "team": "Western Kentucky CaSc (Sage Carter - Nik Schintgen)",
       "tournament": "00. Contact Info",
@@ -1907,7 +1921,7 @@
       "roundReport": "Sage - she/her Nik - they/them email: wku.cs.debate@gmail.com wku.db8.docs@gmail.com",
       "previewUrl": null,
       "downloadUrl": null,
-      "scrapedAt": "2026-09-12T22:38:15.684Z"
+      "scrapedAt": "2026-09-13T11:19:32.883Z"
     },
     {
       "year": "ndtceda26",
@@ -1921,7 +1935,7 @@
       "roundReport": "1AC: Taiwan 2NR: CP-Chinese Assurances, DA-Midterms",
       "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Neg-1.-Northwestern-Round-1.docx",
       "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Neg-1.-Northwestern-Round-1.docx",
-      "scrapedAt": "2026-09-12T22:38:15.684Z"
+      "scrapedAt": "2026-09-13T11:19:32.883Z"
     },
     {
       "year": "ndtceda26",
@@ -1935,7 +1949,7 @@
       "roundReport": "1AC: Taiwan 2NR: Deterrence DA",
       "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Aff-1.-Northwestern-Round-2.docx",
       "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Aff-1.-Northwestern-Round-2.docx",
-      "scrapedAt": "2026-09-12T22:38:15.684Z"
+      "scrapedAt": "2026-09-13T11:19:32.883Z"
     },
     {
       "year": "ndtceda26",
@@ -1949,7 +1963,21 @@
       "roundReport": "1AC: Testimonios 2NR: Case, Abolition K, T-FW",
       "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Neg-1.-Northwestern-Round-3.docx",
       "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Neg-1.-Northwestern-Round-3.docx",
-      "scrapedAt": "2026-09-12T22:38:15.684Z"
+      "scrapedAt": "2026-09-13T11:19:32.883Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Western Kentucky",
+      "team": "Western Kentucky CaSc (Sage Carter - Nik Schintgen)",
+      "tournament": "1. Northwestern",
+      "round": "Round 4",
+      "side": "Aff",
+      "opponent": "Michigan BP",
+      "judge": "Jacob Wilkus",
+      "roundReport": "1AC: Taiwan 2NR: Assurances DA",
+      "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Aff-1.-Northwestern-Round-4.docx",
+      "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Aff-1.-Northwestern-Round-4.docx",
+      "scrapedAt": "2026-09-13T11:19:32.883Z"
     }
   ]
 }
