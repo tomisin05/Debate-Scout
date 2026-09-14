@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-13T11:19:40.328Z",
-    "totalRounds": 141,
+    "lastUpdated": "2026-09-14T11:45:45.402Z",
+    "totalRounds": 147,
     "year": "ndtceda26"
   },
   "rounds": [
@@ -1907,7 +1907,35 @@
       "roundReport": "Emails: eli2ley35@gmail.com hunteredebate@gmail.com Feel free to contact us with any questions. Thx!",
       "previewUrl": null,
       "downloadUrl": null,
-      "scrapedAt": "2026-09-13T11:09:48.469Z"
+      "scrapedAt": "2026-09-14T11:34:30.804Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Wake Forest",
+      "team": "Wake Forest HaNa (Destiny Hale - Kalina Namikas)",
+      "tournament": "All Tournaments",
+      "round": "All",
+      "side": "Aff",
+      "opponent": "",
+      "judge": "",
+      "roundReport": "",
+      "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FWakeForest%2FHaNa%2FWakeForest-HaNa-Aff-All-Tournaments-All-Rounds.docx",
+      "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FWakeForest%2FHaNa%2FWakeForest-HaNa-Aff-All-Tournaments-All-Rounds.docx",
+      "scrapedAt": "2026-09-14T11:44:10.005Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "West Point",
+      "team": "West Point JoCh (Joseph Johnson - Luke Chung)",
+      "tournament": "All Tournaments",
+      "round": "All",
+      "side": "Aff",
+      "opponent": "",
+      "judge": "",
+      "roundReport": "",
+      "previewUrl": null,
+      "downloadUrl": null,
+      "scrapedAt": "2026-09-14T11:44:30.240Z"
     },
     {
       "year": "ndtceda26",
@@ -1921,7 +1949,7 @@
       "roundReport": "Sage - she/her Nik - they/them email: wku.cs.debate@gmail.com wku.db8.docs@gmail.com",
       "previewUrl": null,
       "downloadUrl": null,
-      "scrapedAt": "2026-09-13T11:19:32.883Z"
+      "scrapedAt": "2026-09-14T11:44:39.096Z"
     },
     {
       "year": "ndtceda26",
@@ -1935,7 +1963,7 @@
       "roundReport": "1AC: Taiwan 2NR: CP-Chinese Assurances, DA-Midterms",
       "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Neg-1.-Northwestern-Round-1.docx",
       "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Neg-1.-Northwestern-Round-1.docx",
-      "scrapedAt": "2026-09-13T11:19:32.883Z"
+      "scrapedAt": "2026-09-14T11:44:39.096Z"
     },
     {
       "year": "ndtceda26",
@@ -1949,7 +1977,7 @@
       "roundReport": "1AC: Taiwan 2NR: Deterrence DA",
       "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Aff-1.-Northwestern-Round-2.docx",
       "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Aff-1.-Northwestern-Round-2.docx",
-      "scrapedAt": "2026-09-13T11:19:32.883Z"
+      "scrapedAt": "2026-09-14T11:44:39.096Z"
     },
     {
       "year": "ndtceda26",
@@ -1963,7 +1991,7 @@
       "roundReport": "1AC: Testimonios 2NR: Case, Abolition K, T-FW",
       "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Neg-1.-Northwestern-Round-3.docx",
       "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Neg-1.-Northwestern-Round-3.docx",
-      "scrapedAt": "2026-09-13T11:19:32.883Z"
+      "scrapedAt": "2026-09-14T11:44:39.096Z"
     },
     {
       "year": "ndtceda26",
@@ -1977,7 +2005,63 @@
       "roundReport": "1AC: Taiwan 2NR: Assurances DA",
       "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Aff-1.-Northwestern-Round-4.docx",
       "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Aff-1.-Northwestern-Round-4.docx",
-      "scrapedAt": "2026-09-13T11:19:32.883Z"
+      "scrapedAt": "2026-09-14T11:44:39.096Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Western Kentucky",
+      "team": "Western Kentucky CaSc (Sage Carter - Nik Schintgen)",
+      "tournament": "1. Northwestern",
+      "round": "Round 5",
+      "side": "Aff",
+      "opponent": "Southern California BM",
+      "judge": "Nikola Stamenkovic Diez",
+      "roundReport": "1AC: Taiwan 2NR: Assurances DA",
+      "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Aff-1.-Northwestern-Round-5.docx",
+      "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Aff-1.-Northwestern-Round-5.docx",
+      "scrapedAt": "2026-09-14T11:44:39.096Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Western Kentucky",
+      "team": "Western Kentucky CaSc (Sage Carter - Nik Schintgen)",
+      "tournament": "1. Northwestern",
+      "round": "Round 6",
+      "side": "Neg",
+      "opponent": "Emory SY",
+      "judge": "Jenny Vazquez Torres",
+      "roundReport": "1AC: Israel 2NR: Racial IR K",
+      "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Neg-1.-Northwestern-Round-6.docx",
+      "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Neg-1.-Northwestern-Round-6.docx",
+      "scrapedAt": "2026-09-14T11:44:39.096Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Western Kentucky",
+      "team": "Western Kentucky CaSc (Sage Carter - Nik Schintgen)",
+      "tournament": "1. Northwestern",
+      "round": "Round 7",
+      "side": "Aff",
+      "opponent": "Southern California DP",
+      "judge": "Parker Hopkins",
+      "roundReport": "1AC: Taiwan 2NR: Commitment CP, Japan DA",
+      "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Aff-1.-Northwestern-Round-7.docx",
+      "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Aff-1.-Northwestern-Round-7.docx",
+      "scrapedAt": "2026-09-14T11:44:39.096Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Western Kentucky",
+      "team": "Western Kentucky CaSc (Sage Carter - Nik Schintgen)",
+      "tournament": "1. Northwestern",
+      "round": "Round 8",
+      "side": "Neg",
+      "opponent": "Missouri State DH",
+      "judge": "Steve Doubledee",
+      "roundReport": "1AC: Saudi Arabia 2NR: ADV CP, Stocks DA",
+      "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Neg-1.-Northwestern-Round-8.docx",
+      "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Neg-1.-Northwestern-Round-8.docx",
+      "scrapedAt": "2026-09-14T11:44:39.096Z"
     }
   ]
 }

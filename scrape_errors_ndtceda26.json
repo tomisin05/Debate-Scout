@@ -3,31 +3,31 @@
     "year": "ndtceda26",
     "school": "Dartmouth",
     "team": "Dartmouth CaSi (Luke Canabou - Res Siebels)",
-    "error": "round mismatch: got 4, expected 2"
+    "error": "round mismatch: got 8, expected 2"
   },
   {
     "year": "ndtceda26",
     "school": "Dartmouth",
     "team": "Dartmouth OkDi (Gerald Okuna - Charlotte Dinerman)",
-    "error": "round mismatch: got 4, expected 2"
+    "error": "round mismatch: got 5, expected 2"
   },
   {
     "year": "ndtceda26",
     "school": "Dartmouth",
     "team": "Dartmouth SoRa (Jerry Song - Sebastian Rao)",
-    "error": "round mismatch: got 4, expected 3"
+    "error": "round mismatch: got 8, expected 3"
   },
   {
     "year": "ndtceda26",
     "school": "Georgia",
     "team": "Georgia CaPa (Zoe Cannon - Laurel Pack)",
-    "error": "round mismatch: got 5, expected 2"
+    "error": "round mismatch: got 9, expected 2"
   },
   {
     "year": "ndtceda26",
     "school": "Michigan",
     "team": "Michigan ChXu (Connor Chun - Raymond Xu)",
-    "error": "round mismatch: got 3, expected 1"
+    "error": "round mismatch: got 7, expected 1"
   },
   {
     "year": "ndtceda26",
@@ -39,6 +39,6 @@
     "year": "ndtceda26",
     "school": "UTD",
     "team": "UTD HaDi (Charlie Hale - Jessica Dickey)",
-    "error": "round mismatch: got 3, expected 2"
+    "error": "round mismatch: got 8, expected 2"
   }
 ]
