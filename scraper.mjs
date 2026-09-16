@@ -254,7 +254,7 @@ async function countRoundsOnPage(page) {
 
 async function createRoundCountMap(browser, schools, yearSlug, opts) {
     console.log('\n═══ PHASE 1: Building round-count map ═══\n');
-    const existing = opts.resume ? loadJSON(opts.mapFile, {}) : {};
+    const existing = {};
 
     for (let i = 0; i < schools.length; i += opts.batchSize) {
         const batch = schools.slice(i, i + opts.batchSize);
@@ -286,7 +286,6 @@ async function createRoundCountMap(browser, schools, yearSlug, opts) {
                 existing[school.name] = existing[school.name] || {};
 
                 for (const team of teamLinks) {
-                    if (opts.resume && team.name in (existing[school.name] || {})) continue;
                     try {
                         await page.goto(team.href, { waitUntil: 'domcontentloaded' });
                         await jitter(opts.pageDelay);
