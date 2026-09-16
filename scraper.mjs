@@ -491,8 +491,14 @@ async function scrapeWithVerification(browser, schools, yearSlug, roundCountMap,
                             await jitter(opts.pageDelay);
                             rounds = await extractRounds(page);
 
-                            if (expected !== null && expected > 0 && rounds.length !== expected) {
-                                throw new Error(`round mismatch: got ${rounds.length}, expected ${expected}`);
+                            if (expected !== null && rounds.length < expected) {
+                                throw new Error(`incomplete scrape: got ${rounds.length}, expected at least ${expected}`);
+                            }
+
+                            if (expected !== null && rounds.length > expected) {
+                                console.log(
+                                    `    ℹ ${team.name}: found ${rounds.length} rounds; Phase 1 counted ${expected}`
+                                );
                             }
                             succeeded = true;
                         }, 3, 2000);
