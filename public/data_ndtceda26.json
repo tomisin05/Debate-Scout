@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-15T11:13:29.182Z",
-    "totalRounds": 148,
+    "lastUpdated": "2026-09-16T11:03:11.023Z",
+    "totalRounds": 149,
     "year": "ndtceda26"
   },
   "rounds": [
@@ -1925,20 +1925,6 @@
     },
     {
       "year": "ndtceda26",
-      "school": "Liberty",
-      "team": "Liberty EtTo (Hunter Etienne - Elijah Tooley)",
-      "tournament": "Contact Info",
-      "round": "All",
-      "side": "Aff",
-      "opponent": ":)",
-      "judge": ":)",
-      "roundReport": "Emails: eli2ley35@gmail.com hunteredebate@gmail.com",
-      "previewUrl": null,
-      "downloadUrl": null,
-      "scrapedAt": "2026-09-15T11:02:27.993Z"
-    },
-    {
-      "year": "ndtceda26",
       "school": "Southern Nazarene",
       "team": "Southern Nazarene HoJe (Ian Horton - Sophia Jennings)",
       "tournament": "00 - Contact Info.",
@@ -1953,6 +1939,34 @@
     },
     {
       "year": "ndtceda26",
+      "school": "Kansas State",
+      "team": "Kansas State ArSa (Lillian Ardis - Caitlin Sand)",
+      "tournament": "00 - All Tournaments",
+      "round": "All",
+      "side": "Aff",
+      "opponent": "",
+      "judge": "",
+      "roundReport": "Caitlin 1A/2N - she/they, caitlinmsand@gmail.com Lillian 2A/1N - they/she, lardis.debate@gmail.com No spreading, analytics please, thank you from yours truly KSU AS <3",
+      "previewUrl": null,
+      "downloadUrl": null,
+      "scrapedAt": "2026-09-16T10:50:40.358Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Liberty",
+      "team": "Liberty EtTo (Hunter Etienne - Elijah Tooley)",
+      "tournament": "Contact Info",
+      "round": "All",
+      "side": "Aff",
+      "opponent": ":)",
+      "judge": ":)",
+      "roundReport": "Emails: eli2ley35@gmail.com hunteredebate@gmail.com",
+      "previewUrl": null,
+      "downloadUrl": null,
+      "scrapedAt": "2026-09-16T10:52:02.024Z"
+    },
+    {
+      "year": "ndtceda26",
       "school": "Western Kentucky",
       "team": "Western Kentucky CaSc (Sage Carter - Nik Schintgen)",
       "tournament": "00. Contact Info",
@@ -1963,7 +1977,7 @@
       "roundReport": "Sage - she/her Nik - they/them email: wku.cs.debate@gmail.com wku.db8.docs@gmail.com",
       "previewUrl": null,
       "downloadUrl": null,
-      "scrapedAt": "2026-09-15T11:12:22.509Z"
+      "scrapedAt": "2026-09-16T11:02:04.423Z"
     },
     {
       "year": "ndtceda26",
@@ -1977,7 +1991,7 @@
       "roundReport": "1AC: Taiwan 2NR: CP-Chinese Assurances, DA-Midterms",
       "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Neg-1.-Northwestern-Round-1.docx",
       "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Neg-1.-Northwestern-Round-1.docx",
-      "scrapedAt": "2026-09-15T11:12:22.509Z"
+      "scrapedAt": "2026-09-16T11:02:04.423Z"
     },
     {
       "year": "ndtceda26",
@@ -1991,7 +2005,7 @@
       "roundReport": "1AC: Taiwan 2NR: Deterrence DA",
       "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Aff-1.-Northwestern-Round-2.docx",
       "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Aff-1.-Northwestern-Round-2.docx",
-      "scrapedAt": "2026-09-15T11:12:22.509Z"
+      "scrapedAt": "2026-09-16T11:02:04.423Z"
     },
     {
       "year": "ndtceda26",
@@ -2005,7 +2019,7 @@
       "roundReport": "1AC: Testimonios 2NR: Case, Abolition K, T-FW",
       "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Neg-1.-Northwestern-Round-3.docx",
       "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Neg-1.-Northwestern-Round-3.docx",
-      "scrapedAt": "2026-09-15T11:12:22.509Z"
+      "scrapedAt": "2026-09-16T11:02:04.423Z"
     },
     {
       "year": "ndtceda26",
@@ -2019,7 +2033,7 @@
       "roundReport": "1AC: Taiwan 2NR: Assurances DA",
       "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Aff-1.-Northwestern-Round-4.docx",
       "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Aff-1.-Northwestern-Round-4.docx",
-      "scrapedAt": "2026-09-15T11:12:22.509Z"
+      "scrapedAt": "2026-09-16T11:02:04.423Z"
     },
     {
       "year": "ndtceda26",
@@ -2033,7 +2047,7 @@
       "roundReport": "1AC: Taiwan 2NR: Assurances DA",
       "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Aff-1.-Northwestern-Round-5.docx",
       "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Aff-1.-Northwestern-Round-5.docx",
-      "scrapedAt": "2026-09-15T11:12:22.509Z"
+      "scrapedAt": "2026-09-16T11:02:04.423Z"
     },
     {
       "year": "ndtceda26",
@@ -2047,7 +2061,7 @@
       "roundReport": "1AC: Israel 2NR: Racial IR K",
       "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Neg-1.-Northwestern-Round-6.docx",
       "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Neg-1.-Northwestern-Round-6.docx",
-      "scrapedAt": "2026-09-15T11:12:22.509Z"
+      "scrapedAt": "2026-09-16T11:02:04.423Z"
     },
     {
       "year": "ndtceda26",
@@ -2061,7 +2075,7 @@
       "roundReport": "1AC: Taiwan 2NR: Commitment CP, Japan DA",
       "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Aff-1.-Northwestern-Round-7.docx",
       "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Aff-1.-Northwestern-Round-7.docx",
-      "scrapedAt": "2026-09-15T11:12:22.509Z"
+      "scrapedAt": "2026-09-16T11:02:04.423Z"
     },
     {
       "year": "ndtceda26",
@@ -2075,7 +2089,7 @@
       "roundReport": "1AC: Saudi Arabia 2NR: ADV CP, Stocks DA",
       "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Neg-1.-Northwestern-Round-8.docx",
       "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FWesternKentucky%2FCaSc%2FWesternKentucky-CaSc-Neg-1.-Northwestern-Round-8.docx",
-      "scrapedAt": "2026-09-15T11:12:22.509Z"
+      "scrapedAt": "2026-09-16T11:02:04.423Z"
     }
   ]
 }

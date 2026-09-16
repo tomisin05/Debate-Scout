@@ -50,7 +50,8 @@
     "George Mason DaCl (Austin Davis - Astrid Clough)": 0,
     "George Mason GoBr (Del Gorman - Jordan Bridgers)": 0,
     "George Mason TaRo (Reet Taxali - Camila Rosa-Perez Montes)": 3,
-    "George Mason WiWr (Benjamin Witkov - Ashley Wright)": 0
+    "George Mason WiWr (Benjamin Witkov - Ashley Wright)": 0,
+    "George Mason AlAt (Alejandro Alegre - Dakota Atizol)": 0
   },
   "Georgetown": {
     "Georgetown BaPe (Ava Barbiere - Nora Perez-Rubio)": 0,
@@ -79,7 +80,8 @@
   },
   "Houston": {
     "Houston AqSh (Ramana Aqeel - Yousef Shehata)": 1,
-    "Houston FeIb (Aaron Fernandez - Oliver Ibarra)": 1
+    "Houston FeIb (Aaron Fernandez - Oliver Ibarra)": 1,
+    "Houston MaRo (Patrick Macasaet - Andrew Roberts)": 0
   },
   "Indiana": {
     "Indiana FoGa (Adam Foudali - Rowlin Garcia)": 1,
@@ -113,15 +115,22 @@
     "Kansas LeLe (Ava Levin - Brianna Lemaster)": 1,
     "Kansas ShSu (Katelynn Shaw - Nargis Suleman)": 1,
     "Kansas AdVe (Ewa Adedipe - Aryan Verma)": 0,
-    "Kansas HoJi (Ishaan Home - Joel Jijo)": 0
+    "Kansas HoJi (Ishaan Home - Joel Jijo)": 0,
+    "Kansas LiPe (Cameron Linde - Sigmund Persson)": 0
   },
   "Kansas State": {
     "Kansas State SpFe (Cody Spurlock - Johnathon Fellows)": 1,
-    "Kansas State DrDa (Kyla Draeger - Taryn Day)": 1
+    "Kansas State DrDa (Kyla Draeger - Taryn Day)": 1,
+    "Kansas State ArSa (Lillian Ardis - Caitlin Sand)": 1
   },
   "Kentucky": {
     "Kentucky CoSl (Camden Coale - Regan Slish)": 0,
-    "Kentucky ScRi (Haddie Schedler - Jeremiah Rimpson)": 0
+    "Kentucky ScRi (Haddie Schedler - Jeremiah Rimpson)": 0,
+    "Kentucky DeRu (Abbie DeWeese - Jonn Rushing)": 0,
+    "Kentucky ErMa (Wheezy Ervin - Minnie Marcos)": 0,
+    "Kentucky EsAs (Joseph Estelita - Amelea Asmi Jan)": 0,
+    "Kentucky EsVi (Joseph Estelita - Isabella Villarreal)": 0,
+    "Kentucky ViAs (Isabella Villarreal - Amelea Asmi Jan)": 0
   },
   "Liberty": {
     "Liberty Novices": 1,
