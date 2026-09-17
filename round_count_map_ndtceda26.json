@@ -10,7 +10,7 @@
     "Binghamton PaMe (Nina Patel - Andy Mezgravis-Miani)": 9
   },
   "Central Oklahoma": {
-    "Central Oklahoma HeWa (Aidan Hellwege - Kensington Walker)": 0,
+    "Central Oklahoma HeWa (Aidan Hellwege - Kensington Walker)": 1,
     "Central Oklahoma KaRo (Louis Kagiri - Alanis Robles)": 0
   },
   "Cornell": {
@@ -112,7 +112,7 @@
     "Kansas AiWa (Claire Ain - Henry Walawender)": 5,
     "Kansas BaBo (Carson Bath - Nate Boyle)": 7,
     "Kansas BaPe (Tyler Bauman - Sigmund Persson)": 8,
-    "Kansas BaTe (Kiernan Baxter-Kauf - Jaxson Terreros)": 8,
+    "Kansas BaTe (Kiernan Baxter-Kauf - Jaxson Terreros)": 9,
     "Kansas BlFa (Chase Blaser - Gilead Falin)": 9,
     "Kansas BrSu (Connor Brown - Iman Suleman)": 7,
     "Kansas ChCh (Kavinayashri Chidambaranathan - Harris Chaudhry)": 3,
@@ -187,6 +187,11 @@
     "Missouri State HaDu (Shelby Hahn - Sohum Dua)": 4,
     "Missouri State RiJo (Jo Rice - Wes Jones)": 7
   },
+  "Navy": {
+    "Navy Novices": 6,
+    "Navy LaSa (Jake Lawrence - Griffin Satterfield)": 1
+  },
+  "New Mexico": {},
   "North Texas": {
     "North Texas AnBu (Rishit Anand - Josias Busa)": 1,
     "North Texas BoVa (Ronen Bowman - Emanuel Vargas)": 9,
@@ -212,7 +217,8 @@
     "Oklahoma BaWr (Lucas Ballinger - Jacob Wright)": 5,
     "Oklahoma BuRa (Yobani Bustos - Kimberly Ramirez)": 0,
     "Oklahoma DaFu (Daven Daniel - Ella Fulkerson)": 0,
-    "Oklahoma SmPr (Blaire Smith - Seth Prather)": 9
+    "Oklahoma SmPr (Blaire Smith - Seth Prather)": 9,
+    "Oklahoma WeDa (Forest Werner - Ashlyn Davis)": 0
   },
   "Purdue": {},
   "Rochester": {},
@@ -222,9 +228,12 @@
   },
   "Southern California": {
     "Southern California BrMa (Clare Bradley - Sarah Martin)": 4,
+    "Southern California HuYo (Alliana Sherie Huerto - Bayne Yoakam)": 0,
     "Southern California LePl (Emma Lee - Lucas Plotkin)": 6,
+    "Southern California PaZh (Norah Parampath - Iris Zhang)": 0,
     "Southern California PrDo (Brayden Presley - Jack Dollinger)": 5,
-    "Southern California TrMi (Madison Troup - Jackson Mills)": 8
+    "Southern California TrMi (Madison Troup - Jackson Mills)": 8,
+    "Southern California WoCh (Max Wong - Winston Chou)": 0
   },
   "Southern Nazarene": {
     "Southern Nazarene FuMu (Addison Fuller - Micah Murray)": 1,
@@ -246,8 +255,8 @@
   },
   "UC Berkeley": {
     "UC Berkeley AnWi (Angelina Antony - Troy Wilson)": 7,
-    "UC Berkeley BoMo (Ilan Boguslavsky - Om Modi)": 10,
-    "UC Berkeley GiSi (Dash Gilrain-Lennon - Aaron Situ)": 5
+    "UC Berkeley BoMo (Ilan Boguslavsky - Om Modi)": 12,
+    "UC Berkeley GiSi (Dash Gilrain-Lennon - Aaron Situ)": 8
   },
   "UMass Amherst": {
     "UMass Amherst LeMo (Jamie Levitan - Maguene Moussavou)": 0
@@ -281,10 +290,10 @@
     "Washburn LaRa (Quinn Largent - Jace Raines)": 8
   },
   "West Georgia": {
-    "West Georgia G0Ke (X0 G0 - James Kennon)": 8,
+    "West Georgia G0Ke (X0 G0 - James Kennon)": 9,
     "West Georgia G0Mi (X0 G0 - Bruce Missel)": 0,
     "West Georgia HaLo (eve Handley - Skye Lovering)": 0,
-    "West Georgia KeMi (James Kennon - Bruce Missell)": 1
+    "West Georgia KeMi (James Kennon - Bruce Missell)": 0
   },
   "West Point": {
     "West Point Novices": 2,
