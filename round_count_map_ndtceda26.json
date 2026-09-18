@@ -7,11 +7,12 @@
   },
   "Binghamton": {
     "Binghamton Novices": 16,
-    "Binghamton PaMe (Nina Patel - Andy Mezgravis-Miani)": 9
+    "Binghamton PaMe (Nina Patel - Andy Mezgravis-Miani)": 10
   },
   "Central Oklahoma": {
     "Central Oklahoma HeWa (Aidan Hellwege - Kensington Walker)": 1,
-    "Central Oklahoma KaRo (Louis Kagiri - Alanis Robles)": 0
+    "Central Oklahoma KaRo (Louis Kagiri - Alanis Robles)": 1,
+    "Central Oklahoma WoNg (Margo Wolf - Vi Nguyen)": 1
   },
   "Cornell": {
     "Cornell RaTs (Iridian Ramos-Santiago - Willie Tsai)": 5,
@@ -87,11 +88,11 @@
   "Houston": {
     "Houston AqSh (Ramana Aqeel - Yousef Shehata)": 1,
     "Houston FeIb (Aaron Fernandez - Oliver Ibarra)": 6,
-    "Houston MaRo (Patrick Macasaet - Andrew Roberts)": 0
+    "Houston MaRo (Patrick Macasaet - Andrew Roberts)": 1
   },
   "Indiana": {
     "Indiana FiTr (Zander Fish - Maia Truemper)": 8,
-    "Indiana FoGa (Adam Foudali - Rowlin Garcia)": 8,
+    "Indiana FoGa (Adam Foudali - Rowlin Garcia)": 7,
     "Indiana JoDu (Lily Jones - Jay Duggal)": 9,
     "Indiana ThPe (Aubrey Thomas - Kaz Pena)": 7
   },
@@ -109,19 +110,21 @@
   },
   "Kansas": {
     "Kansas AdVe (Ewa Adedipe - Aryan Verma)": 0,
-    "Kansas AiWa (Claire Ain - Henry Walawender)": 5,
+    "Kansas AiWa (Claire Ain - Henry Walawender)": 8,
     "Kansas BaBo (Carson Bath - Nate Boyle)": 7,
     "Kansas BaPe (Tyler Bauman - Sigmund Persson)": 8,
-    "Kansas BaTe (Kiernan Baxter-Kauf - Jaxson Terreros)": 9,
+    "Kansas BaTe (Kiernan Baxter-Kauf - Jaxson Terreros)": 8,
     "Kansas BlFa (Chase Blaser - Gilead Falin)": 9,
     "Kansas BrSu (Connor Brown - Iman Suleman)": 7,
     "Kansas ChCh (Kavinayashri Chidambaranathan - Harris Chaudhry)": 3,
+    "Kansas DiSh (Dawson Dittmar - Kamran Shah)": 1,
     "Kansas FoHa (Abigail Fordyce - Lena Hasiuk)": 8,
     "Kansas HoJi (Ishaan Home - Joel Jijo)": 0,
     "Kansas LaPa (Payten Lapoint - Lucy Pace)": 5,
     "Kansas LeLe (Ava Levin - Brianna Lemaster)": 5,
     "Kansas LiPe (Cameron Linde - Sigmund Persson)": 0,
     "Kansas OwUl (Owen Owings - Max Ulven)": 9,
+    "Kansas PaWi (Shruti Parthasarathy - Cameron Williams)": 0,
     "Kansas ShSu (Katelynn Shaw - Nargis Suleman)": 1
   },
   "Kansas State": {
@@ -156,7 +159,7 @@
   "Michigan": {
     "Michigan AgOu (William Agustin - Robert Ou)": 8,
     "Michigan ApRy (Felix Apfaltrer - Andres Ryan)": 9,
-    "Michigan AtDa (Nicholas Athanassiou - Rebecca Davidov)": 5,
+    "Michigan AtDa (Nicholas Athanassiou - Rebecca Davidov)": 9,
     "Michigan BaLe (Mira Baba - Gianna Ledesma)": 3,
     "Michigan BaSo (Eleanor Barrett - Ike Song)": 9,
     "Michigan BePa (Sajad Beg - Mihika Pandit)": 6,
@@ -171,10 +174,10 @@
     "Michigan PaFu (Grady Pazona - Lena Furtek)": 8
   },
   "Michigan State": {
-    "Michigan State BuSt (Cameron Buhl - Will Sterbenc)": 7,
+    "Michigan State BuSt (Cameron Buhl - Will Sterbenc)": 8,
     "Michigan State DeHuKi (Dame DeMaria - Jack Humphrey - Balin Kimbrell)": 7,
     "Michigan State FoMo (Isabella Foster - Addison Morris)": 9,
-    "Michigan State JaSh (Zaria Jarman - Hina Shehzad)": 5,
+    "Michigan State JaSh (Zaria Jarman - Hina Shehzad)": 7,
     "Michigan State KiPa (Artie Kincaid - Neel Patel)": 8,
     "Michigan State LeMa (Stephen Lewis - Henry Martin)": 10
   },
@@ -192,13 +195,6 @@
     "Navy LaSa (Jake Lawrence - Griffin Satterfield)": 1
   },
   "New Mexico": {},
-  "North Texas": {
-    "North Texas AnBu (Rishit Anand - Josias Busa)": 1,
-    "North Texas BoVa (Ronen Bowman - Emanuel Vargas)": 9,
-    "North Texas HuIn (Gabriel Hunt - Chase Inman)": 2,
-    "North Texas HuMo (Gabriel Hunt - Alex Montgomery)": 9,
-    "North Texas PaMo (Sumya Paruchuri - Alex Montgomery)": 1
-  },
   "Northern Iowa": {
     "Northern Iowa BaDo (Sabrina Barati - Ellie Dorris)": 1,
     "Northern Iowa DoVa (Burke Doyle - Kat Van Buren)": 1
@@ -227,7 +223,7 @@
     "Samford KiEi (Maggi Kimbrell - Elise Eichholtz)": 2
   },
   "Southern California": {
-    "Southern California BrMa (Clare Bradley - Sarah Martin)": 4,
+    "Southern California BrMa (Clare Bradley - Sarah Martin)": 6,
     "Southern California HuYo (Alliana Sherie Huerto - Bayne Yoakam)": 0,
     "Southern California LePl (Emma Lee - Lucas Plotkin)": 6,
     "Southern California PaZh (Norah Parampath - Iris Zhang)": 0,
@@ -251,7 +247,7 @@
   },
   "Trinity": {
     "Trinity BaKh (Grant Barden - Mariska Khalikov)": 5,
-    "Trinity CrOl (Leo Crowley - Faith Olabanji)": 1
+    "Trinity CrOl (Leo Crowley - Faith Olabanji)": 2
   },
   "UC Berkeley": {
     "UC Berkeley AnWi (Angelina Antony - Troy Wilson)": 7,
@@ -276,13 +272,13 @@
     "UTD HoRa (Isaac Hoch - Sabarish Ravi)": 3
   },
   "Wake Forest": {
-    "Wake Forest AdMb (Ademoreoluwa Aderibigbe - Mary Mbye)": 2,
-    "Wake Forest BrSe (Jordan Brown - Rita Sencion)": 0,
+    "Wake Forest AdMb (Ademoreoluwa Aderibigbe - Mary Mbye)": 4,
+    "Wake Forest BrSe (Jordan Brown - Rita Sencion)": 6,
     "Wake Forest DiMc (Mae Dingley - Liam McDonald)": 9,
     "Wake Forest GoPe (Yulong Gong - Courtneigh Peebles)": 6,
-    "Wake Forest HaNa (Destiny Hale - Kalina Namikas)": 1,
-    "Wake Forest LaWi (Alana Laforest - Shiloh Williams)": 1,
-    "Wake Forest LePa (Eden Leverett - Vriti Patel)": 1,
+    "Wake Forest HaNa (Destiny Hale - Kalina Namikas)": 5,
+    "Wake Forest LaWi (Alana Laforest - Shiloh Williams)": 8,
+    "Wake Forest LePa (Eden Leverett - Vriti Patel)": 6,
     "Wake Forest NoSa (Nikola Nounawon-Castro - Jayden Sampat)": 8,
     "Wake Forest PrTi (Aryan Prabhakar - Elizabeth Timsah)": 4
   },
