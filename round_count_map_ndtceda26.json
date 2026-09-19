@@ -10,9 +10,9 @@
     "Binghamton PaMe (Nina Patel - Andy Mezgravis-Miani)": 10
   },
   "Central Oklahoma": {
-    "Central Oklahoma HeWa (Aidan Hellwege - Kensington Walker)": 1,
-    "Central Oklahoma KaRo (Louis Kagiri - Alanis Robles)": 1,
-    "Central Oklahoma WoNg (Margo Wolf - Vi Nguyen)": 1
+    "Central Oklahoma HeWa (Aidan Hellwege - Kensington Walker)": 3,
+    "Central Oklahoma KaRo (Louis Kagiri - Alanis Robles)": 3,
+    "Central Oklahoma WoNg (Margo Wolf - Vi Nguyen)": 2
   },
   "Cornell": {
     "Cornell RaTs (Iridian Ramos-Santiago - Willie Tsai)": 5,
@@ -109,7 +109,7 @@
     "Johnson County Community College TuJa (Charlotte Turner - Mariama Jallow)": 2
   },
   "Kansas": {
-    "Kansas AdVe (Ewa Adedipe - Aryan Verma)": 0,
+    "Kansas AdVe (Ewa Adedipe - Aryan Verma)": 2,
     "Kansas AiWa (Claire Ain - Henry Walawender)": 8,
     "Kansas BaBo (Carson Bath - Nate Boyle)": 7,
     "Kansas BaPe (Tyler Bauman - Sigmund Persson)": 8,
@@ -117,14 +117,14 @@
     "Kansas BlFa (Chase Blaser - Gilead Falin)": 9,
     "Kansas BrSu (Connor Brown - Iman Suleman)": 7,
     "Kansas ChCh (Kavinayashri Chidambaranathan - Harris Chaudhry)": 3,
-    "Kansas DiSh (Dawson Dittmar - Kamran Shah)": 1,
+    "Kansas DiSh (Dawson Dittmar - Kamran Shah)": 2,
     "Kansas FoHa (Abigail Fordyce - Lena Hasiuk)": 8,
-    "Kansas HoJi (Ishaan Home - Joel Jijo)": 0,
+    "Kansas HoJi (Ishaan Home - Joel Jijo)": 2,
     "Kansas LaPa (Payten Lapoint - Lucy Pace)": 5,
     "Kansas LeLe (Ava Levin - Brianna Lemaster)": 5,
-    "Kansas LiPe (Cameron Linde - Sigmund Persson)": 0,
+    "Kansas LiPe (Cameron Linde - Sigmund Persson)": 1,
     "Kansas OwUl (Owen Owings - Max Ulven)": 9,
-    "Kansas PaWi (Shruti Parthasarathy - Cameron Williams)": 0,
+    "Kansas PaWi (Shruti Parthasarathy - Cameron Williams)": 2,
     "Kansas ShSu (Katelynn Shaw - Nargis Suleman)": 1
   },
   "Kansas State": {
@@ -138,11 +138,11 @@
     "Kentucky ErMa (Wheezy Ervin - Minnie Marcos)": 0,
     "Kentucky EsAs (Joseph Estelita - Amelea Asmi Jan)": 0,
     "Kentucky EsVi (Joseph Estelita - Isabella Villarreal)": 0,
-    "Kentucky ScRi (Haddie Schedler - Jeremiah Rimpson)": 3,
+    "Kentucky ScRi (Haddie Schedler - Jeremiah Rimpson)": 4,
     "Kentucky ViAs (Isabella Villarreal - Amelea Asmi Jan)": 0
   },
   "Lewis And Clark": {
-    "Lewis And Clark BeLa (Drew Benthein - Mikey Laurent)": 2
+    "Lewis And Clark BeLa (Drew Benthein - Mikey Laurent)": 4
   },
   "Liberty": {
     "Liberty Novices": 1,
@@ -183,11 +183,12 @@
   },
   "Minnesota": {},
   "Missouri State": {
-    "Missouri State BaMc (Avery Bates - Evan McSorley)": 9,
+    "Missouri State BaMc (Avery Bates - Evan McSorley)": 11,
     "Missouri State CoNe (Quentin Cooper - Nico Neal)": 10,
     "Missouri State CoPe (Gary Cowdrey-Mota - Troy Petty)": 9,
-    "Missouri State DeSi (Levi DeAngelis - Evan Siever)": 7,
-    "Missouri State HaDu (Shelby Hahn - Sohum Dua)": 4,
+    "Missouri State DeSi (Levi DeAngelis - Evan Siever)": 8,
+    "Missouri State HaDu (Shelby Hahn - Sohum Dua)": 7,
+    "Missouri State JoPe (Wes Jones - Troy Petty)": 3,
     "Missouri State RiJo (Jo Rice - Wes Jones)": 7
   },
   "Navy": {
@@ -195,9 +196,17 @@
     "Navy LaSa (Jake Lawrence - Griffin Satterfield)": 1
   },
   "New Mexico": {},
+  "North Texas": {
+    "North Texas AnBu (Rishit Anand - Josias Busa)": 1,
+    "North Texas BoVa (Ronen Bowman - Emanuel Vargas)": 9,
+    "North Texas HaSq (Jack Hasper - Peyton Squires)": 0,
+    "North Texas HuIn (Gabriel Hunt - Chase Inman)": 2,
+    "North Texas HuMo (Gabriel Hunt - Alex Montgomery)": 9,
+    "North Texas PaMo (Sumya Paruchuri - Alex Montgomery)": 1
+  },
   "Northern Iowa": {
-    "Northern Iowa BaDo (Sabrina Barati - Ellie Dorris)": 1,
-    "Northern Iowa DoVa (Burke Doyle - Kat Van Buren)": 1
+    "Northern Iowa BaDo (Sabrina Barati - Ellie Dorris)": 3,
+    "Northern Iowa DoVa (Burke Doyle - Kat Van Buren)": 3
   },
   "Northwestern": {
     "Northwestern CaYa (Ethan Camp - Jordan Yao)": 8,
@@ -209,12 +218,12 @@
   "NSH": {},
   "NYU": {},
   "Oklahoma": {
-    "Oklahoma BaDu (Jackson Ballinger - Aiden Duncan)": 1,
-    "Oklahoma BaWr (Lucas Ballinger - Jacob Wright)": 5,
-    "Oklahoma BuRa (Yobani Bustos - Kimberly Ramirez)": 0,
-    "Oklahoma DaFu (Daven Daniel - Ella Fulkerson)": 0,
+    "Oklahoma BaDu (Jackson Ballinger - Aiden Duncan)": 3,
+    "Oklahoma BaWr (Lucas Ballinger - Jacob Wright)": 9,
+    "Oklahoma BuRa (Yobani Bustos - Kimberly Ramirez)": 2,
+    "Oklahoma DaFu (Daven Daniel - Ella Fulkerson)": 2,
     "Oklahoma SmPr (Blaire Smith - Seth Prather)": 9,
-    "Oklahoma WeDa (Forest Werner - Ashlyn Davis)": 0
+    "Oklahoma WeDa (Forest Werner - Ashlyn Davis)": 1
   },
   "Purdue": {},
   "Rochester": {},
@@ -224,16 +233,16 @@
   },
   "Southern California": {
     "Southern California BrMa (Clare Bradley - Sarah Martin)": 6,
-    "Southern California HuYo (Alliana Sherie Huerto - Bayne Yoakam)": 0,
+    "Southern California HuYo (Alliana Sherie Huerto - Bayne Yoakam)": 1,
     "Southern California LePl (Emma Lee - Lucas Plotkin)": 6,
     "Southern California PaZh (Norah Parampath - Iris Zhang)": 0,
     "Southern California PrDo (Brayden Presley - Jack Dollinger)": 5,
     "Southern California TrMi (Madison Troup - Jackson Mills)": 8,
-    "Southern California WoCh (Max Wong - Winston Chou)": 0
+    "Southern California WoCh (Max Wong - Winston Chou)": 2
   },
   "Southern Nazarene": {
     "Southern Nazarene FuMu (Addison Fuller - Micah Murray)": 1,
-    "Southern Nazarene HoJe (Ian Horton - Sophia Jennings)": 1,
+    "Southern Nazarene HoJe (Ian Horton - Sophia Jennings)": 2,
     "Southern Nazarene LuHu (Tanner Luce - Caleb Hudson)": 1,
     "Southern Nazarene StHu (Katherine Stockstill - Caleb Hudson)": 0
   },
@@ -258,7 +267,8 @@
     "UMass Amherst LeMo (Jamie Levitan - Maguene Moussavou)": 0
   },
   "UT San Antonio": {
-    "UT San Antonio JaGi (Makenna Jackson - Rylie Gilbert)": 1
+    "UT San Antonio JaGi (Makenna Jackson - Rylie Gilbert)": 3,
+    "UT San Antonio PaWr (Ashutosh Panda - Arden Wright)": 3
   },
   "Utah": {
     "Utah BoHi (Juan Boscan - Myra Hicks)": 1,
@@ -304,7 +314,8 @@
     "Western Kentucky NeKu (Riley Ney - Vaden Kumar)": 8
   },
   "Wichita State": {
-    "Wichita State GrMa (Marianne Griffith - Preston Mallett)": 2
+    "Wichita State GrMa (Marianne Griffith - Preston Mallett)": 2,
+    "Wichita State ZdMa (Alexander Zdrojewski - Mersadies Marciano)": 1
   },
   "Wyoming": {
     "Wyoming WiHa (Saimaa Widi - Jeremiah Hawley)": 5,
