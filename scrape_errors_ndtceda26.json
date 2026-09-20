@@ -1,14 +1,8 @@
 [
   {
     "year": "ndtceda26",
-    "school": "Central Oklahoma",
-    "team": "Central Oklahoma KaRo (Louis Kagiri - Alanis Robles)",
-    "error": "incomplete scrape: got 0, expected at least 3"
-  },
-  {
-    "year": "ndtceda26",
-    "school": "Central Oklahoma",
-    "team": "Central Oklahoma WoNg (Margo Wolf - Vi Nguyen)",
-    "error": "incomplete scrape: got 0, expected at least 2"
+    "school": "Missouri State",
+    "team": "Missouri State JoPe (Wes Jones - Troy Petty)",
+    "error": "incomplete scrape: got 0, expected at least 4"
   }
 ]
