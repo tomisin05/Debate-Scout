@@ -10,7 +10,7 @@
     "Binghamton PaMe (Nina Patel - Andy Mezgravis-Miani)": 10
   },
   "Central Oklahoma": {
-    "Central Oklahoma HeWa (Aidan Hellwege - Kensington Walker)": 4,
+    "Central Oklahoma HeWa (Aidan Hellwege - Kensington Walker)": 5,
     "Central Oklahoma KaRo (Louis Kagiri - Alanis Robles)": 3,
     "Central Oklahoma WoNg (Margo Wolf - Vi Nguyen)": 2
   },
@@ -25,6 +25,7 @@
   "Dartmouth": {
     "Dartmouth BeCa (Sheima Ben-Abdallah - Katie Carpenter)": 8,
     "Dartmouth BrJi (Cooper Brody - Dan Jiang)": 8,
+    "Dartmouth BrPa (Cooper Brody - Ethan Park)": 0,
     "Dartmouth CaGo (Nora Cai - Leah Goldberg)": 9,
     "Dartmouth CaSi (Luke Canabou - Res Siebels)": 8,
     "Dartmouth HaGo (Alex Hant - Jared Gonzalez Arce)": 0,
@@ -121,14 +122,14 @@
     "Kansas BlFa (Chase Blaser - Gilead Falin)": 9,
     "Kansas BrSu (Connor Brown - Iman Suleman)": 7,
     "Kansas ChCh (Kavinayashri Chidambaranathan - Harris Chaudhry)": 3,
-    "Kansas DiSh (Dawson Dittmar - Kamran Shah)": 7,
+    "Kansas DiSh (Dawson Dittmar - Kamran Shah)": 9,
     "Kansas FoHa (Abigail Fordyce - Lena Hasiuk)": 8,
-    "Kansas HoJi (Ishaan Home - Joel Jijo)": 4,
+    "Kansas HoJi (Ishaan Home - Joel Jijo)": 6,
     "Kansas LaPa (Payten Lapoint - Lucy Pace)": 5,
     "Kansas LeLe (Ava Levin - Brianna Lemaster)": 5,
-    "Kansas LiPe (Cameron Linde - Sigmund Persson)": 6,
+    "Kansas LiPe (Cameron Linde - Sigmund Persson)": 9,
     "Kansas OwUl (Owen Owings - Max Ulven)": 9,
-    "Kansas PaWi (Shruti Parthasarathy - Cameron Williams)": 5,
+    "Kansas PaWi (Shruti Parthasarathy - Cameron Williams)": 9,
     "Kansas ShSu (Katelynn Shaw - Nargis Suleman)": 1
   },
   "Kansas State": {
@@ -159,7 +160,7 @@
   },
   "Macalester College": {
     "Macalester College BoSc (Joshua Bonilla Rivera - Carson Scott)": 8,
-    "Macalester College ScKo (Josiah Schaffhausen - Will Kochel)": 4
+    "Macalester College ScKo (Josiah Schaffhausen - Will Kochel)": 8
   },
   "Michigan": {
     "Michigan AgOu (William Agustin - Robert Ou)": 8,
@@ -178,14 +179,22 @@
     "Michigan LaSi (Asha Laskar - Varsha Sivasubramanian)": 8,
     "Michigan PaFu (Grady Pazona - Lena Furtek)": 8
   },
+  "Michigan State": {
+    "Michigan State BuSt (Cameron Buhl - Will Sterbenc)": 8,
+    "Michigan State DeHuKi (Dame DeMaria - Jack Humphrey - Balin Kimbrell)": 7,
+    "Michigan State FoMo (Isabella Foster - Addison Morris)": 9,
+    "Michigan State JaSh (Zaria Jarman - Hina Shehzad)": 7,
+    "Michigan State KiPa (Artie Kincaid - Neel Patel)": 8,
+    "Michigan State LeMa (Stephen Lewis - Henry Martin)": 10
+  },
   "Minnesota": {},
   "Missouri State": {
-    "Missouri State BaMc (Avery Bates - Evan McSorley)": 14,
+    "Missouri State BaMc (Avery Bates - Evan McSorley)": 15,
     "Missouri State CoNe (Quentin Cooper - Nico Neal)": 10,
     "Missouri State CoPe (Gary Cowdrey-Mota - Troy Petty)": 9,
-    "Missouri State CoRi (Gary Cowdrey-Mota - Jo Rice)": 0,
+    "Missouri State CoRi (Gary Cowdrey-Mota - Jo Rice)": 2,
     "Missouri State DeSi (Levi DeAngelis - Evan Siever)": 8,
-    "Missouri State HaDu (Shelby Hahn - Sohum Dua)": 7,
+    "Missouri State HaDu (Shelby Hahn - Sohum Dua)": 10,
     "Missouri State JoPe (Wes Jones - Troy Petty)": 4,
     "Missouri State RiJo (Jo Rice - Wes Jones)": 7
   },
@@ -217,7 +226,7 @@
   "NYU": {},
   "Oklahoma": {
     "Oklahoma BaDu (Jackson Ballinger - Aiden Duncan)": 3,
-    "Oklahoma BaWr (Lucas Ballinger - Jacob Wright)": 12,
+    "Oklahoma BaWr (Lucas Ballinger - Jacob Wright)": 14,
     "Oklahoma BuRa (Yobani Bustos - Kimberly Ramirez)": 4,
     "Oklahoma DaFu (Daven Daniel - Ella Fulkerson)": 5,
     "Oklahoma SmPr (Blaire Smith - Seth Prather)": 9,
@@ -232,15 +241,15 @@
   "Southern California": {
     "Southern California BrMa (Clare Bradley - Sarah Martin)": 6,
     "Southern California HuYo (Alliana Sherie Huerto - Bayne Yoakam)": 2,
-    "Southern California KiBh (Jeremy Kim - Nina Bhuket)": 0,
+    "Southern California KiBh (Jeremy Kim - Nina Bhuket)": 6,
     "Southern California LePl (Emma Lee - Lucas Plotkin)": 6,
     "Southern California PaZh (Norah Parampath - Iris Zhang)": 1,
     "Southern California PrDo (Brayden Presley - Jack Dollinger)": 5,
     "Southern California TrMi (Madison Troup - Jackson Mills)": 8,
-    "Southern California WoCh (Max Wong - Winston Chou)": 6
+    "Southern California WoCh (Max Wong - Winston Chou)": 10
   },
   "Southern Nazarene": {
-    "Southern Nazarene FuMu (Addison Fuller - Micah Murray)": 4,
+    "Southern Nazarene FuMu (Addison Fuller - Micah Murray)": 6,
     "Southern Nazarene HoJe (Ian Horton - Sophia Jennings)": 7,
     "Southern Nazarene LuHu (Tanner Luce - Caleb Hudson)": 4,
     "Southern Nazarene SmMa (Dalton Smith - Top Mathews)": 4,
@@ -256,7 +265,7 @@
   },
   "Trinity": {
     "Trinity BaKh (Grant Barden - Mariska Khalikov)": 5,
-    "Trinity CrOl (Leo Crowley - Faith Olabanji)": 2
+    "Trinity CrOl (Leo Crowley - Faith Olabanji)": 9
   },
   "UC Berkeley": {
     "UC Berkeley AnWi (Angelina Antony - Troy Wilson)": 7,
@@ -267,8 +276,8 @@
     "UMass Amherst LeMo (Jamie Levitan - Maguene Moussavou)": 0
   },
   "UT San Antonio": {
-    "UT San Antonio JaGi (Makenna Jackson - Rylie Gilbert)": 4,
-    "UT San Antonio PaWr (Ashutosh Panda - Arden Wright)": 3
+    "UT San Antonio JaGi (Makenna Jackson - Rylie Gilbert)": 6,
+    "UT San Antonio PaWr (Ashutosh Panda - Arden Wright)": 8
   },
   "Utah": {
     "Utah BoHi (Juan Boscan - Myra Hicks)": 1,
