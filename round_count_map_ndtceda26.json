@@ -2,7 +2,7 @@
   "Baylor": {
     "Baylor BeKe (Spencer Benton - Anastasia Keeler)": 7,
     "Baylor LiMe (Josh Li - Jessie Merriwether)": 9,
-    "Baylor MaMa (Julia Marek - Kamdyn Mathews)": 5,
+    "Baylor MaMa (Julia Marek - Kamdyn Mathews)": 7,
     "Baylor PhAr (Tyler Phillips - Pedro Arroyo)": 8
   },
   "Binghamton": {
@@ -10,7 +10,7 @@
     "Binghamton PaMe (Nina Patel - Andy Mezgravis-Miani)": 10
   },
   "Central Oklahoma": {
-    "Central Oklahoma HeWa (Aidan Hellwege - Kensington Walker)": 5,
+    "Central Oklahoma HeWa (Aidan Hellwege - Kensington Walker)": 8,
     "Central Oklahoma KaRo (Louis Kagiri - Alanis Robles)": 3,
     "Central Oklahoma WoNg (Margo Wolf - Vi Nguyen)": 2
   },
@@ -52,12 +52,17 @@
     "Emory TaYa (Adam Tahirkheli - Jonathan Yang)": 8,
     "Emory grWa (alyson granchi - Tinghan Wang)": 7
   },
+  "Fairmont State": {
+    "Fairmont State AlSi (Reagan Allen - Dexter Simon)": 0,
+    "Fairmont State ElFe (Nevaeh Ellixson - Denise Felix)": 0
+  },
   "George Mason": {
     "George Mason Novices": 2,
     "George Mason AlAt (Alejandro Alegre - Dakota Atizol)": 0,
+    "George Mason BaNo (Oluwatomisin Badmus - Chesney Noye)": 1,
     "George Mason BeEl (Denzel Bell - Sami Elsayed)": 8,
     "George Mason DaCl (Austin Davis - Astrid Clough)": 8,
-    "George Mason GoBr (Del Gorman - Jordan Bridgers)": 0,
+    "George Mason GoBr (Del Gorman - Jordan Bridgers)": 1,
     "George Mason TaRo (Reet Taxali - Camila Rosa-Perez Montes)": 8,
     "George Mason WiWr (Benjamin Witkov - Ashley Wright)": 9
   },
@@ -83,6 +88,7 @@
   "Harvard": {
     "Harvard AoBo (Seiji Aoki - Jayden Bodet)": 2,
     "Harvard DeSr (Niranjan Deshpande - Agastya Sridharan)": 8,
+    "Harvard FaJo (Zackhery Facey - Faith Jones)": 0,
     "Harvard GhGu (Salma Gheith - Anika Gupta)": 0,
     "Harvard GhMa (Salma Gheith - Sitara Mazumdar)": 8,
     "Harvard HoLi (Russell Howard - Jimmy Li)": 6,
@@ -125,7 +131,7 @@
     "Kansas DiSh (Dawson Dittmar - Kamran Shah)": 9,
     "Kansas FoHa (Abigail Fordyce - Lena Hasiuk)": 8,
     "Kansas HoJi (Ishaan Home - Joel Jijo)": 6,
-    "Kansas LaPa (Payten Lapoint - Lucy Pace)": 5,
+    "Kansas LaPa (Payten Lapoint - Lucy Pace)": 8,
     "Kansas LeLe (Ava Levin - Brianna Lemaster)": 5,
     "Kansas LiPe (Cameron Linde - Sigmund Persson)": 9,
     "Kansas OwUl (Owen Owings - Max Ulven)": 9,
@@ -144,7 +150,7 @@
     "Kentucky ErMa (Wheezy Ervin - Minnie Marcos)": 0,
     "Kentucky EsAs (Joseph Estelita - Amelea Asmi Jan)": 0,
     "Kentucky EsVi (Joseph Estelita - Isabella Villarreal)": 0,
-    "Kentucky ScRi (Haddie Schedler - Jeremiah Rimpson)": 4,
+    "Kentucky ScRi (Haddie Schedler - Jeremiah Rimpson)": 5,
     "Kentucky ViAs (Isabella Villarreal - Amelea Asmi Jan)": 0
   },
   "Lewis And Clark": {
@@ -162,6 +168,11 @@
     "Macalester College BoSc (Joshua Bonilla Rivera - Carson Scott)": 8,
     "Macalester College ScKo (Josiah Schaffhausen - Will Kochel)": 8
   },
+  "Marian": {
+    "Marian KoMo (Stella Kolb - Kim Moreno)": 0,
+    "Marian OBSn (Quinn OBrien - Devon Snellenberger)": 0,
+    "Marian SpSw (Tquan Spencer - Nevaeh Sweet)": 0
+  },
   "Michigan": {
     "Michigan AgOu (William Agustin - Robert Ou)": 8,
     "Michigan ApRy (Felix Apfaltrer - Andres Ryan)": 9,
@@ -171,7 +182,7 @@
     "Michigan BePa (Sajad Beg - Mihika Pandit)": 6,
     "Michigan BrBy (Jacob Brashear - Micah Byron-Smarra)": 9,
     "Michigan ChAl (Rohan Chalamalasetti - Ava Almand)": 8,
-    "Michigan ChSh (Gautam Chamarthy - Rishi Shetty)": 5,
+    "Michigan ChSh (Gautam Chamarthy - Rishi Shetty)": 10,
     "Michigan ChXu (Connor Chun - Raymond Xu)": 8,
     "Michigan DaDi (Zach Davis - Jessica Ding)": 6,
     "Michigan EsSh (Cyrus Esmailzadeh - Avi Shah)": 11,
@@ -217,6 +228,7 @@
   },
   "Northwestern": {
     "Northwestern CaYa (Ethan Camp - Jordan Yao)": 8,
+    "Northwestern ChCa (Kayte Chan - Raymond Canchola-Plascencia)": 0,
     "Northwestern JaPa (Alexander Jayaratne - Lucia Patterson)": 9,
     "Northwestern KuMi (Gavin Kung - Samuel Miramontes)": 9,
     "Northwestern LePe (Sophie Leonard - Matt Peng)": 9,
@@ -227,7 +239,7 @@
   "Oklahoma": {
     "Oklahoma BaDu (Jackson Ballinger - Aiden Duncan)": 3,
     "Oklahoma BaWr (Lucas Ballinger - Jacob Wright)": 14,
-    "Oklahoma BuRa (Yobani Bustos - Kimberly Ramirez)": 4,
+    "Oklahoma BuRa (Yobani Bustos - Kimberly Ramirez)": 8,
     "Oklahoma DaFu (Daven Daniel - Ella Fulkerson)": 5,
     "Oklahoma SmPr (Blaire Smith - Seth Prather)": 9,
     "Oklahoma WeDa (Forest Werner - Ashlyn Davis)": 5
@@ -251,12 +263,13 @@
   "Southern Nazarene": {
     "Southern Nazarene FuMu (Addison Fuller - Micah Murray)": 6,
     "Southern Nazarene HoJe (Ian Horton - Sophia Jennings)": 7,
-    "Southern Nazarene LuHu (Tanner Luce - Caleb Hudson)": 4,
+    "Southern Nazarene LuHu (Tanner Luce - Caleb Hudson)": 5,
     "Southern Nazarene SmMa (Dalton Smith - Top Mathews)": 4,
     "Southern Nazarene StHu (Katherine Stockstill - Caleb Hudson)": 0
   },
   "Texas": {
     "Texas AlGa (Iliyan Ali - Danush Gade)": 8,
+    "Texas BaSm (Henry Banse - Seth Small)": 0,
     "Texas GaSt (Emilio Garza - Devon Stevenson)": 1,
     "Texas LoAn (Samantha Low - Ethan Andrew)": 4
   },
@@ -317,14 +330,14 @@
     "West Point SoKa (James Song - Gene Kang)": 3
   },
   "Western Kentucky": {
-    "Western Kentucky CaSc (Sage Carter - Nik Schintgen)": 9,
-    "Western Kentucky HeMi (Anderson Hendrix - Abigail Mike)": 8,
     "Western Kentucky InNi (Cameron Ingram - Kai Niendorf)": 11,
-    "Western Kentucky NeKu (Riley Ney - Vaden Kumar)": 8
+    "Western Kentucky NeKu (Riley Ney - Vaden Kumar)": 8,
+    "Western Kentucky CaSc (Sage Carter - Nik Schintgen)": 9,
+    "Western Kentucky HeMi (Anderson Hendrix - Abigail Mike)": 8
   },
   "Wichita State": {
-    "Wichita State GrMa (Marianne Griffith - Preston Mallett)": 2,
-    "Wichita State ZdMa (Alexander Zdrojewski - Mersadies Marciano)": 6
+    "Wichita State GrMa (Marianne Griffith - Preston Mallett)": 3,
+    "Wichita State ZdMa (Alexander Zdrojewski - Mersadies Marciano)": 8
   },
   "Wyoming": {
     "Wyoming WiHa (Saimaa Widi - Jeremiah Hawley)": 5,
