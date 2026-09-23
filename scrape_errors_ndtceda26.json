@@ -1,14 +1,1 @@
-[
-  {
-    "year": "ndtceda26",
-    "school": "Kansas",
-    "team": "Kansas LaPa (Payten Lapoint - Lucy Pace)",
-    "error": "incomplete scrape: got 0, expected at least 8"
-  },
-  {
-    "year": "ndtceda26",
-    "school": "Kentucky",
-    "team": "Kentucky ScRi (Haddie Schedler - Jeremiah Rimpson)",
-    "error": "incomplete scrape: got 0, expected at least 5"
-  }
-]
+[]

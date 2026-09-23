@@ -18,7 +18,9 @@
     "Cornell RaTs (Iridian Ramos-Santiago - Willie Tsai)": 5,
     "Cornell SiKr (Kassandra Sinchi - Adriana Kroeze)": 6
   },
-  "CSU Fullerton": {},
+  "CSU Fullerton": {
+    "CSU Fullerton CaDo (Samantha Catapang - Israel Dominguez)": 0
+  },
   "CSU Long Beach": {
     "CSU Long Beach EsMe (Alessandra Escobar - Daniel Medina)": 10
   },
@@ -86,7 +88,7 @@
     "Gonzaga MuPa (Everett Murray - Nathan Pascas)": 9
   },
   "Harvard": {
-    "Harvard AoBo (Seiji Aoki - Jayden Bodet)": 2,
+    "Harvard AoBo (Seiji Aoki - Jayden Bodet)": 3,
     "Harvard DeSr (Niranjan Deshpande - Agastya Sridharan)": 8,
     "Harvard FaJo (Zackhery Facey - Faith Jones)": 0,
     "Harvard GhGu (Salma Gheith - Anika Gupta)": 0,
@@ -227,12 +229,15 @@
     "Northern Iowa DoVa (Burke Doyle - Kat Van Buren)": 7
   },
   "Northwestern": {
+    "Northwestern LiTa (Mike Li - Ahsan Tahirkheli)": 11,
+    "Northwestern LuWe (Annabeth Lundberg - Samuel Weisz)": 0,
+    "Northwestern YaOl (Elaine Yates - Temilola Olorunsola)": 0,
+    "Northwestern ArYo (Ari Arceo - James Young)": 0,
     "Northwestern CaYa (Ethan Camp - Jordan Yao)": 8,
     "Northwestern ChCa (Kayte Chan - Raymond Canchola-Plascencia)": 0,
     "Northwestern JaPa (Alexander Jayaratne - Lucia Patterson)": 9,
     "Northwestern KuMi (Gavin Kung - Samuel Miramontes)": 9,
-    "Northwestern LePe (Sophie Leonard - Matt Peng)": 9,
-    "Northwestern LiTa (Mike Li - Ahsan Tahirkheli)": 11
+    "Northwestern LePe (Sophie Leonard - Matt Peng)": 9
   },
   "NSH": {},
   "NYU": {},
@@ -262,8 +267,8 @@
   },
   "Southern Nazarene": {
     "Southern Nazarene FuMu (Addison Fuller - Micah Murray)": 6,
-    "Southern Nazarene HoJe (Ian Horton - Sophia Jennings)": 7,
-    "Southern Nazarene LuHu (Tanner Luce - Caleb Hudson)": 5,
+    "Southern Nazarene HoJe (Ian Horton - Sophia Jennings)": 8,
+    "Southern Nazarene LuHu (Tanner Luce - Caleb Hudson)": 8,
     "Southern Nazarene SmMa (Dalton Smith - Top Mathews)": 4,
     "Southern Nazarene StHu (Katherine Stockstill - Caleb Hudson)": 0
   },
@@ -296,8 +301,7 @@
     "Utah BoHi (Juan Boscan - Myra Hicks)": 1,
     "Utah FrHa (Emma Fraser - Jacob Hatch)": 1,
     "Utah MaKe (Maria Manousakis - Brinley Kemp)": 7,
-    "Utah PaVe (Jeremy Parrish - Benji Verbeck-OBrien)": 0,
-    "Utah ScVe (Emily Scott - Benji Verbeck OBrien)": 1
+    "Utah PaVe (Jeremy Parrish - Benji Verbeck-OBrien)": 0
   },
   "UTD": {
     "UTD HaDi (Charlie Hale - Jessica Dickey)": 9,
@@ -330,10 +334,10 @@
     "West Point SoKa (James Song - Gene Kang)": 3
   },
   "Western Kentucky": {
-    "Western Kentucky InNi (Cameron Ingram - Kai Niendorf)": 11,
-    "Western Kentucky NeKu (Riley Ney - Vaden Kumar)": 8,
     "Western Kentucky CaSc (Sage Carter - Nik Schintgen)": 9,
-    "Western Kentucky HeMi (Anderson Hendrix - Abigail Mike)": 8
+    "Western Kentucky HeMi (Anderson Hendrix - Abigail Mike)": 8,
+    "Western Kentucky InNi (Cameron Ingram - Kai Niendorf)": 11,
+    "Western Kentucky NeKu (Riley Ney - Vaden Kumar)": 8
   },
   "Wichita State": {
     "Wichita State GrMa (Marianne Griffith - Preston Mallett)": 3,
