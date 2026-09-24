@@ -34,8 +34,8 @@ jobs:
             echo "current_size=0" >> $GITHUB_OUTPUT
           fi
 
-      - name: Scrape 2026 data
-        run: node scraper.mjs --year ndtceda26 --output public/data_ndtceda26.json
+      - name: Scrape recent changes
+        run: node scrape-recent.mjs --year ndtceda26
         env:
           OPENCASELIST_USERNAME: ${{ secrets.OPENCASELIST_USERNAME }}
           OPENCASELIST_PASSWORD: ${{ secrets.OPENCASELIST_PASSWORD }}
@@ -57,16 +57,10 @@ jobs:
           echo "New size: $NEW_SIZE"
 
           if [ "$NEW_SIZE" -gt "$CURRENT_SIZE" ]; then
-            echo "New data has more records. Committing..."
+            echo "New data found. Committing..."
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
             git add public/data_ndtceda26.json
-            if [ -f "scrape_errors_ndtceda26.json" ]; then
-              git add scrape_errors_ndtceda26.json
-            fi
-            if [ -f "round_count_map_ndtceda26.json" ]; then
-              git add round_count_map_ndtceda26.json
-            fi
             git commit -m "Update debate data: $NEW_SIZE records (+$(($NEW_SIZE - $CURRENT_SIZE)))"
             git push
           else

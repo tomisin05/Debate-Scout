@@ -147,7 +147,7 @@
     "Kansas State SpFe (Cody Spurlock - Johnathon Fellows)": 9
   },
   "Kentucky": {
-    "Kentucky CoSl (Camden Coale - Regan Slish)": 10,
+    "Kentucky CoSl (Camden Coale - Regan Slish)": 11,
     "Kentucky DeRu (Abbie DeWeese - Jonn Rushing)": 0,
     "Kentucky ErMa (Wheezy Ervin - Minnie Marcos)": 0,
     "Kentucky EsAs (Joseph Estelita - Amelea Asmi Jan)": 0,
@@ -201,6 +201,21 @@
     "Michigan State LeMa (Stephen Lewis - Henry Martin)": 13
   },
   "Minnesota": {},
+  "Missouri State": {
+    "Missouri State BaMc (Avery Bates - Evan McSorley)": 15,
+    "Missouri State CoNe (Quentin Cooper - Nico Neal)": 10,
+    "Missouri State CoPe (Gary Cowdrey-Mota - Troy Petty)": 9,
+    "Missouri State CoRi (Gary Cowdrey-Mota - Jo Rice)": 2,
+    "Missouri State DeSi (Levi DeAngelis - Evan Siever)": 8,
+    "Missouri State HaDu (Shelby Hahn - Sohum Dua)": 10,
+    "Missouri State JoPe (Wes Jones - Troy Petty)": 4,
+    "Missouri State RiJo (Jo Rice - Wes Jones)": 7
+  },
+  "Navy": {
+    "Navy Novices": 6,
+    "Navy LaSa (Jake Lawrence - Griffin Satterfield)": 1
+  },
+  "New Mexico": {},
   "North Texas": {
     "North Texas AnBu (Rishit Anand - Josias Busa)": 1,
     "North Texas BoVa (Ronen Bowman - Emanuel Vargas)": 9,
