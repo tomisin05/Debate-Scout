@@ -4,6 +4,8 @@ import { auth } from "./firebase";
 import Login from "./Login";
 import "./App.css";
 
+const ROW_BATCH_SIZE = 50;
+
 function App() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -17,8 +19,7 @@ function App() {
   const [sortColumn, setSortColumn] = useState("school");
   const [sortDirection, setSortDirection] = useState("asc");
   const [groupBy, setGroupBy] = useState("");
-  const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState(50);
+  const [visibleRowCount, setVisibleRowCount] = useState(ROW_BATCH_SIZE);
   const [expandedGroups, setExpandedGroups] = useState({});
   const [visibleColumns, setVisibleColumns] = useState({
     school: true,
@@ -46,6 +47,8 @@ function App() {
     openSource: 120,
   });
   const resizingRef = useRef(null);
+  const tableScrollRef = useRef(null);
+  const loadMoreRef = useRef(null);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -54,6 +57,26 @@ function App() {
     });
     return () => unsubscribe();
   }, []);
+
+  useEffect(() => {
+    const hasOpenColumnFilter = Object.values(columnFilterMenus).some(Boolean);
+    if (!showColumnMenu && !hasOpenColumnFilter) return;
+
+    const dismissMenus = (event) => {
+      if (
+        event.target.closest(".column-filter-btn") ||
+        event.target.closest(".column-selector")
+      ) {
+        return;
+      }
+
+      setColumnFilterMenus({});
+      setShowColumnMenu(false);
+    };
+
+    document.addEventListener("pointerdown", dismissMenus);
+    return () => document.removeEventListener("pointerdown", dismissMenus);
+  }, [columnFilterMenus, showColumnMenu]);
 
   useEffect(() => {
     const loadAllData = async () => {
@@ -196,7 +219,10 @@ function App() {
     });
 
     setFilteredData(filtered);
-    setCurrentPage(1);
+    setVisibleRowCount(ROW_BATCH_SIZE);
+    if (tableScrollRef.current) {
+      tableScrollRef.current.scrollTop = 0;
+    }
   }, [
     data,
     searchTerm,
@@ -256,7 +282,8 @@ function App() {
   };
 
   const toggleColumnFilterMenu = (column) => {
-    setColumnFilterMenus((prev) => ({ ...prev, [column]: !prev[column] }));
+    setColumnFilterMenus((prev) => ({ [column]: !prev[column] }));
+    setShowColumnMenu(false);
   };
 
   const toggleColumnFilterValue = (column, value) => {
@@ -338,12 +365,39 @@ function App() {
     }, {});
   }, [filteredData, groupBy]);
 
-  const paginatedData = useMemo(() => {
-    const start = (currentPage - 1) * itemsPerPage;
-    return filteredData.slice(start, start + itemsPerPage);
-  }, [filteredData, currentPage, itemsPerPage]);
+  const visibleData = useMemo(
+    () => filteredData.slice(0, visibleRowCount),
+    [filteredData, visibleRowCount],
+  );
 
-  const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+  useEffect(() => {
+    if (groupBy || visibleRowCount >= filteredData.length) return;
+
+    const sentinel = loadMoreRef.current;
+    const scrollContainer = tableScrollRef.current;
+    if (!sentinel || !scrollContainer) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisibleRowCount((count) =>
+            Math.min(count + ROW_BATCH_SIZE, filteredData.length),
+          );
+        }
+      },
+      { root: scrollContainer, rootMargin: "400px 0px" },
+    );
+
+    observer.observe(sentinel);
+    return () => observer.disconnect();
+  }, [filteredData.length, groupBy, visibleRowCount]);
+
+  useEffect(() => {
+    setVisibleRowCount(ROW_BATCH_SIZE);
+    if (tableScrollRef.current) {
+      tableScrollRef.current.scrollTop = 0;
+    }
+  }, [groupBy]);
 
   if (loading) {
     return <div className="loading">Loading...</div>;
@@ -398,7 +452,10 @@ function App() {
           <div className="column-selector">
             <button
               className="btn-secondary"
-              onClick={() => setShowColumnMenu(!showColumnMenu)}
+              onClick={() => {
+                setShowColumnMenu((open) => !open);
+                setColumnFilterMenus({});
+              }}
             >
               <i className="fas fa-columns"></i> Select Columns
             </button>
@@ -598,7 +655,7 @@ function App() {
       )}
 
       <div className="table-area">
-        <div className="table-scroll-container">
+        <div className="table-scroll-container" ref={tableScrollRef}>
           <table className="data-table">
             <thead>
               <tr>
@@ -633,7 +690,7 @@ function App() {
                           }`}
                         ></i>
                       </div>
-                      {col !== "roundReport" && (
+                      {!["roundReport", "openSource"].includes(col) && (
                         <div
                           className="column-filter-btn"
                           onClick={(e) => {
@@ -873,7 +930,7 @@ function App() {
                     </>
                   );
                 })
-              ) : paginatedData.length === 0 ? (
+              ) : visibleData.length === 0 ? (
                 <tr>
                   <td
                     colSpan={
@@ -886,7 +943,7 @@ function App() {
                   </td>
                 </tr>
               ) : (
-                paginatedData.map((row, i) => (
+                visibleData.map((row, i) => (
                   <tr key={i}>
                     {visibleColumns.school && (
                       <td
@@ -1008,50 +1065,30 @@ function App() {
                   </tr>
                 ))
               )}
+              {!groupedData && visibleData.length < filteredData.length && (
+                <tr ref={loadMoreRef} className="infinite-scroll-sentinel">
+                  <td
+                    colSpan={
+                      Object.values(visibleColumns).filter((v) => v).length
+                    }
+                  >
+                    <i className="fas fa-spinner fa-spin"></i>
+                    <span>Loading more rows…</span>
+                  </td>
+                </tr>
+              )}
             </tbody>
           </table>
         </div>
       </div>
 
       <div className="app-footer">
-        <div className="pagination-info">
+        <div className="scroll-info">
           <span>
-            Showing {(currentPage - 1) * itemsPerPage + 1}-
-            {Math.min(currentPage * itemsPerPage, filteredData.length)} of{" "}
-            {filteredData.length.toLocaleString()}
+            {groupedData
+              ? `${filteredData.length.toLocaleString()} records`
+              : `${visibleData.length.toLocaleString()} of ${filteredData.length.toLocaleString()} records`}
           </span>
-          <div className="items-per-page">
-            <label>Items per page:</label>
-            <select
-              value={itemsPerPage}
-              onChange={(e) => setItemsPerPage(Number(e.target.value))}
-            >
-              <option value="25">25</option>
-              <option value="50">50</option>
-              <option value="100">100</option>
-              <option value="250">250</option>
-              <option value="500">500</option>
-            </select>
-          </div>
-        </div>
-        <div className="pagination-controls">
-          <button
-            className="pagination-btn"
-            disabled={currentPage === 1}
-            onClick={() => setCurrentPage((p) => p - 1)}
-          >
-            <i className="fas fa-chevron-left"></i>
-          </button>
-          <span className="page-numbers">
-            Page {currentPage} of {totalPages}
-          </span>
-          <button
-            className="pagination-btn"
-            disabled={currentPage === totalPages}
-            onClick={() => setCurrentPage((p) => p + 1)}
-          >
-            <i className="fas fa-chevron-right"></i>
-          </button>
         </div>
       </div>
     </div>

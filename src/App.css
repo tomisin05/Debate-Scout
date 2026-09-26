@@ -503,14 +503,13 @@ body {
 
 .app-footer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
   background: #f8f9fa;
   border-top: 1px solid #e0e0e0;
 }
 
-.pagination-info {
+.scroll-info {
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -518,46 +517,19 @@ body {
   color: #666;
 }
 
-.items-per-page {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+.scroll-hint {
+  color: #3498db;
 }
 
-.items-per-page select {
-  padding: 0.25rem 0.5rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.pagination-controls {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.pagination-btn {
-  background: white;
-  border: 1px solid #ddd;
-  padding: 0.5rem 0.75rem;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.pagination-btn:hover:not(:disabled) {
-  background: #f0f0f0;
-}
-
-.pagination-btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-.page-numbers {
-  font-size: 0.9rem;
+.infinite-scroll-sentinel td {
+  padding: 1rem !important;
+  text-align: center;
   color: #666;
+  background: #f8f9fa;
+}
+
+.infinite-scroll-sentinel i {
+  margin-right: 0.5rem;
 }
 
 .open-source-icons {
