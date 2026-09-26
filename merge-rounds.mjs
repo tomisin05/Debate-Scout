@@ -13,8 +13,10 @@ const existing = new Set(main.rounds.map(key));
 
 let added = 0;
 for (const r of newRounds) {
-  if (!existing.has(key(r))) {
+  const roundKey = key(r);
+  if (!existing.has(roundKey)) {
     main.rounds.push(r);
+    existing.add(roundKey);
     added++;
   }
 }

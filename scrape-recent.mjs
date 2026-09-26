@@ -161,7 +161,7 @@ async function resolveSchoolName(page, yearSlug, schoolSlug) {
             const h = document.querySelector('h1, h2, [class*="title"], [class*="heading"]');
             return h ? h.innerText.trim() : null;
         });
-        if (name && name.length > 1) return name;
+        if (name && name.length > 1 && name.toLowerCase() !== 'opencaselist') return name;
     } catch {}
     // Fallback: convert slug back to spaced name
     return schoolSlug.replace(/([A-Z])/g, ' $1').trim();
@@ -224,7 +224,8 @@ async function main() {
                 // Get team display name from page heading
                 const teamName = await page.evaluate((fallback) => {
                     const h = document.querySelector('h1, h2, [class*="title"]');
-                    return h ? h.innerText.trim() : fallback;
+                    const name = h?.innerText.trim();
+                    return name && name.toLowerCase() !== 'opencaselist' ? name : fallback;
                 }, team.label);
 
                 const rounds = await extractRounds(page);

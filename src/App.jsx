@@ -6,6 +6,87 @@ import "./App.css";
 
 const ROW_BATCH_SIZE = 50;
 
+const isOpenCaselistPlaceholder = (value) =>
+  String(value || "").trim().toLowerCase() === "opencaselist";
+
+const getTeamPath = (row) => {
+  const sourceUrl = row.previewUrl || row.downloadUrl;
+  if (!sourceUrl) return null;
+
+  try {
+    const path = new URL(sourceUrl).searchParams.get("path");
+    if (!path) return null;
+    const [year, schoolSlug, teamSlug] = path.split("/");
+    return year && schoolSlug && teamSlug
+      ? { key: `${year}/${schoolSlug}/${teamSlug}`.toLowerCase(), schoolSlug, teamSlug }
+      : null;
+  } catch {
+    return null;
+  }
+};
+
+const humanizeSlug = (slug) =>
+  decodeURIComponent(slug || "")
+    .replace(/([a-z])([A-Z])/g, "$1 $2")
+    .replace(/[-_]+/g, " ")
+    .trim();
+
+const normalizeAndDedupeRounds = (rounds) => {
+  const teamNamesByPath = new Map();
+
+  for (const row of rounds) {
+    const teamPath = getTeamPath(row);
+    if (
+      teamPath &&
+      !isOpenCaselistPlaceholder(row.school) &&
+      !isOpenCaselistPlaceholder(row.team)
+    ) {
+      teamNamesByPath.set(teamPath.key, {
+        school: row.school,
+        team: row.team,
+      });
+    }
+  }
+
+  const uniqueRounds = new Map();
+  for (const originalRow of rounds) {
+    const row = { ...originalRow };
+    const teamPath = getTeamPath(row);
+    const knownNames = teamPath && teamNamesByPath.get(teamPath.key);
+
+    if (isOpenCaselistPlaceholder(row.school)) {
+      row.school = knownNames?.school || humanizeSlug(teamPath?.schoolSlug) || "Unknown";
+    }
+    if (isOpenCaselistPlaceholder(row.team)) {
+      row.team =
+        knownNames?.team ||
+        [row.school, humanizeSlug(teamPath?.teamSlug)].filter(Boolean).join(" ") ||
+        "Unknown";
+    }
+
+    // The source document path is the stable identity for a round. This also
+    // collapses old malformed copies whose School/Team fields differed.
+    const key =
+      teamPath && (row.previewUrl || row.downloadUrl)
+        ? new URL(row.previewUrl || row.downloadUrl).searchParams.get("path").toLowerCase()
+        : [
+            row.year,
+            row.school,
+            row.team,
+            row.tournament,
+            row.round,
+            row.side,
+            row.opponent,
+          ]
+            .map((value) => String(value || "").trim().toLowerCase())
+            .join("|");
+
+    if (!uniqueRounds.has(key)) uniqueRounds.set(key, row);
+  }
+
+  return [...uniqueRounds.values()];
+};
+
 function App() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -94,14 +175,14 @@ function App() {
           ]);
 
         const yearData = {
-          26: data26.rounds || [],
-          25: data25.rounds || [],
-          24: data24.rounds || [],
-          23: data23.rounds || [],
-          22: data22.rounds || [],
-          21: data21.rounds || [],
-          20: data20.rounds || [],
-          19: data19.rounds || [],
+          26: normalizeAndDedupeRounds(data26.rounds || []),
+          25: normalizeAndDedupeRounds(data25.rounds || []),
+          24: normalizeAndDedupeRounds(data24.rounds || []),
+          23: normalizeAndDedupeRounds(data23.rounds || []),
+          22: normalizeAndDedupeRounds(data22.rounds || []),
+          21: normalizeAndDedupeRounds(data21.rounds || []),
+          20: normalizeAndDedupeRounds(data20.rounds || []),
+          19: normalizeAndDedupeRounds(data19.rounds || []),
         };
 
         setAllData(yearData);
