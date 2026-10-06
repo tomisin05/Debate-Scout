@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-05T12:54:20.448Z",
-    "totalRounds": 3427,
+    "lastUpdated": "2026-10-06T12:21:51.783Z",
+    "totalRounds": 3433,
     "year": "ndtceda26"
   },
   "rounds": [
@@ -47982,6 +47982,90 @@
       "previewUrl": null,
       "downloadUrl": null,
       "scrapedAt": "2026-10-05T12:53:42.552Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Northwestern",
+      "team": "Northwestern HePe - 01 - 56th Annual JW Patterson Debates hosted by UK Round 6 Aff vs Western Kentucky IN",
+      "tournament": "01 - 56th Annual JW Patterson Debates hosted by UK",
+      "round": "Round 1",
+      "side": "Neg",
+      "opponent": "Gonzaga MP",
+      "judge": "Jasani",
+      "roundReport": "1AC - Taiwan 1NC - Midterms DA, Courts CP, Assurances DA, DIB DA, T - MCW 2NR - Courts CP, Midterms DA",
+      "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FNorthwestern%2FHePe%2FNorthwestern-HePe-Neg-01---56th-Annual-JW-Patterson-Debates-hosted-by-UK-Round-1.docx",
+      "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FNorthwestern%2FHePe%2FNorthwestern-HePe-Neg-01---56th-Annual-JW-Patterson-Debates-hosted-by-UK-Round-1.docx",
+      "scrapedAt": "2026-10-06T12:20:58.512Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Northwestern",
+      "team": "Northwestern HePe - 01 - 56th Annual JW Patterson Debates hosted by UK Round 6 Aff vs Western Kentucky IN",
+      "tournament": "01 - 56th Annual JW Patterson Debates hosted by UK",
+      "round": "Round 2",
+      "side": "Aff",
+      "opponent": "Emory GY",
+      "judge": "McCullough",
+      "roundReport": "1AC- Israel 1NC- T Substanial, T-Arms Transfers, Israeli PTX CP, UNSC CP, Security K, Russia Fill-in DA, Israeli PTX DA, Ratepayer PTX DA, Midterms DA, 2NR- T Substainial, Midterms, Israeli PTX",
+      "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FNorthwestern%2FHePe%2FNorthwestern-HePe-Aff-01---56th-Annual-JW-Patterson-Debates-hosted-by-UK-Round-2.docx",
+      "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FNorthwestern%2FHePe%2FNorthwestern-HePe-Aff-01---56th-Annual-JW-Patterson-Debates-hosted-by-UK-Round-2.docx",
+      "scrapedAt": "2026-10-06T12:20:58.513Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Northwestern",
+      "team": "Northwestern HePe - 01 - 56th Annual JW Patterson Debates hosted by UK Round 6 Aff vs Western Kentucky IN",
+      "tournament": "01 - 56th Annual JW Patterson Debates hosted by UK",
+      "round": "Round 3",
+      "side": "Neg",
+      "opponent": "Indiana DJ",
+      "judge": "Hall",
+      "roundReport": "1AC - Abolition 1NC - T - Framework, University K, Assurances DA, N-1 PIK 2NR - T - Framework",
+      "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FNorthwestern%2FHePe%2FNorthwestern-HePe-Neg-01---56th-Annual-JW-Patterson-Debates-hosted-by-UK-Round-3.docx",
+      "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FNorthwestern%2FHePe%2FNorthwestern-HePe-Neg-01---56th-Annual-JW-Patterson-Debates-hosted-by-UK-Round-3.docx",
+      "scrapedAt": "2026-10-06T12:20:58.513Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Northwestern",
+      "team": "Northwestern HePe - 01 - 56th Annual JW Patterson Debates hosted by UK Round 6 Aff vs Western Kentucky IN",
+      "tournament": "01 - 56th Annual JW Patterson Debates hosted by UK",
+      "round": "Round 4",
+      "side": "Aff",
+      "opponent": "Dartmouth CF",
+      "judge": "Wunderlich",
+      "roundReport": "1AC- Israel 1NC- DipCap DA, Lashout DA, 2NR- Lashout DA",
+      "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FNorthwestern%2FHePe%2FNorthwestern-HePe-Aff-01---56th-Annual-JW-Patterson-Debates-hosted-by-UK-Round-4.docx",
+      "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FNorthwestern%2FHePe%2FNorthwestern-HePe-Aff-01---56th-Annual-JW-Patterson-Debates-hosted-by-UK-Round-4.docx",
+      "scrapedAt": "2026-10-06T12:20:58.513Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Northwestern",
+      "team": "Northwestern HePe - 01 - 56th Annual JW Patterson Debates hosted by UK Round 6 Aff vs Western Kentucky IN",
+      "tournament": "01 - 56th Annual JW Patterson Debates hosted by UK",
+      "round": "Round 5",
+      "side": "Neg",
+      "opponent": "MoState NN",
+      "judge": "Pierry",
+      "roundReport": "1AC - Taiwan 1NC - T - Substantial, Assurances Da, Courts CP, Emboldenment DA, Midterms DA, T - Reduce 2NR - T - Substantial, Democracy Bad 2AR - Debt Add On",
+      "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FNorthwestern%2FHePe%2FNorthwestern-HePe-Neg-01---56th-Annual-JW-Patterson-Debates-hosted-by-UK-Round-5.docx",
+      "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FNorthwestern%2FHePe%2FNorthwestern-HePe-Neg-01---56th-Annual-JW-Patterson-Debates-hosted-by-UK-Round-5.docx",
+      "scrapedAt": "2026-10-06T12:20:58.513Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Northwestern",
+      "team": "Northwestern HePe - 01 - 56th Annual JW Patterson Debates hosted by UK Round 6 Aff vs Western Kentucky IN",
+      "tournament": "01 - 56th Annual JW Patterson Debates hosted by UK",
+      "round": "Round 6",
+      "side": "Aff",
+      "opponent": "Western Kentucky IN",
+      "judge": "Revare",
+      "roundReport": "1AC - Israel 1NC - Complexity K, Condition CP, Threaten CP, ASIS CP, T - Arms Transfers, Stocks DA, Israeli Lashout DA, T - Should, Democracy Bad 2NR - Stocks DA",
+      "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FNorthwestern%2FHePe%2FNorthwestern-HePe-Aff-01---56th-Annual-JW-Patterson-Debates-hosted-by-UK-Round-6.docx",
+      "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FNorthwestern%2FHePe%2FNorthwestern-HePe-Aff-01---56th-Annual-JW-Patterson-Debates-hosted-by-UK-Round-6.docx",
+      "scrapedAt": "2026-10-06T12:20:58.513Z"
     }
   ]
 }
