@@ -1,8 +1,9 @@
-name: Scrape Recent Debate Data (Daily)
+name: Scrape Full Debate Data (Weekly)
 
 on:
   schedule:
-    - cron: "0 6 * * *"
+    # Sundays at 04:00 UTC.
+    - cron: "0 4 * * 0"
   workflow_dispatch:
 
 permissions:
@@ -15,7 +16,7 @@ concurrency:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 360
 
     steps:
       - uses: actions/checkout@v4
@@ -34,26 +35,32 @@ jobs:
         run: |
           if [ -f "public/data_ndtceda26.json" ]; then
             CURRENT_SIZE=$(jq 'if type == "array" then length else (.rounds | length) end' public/data_ndtceda26.json)
-            echo "current_size=$CURRENT_SIZE" >> $GITHUB_OUTPUT
+            echo "current_size=$CURRENT_SIZE" >> "$GITHUB_OUTPUT"
           else
-            echo "current_size=0" >> $GITHUB_OUTPUT
+            echo "current_size=0" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Scrape recent changes
-        run: node scrape-recent.mjs --year ndtceda26
+      - name: Run full scraper
+        run: >-
+          node scraper.mjs
+          --year ndtceda26
+          --output public/data_ndtceda26.json
+          --phase all
+          --requests-per-batch 25
+          --batch-delay 60
         env:
           OPENCASELIST_USERNAME: ${{ secrets.OPENCASELIST_USERNAME }}
           OPENCASELIST_PASSWORD: ${{ secrets.OPENCASELIST_PASSWORD }}
 
-      - name: Check new data size
+      - name: Validate new data
         id: new-size
         run: |
           test -f public/data_ndtceda26.json
           jq -e '.rounds and (.rounds | type == "array")' public/data_ndtceda26.json > /dev/null
           NEW_SIZE=$(jq '.rounds | length' public/data_ndtceda26.json)
-          echo "new_size=$NEW_SIZE" >> $GITHUB_OUTPUT
+          echo "new_size=$NEW_SIZE" >> "$GITHUB_OUTPUT"
 
-      - name: Compare and commit
+      - name: Commit full scrape changes
         run: |
           CURRENT_SIZE=${{ steps.current-size.outputs.current_size }}
           NEW_SIZE=${{ steps.new-size.outputs.new_size }}
@@ -66,10 +73,8 @@ jobs:
             exit 0
           fi
 
-          CHANGE=$((NEW_SIZE - CURRENT_SIZE))
-          echo "Data changed by $CHANGE records. Committing..."
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add public/data_ndtceda26.json
-          git commit -m "Daily recent debate data scrape: $NEW_SIZE records ($CHANGE)"
+          git commit -m "Weekly full debate data scrape: $NEW_SIZE records"
           git push

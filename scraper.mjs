@@ -9,7 +9,7 @@
  *  - Session reuse: logs in once per browser lifecycle, not per page
  *  - Exponential backoff retries with jitter
  *  - Structured JSON output with metadata
- *  - Configurable batch size and delays
+ *  - Configurable request-budget batching and delays
  */
 
 import puppeteer from 'puppeteer';
@@ -28,7 +28,7 @@ function parseArgs() {
         errorsFile: 'scrape_errors.json',
         phase: 'all',          // "map" | "scrape" | "retry" | "all"
         resume: true,          // skip already-done teams
-        batchSize: 5,
+        requestsPerBatch: 25,
         batchDelay: 1 * 60_000, // ms between batches
         pageDelay: 1500,        // ms between page loads
         username: process.env.OPENCASELIST_USERNAME,
@@ -42,7 +42,9 @@ function parseArgs() {
             case '--output':      opts.output      = args[++i]; break;
             case '--phase':       opts.phase       = args[++i]; break;
             case '--no-resume':   opts.resume      = false;     break;
-            case '--batch-size':  opts.batchSize   = +args[++i]; break;
+            case '--requests-per-batch': opts.requestsPerBatch = +args[++i]; break;
+            // Backward-compatible alias. This now means requests, not schools.
+            case '--batch-size':  opts.requestsPerBatch = +args[++i]; break;
             case '--batch-delay': opts.batchDelay  = +args[++i] * 1000; break;
             case '--username':    opts.username    = args[++i]; break;
             case '--password':    opts.password    = args[++i]; break;
@@ -55,7 +57,9 @@ Options:
   --output <file>        Output JSON file (single-year runs only; default: data_<year>.json)
   --phase <phase>        One of: map | scrape | retry | all (default: all)
   --no-resume            Re-scrape everything, ignoring existing output
-  --batch-size <n>       Schools per batch (default: 5)
+  --requests-per-batch <n>
+                         School/team page requests per batch (default: 25)
+  --batch-size <n>       Deprecated alias for --requests-per-batch
   --batch-delay <secs>   Seconds between batches (default: 60)
   --username <email>     Login email
   --password <pass>      Login password
@@ -77,6 +81,38 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 /** Jittered sleep: base ± 40% */
 const jitter = ms => sleep(ms * (0.6 + Math.random() * 0.8));
 
+class RequestBatcher {
+    constructor(limit, delay) {
+        this.limit = limit;
+        this.delay = delay;
+        this.requestCount = 0;
+        this.batchNumber = 1;
+    }
+
+    async beforeRequest(description) {
+        if (this.requestCount >= this.limit) {
+            console.log(
+                `\n⏳ Request batch ${this.batchNumber} complete ` +
+                `(${this.requestCount} requests). Waiting ${this.delay / 1000}s…`
+            );
+            await sleep(this.delay);
+            this.requestCount = 0;
+            this.batchNumber++;
+        }
+        this.requestCount++;
+        console.log(
+            `    [request ${this.requestCount}/${this.limit}, batch ${this.batchNumber}] ${description}`
+        );
+    }
+
+    async cooldown(reason) {
+        console.log(`\n⏳ ${reason}. Cooling down for ${this.delay / 1000}s and refreshing the session…`);
+        await sleep(this.delay);
+        this.requestCount = 0;
+        this.batchNumber++;
+    }
+}
+
 function saveJSON(filepath, data) {
     fs.mkdirSync(path.dirname(path.resolve(filepath)), { recursive: true });
     fs.writeFileSync(filepath, JSON.stringify(data, null, 2));
@@ -88,6 +124,31 @@ function loadJSON(filepath, fallback = null) {
     } catch {
         return fallback;
     }
+}
+
+function documentPath(record) {
+    for (const value of [record.previewUrl, record.downloadUrl]) {
+        if (!value) continue;
+        try {
+            const valuePath = new URL(value).searchParams.get('path');
+            if (valuePath) return valuePath;
+        } catch {}
+    }
+    return null;
+}
+
+function deduplicateDocumentRounds(rounds) {
+    const seen = new Set();
+    const deduplicated = [];
+    // Work backwards so a freshly scraped record replaces an older duplicate.
+    for (let index = rounds.length - 1; index >= 0; index--) {
+        const round = rounds[index];
+        const valuePath = documentPath(round);
+        if (valuePath && seen.has(valuePath)) continue;
+        if (valuePath) seen.add(valuePath);
+        deduplicated.push(round);
+    }
+    return deduplicated.reverse();
 }
 
 function schoolToSlug(school) {
@@ -255,17 +316,15 @@ async function countRoundsOnPage(page) {
 async function createRoundCountMap(browser, schools, yearSlug, opts) {
     console.log('\n═══ PHASE 1: Building round-count map ═══\n');
     const existing = {};
+    const requestBatcher = new RequestBatcher(opts.requestsPerBatch, opts.batchDelay);
 
-    for (let i = 0; i < schools.length; i += opts.batchSize) {
-        const batch = schools.slice(i, i + opts.batchSize);
-        console.log(`\nBatch ${Math.floor(i / opts.batchSize) + 1}/${Math.ceil(schools.length / opts.batchSize)}`);
-
-        for (const school of batch) {
+    for (const school of schools) {
             let page;
             try {
                 page = await loginPage(browser, opts.username, opts.password);
                 console.log(`  Mapping: ${school.name}`);
 
+                await requestBatcher.beforeRequest(`school ${school.name}`);
                 await page.goto(school.href || `https://opencaselist.com/${yearSlug}/${school.slug}`,
                     { waitUntil: 'networkidle2' });
                 await jitter(opts.pageDelay);
@@ -287,6 +346,7 @@ async function createRoundCountMap(browser, schools, yearSlug, opts) {
 
                 for (const team of teamLinks) {
                     try {
+                        await requestBatcher.beforeRequest(`team ${school.name} / ${team.name}`);
                         await page.goto(team.href, { waitUntil: 'domcontentloaded' });
                         await jitter(opts.pageDelay);
                         const count = await countRoundsOnPage(page);
@@ -305,15 +365,9 @@ async function createRoundCountMap(browser, schools, yearSlug, opts) {
             } finally {
                 if (page) await page.close();
             }
-        }
 
         saveJSON(opts.mapFile, existing);
         console.log(`  ✔ Map saved (${Object.keys(existing).length} schools)`);
-
-        if (i + opts.batchSize < schools.length) {
-            console.log(`\n⏳ Waiting ${opts.batchDelay / 1000}s before next batch…`);
-            await sleep(opts.batchDelay);
-        }
     }
 
     return existing;
@@ -325,11 +379,13 @@ async function retryMissingTeams(browser, schools, yearSlug, opts) {
     console.log('\n═══ PHASE 1.5: Retrying missing teams ═══\n');
     const map = loadJSON(opts.mapFile, {});
     const missing = [];
+    const requestBatcher = new RequestBatcher(opts.requestsPerBatch, opts.batchDelay);
 
     let page = await loginPage(browser, opts.username, opts.password);
     try {
         for (const school of schools) {
             if (!map[school.name]) continue;
+            await requestBatcher.beforeRequest(`retry discovery ${school.name}`);
             await page.goto(school.href || `https://opencaselist.com/${yearSlug}/${school.slug}`,
                 { waitUntil: 'networkidle2' });
             await jitter(opts.pageDelay);
@@ -358,6 +414,7 @@ async function retryMissingTeams(browser, schools, yearSlug, opts) {
         let pg;
         try {
             pg = await loginPage(browser, opts.username, opts.password);
+            await requestBatcher.beforeRequest(`retry team ${school} / ${team.name}`);
             await pg.goto(team.href, { waitUntil: 'domcontentloaded' });
             await jitter(opts.pageDelay);
             const count = await countRoundsOnPage(pg);
@@ -437,6 +494,11 @@ async function scrapeWithVerification(browser, schools, yearSlug, roundCountMap,
         ? { meta: {}, rounds: loaded }
         : loaded || { meta: {}, rounds: [] };
     if (!Array.isArray(existing.rounds)) existing.rounds = [];
+    const loadedRoundCount = existing.rounds.length;
+    existing.rounds = deduplicateDocumentRounds(existing.rounds);
+    if (existing.rounds.length < loadedRoundCount) {
+        console.log(`Removed ${loadedRoundCount - existing.rounds.length} existing duplicate document records`);
+    }
 
     // Count saved rounds per team so partial teams are not treated as complete.
     const existingCounts = new Map();
@@ -447,18 +509,16 @@ async function scrapeWithVerification(browser, schools, yearSlug, roundCountMap,
     const errors = [];
     const completedTeamKeys = new Set();
     const completedSchoolKeys = new Set();
+    const requestBatcher = new RequestBatcher(opts.requestsPerBatch, opts.batchDelay);
     let totalAdded = 0;
 
-    for (let i = 0; i < schools.length; i += opts.batchSize) {
-        const batch = schools.slice(i, i + opts.batchSize);
-        console.log(`\nBatch ${Math.floor(i / opts.batchSize) + 1}/${Math.ceil(schools.length / opts.batchSize)}`);
-
-        for (const school of batch) {
+    for (const school of schools) {
             let page;
             try {
                 console.log(`\n  School: ${school.name}`);
                 page = await loginPage(browser, opts.username, opts.password);
 
+                await requestBatcher.beforeRequest(`school ${school.name}`);
                 await page.goto(school.href || `https://opencaselist.com/${yearSlug}/${school.slug}`,
                     { waitUntil: 'networkidle2' });
                 await jitter(opts.pageDelay);
@@ -487,7 +547,23 @@ async function scrapeWithVerification(browser, schools, yearSlug, roundCountMap,
 
                     try {
                         await withRetry(async (attempt) => {
-                            await page.goto(team.href, { waitUntil: 'domcontentloaded' });
+                            if (attempt > 1) {
+                                await requestBatcher.cooldown(
+                                    `${school.name} / ${team.name} returned incomplete data`
+                                );
+                                if (page) await page.close().catch(() => {});
+                                page = await loginPage(browser, opts.username, opts.password);
+                            }
+                            await requestBatcher.beforeRequest(
+                                `team ${school.name} / ${team.name} (attempt ${attempt})`
+                            );
+                            await page.goto(team.href, { waitUntil: 'networkidle2' });
+                            // Wait for the rounds table or the empty-state message
+                            await page.waitForFunction(
+                                () => document.querySelector('table') ||
+                                      document.body.innerText.includes('No rounds yet'),
+                                { timeout: 60000 }
+                            ).catch(() => null);
                             await jitter(opts.pageDelay);
                             rounds = await extractRounds(page);
 
@@ -530,6 +606,7 @@ async function scrapeWithVerification(browser, schools, yearSlug, roundCountMap,
                 }
 
                 // Save progress after each school
+                existing.rounds = deduplicateDocumentRounds(existing.rounds);
                 existing.meta = {
                     lastUpdated: new Date().toISOString(),
                     totalRounds: existing.rounds.length,
@@ -545,12 +622,6 @@ async function scrapeWithVerification(browser, schools, yearSlug, roundCountMap,
             } finally {
                 if (page) await page.close();
             }
-        }
-
-        if (i + opts.batchSize < schools.length) {
-            console.log(`\n⏳ Waiting ${opts.batchDelay / 1000}s…`);
-            await sleep(opts.batchDelay);
-        }
     }
 
     // Keep only unresolved errors. Resolved entries disappear, and a repeated
@@ -588,6 +659,12 @@ async function main() {
     }
     if (!['map', 'scrape', 'retry', 'all'].includes(opts.phase)) {
         throw new Error(`Invalid --phase "${opts.phase}". Use map, scrape, retry, or all.`);
+    }
+    if (!Number.isInteger(opts.requestsPerBatch) || opts.requestsPerBatch < 1) {
+        throw new Error('--requests-per-batch must be a positive integer.');
+    }
+    if (!Number.isFinite(opts.batchDelay) || opts.batchDelay < 0) {
+        throw new Error('--batch-delay must be zero or a positive number of seconds.');
     }
     if (opts.output && !opts.year) {
         throw new Error('--output requires --year so multiple seasons cannot overwrite one file.');
@@ -711,6 +788,7 @@ async function main() {
                 }
             }
 
+            combinedData.rounds = deduplicateDocumentRounds(combinedData.rounds);
             combinedData.meta.totalRounds = combinedData.rounds.length;
             saveJSON('data_all_years.json', combinedData);
             console.log(`✔ Combined file saved: data_all_years.json (${combinedData.rounds.length} total rounds)`);
