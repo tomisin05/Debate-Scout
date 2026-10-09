@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-08T12:25:44.790Z",
-    "totalRounds": 2318,
+    "lastUpdated": "2026-10-09T12:15:13.523Z",
+    "totalRounds": 2323,
     "year": "ndtceda26"
   },
   "rounds": [
@@ -32456,6 +32456,76 @@
       "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FWyoming%2FWiHa%2FWyoming-WiHa-Neg-UK-Round-4.docx",
       "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FWyoming%2FWiHa%2FWyoming-WiHa-Neg-UK-Round-4.docx",
       "scrapedAt": "2026-10-08T06:54:53.854Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "North Texas",
+      "team": "North Texas HaPa",
+      "tournament": "Contact",
+      "round": "All",
+      "side": "Aff",
+      "opponent": "Maybe You",
+      "judge": "NOT Niko Sims",
+      "roundReport": "Email Us- woodlandssp@gmail.com hasper.debate@gmail.com untdebatedocs@gmail.com",
+      "previewUrl": null,
+      "downloadUrl": null,
+      "scrapedAt": "2026-10-09T12:13:04.630Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Michigan",
+      "team": "Michigan ChSh (Gautam Chamarthy - Rishi Shetty)",
+      "tournament": "2 - Kentucky",
+      "round": "Doubles",
+      "side": "Neg",
+      "opponent": "George Mason CD",
+      "judge": "Jordan, Kirk, Lipton",
+      "roundReport": "1AC: Lose Home 2NR: Framework",
+      "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FMichigan%2FChSh%2FMichigan-ChSh-Neg-2---Kentucky-Doubles.docx",
+      "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FMichigan%2FChSh%2FMichigan-ChSh-Neg-2---Kentucky-Doubles.docx",
+      "scrapedAt": "2026-10-09T12:13:09.806Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Michigan",
+      "team": "Michigan ChSh (Gautam Chamarthy - Rishi Shetty)",
+      "tournament": "2 - Kentucky",
+      "round": "Octas",
+      "side": "Neg",
+      "opponent": "Northwestern CY",
+      "judge": "Burns, Repko, Spiers",
+      "roundReport": "1AC: Ukraine 2NR: Courts CP 2AR: Condo",
+      "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FMichigan%2FChSh%2FMichigan-ChSh-Neg-2---Kentucky-Octas.docx",
+      "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FMichigan%2FChSh%2FMichigan-ChSh-Neg-2---Kentucky-Octas.docx",
+      "scrapedAt": "2026-10-09T12:13:09.806Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Michigan",
+      "team": "Michigan ChSh (Gautam Chamarthy - Rishi Shetty)",
+      "tournament": "2 - Kentucky",
+      "round": "Quarters",
+      "side": "Neg",
+      "opponent": "Emory SY",
+      "judge": "DeLong, Phillips, Trufanov",
+      "roundReport": "1AC: Mexico 2NR: Topicality",
+      "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FMichigan%2FChSh%2FMichigan-ChSh-Neg-2---Kentucky-Quarters.docx",
+      "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FMichigan%2FChSh%2FMichigan-ChSh-Neg-2---Kentucky-Quarters.docx",
+      "scrapedAt": "2026-10-09T12:13:09.806Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Michigan",
+      "team": "Michigan DaCa",
+      "tournament": "All Tournaments",
+      "round": "All",
+      "side": "Aff",
+      "opponent": "",
+      "judge": "",
+      "roundReport": "",
+      "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FMichigan%2FDaCa%2FMichigan-DaCa-Aff-All-Tournaments-All-Rounds.docx",
+      "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FMichigan%2FDaCa%2FMichigan-DaCa-Aff-All-Tournaments-All-Rounds.docx",
+      "scrapedAt": "2026-10-09T12:13:17.702Z"
     }
   ]
 }
