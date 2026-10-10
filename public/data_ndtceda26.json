@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastUpdated": "2026-10-09T12:15:13.523Z",
-    "totalRounds": 2323,
+    "lastUpdated": "2026-10-10T11:32:49.539Z",
+    "totalRounds": 2329,
     "year": "ndtceda26"
   },
   "rounds": [
@@ -32526,6 +32526,90 @@
       "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FMichigan%2FDaCa%2FMichigan-DaCa-Aff-All-Tournaments-All-Rounds.docx",
       "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FMichigan%2FDaCa%2FMichigan-DaCa-Aff-All-Tournaments-All-Rounds.docx",
       "scrapedAt": "2026-10-09T12:13:17.702Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "New Mexico",
+      "team": "New Mexico Novices",
+      "tournament": "Balloon Fiesta Classic",
+      "round": "All",
+      "side": "Aff",
+      "opponent": "",
+      "judge": "Walter White",
+      "roundReport": "",
+      "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FNewMexico%2FNovices%2FNewMexico-Novices-Aff-Balloon-Fiesta-Classic-All-Rounds.docx",
+      "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FNewMexico%2FNovices%2FNewMexico-Novices-Aff-Balloon-Fiesta-Classic-All-Rounds.docx",
+      "scrapedAt": "2026-10-10T11:30:25.411Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Minnesota",
+      "team": "Minnesota UsWe (Timur Usenov - Kacee Wells)",
+      "tournament": "01: Kentucky",
+      "round": "Round 5",
+      "side": "Neg",
+      "opponent": "Kentucky CS",
+      "judge": "Astacio",
+      "roundReport": "1AC: Taiwan 1NC: USMAAG-T CP, Two-Tier CP, Spec P, Securitized IR K, Assurance DA, Deterrence DA. 2NC: USMAAG-T CP, Two-Tier CP, Deterrence DA 1NR: Assurance DA 2NR: Assurance DA",
+      "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FMinnesota%2FUsWe%2FMinnesota-UsWe-Neg-01%3A-Kentucky-Round-5.docx",
+      "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FMinnesota%2FUsWe%2FMinnesota-UsWe-Neg-01%3A-Kentucky-Round-5.docx",
+      "scrapedAt": "2026-10-10T11:30:30.249Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Johnson County Community College",
+      "team": "Johnson County Community College TuJa (Charlotte Turner - Mariama Jallow)",
+      "tournament": "!Contact Info",
+      "round": "Finals",
+      "side": "Aff",
+      "opponent": "ronald reagan",
+      "judge": "rupaul",
+      "roundReport": "Mari Jallow (1a/2n)-- mjallow5@stumail.jccc.edu -- she/her Charlotte Turner (2a/1n)-- charlotte.cuts.cards@gmail.com -- they/she",
+      "previewUrl": null,
+      "downloadUrl": null,
+      "scrapedAt": "2026-10-10T11:30:39.706Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Johnson County Community College",
+      "team": "Johnson County Community College TuJa (Charlotte Turner - Mariama Jallow)",
+      "tournament": "Owen L Coon Memorial Debates at Northwestern",
+      "round": "Round 3",
+      "side": "Aff",
+      "opponent": "Cornell SK",
+      "judge": "Andy Patterson",
+      "roundReport": "1AC-- Trans Internationalism 1NC-- T-USfg Cap, Mexico DA, Ballot PIK, Presumption 2NR-- T-USfg",
+      "previewUrl": null,
+      "downloadUrl": null,
+      "scrapedAt": "2026-10-10T11:30:39.706Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Johnson County Community College",
+      "team": "Johnson County Community College TuJa (Charlotte Turner - Mariama Jallow)",
+      "tournament": "Owen L Coon Memorial Debates at Northwestern",
+      "round": "Round 5",
+      "side": "Neg",
+      "opponent": "Michigan DD",
+      "judge": "Victoria Yonter",
+      "roundReport": "1AC-- Taiwan 1NC-- Afropess, case 2NR-- Afropess",
+      "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FJohnsonCountyCommunityCollege%2FTuJa%2FJohnsonCountyCommunityCollege-TuJa-Neg-Owen-L-Coon-Memorial-Debates-at-Northwestern-Round-5.docx",
+      "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FJohnsonCountyCommunityCollege%2FTuJa%2FJohnsonCountyCommunityCollege-TuJa-Neg-Owen-L-Coon-Memorial-Debates-at-Northwestern-Round-5.docx",
+      "scrapedAt": "2026-10-10T11:30:39.706Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Johnson County Community College",
+      "team": "Johnson County Community College TuJa (Charlotte Turner - Mariama Jallow)",
+      "tournament": "Owen L Coon Memorial Debates at Northwestern",
+      "round": "Round 6",
+      "side": "Aff",
+      "opponent": "Indiana PT",
+      "judge": "Daniel Robertson",
+      "roundReport": "1AC-- Trans Internationalism 1NC-- Cap-K, Ballot PIK, presumption 2NR-- Cap 2AR-- PIKs Bad",
+      "previewUrl": null,
+      "downloadUrl": null,
+      "scrapedAt": "2026-10-10T11:30:39.706Z"
     }
   ]
 }
