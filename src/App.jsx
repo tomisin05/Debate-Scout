@@ -301,9 +301,11 @@ function App() {
 
     setFilteredData(filtered);
     setVisibleRowCount(ROW_BATCH_SIZE);
-    if (tableScrollRef.current) {
-      tableScrollRef.current.scrollTop = 0;
-    }
+    setTimeout(() => {
+      if (tableScrollRef.current) {
+        tableScrollRef.current.scrollTop = 0;
+      }
+    }, 0);
   }, [
     data,
     searchTerm,
