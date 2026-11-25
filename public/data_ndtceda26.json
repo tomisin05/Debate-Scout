@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastUpdated": "2026-11-24T16:39:41.682Z",
-    "totalRounds": 5021,
+    "lastUpdated": "2026-11-25T16:22:14.700Z",
+    "totalRounds": 5030,
     "year": "ndtceda26"
   },
   "rounds": [
@@ -70298,6 +70298,132 @@
       "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FKansas%2FAdVe%2FKansas-AdVe-Aff-4---Shirley-Round-8.docx",
       "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FKansas%2FAdVe%2FKansas-AdVe-Aff-4---Shirley-Round-8.docx",
       "scrapedAt": "2026-11-24T16:39:20.433Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Indiana",
+      "team": "Indiana FoGa (Adam Foudali - Rowlin Garcia)",
+      "tournament": "5. Spirit of the Shirley",
+      "round": "Round 1",
+      "side": "Aff",
+      "opponent": "George Mason AA",
+      "judge": "Malsin",
+      "roundReport": "1AC --- Abolition 2NR --- Commodification K, T-FW",
+      "previewUrl": null,
+      "downloadUrl": null,
+      "scrapedAt": "2026-11-25T16:21:35.355Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Indiana",
+      "team": "Indiana FoGa (Adam Foudali - Rowlin Garcia)",
+      "tournament": "5. Spirit of the Shirley",
+      "round": "Round 2",
+      "side": "Neg",
+      "opponent": "Liberty RR",
+      "judge": "Kwon",
+      "roundReport": "1AC --- Saudi F35s 2NR --- Imperial Management K",
+      "previewUrl": null,
+      "downloadUrl": null,
+      "scrapedAt": "2026-11-25T16:21:35.355Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Indiana",
+      "team": "Indiana FoGa (Adam Foudali - Rowlin Garcia)",
+      "tournament": "5. Spirit of the Shirley",
+      "round": "Round 3",
+      "side": "Aff",
+      "opponent": "Minnesota BL",
+      "judge": "Griffith",
+      "roundReport": "1AC --- Abolition 2NR --- T-Tactics",
+      "previewUrl": null,
+      "downloadUrl": null,
+      "scrapedAt": "2026-11-25T16:21:35.355Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Indiana",
+      "team": "Indiana FoGa (Adam Foudali - Rowlin Garcia)",
+      "tournament": "5. Spirit of the Shirley",
+      "round": "Round 4",
+      "side": "Neg",
+      "opponent": "Michigan CD",
+      "judge": "FOREFIT",
+      "roundReport": "1AC --- ㅤㅤㅤㅤ 2NR --- T-The, T-USFG, T-Should, T-Substantially, T-Reduce, T-Arms Transfers, T-From, T-The United States, T-To, T-One or more, T-Of, T- The following, T-Countries, T-Taiwan, T- Saudi Arabia, T-Israel, T-Ukraine, T-Mexico, T-Philippines, T-Japan, T-Nigeria",
+      "previewUrl": null,
+      "downloadUrl": null,
+      "scrapedAt": "2026-11-25T16:21:35.355Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Indiana",
+      "team": "Indiana FoGa (Adam Foudali - Rowlin Garcia)",
+      "tournament": "5. Spirit of the Shirley",
+      "round": "Round 5",
+      "side": "Neg",
+      "opponent": "Suffolk DZ",
+      "judge": "Turner",
+      "roundReport": "1AC --- Collective Survivalism 2NR --- Paint the World",
+      "previewUrl": null,
+      "downloadUrl": null,
+      "scrapedAt": "2026-11-25T16:21:35.355Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Indiana",
+      "team": "Indiana FoGa (Adam Foudali - Rowlin Garcia)",
+      "tournament": "5. Spirit of the Shirley",
+      "round": "Round 6",
+      "side": "Aff",
+      "opponent": "Towson LL",
+      "judge": "Short",
+      "roundReport": "1AC --- Abolition 2NR --- Cap Good, T-FW",
+      "previewUrl": null,
+      "downloadUrl": null,
+      "scrapedAt": "2026-11-25T16:21:35.355Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Indiana",
+      "team": "Indiana FoGa (Adam Foudali - Rowlin Garcia)",
+      "tournament": "5. Spirit of the Shirley",
+      "round": "Doubles",
+      "side": "Aff",
+      "opponent": "BYE",
+      "judge": "BYE",
+      "roundReport": "BYE --- chillin before our quarters round. hope yall having fun sucks that most of yall couldn't fly here and that we doing these online debates instead :(",
+      "previewUrl": null,
+      "downloadUrl": null,
+      "scrapedAt": "2026-11-25T16:21:35.355Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Indiana",
+      "team": "Indiana FoGa (Adam Foudali - Rowlin Garcia)",
+      "tournament": "5. Spirit of the Shirley",
+      "round": "Octas",
+      "side": "Aff",
+      "opponent": "Liberty RR",
+      "judge": "Larson,McVey,Morris",
+      "roundReport": "1AC --- Abolition 2NR --- Adv CP, Presumption 3-0 Neg",
+      "previewUrl": null,
+      "downloadUrl": null,
+      "scrapedAt": "2026-11-25T16:21:35.355Z"
+    },
+    {
+      "year": "ndtceda26",
+      "school": "Oakton College",
+      "team": "Oakton College ChWi (Karma Choenyi - Ezekiel Wilson-Porter)",
+      "tournament": "FR Shirley and ADA Champs at Wake Forest",
+      "round": "All",
+      "side": "Aff",
+      "opponent": "1AC",
+      "judge": "",
+      "roundReport": "",
+      "previewUrl": "https://opencaselist.com/preview?path=ndtceda26%2FOaktonCollege%2FChWi%2FOaktonCollege-ChWi-Aff-FR-Shirley-and-ADA-Champs-at-Wake-Forest-All-Rounds.docx",
+      "downloadUrl": "https://api.opencaselist.com/v1/download?path=ndtceda26%2FOaktonCollege%2FChWi%2FOaktonCollege-ChWi-Aff-FR-Shirley-and-ADA-Champs-at-Wake-Forest-All-Rounds.docx",
+      "scrapedAt": "2026-11-25T16:21:39.629Z"
     }
   ]
 }
